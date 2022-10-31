@@ -1,0 +1,318 @@
+<div class="hero-image d-flex justify-content-center align-items-center" id="banner1">
+   <div class="container">
+      <div class="row">
+            <div class="col-xl-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+               <div class="form-head mt-2 d-flex justify-content-center">
+                  <h3 >{{'Landing.FormTitle'|translate}}</h3>
+                  
+               </div>
+               <div class="mt-3 d-flex justify-content-center">
+                  <img src = "../../../../assets/img/Icon-png/arrange-circle.png">
+                  <div class="mx-3">
+                     <p class="title">{{'Landing.Compare'|translate}}</p>
+                  </div>
+
+                  <img src = "../../../../assets/img/Icon-png/copy-success.png">
+                  <div class="mx-3">
+                     <p class="title">{{'Landing.Choose'|translate}}</p>
+                  </div>
+
+                  <img src = "../../../../assets/img/Icon-png/shield-tick.png">
+                  <div class="mx-3">
+                     <p class="title">{{'Landing.Insure'|translate}}</p>
+                  </div>
+               </div>
+            </div>
+            
+         <div class="col-xl-10 col-lg-10 col-md-6 col-sm-12 col-xs-12 flex-centered">
+            <div class="form-home mt-5 ">
+               <div class="container ">
+                  <div class="row ">
+                     
+                     <div class="col-lg-10 col-md-8 flex-centered" id="insurance-form">
+                        <form [formGroup]="landingFormGroup" class="insurance-form-container forms-with-rdo-chk">
+                           <!-- <div class="col-1 border"></div> -->
+                           <!-- ----------------------------------------------------------------------- -->
+                           <!--                      Insurance Type Radio Buttons                       -->
+                           <!-- ----------------------------------------------------------------------- -->
+                           <div class="form-group">
+                              <!-- <label>{{ 'QuotationRequestForms.InsuranceInfo.InsurancePurpose' | translate }}</label>    -->
+
+                              <div class=" insurance-type mt-5 form-control">
+                                 <div class=" mx-3 d-flex justify-content-start ">
+                                    <label >
+                                       <input type="radio" formControlName="isVehicleOwnerTransfer" [value]="false"
+                                          (change)="isVehicleTransfer()" class="insurance-radio" checked />
+                                          <span class="mx-1 type" >
+                                             {{ 'QuotationRequestForms.InsuranceInfo.NewInsurance' | translate }}
+                                          </span>
+                                      
+                                    </label>
+                                    <label class="mx-5">
+                                       <input type="radio" formControlName="isVehicleOwnerTransfer" [value]="true"
+                                          (change)="isVehicleTransfer()" class="insurance-radio"/>
+                                          <span class="mx-1 type">
+                                             {{ 'QuotationRequestForms.InsuranceInfo.NewVehicleOwner' | translate }}
+                                          </span>
+                                    </label>
+                                 </div>
+                                 <!--midle-->
+                              </div>
+                           </div>
+                           <div class="row">
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                               National ID                               -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <div class="form-group col-lg-12 col-md-6 col-sm-12 col-xs-12 ">
+                                 <input formControlName="insuredIdentityNumber"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    [placeholder]="('Landing.NationalIDLabel' | translate)" maxlength="10"
+                                    autocomplete="off" name="insuredIdentityNumber" class="form-control" type="text">
+                                 <!-- Validation Errors -->
+                                 <div *ngIf="landingForm.insuredIdentityNumber.errors">
+                                    <div
+                                       *ngIf="(landingForm.insuredIdentityNumber.touched) && landingForm.insuredIdentityNumber.errors.required"
+                                       class="v-msg">
+                                       {{ 'Errors.EmptyInputField' | translate }}
+                                    </div>
+                                    <div
+                                       *ngIf="landingForm.insuredIdentityNumber.dirty && !landingForm.insuredIdentityNumber.errors.isValidNationalId && !landingForm.insuredIdentityNumber.errors.required"
+                                       class="v-msg">
+                                       {{ 'Errors.InvalidNationalID' | translate }}
+                                    </div>
+                                    <div
+                                       *ngIf=" landingForm.insuredIdentityNumber.dirty && landingForm.insuredIdentityNumber.errors.minlength"
+                                       class="v-msg">
+                                       {{ 'Errors.IncompleteInputField' | translate }}
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- --------------------- vehicleOwnerIdentityNumber Input ---------------------- -->
+                              <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 " *ngIf="isVehicleTrasfer">
+                                 <input formControlName="vehicleOwnerIdentityNumber"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    placeholder="{{ 'QuotationRequestForms.InsuranceInfo.VehicleIdentificationNumber' | translate }}"
+                                    autocomplete="off" name="vehicleOwnerIdentityNumber" class="form-control"
+                                    type="text"
+                                    [ngClass]="{'is-invalid': landingForm.vehicleOwnerIdentityNumber.touched && landingForm.vehicleOwnerIdentityNumber.errors}">
+                                 <!-- Validation Errors -->
+                                 <div *ngIf="landingForm.vehicleOwnerIdentityNumber.errors">
+                                    <div
+                                       *ngIf="landingForm.vehicleOwnerIdentityNumber.touched && landingForm.vehicleOwnerIdentityNumber.errors.required"
+                                       class="v-msg">
+                                       {{ 'Errors.EmptyInputField' | translate }}
+                                    </div>
+                                    <div
+                                       *ngIf="landingForm.vehicleOwnerIdentityNumber.dirty && !landingForm.vehicleOwnerIdentityNumber.errors.isValidNationalId && !landingForm.vehicleOwnerIdentityNumber.errors.required"
+                                       class="v-msg">
+                                       {{ 'Errors.InvalidNationalID' | translate }}
+                                    </div>
+                                    <div
+                                       *ngIf="landingForm.vehicleOwnerIdentityNumber.dirty && landingForm.vehicleOwnerIdentityNumber.errors.minlength"
+                                       class="v-msg">
+                                       {{ 'Errors.IncompleteInputField' | translate }}
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                             VehicleIdTypes                              -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <div class="form-group col-xl-6" *ngIf="!isVehicleTrasfer">
+                                 <ng-select [items]="vehicleIdTypes" [loading]="!vehicleIdTypes"
+                                    formControlName="vehicleIdTypeId" (change)="selectVehicleType($event)"
+                                    [placeholder]="'Landing.RegistrationTypeText' | translate" bindValue="id"
+                                    [ngClass]="{'is-invalid': landingForm.vehicleIdTypeId.errors }">
+                                    <ng-template ng-label-tmp let-item="item">
+                                       <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                                    </ng-template>
+                                    <ng-template ng-option-tmp let-item="item" let-search="searchTerm"
+                                       let-index="index">
+                                       <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                                    </ng-template>
+                                 </ng-select>
+                                 <div *ngIf="landingForm.vehicleIdTypeId.errors">
+                                    <div class="v-msg"
+                                       *ngIf="landingForm.vehicleIdTypeId.errors.required && landingForm.vehicleIdTypeId.touched">
+                                       {{ 'Errors.EmptyInputField' | translate }}
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                             Sequence Number                             -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <div *ngIf="selectedVehicleIdTypes == 1 || selectedVehicleIdTypes == 2"
+                                 class="form-group col-lg-6 col-md-5 col-sm-12 col-xs-12">
+
+                                 
+                                 <div class="wrapper">
+                                    <div class="icon ">
+                                       <div class="tooltip">
+                                          <img src="../../../../assets/img/app-landing/Licicse.png" class="img-fluid"
+                                             alt="banner image" />
+                                       </div>
+                                       <div class=" input-group">
+                                          <input *ngIf="selectedVehicleIdTypes == 1" formControlName="vehicleId"
+                                             [placeholder]="('Landing.SequenceNumText' | translate)"
+                                             oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                             name="vehicleId" autocomplete="off" class=" form-control date"
+                                             maxlength="10" type="text" aria-describedby="basic-addon1">
+                                          <div *ngIf="selectedVehicleIdTypes == 1"
+                                             class="input-group-append ">
+                                             <span class=" calendar-icon" id="basic-addon1" type="button">
+                                                <img src = "../../../../assets/img/Icon-png/message-question.png">
+                                             </span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="wrapper">
+                                    <div class="icon ">
+                                       <div class="tooltip">
+                                          <img src="../../../../assets/img/app-landing/custum.png" class="img-fluid"
+                                             alt="banner image" />
+                                       </div>
+                                       <div class=" input-group">
+                                          <input *ngIf="selectedVehicleIdTypes == 2" formControlName="vehicleId"
+                                             [placeholder]="('Landing.CardNo' | translate)"
+                                             oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                             name="vehicleId" autocomplete="off" class="form-control date"
+                                             maxlength="10" type="text">
+                                          <div *ngIf="selectedVehicleIdTypes == 2"
+                                             class="input-group-append">
+                                             <span class=" calendar-icon" id="basic-addon1" type="button">
+                                                <img src = "../../../../assets/img/Icon-png/message-question.png">
+                                             </span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div *ngIf="landingForm.vehicleId.errors">
+                                    <div *ngIf="landingForm.vehicleId.touched && landingForm.vehicleId.errors.required"
+                                       class="v-msg">
+                                       {{ 'Errors.EmptyInputField' | translate }}
+                                    </div>
+                                    <div *ngIf="landingForm.vehicleId.dirty && landingForm.vehicleId.errors.minlength"
+                                       class="v-msg">
+                                       {{ 'Errors.IncompleteInputField' | translate }}
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                       Vehicle Manufacturing Date                        -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <div class="form-group col-xl-6 col-lg-5 col-md-12 col-sm-12 col-xs-12"
+                                 *ngIf="selectedVehicleIdTypes == 2">
+                                 <input formControlName="vehicleModelYear" [placeholder]="('Landing.Year' | translate)"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                    name="vehicleModelYear" autocomplete="off" class="form-control" maxlength="4"
+                                    type="text">
+                                 <div *ngIf="landingForm.vehicleModelYear.errors">
+                                    <div class="v-msg"
+                                       *ngIf="landingForm.vehicleModelYear.errors.required && landingForm.vehicleModelYear.touched">
+                                       {{ 'Errors.EmptyInputField' | translate }}
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                          Policy Effective Date                          -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <div class="form-group input-group col-lg-6 col-md-5 col-sm-12 col-xs-12 ">
+                                 <input class="form-control date" formControlName="policyEffectiveDate"
+                                    placeholder="{{ 'QuotationRequestForms.InsuranceInfo.PolicyEffectiveDate' | translate }}"
+                                    [minDate]="minDate" [maxDate]="maxDate" name="dp" ngbDatepicker #d="ngbDatepicker"
+                                    (click)="d.open()" autocomplete="off"
+                                    [ngClass]="{ 'is-invalid': landingForm.policyEffectiveDate.errors && landingForm.policyEffectiveDate.touched}">
+                                 <div class="input-group-append ">
+                                    <span class=" calendar-icon" (click)="d.open()" type="button">
+                                       <img src = "../../../../assets/img/Icon-png/calendar.png">
+                                    </span>
+                                 </div>
+                                 <div *ngIf="landingForm.policyEffectiveDate.errors " class="invalid-feedback">
+                                    <div
+                                       *ngIf="landingForm.policyEffectiveDate.errors.required  && landingForm.policyEffectiveDate.touched">
+                                       {{ 'Errors.EmptyInputField' | translate }}
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                                 Captcha                                 -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <div class="from-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                                 <div class="flex-container">
+                                    <div class="form-item captcha" style="width: 100%; display: flex;">
+                                       <input formControlName="captcha" style="width: 60%; direction: rtl;"
+                                          [placeholder]="('App.InputCaptchaText' | translate)" class="form-control"
+                                          type="text">
+                                       <div class="mx-2"></div>
+                                       <canvas #captchacanvas width="200" height="28" ></canvas>
+                                       <button (click)="initCaptchaContent()" class="captcha-reset-btn bouncy"
+                                          type="button">
+                                          <fa-icon icon="sync-alt" class="icon"></fa-icon>
+                                       </button>
+                                    </div>
+                                 </div>
+                                 <div *ngIf="landingForm.captcha.errors && landingForm.captcha.touched">
+                                    <div *ngIf="landingForm.captcha.errors.required" class="v-msg">
+                                       {{ 'Errors.EmptyInputField' | translate }}
+                                    </div>
+                                 </div>
+                                 <div
+                                    *ngIf="!isCaptchaValid() && landingForm.captcha.touched && landingForm.captcha.dirty"
+                                    class="v-msg">
+                                    {{ 'Errors.InvalidCaptcha' | translate }}
+                                 </div>
+                              </div>
+                              <div class="from-group">
+                              </div>
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                 Terms and Condititions & Submit Button                  -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!-- ------------------------ Terms and Conditions ------------------------- -->
+                              <div class="form-item col-lg-12 col-md-7 col-sm-12 col-xs-12">
+                                 <label>
+                                    <input type="checkbox" class="option-input checkbox" (change)="isAgree=!isAgree" />
+                                    <span class="txt-justify" [ngbTooltip]="('Landing.CheckBoxText' | translate)"
+                                       placement="top" tooltipClass="tooltip">
+                                       {{ 'Landing.TermsConsentSub' | translate }}
+                                    </span>
+                                 </label>
+                              </div>
+                              <!-- ---------------------------- Submit Button ---------------------------- -->
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3 sumbit">
+                                 <button (click)="inquire()"
+                                    [disabled]="landingFormGroup.invalid || !isAgree   || !isCaptchaValid()"
+                                    class="form-control submit-btn-wrapper btn btn-prim-round" type="submit">
+                                    {{ 'QuotationRequestForms.InsuranceInfo.Continue' | translate }}
+                                     <fa-icon icon = "arrow-left" class="mx-2"></fa-icon> 
+                                    
+                                    <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"
+                                       aria-hidden="true"></span>
+                                 </button>
+                                 <br><br>
+                              </div> 
+                              
+
+
+                              <!-- ----------------------------------------------------------------------- -->
+                              <!--                          Error Messages Alert                           -->
+                              <!-- ----------------------------------------------------------------------- -->
+                              <div (click)="errorMessage = undefined" *ngIf="errorMessage && errorMessage.length > 0"
+                                 class="form-item error-msg bouncy">
+                                 <i class="ion-ios-alert"></i>
+                                 <span>{{ errorMessage }}</span>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Home Page Form-->
+      </div>
+   </div>
+</div>
+<div class="container">
+   <div class="row">
+   </div>
+</div>

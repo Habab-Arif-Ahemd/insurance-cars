@@ -1,0 +1,2315 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>QuotesPageComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/quotes/quotes-page/quotes-page.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-quotes-page</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./quotes-page.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./quotes-page.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#additionalProductBenefits">additionalProductBenefits</a>
+                            </li>
+                            <li>
+                                <a href="#appLang">appLang</a>
+                            </li>
+                            <li>
+                                <a href="#comparisonProducts">comparisonProducts</a>
+                            </li>
+                            <li>
+                                <a href="#comparisonProductsBenefits">comparisonProductsBenefits</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#expiryModal">expiryModal</a>
+                            </li>
+                            <li>
+                                <a href="#isComparisonBarOpen">isComparisonBarOpen</a>
+                            </li>
+                            <li>
+                                <a href="#isComparisonTableOpen">isComparisonTableOpen</a>
+                            </li>
+                            <li>
+                                <a href="#isLoadingQuotes">isLoadingQuotes</a>
+                            </li>
+                            <li>
+                                <a href="#isOnMidScreen">isOnMidScreen</a>
+                            </li>
+                            <li>
+                                <a href="#isQuotesExpiryModalDisplayed">isQuotesExpiryModalDisplayed</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clearComparisonList">clearComparisonList</a>
+                            </li>
+                            <li>
+                                <a href="#closeComparisonTable">closeComparisonTable</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToLanding">navigateToLanding</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#orderQuoteProduct">orderQuoteProduct</a>
+                            </li>
+                            <li>
+                                <a href="#reloadQuotations">reloadQuotations</a>
+                            </li>
+                            <li>
+                                <a href="#removeComparisonProduct">removeComparisonProduct</a>
+                            </li>
+                            <li>
+                                <a href="#showComparisonTable">showComparisonTable</a>
+                            </li>
+                            <li>
+                                <a href="#toggleBenefitCheck">toggleBenefitCheck</a>
+                            </li>
+                            <li>
+                                <a href="#toggleComparisonTable">toggleComparisonTable</a>
+                            </li>
+                            <li>
+                                <a href="#toggleProductBenefit">toggleProductBenefit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#watchComparisonQuotes">watchComparisonQuotes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#watchQuotesExpiry">watchQuotesExpiry</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:resize">window:resize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(insuranceStepServiceApi: <a href="../injectables/InsuranceStepsApiService.html">InsuranceStepsApiService</a>, comparisonQuoteService: <a href="../injectables/ComparisonQuoteService.html">ComparisonQuoteService</a>, insuranceStepService: <a href="../injectables/InsuranceStepsService.html">InsuranceStepsService</a>, quoteService: <a href="../injectables/QuoteService.html">QuoteService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, appService: <a href="../injectables/AppService.html">AppService</a>, modalService: NgbModal, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>insuranceStepServiceApi</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsApiService.html" target="_self" >InsuranceStepsApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>comparisonQuoteService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ComparisonQuoteService.html" target="_self" >ComparisonQuoteService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>insuranceStepService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsService.html" target="_self" >InsuranceStepsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>quoteService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QuoteService.html" target="_self" >QuoteService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppService.html" target="_self" >AppService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:resize"></a>
+                    <span class="name">
+                        <b>
+                            window:resize
+                        </b>
+                        <a href="#window:resize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:resize(event?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><hr>
+<p>LISTENERS</p>
+<hr>
+</div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearComparisonList"></a>
+                    <span class="name">
+                        <b>
+                            clearComparisonList
+                        </b>
+                        <a href="#clearComparisonList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearComparisonList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeComparisonTable"></a>
+                    <span class="name">
+                        <b>
+                            closeComparisonTable
+                        </b>
+                        <a href="#closeComparisonTable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeComparisonTable()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToLanding"></a>
+                    <span class="name">
+                        <b>
+                            navigateToLanding
+                        </b>
+                        <a href="#navigateToLanding"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToLanding()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderQuoteProduct"></a>
+                    <span class="name">
+                        <b>
+                            orderQuoteProduct
+                        </b>
+                        <a href="#orderQuoteProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>orderQuoteProduct(product: <a href="../interfaces/Product.html">Product</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><hr>
+<p>SUBMIT</p>
+<hr>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>product</td>
+                                    <td>
+                                                <code><a href="../interfaces/Product.html" target="_self" >Product</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reloadQuotations"></a>
+                    <span class="name">
+                        <b>
+                            reloadQuotations
+                        </b>
+                        <a href="#reloadQuotations"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reloadQuotations()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeComparisonProduct"></a>
+                    <span class="name">
+                        <b>
+                            removeComparisonProduct
+                        </b>
+                        <a href="#removeComparisonProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeComparisonProduct(product: <a href="../interfaces/Product.html">Product</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><hr>
+<p>USER INTERFACE</p>
+<hr>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>product</td>
+                                    <td>
+                                                <code><a href="../interfaces/Product.html" target="_self" >Product</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showComparisonTable"></a>
+                    <span class="name">
+                        <b>
+                            showComparisonTable
+                        </b>
+                        <a href="#showComparisonTable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showComparisonTable(comparisonPopover)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>comparisonPopover</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleBenefitCheck"></a>
+                    <span class="name">
+                        <b>
+                            toggleBenefitCheck
+                        </b>
+                        <a href="#toggleBenefitCheck"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleBenefitCheck(product: <a href="../interfaces/Product.html">Product</a>, benefit: <a href="../interfaces/Benefit.html">Benefit</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>product</td>
+                                    <td>
+                                                <code><a href="../interfaces/Product.html" target="_self" >Product</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>benefit</td>
+                                    <td>
+                                                <code><a href="../interfaces/Benefit.html" target="_self" >Benefit</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleComparisonTable"></a>
+                    <span class="name">
+                        <b>
+                            toggleComparisonTable
+                        </b>
+                        <a href="#toggleComparisonTable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleComparisonTable()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleProductBenefit"></a>
+                    <span class="name">
+                        <b>
+                            toggleProductBenefit
+                        </b>
+                        <a href="#toggleProductBenefit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleProductBenefit(product: <a href="../interfaces/Product.html">Product</a>, benefit: <a href="../interfaces/Benefit.html">Benefit</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>product</td>
+                                    <td>
+                                                <code><a href="../interfaces/Product.html" target="_self" >Product</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>benefit</td>
+                                    <td>
+                                                <code><a href="../interfaces/Benefit.html" target="_self" >Benefit</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchComparisonQuotes"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            watchComparisonQuotes
+                        </b>
+                        <a href="#watchComparisonQuotes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>watchComparisonQuotes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchQuotesExpiry"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            watchQuotesExpiry
+                        </b>
+                        <a href="#watchQuotesExpiry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>watchQuotesExpiry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="additionalProductBenefits"></a>
+                        <span class="name">
+                            <b>
+                            additionalProductBenefits</b>
+                            <a href="#additionalProductBenefits"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Benefit.html" target="_self" >Benefit[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="appLang"></a>
+                        <span class="name">
+                            <b>
+                            appLang</b>
+                            <a href="#appLang"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="comparisonProducts"></a>
+                        <span class="name">
+                            <b>
+                            comparisonProducts</b>
+                            <a href="#comparisonProducts"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Product.html" target="_self" >Product[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="comparisonProductsBenefits"></a>
+                        <span class="name">
+                            <b>
+                            comparisonProductsBenefits</b>
+                            <a href="#comparisonProductsBenefits"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="expiryModal"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            expiryModal</b>
+                            <a href="#expiryModal"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;expiryModal&#x27;, {static: true})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isComparisonBarOpen"></a>
+                        <span class="name">
+                            <b>
+                            isComparisonBarOpen</b>
+                            <a href="#isComparisonBarOpen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isComparisonTableOpen"></a>
+                        <span class="name">
+                            <b>
+                            isComparisonTableOpen</b>
+                            <a href="#isComparisonTableOpen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoadingQuotes"></a>
+                        <span class="name">
+                            <b>
+                            isLoadingQuotes</b>
+                            <a href="#isLoadingQuotes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isOnMidScreen"></a>
+                        <span class="name">
+                            <b>
+                            isOnMidScreen</b>
+                            <a href="#isOnMidScreen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isQuotesExpiryModalDisplayed"></a>
+                        <span class="name">
+                            <b>
+                            isQuotesExpiryModalDisplayed</b>
+                            <a href="#isQuotesExpiryModalDisplayed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/quotes/quotes-page/quotes-page.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { InsuranceStepsApiService } from &#x27;./../../../services/insurance-steps/insurance-steps-api.service&#x27;;
+import { Benefit } from &#x27;../../../models/quote/Benefit&#x27;;
+import { Product } from &#x27;../../../models/quote/Product&#x27;;
+import { Component, OnInit, HostListener, ViewChild, OnDestroy } from &#x27;@angular/core&#x27;;
+import { ComparisonQuoteService } from &#x27;src/app/services/quote/comparison-quote.service&#x27;;
+import { AppService } from &#x27;src/app/services/app.service&#x27;;
+import { QuoteService } from &#x27;src/app/services/quote/quote.service&#x27;;
+import { AuthService } from &#x27;src/app/services/auth/auth.service&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { AppRoutes } from &#x27;src/app/models/app/AppRoutes&#x27;;
+import { PreviewQuoteResponse } from &#x27;src/app/payload/responses/quotes/PreviewQuoteResponse&#x27;;
+import { LocallyStoredItemsKeys } from &#x27;src/app/models/app/LocallyStoredItemsKeys&#x27;;
+import { InsuranceStepsService } from &#x27;src/app/services/insurance-steps/insurance-steps.service&#x27;;
+import QuoteUtils from &#x27;src/app/helpers/utils/QuoteUtils&#x27;;
+import { NgbModal } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+
+
+@Component({
+   selector: &#x27;app-quotes-page&#x27;,
+   templateUrl: &#x27;./quotes-page.component.html&#x27;,
+   styleUrls: [&#x27;./quotes-page.component.css&#x27;]
+})
+
+
+export class QuotesPageComponent implements OnInit, OnDestroy {
+
+   @ViewChild(&#x27;expiryModal&#x27;, { static: true }) private expiryModal;
+
+   /* DATA */
+   comparisonProductsBenefits &#x3D; [];
+   comparisonProducts: Product[] &#x3D; [];
+   additionalProductBenefits: Benefit[] &#x3D; [];
+
+   /* UI */
+   appLang;
+   isOnMidScreen;
+   isLoadingQuotes;
+   isComparisonBarOpen &#x3D; false;
+   isComparisonTableOpen &#x3D; false;
+   isQuotesExpiryModalDisplayed &#x3D; false;
+
+
+   constructor(
+      private insuranceStepServiceApi: InsuranceStepsApiService,
+      private comparisonQuoteService: ComparisonQuoteService, 
+      private insuranceStepService: InsuranceStepsService, 
+      private quoteService: QuoteService, 
+      private authService: AuthService,
+      private appService: AppService,
+      private modalService: NgbModal,
+      private router: Router,
+   ) { }
+
+
+   ngOnInit() {
+      this.getScreenSize();
+      this.watchQuotesExpiry();
+      this.watchComparisonQuotes();
+      this.appService.getAppLang().subscribe(lang &#x3D;&gt; this.appLang &#x3D; lang);
+   }
+
+   ngOnDestroy() {
+      this.clearComparisonList();
+   }
+
+
+
+   /************************************************************
+   *   LISTENERS
+   ************************************************************/
+
+   // Listen for window size changes
+   @HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])
+   getScreenSize(event?): void {
+      // If browser window is resized below mid screen size width
+      window.innerWidth &lt;&#x3D; 858 ? this.isOnMidScreen &#x3D; true : this.isOnMidScreen &#x3D; false;
+   }
+
+
+   private watchComparisonQuotes(): void {
+
+      this.comparisonQuoteService.getComparisonProducts().subscribe(product &#x3D;&gt; {
+         this.comparisonProducts &#x3D; product;
+         if (this.comparisonProducts.length &gt; 0) {
+            this.isComparisonBarOpen &#x3D; true;
+         } else {
+            this.isComparisonBarOpen &#x3D; false;
+         }
+      });
+
+      this.comparisonQuoteService.getComparisonProductsBenefits().subscribe(() &#x3D;&gt; {
+         this.comparisonProductsBenefits &#x3D; this.comparisonQuoteService.getUniqueProductsBenefitsList();
+      });
+
+   }
+
+
+   private watchQuotesExpiry(): void {
+      this.quoteService.getExpiredQuotesState().subscribe(expiryState &#x3D;&gt; {
+         if (expiryState.hasAllQuotesExpired) {
+            this.modalService.open(this.expiryModal, { centered: true });
+         }
+      });
+   }
+
+
+
+   /************************************************************
+   *   USER INTERFACE
+   ************************************************************/
+
+   removeComparisonProduct(product: Product): void {
+      product.isUnderComparison &#x3D; false;
+      this.comparisonQuoteService.removeComparisonProduct(product);
+   }
+
+
+   showComparisonTable(comparisonPopover): void {
+      // If there are less comparison quotes than the allowed minimum number on the list
+      if (this.comparisonQuoteService.getComparisonProducts().value.length &lt; ComparisonQuoteService.MIN_COMPARISON_PRODUCTS) {
+         // Open the alerting popover
+         if (comparisonPopover.isOpen()) { comparisonPopover.close(); } else { comparisonPopover.open(); }
+      } else {
+         this.isComparisonBarOpen &#x3D; false;
+         this.isComparisonTableOpen &#x3D; true;
+      }
+   }
+
+
+   closeComparisonTable(): void {
+      this.isComparisonTableOpen &#x3D; false;
+      this.isComparisonBarOpen &#x3D; true;
+   }
+
+
+   toggleComparisonTable(): void {
+      this.isComparisonTableOpen &#x3D; !this.isComparisonTableOpen;
+   }
+
+
+   clearComparisonList(): void {
+      this.comparisonQuoteService.clearComparisonProducts();
+   }
+
+
+   toggleProductBenefit(product: Product, benefit: Benefit): void {
+
+      if (!benefit.isChecked) {
+         product.selectedDeductible.totalPremium +&#x3D; benefit.benefitAmount;
+      } else {
+         product.selectedDeductible.totalPremium -&#x3D; benefit.benefitAmount;
+      }
+
+      var index &#x3D; this.additionalProductBenefits.indexOf(benefit);
+
+      if (index &gt;&#x3D; 0) {
+         this.additionalProductBenefits.splice(index, 1);
+      } else {
+         this.additionalProductBenefits.push(benefit);
+      }
+
+      this.toggleBenefitCheck(product, benefit);
+
+   }
+
+
+   toggleBenefitCheck(product: Product, benefit: Benefit): void {
+      const productBenefits &#x3D; product.benefits;
+      const benefitIdx &#x3D; productBenefits.indexOf(benefit);
+      productBenefits[benefitIdx].isChecked &#x3D; !productBenefits[benefitIdx].isChecked;
+   }
+
+
+   navigateToLanding() {
+      // Close modal
+      this.modalService.dismissAll();
+      // Navigate to landing page
+      this.router.navigate([AppRoutes.landing]);
+   }
+
+
+
+   /************************************************************
+   *   SUBMIT
+   ************************************************************/
+
+   orderQuoteProduct(product: Product): void {
+
+      // Get the list of all quotes
+      const quotes &#x3D; this.quoteService.getQuotes().value;
+
+      // Find the product&#x27;s quote according to its insurance carrier from the quotes list
+      const productQuote &#x3D; quotes.filter(q &#x3D;&gt; q.insuranceCompany &#x3D;&#x3D;&#x3D; product.insuranceCarrier)[0];
+
+      // Construct a quote which has only the selected product
+      const quote &#x3D; Object.assign({}, productQuote);
+      quote.products &#x3D; [product];
+
+      // Display loader for selected product from table
+      product.isSelected &#x3D; true;
+
+      /* Extract free benefit */
+
+      // Get benefits which are free
+      const freeBenefits &#x3D; product.benefits.filter(
+         benefit &#x3D;&gt; benefit.benefitTypeId &#x3D;&#x3D;&#x3D; 3
+      );
+
+      this.additionalProductBenefits.forEach(beneift &#x3D;&gt; delete beneift.isChecked);
+      this.additionalProductBenefits.push(freeBenefits[0]);
+      quote.benefits &#x3D; this.additionalProductBenefits;
+
+      // Check if user is logged in
+      if (this.authService.getIsLoggedIn().value) {
+
+         // Send the quote select (preview) request
+         this.quoteService.setSelectedQuote(QuoteUtils.constructQuotePreviewReq(quote)).subscribe(
+            (res: PreviewQuoteResponse) &#x3D;&gt; {
+
+               // Hide loader for product
+               product.isSelected &#x3D; false;
+
+               // Store quote preview response
+               localStorage.setItem(LocallyStoredItemsKeys.PreviewQuoteResponse, JSON.stringify(res));
+
+               // Delete the stored constructed quote preview request
+               localStorage.removeItem(LocallyStoredItemsKeys.PreviewQuoteRequest);
+
+               // Increment step number
+               this.insuranceStepService.setCurrentStepNum(7);
+
+               // Close the modal
+               this.authService.setIsAuthModalShown(false);
+
+               // Route to the checkout page
+               this.router.navigate([AppRoutes.checkout]);
+
+            },
+            err &#x3D;&gt; {
+               // Hide loader for product
+               product.isSelected &#x3D; false;
+               this.router.navigate([AppRoutes.error]);
+            }
+         );
+
+      } else {
+         // Stop the comparison
+         this.isComparisonBarOpen &#x3D; false;
+         this.isComparisonTableOpen &#x3D; false;
+         this.comparisonQuoteService.clearComparisonProducts();
+
+         // Hide loader for product
+         product.isSelected &#x3D; false;
+
+         // Show the login modal
+         this.authService.setIsAuthModalShown(true);
+      }
+   }
+
+
+   reloadQuotations(): void {
+      //  Fetch the quotes list
+      this.insuranceStepServiceApi.getQuotationList().subscribe(
+         (res: any) &#x3D;&gt; {
+            this.isLoadingQuotes &#x3D; false;
+            if (!res.isSuccess) {
+               this.isLoadingQuotes &#x3D; false;
+            }
+         },
+         (err) &#x3D;&gt; {
+            this.isLoadingQuotes &#x3D; false;
+         }
+      );
+   }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;quotes-page-container&quot;&gt;
+
+   &lt;!-- QUOTES EXPIRY MODAL --&gt;
+   &lt;ng-template #expiryModal let-modal&gt;
+      &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+         &lt;h4 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-basic-title&quot;&gt;{{ &#x27;Quote.ExpiryModal.OffersExpiry&#x27; | translate }}&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+         {{ &#x27;Quote.ExpiryModal.GetNewOffersQuestion&#x27; | translate }}
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+         &lt;button (click)&#x3D;&quot;reloadQuotations()&quot; class&#x3D;&quot;primary-btn&quot;&gt;
+            &lt;span&gt;{{ &#x27;Quote.ExpiryModal.GetNewOffers&#x27; | translate }}&lt;/span&gt;
+            &lt;span *ngIf&#x3D;&quot;isLoadingQuotes&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+         &lt;/button&gt;
+         &lt;button (click)&#x3D;&quot;navigateToLanding()&quot; class&#x3D;&quot;primary-btn danger&quot;&gt;
+            &lt;span&gt;{{ &#x27;App.CancelText&#x27; | translate }}&lt;/span&gt;
+         &lt;/button&gt;
+      &lt;/div&gt;
+   &lt;/ng-template&gt;
+
+   &lt;!-- QUOTES ORDER DETAILS --&gt;
+   &lt;app-quotes-order-data&gt;&lt;/app-quotes-order-data&gt;
+
+   &lt;!-- QUOTES FILTERS --&gt;
+   &lt;app-quotes-filters&gt;&lt;/app-quotes-filters&gt;
+
+   &lt;!-- QUOTES LIST --&gt;
+   &lt;app-quotes-list&gt;&lt;/app-quotes-list&gt;
+
+   &lt;!-- PRODUCTS COMPARISON BAR --&gt;
+   &lt;div *ngIf&#x3D;&quot;!isOnMidScreen&quot; class&#x3D;&quot;comparison-bar row&quot; [ngClass]&#x3D;&quot;isComparisonBarOpen ? &#x27;shown-comparison-bar&#x27; : &#x27;hidden-comparison-bar&#x27;&quot;&gt;
+
+      &lt;!-- Clear Button --&gt;
+      &lt;a (click)&#x3D;&quot;clearComparisonList()&quot; class&#x3D;&quot;comparison-clear-btn&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;X&lt;/a&gt;
+
+      &lt;!-- Compare Table Button --&gt;
+      &lt;div class&#x3D;&quot;comparison-btn-container col-3&quot;&gt;
+         &lt;h3&gt;{{ &#x27;Quote.QuoteComparison.ComparisonMenuTitle&#x27; | translate }}&lt;/h3&gt;
+         &lt;a (click)&#x3D;&quot;showComparisonTable(popoverEl)&quot; #popoverEl&#x3D;&quot;ngbPopover&quot; triggers&#x3D;&quot;manual&quot; [ngbPopover]&#x3D;&quot;popContent&quot; class&#x3D;&quot;quote-compare-btn&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+            &lt;i class&#x3D;&quot;fa fa-balance-scale&quot;&gt;&lt;/i&gt;
+            {{ &#x27;Quote.QuoteComparison.CompareButtonText&#x27; | translate }}
+         &lt;/a&gt;
+         &lt;ng-template #popContent&gt;
+            &lt;span class&#x3D;&quot;comparison-alert-popover&quot;&gt;{{ &#x27;Quote.QuoteComparison.MinComparisonAlertText&#x27; | translate }}&lt;/span&gt;
+         &lt;/ng-template&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Mini Quotes Products --&gt;
+      &lt;div class&#x3D;&quot;comparison-quotes-container col-9&quot;&gt;
+
+         &lt;div *ngFor&#x3D;&quot;let product of comparisonProducts&quot; class&#x3D;&quot;comparison-quote-box row&quot;&gt;
+
+            &lt;!-- Close Button --&gt;
+            &lt;span (click)&#x3D;&quot;removeComparisonProduct(product)&quot; id&#x3D;&quot;quote-removal-btn&quot; class&#x3D;&quot;bouncy&quot;&gt;X&lt;/span&gt;
+
+            &lt;!-- IC Logo --&gt;
+            &lt;div class&#x3D;&quot;col-6 quote-box-image-container&quot;&gt;
+               &lt;div class&#x3D;&quot;quote-box-image-wrapper&quot;&gt;
+                  &lt;img [src]&#x3D;&quot;product?.insuranceCarrier.logo || &#x27;https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg&#x27;&quot; [alt]&#x3D;&quot;product?.insuranceCarrier.name + &#x27; company logo&#x27;&quot;&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Policy Price --&gt;
+            &lt;div class&#x3D;&quot;col-6&quot; id&#x3D;&quot;quote-box-price-container&quot;&gt;
+               &lt;h5 id&#x3D;&quot;total-price-txt&quot;&gt;{{ &#x27;App.TotalPriceText&#x27; | translate }}&lt;/h5&gt;
+               &lt;h5&gt;
+                  {{ product?.selectedDeductible.totalPremium | number:&#x27;1.2-2&#x27; }} &lt;small&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+               &lt;/h5&gt;
+            &lt;/div&gt;
+
+         &lt;/div&gt;
+
+      &lt;/div&gt;
+
+   &lt;/div&gt;
+
+   &lt;!-- PRODUCTS COMPARISON TABLE --&gt;
+   &lt;div class&#x3D;&quot;comparison-table-container&quot; [ngClass]&#x3D;&quot;isComparisonTableOpen ? &#x27;shown-comparison-table&#x27; : &#x27;hidden-comparison-table&#x27;&quot;&gt;
+
+      &lt;!-- Back button --&gt;
+      &lt;button (click)&#x3D;&quot;closeComparisonTable()&quot; class&#x3D;&quot;comparison-back-btn primary-btn white-ghost&quot;&gt;
+         &lt;i class&#x3D;&quot;ion-md-undo&quot;&gt;&lt;/i&gt;
+         &lt;span&gt;{{ &#x27;App.BackText&#x27; | translate }}&lt;/span&gt;
+      &lt;/button&gt;
+
+      &lt;!-- Table --&gt;
+      &lt;table class&#x3D;&quot;comparison-table table&quot;&gt;
+
+         &lt;!-- Products Headers (company + price + buy) --&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th id&#x3D;&quot;transparent-header&quot;&gt;&lt;/th&gt;
+               &lt;th *ngFor&#x3D;&quot;let product of comparisonProducts&quot; id&#x3D;&quot;company-header&quot;&gt;
+                  &lt;div class&#x3D;&quot;company-header-container&quot;&gt;
+                     &lt;img [src]&#x3D;&quot;product.insuranceCarrier.logo || &#x27;https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg&#x27;&quot; alt&#x3D;&quot;IC Logo&quot;&gt;
+                     &lt;div&gt;
+                        &lt;span class&#x3D;&quot;comparison-price secondary-lime&quot;&gt;{{ product.selectedDeductible.totalPremium | number:&#x27;1.2-2&#x27; }}&lt;/span&gt;
+                        &lt;small class&#x3D;&quot;currency-txt&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                     &lt;/div&gt;
+                     &lt;button (click)&#x3D;&quot;orderQuoteProduct(product)&quot; class&#x3D;&quot;primary-btn&quot; [disabled]&#x3D;&quot;isLoadingQuotes&quot;&gt;
+                        &lt;span style&#x3D;&quot;margin: auto;&quot; class&#x3D;&quot;bouncy&quot;&gt;
+                           &lt;span *ngIf&#x3D;&quot;product.isSelected&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot; style&#x3D;&quot;margin: 5px;&quot;&gt;&lt;/span&gt;
+                           {{ &#x27;App.BuyText&#x27; | translate }}
+                        &lt;/span&gt;
+                     &lt;/button&gt;
+                  &lt;/div&gt;
+               &lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+
+         &lt;!-- Products benefits --&gt;
+         &lt;tbody&gt;
+            &lt;tr *ngFor&#x3D;&quot;let benefit of comparisonProductsBenefits; let i &#x3D; index&quot;&gt;
+               &lt;th class&#x3D;&quot;comparison-benefit-title&quot;&gt;
+                  {{ appLang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? benefit.nameAr : benefit.name }}
+               &lt;/th&gt;
+               &lt;td *ngFor&#x3D;&quot;let product of comparisonProducts;&quot;&gt;
+                  &lt;div *ngFor&#x3D;&quot;let productBenefit of product.benefits; let j &#x3D; index&quot;&gt;
+                     &lt;div *ngIf&#x3D;&quot;productBenefit.name &#x3D;&#x3D;&#x3D; benefit.name&quot;&gt;
+                        &lt;div *ngIf&#x3D;&quot;productBenefit.isFree&quot;&gt;
+                           &lt;i class&#x3D;&quot;comparison-check fa fa-check secondary-lime&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                        &lt;div *ngIf&#x3D;&quot;!productBenefit.isFree&quot;&gt;
+                           &lt;div class&#x3D;&quot;quote-detail-item-title&quot;&gt;
+                              &lt;input 
+                                 [checked]&#x3D;&quot;productBenefit.benefitTypeId &#x3D;&#x3D; 2 || productBenefit.benefitTypeId &#x3D;&#x3D; 3 || productBenefit.isChecked&quot;
+                                 (change)&#x3D;&quot;toggleProductBenefit(product, productBenefit)&quot;
+                                 [disabled]&#x3D;&quot;productBenefit.benefitTypeId &#x3D;&#x3D; 2 || productBenefit.benefitTypeId &#x3D;&#x3D; 3&quot; 
+                                 class&#x3D;&quot;cbx&quot; type&#x3D;&quot;checkbox&quot;
+                                 [id]&#x3D;&quot;product.name + productBenefit.name + product.selectedDeductible.totalPremium + i + j&quot;
+                                 style&#x3D;&quot;display: none;&quot;&gt;
+                              &lt;label [for]&#x3D;&quot;product.name + productBenefit.name + product.selectedDeductible.totalPremium + i + j&quot; class&#x3D;&quot;check noselect&quot;&gt;&lt;svg width&#x3D;&quot;18px&quot; height&#x3D;&quot;18px&quot; viewBox&#x3D;&quot;0 0 18 18&quot;&gt;&lt;path d&#x3D;&quot;M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z&quot;&gt; &lt;/path&gt;&lt;polyline points&#x3D;&quot;1 9 7 14 15 4&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+                                 &lt;span *ngIf&#x3D;&quot;!(productBenefit.benefitTypeId &#x3D;&#x3D; 2)&quot; class&#x3D;&quot;secondary-lime&quot; style&#x3D;&quot;font-weight: bold;&quot;&gt;{{ productBenefit.benefitAmount | number:&#x27;1.2-2&#x27; }}&lt;/span&gt;
+                                 &lt;small *ngIf&#x3D;&quot;!(productBenefit.benefitTypeId &#x3D;&#x3D; 2)&quot; class&#x3D;&quot;currency-txt&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                              &lt;/label&gt;
+                           &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+
+      &lt;/table&gt;
+
+   &lt;/div&gt;
+
+   &lt;!-- PRODUCTS COMPARISON FLOATING BUTTON --&gt;
+   &lt;div (click)&#x3D;&quot;toggleComparisonTable()&quot; *ngIf&#x3D;&quot;isOnMidScreen &amp;&amp; comparisonProducts.length &gt; 0&quot; class&#x3D;&quot;floating-btn&quot;&gt;
+      &lt;span class&#x3D;&quot;comparison-counter&quot;&gt;
+         {{ isComparisonTableOpen ? &#x27;X&#x27; : comparisonProducts.length }}
+      &lt;/span&gt;
+   &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./quotes-page.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.quotes-page-container {
+   padding: 2em 5em;
+}
+
+.comparison-bar {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   margin: 0;
+   width: 100%;
+   display: flex;
+   background: rgba(0, 0, 0, 0.7);
+   padding: 1em;
+   padding-left: 3em;
+   box-shadow: 1px 1px 10px 2px #0098A3;
+   z-index: 1000;
+   transition: all 0.4s ease-in-out;
+}
+
+.shown-comparison-bar {
+   visibility: visible;
+   height: 170px;
+   bottom: 0;
+}
+
+.hidden-comparison-bar {
+   visibility: hidden;
+   height: 0px;
+   bottom: -10%;
+}
+
+.comparison-quotes-container {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.comparison-quote-box {
+   display: flex;
+   flex-direction: row-reverse;
+   margin: auto 1em;
+   width: 270px;
+   height: 125px;
+   background-color: #0098A3;
+   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   transition: all 0.4s ease-in-out;
+}
+
+.comparison-quote-box * {
+   margin: auto;
+}
+
+.quote-box-image-container {
+   display: flex;
+   height: 85%;
+   width: 100%;
+}
+
+.quote-box-image-wrapper {
+   margin: auto;
+   background-color: white;
+   border-radius: 20%;
+   height: 85%;
+   width: 100%;
+   display: flex;
+}
+
+.quote-box-image-wrapper img {
+   margin: auto;
+   width: 100%;
+   padding: 10px;
+   height: 100%;
+}
+
+.comparison-table-container {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.7);
+   padding: 6em 2em 0 2em;
+   z-index: 1001;
+   transition: all 0.4s ease-in-out;
+   overflow-y: scroll;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+
+.comparison-table-container::-webkit-scrollbar { 
+   display: none;
+}
+
+.shown-comparison-table {
+   visibility: visible;
+   height: 100vh;
+   bottom: 0;
+}
+
+.hidden-comparison-table {
+   visibility: hidden;
+   height: 0px;
+   bottom: -10%;
+
+}
+
+.comparison-table {
+   background-color:rgba(0, 0, 0, 0.001);
+   color: black;
+   border: 0;
+   overflow: scroll;
+}
+
+.comparison-table td {
+   text-align: center;
+}
+
+.comparison-table thead #transparent-header {
+   border-color: rgba(0, 0, 0, 0.001);
+}
+
+.comparison-table thead #company-header {
+   border: 1px solid rgb(200, 200, 200);
+   border-left: none; border-top: none;
+   background-color: rgb(245, 245, 245);
+}
+
+.comparison-table tbody td {
+   border: 1px solid rgb(210, 210, 210);
+}
+
+.comparison-table tbody td:nth-child(2) {
+   box-shadow: 8px 0 2px 0 rgba(0, 0, 0, 0.1);
+   border: 1px solid rgb(210, 210, 210);
+}
+
+.company-header-container {
+   display: flex;
+   flex-direction: column;
+   border: 0;
+}
+
+.company-header-container * {
+   margin: 6px auto;
+}
+
+.comparison-table tbody {
+   background-color:white;
+   overflow: hidden;
+}
+
+.company-header-container img {
+   min-width: 50px;
+   max-width: 100px;
+   height: 70%;
+   max-height: 150px;
+}
+
+.comparison-buy-btn {
+   width: 120px;
+   text-align: center;
+   border-radius: 5px;
+   background-color: #00A2AE;
+   color: white;
+}
+
+.comparison-clear-btn {
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 3px 7px 7px 12px;
+   color: #fff;
+   background: #00a2ae;
+   border-top: 0;
+   border-right: 0;
+   border-bottom-left-radius: 20px;
+   transition: all .2s ease;
+   z-index: 100;
+}
+
+.comparison-clear-btn:hover {
+   background: #008a94;
+}
+
+.comparison-price {
+   font-size: 22px;
+   font-weight: bold;
+}
+
+.currency-txt {
+   margin: 0 5px !important;
+}
+
+.comparison-benefit-title {
+   width: 40%;
+   font-weight: 200;
+}
+
+.comparison-check {
+   font-size: 16px;
+}
+
+#quote-box-price-container {
+   background-color: rgb(250, 250, 250);
+   border: 1px solid rgb(225, 225, 225);
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+#quote-box-price-container * {
+   margin: auto;
+   color: #00A2AE;
+   text-align: center;
+}
+
+#quote-box-price-container #total-price-txt {
+   color: rgb(82, 82, 82);
+}
+
+.comparison-quote-box #company-title {
+   text-align: center;
+   font-size: 14px;
+   color: white;
+}
+
+.comparison-quote-box #quote-removal-btn {
+   position: absolute;
+   margin-top: -8px;
+   margin-left: -8px;
+   padding: 1px 7px;
+   border: 1px solid none;
+   border-radius: 50%;
+   color: rgb(30, 30, 30);
+   background-color: #fff;
+   border: 1px solid #fff;
+   cursor: pointer;
+   transition: all .2s ease;
+   z-index: 100;
+}
+
+.comparison-quote-box #quote-removal-btn:hover {
+   background-color: #2ea5ad;
+   padding: 2px 8px;
+   box-shadow: 0 0 5px 2px #00000044;
+   color: #fff;
+}
+
+.comparison-btn-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.comparison-btn-container * {
+   margin: auto;
+}
+
+.comparison-btn-container h3 {
+   color: white;
+}
+
+.quote-compare-btn {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   padding: 15px 5px;
+   width: 150px;
+   background-color: #00A2AE;
+   text-align: center;
+   border-radius: 3px;
+}
+
+.quote-compare-btn i {
+   margin-left: 5px;
+}
+
+.quote-compare-btn:hover {
+   background-color: rgb(2, 151, 161);
+}
+
+.quote-compare-btn:active {
+   background-color: rgb(0, 138, 148);
+}
+
+.floating-btn {
+   position: fixed;
+   bottom: 3%;
+   right: 3%;
+   display: flex;
+   background-color: #00A2AE;
+   color: white;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   z-index: 1010;
+   cursor: pointer;
+}
+
+.floating-btn:hover {
+   background-color: rgb(23, 173, 184);
+}
+
+.comparison-counter {
+   margin: auto;
+   font-weight: 500;
+   font-size: 18px;
+}
+
+.comparison-back-btn {
+   position: absolute;
+   top: 25%;
+   right: 18%;
+}
+
+.tbl-quote-price {
+   font-size: 16px;
+}
+
+@media (max-width: 858px) {
+
+   .quotes-page-container {
+      padding: 2em;
+   }
+
+   .comparison-back-btn {
+      display: none;
+   }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="quotes-page-container">   <!-- QUOTES EXPIRY MODAL -->   <ng-template #expiryModal let-modal>      <div class="modal-header">         <h4 class="modal-title" id="modal-basic-title">{{ \'Quote.ExpiryModal.OffersExpiry\' | translate }}</h4>      </div>      <div class="modal-body">         {{ \'Quote.ExpiryModal.GetNewOffersQuestion\' | translate }}      </div>      <div class="modal-footer">         <button (click)="reloadQuotations()" class="primary-btn">            <span>{{ \'Quote.ExpiryModal.GetNewOffers\' | translate }}</span>            <span *ngIf="isLoadingQuotes" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>         </button>         <button (click)="navigateToLanding()" class="primary-btn danger">            <span>{{ \'App.CancelText\' | translate }}</span>         </button>      </div>   </ng-template>   <!-- QUOTES ORDER DETAILS -->   <app-quotes-order-data></app-quotes-order-data>   <!-- QUOTES FILTERS -->   <app-quotes-filters></app-quotes-filters>   <!-- QUOTES LIST -->   <app-quotes-list></app-quotes-list>   <!-- PRODUCTS COMPARISON BAR -->   <div *ngIf="!isOnMidScreen" class="comparison-bar row" [ngClass]="isComparisonBarOpen ? \'shown-comparison-bar\' : \'hidden-comparison-bar\'">      <!-- Clear Button -->      <a (click)="clearComparisonList()" class="comparison-clear-btn" href="javascript:void(0)">X</a>      <!-- Compare Table Button -->      <div class="comparison-btn-container col-3">         <h3>{{ \'Quote.QuoteComparison.ComparisonMenuTitle\' | translate }}</h3>         <a (click)="showComparisonTable(popoverEl)" #popoverEl="ngbPopover" triggers="manual" [ngbPopover]="popContent" class="quote-compare-btn" href="javascript:void(0)">            <i class="fa fa-balance-scale"></i>            {{ \'Quote.QuoteComparison.CompareButtonText\' | translate }}         </a>         <ng-template #popContent>            <span class="comparison-alert-popover">{{ \'Quote.QuoteComparison.MinComparisonAlertText\' | translate }}</span>         </ng-template>      </div>      <!-- Mini Quotes Products -->      <div class="comparison-quotes-container col-9">         <div *ngFor="let product of comparisonProducts" class="comparison-quote-box row">            <!-- Close Button -->            <span (click)="removeComparisonProduct(product)" id="quote-removal-btn" class="bouncy">X</span>            <!-- IC Logo -->            <div class="col-6 quote-box-image-container">               <div class="quote-box-image-wrapper">                  <img [src]="product?.insuranceCarrier.logo || \'https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg\'" [alt]="product?.insuranceCarrier.name + \' company logo\'">               </div>            </div>            <!-- Policy Price -->            <div class="col-6" id="quote-box-price-container">               <h5 id="total-price-txt">{{ \'App.TotalPriceText\' | translate }}</h5>               <h5>                  {{ product?.selectedDeductible.totalPremium | number:\'1.2-2\' }} <small>{{ \'App.Currency\' | translate }}</small>               </h5>            </div>         </div>      </div>   </div>   <!-- PRODUCTS COMPARISON TABLE -->   <div class="comparison-table-container" [ngClass]="isComparisonTableOpen ? \'shown-comparison-table\' : \'hidden-comparison-table\'">      <!-- Back button -->      <button (click)="closeComparisonTable()" class="comparison-back-btn primary-btn white-ghost">         <i class="ion-md-undo"></i>         <span>{{ \'App.BackText\' | translate }}</span>      </button>      <!-- Table -->      <table class="comparison-table table">         <!-- Products Headers (company + price + buy) -->         <thead>            <tr>               <th id="transparent-header"></th>               <th *ngFor="let product of comparisonProducts" id="company-header">                  <div class="company-header-container">                     <img [src]="product.insuranceCarrier.logo || \'https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg\'" alt="IC Logo">                     <div>                        <span class="comparison-price secondary-lime">{{ product.selectedDeductible.totalPremium | number:\'1.2-2\' }}</span>                        <small class="currency-txt">{{ \'App.Currency\' | translate }}</small>                     </div>                     <button (click)="orderQuoteProduct(product)" class="primary-btn" [disabled]="isLoadingQuotes">                        <span style="margin: auto;" class="bouncy">                           <span *ngIf="product.isSelected" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="margin: 5px;"></span>                           {{ \'App.BuyText\' | translate }}                        </span>                     </button>                  </div>               </th>            </tr>         </thead>         <!-- Products benefits -->         <tbody>            <tr *ngFor="let benefit of comparisonProductsBenefits; let i = index">               <th class="comparison-benefit-title">                  {{ appLang === \'ar\' ? benefit.nameAr : benefit.name }}               </th>               <td *ngFor="let product of comparisonProducts;">                  <div *ngFor="let productBenefit of product.benefits; let j = index">                     <div *ngIf="productBenefit.name === benefit.name">                        <div *ngIf="productBenefit.isFree">                           <i class="comparison-check fa fa-check secondary-lime"></i>                        </div>                        <div *ngIf="!productBenefit.isFree">                           <div class="quote-detail-item-title">                              <input                                  [checked]="productBenefit.benefitTypeId == 2 || productBenefit.benefitTypeId == 3 || productBenefit.isChecked"                                 (change)="toggleProductBenefit(product, productBenefit)"                                 [disabled]="productBenefit.benefitTypeId == 2 || productBenefit.benefitTypeId == 3"                                  class="cbx" type="checkbox"                                 [id]="product.name + productBenefit.name + product.selectedDeductible.totalPremium + i + j"                                 style="display: none;">                              <label [for]="product.name + productBenefit.name + product.selectedDeductible.totalPremium + i + j" class="check noselect"><svg width="18px" height="18px" viewBox="0 0 18 18"><path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"> </path><polyline points="1 9 7 14 15 4"></polyline></svg>                                 <span *ngIf="!(productBenefit.benefitTypeId == 2)" class="secondary-lime" style="font-weight: bold;">{{ productBenefit.benefitAmount | number:\'1.2-2\' }}</span>                                 <small *ngIf="!(productBenefit.benefitTypeId == 2)" class="currency-txt">{{ \'App.Currency\' | translate }}</small>                              </label>                           </div>                        </div>                     </div>                  </div>               </td>            </tr>         </tbody>      </table>   </div>   <!-- PRODUCTS COMPARISON FLOATING BUTTON -->   <div (click)="toggleComparisonTable()" *ngIf="isOnMidScreen && comparisonProducts.length > 0" class="floating-btn">      <span class="comparison-counter">         {{ isComparisonTableOpen ? \'X\' : comparisonProducts.length }}      </span>   </div></div></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'QuotesPageComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'QuotesPageComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

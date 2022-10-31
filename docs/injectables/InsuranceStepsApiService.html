@@ -1,0 +1,698 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>InsuranceStepsApiService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/insurance-steps/insurance-steps-api.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#dataRoutes">dataRoutes</a>
+                            </li>
+                            <li>
+                                <a href="#masterTblApi">masterTblApi</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getQuotationList">getQuotationList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getRouteRequest">getRouteRequest</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getStepsData">getStepsData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getUserQuotePreliminaryData">getUserQuotePreliminaryData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, insuranceStepService: <a href="../injectables/InsuranceStepsService.html">InsuranceStepsService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, quoteService: <a href="../injectables/QuoteService.html">QuoteService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/services/insurance-steps/insurance-steps-api.service.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>insuranceStepService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsService.html" target="_self" >InsuranceStepsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>quoteService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QuoteService.html" target="_self" >QuoteService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getQuotationList"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getQuotationList
+                        </b>
+                        <a href="#getQuotationList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getQuotationList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/services/insurance-steps/insurance-steps-api.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRouteRequest"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getRouteRequest
+                        </b>
+                        <a href="#getRouteRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRouteRequest(route: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/services/insurance-steps/insurance-steps-api.service.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>route</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStepsData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            getStepsData
+                        </b>
+                        <a href="#getStepsData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getStepsData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/services/insurance-steps/insurance-steps-api.service.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Fetches the insurance order form data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserQuotePreliminaryData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getUserQuotePreliminaryData
+                        </b>
+                        <a href="#getUserQuotePreliminaryData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserQuotePreliminaryData(preliminaryDataReq: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/services/insurance-steps/insurance-steps-api.service.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Fetches the preliminary quote order and user insurance data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>preliminaryDataReq</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataRoutes"></a>
+                        <span class="name">
+                            <b>
+                            dataRoutes</b>
+                            <a href="#dataRoutes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+      ApiRoutes.MasterTable.VehicleRepairMethod,
+      ApiRoutes.MasterTable.Cities,
+      ApiRoutes.MasterTable.Countries,
+      ApiRoutes.MasterTable.VehicleUse,
+      ApiRoutes.MasterTable.TransmissionType,
+      ApiRoutes.MasterTable.ParkingLocation,
+      ApiRoutes.MasterTable.Mileage,
+      ApiRoutes.MasterTable.EducationLevel,
+      ApiRoutes.MasterTable.DrivingPercentage,
+      ApiRoutes.MasterTable.LicenseType,
+      ApiRoutes.MasterTable.SocialStatus,
+      ApiRoutes.MasterTable.Violation,
+      ApiRoutes.MasterTable.MedicalCondition,
+      ApiRoutes.MasterTable.VehicleSpecifications,
+      ApiRoutes.MasterTable.Relation
+   ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/services/insurance-steps/insurance-steps-api.service.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="masterTblApi"></a>
+                        <span class="name">
+                            <b>
+                            masterTblApi</b>
+                            <a href="#masterTblApi"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.apiUrl</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/services/insurance-steps/insurance-steps-api.service.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient, HttpParams } from &#x27;@angular/common/http&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { tap } from &#x27;rxjs/operators&#x27;;
+import { ApiRoutes } from &#x27;src/app/models/app/ApiRoutes&#x27;;
+import { AppRoutes } from &#x27;src/app/models/app/AppRoutes&#x27;;
+import { LocallyStoredItemsKeys } from &#x27;src/app/models/app/LocallyStoredItemsKeys&#x27;;
+import { QuotesListResponse } from &#x27;src/app/payload/responses/quotes/QuotesListResponse&#x27;;
+import { environment } from &#x27;src/environments/environment&#x27;;
+import { QuoteService } from &#x27;../quote/quote.service&#x27;;
+import { InsuranceStepsService } from &#x27;./insurance-steps.service&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+
+@Injectable({
+   providedIn: &#x27;root&#x27;
+})
+
+
+export class InsuranceStepsApiService {
+
+   masterTblApi &#x3D; environment.apiUrl;
+   dataRoutes &#x3D; [
+      ApiRoutes.MasterTable.VehicleRepairMethod,
+      ApiRoutes.MasterTable.Cities,
+      ApiRoutes.MasterTable.Countries,
+      ApiRoutes.MasterTable.VehicleUse,
+      ApiRoutes.MasterTable.TransmissionType,
+      ApiRoutes.MasterTable.ParkingLocation,
+      ApiRoutes.MasterTable.Mileage,
+      ApiRoutes.MasterTable.EducationLevel,
+      ApiRoutes.MasterTable.DrivingPercentage,
+      ApiRoutes.MasterTable.LicenseType,
+      ApiRoutes.MasterTable.SocialStatus,
+      ApiRoutes.MasterTable.Violation,
+      ApiRoutes.MasterTable.MedicalCondition,
+      ApiRoutes.MasterTable.VehicleSpecifications,
+      ApiRoutes.MasterTable.Relation
+   ];
+
+   constructor(
+      private http: HttpClient, private insuranceStepService: InsuranceStepsService,
+      private router: Router, private quoteService: QuoteService
+   ) { }
+
+
+   /**
+    * Fetches the insurance order form data
+    */
+   async getStepsData() {
+      // Send requests
+      for await (let route of this.dataRoutes) {
+         await this.getRouteRequest(route).toPromise()
+         .then(
+            res &#x3D;&gt; {
+               /* Convert master/Cities to  Cities */
+                route &#x3D; route.substring(7);
+               this.insuranceStepService.addInsuranceStepsObject(res, route);
+            }
+         )
+         .catch(
+            err &#x3D;&gt; console.log(err)
+         );
+      }
+   }
+
+
+   private getRouteRequest(route: any): Observable&lt;any&gt; {
+      return this.http.get(this.masterTblApi + route.valueOf());
+   }
+
+
+   /**
+    * Fetches the preliminary quote order and user insurance data
+    */
+   public getUserQuotePreliminaryData(preliminaryDataReq: any): Observable&lt;any&gt; {
+      // Construct the query parameters
+      const httpParams &#x3D; new HttpParams({ fromObject: preliminaryDataReq });
+
+      return this.http.get(environment.apiUrl + ApiRoutes.Quotation.InquireQuote, { params: httpParams });
+   }
+   
+   
+   public getQuotationList() {
+      // Get the constructed user request from local storage
+      const userQuotationRequest &#x3D; JSON.parse(localStorage.getItem(LocallyStoredItemsKeys.UserQuoteRequest));
+      // Send the quotes list request
+      return this.http.post(environment.apiUrl + ApiRoutes.Quotation.RequestQuote, userQuotationRequest).pipe(
+         tap((res: QuotesListResponse) &#x3D;&gt; {
+           if (res.isSuccess) {
+               // Save the response on local storage
+               localStorage.setItem(LocallyStoredItemsKeys.UserQuoteResponse, JSON.stringify(res));
+               // Route to the quotes list page
+               this.router.navigate([AppRoutes.quotes]);
+               // Store the retreived quotes on local storage
+               localStorage.setItem(LocallyStoredItemsKeys.Quotes, JSON.stringify(res.quotes));
+               this.quoteService.setQuotes(res.quotes);
+           }
+         })
+      );
+   }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'InsuranceStepsApiService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

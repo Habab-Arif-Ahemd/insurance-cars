@@ -1,0 +1,163 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Policy Holder Form                            -->
+<!-- ----------------------------------------------------------------------- -->
+<div *ngIf="isLoadingQuotes" class="m-0 p-0">
+   <app-loading></app-loading>
+</div>
+<div class="info-container">
+   <!--  form number 1  -->
+   <div *ngIf="quoteFromProfile ">
+      <div *ngIf="showValidation" class="alert alert-danger" role="alert" aria-label="Close">
+         <label> {{ 'Errors.PleaseInterthepolicyEffectiveDatee' | translate }} </label>
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+         </button>
+      </div>
+      <app-insurance-info></app-insurance-info>
+
+   </div>
+
+   <!-- End of form number 1 -->
+   <form [formGroup]="mainDriverFormGroup">
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 Inputs                                  -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="row mt-4">
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                         identityNumber                                  -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="col-sm-6 col-md-4 col-lg-4  " *ngIf="!quoteFromProfile">
+            <!--             <label> {{ 'Landing.NationalIDLabel' | translate }} </label>
+ -->
+            <div class="form-group">
+               <input formControlName="identityNumber" placeholder="{{ 'Landing.NationalIDLabel' | translate}}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10"
+                  autocomplete="on" name="identityNumber" class="form-control" type="text" readonly>
+            </div>
+         </div>
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                         birthDay                                        -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="col-sm-12 col-md-6 col-lg-4 ">
+
+            <!-- <label> {{ 'QuotationRequestForms.DriverInfo.Birth' | translate }} </label> -->
+            <app-gregorian-datepicker
+               [previousQuoteDriverBirthDate]="{driverTypeId: 2, birthDate: getPreviousBirthDate() }"
+               (onDatePicked)="setBirthDateValue($event)" *ngIf="showgregoianDate"></app-gregorian-datepicker>
+            <app-higri-datepicker [previousQuoteDriverBirthDate]="{driverTypeId: 1, birthDate: getPreviousBirthDate() }"
+               (onDatePicked)="setBirthDateValue($event)" *ngIf="showHijriDate"></app-higri-datepicker>
+            <div *ngIf="submitted && f.birthDateG.errors">
+               <div class="v-meassage" *ngIf="f.birthDateG.errors.required">
+                  {{ 'Errors.EmptyInputField' | translate }}</div>
+            </div>
+         </div>
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                          Education Level input                          -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="form-group">
+               <!--  <label class="form-title">
+                  {{ "QuotationRequestForms.DriverInfo.Education" | translate }}
+               </label> -->
+               <ng-select placeholder="{{ 'QuotationRequestForms.DriverInfo.Education' | translate }}"
+                  [items]="stepsData?.EducationLevels" bindValue="id" formControlName="educationLevelId"
+                  [loading]="!stepsData?.EducationLevels" [searchFn]="termSearchFn"
+                  [ngClass]="{ 'ng-invalid': f.educationLevelId.errors }">
+                  <ng-template ng-label-tmp let-item="item">
+                     <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                  </ng-template>
+                  <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                     <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                  </ng-template>
+               </ng-select>
+               <div *ngIf="f.educationLevelId.touched && f.educationLevelId.errors">
+                  <span class="v-meassage" *ngIf="f.educationLevelId.errors.required">
+                     {{ "Errors.EmptyInputField" | translate }}
+                  </span>
+               </div>
+            </div>
+         </div>
+
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                               Occupation                                -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="form-group">
+               <!-- <label> {{ 'QuotationRequestForms.DriverInfo.Occupation' | translate }}
+                  <i class="fa fa-question-circle tooltip-icon" placement="top" ngbTooltip="Tooltip on top"
+                     aria-hidden="true">
+                  </i>
+               </label> -->
+               <ng-select placeholder=" {{ 'QuotationRequestForms.DriverInfo.Occupation' | translate }}"
+                  [items]="stepsData?.Occupations" bindValue="id" formControlName="occupationId"
+                  [loading]="!stepsData?.EducationLevels" [searchFn]="termSearchFn" [virtualScroll]="true"
+                  [ngClass]="{ 'ng-invalid': submitted && f.occupationId.errors }">
+                  <ng-template ng-label-tmp let-item="item">
+                     <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                  </ng-template>
+                  <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                     <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+
+                  </ng-template>
+               </ng-select>
+               <div *ngIf="submitted && f.occupationId.errors">
+                  <div class="v-meassage" *ngIf="f.occupationId.errors.required">
+                     {{ 'Errors.EmptyInputField' | translate }}</div>
+               </div>
+            </div>
+         </div>
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                         Children Under 16 Years                         -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="form-group">
+               <!--  <label class="form-title">
+                  {{ "QuotationRequestForms.DriverInfo.Children" | translate }}
+               </label> -->
+               <ng-select placeholder="{{ 'QuotationRequestForms.DriverInfo.Children' | translate }}
+               " [items]="fromZeroToTen" bindLabel="name" bindValue="id" [searchFn]="termSearchFn"
+                  formControlName="childrenUnder16Years" [ngClass]="{'ng-invalid':  f.childrenUnder16Years.errors}">
+               </ng-select>
+               <div *ngIf="f.childrenUnder16Years.touched && f.childrenUnder16Years.errors">
+                  <span class="v-meassage" *ngIf="f.childrenUnder16Years.errors.required">
+                     {{ "Errors.EmptyInputField" | translate }}
+                  </span>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                              More details                               -->
+      <!-- ----------------------------------------------------------------------- -->
+
+      <div class="details-wrapper ">
+         <app-more-details></app-more-details>
+      </div>
+   </form>
+   <hr>
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                           Navigation Buttons                            -->
+   <!-- ----------------------------------------------------------------------- -->
+
+   <div class="wizard-nav-btns row">
+      <div class="col d-flex justify-content-end">
+         <button [disabled]="mainDriverFormGroup.invalid" (click)="showVehicleForm()" class="submit-btn mt-2"
+            type="submit">
+            <div *ngIf="lang==='en'">
+               {{ 'QuotationRequestForms.InsuranceInfo.Continue' | translate }}
+               <fa-icon icon="arrow-right" size="sm"  class="custom-icon mx-1"></fa-icon>
+            </div>
+            <div *ngIf="lang==='ar'">
+               {{ 'QuotationRequestForms.InsuranceInfo.Continue' | translate }}
+               <fa-icon icon="arrow-left" size="sm"  class="custom-icon mx-1"></fa-icon>
+            </div>
+         </button>
+      </div>
+   </div>
+</div>
+<!-- [disabled]="driverInfoForm.invalid" -->

@@ -1,0 +1,1581 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>QuotationRequestPageComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-quotation-request-page</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./quotation-request-page.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./quotation-request-page.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currentDrivers">currentDrivers</a>
+                            </li>
+                            <li>
+                                <a href="#driversPercentage">driversPercentage</a>
+                            </li>
+                            <li>
+                                <a href="#hasLoadingQuotesFailed">hasLoadingQuotesFailed</a>
+                            </li>
+                            <li>
+                                <a href="#inCompleteDrivingPercentage">inCompleteDrivingPercentage</a>
+                            </li>
+                            <li>
+                                <a href="#isLoadingQuotes">isLoadingQuotes</a>
+                            </li>
+                            <li>
+                                <a href="#isOnMidScreen">isOnMidScreen</a>
+                            </li>
+                            <li>
+                                <a href="#percentageAlert">percentageAlert</a>
+                            </li>
+                            <li>
+                                <a href="#showadditionalDiver">showadditionalDiver</a>
+                            </li>
+                            <li>
+                                <a href="#showDriverInfo">showDriverInfo</a>
+                            </li>
+                            <li>
+                                <a href="#showInsuranceInfo">showInsuranceInfo</a>
+                            </li>
+                            <li>
+                                <a href="#showMoreDetails">showMoreDetails</a>
+                            </li>
+                            <li>
+                                <a href="#showRequestBtn">showRequestBtn</a>
+                            </li>
+                            <li>
+                                <a href="#showVehicleInfo">showVehicleInfo</a>
+                            </li>
+                            <li>
+                                <a href="#stepNumber">stepNumber</a>
+                            </li>
+                            <li>
+                                <a href="#submitSubject">submitSubject</a>
+                            </li>
+                            <li>
+                                <a href="#userQuotationDrivers">userQuotationDrivers</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#delay">delay</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#scrollToTarget">scrollToTarget</a>
+                            </li>
+                            <li>
+                                <a href="#sendQuotesRequest">sendQuotesRequest</a>
+                            </li>
+                            <li>
+                                <a href="#watchFormsBeforeSendRequest">watchFormsBeforeSendRequest</a>
+                            </li>
+                            <li>
+                                <a href="#watchStepNum">watchStepNum</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:resize">window:resize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(insuranceStepService: <a href="../injectables/InsuranceStepsService.html">InsuranceStepsService</a>, insuranceStepServiceApi: <a href="../injectables/InsuranceStepsApiService.html">InsuranceStepsApiService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, formvalidationService: <a href="../injectables/FormsValidationService.html">FormsValidationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>insuranceStepService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsService.html" target="_self" >InsuranceStepsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>insuranceStepServiceApi</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsApiService.html" target="_self" >InsuranceStepsApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formvalidationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormsValidationService.html" target="_self" >FormsValidationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:resize"></a>
+                    <span class="name">
+                        <b>
+                            window:resize
+                        </b>
+                        <a href="#window:resize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:resize(event?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:190</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delay"></a>
+                    <span class="name">
+                        <b>
+                            delay
+                        </b>
+                        <a href="#delay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delay(ms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ms</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scrollToTarget"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            scrollToTarget
+                        </b>
+                        <a href="#scrollToTarget"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>scrollToTarget(elId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>elId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendQuotesRequest"></a>
+                    <span class="name">
+                        <b>
+                            sendQuotesRequest
+                        </b>
+                        <a href="#sendQuotesRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendQuotesRequest()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchFormsBeforeSendRequest"></a>
+                    <span class="name">
+                        <b>
+                            watchFormsBeforeSendRequest
+                        </b>
+                        <a href="#watchFormsBeforeSendRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchFormsBeforeSendRequest()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchStepNum"></a>
+                    <span class="name">
+                        <b>
+                            watchStepNum
+                        </b>
+                        <a href="#watchStepNum"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchStepNum()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentDrivers"></a>
+                        <span class="name">
+                            <b>
+                            currentDrivers</b>
+                            <a href="#currentDrivers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="driversPercentage"></a>
+                        <span class="name">
+                            <b>
+                            driversPercentage</b>
+                            <a href="#driversPercentage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasLoadingQuotesFailed"></a>
+                        <span class="name">
+                            <b>
+                            hasLoadingQuotesFailed</b>
+                            <a href="#hasLoadingQuotesFailed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="inCompleteDrivingPercentage"></a>
+                        <span class="name">
+                            <b>
+                            inCompleteDrivingPercentage</b>
+                            <a href="#inCompleteDrivingPercentage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoadingQuotes"></a>
+                        <span class="name">
+                            <b>
+                            isLoadingQuotes</b>
+                            <a href="#isLoadingQuotes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isOnMidScreen"></a>
+                        <span class="name">
+                            <b>
+                            isOnMidScreen</b>
+                            <a href="#isOnMidScreen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="percentageAlert"></a>
+                        <span class="name">
+                            <b>
+                            percentageAlert</b>
+                            <a href="#percentageAlert"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showadditionalDiver"></a>
+                        <span class="name">
+                            <b>
+                            showadditionalDiver</b>
+                            <a href="#showadditionalDiver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showDriverInfo"></a>
+                        <span class="name">
+                            <b>
+                            showDriverInfo</b>
+                            <a href="#showDriverInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showInsuranceInfo"></a>
+                        <span class="name">
+                            <b>
+                            showInsuranceInfo</b>
+                            <a href="#showInsuranceInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showMoreDetails"></a>
+                        <span class="name">
+                            <b>
+                            showMoreDetails</b>
+                            <a href="#showMoreDetails"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showRequestBtn"></a>
+                        <span class="name">
+                            <b>
+                            showRequestBtn</b>
+                            <a href="#showRequestBtn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showVehicleInfo"></a>
+                        <span class="name">
+                            <b>
+                            showVehicleInfo</b>
+                            <a href="#showVehicleInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepNumber"></a>
+                        <span class="name">
+                            <b>
+                            stepNumber</b>
+                            <a href="#stepNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitSubject"></a>
+                        <span class="name">
+                            <b>
+                            submitSubject</b>
+                            <a href="#submitSubject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subject&lt;void&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userQuotationDrivers"></a>
+                        <span class="name">
+                            <b>
+                            userQuotationDrivers</b>
+                            <a href="#userQuotationDrivers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Driver.html" target="_self" >Driver[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/components/quotation-request/quotation-request-page/quotation-request-page.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from &quot;@angular/animations&quot;;
+import { AfterViewInit, Component, HostListener, OnInit } from &quot;@angular/core&quot;;
+import { Subject } from &quot;rxjs&quot;;
+import { delay } from &quot;rxjs/operators&quot;;
+import { Driver } from &quot;src/app/models/insurance-steps/Driver&quot;;
+import { AuthService } from &quot;src/app/services/auth/auth.service&quot;;
+import { InsuranceStepsApiService } from &quot;src/app/services/insurance-steps/insurance-steps-api.service&quot;;
+import { InsuranceStepsService } from &quot;src/app/services/insurance-steps/insurance-steps.service&quot;;
+import { FormsValidationService } from &quot;src/app/services/insurance-steps/forms-validation.service&quot;;
+import { LocallyStoredItemsKeys } from &#x27;src/app/models/app/LocallyStoredItemsKeys&#x27;;
+
+@Component({
+  selector: &quot;app-quotation-request-page&quot;,
+  templateUrl: &quot;./quotation-request-page.component.html&quot;,
+  styleUrls: [&quot;./quotation-request-page.component.css&quot;],
+  animations: [
+    trigger(&quot;step&quot;, [
+      state(
+        &quot;in&quot;,
+        style({
+          opacity: 1,
+          transform: &quot;translateX(0)&quot;,
+        })
+      ),
+      transition(&quot;void &#x3D;&gt; *&quot;, [
+        style({
+          opacity: 0,
+          transform: &quot;translateX(-100px)&quot;,
+        }),
+        animate(500),
+      ]),
+    ]),
+  ],
+})
+export class QuotationRequestPageComponent implements OnInit, AfterViewInit {
+  submitSubject: Subject&lt;void&gt; &#x3D; new Subject&lt;void&gt;();
+  stepNumber;
+  showInsuranceInfo &#x3D; true;
+  showVehicleInfo &#x3D; false;
+  showDriverInfo &#x3D; false;
+  showadditionalDiver &#x3D; false;
+  showMoreDetails &#x3D; false;
+  showRequestBtn &#x3D; false;
+  currentDrivers;
+  isLoadingQuotes &#x3D; false;
+  hasLoadingQuotesFailed &#x3D; false;
+  isOnMidScreen;
+  driversPercentage &#x3D; 0;
+  userQuotationDrivers: Driver[] &#x3D; [];
+  inCompleteDrivingPercentage&#x3D; false;
+  percentageAlert &#x3D; false;
+  constructor(
+    private insuranceStepService: InsuranceStepsService,
+    private insuranceStepServiceApi: InsuranceStepsApiService,
+    private authService: AuthService,
+    private formvalidationService: FormsValidationService
+  ) {}
+
+  ngOnInit() {
+    this.getScreenSize();
+    this.insuranceStepServiceApi.getStepsData();
+   
+  }
+
+  ngAfterViewInit() {
+    this.watchStepNum();
+  }
+
+  watchStepNum() {
+    this.insuranceStepService
+      .getCurrentStepNum()
+      .pipe(delay(100))
+      .subscribe((stepNum) &#x3D;&gt; {
+        this.stepNumber &#x3D; stepNum;
+        if (stepNum &gt;&#x3D; 2) {
+          this.showVehicleInfo &#x3D; true;
+        }
+        if (stepNum &gt;&#x3D; 3) {
+          this.showDriverInfo &#x3D; true;
+        }
+        if (stepNum &gt;&#x3D; 4) {
+          this.showMoreDetails &#x3D; true;
+        }
+        if (stepNum &gt;&#x3D; 5) {
+          this.showadditionalDiver &#x3D; true;
+        }
+      });
+  }
+
+  delay(ms: number) {
+    return new Promise((resolve) &#x3D;&gt; setTimeout(resolve, ms));
+  }
+
+  sendQuotesRequest() {
+    if (this.authService.getIsLoggedIn().value) {
+      // to submit all steps forms to generate quotation request object
+      /*  this.submitSubject.next(); */
+      // Show the quotes list loader while waiting for request
+
+      this.isLoadingQuotes &#x3D; true;
+
+      // Scroll to the top of the page
+      window.scrollTo({ top: 0 });
+
+      //  Fetch the quotes list
+      this.insuranceStepServiceApi.getQuotationList().subscribe(
+        (res: any) &#x3D;&gt; {
+          this.isLoadingQuotes &#x3D; false;
+          this.hasLoadingQuotesFailed &#x3D; true;
+          // remove quotation requet data from local storage
+          localStorage.removeItem(
+            LocallyStoredItemsKeys.InsuranceCurrentStepData,
+          );
+          localStorage.removeItem(
+            LocallyStoredItemsKeys.UserQuoteRequest,
+          );
+          // Increment step number
+          this.insuranceStepService.setCurrentStepNum(6);
+          if (!res.isSuccess) {
+            this.isLoadingQuotes &#x3D; false;
+            this.hasLoadingQuotesFailed &#x3D; true;
+          }
+        },
+        (err) &#x3D;&gt; {
+          this.isLoadingQuotes &#x3D; false;
+          this.hasLoadingQuotesFailed &#x3D; true;
+        }
+      );
+    } else {
+      this.isLoadingQuotes &#x3D; false;
+      this.authService.setIsAuthModalShown(true);
+      this.authService.getIsAuthModalShown().subscribe((isModalDisplayed) &#x3D;&gt; {
+        if (!isModalDisplayed) {
+          this.sendQuotesRequest();
+        }
+      });
+    }
+  }
+
+  async scrollToTarget(elId) {
+    await this.delay(100);
+    const el &#x3D; document.getElementById(elId);
+    if (el &#x3D;&#x3D; null) {
+      return;
+    }
+    var bodyRect &#x3D; document.body.getBoundingClientRect(),
+      elemRect &#x3D; el.getBoundingClientRect(),
+      offset &#x3D; elemRect.top - bodyRect.top - 100;
+
+    window.scrollTo({
+      top: offset,
+      behavior: &quot;smooth&quot;,
+    });
+  }
+
+  watchFormsBeforeSendRequest() {
+    let formsStatus &#x3D; this.formvalidationService.getFormsStatus().value;
+    let invalidForm &#x3D; formsStatus.filter((status) &#x3D;&gt; status.isValid &#x3D;&#x3D; false);
+    // check the percentage of driver if equal 100%
+      
+    let percentagesSum &#x3D; 0; // Indicates the sum of all additional drivers percentages in the array
+
+    this.insuranceStepService.getUserQuoteRequest().value.drivers.forEach((driver) &#x3D;&gt; {
+      //  Calculate the sum of the  drivers
+      percentagesSum +&#x3D; driver.drivingPercentageId;
+    });
+
+    if(percentagesSum &lt; 100) {
+      this.inCompleteDrivingPercentage &#x3D; true;
+      this.percentageAlert &#x3D; false;
+    }
+    else  {
+      if (invalidForm.length &gt; 0) {
+        this.scrollToTarget(invalidForm[0].formName);
+      } else {
+        this.sendQuotesRequest();
+      }
+    }
+   
+  }
+  
+
+  @HostListener(&quot;window:resize&quot;, [&quot;$event&quot;])
+  getScreenSize(event?): void {
+    // If browser window is resized below mid screen size width
+    window.innerWidth &gt;&#x3D; 1000
+      ? (this.isOnMidScreen &#x3D; true)
+      : (this.isOnMidScreen &#x3D; false);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;isLoadingQuotes&quot;&gt;
+    &lt;app-loading [message]&#x3D;&quot;&#x27;يرجى الانتظار حتى يتم التحقق من البيانات المدخلة عن طريق مركز المعلومات الوطني&#x27;&quot;&gt;&lt;/app-loading&gt;
+&lt;/div&gt;
+
+&lt;div *ngIf&#x3D;&quot;hasLoadingQuotesFailed&quot;&gt;
+    &lt;app-error [title]&#x3D;&quot;&#x27;عذرا&#x27;&quot; [message]&#x3D;&quot;&#x27;لا توجد عروض اسعار حاليا, يرجى المحاولة في وقت لاحق&#x27;&quot;&gt;&lt;/app-error&gt;
+&lt;/div&gt;
+
+&lt;div *ngIf&#x3D;&quot;!isLoadingQuotes &amp;&amp; !hasLoadingQuotesFailed&quot; style&#x3D;&quot;padding-top: 2em;&quot;
+    [ngClass]&#x3D;&quot;{&#x27;container&#x27;: isOnMidScreen, &#x27;mobile-container&#x27;: !isOnMidScreen }&quot;&gt;
+
+    &lt;div class&#x3D;&quot;row boxed-item striped-top padded&quot; id&#x3D;&quot;insuranceInfo&quot;&gt;
+        &lt;div class&#x3D;&quot;col&quot;&gt;
+            &lt;!-- [eventsSubmit] To send event to all forms to generate complete quotation request --&gt;
+            &lt;app-insurance-info *ngIf&#x3D;&quot;showInsuranceInfo&quot; (scroll)&#x3D;&quot;scrollToTarget($event)&quot;&gt;&lt;/app-insurance-info&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;row boxed-item striped-top padded&quot; *ngIf&#x3D;&quot;showVehicleInfo&quot; id&#x3D;&quot;vehicleInfo&quot;&gt;
+        &lt;div class&#x3D;&quot;col&quot;&gt;
+            &lt;app-vehicle-info [@step] (scroll)&#x3D;&quot;scrollToTarget($event)&quot;&gt;&lt;/app-vehicle-info&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;row boxed-item striped-top padded&quot; *ngIf&#x3D;&quot;showDriverInfo&quot; id&#x3D;&quot;driverInfo&quot;&gt;
+        &lt;div class&#x3D;&quot;col&quot;&gt;
+            &lt;app-driver-info [@step] (scroll)&#x3D;&quot;scrollToTarget($event)&quot;&gt;&lt;/app-driver-info&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;row boxed-item striped-top padded&quot; *ngIf&#x3D;&quot;showMoreDetails&quot; id&#x3D;&quot;moreDetails&quot;&gt;
+        &lt;div class&#x3D;&quot;col&quot;&gt;
+            &lt;app-more-details [@step] (scroll)&#x3D;&quot;scrollToTarget($event)&quot;&gt;&lt;/app-more-details&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;row boxed-item striped-top padded&quot; *ngIf&#x3D;&quot;showadditionalDiver&quot; id&#x3D;&quot;additionalDriver&quot;&gt;
+        &lt;div class&#x3D;&quot;col&quot;&gt;
+            &lt;app-drivers [@step] (scroll)&#x3D;&quot;scrollToTarget($event)&quot;&gt;&lt;/app-drivers&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row padded&quot; *ngIf&#x3D;&quot;inCompleteDrivingPercentage&quot;&gt;
+        &lt;ngb-alert class&#x3D;&quot;alert col-12&quot; type&#x3D;&quot;danger&quot; *ngIf&#x3D;&quot;!percentageAlert&quot; (close)&#x3D;&quot;percentageAlert&#x3D;true&quot;&gt; {{ &#x27;Errors.InCompletePercentage&#x27; | translate }}&lt;/ngb-alert&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row padded d-flex justify-content-end&quot; *ngIf&#x3D;&quot;!showRequestBtn&quot;&gt;
+        &lt;button *ngIf&#x3D;&quot;stepNumber &gt;&#x3D; 5&quot; type&#x3D;&quot;button&quot; class&#x3D;&quot;btn send-btn bouncy&quot;
+            (click)&#x3D;&quot;watchFormsBeforeSendRequest()&quot;&gt;
+            &lt;i class&#x3D;&quot;icon ion-ios-list&quot;&gt;&lt;/i&gt;
+            {{ &#x27;QuotationRequestForms.StepsTitles.ShowQuoteBtn&#x27; | translate }}
+        &lt;/button&gt;
+
+    &lt;/div&gt;
+
+
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./quotation-request-page.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.mobile-container{
+  padding: 0em;
+}
+.boxed-item {
+  margin-bottom: 0.5em;
+  padding: 2em 1em 1em 0em;
+}
+.check-box {
+  display: flex;
+  align-self: center;
+}
+
+.icon {
+   margin: 0 5px;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+.logo-wrapper h6 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.continue-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+ .continue-btn button {
+  background-color: #00a2ae;
+  color: #ffff;
+  width: 87px;
+}
+.add-driver-checkbox {
+  padding-bottom: 15px;
+}
+.tooltip-icon {
+  color: #044280;
+}
+.check svg {
+  width: unset;
+}
+.check-icon {
+  font-size: 50px;
+  color: #00a2ae;
+  transition: all 0.8s ease;
+  opacity: 1;
+  display: block;
+  margin: 18px auto;
+ 
+}
+.check-icon-invalid {
+  font-size: 50px;
+  color: #fff;
+  opacity: 0;
+  display: block;
+  margin: 18px auto;
+}
+
+
+.send-btn {
+  background: #00a2ae;
+  color: #fff;
+}
+
+.alert {
+  display:inline-block;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .continue-btn {
+    width: 160px;
+   
+  }
+  
+  .check-icon {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="isLoadingQuotes">    <app-loading [message]="\'يرجى الانتظار حتى يتم التحقق من البيانات المدخلة عن طريق مركز المعلومات الوطني\'"></app-loading></div><div *ngIf="hasLoadingQuotesFailed">    <app-error [title]="\'عذرا\'" [message]="\'لا توجد عروض اسعار حاليا, يرجى المحاولة في وقت لاحق\'"></app-error></div><div *ngIf="!isLoadingQuotes && !hasLoadingQuotesFailed" style="padding-top: 2em;"    [ngClass]="{\'container\': isOnMidScreen, \'mobile-container\': !isOnMidScreen }">    <div class="row boxed-item striped-top padded" id="insuranceInfo">        <div class="col">            <!-- [eventsSubmit] To send event to all forms to generate complete quotation request -->            <app-insurance-info *ngIf="showInsuranceInfo" (scroll)="scrollToTarget($event)"></app-insurance-info>        </div>    </div>    <div class="row boxed-item striped-top padded" *ngIf="showVehicleInfo" id="vehicleInfo">        <div class="col">            <app-vehicle-info [@step] (scroll)="scrollToTarget($event)"></app-vehicle-info>        </div>    </div>    <div class="row boxed-item striped-top padded" *ngIf="showDriverInfo" id="driverInfo">        <div class="col">            <app-driver-info [@step] (scroll)="scrollToTarget($event)"></app-driver-info>        </div>    </div>    <div class="row boxed-item striped-top padded" *ngIf="showMoreDetails" id="moreDetails">        <div class="col">            <app-more-details [@step] (scroll)="scrollToTarget($event)"></app-more-details>        </div>    </div>    <div class="row boxed-item striped-top padded" *ngIf="showadditionalDiver" id="additionalDriver">        <div class="col">            <app-drivers [@step] (scroll)="scrollToTarget($event)"></app-drivers>        </div>    </div>    <div class="row padded" *ngIf="inCompleteDrivingPercentage">        <ngb-alert class="alert col-12" type="danger" *ngIf="!percentageAlert" (close)="percentageAlert=true"> {{ \'Errors.InCompletePercentage\' | translate }}</ngb-alert>    </div>    <div class="row padded d-flex justify-content-end" *ngIf="!showRequestBtn">        <button *ngIf="stepNumber >= 5" type="button" class="btn send-btn bouncy"            (click)="watchFormsBeforeSendRequest()">            <i class="icon ion-ios-list"></i>            {{ \'QuotationRequestForms.StepsTitles.ShowQuoteBtn\' | translate }}        </button>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'QuotationRequestPageComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'QuotationRequestPageComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

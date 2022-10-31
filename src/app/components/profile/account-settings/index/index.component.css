@@ -1,0 +1,41 @@
+@import"../../css_loader.css";
+
+.settings-panel-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    align-items: center;
+ }
+ 
+ .panel-form-radio {
+   margin: 0 2em;
+}
+
+.edit-link {
+    text-decoration: none !important;
+    transition: all .3s ease;
+    border: 1px solid #009da8;
+    color: #fff;
+    background: #009da8;
+ }
+ 
+ .edit-link:hover {
+    color: #fff;
+    transition: all .3s ease;
+    border: 1px solid #009da8 !important;
+ }
+
+ .panel-form-container {
+    width: 60%;
+    margin: auto;
+    padding: 2em;
+ }
+ 
+ .panel-form-container form .form-item {
+    margin: 1em auto;
+ }
+
+ .option-input {
+   width: 20px;
+   height: 20px;
+ }

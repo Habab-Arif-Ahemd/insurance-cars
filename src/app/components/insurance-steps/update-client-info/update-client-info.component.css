@@ -1,0 +1,27 @@
+.boxed-item {
+    margin: 5em 10em;
+    padding: 1em 23em;
+  }
+  
+  .phone-ipt-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .phone-key-ipt {
+    width: 15%;
+    direction: ltr;
+    background: #00a2ae;
+    color: #fff;
+  }
+  .phone-ipt {
+    width: 85%;
+  }
+  
+  @media (max-width: 900px) {
+    .boxed-item {
+      margin: 1em 1em;
+      padding: 1em 1em 1em 1em;
+    }
+  }
+  

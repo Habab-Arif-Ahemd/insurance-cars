@@ -1,0 +1,139 @@
+
+ .comparison-btn {
+   height: 42px;
+   transition: all .3s ease;
+   background-color: #F5F6F8;
+   color: #0B70CB;
+   border-radius: 5px;
+   width: 200px;   
+}
+
+.comparison-btn:active {
+   transform: scale(0.95);
+}
+
+.comparison-btn:hover {
+   transform: scale(1.05);
+}
+.filter-number {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 1rem;
+   height: 1rem;
+   margin-left: 0.5rem;
+   border-radius: 35%;
+   background-color: #0B70CB;
+   transition: 0.15s ease-in;
+   color: white;
+   }
+
+.filter-number:hover {
+   background-color: #fff;
+   color: #0B70CB;
+}
+ .filter {
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 42px auto;
+    min-width: 200px;
+    max-width: 100%;
+    height: 42px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.05);
+ }
+ .filter-products{
+    z-index: 100;
+    min-width: 320px;
+    max-width: 100%;
+    height: 42px;
+    background-color: #F5F6F8;;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.05);
+ }
+
+ .filter:hover:active {
+    transform: scale(.95);
+ }
+ 
+ .filter-icon-wrapper {
+    border-radius: 50%;
+    background: none;
+    transition: all .3s ease;
+    margin-top: 10px;
+    margin-right: 15px;
+ }
+ 
+ .filter-value {
+    padding: 0 5px;
+    width: 100%;
+    transition: all .3s ease;
+ }
+ 
+ .filter.ascending-switched {
+    background: #F5F6F8;
+    color: #005DBD;;
+    
+ }
+ 
+ .filter.descending-switched {
+    background: #005DBD;;
+    color: #fff;
+ }
+ 
+ .filter.descending-switched .filter-value {
+    margin-left: 0;
+    margin-right: -40px;
+ }
+ 
+ .filter-icon-wrapper.ascending-switched {
+    transform: translateX(0);
+ }
+ 
+ .filter-icon-wrapper.descending-switched {
+    transform: translateX(calc(42px - 200px));
+ }
+
+ .btn-color{
+   background-color: #fff;
+   color: #0B70CB;
+   border-radius: 5px;
+   height: 42px;
+}
+
+.btn-color:hover {
+   background-color: #0B70CB;
+   color: #fff;
+   border-radius: 5px;
+}
+
+
+.btn-color::after {
+   background-color: #0B70CB;
+   color: #fff;
+}
+
+.filter-type{
+   font-size: 14px;
+   color: #005DBD;
+   background-color: #F5F6F8;;
+}
+
+
+ /* @media (max-width: 710px) {
+    .filters-container {
+       flex-wrap: wrap;
+    }
+ 
+    .filter-item {
+       margin: 15px auto;
+    }
+ 
+    .quotes-header {
+       margin: 10px auto;
+    }
+ } */
+ 

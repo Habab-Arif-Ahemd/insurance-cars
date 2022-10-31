@@ -1,0 +1,224 @@
+<div class="data-accordion-container"  >
+
+   <!-- HEADER -->
+   <div class="data-header-container" (click)="toggleDataAccordion()" >
+      <div class="flex-container"  >
+         <div  id="user-data-wrapper" class="bouncy noselect" >
+            <div class="bd-wizard-step-icon mx-2 ">
+               <img src="../../../../assets/img/Icon-png/user-details.png">
+ 
+            </div>
+            <span *ngIf="lang === 'ar'" class="user-details">{{ insuredInfo.firstNameAr }} {{ insuredInfo.middleNameAr }} {{
+               insuredInfo.lastNameAr }}</span>
+            <span *ngIf="(lang === 'en')" class="user-details">{{ insuredInfo.firstName }} {{ insuredInfo.middleName }} {{
+               insuredInfo.lastName }}</span>
+         </div>
+      </div>
+      <div class="flex-container">
+         <a  class="flex-centered body-view-link secondary-lime"
+            href="javascript:void(0)" >
+            <fa-icon class="icon-style" [icon]="!isDataAccordionShown ? 'caret-down': 'caret-up'" style="cursor: pointer;"></fa-icon>
+            <!-- <i [ngClass]="isDataAccordionShown ? 'ion-md-remove-circle' : 'ion-md-add-circle'"></i> -->
+         </a>
+      </div>
+   </div>
+
+   <!-- BODY -->
+   <div class="data-body" [ngClass]="isDataAccordionShown ? 'visible-body' : 'hidden-body'">
+
+      <div class="data-body-container">
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                               Client Info                               -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="insured-info-container flex-container">
+            <hr class="vertical">
+            <table class="order-data-table flex-centered">
+               <tr>
+                  <th>
+                     {{ 'Policy.NationalID' | translate }}:
+                  </th>
+                  <td>
+                     {{insuredInfo.identityNumber}}
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     {{ 'Policy.FullName' | translate }}:
+                  </th>
+                  <td>
+                     <span *ngIf="lang === 'ar'">{{ insuredInfo.firstNameAr }} {{ insuredInfo.middleNameAr }} {{
+                        insuredInfo.lastNameAr }}</span>
+                     <span *ngIf="!(lang === 'ar')">{{ insuredInfo.firstName }} {{ insuredInfo.middleName }} {{
+                        insuredInfo.lastName }}</span>
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     {{ 'Policy.NationalAddress' | translate }}:
+                  </th>
+                  <td>
+                     {{insuredInfo.nationalAddress}}
+                  </td>
+               </tr>
+               <!-- Check the vehicle Type (Sequence or custom card) -->
+               <tr *ngIf="vehicleInfo.vehicleIdTypeId==1">
+                  <th>{{ 'Policy.VehicleData.SequenceNumber' | translate }}:</th>
+                  <td>{{ vehicleInfo.vehicleId }}</td>
+               </tr>
+               <tr *ngIf="vehicleInfo.vehicleIdTypeId==2">
+                  <th>{{ 'Policy.VehicleData.CustomCard' | translate }}:</th>
+                  <td>{{ vehicleInfo.vehicleId }}</td>
+               </tr>
+            </table>
+         </div>
+
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                              Vehicle Info                               -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="flex-container">
+            <hr class="vertical">
+            <table class="order-data-table flex-centered">
+               
+               <!-- End Vehicle Type Checking -->
+               <tr>
+                  <th>
+                     {{ 'Policy.VehicleData.Description' | translate }}:
+                  </th>
+                  <td>
+                     <span>({{vehicleInfo.maker}} {{vehicleInfo.model}} {{vehicleInfo.modelYear}}) </span>
+                  </td>
+               </tr>
+
+               <tr>
+                  <th>
+                     {{ 'Policy.VehicleData.ModelYear' | translate }}:
+                  </th>
+                  <td>
+                     {{vehicleInfo.modelYear}}
+                  </td>
+               </tr>
+
+               <tr *ngIf="vehicleInfo.vehicleIdTypeId===1">
+                  <th>
+                     {{ 'Policy.VehicleData.PlateNumber' | translate }}:
+                  </th>
+
+                  <td>
+                     <span *ngIf="lang === 'en'">
+                        {{ vehicleInfo.plateFirstLetter }}
+                        {{ vehicleInfo.plateSecondLetter }}
+                        {{ vehicleInfo.plateThirdLetter }}
+                     </span>
+
+                     <span *ngIf="lang === 'ar'">
+                        {{ vehicleInfo.plateFirstLetterAr }}
+                        {{ vehicleInfo.plateSecondLetterAr }}
+                        {{ vehicleInfo.plateThirdLetterAr }}
+                     </span>
+                     <span>
+                        {{ vehicleInfo.plateNumber }}
+                     </span>
+                  </td>
+               </tr>
+
+               <tr>
+                  <th>
+                     {{ 'Policy.VehicleData.RepairsLocation' | translate }}:
+                  </th>
+                  <td>
+                     <span *ngIf="lang === 'ar'">{{vehicleInfo.repairMethodAr}}</span>
+                     <span *ngIf="lang === 'en'">{{vehicleInfo.repairMethod}}</span>
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     {{ 'Policy.VehicleData.SumInsured' | translate }}:
+                  </th>
+                  <td>
+                     {{vehicleInfo.sumInsured  | number}}
+                     <small>{{ 'App.Currency' | translate }}</small>
+                  </td>
+               </tr>
+
+            </table>
+         </div>
+
+         <!--  -->
+         <div class="flex-container">
+            <table class="order-data-table flex-centered">
+               <!-- <tr *ngIf="vehicleInfo.vehicleIdTypeId===1">
+                  <th>
+                     {{ 'Policy.VehicleData.PlateNumber' | translate }}:
+                  </th>
+
+                  <td>
+                     <span *ngIf="lang === 'en'">
+                        {{ vehicleInfo.plateFirstLetter }}
+                        {{ vehicleInfo.plateSecondLetter }}
+                        {{ vehicleInfo.plateThirdLetter }}
+                     </span>
+
+                     <span *ngIf="lang === 'ar'">
+                        {{ vehicleInfo.plateFirstLetterAr }}
+                        {{ vehicleInfo.plateSecondLetterAr }}
+                        {{ vehicleInfo.plateThirdLetterAr }}
+                     </span>
+                     <span>
+                        {{ vehicleInfo.plateNumber }}
+                     </span>
+                  </td>
+               </tr>
+
+               <tr>
+                  <th>
+                     {{ 'Policy.VehicleData.RepairsLocation' | translate }}:
+                  </th>
+                  <td>
+                     <span *ngIf="lang === 'ar'">{{vehicleInfo.repairMethodAr}}</span>
+                     <span *ngIf="lang === 'en'">{{vehicleInfo.repairMethod}}</span>
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     {{ 'Policy.VehicleData.SumInsured' | translate }}:
+                  </th>
+                  <td>
+                     {{vehicleInfo.sumInsured  | number}}
+                     <small>{{ 'App.Currency' | translate }}</small>
+                  </td>
+               </tr> -->
+            </table>
+         </div>
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                              Vehicle Plate                              -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="vehicle-logo-contianer flex-container mt-3 mx-3">
+            <img [src]="vehicleLogoSrc" class="flex-centered" alt="Vehicle Model Logo">
+            <!-- <div class="vehicle-plate flex-centered">
+                <div class="plate-num-ar">
+                   {{vehicleInfo.plateNumber}}
+                </div>
+                <div class="plate-mid">
+                   <img src="https://cf4.s3.souqcdn.com/item/2017/11/18/28/12/64/63/item_L_28126463_71924704.jpg" alt="">
+                   <span>السعودية</span>
+                   <span>KSA</span>
+                </div>
+                <div class="plate-txt-ar">
+                   {{vehicleInfo.plateFirstLetter}} {{vehicleInfo.plateSecondLetter}} {{vehicleInfo.plateThirdLetter}}
+                </div>
+                <div class="plate-num-en">
+                   {{vehicleInfo.plateNumber}}
+                </div>
+                <div class="plate-txt-en">
+                   {{vehicleInfo.plateFirstLetter}} {{vehicleInfo.plateSecondLetter}} {{vehicleInfo.plateThirdLetter}}
+                </div>
+             </div> -->
+         </div>
+
+      </div>
+
+   </div>
+
+</div>

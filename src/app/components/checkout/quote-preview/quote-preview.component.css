@@ -1,0 +1,699 @@
+@import '../../../../assets/styles/css_loader.css';
+/* -------------------------------------------------------------------------- */
+/*                                 Page Layout                                */
+/* -------------------------------------------------------------------------- */
+
+  
+  /* -------------------------------------------------------------------------- */
+  /*                             Continuation Modal                             */
+  /* -------------------------------------------------------------------------- */
+  
+  .cont-modal-body i {
+     color: #00a2ae;
+     font-size: 5em;
+  }
+  
+  .card{
+     background-color: #FFFFFF;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+     border-radius: 10px;
+     margin-top: 6px;
+     padding: 25px;
+  }
+  
+  
+  /* -------------------------------------------------------------------------- */
+  /*                              Preview Flip Card                             */
+  /* -------------------------------------------------------------------------- */
+  
+  
+  .data-preview-flip-card .content {
+     position: relative;
+     width: 100%;
+     height: auto;
+     transition: transform 1s;
+     transform-style: preserve-3d;
+  }
+  
+  .data-preview-flip-card:hover .content {
+     transform: rotateY( 180deg );
+     transition: transform 0.5s;
+  }
+  
+  .data-preview-flip-card .content .front,
+  .data-preview-flip-card .content .back {
+     text-align: right;
+     backface-visibility: hidden;
+     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .data-preview-flip-card .content .front {
+     position: relative;
+     background: white;
+  }
+  
+  .data-preview-flip-card .content .back {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding: 1em;
+     background: #0B70CB;
+     color: white;
+     transform: rotateY( 180deg );
+  }
+  
+  /* ----------------------------- Front Contents ----------------------------- */
+  
+  .data-preview-flip-card .content .front .company-logo {
+     background: #0B70CB;
+     height: 100px;
+     padding: 10px 0 5px 0;
+     color: #fff;
+  }
+  
+  .data-preview-flip-card .content .front .company-logo img {
+     height: 70px;
+     width: 70px;
+     border-radius: 50%;
+  }
+  
+  .data-preview-flip-card .content .front .data {
+     margin: 1em;
+  }
+  
+  .data-preview-flip-card .content .front .data * {
+     width: 100%;
+  }
+  
+  .data-preview-flip-card .content .front .data #header {
+     font-size: 16px;
+     margin-bottom: 15px;
+     font-weight: bold;
+  }
+  
+  .data-preview-flip-card .content .front .data table tr {
+     height: 30px;
+  }
+  
+  .data-preview-flip-card .content .front .data table tr th {
+     font-weight: 200;
+     width: 75%;
+     text-align: right;
+  }
+  
+  .data-preview-flip-card .content .front .data table tr td {
+     width: 25%;
+     text-align: right;
+  }
+  
+  .data-preview-flip-card .content .front .data table tr .amount {
+     color: #0B70CB;
+     font-weight: bold;
+     
+  }
+  
+  .data-preview-flip-card .content .front .data table tr .amount .currency {
+     font-size: 12px;
+  }
+  
+  .ic-logo{
+     width:150px;
+     height: 150px;
+  }
+  /* ------------------------------ Back Contents ----------------------------- */
+  
+  .data-preview-flip-card .content .back .ic-name{
+     font-size: 16px;
+  }
+  
+  .data-preview-flip-card .content .back .ic-description {
+     font-size: 14px;
+  }
+  
+  /* ----------------------------- Prices Preview ----------------------------- */
+  
+  
+  .prices-preview tr {
+   display: grid;
+   grid-template-columns: 75% 25% ; 
+   margin-top: 15px;
+   /* justify-content: center; */
+  }
+ .bank-images img {
+   width: 50px;
+ }
+  
+  /* -------------------------------------------------------------------------- */
+  /*                                 Order Data                                 */
+  /* -------------------------------------------------------------------------- */
+  
+
+  
+  .order-completion-container {
+     width: 98%;
+     height: auto;
+  }
+  
+  .order-completion-container .data-box {
+     width: 98%;
+     background: #F5F6F8;   
+       margin: 1em auto;
+     border-radius: 10px;
+  }
+  
+  .order-completion-container .data-box:first-child {
+     margin-top: 0;
+  }
+  
+  .order-completion-container .data-box#payment-box {
+     margin-bottom: 2em;
+  }
+  
+  
+  
+  /* -------------------------------------------------------------------------- */
+  /*                               Policy Details                               */
+  /* -------------------------------------------------------------------------- */
+  
+  .order-completion-container .policy-details {
+     display: grid;
+     grid-template-columns: auto 160px;
+     height: 100%;
+     
+  }
+  
+  .vehicle-illustration #vehicle-logo {
+   background: #FFFFFF;
+
+   border-radius: 10px;
+   width: 80%;
+
+   height: 60%     
+  }
+  
+  /* .vehicle-illustration {
+     position: relative;
+     background: none;
+     border-top-right-radius: 150px;
+     border-bottom-right-radius: 150px;
+     box-shadow: 1px 0 1px 0 #00000011;
+  }
+  
+  .vehicle-illustration img {
+     width: 80%;
+     height: 260px;
+     margin-left: 10px;
+  } */
+  
+  .vehicle-plate {
+     display: grid;
+     grid-template-areas:
+     'logo numar numar numar numar txtar txtar txtar txtar'
+     'logo numen numen numen numen txten txten txten txten';
+  }
+  
+ /*  .vehicle-illustration .vehicle-plate {
+     position: absolute;
+     left: 18%;
+     top: 60%;
+     height: 30px;
+     width: 85px;
+     margin: auto;
+  } */
+  
+  .vehicle-plate > div {
+     font-size: 10px;
+     border: 1px solid #1d1d1d;
+     background-color: #fff;
+     text-align: center;
+  }
+  
+  .plate-num-ar {
+     grid-area: numar;
+  }
+  
+  .plate-txt-ar {
+     grid-area: txtar;
+     border-top-left-radius: 3px;
+  }
+  
+  .plate-num-en {
+     grid-area: numen;
+  }
+  
+  .plate-txt-en {
+     grid-area: txten;
+     border-bottom-left-radius: 3px;
+  }
+  
+  .plate-logo {
+     grid-area: logo;
+     word-break: break-all;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+  }
+  
+  .plate-logo span {
+     width: 8px;
+     font-size: 8px;
+     line-height: 1.3;
+  }
+  
+  .order-completion-container .policy-details .data {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     height: 100%;
+     padding: 2em 2em 2em 0;
+  }
+  
+  .order-completion-container .policy-details .data * {
+     width: 100%;
+  }
+  
+  .order-completion-container .policy-details .data table {
+     width: 100%;
+  }
+  
+  .order-completion-container .policy-details .data table tr {
+     height: 35px;
+  }
+  
+  .order-completion-container .policy-details .data table tr th {
+     font-weight: bold;
+     width: 45%;
+  }
+  
+  .order-completion-container .policy-details .data table tr td {
+     color: #4e4e4e;
+     width: 45%;
+  }
+  
+  .order-completion-container .vehicle-info {
+     padding-right: 2em;
+  }
+  
+  
+  /* -------------------------------------------------------------------------- */
+  /*                               Vehicle Drivers                              */
+  /* -------------------------------------------------------------------------- */
+  
+  .vehicle-drivers table thead tr {
+     background: none;
+     color: #212529;;
+     border-radius: 10px;
+  } 
+  
+  .vehicle-drivers table thead tr th,
+  .vehicle-drivers table tbody tr td {
+     width: 25%;
+     padding: 6px 6px 0 0;
+  }
+  
+  .vehicle-drivers table thead tr th:nth-child(3) {
+     padding-right: 4em;
+  }
+  
+  .vehicle-drivers table thead tr th:nth-child(4) {
+     text-align: center;
+  }
+  
+  .vehicle-drivers table tbody tr td:nth-child(3) {
+     padding-right: 4em;
+  }
+  
+  .vehicle-drivers table tbody tr td:nth-child(4) {
+     text-align: center;
+  }
+  
+  .driver-info{
+     background-color: #0B70CB;
+     border-radius: 10px 10px 0 0;
+     color: #fff;
+     height: 40px;
+     font-weight: bold;
+  }
+  .alertStyle{
+
+   
+   /* Blue/60 */
+   color: #005DBD;
+   background: #E9F4FF;
+   border-radius: 8px;
+   padding: 12px;
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                            Vehicle Images Upload                           */
+  /* -------------------------------------------------------------------------- */
+  .vehicle-images-container .alert {
+     width: 100%;
+     margin: 10px;
+  }
+  
+  
+  .vehicle-img-uploader .img {
+     background: #11b9c5;
+     font-size: 35px;
+  }
+  
+  .vehicle-img-uploader img {
+     width: 100%;
+     height: 100%;
+  }
+  
+  .vehicle-img-uploader .title {
+     background-color: #0B70CB;
+  }
+  
+  .vehicle-img-uploader input {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     opacity: 0;
+     width: 150px;
+     height: 170px;
+     cursor: pointer;
+  }
+  
+  /* -------------------------------------------------------------------------- */
+  /*                              Checkout Buttons                              */
+  /* -------------------------------------------------------------------------- */
+  
+  .checkout-btns button {
+     width: 150px;
+     height: 52px;
+     border-radius: 0;
+     background: #0B70CB;
+  }
+  
+  .checkout-btns button:hover {
+     background: #0fa3ad;
+  }
+  
+  .checkout-btns button:active {
+     background: #0b96a0;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   Payment                                  */
+  /* -------------------------------------------------------------------------- */
+
+  .checkout-card{
+   border-radius: 10px; 
+   text-align: right;	
+  }
+  
+  .iban-ipt {
+     margin: auto 0;
+  }
+  
+  .iban-wrapper span {
+     padding: 5px 10px;
+     font-size: 18px;
+     font-weight: bold;
+     color: #fff;
+     background: #00a2ae;
+     height: 38px;
+  }
+  
+  .iban-bank-loader {
+     height: 24px;
+     width: 24px;
+     font-size: 16px;
+     margin: auto;
+     margin-left: 20px;
+  }
+  
+  .iban-bank-logo {
+     margin-left: 20px;
+  }
+  
+  .iban-errors {
+     margin-right: 35%;
+     margin-top: -25px;
+  }
+  
+  .bank-logo{
+      height: 44px; 
+      border-radius: 10px;
+  }
+  .date{
+      border-radius: 0 10px 10px 0 !important;
+   }
+  
+   .payment-frame{
+      width:100%;
+      height: 340px;
+   }
+   iframe{
+      overflow:hidden !important;
+  }
+
+  
+.icon{
+   font-size: 36px;
+   line-height: 56px;
+   text-align: center;
+   color: white;
+ }
+ h5 .icon{
+   color: #ffc107;
+ }
+
+ is-sticky {
+   position: sticky;
+   top: 100px;
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-self: start;
+   
+ }
+   
+  /* -------------------------------------------------------------------------- */
+  /*                                Media Queries                               */
+  /* -------------------------------------------------------------------------- */
+  
+  @media (max-width: 1150px) {
+  
+     .prices-preview table tr th {
+        font-size: 13px;
+     }
+  
+     .policy-details {
+        font-size: 12px;
+     }
+  
+     .payment-container {
+        gap: 10px;
+     }
+  
+     .payment-wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 10px;
+     }
+  
+     .selector-form-wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 10px;
+     }
+  
+  }
+  
+  
+ strong{
+   color: #58ba83;
+ }
+ .transition{
+   transition: all .3s ease-out;
+ }
+ .heading{
+   text-align: center;
+   font-size:0.8em; 
+ }
+ /* .center-align{
+   width: 150px;
+   height: 50px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   display: table;
+   margin-top: -40px;
+   margin-left: -150px;
+ } */
+ 
+ input[type="radio"]{
+   visibility: hidden;
+   height: 0;
+   width: 0;
+ }
+ 
+ .radio-btn {
+   width: 200px;
+   height: 55px;
+   font-weight: bold;
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   cursor: pointer;
+   background-color: #fff;
+   color: #0B70CB;
+   border: 2px solid #0B70CB;
+   padding: 10px 10px;
+   border-radius: 10px;
+   transition: 1000ms ease-in-out;
+ }
+ .radio-btn:hover{
+   background-color: #0B70CB;
+   color: #fff;
+   border: 3px solid #fff;
+ }
+ input[type="radio"]:checked + label{
+   background-color: #0B70CB;
+   color: #fff;
+   border: 3px solid #fff;
+ }
+ 
+ .icon-style{
+   font-size: 18px;
+   font-weight: 200;
+ }
+  
+  @media (max-width: 858px) {
+  
+     .order-review-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 1em;
+        padding: 2em 1em;
+     }
+  
+    
+  
+  }
+  
+  @media (max-width: 590px) {
+  
+     .prices-preview table tr th {
+        font-size: 14px;
+     }
+  
+     .policy-details {
+        font-size: 14px;
+     }
+  
+     .order-completion-container .policy-details {
+        grid-template-columns: 100%;
+        grid-template-rows: .75fr 1fr;
+     }
+  /* 
+     .order-completion-container .policy-details .vehicle-illustration {
+        grid-row: 1;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        box-shadow: 0 5px 8px 0 #00000023;
+     }
+   */
+    /*  .vehicle-illustration .vehicle-plate {
+        left: 32%;
+        top: 65%;
+        height: 35px;
+        width: 105px;
+     } */
+     
+     .order-completion-container .policy-details .data {
+        grid-row: 2;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+     }
+  
+     .order-completion-container .vehicle-info {
+        padding-right: 0;
+     }
+  
+     .checkout-btns button {
+        width: 45%;
+     }
+  
+  }
+  
+  .amount{
+     color: #005DBD;
+   height: 60px;
+   align-items: center;
+   background: #F5F6F8;
+   border-radius: 10px;
+  }
+
+  .price {
+   color: #0B70CB;
+   font-size: 14px;
+ }
+
+ .total{
+    font-weight: bold;
+    color: #0B70CB;
+ }
+
+ .vat{
+    font-weight: 50;
+ }
+  @media (max-width: 410px) {
+     .card-container {
+        display: none;
+     }
+  
+     .prices-preview .amount {
+        font-size: 16px;
+     }
+     
+     .prices-preview .amount .currency {
+        font-size: 12px;
+     }
+  
+     .iban-container {
+        grid-template-columns: 100%;
+     }
+  
+     .iban-wrapper {
+        grid-row: 1;
+     }
+  
+     .iban-bank-loader {
+        margin: auto;
+        margin-top: 2em;
+     }
+  
+     .iban-bank-logo {
+        margin: auto;
+        margin-top: 2em;
+     }
+  }
+
+  .container {
+   max-width: 960px;
+ }
+ 
+ .lh-condensed { line-height: 1.25; }
+  
+  @media (max-width: 340px) {
+     .order-completion-container .policy-details {
+        grid-template-rows: .6fr 1fr;
+     }
+  }
+
+
+  
+  @media only screen and (max-width: 363px) {
+   /* For mobile phones: */
+   .vehicle-illustration #vehicle-logo {
+      border-radius: 10px;
+      width: 40%;
+      height: 30%      }
+ }

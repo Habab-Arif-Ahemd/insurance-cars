@@ -1,0 +1,2002 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>LandingComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/landing/landing.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-landing</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./landing.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./landing.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#canvasContext">canvasContext</a>
+                            </li>
+                            <li>
+                                <a href="#captchaCanvas">captchaCanvas</a>
+                            </li>
+                            <li>
+                                <a href="#captchaCode">captchaCode</a>
+                            </li>
+                            <li>
+                                <a href="#errorMessage">errorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#images">images</a>
+                            </li>
+                            <li>
+                                <a href="#isAgree">isAgree</a>
+                            </li>
+                            <li>
+                                <a href="#isFormValid">isFormValid</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#landingCarousel">landingCarousel</a>
+                            </li>
+                            <li>
+                                <a href="#landingFormGroup">landingFormGroup</a>
+                            </li>
+                            <li>
+                                <a href="#showCardNo">showCardNo</a>
+                            </li>
+                            <li>
+                                <a href="#showSequenceNo">showSequenceNo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getUserPreliminaryData">getUserPreliminaryData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#initCaptchaCanvas">initCaptchaCanvas</a>
+                            </li>
+                            <li>
+                                <a href="#initCaptchaContent">initCaptchaContent</a>
+                            </li>
+                            <li>
+                                <a href="#initForm">initForm</a>
+                            </li>
+                            <li>
+                                <a href="#initInsuranceSteps">initInsuranceSteps</a>
+                            </li>
+                            <li>
+                                <a href="#isCaptchaValid">isCaptchaValid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#navigateUser">navigateUser</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onChangeRegistration">onChangeRegistration</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#removePreviousQuotaionData">removePreviousQuotaionData</a>
+                            </li>
+                            <li>
+                                <a href="#validateOrderForm">validateOrderForm</a>
+                            </li>
+                            <li>
+                                <a href="#watchFormChanges">watchFormChanges</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#landingForm">landingForm</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, insuranceStepsService: <a href="../injectables/InsuranceStepsService.html">InsuranceStepsService</a>, insuranceStepsApi: <a href="../injectables/InsuranceStepsApiService.html">InsuranceStepsApiService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/landing/landing.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>insuranceStepsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsService.html" target="_self" >InsuranceStepsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>insuranceStepsApi</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsApiService.html" target="_self" >InsuranceStepsApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserPreliminaryData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getUserPreliminaryData
+                        </b>
+                        <a href="#getUserPreliminaryData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserPreliminaryData(preliminaryDataRequest: <a href="../interfaces/PreliminaryDataRequest.html">PreliminaryDataRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>preliminaryDataRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PreliminaryDataRequest.html" target="_self" >PreliminaryDataRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initCaptchaCanvas"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            initCaptchaCanvas
+                        </b>
+                        <a href="#initCaptchaCanvas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initCaptchaCanvas()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initCaptchaContent"></a>
+                    <span class="name">
+                        <b>
+                            initCaptchaContent
+                        </b>
+                        <a href="#initCaptchaContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initCaptchaContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initForm"></a>
+                    <span class="name">
+                        <b>
+                            initForm
+                        </b>
+                        <a href="#initForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initInsuranceSteps"></a>
+                    <span class="name">
+                        <b>
+                            initInsuranceSteps
+                        </b>
+                        <a href="#initInsuranceSteps"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initInsuranceSteps()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCaptchaValid"></a>
+                    <span class="name">
+                        <b>
+                            isCaptchaValid
+                        </b>
+                        <a href="#isCaptchaValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isCaptchaValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateUser"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            navigateUser
+                        </b>
+                        <a href="#navigateUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="237"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:237</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onChangeRegistration"></a>
+                    <span class="name">
+                        <b>
+                            onChangeRegistration
+                        </b>
+                        <a href="#onChangeRegistration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onChangeRegistration()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="163"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:163</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removePreviousQuotaionData"></a>
+                    <span class="name">
+                        <b>
+                            removePreviousQuotaionData
+                        </b>
+                        <a href="#removePreviousQuotaionData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removePreviousQuotaionData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateOrderForm"></a>
+                    <span class="name">
+                        <b>
+                            validateOrderForm
+                        </b>
+                        <a href="#validateOrderForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateOrderForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchFormChanges"></a>
+                    <span class="name">
+                        <b>
+                            watchFormChanges
+                        </b>
+                        <a href="#watchFormChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchFormChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/components/landing/landing.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="canvasContext"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            canvasContext</b>
+                            <a href="#canvasContext"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>CanvasRenderingContext2D</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/landing/landing.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="captchaCanvas"></a>
+                        <span class="name">
+                            <b>
+                            captchaCanvas</b>
+                            <a href="#captchaCanvas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;captchacanvas&#x27;, {static: true})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/landing/landing.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="captchaCode"></a>
+                        <span class="name">
+                            <b>
+                            captchaCode</b>
+                            <a href="#captchaCode"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/landing/landing.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorMessage"></a>
+                        <span class="name">
+                            <b>
+                            errorMessage</b>
+                            <a href="#errorMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/landing/landing.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="images"></a>
+                        <span class="name">
+                            <b>
+                            images</b>
+                            <a href="#images"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+      &#x27;https://images.unsplash.com/photo-1498887960847-2a5e46312788?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1000&amp;h&#x3D;1000&amp;q&#x3D;80&#x27;,
+      &#x27;https://images.unsplash.com/photo-1470162015499-2b9772941cde?ixlib&#x3D;rb-1.2.1&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1000&amp;h&#x3D;1000&amp;q&#x3D;80&#x27;,
+      &#x27;https://images.unsplash.com/photo-1471174617910-3e9c04f58ff5?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1000&amp;h&#x3D;1000&amp;q&#x3D;80&#x27;
+   ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/landing/landing.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAgree"></a>
+                        <span class="name">
+                            <b>
+                            isAgree</b>
+                            <a href="#isAgree"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/landing/landing.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isFormValid"></a>
+                        <span class="name">
+                            <b>
+                            isFormValid</b>
+                            <a href="#isFormValid"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/landing/landing.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading</b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/landing/landing.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="landingCarousel"></a>
+                        <span class="name">
+                            <b>
+                            landingCarousel</b>
+                            <a href="#landingCarousel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;ngbCarousel&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/landing/landing.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="landingFormGroup"></a>
+                        <span class="name">
+                            <b>
+                            landingFormGroup</b>
+                            <a href="#landingFormGroup"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/landing/landing.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showCardNo"></a>
+                        <span class="name">
+                            <b>
+                            showCardNo</b>
+                            <a href="#showCardNo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/landing/landing.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showSequenceNo"></a>
+                        <span class="name">
+                            <b>
+                            showSequenceNo</b>
+                            <a href="#showSequenceNo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/landing/landing.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="landingForm"></a>
+                        <span class="name"><b>landingForm</b><a href="#landingForm"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>landingForm()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/components/landing/landing.component.ts:94</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild, ElementRef } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { InsuranceStepsService } from &#x27;src/app/services/insurance-steps/insurance-steps.service&#x27;;
+import { FormGroup, FormBuilder, Validators } from &#x27;@angular/forms&#x27;;
+import { PreliminaryDataRequest } from &#x27;src/app/payload/requests/quotation/PreliminaryDataRequest&#x27;;
+import { InsuranceStepsApiService } from &#x27;src/app/services/insurance-steps/insurance-steps-api.service&#x27;;
+import AppUtils from &#x27;src/app/helpers/utils/AppUtils&#x27;;
+import { AppRoutes } from &#x27;src/app/models/app/AppRoutes&#x27;;
+import { AuthService } from &#x27;src/app/services/auth/auth.service&#x27;;
+import { NationalIdValidator } from &#x27;src/app/helpers/validators/NationalIdValidator&#x27;;
+import { LocallyStoredItemsKeys } from &#x27;src/app/models/app/LocallyStoredItemsKeys&#x27;;
+
+
+@Component({
+   selector: &#x27;app-landing&#x27;,
+   templateUrl: &#x27;./landing.component.html&#x27;,
+   styleUrls: [&#x27;./landing.component.css&#x27;]
+})
+
+
+export class LandingComponent implements OnInit {
+
+   /* Captcha */
+   @ViewChild(&#x27;captchacanvas&#x27;, { static: true }) captchaCanvas: ElementRef;
+   private canvasContext: CanvasRenderingContext2D;
+   captchaCode;
+
+   /* Form */
+   landingFormGroup: FormGroup;
+   isLoading &#x3D; false;
+   isFormValid &#x3D; false;
+   errorMessage: string;
+   isAgree&#x3D; false;
+
+   /* Carousel */
+   @ViewChild(&#x27;ngbCarousel&#x27;) landingCarousel: ElementRef;
+   images &#x3D; [
+      &#x27;https://images.unsplash.com/photo-1498887960847-2a5e46312788?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1000&amp;h&#x3D;1000&amp;q&#x3D;80&#x27;,
+      &#x27;https://images.unsplash.com/photo-1470162015499-2b9772941cde?ixlib&#x3D;rb-1.2.1&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1000&amp;h&#x3D;1000&amp;q&#x3D;80&#x27;,
+      &#x27;https://images.unsplash.com/photo-1471174617910-3e9c04f58ff5?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1000&amp;h&#x3D;1000&amp;q&#x3D;80&#x27;
+   ];
+   showSequenceNo&#x3D; true;
+   showCardNo: boolean;
+
+
+   constructor(
+      private router: Router, private fb: FormBuilder, private authService: AuthService,
+      private insuranceStepsService: InsuranceStepsService, private insuranceStepsApi: InsuranceStepsApiService
+   ) { }
+
+
+   ngOnInit() {
+      this.initForm();
+      this.onChangeRegistration();
+      this.initCaptchaCanvas();
+      this.watchFormChanges();
+      this.initInsuranceSteps();
+      this.removePreviousQuotaionData();
+   }
+
+   removePreviousQuotaionData() {
+     let previousQuote &#x3D; localStorage.getItem(LocallyStoredItemsKeys.UserQuoteRequest);
+   
+      if (previousQuote) {
+         localStorage.removeItem(LocallyStoredItemsKeys.UserQuoteRequest);
+      } 
+
+   }
+   initForm(): void {
+      this.landingFormGroup &#x3D; this.fb.group({
+         insuredIdentityNumber: [&#x27;&#x27;, Validators.compose([
+            Validators.required,
+            NationalIdValidator,
+            Validators.minLength(10)
+         ])],
+         vehicleId: [&#x27;&#x27;, Validators.compose([
+            Validators.required,
+            Validators.minLength(10)
+         ])],
+         vehicleIdTypeId: [1 , [Validators.required]],
+         captcha: [&#x27;&#x27; , [Validators.required]],
+      });
+
+      /* Submit on enter press */
+      document.getElementById(&#x27;landing-form-box&#x27;).addEventListener(&#x27;keyup&#x27;, (e) &#x3D;&gt; {
+         if (e.code &#x3D;&#x3D;&#x3D; &#x27;NumpadEnter&#x27; || e.code &#x3D;&#x3D;&#x3D; &#x27;Enter&#x27;) {
+            // Trigger the button element with a click
+            this.onSubmit();
+         }
+      });
+   }
+
+
+   get landingForm() { return this.landingFormGroup.controls; }
+
+
+   initInsuranceSteps() {
+      // Reset insurance steps counter
+      this.insuranceStepsService.setCurrentStepNum(0);
+   }
+
+
+   async initCaptchaCanvas() {
+      this.initCaptchaContent();
+      await AppUtils.delay(500);
+      this.initCaptchaContent();
+   }
+
+
+   initCaptchaContent() {
+      const charsArray &#x3D; &#x27;0123456789&#x27;;
+      const lengthOtp &#x3D; 6;
+      const captcha &#x3D; [];
+      const canv &#x3D; this.captchaCanvas.nativeElement;
+      this.canvasContext &#x3D; (canv as HTMLCanvasElement).getContext(&#x27;2d&#x27;);
+
+      // Clear canvas
+      this.canvasContext.clearRect(0, 0, this.canvasContext.canvas.width, this.canvasContext.canvas.height);
+
+      for (let i &#x3D; 0; i &lt; lengthOtp; i++) {
+         const index &#x3D; Math.floor(Math.random() * charsArray.length + 1);
+         if (captcha.indexOf(charsArray[index]) &#x3D;&#x3D;&#x3D; -1) {
+            captcha.push(charsArray[index]);
+         } else { i--; }
+      }
+
+      this.captchaCode &#x3D; captcha.join(&#x27;&#x27;);
+
+      this.canvasContext.font &#x3D; &#x27;16px Comfortaa&#x27;;
+      this.canvasContext.textBaseline &#x3D; &#x27;middle&#x27;;
+      this.canvasContext.textAlign &#x3D; &#x27;center&#x27;;
+
+      const x &#x3D; (canv as HTMLCanvasElement).width / 2;
+      const y &#x3D; (canv as HTMLCanvasElement).height / 2;
+      this.canvasContext.strokeText(this.captchaCode, x, y);
+
+      // Revalidate form with new captcha
+      this.validateOrderForm();
+   }
+
+
+   isCaptchaValid(): boolean {
+      return (this.landingFormGroup.get(&#x27;captcha&#x27;).value &#x3D;&#x3D;&#x3D; this.captchaCode);
+   }
+
+
+   watchFormChanges() {
+      this.landingFormGroup.valueChanges.subscribe(() &#x3D;&gt; {
+         this.validateOrderForm();
+      });
+   }
+
+
+   validateOrderForm() {
+      if (this.isCaptchaValid() &amp;&amp; this.landingForm.insuredIdentityNumber.valid &amp;&amp; this.landingForm.vehicleId.valid) {
+         this.isFormValid &#x3D; true;
+      } else {
+         this.isFormValid &#x3D; false;
+      }
+   }
+
+
+   onSubmit() {
+
+      // Show loading spinner
+      this.isLoading &#x3D; true;
+
+      // Validate form
+      if (!this.isFormValid) {
+         this.isLoading &#x3D; false;
+         return;
+      }
+
+      // Remove the captcha from the form
+      delete this.landingFormGroup.value.captcha;
+
+      // Construct request data which is used to retreive the preliminary quote order data
+      const preliminaryDataRequest: PreliminaryDataRequest &#x3D; {
+         insuredIdentityTypeId: parseInt(this.landingFormGroup.value.insuredIdentityNumber.slice(0, 1), 10),
+         insuredIdentityNumber: parseInt(this.landingFormGroup.value.insuredIdentityNumber, 10),
+         vehicleIdTypeId: parseInt(this.landingFormGroup.value.vehicleIdTypeId, 10),
+         vehicleId: parseInt(this.landingFormGroup.value.vehicleId, 10)
+      };
+
+      // Add the data to the quotation request construction object
+      this.insuranceStepsService.setUserQuoteRequest(preliminaryDataRequest);
+
+      // Attempt to get the user&#x27;s previous quotation request preliminary data
+      this.getUserPreliminaryData(preliminaryDataRequest);
+
+   }
+
+
+   private getUserPreliminaryData(preliminaryDataRequest: PreliminaryDataRequest): void {
+      // Send the request
+      this.insuranceStepsApi.getUserQuotePreliminaryData(preliminaryDataRequest).subscribe(
+         preliminaryData &#x3D;&gt; {
+
+            // Add the prelimary data to the quotation request construction object
+            this.insuranceStepsService.setUserQuoteRequest(preliminaryData);
+
+            // Navigate the user
+            this.navigateUser();
+
+            // Hide spinner
+            this.isLoading &#x3D; false;
+
+         },
+         err &#x3D;&gt; {
+            // If preliminary data was not found
+            if (err.error.statusCode &#x3D;&#x3D;&#x3D; 404) {
+               // Navigate the user anyway
+               this.navigateUser();
+            } else {
+               // Show error message
+               this.errorMessage &#x3D; err.error.responseMessage;
+            }
+
+            // Hide spinner
+            this.isLoading &#x3D; false;
+
+         }
+      );
+   }
+   onChangeRegistration() {
+      this.landingForm.vehicleIdTypeId.valueChanges.subscribe(vehicleIdTypeId &#x3D;&gt; {
+         if (vehicleIdTypeId &#x3D;&#x3D; 1) {
+            this.showSequenceNo &#x3D; true;
+            this.showCardNo &#x3D; false;
+         } else {
+            this.showCardNo &#x3D; true
+            this.showSequenceNo &#x3D; false
+         }
+      })
+   }
+
+   private navigateUser() {
+      // Route to the insurance order forms page
+      this.router.navigate([AppRoutes.insuranceSteps]);
+      // Increase insurance steps counter
+      this.insuranceStepsService.setCurrentStepNum(1);
+   }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;landingFormGroup&quot; style&#x3D;&quot;overflow-x: hidden;&quot;&gt;
+    &lt;div class&#x3D;&quot;landing-container row&quot;&gt;
+
+        &lt;!-- FORM BOX SIDE --&gt;
+        &lt;div class&#x3D;&quot;form-section col-md-7&quot;&gt;
+
+            &lt;!-- Container --&gt;
+            &lt;div class&#x3D;&quot;landing-form-container&quot;&gt;
+
+                &lt;!-- Form box --&gt;
+                &lt;div class&#x3D;&quot;landing-form boxed-item&quot; id&#x3D;&quot;landing-form-box&quot;&gt;
+
+                    &lt;h3 class&#x3D;&quot;form-header&quot;&gt;
+                        {{ &#x27;Landing.FormTitle&#x27; | translate }}
+                    &lt;/h3&gt;
+
+                    &lt;hr&gt;
+
+                    &lt;!-- Registration Type Radios --&gt;
+                    &lt;div class&#x3D;&quot;form-item&quot;&gt;
+                        &lt;h6&gt;{{ &#x27;Landing.RegistrationTypeText&#x27; | translate }}&lt;/h6&gt;
+                        &lt;div&gt;
+                            &lt;label class&#x3D;&quot;form-radio registration-by-form-radio&quot;&gt;
+                                &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; formControlName&#x3D;&quot;vehicleIdTypeId&quot;
+                                    name&#x3D;&quot;vehicleIdTypeId&quot; autocomplete&#x3D;&quot;on&quot; [value]&#x3D;&quot;1&quot; [checked]&#x3D;&quot;true&quot; /&gt;
+                                &lt;span class&#x3D;&quot;radio-text&quot;&gt;{{ &#x27;Landing.FormText&#x27; | translate }}&lt;/span&gt;
+                            &lt;/label&gt;
+                            &lt;label class&#x3D;&quot;form-radio&quot;&gt;
+                                &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; formControlName&#x3D;&quot;vehicleIdTypeId&quot;
+                                    name&#x3D;&quot;vehicleIdTypeId&quot; autocomplete&#x3D;&quot;on&quot; [value]&#x3D;&quot;2&quot; /&gt;
+                                &lt;span class&#x3D;&quot;radio-text&quot;&gt;{{ &#x27;Landing.CustomCardText&#x27; | translate }}&lt;/span&gt;
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- National ID --&gt;
+                    &lt;div class&#x3D;&quot;form-item&quot;&gt;
+                        &lt;input formControlName&#x3D;&quot;insuredIdentityNumber&quot;
+                            oninput&#x3D;&quot;this.value &#x3D; this.value.replace(/[^0-9.]/g, &#x27;&#x27;).replace(/(\..*)\./g, &#x27;$1&#x27;);&quot;
+                            [placeholder]&#x3D;&quot;(&#x27;Landing.NationalIDLabel&#x27; | translate)&quot; maxlength&#x3D;&quot;10&quot; autocomplete&#x3D;&quot;on&quot;
+                            name&#x3D;&quot;insuredIdentityNumber&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot;&gt;
+                        &lt;div *ngIf&#x3D;&quot;landingForm.insuredIdentityNumber.errors&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;landingForm.insuredIdentityNumber.touched &amp;&amp; landingForm.insuredIdentityNumber.errors.required&quot;
+                                class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;landingForm.insuredIdentityNumber.dirty &amp;&amp; !landingForm.insuredIdentityNumber.errors.isValidNationalId &amp;&amp; !landingForm.insuredIdentityNumber.errors.required&quot;
+                                class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.InvalidNationalID&#x27; | translate }}
+                            &lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;landingForm.insuredIdentityNumber.dirty &amp;&amp; landingForm.insuredIdentityNumber.errors.minlength&quot;
+                                class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.IncompleteInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+
+                    &lt;!-- Sequence Number --&gt;
+                    &lt;div class&#x3D;&quot;form-item&quot;&gt;
+                        &lt;input  *ngIf&#x3D;&quot;showSequenceNo&quot; formControlName&#x3D;&quot;vehicleId&quot; [placeholder]&#x3D;&quot;(&#x27;Landing.SequenceNumText&#x27; | translate)&quot;
+                            oninput&#x3D;&quot;this.value &#x3D; this.value.replace(/[^0-9.]/g, &#x27;&#x27;).replace(/(\..*)\./g, &#x27;$1&#x27;);&quot;
+                            name&#x3D;&quot;vehicleId&quot; autocomplete&#x3D;&quot;on&quot; class&#x3D;&quot;form-control&quot; maxlength&#x3D;&quot;10&quot; type&#x3D;&quot;text&quot;&gt;
+                             &lt;!-- Card  Number --&gt;
+                            &lt;input *ngIf&#x3D;&quot;showCardNo&quot; formControlName&#x3D;&quot;vehicleId&quot; [placeholder]&#x3D;&quot;(&#x27;Landing.CardNo&#x27; | translate)&quot;
+                            oninput&#x3D;&quot;this.value &#x3D; this.value.replace(/[^0-9.]/g, &#x27;&#x27;).replace(/(\..*)\./g, &#x27;$1&#x27;);&quot;
+                            name&#x3D;&quot;vehicleId&quot; autocomplete&#x3D;&quot;on&quot; class&#x3D;&quot;form-control&quot; maxlength&#x3D;&quot;10&quot; type&#x3D;&quot;text&quot;&gt;
+                        &lt;div *ngIf&#x3D;&quot;landingForm.vehicleId.errors&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;landingForm.vehicleId.touched &amp;&amp; landingForm.vehicleId.errors.required&quot;
+                                class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;landingForm.vehicleId.dirty &amp;&amp; landingForm.vehicleId.errors.minlength&quot;
+                                class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.IncompleteInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                
+                    &lt;!-- Captcha --&gt;
+                    &lt;div&gt;
+                        &lt;div class&#x3D;&quot;form-item captcha&quot; style&#x3D;&quot;width: 100%; display: flex;&quot;&gt;
+                            &lt;canvas #captchacanvas width&#x3D;&quot;100&quot; height&#x3D;&quot;30&quot;&gt;&lt;/canvas&gt;
+                            &lt;button (click)&#x3D;&quot;initCaptchaContent()&quot; class&#x3D;&quot;captcha-reset-btn bouncy&quot; type&#x3D;&quot;button&quot;&gt;
+                                &lt;i class&#x3D;&quot;ion-md-refresh&quot;&gt;&lt;/i&gt;
+                            &lt;/button&gt;
+                            &lt;input formControlName&#x3D;&quot;captcha&quot; style&#x3D;&quot;width: 50%; direction: rtl;&quot;
+                                [placeholder]&#x3D;&quot;(&#x27;App.InputCaptchaText&#x27; | translate)&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot;&gt;
+                        &lt;/div&gt;
+                        &lt;div *ngIf&#x3D;&quot;landingForm.captcha.touched &amp;&amp; landingForm.captcha.errors&quot;
+                            style&#x3D;&quot;margin-top: -28px; margin-bottom: 25px;&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;landingForm.captcha.errors.required&quot; class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;landingForm.captcha.errors.pattern&quot; class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.InvalidEmail&#x27; | translate }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+
+                    &lt;!-- Terms and Condititions  --&gt;
+                    &lt;div class&#x3D;&quot;form-item&quot;&gt;
+                        &lt;input class&#x3D;&quot;cbx&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;agree&quot; style&#x3D;&quot;display: none;&quot;
+                            (change)&#x3D;&quot;isAgree&#x3D;!isAgree&quot;&gt;
+                        &lt;label for&#x3D;&quot;agree&quot; class&#x3D;&quot;check pt-2 pb-2 &quot;&gt;
+                            &lt;span&gt;
+                                &lt;svg width&#x3D;&quot;18px&quot; height&#x3D;&quot;18px&quot; viewBox&#x3D;&quot;0 0 20 18&quot;&gt;
+                                    &lt;path
+                                        d&#x3D;&quot;M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z&quot;&gt;
+                                    &lt;/path&gt;
+                                    &lt;polyline points&#x3D;&quot;1 9 7 14 15 4&quot;&gt;&lt;/polyline&gt;
+                                &lt;/svg&gt;
+                            &lt;/span&gt;
+                            &lt;span class&#x3D;&quot;txt-justify&quot;&gt;
+                                {{ &#x27;Landing.CheckBoxText&#x27; | translate }}
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+
+
+                    &lt;!-- Submit Button --&gt;
+                    &lt;div class&#x3D;&quot;form-item&quot;&gt;
+                        &lt;button (click)&#x3D;&quot;onSubmit()&quot; [disabled]&#x3D;&quot;!isFormValid  || !isAgree&quot;
+                            class&#x3D;&quot;primary-btn submit-btn mt-5&quot; type&#x3D;&quot;submit&quot;&gt;
+                            {{ &#x27;App.ContinueText&#x27; | translate }}
+                            &lt;span *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot;
+                                aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+
+
+                    &lt;!-- Error Message --&gt;
+                    &lt;div (click)&#x3D;&quot;errorMessage &#x3D; undefined&quot; *ngIf&#x3D;&quot;errorMessage &amp;&amp; errorMessage.length &gt; 0&quot;
+                        class&#x3D;&quot;form-item error-msg bouncy&quot;&gt;
+                        &lt;i class&#x3D;&quot;ion-ios-alert&quot;&gt;&lt;/i&gt;
+                        &lt;span&gt;{{ errorMessage }}&lt;/span&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;!-- CAROUSEL SIDE --&gt;
+        &lt;div class&#x3D;&quot;carousel-section col-5&quot;&gt;
+
+            &lt;ngb-carousel *ngIf&#x3D;&quot;images&quot; #ngbCarouselid&#x3D;&quot;ngbCarousel&quot; [showNavigationArrows]&#x3D;&quot;false&quot;&gt;
+                &lt;ng-template ngbSlide *ngFor&#x3D;&quot;let image of images; let i &#x3D; index;&quot; [id]&#x3D;&quot;i&quot;&gt;
+
+                    &lt;!-- Image --&gt;
+                    &lt;img [src]&#x3D;&quot;image&quot; alt&#x3D;&quot;Random slide&quot; class&#x3D;&quot;carousel&quot; style&#x3D;&quot;height: 100vh; width: 100%;&quot;&gt;
+
+                    &lt;!-- Navigators --&gt;
+                    &lt;div class&#x3D;&quot;indicators&quot;&gt;
+                        &lt;button (click)&#x3D;&quot;ngbCarouselid.select(i)&quot; *ngFor&#x3D;&quot;let item of images; let i &#x3D; index&quot;&gt;&lt;/button&gt;
+                    &lt;/div&gt;
+
+                &lt;/ng-template&gt;
+            &lt;/ngb-carousel&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./landing.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.landing-form-container {
+   /* background-color: #00a2ae; */
+   background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(&quot;../../../assets/images/background.png&quot;);
+   display: flex;
+   width: 100%;
+   height: 100%;
+   flex-direction: column;
+}
+
+.landing-form {
+   width: 400px;
+   min-height: 500px;
+   margin: auto;
+   padding: 3em 2em 2em 2em;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   left: 10%;
+}
+
+.form-header {
+   margin: 0 auto;
+   color: #00a2ae;
+   text-align: center;
+   font-size: 24px;
+   margin-bottom: 0.2em;
+}
+
+.form-item {
+   margin-bottom: 2em;
+}
+
+.submit-btn {
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+   float: left;
+   transition: all .5s ease;
+}
+
+.submit-btn:disabled {
+   background-color: rgb(128, 128, 128);
+   cursor: default;
+}
+
+.submit-btn:disabled:active {
+	transform: none;
+}
+
+.captcha {
+   height: 40px;
+}
+
+.captcha input {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   border-right: 0;
+   height: 40px;
+}
+
+.captcha-reset-btn {
+   width: 70px;
+   padding: 0;
+   color: #4d4d4d;
+   background: white;
+   font-size: 22px;
+   border: 1px solid #d6d6d6;
+   border-right: 0;
+   border-radius: 0;
+   cursor: pointer;
+}
+
+.captcha-reset-btn:focus {
+   outline: none;
+}
+
+.captcha-reset-btn:hover, .captcha-reset-btn:active {
+   color: #4d4d4d;
+   background: white;
+   border: 1px solid #d6d6d6;
+   border-right: 0;
+   border-radius: 0;
+}
+
+canvas {
+   width: 40%;
+   border: 1px solid rgb(210, 210, 210);
+}
+
+.form-section {
+   padding: 0;
+}
+
+.carousel-section {
+   padding: 0;
+}
+
+.carousel-section ngb-carousel {
+   position: absolute;
+   top: 0%;
+   right: 0;
+   z-index: 100;
+   transform: scale(1.5);
+}
+
+.carousel-section img {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+
+.carousel-section .indicators {
+   position: absolute;
+   z-index: 1001;
+   bottom: 23%;
+   right: 35%;
+   height: 30px;
+}
+
+.carousel-section .indicators button {
+   height: 4px;
+   width: 30px;
+   margin: 0 5px;
+   background: #ffffff86;
+   border: 0;
+   cursor: pointer;
+   transition: all .4s ease;
+}
+
+.carousel-section .indicators button:hover {
+   background: #ffffffd7;
+}
+
+.carousel-section .indicators button:focus {
+   outline: none;
+}
+
+.landing-container {
+   height: calc(100vh);
+   overflow: hidden;
+}
+
+.error-msg {
+   display: flex;
+   color: #e65050;
+   padding: 1em;
+   border: 1px solid #e9878780;
+   border-radius: 3px;
+   transition: all .3s ease;
+   cursor: pointer;
+}
+
+.error-msg:hover {
+   color: #fff;
+   background: #e65050;
+   border: 1px solid #e65050;
+}
+
+.error-msg * {
+   margin: auto;
+}
+
+.error-msg i {
+   font-size: 50px;
+   width: 20%;
+   text-align: center;
+}
+
+.error-msg span {
+   font-size: 14px;
+   width: 80%;
+}
+
+.txt-justify {
+   text-align: justify;
+   float: left; width: 90%;
+}
+@media (max-width: 960px) {
+   .landing-form {
+      width: 38vw;
+   }
+}
+
+@media (max-width: 767px) {
+   .carousel-section {
+      display: none;
+   }
+
+   .landing-form {
+      width: 80%;
+      height: unset;
+      margin: auto;
+      position: unset;
+      left: unset;
+   }
+
+   .landing-container {
+      height: calc(105vh - 60px);
+      overflow: hidden;
+   }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><form [formGroup]="landingFormGroup" style="overflow-x: hidden;">    <div class="landing-container row">        <!-- FORM BOX SIDE -->        <div class="form-section col-md-7">            <!-- Container -->            <div class="landing-form-container">                <!-- Form box -->                <div class="landing-form boxed-item" id="landing-form-box">                    <h3 class="form-header">                        {{ \'Landing.FormTitle\' | translate }}                    </h3>                    <hr>                    <!-- Registration Type Radios -->                    <div class="form-item">                        <h6>{{ \'Landing.RegistrationTypeText\' | translate }}</h6>                        <div>                            <label class="form-radio registration-by-form-radio">                                <input type="radio" class="option-input radio" formControlName="vehicleIdTypeId"                                    name="vehicleIdTypeId" autocomplete="on" [value]="1" [checked]="true" />                                <span class="radio-text">{{ \'Landing.FormText\' | translate }}</span>                            </label>                            <label class="form-radio">                                <input type="radio" class="option-input radio" formControlName="vehicleIdTypeId"                                    name="vehicleIdTypeId" autocomplete="on" [value]="2" />                                <span class="radio-text">{{ \'Landing.CustomCardText\' | translate }}</span>                            </label>                        </div>                    </div>                    <!-- National ID -->                    <div class="form-item">                        <input formControlName="insuredIdentityNumber"                            oninput="this.value = this.value.replace(/[^0-9.]/g, \'\').replace(/(\..*)\./g, \'$1\');"                            [placeholder]="(\'Landing.NationalIDLabel\' | translate)" maxlength="10" autocomplete="on"                            name="insuredIdentityNumber" class="form-control" type="text">                        <div *ngIf="landingForm.insuredIdentityNumber.errors">                            <div *ngIf="landingForm.insuredIdentityNumber.touched && landingForm.insuredIdentityNumber.errors.required"                                class="v-meassage">                                {{ \'Errors.EmptyInputField\' | translate }}                            </div>                            <div *ngIf="landingForm.insuredIdentityNumber.dirty && !landingForm.insuredIdentityNumber.errors.isValidNationalId && !landingForm.insuredIdentityNumber.errors.required"                                class="v-meassage">                                {{ \'Errors.InvalidNationalID\' | translate }}                            </div>                            <div *ngIf="landingForm.insuredIdentityNumber.dirty && landingForm.insuredIdentityNumber.errors.minlength"                                class="v-meassage">                                {{ \'Errors.IncompleteInputField\' | translate }}                            </div>                        </div>                    </div>                    <!-- Sequence Number -->                    <div class="form-item">                        <input  *ngIf="showSequenceNo" formControlName="vehicleId" [placeholder]="(\'Landing.SequenceNumText\' | translate)"                            oninput="this.value = this.value.replace(/[^0-9.]/g, \'\').replace(/(\..*)\./g, \'$1\');"                            name="vehicleId" autocomplete="on" class="form-control" maxlength="10" type="text">                             <!-- Card  Number -->                            <input *ngIf="showCardNo" formControlName="vehicleId" [placeholder]="(\'Landing.CardNo\' | translate)"                            oninput="this.value = this.value.replace(/[^0-9.]/g, \'\').replace(/(\..*)\./g, \'$1\');"                            name="vehicleId" autocomplete="on" class="form-control" maxlength="10" type="text">                        <div *ngIf="landingForm.vehicleId.errors">                            <div *ngIf="landingForm.vehicleId.touched && landingForm.vehicleId.errors.required"                                class="v-meassage">                                {{ \'Errors.EmptyInputField\' | translate }}                            </div>                            <div *ngIf="landingForm.vehicleId.dirty && landingForm.vehicleId.errors.minlength"                                class="v-meassage">                                {{ \'Errors.IncompleteInputField\' | translate }}                            </div>                        </div>                    </div>                                    <!-- Captcha -->                    <div>                        <div class="form-item captcha" style="width: 100%; display: flex;">                            <canvas #captchacanvas width="100" height="30"></canvas>                            <button (click)="initCaptchaContent()" class="captcha-reset-btn bouncy" type="button">                                <i class="ion-md-refresh"></i>                            </button>                            <input formControlName="captcha" style="width: 50%; direction: rtl;"                                [placeholder]="(\'App.InputCaptchaText\' | translate)" class="form-control" type="text">                        </div>                        <div *ngIf="landingForm.captcha.touched && landingForm.captcha.errors"                            style="margin-top: -28px; margin-bottom: 25px;">                            <div *ngIf="landingForm.captcha.errors.required" class="v-meassage">                                {{ \'Errors.EmptyInputField\' | translate }}                            </div>                            <div *ngIf="landingForm.captcha.errors.pattern" class="v-meassage">                                {{ \'Errors.InvalidEmail\' | translate }}                            </div>                        </div>                    </div>                    <!-- Terms and Condititions  -->                    <div class="form-item">                        <input class="cbx" type="checkbox" id="agree" style="display: none;"                            (change)="isAgree=!isAgree">                        <label for="agree" class="check pt-2 pb-2 ">                            <span>                                <svg width="18px" height="18px" viewBox="0 0 20 18">                                    <path                                        d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">                                    </path>                                    <polyline points="1 9 7 14 15 4"></polyline>                                </svg>                            </span>                            <span class="txt-justify">                                {{ \'Landing.CheckBoxText\' | translate }}                            </span>                        </label>                    </div>                    <!-- Submit Button -->                    <div class="form-item">                        <button (click)="onSubmit()" [disabled]="!isFormValid  || !isAgree"                            class="primary-btn submit-btn mt-5" type="submit">                            {{ \'App.ContinueText\' | translate }}                            <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"                                aria-hidden="true"></span>                        </button>                    </div>                    <!-- Error Message -->                    <div (click)="errorMessage = undefined" *ngIf="errorMessage && errorMessage.length > 0"                        class="form-item error-msg bouncy">                        <i class="ion-ios-alert"></i>                        <span>{{ errorMessage }}</span>                    </div>                </div>            </div>        </div>        <!-- CAROUSEL SIDE -->        <div class="carousel-section col-5">            <ngb-carousel *ngIf="images" #ngbCarouselid="ngbCarousel" [showNavigationArrows]="false">                <ng-template ngbSlide *ngFor="let image of images; let i = index;" [id]="i">                    <!-- Image -->                    <img [src]="image" alt="Random slide" class="carousel" style="height: 100vh; width: 100%;">                    <!-- Navigators -->                    <div class="indicators">                        <button (click)="ngbCarouselid.select(i)" *ngFor="let item of images; let i = index"></button>                    </div>                </ng-template>            </ngb-carousel>        </div>    </div></form></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'LandingComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LandingComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

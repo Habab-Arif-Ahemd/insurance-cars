@@ -1,0 +1,119 @@
+<!-- -->
+<!-- new footer -->
+<div class="section-padding-none">
+  <footer *ngIf="!isAtUserProfile"  >
+    <div class="custom-container">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 col-sm-12 mt-3 d-flex justify-content-center text-center">
+          <!-- <a class="" href="javascript:void(0)"> -->
+            <img
+              src="../../../../../assets/img/ammant.svg"
+              class="footer-img"
+              alt="Logo"
+            />
+          <!-- </a> -->
+    
+        </div>
+        <div class="row"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-6 ">
+            <div class="d-flex justify-content-center">
+              <h5 class=" font-weight-bold ">
+                <!-- <fa-icon icon = "clock"></fa-icon> -->
+                {{ "Footer.Links" | translate }}
+              </h5>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <ul class="list-group">
+                <li class="list-group-item bg-transparent border-0 p-0 mb-1" style="direction: ltr"> 
+                  <a [routerLink]="termsAndConditions" class="links"> {{ "Footer.Terms" | translate }} </a> 
+                </li>
+                <li class="list-group-item bg-transparent border-0 p-0 mb-1" style="direction: ltr">
+                  <a [routerLink]="privacyPolicy"  class="links">{{ "Footer.Privacy" | translate }}</a> 
+                </li>
+                <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                  <a href="/QuestionsComponent"  class="links">{{"Footer.Questions" | translate}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6 p-0 text-center ">
+            <p class = "auth"> Authorized by</p>
+            <img   class="  bg-transparent" src="../../../../../assets/img//bg/sama.png">
+      
+          </div>
+
+          <div class="offset-lg-1 text-center"></div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 p-0 mb-3 mt-2 text-center">
+
+            <img   class="" src="../../../../../assets/img//bg/2030.png">
+      
+            <!-- <li class="list-group-item bg-transparent border-0 mt-3 ml-3" style="direction: ltr">
+              <fa-icon icon ="phone"></fa-icon>
+              <a href="javascript:void(0)" >920018806</a>
+            </li> -->
+          </div>
+         <!-- <br><br> -->
+      </div>
+
+      
+    </div>
+     <!-- CopyRights -->
+    
+    <div class=" mt-5 copy-rights">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-container-right d-flex justify-content-center ">
+        <div class = "col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-8 d-flex justify-content-center">
+          <p class="copy-right-center mt-3">{{"Footer.CopyRights" | translate}}</p>
+        </div>
+
+        <div class="offset-lg-6"></div>
+        <div class="col-lg-2 col-md-7  mt-3 d-flex justify-content-center">
+          <div class="mx-3">
+            <img src="assets/img/footer/YouTube.png" />
+          </div>
+
+          <div class="mx-3">
+            <img src="assets/img/footer/Twitter.png" />
+          </div>
+
+          <div class="mx-3">
+            <img src="assets/img/footer/Facebook.png" />
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+</div>
+<footer class="footer" *ngIf="isAtUserProfile">
+  <div class="row brd-line">
+    <div class="col-md-7 pay-img">
+      <div class="bank-images">
+        <img src="assets/img/footer/MasterCard.png" />
+      </div>
+      <div class="bank-images">
+        <img src="assets/img/footer/Mada.png" />
+      </div>
+      <div class="bank-images">
+        <img src="assets/img/footer/Visa.png" />
+      </div>
+      <div class="bank-images">
+        <img src="assets/img/footer/Sadad.png" />
+      </div>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end">
+      <div class="footer-copyright">
+        <div class="copyright d-sm-flex justify-content-between">
+          <div class="copyright-content">
+            <span class="text">
+              {{ "Footer.CopyRights" | translate }}
+              {{ currentYear }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

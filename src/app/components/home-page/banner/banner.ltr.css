@@ -1,0 +1,65 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                Form Home radio LTR                                  */
+/* -------------------------------------------------------------------------- */
+
+body[dir="ltr"] .form-home-radio input[type="radio"]:checked + .box::after {
+
+ left: 49%;
+ transform: translateX(-50%) translateY(100%);
+ 
+}
+
+body[dir="ltr"] .form-home-radio .box {
+ width: 100%; 
+    height: 50px;
+    background-color: #fff;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    border:1px #eee solid;
+    text-align: center;
+}
+body[dir="ltr"] .form-home-radio .box:active  {
+    transform: translateY(10px);
+}
+
+body[dir="ltr"] .form-home-radio .front-end{
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+ /* padding: 20px 0;  */
+ width: 100%;
+}
+body[dir="ltr"] .form-home-radio .back-end{
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+ padding: 20px 0; 
+}
+body[dir="ltr"] .form-home-radio .box span:before {
+    font-size: 1.2em;
+    font-family: FontAwesome;
+    display: block;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    font-weight: normal;
+    color: white;
+  width: 100%;
+}
+body[dir="ltr"] .calendar-icon{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+
+body[dir="ltr"] .date{
+  border-radius: 10px 0 0 10px !important;
+}
+/* body[dir="ltr"] .input-date{
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 0;
+} */
+

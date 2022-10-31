@@ -1,0 +1,187 @@
+
+ <div class=" ">
+   <div class="  "> 
+      
+      <form [formGroup]="landingFormGroup" class="insurance-form-container forms-with-rdo-chk">
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                      Insurance Type Radio Buttons                       -->
+          <!-- ----------------------------------------------------------------------- -->
+       <div class="form-group" >
+       <div class="flex-container">
+          <div class="form-home-radio mt-3">
+            <div class="form-group col-12">
+               <label>{{ 'QuotationRequestForms.InsuranceInfo.InsurancePurpose' | translate }}</label>
+               <br>
+               <label class="form-radio registration-by-form-radio">
+                   <input 
+                       type="radio" 
+                       class="option-input radio" 
+                       formControlName="isVehicleOwnerTransfer"
+                       [value]="false" 
+                       (change)="isVehicleTransfer()"/>
+                   <span class="radio-text">
+                       {{ 'QuotationRequestForms.InsuranceInfo.NewInsurance' | translate }}
+                   </span>
+               </label>
+         
+               <label class="form-radio registration-by-form-radio">
+                   <input 
+                       type="radio" 
+                       class="option-input radio" 
+                       (change)="isVehicleTransfer()"
+                       formControlName="isVehicleOwnerTransfer" 
+                       [value]="true"/>
+                   <span class="radio-text">
+                       {{ 'QuotationRequestForms.InsuranceInfo.NewVehicleOwner' | translate }}
+                   </span>
+               </label>
+         
+           </div>
+      
+             </div><!--midle-->  
+       </div>
+              
+      
+          </div>
+              <div class="row">
+               <div class="form-group  col-sm-6 col-md-4 col-lg-4  ">
+                  <input    formControlName="insuredIdentityNumber"
+                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                     [attr.disabled]="Disabled"
+                     [placeholder]="('Landing.NationalIDLabel' | translate)" maxlength="10"
+                     autocomplete="off" name="insuredIdentityNumber" class="form-control"
+                     type="text" >
+                  <!-- Validation Errors -->
+                  <div *ngIf="landingForm.insuredIdentityNumber.errors" >
+                     <div
+                        *ngIf="(submitted || landingForm.insuredIdentityNumber.touched) && landingForm.insuredIdentityNumber.errors.required"
+                        class="v-msg">
+                        {{ 'Errors.EmptyInputField' | translate }}
+                     </div>
+                     <div
+                        *ngIf="submitted &&landingForm.insuredIdentityNumber.dirty && !landingForm.insuredIdentityNumber.errors.isValidNationalId && !landingForm.insuredIdentityNumber.errors.required"
+                        class="v-msg">
+                        {{ 'Errors.InvalidNationalID' | translate }}
+                     </div>
+                     <div
+                        *ngIf="submitted &&landingForm.insuredIdentityNumber.dirty && landingForm.insuredIdentityNumber.errors.minlength"
+                        class="v-msg">
+                        {{ 'Errors.IncompleteInputField' | translate }}
+                     </div>
+                  </div>
+               </div>
+                 <!-- --------------------- vehicleOwnerIdentityNumber Input ---------------------- -->
+                 <div class="form-group col-sm-6 col-md-4 col-lg-4 "
+                    *ngIf="isVehicleTrasfer">
+      
+                    <input formControlName="vehicleOwnerIdentityNumber"
+                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                       placeholder="{{ 'QuotationRequestForms.InsuranceInfo.VehicleIdentificationNumber' | translate }}"
+                       autocomplete="off" name="vehicleOwnerIdentityNumber" class="form-control"
+                       type="text"
+                       [ngClass]="{'is-invalid': landingForm.vehicleOwnerIdentityNumber.touched && landingForm.vehicleOwnerIdentityNumber.errors}" [disabled]="Disabled">
+                    <!-- Validation Errors -->
+                    <div *ngIf="landingForm.vehicleOwnerIdentityNumber.errors">
+                       <div
+                          *ngIf="landingForm.vehicleOwnerIdentityNumber.touched && landingForm.vehicleOwnerIdentityNumber.errors.required"
+                          class="v-msg">
+                          {{ 'Errors.EmptyInputField' | translate }}
+                       </div>
+                       <div
+                          *ngIf="landingForm.vehicleOwnerIdentityNumber.dirty && !landingForm.vehicleOwnerIdentityNumber.errors.isValidNationalId && !landingForm.vehicleOwnerIdentityNumber.errors.required"
+                          class="v-msg">
+                          {{ 'Errors.InvalidNationalID' | translate }}
+                       </div>
+                       <div
+                          *ngIf="landingForm.vehicleOwnerIdentityNumber.dirty && landingForm.vehicleOwnerIdentityNumber.errors.minlength"
+                          class="v-msg">
+                          {{ 'Errors.IncompleteInputField' | translate }}
+                       </div>
+                    </div>
+                 </div>
+                 <!-- ----------------------------------------------------------------------- -->
+                 <!--                             VehicleIdTypes                              -->
+                 <!-- ----------------------------------------------------------------------- -->
+                 <div class="form-group col-sm-6 col-md-4 col-lg-4" *ngIf="!isVehicleTrasfer">
+                    <ng-select [items]="vehicleIdTypes" [loading]="!vehicleIdTypes"
+                       formControlName="vehicleIdTypeId" (change)="selectVehicleType($event)"
+                       [placeholder]="'Landing.RegistrationTypeText' | translate" bindValue="id"
+                       [ngClass]="{'is-invalid': landingForm.vehicleIdTypeId.errors }">
+                       <ng-template ng-label-tmp let-item="item">
+                          <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                       </ng-template>
+                       <ng-template ng-option-tmp let-item="item" let-search="searchTerm"
+                          let-index="index">
+                          <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                       </ng-template>
+                    </ng-select>
+                    <div *ngIf="landingForm.vehicleIdTypeId.errors">
+                       <div class="v-msg"
+                          *ngIf="landingForm.vehicleIdTypeId.errors.required && landingForm.vehicleIdTypeId.touched">
+                          {{ 'Errors.EmptyInputField' | translate }}
+                       </div>
+                    </div>
+                </div>
+                 <!-- ----------------------------------------------------------------------- -->
+                 <!--                             Sequence Number                             -->
+                 <!-- ----------------------------------------------------------------------- -->
+                 <div *ngIf="selectedVehicleIdTypes == 1 || selectedVehicleIdTypes == 2" class="form-group col-sm-6 col-md-4 col-lg-4">
+                    <input [attr.disabled]="DisabledForm" *ngIf="selectedVehicleIdTypes == 1" formControlName="vehicleId"
+                       [placeholder]="('Landing.SequenceNumText' | translate)"
+                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                       name="vehicleId" autocomplete="off" class="form-control" maxlength="10"
+                       type="text">
+                    <!-- Card  Number -->
+                    <input [attr.disabled]="DisabledForm"*ngIf="selectedVehicleIdTypes == 2" formControlName="vehicleId"
+                       [placeholder]="('Landing.CardNo' | translate)"
+                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                       name="vehicleId" autocomplete="off" class="form-control" maxlength="10"
+                       type="text" >
+             
+                 </div>
+                 <!-- ----------------------------------------------------------------------- -->
+                 <!--                       Vehicle Manufacturing Date                        -->
+                 <!-- ----------------------------------------------------------------------- -->
+                 <div class="form-group col-sm-6 col-md-4 col-lg-4"
+                    *ngIf="selectedVehicleIdTypes == 2">
+                    <input [attr.disabled]="DisabledForm" formControlName="vehicleModelYear" [placeholder]="('Landing.Year' | translate)"
+                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                       name="vehicleModelYear" autocomplete="off" class="form-control" maxlength="4"
+                       type="text">
+                       <div *ngIf="landingForm.vehicleModelYear.errors">
+                         <div class="v-msg"
+                            *ngIf="landingForm.vehicleModelYear.errors.required && landingForm.vehicleModelYear.touched">
+                            {{ 'Errors.EmptyInputField' | translate }}
+                         </div>
+                      </div>
+                 </div>     
+                 <!-- ----------------------------------------------------------------------- -->
+                 <!--                          Policy Effective Date                          -->
+                 <!-- ----------------------------------------------------------------------- -->
+   
+                   <div class="form-group input-group col-sm-6 col-md-4 col-lg-4 ">
+                      <input class="form-control date" formControlName="policyEffectiveDate"
+                         placeholder="{{ 'QuotationRequestForms.InsuranceInfo.PolicyEffectiveDate' | translate }}"
+                         [minDate]="minDate" [maxDate]="maxDate" name="dp" ngbDatepicker #d="ngbDatepicker"
+                         (click)="d.open()" autocomplete="off" 
+                         [ngClass]="{ 'is-invalid': landingForm.policyEffectiveDate.errors && landingForm.policyEffectiveDate.touched}">
+                      <div class="">
+                          <button class=" calendar-icon" (click)="d.open()" type="button">
+                              <!-- <i class="icon ion-md-calendar"></i> -->
+                              <img src="../../../../assets/img/Icon-png/calendar.png">
+                          </button>
+                      </div>
+                      <div *ngIf="landingForm.policyEffectiveDate.errors " class="invalid-feedback">
+                         <div *ngIf="landingForm.policyEffectiveDate.errors.required  && landingForm.policyEffectiveDate.touched" >
+                            {{ 'Errors.EmptyInputField' | translate }}
+                         </div>
+                      </div>
+                </div>
+   
+              </div>
+          
+        </form>
+      <hr>
+   </div></div>
+   
+

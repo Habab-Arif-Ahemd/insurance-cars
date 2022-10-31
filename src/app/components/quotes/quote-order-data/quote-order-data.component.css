@@ -1,0 +1,185 @@
+
+.data-accordion-container {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+ }
+ 
+ .data-header-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    border-bottom: 1px solid gainsboro;
+ }
+ 
+ .data-header-container #user-data-wrapper {
+    margin: auto 5px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+ }
+ 
+ .data-header-container #user-data-wrapper span {
+    margin: auto;
+ }
+ 
+ .data-header-container #user-data-wrapper i {
+    font-size: 26px;
+    margin: auto 15px;
+    line-height: 2;
+ }
+
+ .user-details {
+    color: #5A5B61;
+ }
+ .icon-style{
+   padding: 5px 0px 0px 5px;
+   width: 10px;
+   height:10px;
+   font-size: 20px;
+   color : #5A5B61;
+   
+ }
+ 
+ .body-view-link {
+    font-size: 26px;
+    margin-left: 20px;
+    transition: all 0.2s ease;
+ }
+ 
+ .body-view-link:hover {
+    color: black;
+ }
+ 
+ .body-view-link:active {
+    transform: scale(0.9);
+    color: black;
+ }
+ 
+ .data-body {
+    overflow: hidden;
+ }
+ 
+ .visible-body {
+    transition: all .2s ease;
+    height: 160px;
+ }
+ 
+ .hidden-body {
+    transition: all .5s ease;
+    height: 0;
+ }
+ 
+ .data-body-container {
+    display: grid;
+    grid-template-columns: auto auto auto 160px;
+    grid-template-rows: auto;
+    height: 100%;
+ }
+ 
+ .data-body-container table {
+    margin-right: 2em;
+ }
+ 
+ .order-data-table tr th {
+    padding: 5px 5px;
+ }
+ 
+ .vehicle-logo-contianer {
+    background: #F5F6F8;
+    border-radius: 10px;
+    height: 130px;
+    /* width: 100px; */
+   
+    /* border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%; */
+    /* box-shadow: 5px 5px 10px #cccccc, -5px -5px 10px #ffffff; */
+ }
+ 
+ .vehicle-logo-contianer img {
+    width: 95px;
+    height: 100px;
+    /* margin-right: 1.2em; */
+ }
+ 
+ .vehicle-plate {
+    margin-top: 0;
+    width: 300px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas:
+    'txtar txtar txtar mid numar numar numar'
+    'txten txten txten mid numen numen numen';
+    align-content: center;
+    grid-gap: 1px;
+    padding: 1px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+ }
+ 
+ .vehicle-plate > div {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+ }
+ 
+ th {
+    color: #5A5B61;
+    font-weight: normal;
+ }
+ td {
+    color: #9598A2;
+ }
+ .vertical {
+   border: none;
+   color: red;
+   border-left: 2px dashed hsla(200, 10%, 50%,100);
+   height: 14vh;
+   width: 1px;  
+   margin: 15px;
+ }
+
+ .plate-num-ar { grid-area: numar; letter-spacing: 0.6em; }
+ .plate-mid { grid-area: mid; display: flex; flex-direction: column; font-size: 14px; }
+ .plate-mid img { width: 23px; margin: auto; }
+ .plate-txt-ar { grid-area: txtar; letter-spacing: 0.6em; }
+ .plate-num-en { grid-area: numen; letter-spacing: 0.6em; }
+ .plate-txt-en { grid-area: txten; letter-spacing: 0.6em; }
+ 
+ 
+ @media (max-width: 990px) {
+    .data-body-container {
+       grid-template-columns: 30% 20% 50%;
+    }
+ }
+ 
+ @media (max-width: 770px) {
+    .data-body-container {
+       grid-template-columns: auto;
+       grid-template-rows: auto 80px;
+    }
+    .vehicle-plate-container {
+       width: 100%;
+    }
+    .vehicle-plate {
+       margin: auto;
+       margin-top: 2em;
+    }
+    .shown {
+       height: 350px;
+    }
+ }
+ 
+ @media (max-width: 450px) {
+   .data-accordion-container {
+      height: 500px;
+   }
+    .vehicle-plate { 
+       width: 100%;
+    }
+ }
+ 

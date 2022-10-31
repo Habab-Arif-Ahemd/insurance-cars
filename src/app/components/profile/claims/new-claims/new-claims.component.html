@@ -1,0 +1,81 @@
+<div class="container-fluid mt-5 pt-4">
+  <!-- <div class="row mt-4">
+    <div class="col">
+      <h5 style="font-weight: bold">
+          <fa-icon icon="adjust" class="icon"></fa-icon> 
+        إضافة مطالبة
+      </h5>
+    </div>
+  </div>
+--->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             Add Claim Form                              -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <div class="row mt-4">
+    <div class="form-group input-group col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <input
+        class="form-control"
+        placeholder="{{ 'Profile.Claims.AccidentDateText' | translate }}"
+
+
+      />
+      <div class="input-group-append calendar-btn-contianer">
+        <button
+          class="btn btn-outline-secondary calendar-icon"
+        
+          type="button"
+        >
+          <!-- <i class="icon ion-md-calendar"></i> -->
+          <fa-icon icon="calendar-week" class="icon"></fa-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="{{ 'Profile.Claims.PolicyNumber' | translate }}"
+        />
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div class="form-group">
+        <textarea
+          height="144"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="{{ 'Profile.Claims.AccidentDetailsText' | translate }}"
+        ></textarea>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="form-row">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <div class="dropzone-wrapper">
+              <div class="dropzone-desc ">
+                <fa-icon icon="download" class="icon" size="2x"></fa-icon>
+                <p>يمكنك أيضًا سحب ملفاتك هنا</p>
+              </div>
+              <input type="file" name="img_logo" class="dropzone" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <button type="submit" class="btn btn-primary mr-3">إستمرار</button>
+
+      <button  type="submit" class="btn btn-danger" [routerLink]="['/user/claims/']">
+        إلغاء
+      </button>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>

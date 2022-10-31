@@ -1,0 +1,23 @@
+
+  body[dir="ltr"] .red {
+/*    left: -180px!important;
+ */  
+/*  
+ */width: 123px;
+ background-color: none;
+ font-weight: bold;
+ position: relative !important;
+       animation: mymovee 3s!important; 
+       background-color: none;
+     }
+   
+ @keyframes mymovee {
+
+  from {right:unset!important; left: 0px; }
+  to   {right:  unset !important; left:350px; ; }
+
+
+     }
+
+   /*   from {right: 0px;}
+     to {right:  170px; } */

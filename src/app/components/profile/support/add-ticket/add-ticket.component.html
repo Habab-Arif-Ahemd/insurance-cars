@@ -1,0 +1,105 @@
+<div class="container mt-5">
+   <div class="row">
+    <div class="col">
+      <h5 style="font-weight: bold">
+          إضافة إستفسار
+      </h5>
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             Add Ticket Form                              -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <div class="row ">
+    <div class="col-8">
+      <form enctype="multipart/form-data" [formGroup]="ticketCreationFormGroup" #ticketCreationForm
+      class="ticket-creation-form">
+
+          <div class="form-group">
+            <label>نوع الإستفسارات</label>
+            <ng-select [items]="ticketsType" [loading]="!ticketsType" formControlName="ticketTypeId"
+                bindValue="id">
+                <ng-template ng-label-tmp let-item="item">
+                    <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                </ng-template>
+                <ng-template ng-option-tmp let-item="item" let-index="index">
+                    <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                </ng-template>
+            </ng-select>
+            <div *ngIf="submitted && f.ticketTypeId.errors">
+                <div class="v-meassage" *ngIf="f.ticketTypeId.errors.required">
+                    {{ 'Errors.EmptyInputField' | translate }}
+                </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>إسم العميل</label>
+            <ng-select [items]="clients" [loading]="!clients" formControlName="clientId" bindValue="clientId">
+                <ng-template ng-label-tmp let-item="item">
+                    <span>{{ lang === 'ar' ? item.fullNameAr : item.fullName }}</span>
+                </ng-template>
+                <ng-template ng-option-tmp let-item="item" let-index="index">
+                    <span>{{ lang === 'ar' ? item.fullNameAr : item.fullName }}</span>
+                </ng-template>
+            </ng-select>
+            <div *ngIf="submitted && f.clientId.errors">
+                <div class="v-meassage" *ngIf="f.clientId.errors.required">
+                    {{ 'Errors.EmptyInputField' | translate }}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group text-inpus">
+            <label>نص الرسالة</label>
+            <textarea class="form-control" formControlName="body" rows="5"></textarea>
+            <div *ngIf="submitted && f.body.errors">
+                <div class="v-meassage" *ngIf="f.body.errors.required">
+                    {{ 'Errors.EmptyInputField' | translate }}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group" *ngIf="!supportedFile">
+          <label class="v-meassage">هذا الملف غير مدعوم </label>
+        </div>
+
+          <!-- upload Button -->
+          <div style="display: none;">
+            <div class="upload-btn-wrapper">
+                <button type="button" class="btn btn-primary"> <i class="icon ion-md-add-circle-outline"></i>
+                    Upload Files
+                </button>
+                <input name="ticketFile" type="file" ng2FileSelect [uploader]="uploader" #file multiple
+                    (onFileSelected)="onFileSelected($event)" />
+            </div>
+        </div>
+        <!-- drag and drop file area -->
+        <div class="form-group">
+          <div class="dropzone-wrapper" (click)="file.click()">
+            <div class="dropzone-desc" ng2FileDrop [uploader]="uploader" (fileOver)="fileOverBase($event)">
+              <fa-icon icon="download" class="icon" size="2x"></fa-icon>
+              <p>يمكنك أيضًا سحب ملفاتك هنا</p>
+            </div>
+            <input type="file" name="img_logo" class="dropzone" />
+          </div>
+        </div>
+
+
+      </form>
+
+      <!-- <button type="submit" class="btn btn-primary mr-3">إستمرار</button> -->
+      <button type="button" class="btn btn-primary mr-3" (click)="createTicket()" [disabled]="isUploading">
+        إرسال
+<i *ngIf="!isUploading" class="icon ion-ios-send"></i>
+        <span *ngIf="isUploading" class="spinner-border spinner-border-sm" role="status"
+            aria-hidden="true"></span>
+    </button>
+      <button (click)="showTicketsAnaltics.emit()"  type="submit" class="btn btn-danger">
+        إلغاء
+      </button>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>

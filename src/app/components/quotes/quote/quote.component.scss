@@ -1,0 +1,253 @@
+/* Quote List */
+.boxed-item {
+  padding: 0;
+  margin-bottom: 1em;
+  min-height: 300px;
+
+  &:first-child {
+    margin-top: 2em !important;
+  }
+}
+.quote-wrapper {
+  .logo-wrapper {
+    flex: 1;
+    border-left: 1px solid #F5F6F8;
+  }
+
+  .benefit-wrapper {
+    .col-lg-4 {
+      @extend .logo-wrapper;
+    }
+    .col {
+      @extend .logo-wrapper;
+    }
+  }
+}
+.showMore-btn {
+  height: 30px;
+  transition: all .3s ease;
+  // background-color:aliceblue;
+  color: #C5C7D0;
+  /* border-radius: 15px; */
+  // width: 110px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  // width: 125px;
+}
+.showMore-btn:hover {
+  transform: scale(1.05);
+  color: #005DBD;
+}
+.showMore-btn:active {
+  transform: scale(0.95);
+  color: #005DBD;
+}
+
+.caret-icon {
+  color: #C5C7D0;
+}
+
+
+// .checkbox {
+//   padding: 0px;
+// }
+.comp-btn {
+  color: #fff;
+  height: 40px;
+  margin-top: 0em;
+  background-color: #005DBD;
+  border-radius: 5px;
+}
+
+.product-head {
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  height: 50px;
+}
+
+
+.head-title {
+  color: #005DBD;
+  font-weight: bold;
+  font-size: 20px;
+}
+.comp-btn:hover {
+  background-color: #0e4474de;
+ 
+}
+
+.comp-btn-1 {
+  color: #005DBD;;
+  background-color: #F5F6F8;
+  border-radius: 5px;
+  height: 40px;
+  position: absolute;
+}
+
+.com-font {
+  color: #005DBD;;
+  font-size: 14px;
+  margin-top: 0px;
+}
+.uncom-font {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 0px;
+}
+.buy-font {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  // margin-top: 12px;
+}
+
+.buy-btn {
+  @extend .comp-btn;
+}
+//***  ICONS STYLE **//
+.icon-style {
+  padding: 5px 0px 0px 5px;
+  width: 20px;
+  height: 10px;
+}
+
+.alert-icon {
+  font-size: 50px;
+  color: #0b70cb;
+  margin-top: 40px;
+  align-items: center;
+}
+.check-icon {
+  color: #0b70cb;
+  font-size: 10px;
+  font-weight: bold;
+  padding-inline-end: 10px;
+}
+
+// *** End Icons Styles ***//
+
+.quote-sub-title {
+  font-size: 16px;
+  color: #5A5B61;
+  font-weight: bold;
+}
+
+.logo-back {
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  // height: 135px;
+}
+.img-logo {
+  border-radius: 10%;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+}
+
+/*End of Quote List*/
+@import "../../../../assets/styles/variables.scss";
+
+.deductible-select {
+  width: 180px;
+}
+.quote-liability-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 0;
+  border-right: 0;
+}
+/* -------------------- Price, Pay, and Comparison Button ------------------- */
+
+.quote-card .quote-price {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+  background: $primary-color;
+}
+
+.price {
+  color: #5A5B61;
+  font-size: 14px;
+  font-weight: bold;
+}
+.currency {
+  color: #5A5B61;
+  font-weight: bold;
+}
+.terms{
+  color: #005DBD;
+  font-size: 15px;
+  font-weight: 500;
+}
+.terms:hover{
+  color: #0e4474de;
+}
+.under-comparison-btn {
+  background-color: #F4333F !important;
+  // height: 40px;
+}
+
+.d-spinner {
+  color: #0b70cb;
+  position: absolute;
+  margin: auto;
+  top:30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.total{
+  font-weight: bold;
+  color: #0B70CB;
+}
+
+.vat{
+  font-weight: 50;
+}
+
+// Disable quotes design when time is over
+.boxed-item {
+  margin-bottom: 1em;
+  min-height: 300px;
+  position: relative;
+  // z-index: 0;
+  .expired-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 10px;
+  }
+}
+// .disabled-quote-company > * {
+//   filter: grayscale(100%) brightness(60%) blur(.08em);
+//   pointer-events: none;
+// }
+
+// .disabled-quote-product > * {
+//   filter: grayscale(100%) brightness(70%) blur(.08em);
+//   pointer-events: none;
+//   border-color: #000000;
+// }
+
+// .disabled-quote-product * {
+//   border-color: #0000002f;
+// }
+// .dark {
+//   background: #00000093;
+// }
+
+// .dark-c {
+//   background: #005e64;
+// } 

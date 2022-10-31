@@ -1,0 +1,650 @@
+{
+    "App": {
+        "CloseText": "Close",
+        "ViewMoreText": "View more",
+        "Currency": "SAR",
+        "BuyText": "Buy",
+        "Choose":"Select",
+        "TotalPriceText": "Total price",
+        "AddedVat":"with Added Tax",
+        "BackText": "Back",
+        "DaysText": "Days",
+        "HoursText": "Hours",
+        "MinutesText": "Minutes",
+        "SecondsText": "Seconds",
+        "NotApplicableText": "Not Included",
+        "CompanyText": "Company",
+        "ContinueText": "Continue",
+        "InputCaptchaText": "Input symbols",
+        "UnavailableText": "Unavailable",
+        "ResendText": "ٌResend",
+        "PrintText": "Print",
+        "Status": "Status",
+        "SaveChangesText": "Save changes",
+        "CancelText": "Cancel",
+        "AgreeText": "Agree",
+        "PasteText": "Paste",
+        "AddNewText": "Add ",
+        "saveText":"Save",
+        "Al-Mamoon":"Al-Mamoon©",
+        "Send":"Send",
+        "CompanyInsurance": "Copmarison Of Insurance Copmanies"
+    },
+    "Misc": {
+        "VerificationCodeText": "Verification code",
+        "SendVerificationCodeText": "Send verification code",
+        "Arabic": "Arabic",
+        "English": "English",
+        "FullName": "Full name",
+        "Includes": "Includes",
+        "LiabilityCost": "Deductible Value",
+        "TotalCost": "Total Amount",
+        "QuotationLoadingMessage": "Please wait while the entered data is evaluated by the national information center",
+        "LanguageSwitchLoadingMessage": "جاري التغير للغة العربية"
+    },
+    "Errors": {
+        "ServerErrorTitle": "Appologies",
+        "ServerErrorSubtitle": "The service is unavailable at the moment, please try again later.",
+        "ErrorPageTitle": "Apologies",
+        "UnaviablableQuotations": "There are no offers at the moment, please try again later",
+        "EmptyInputField": "This field cannot be empty",
+        "InvalidCaptcha": "Invalid CAPTCHA. Please try again",
+        "InvalidEmail": "Invalid email",
+        "IncompleteInputField": "Incomplete field",
+        "FirstPhoneNumberDigit": "The Phone number must start with number 5",
+        "InvalidNationalID": "Incorrect national ID",
+        "InvalidIban": "Invalid IBAN",
+        "EnterIbanToContinue": "Please enter your IBAN to continue",
+        "MedicalConditionInvalid": "Please select one of the Health Conditions or Restrictions",
+        "ViolationInvalid": "Please select one of the traffic violations",
+
+        "ShortPassword": " Must be at least 8 characters!",
+        "least1number": " Must contain at least 1 number",
+        "CapitalCase": " Must contain at least 1 in Capital Case!",
+        "SmallCase": " Must contain at least 1 Letter in Small Case!",
+        "SpecialCharacter": " Must contain at least 1 Special Character!",
+
+        
+        "PasswordNotMatch": "Those passwords didn't match. Try again.",
+        "ShortPhoneNumber": "Invalid phone number",
+        "DriverExist": "The driver has already been added",
+        "InCompletePercentage": "The driving percentage of the vehicle must be 100%",
+        "CompletedPerentage": "The driving percentage of the vehicle must be 100%. You cannot add another driver",
+        "PaymentIncomplete": "Apologies, the payment procedure has failed",
+        "minVehicleSumInsured": "The lowest value that can be entered is ٍٍٍٍٍٍٍٍٍٍٍ 10,000 SR",
+        "PleaseInterthepolicyEffectiveDatee":" please enter the policy Effective Date"
+
+    },
+    "SuccessMessages": {
+        "EmailChange": "Your email was changed successfully",
+        "PasswordChange": "Your password was changed successfully",
+        "PhoneChange": "Your phone number was changed successfully",
+        "LanguageChange": "Your default language was changed successfully"
+    },
+    "Quote": {
+        "CompareAll": "Compare all",
+        "View": "View all",
+        "InsuranceCompany": "Full insurance for vehicles",
+        "CompareButtonText": "Compare",
+        "RemoveFromComparisonText": "Remove from comparison",
+        "BenefitsHeaderTitle": "Includes free of charge",
+        "InsuranceCompanyDetailsTitle": "About the company",
+        "DiscountsTitle": "Price details",
+        "ExtraBenefitsTitle": "Extra benefits",
+        "BasePremium": "Premium",
+        "TotalPremuim": "Total Premium",
+        "CompanyDetails": {
+            "DescriptionTitleText": "About the company",
+            "ContactTitleText": "Contact information",
+            "PhoneTitleText": "Phone number",
+            "EmailTitleText": "Email",
+            "WebsiteTitleText": "Website",
+            "AddressTitleText": "Address"
+        },
+        "TimerOverText": "This offer has ended",
+        "TimeRemainingText": "Time remaining",
+        "LiabilityCostText": "Max liability",
+        "Page": {
+            "QuotesListText": "Policies offers"
+        },
+        "Filters": {
+            "LiabilityValueText": "Liability value",
+            "FilterByPriceText": "Sort by cost",
+            "AscendingText": "Ascending",
+            "DescendingText": "Descending",
+            "AscendingOrderText": "Ascending order",
+            "DescndingOrderText": "Descending order"
+        },
+        "QuoteComparison": {
+            "ComparisonMenuTitle": "Comparison list",
+            "CompareButtonText": "Compare",
+            "MinComparisonAlertText": "Please add two or more policies",
+            "MaxComparisonAlertText": "The comparison sheet has reached its limit!"
+        },
+        "Benefits": {
+            "DriverCoverage": "Personal Accident coverage for the driver only",
+            "PassengerCoverage": "Personal Accident coverage for the passenger only",
+            "DriverPassengerCoverage": "Personal Accident coverage for the driver & passenger",
+            "NaturalDisasters": "Natural Disasters",
+            "WnFnT": "Windscreen, fires & theft",
+            "RoadsideAssistance": "Roadside Assistance",
+            "HireCar": "Hire Car",
+            "AgencyRepairs": "Agency Repairs",
+            "GeographicalCoverage": "Geographical coverage of GCC countries / Jordan / Egypt for 12 months"
+        },
+        "Deductibles": {
+            "TotalVat": "Total Value Added Tax",
+            "DeductiblesInfo":"An amount paid by the insured from the value of the claim upon the occurrence of an accident as a contribution to the value of repairing his vehicle in the comprehensive insurance, in accordance with the terms and conditions of the insurance policy"
+        },
+        "ExpiryModal": {
+            "OffersExpiry": "Offers has expired",
+            "GetNewOffersQuestion": "Your current offers has expired, would you like to request for new offers?",
+            "GetNewOffers": "Request for new offers"
+        },
+        "insuranceType": {
+            "all": "All",
+            "comprehinsive": "Comprehinsive",
+            "third-party": "Third-party"
+        }
+    },
+    "Policy": {
+        "NationalID": "National ID/Iqama",
+        "FullName": "Full name",
+        "NationalAddress": "National Address",
+        "VehicleData": {
+            "SequenceNumber": "Sequence No.",
+            "CustomCard": "Custom Card",
+            "Description": "Vehicle description",
+            "PlateNumber": "Plate No.",
+            "RepairsLocation": "Repair Type",
+            "SumInsured": "Vehicle sum insured",
+            "ModelYear": "Model Year"
+        }
+    },
+    "Checkout": {
+        "PaymentMethodTxt": "Choose your payment method",
+        "CreditCard":"Credit Card / Mada",
+        "Other": "Other",
+        "FrontSide": "Front Side",
+        "BackSide": "Back Side",
+        "ReightSide": "Reight Side",
+        "LeftSide": "Left Side",
+        "CarNumber": "Car Number",
+        "CostsDetails": "Price details",
+        "PolicyPrice": "Policy price",
+        "BasicInstallment": " Basic Installment ",
+        "AdministationPrice": "Administrative cost",
+        "VAT": "Value Added Tax",
+        "Discounts": "Discounts",
+
+        "PolicyDetails": {
+            "PolicyStart": "Policy Effective Date",
+            "ProductType": "Product",
+            "IdentityNumber": "Insured Identity Number",
+            "FullName": "Insured Name",
+            "Birthdate": "Birth date",
+            "SequenceNum": "Sequence No.",
+            "VehicleDescription": "Vehicle Description",
+            "VehicleMajorColor": "Color",
+            "vehicleChassieNo": "Vehicle Chassie Number",
+            "DrivingCity": "Driving City",
+            "RepairsLocation": "Repair Type",
+            "PolicyNumber": "Policy No.",
+            "PolicyInitiationDate": "Issue date",
+            "PolicyEndDate": "Expiry date"
+        },
+        "Drivers": {
+            "PolicyUser":"Client Details  ",
+            "VehicleDrivers": "Vehicle drivers",
+            "DrivingPercentage": "Driving Percentage"
+        },
+        "InCompany": {
+            "CompanyName": "Insurance Company"
+        },
+        "details": {
+            "InvoicedDetails": "Details"
+        },
+        "Attachments": {
+            "VehicleImages": "Vehicle photos",
+            "ContinueLaterTxt": "I would like to continue later"
+        },
+        "Payment": {
+            "Payment": "Pay the Fees",
+            "IbanNote": "According to the Saudi Arabian Centeral Bank, your IBAN is needed to facilitate refundings",
+            "QuoteOwnerEmail":"Quote Owner Email",
+            "QuoteOwnerPhone":"Quote Owner Phone",
+            "Card": {
+                "CardNum": "Card number",
+                "CardHolderName": "Cardholder name"
+            }
+        },
+        "ContinuationModal": {
+            "SaveQuote": "Save Quote",
+            "ContinueLaterQuestion": "Would you like to save your progress and continue later?",
+            "ReferenceIdText": "The policy will be saved with the ID",
+            "BuyBeforeText": "Which should be bought before the date"
+        }    },
+    "PaymentStatus": {
+        "StatusCheckTxt": "Checking your payment status",
+        "Success": {
+            "SuceessTitle": "Successful Purchase",
+            "ThankTxt": "Thank you ,, the amount has been received",
+            "EmailTxt": "A copy of the policy has been sent to your e-mail. You can print or download the policy at any time",
+            "DownloadBtn": "Download",
+            "PrintBtn": "Print",
+            "ShareBy":"ShareBy",
+            "WhatsApp":" WhatsApp",
+            "SMS":"SMS",
+            "PolicyDetails": "Policy details",
+            "VehcileDetails": "Vehcile details",
+            "CostsDetails": "Payment details"
+        },
+        "Failure": {
+            "FailureTitle": "Unsuccessful Purchase",
+            "FailureTxt": "You can return to the payment page and retry, or retry again later",
+            "ReturnBtn": "Return to payment page"
+        },
+        "UploadImageCheckText":"I wont to upload data later"
+    },
+    "Landing": {
+        "LandingTitle": " Are you still waiting?....",
+        "Compare": "Compare",
+        "Choose": "Choose",
+        "Insure": "Insure",
+        "ThreeSteps": " Compare - Choose - Insure ",
+        "TwoMins": " in two minutes",
+        "Title": "Get your insurance policy by following three simple steps",
+        "FormTitle": "With Ammant, Insurance it became easier!",
+        "FormText": "Sequence No.",
+        "CustomCardText": "Custom Card",
+        "NationalIDLabel": "National ID. / Iqama No.",
+        "SequenceNumText": "Sequence No.",
+        "RegistrationTypeText": "Registration Type",
+        "TermsConsentSub": "I agree to inquire about my Information from National Information Center to issue an insurance policy during the trial run period",
+        "CheckBoxText": "I hereby give Al-mamoon advance consent to obtain information of me and/or any vehicle under my ownership from the National Information Center.",
+        "CardNo": "Card No.",
+        "Year": "Manufacturing Date"
+        
+    },
+    "HowItworks":{
+        "Title":"How it works",
+        "StepOneTitle":"Provide Info",
+        "StepOne":"Provide us with brief information about you and vehicle that you want to cover",
+        "StepTwoTitle":"Compare Quotes",
+        "StepTwo":"Compare, and select the suitable quote from the quotes provided by authorized insurance companies",
+        "StepThreeTitle":"Purchase",
+        "StepThree":"Use our secured online payment using VISA, MASTER CARD, or MADA to purchase it",
+        "StepFourTitle":"Issue Policy",
+        "StepFour":"We will send your insurance policy details to your email account and you can print it form your profile"
+      },
+    "Faq":{
+        "Title": " FAQ "
+    },
+    "Ads":{
+        "Title": " Our Parteners ",
+        "Notes": " Here we serve the best services for cars insurance ",
+        "About": " Al Mamoon Insurance Company ",
+        "WhyUs": "Best Site to Compare and Buy Insurance Policies",
+        "Services": "Services",
+        "OurServices": " Our Insurance Services ",
+        "CallBack": "  Request a Free Call Back",
+        "InputName": "Name",
+        "InputPhone": "Phone Number",
+        "SendButton": "Send",
+        "ContactUs":"Contact Us"
+    },
+
+    "Accordian":{
+        "WhatIsAlMamoon": " What is Al Mamoon and What it's Services ?",
+        "AlMamoonIs" : " هي منصة إلكترونية مصرجة من قبل مؤسسة النقد وتقدم خدمة مقارنة وشراء و وثائق التأمين بشكل إلكتروني وتملكها شركة المأمون  لوساطة التأمين",
+        "QuotesBuyWay" : " How can I buy insurance quote ?",
+        "AnswerAboutBuyWay": "",
+        "QuotePrice": "What included in insurance quote price",
+        "PriceAnswer": "",
+        "PaymentWay": " What is available payment way for buying insurance quotes ?",
+        "PaymentAnswer": "",
+        "Safety": "Is Al Mamoon website safe for E-payment ?",
+        "SafetyAnswer": ""
+
+    },
+
+    "InsuranceCovered":{
+        "QuestionAboutCoverage": "Types of Vehicle Insurance coverage ",
+        "NotesAboutCoverage": "There are Two Main Insurance Coverage Served by Ammant website, Choose one of them to Specify your Car Insurance",
+        "InsuranceTypeOne": " Third-Party Vehicle Insurance",
+        "InsuranceTypeTwo" : "Comprehensive Vehicle Insurance",
+        "InsuranceTypeOneDetails": "It is the minimum mandatory insurance that you need to drive legally in KSA, and it just covers the other compensation fees for the inguries caused by you for them.",
+        "InsuranceTypeTwoDetails": "it provides complete protection and coverage against to your vehicle due to an accident. Also, any comprehensive insurance includes by default third party insurance. In addition, the comprehensive insurance policy provides coverage for your car against damages caused by fire, theft, natural disasters (floods, storms, etc.)"
+    },
+    "Auth": {
+        "SignInText": "Login",
+        "SignUpText": "Sign up",
+        "welcome":"welcome Back",
+        "welcomeBack":"welcome ",
+
+        "RememberMeText": "Remember me",
+        "ForgotPasswordText": "Forgot password?",
+        "CreateAccountText": "Create an account  ",
+        "SignToExistingText": "Already have an account!",
+        "PhoneNumberText": "Phone number",
+
+        "check":"By clicking Register an account, you agree to our ",
+        "check2":"and that you have read the",
+        "check3":"and acknowledge that all data is correct and I am responsible for its correctness",
+        "EmailText": "Email",
+        "DontHaveAccountText": "You do not have an account?",
+        "HaveAccountText": "You have your account information?",
+        "PasswordText": "Password",
+        "ConfirmPasswordText": "Confirm password",
+        "AccontActivationText": "Account activation",
+        "VerifyAccountText": "Please enter the code that has been sent to your email to activate your account",
+        "AccountVerifiedText": "Account verified successfully, you may login",
+        "VerificationCodeText": "Verification code",
+        "ResendVerificationCodeText": "Resend verification code",
+        "ResendVerSuccessAlert": "Verification code has been resent",
+        "ResendVerErrorAlert": "",
+        "PasswordReset": {
+            "NewPasswordText": "New password",
+            "LastPhoneDigitsText": "Last 4 digits of phone number",
+            "ResetCode": "Reset code",
+            "ResetPasswordText": "Password reset",
+            "ResetText": "Reset",
+            "VerificationStatement": "Please enter the code that has been sent to your email to change your password",
+            "CodeResendText": "Verification code has been sent",
+            "PasswordResetedText": "Your password has been changed"
+        }
+    },
+    "Profile": {
+        "Menu": {
+            "NewInsurancePolicyText": "Purchase a new policy",
+            "PoliciesText": "Policies",
+            "AccountSettingsText": "Account settings",
+            "RegisteredVehiclesText": "Vehicles",
+            "RegisteredAccounts": "Registered identities",
+            "TechnicalSupportText": "Technical support",
+            "SavedQuotationText": "Saved Quotes",
+            "InvoicesText": "Invoices",
+            "ClaimsText": "Claims"
+        },
+        "PanelItems": {
+            "Policies": {
+                "PoliciesDetails":"Policy Details ",
+                "BoughtText": "Policies",
+                "ExpiredText": "Expired policies",
+                "ExpiringText": "Expiring policies",
+                "UncompletedText": "Pending najm update",
+                "PoliciesListText": "List of policies",
+                "NoPoliciesText": "You have no policies",
+                "StoredPoliciesListText": "Saved policies list",
+                "NoStoredPoliciesText": "You have no saved policies",
+                "PolicyNumber": "Policy No.",
+                "PolicyInitiationDate": "Issue date",
+                "PolicyStartDate": "Effective date",
+                "PolicyEndDate": "Expiry date",
+                "PlateNumber": "Plate No.",
+                "policyStatusTxt": "Status",
+                "Active": "Active",
+                "Expired": "Expired",
+                "AlmostExpired": "Almost Expired",
+                "NajemUpdateTxt": "Najm update",
+                "Pending": "Pending"
+            },
+
+            "VehicleList" : {
+                "OwnerID": "Vehicle owner ID/Iqama",
+                "OwnerName": "Vehicle owner name",
+                "NationalID": "National ID/Iqama",
+                "InsName": "Insured name",
+                "ProductType": "Product Type"
+            },
+
+            "AccountSettings": {
+                "EmailText": "Email",
+                "PasswordText": "Password",
+                "PhoneText": "Phone No.",
+                "LanguageText": "Preferred Language",
+                "EditBtnText": "Edit",
+                "PasswordChangeText": "Change password",
+                "EmailChangeText": "Change email",
+                "PhoneChangeText": "Change phone number",
+                "NewPhoneNumber": "New phone number",
+                "OldPassword": "Old password",
+                "NewPassword": "New password",
+                "NewPasswordConfirm": "New password confirm",
+                "NewEmail": "New email"
+            },
+            "PriviousQuote": {
+                "QuoteReference": "Reference No.",
+                "TotalPremium": "Total Premium",
+                "DeductibleValue": "Deductible Value",
+                "Model": "Model",
+                "Status": "Status",
+                "ProductType": "Product Type",
+                "Remaining": " Expiry at",
+                "Purchase": "Purchase",
+                "CreatedOn": "Created on",
+                "CurrencyTxt": "SAR",
+                "Delete":"delete"
+            },
+            "Invoices": {
+                "QuoteReference": "Quote Reference",
+                "DateOfInvoice": "Date Of invoice",
+                "NationalIDLabel": " National ID/Iqama",
+                "SequenceNumText": "Sequence No.",
+                "ProductType": "Product type",
+                "TotalPremium": "Total Premium",
+                "Print":"Print",
+                "NoInvoices":"No Invoices"
+            },
+            "PurchsePolicy": {
+                "RegisteredID": "Registered identities",
+                "AddIdBtn": "Add an identity",
+                "FullName": "Full name",
+                "BirthDate": "Birth Date",
+                "NationalIDLabel": " National ID/Iqama",
+                "OwnerNationalIdLabel": "Owner ID/Iqama",
+                "SelectBtn":"Select",
+                "CancelBtn": "Cancel",
+                "InsureBtn": "Insure",
+                "RegistredVehicles": "Registered vehicles",
+                "AddVehiclesBtn": "Add vehicles",
+                "AddIDFormTitle": "Please enter identity information",
+                "AddVehiclesFormTitle": "Please enter the vehicle details you wish to insure",
+                "PolicyLeft":"Policy ",
+                "Policy":"Left"
+            }
+        },
+        "Claims": {
+          "PolicyNumber": "policy No",
+          "ClientNameText": "Client Name",
+          "AccidentDetailsText": "Accident details",
+          "AccidentDateText": "Accident Date",
+          "ClaimsDetailsText": "Claims Details",
+          "ClaimsText": "Claims",
+          "ClaimNumberText":"Claim Number",
+          "ClaimDateText":"Claim Date",
+          "ClaimDetailsText":"Claim Details",
+          "ClaimStatus":"Claim Status",
+          "NewClaimText": "New Claim"
+
+      },
+      "Support":{
+        "TicketDetail":"Ticket Detail",
+        "IssueDate":"Issue Date",
+        "WriteInquireHere":"Write your inquire here",
+        "AddTicket":"Add Ticket",
+        "TicketList":"Ticket List"
+      }
+    },
+    "Header": {
+        "logoUrl": "https://www.concordarabia.com/images/concord-logo-en.png",
+        "MainPageText": "Home",
+        "ContactText": "Contact us",
+        "Benefits": "Our Benefits",
+        "InsuranceCoverage": "Insurance Coverage ",
+        "Parteners": "Parteners",
+        "LoginText": "Login",
+        "LogoutText": "Logout",
+        "MyAccountText": "My account",
+        "AboutText": " About ",
+        "RiskText": " Risk Management ",
+        "ServiceText": "Services",
+        "ClientsText": "Clients",
+        "ContactTitle": "Contact ",
+        "Demo": "Meta version"
+    },
+    "body":{
+        "quoteRequesterDetails": "  Quote Requester Details",
+        "VehileDetails":"Vehile Details ",
+        "Quotations":" Quotations ",
+        "PayTheFees":" Pay The Fees"
+    
+        },
+    "Footer": {
+        "CopyRights": "All Rights Reserved for Ammant Website| 2022 ",
+        "Contact": "Contact Us",
+        "Loacation1": "Jeddah",
+        "Loacation2": "Riyadh",
+        "PhoneNo1": "+966 12 668 8333",
+        "PhoneNo2": "+966 11 236 7239",
+        "Links": "Quick Links",
+        "Address": "Othman bin Affan Street",
+        "Building": "Yusufiya Building",
+        "City": "Al Sharqiya District",
+        "Country": "Kingdom of Saudi Arabia ",
+        "Time": "Open Time: 09:00 - 17:00",
+        "MainPageText": "Home",
+        "ContactText": "Contact us",
+        "MyAccountText": "My account",
+        "Company": "Jeddah Branch",
+        "About": "About us",
+        "Product": "Insurance products",
+        "Services": "Our services",
+        "Terms": "Terms and Conditions",
+        "Terms&Conditions": "Terms & Conditions", 
+        "Privacy": "Privacy policy",
+        "Questions": "Common questions"
+
+
+
+    },
+    "Almamoon":{
+      "About":"AL MAMOON is an innovative company aiming for the highest professional standards at all times.Al Mamoon has grown rapidly to become one of Saudi’s largest intermediaries for Corporate, Commercial, SME and specialist insurances."
+    },
+    "Vehicle": {
+        "AddVehicle": "Add Vehicle"
+    },
+    "QuotationRequestForms": {
+        "InsuranceInfo": {
+            "InsurancePurpose": "Insurance  Purpose",
+            "contactType": "Contact Type",
+            "NewInsurance": "New Insurance",
+            "NewVehicleOwner": "Vehicle Owner Transfer",
+            "NationalIDLabel": "National ID Policy Holder",
+            "PlaceOfManufacture": "Repair Type",
+            "VehicleIdentificationNumber": "Owner National ID",
+            "PolicyEffectiveDate": "Policy Effective Date",
+            "manufacturingYear": "Manufacturing year",
+            "Continue": "Continue"
+            
+        },
+        "VehicleInfo": {
+            "EstimatedVehicleValue": "Vehicle Estimated Value",
+            "CurrencyText": "SAR",
+            "DrivingCity": "Driving City",
+            "PurposeOfVehicleUse": "Purpose of Use",
+            "TransmissionType": "Transmission Type",
+            "VehicleParking": "parking Location",
+            "vehicleCurrentMileage": "Vehicle Current Mileage",
+            "modifications": "Are There Any Modifications?",
+            "modificationsDescription": "Vehicle Modifications",
+            "Mileage": "Mileage Expected Annual",
+            "AddDriver": "Do you want to add a driver?",
+            "AddVehicleDriver": "Add Vehicle Driver",
+            "Yes": "Yes",
+            "No": "No" ,   
+            "previous": "Previous"
+
+        },
+        "DriverInfo": {
+            "Gender": "Gender",
+            "Male": "Male",
+            "Female": "Female",
+            "Birth": "Date of Birth",
+            "Education": "Education Level",
+            "Status": "Marital Status",
+            "Single": "Single",
+            "Married": "Married",
+            "Percentage": "Driving Percentage",
+            "LicenseType": "Driving License Type",
+            "WorkCity": "Work City",
+            "HomeCity": "Home City",
+            "WorkCompanyName": "Work Company Name",
+            "Children": "Number of Children Under 16 Years",
+            "AccidentCounts": "Number of Accident",
+            "ClaimCount": "Number of Claims Last 5 Years ",
+            "Relation": "Relation",
+            "Occupation": "Occupation"
+        },
+        "MoreDetails": {
+            "Conditions": "Do you have Health Conditions or Restrictions?",
+            "Violations": "Do you have violations?",
+            "License": "Do you have valid driving license from other countries?",
+            "VehicleSpecification": "Vehicle Specifications",
+            "AddVehicleSpecification": "Add Vehicle Specification",
+            "LicenseType": "License Type",
+            "Country": "Which Country?",
+            "years": "How many Years",
+            "AddBtn": "Add",
+            "RemoveBtn": "Remove"
+        },
+        "AdditionalDriver": {
+            "Address": "Driver Home Address same as policyholder address?",
+            "AddDriver": "Do you want to add additional driver?",
+            "Conditions": "Does driver have Health Conditions or Restrictions?",
+            "Violations": "Does driver have violations?",
+            "License": "Does driver have valid driving license from other countries?",
+            "NationalIDLabel": "National ID. / Iqama No. of the driver",
+            "Percentage": "Driving percentage additional driver",
+            "SaveBtn": "Save",
+            "CancelBtn": "Cancel"
+        },
+        "DriverList": {
+            "AddDriver": "Add Driver",
+            "NationalIDLabel": "National ID",
+            "RemoveBtn": "Remove",
+            "EditBtn": "Edit",
+            "AdditionalsDrivers": "Additionals Drivers:",
+            "Percentage": "Driving Percentage",
+            "DriverType": "Driver Type",
+            "DriverTypeTxt1": "Vehicle Owner",
+            "DriverTypeTxt2": "Additional Driver"
+        },
+        "ClientInfoModal": {
+            "Title": "Update policy holder information",
+            "Email": "Email",
+            "Phone": "Phone No.",
+            "BackBtn": "Back",
+            "Continue": "Continue",
+            "PreviousQuoteTitle": "You have saved quote",
+            "ReqNewQuote": "Do you want to request a new quote?",
+            "SavedBtn": "Display saved quote",
+            "ReqNewQuoteBtn": "Request a new quote"
+        },
+        "StepsTitles": {
+            "InsuranceInfo": "Insurance Details",
+            "VehicleInfo": "Vehicle Details",
+            "DriverInfo": "Policy holder Details",
+            "Other": "Other",
+            "AddDriverInfo": "Additional Diver Details",
+            "AddDriversInfo": "Additionals Drivers Details",
+            "ShowQuoteBtn": "Show Quotations"
+        },
+        "Tooltips": {
+            "DrivingCity": "In which city is the vehicle driven?",
+            "DriverNoOfAccident": "The number of accidents with this vehicle",
+            "AdditionalDriverNoOfAccident": "The number of accidents that occurred to the additional driver",
+            "AdditionalDriver": "To cover all drivers of the vehicle, all their details are required"
+        }
+    }
+}

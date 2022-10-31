@@ -1,0 +1,648 @@
+{
+    "App": {
+        "CloseText": "اغلاق",
+        "ViewMoreText": "المزيد",
+        "Currency": "ر.س",
+        "BuyText": "إشتري",
+        "Choose": "إختيار",
+        "TotalPriceText": "إجمالي المبلغ",
+        "AddedVat":"شامل الضريبة",
+        "BackText": "رجوع",
+        "DaysText": "يوم",
+        "HoursText": "ساعة",
+        "MinutesText": "دقيقة",
+        "SecondsText": "ثواني",
+        "NotApplicableText": "غير متضمن",
+        "CompanyText": "شركة التأمين",
+        "ContinueText": "استمرار",
+        "InputCaptchaText": "ادخل الرموز",
+        "UnavailableText": "غير متوفرة",
+        "ResendText": "إعادة إرسال",
+        "PrintText": "طباعة",
+        "StatusText": "الحالة",
+        "SaveChangesText": "حفظ التغييرات",
+        "CancelText": "إلغاء",
+        "AgreeText": "موافق",
+        "PasteText": "لصق",
+        "AddNewText": "إضافة ",
+        "saveText":"حفظ"   ,
+        "Al-Mamoon":"©المأمون",
+        "Send":"إرسال",
+        "CompanyInsurance": "مقارنة بين شركات التأمين"
+       },
+    "Misc": {
+        "VerificationCodeText": "كود التحقق",
+        "SendVerificationCodeText": "إرسال كود التحقق",
+        "Arabic": "العربية",
+        "English": "الإنجليزية",
+        "FullName": "الاسم الكامل",
+        "Includes": "و يشمل",
+        "LiabilityCost": "مبلغ التحمل",
+        "TotalCost": "اجمالي المبلغ",
+        "QuotationLoadingMessage": "يرجى الانتظار حتى يتم التحقق من البيانات المدخلة عن طريق مركز المعلومات الوطني",
+        "LanguageSwitchLoadingMessage": "Switching to English"
+    },
+    "Errors": {
+        "ServerErrorTitle": "نأسف",
+        "ServerErrorSubtitle": "لا تتوفر الخدمة حاليا. الرجاء إعادة المحاولة في وقت لاحق",
+        "UnaviablableQuotationsTitle": "عذرا",
+        "UnaviablableQuotations": "لا توجد عروض اسعار حاليا, يرجى المحاولة في وقت لاحق",
+        "EmptyInputField": "هذا الحقل مطلوب",
+        "InvalidCaptcha": "غير صحيح",
+        "InvalidEmail": "البريد الالكتروني غير صحيح",
+        "IncompleteInputField": "هذا الحقل غير مكتمل",
+        "InvalidNationalID": "رقم الهوية خاطيء",
+        "InvalidIban": "الأيبان خاطيء",
+        "FirstPhoneNumberDigit": "يحب أن يبدأ رقم الهاتف بالرقم 5",
+        "EnterIbanToContinue": "الرجاء ادخال الايبان للمواصلة",
+        "MedicalConditionInvalid": "الرجاء إختيار واحدة من القيود الصحية",
+        "ViolationInvalid": "الرجاء إختيار واحدة من المخالفات المرورية",
+        "ShortPassword": " Must be at least 8 characters!",
+        "least1number": " Must contain at least 1 number",
+        "CapitalCase": " Must contain at least 1 in Capital Case!",
+        "SmallCase": " Must contain at least 1 Letter in Small Case!",
+        "SpecialCharacter": " Must contain at least 1 Special Character!",
+
+        
+        "PasswordNotMatch": "كلمات المرور غير متطابقة. أعد المحاولة",
+        "ShortPhoneNumber": "رقم الهاتف غير صحيح",
+        "DriverExist": "تمت إضافة السائق مسبقا",
+        "InCompletePercentage": "يجب ان تكون نسبة القيادة للمركبة 100%",
+        "CompletedPerentage": "يجب ان تكون نسبة القيادة للمركبة 100% , لايمكنك اضافة سائق اخر",
+        "PaymentIncomplete": "نأسف, لم تنجح عملية الدفع",
+        "minVehicleSumInsured": "أقل قيمة يمكن إدخالها 10000 ر.س",
+        "PleaseInterthepolicyEffectiveDatee":"الرجاء ادخال تاريخ الوثيقه"
+
+    },
+    "SuccessMessages": {
+        "EmailChange": "تم تغيير البريد الالكتروني بنجاح",
+        "PasswordChange": "تم تغيير كلمة المرور بنجاح",
+        "PhoneChange": "تم تغيير رقم الهاتف بنجاح",
+        "LanguageChange": "تم تغيير اللغة بنجاح"
+    },
+    "Quote": {
+        "CompareAll": "عرض الكل",
+        "View": "معاينة الكل",
+        "CompareButtonText": "أضف الى المقارنة",
+        "RemoveFromComparisonText": "إزالة من المقارنة",
+        "BenefitsHeaderTitle": "يشمل مجانا",
+        "DiscountsTitle": "تفاصيل المبلغ",
+        "ExtraBenefitsTitle": "  المنافع الإضافية",
+        "BasePremium":"القسط الأساسي",
+        "TotalPremuim": "إجمالي المبلغ",
+        "CompanyDetails": {
+            "DescriptionTitleText": "تفاصيل الشركة",
+            "ContactTitleText": "معلومات التواصل",
+            "PhoneTitleText": "رقم الهاتف",
+            "EmailTitleText": "البريد الالكتروني",
+            "WebsiteTitleText": "الموقع الالكتروني",
+            "AddressTitleText": "العنوان"
+        },
+        "TimerOverText": "تم انتهاء العرض",
+        "TimeRemainingText": "الزمن المتبقي",
+        "LiabilityCostText": "مبلغ التحمل",
+        "Page": {
+            "QuotesListText": "قائمة عروض الاسعار"
+        },
+        "Filters": {
+            "LiabilityValueText": "مبلغ التحمل",
+            "FilterByPriceText": "ترتيب حسب السعر",
+            "AscendingText": "تصاعدي",
+            "DescendingText": "تنازلي",
+            "AscendingOrderText": "ترتيب تصاعدي",
+            "DescndingOrderText": "ترتيب تنازلي"
+        },
+        "QuoteComparison": {
+            "ComparisonMenuTitle": "قائمة المقارنة",
+            "CompareButtonText": "قارن",
+            "MinComparisonAlertText": "الرجاء اضافة وثيقتين او اكثر",
+            "MaxComparisonAlertText": "قائمة المقارنة ممتلئة!"
+        },
+        "Benefits": {
+            "DriverCoverage": "تغطية الحوادث الشخصية للسائق فقط",
+            "PassengerCoverage": "تغطية الحوادث الشخصية للركاب",
+            "DriverPassengerCoverage": "تغطية الحوادث الشخصية للسائق والركاب",
+            "NaturalDisasters": "الكوارث الطبيعية",
+            "WnFnT": "الزجاج الأمامي والحرائق والسرقة",
+            "RoadsideAssistance": "المساعدة على الطريق",
+            "HireCar": "سيارة بديلة",
+            "AgencyRepairs": "أصلاح وكالة",
+            "GeographicalCoverage": "التغطية الجغرافية لدول مجلس التعاون الخليجي/ الأردن/مصر لمدة 12 شهر"
+        },
+        "Deductibles": {
+            "TotalVat": "القيمة المضافة",
+            "DeductiblesInfo": "هو مبلغ يدفعه المؤمن له من قيمة المطالبة عند وقوع حادث كمشاركة في قيمة إصلاح مركبته في التأمين الشامل وذلك وفقاً لأحكام وشروط وثيقة التأمين"
+        },
+        "ExpiryModal": {
+            "OffersExpiry": "إنتهاء صلاحية عروض الأسعار",
+            "GetNewOffersQuestion": "لقد إنتهت صلاحية عروض أسعار الشركات, هل تريد إرسال طلب تسعير جديد؟",
+            "GetNewOffers": "طلب تسعير جديد"
+        },
+        "insuranceType": {
+            "all": "الكل",
+            "comprehinsive": "تأمين شامل",
+            "third-party": "تأمين  طرف ثالث (ضد الغير)"
+        }
+    },
+    "Policy": {
+        "NationalID": "رقم الهوية",
+        "FullName": "الاسم الكامل",
+        "NationalAddress": "العنوان الوطني",
+        "VehicleData": {
+            "SequenceNumber": "الرقم المتسلسل",
+            "CustomCard":"البطاقة الجمركية",
+            "Description": "وصف المركبة",
+            "PlateNumber": "رقم اللوحة",
+            "RepairsLocation": "مكان الصيانة",
+            "SumInsured": "القيمة التقديرية للمركبة",
+            "ModelYear": "سنة الصنع"
+        }
+    },
+    "Checkout": {
+        "FrontSide": "الجهة الأمامية ",
+        "BackSide": "الجهة الخلفية ",
+        "ReightSide": "الجهة اليمني ",
+        "LeftSide": "الجهة اليسري ",
+        "CarNumber": " رقم اللوحة ",
+        "CostsDetails": "تفاصيل المبلغ",
+        "PolicyPrice": "سعر الوثيقة",
+        "BasicInstallment": " القسط الأساسي",
+        "AdministationPrice": "مصاريف ادارية",
+        "VAT": "ضريبة القيمة المضافة",
+        "Discounts": "الخصومات",
+        "PreviewCard": {},
+        "PaymentMethodTxt": "اختر طريقة الدفع",
+        "CreditCard":" بطاقة إئتمان / مدى ",
+        "Other": "أخرى",
+        "PolicyDetails": {
+            "PolicyStart": "بداية الوثيقة",
+            "ProductType": "نوع التأمين",
+            "PolicyInitiationDate": "تاريخ اصدار",
+            "PolicyEndDate": "تاريخ الانتهاء",
+            "IdentityNumber": "رقم الهوية",
+            "FullName": "الاسم الكامل",
+            "Birthdate": "تاريخ الميلاد",
+            "SequenceNum": "الرقم المتسلسل",
+            "VehicleDescription": "وصف المركبة",
+            "VehicleMajorColor": "اللون",
+            "vehicleChassieNo": "رقم الشاسي" ,
+            "DrivingCity": "مدينة القيادة",
+            "RepairsLocation": "مكان الصيانة",
+            "PolicyNumber": "رقم الوثيقة"
+        },
+        "Drivers": {
+            "VehicleDrivers": "سائقي المركبة",
+            "DrivingPercentage": "نسبة القيادة"
+        },
+        "InCompany": {
+            "CompanyName": "شركة التأمين"
+        },
+        "details": {
+            "InvoicedDetails": "تفاصيل الفاتورة"
+        },
+        "Attachments": {
+            "VehicleImages": "صور المركبة",
+            "ContinueLaterTxt": "حفظ التسعيرة والمحاولة في وقت لاحق"
+        },
+        "Payment": {
+            "Payment": "سداد الرسوم",
+            "IbanNote": "بناءاً علي توجيهات البنك المركزي السعودي بتزويد رقم الايبان الخاص بك لشركة التأمين لتسهيل عملية إسترجاع الاموال",
+            "QuoteOwnerEmail":"البريد الإلكتروني  ",
+            "QuoteOwnerPhone":"رقم جوال مالك الوثيقة",
+            "Card": {
+                "CardNum": "رقم البطاقة",
+                "CardHolderName": "اسم حامل البطاقة"
+            }
+        },
+        "ContinuationModal": {
+            "SaveQuote": "حفظ التسعيرة",
+            "ContinueLaterQuestion": "هل تريد حفظ التقدم و المتابعة لاحقا؟",
+            "ReferenceIdText": "سيتم حفظ تسعيرة الوثيقة بالرقم المرجعي",
+            "BuyBeforeText": "على ان يتم شراء الوثيقة قبل تاريخ"
+        },
+        "UploadImageCheckText":"أرغب في تحميل البيانات في وقت لاحق"
+    },
+    "PaymentStatus": {
+        "StatusCheckTxt": "جاري التحقق عن عملية الدفع",
+        "Success": {
+            "SuceessTitle": "عملية شراء ناجحة",
+            "ThankTxt": "شكرا لك ,, تم إستلام المبلغ",
+            "EmailTxt": "تم إرسال نسخة من الوثيقة الى بريدك الإلكتروني بإمكانك طباعة أو تحميل الوثيقة في أي وقت",
+            "DownloadBtn": "تحميل   ",
+            "PrintBtn": "طباعة  ",
+            "ShareBy": "مشاركة عبر",
+            "WhatsApp":"الواتس اب",
+            "SMS":"SMS",
+            "Renew": "تجديد وثيقة التأمين",
+            "PolicyDetails": "تفاصيل الوثيقة",
+            "VehcileDetails": "تفاصيل المركبة",
+            "CostsDetails": "تفاصيل المبلغ"
+        },
+        "Failure": {
+            "FailureTitle": "لم تنجح عملية الشراء",
+            "FailureTxt": "يمكنك العودة لصفحة الدفع و معاودة المحاولة, او المحاولة في وقت لاحق",
+            "ReturnBtn": "العودة لصفحة الدفع"
+        }
+    },
+    "Landing": {
+        "LandingTitle": "ايش تنتظر .......",
+        "Compare": "قارن",
+        "Choose": "اختار",
+        "Insure": "أمّن",
+        "ThreeSteps": "قارن - اختار - أمّن",
+        "TwoMins": "في دقيقتين",
+        "Title": "أحصل على وثيقة التأمين بتطبيق ثلاثة خطوات سهلة",
+        "FormTitle": "مع أمنت، التأمين صار أسهل!",
+        "FormText": "بطاقة التسجيل (إستمارة)",
+        "CustomCardText": "بطاقة جمركية",
+        "NationalIDLabel": "رقم الهوية / الإقامة لطالب الوثيقة",
+        "SequenceNumText": "الرقم التسلسلي",
+        "RegistrationTypeText": "نوع تسجيل المركبة",
+        "TermsConsentSub": " أقر بموافقتي على الإستعلام عن بياناتي من مركز المعلومات الوطني لأصدار وثيقة تأمين خلال فتره التشغيل التجريبي",
+        "CheckBoxText": "أقر بموافقتي على قيام منصة أمنت  بالإطلاع على البيانات الموجودة في مركز المعلومات الوطني أو أية معلومات تتعلق بالمركبات التي أرغب في تأمينها.",
+        "CardNo": "رقم البطاقة",
+        "Year":"سنة الصنع"
+    },
+    "HowItworks":{
+        "Title":"كيفية شراء وثيقة التأمين",
+        "StepOneTitle":" تزويدنا بالمعلومات ",
+        "StepOne":"زودنا بمعلومات عنك و عن المركبة التي تريد تأمينها",
+        "StepTwoTitle":" مقارنة عروض الأسعار    ",
+        "StepTwo":"قارن عروض أسعار شركات التأمين و أختر العرض المناسب",
+        "StepThreeTitle":"سداد الرسوم",
+        "StepThree":"أستخدم نظام الدفع الأمن للدفع عبر فيزا, ماستر كارد, او مدى ",
+        "StepFourTitle":"احصل على تأمينك ",
+        "StepFour":"سيتم أرسال تفاصيل وثيقة التأمين على البريد الكتروني الخاص بك "
+      },
+    "Faq":{
+        "Title": " مكتبة المعرفة"
+    },
+    "Ads":{
+        "Title": " شركاؤنا ",
+        "Notes": "نقدم لكم أفضل الخدمات التي تتعلق بتأمين السيارات",
+        "About": "المأمون لوساطة التأمين ",
+        "WhyUs": "أفضل موقع لمقارنة وشراء وثائق التأمين",
+        "Services": "خدماتنا",
+        "OurServices": "خدماتنا التأمينية",
+        "CallBack": " تواصل معنا   ",
+        "InputName": "الاسم",
+        "InputPhone": "رقم التلفون",
+        "SendButton": "إرسال",
+        "ContactUs":"تواصل معنا"
+
+        
+    },
+
+    "Accordian":{
+        "WhatIsAlMamoon": "ما هو المأمون وما هي الخدمة التي يقدمها ؟",
+        "AlMamoonIs" : " هي منصة إلكترونية مصرجة من قبل مؤسسة النقد وتقدم خدمة مقارنة وشراء و وثائق التأمين بشكل إلكتروني وتملكها شركة المأمون  لوساطة التأمين",
+        "QuotesBuyWay" : " كيف يمكنني شراء وثيقة التأمين ؟",
+        "AnswerAboutBuyWay": "",
+        "QuotePrice" : "ماذا يشمل سعر وثيقة التأمين ؟",
+        "PriceAnswer": "",
+        "PaymentWay": "ما هي وسائل الدفع الممكنة لشراء وثيقة التأمين ؟",
+        "PaymentAnswer": "",
+        "Safety": "هل موقع المأمون آمن للدفع الإلكتروني ؟",
+        "SafetyAnswer": ""
+    },
+    "InsuranceCovered":{
+        "QuestionAboutCoverage": "كيف أعرف التغطية التأمينية المناسبة للسيارة؟!",
+        "NotesAboutCoverage": "توجد تغطيتين رئيسيتين يقدمها موقع أمنت اختار التغطية المناسبة لك لتأمين سيارتك ",
+        "InsuranceTypeOne": " التأمين ضد الغير (طرف ثالث)",
+        "InsuranceTypeTwo" : "التأمين الشامل",
+        "InsuranceTypeOneDetails": " هو الحد الأدنى للتأمين الإلزامي الذي تحتاجه للقيادة بشكل قانوني على طرق المملكة، وهو يغطي فقط تكلفة تعويض الآخرين عن الإصابات التي تسببها لهم",
+        "InsuranceTypeTwoDetails": "يوفر حماية وتغطية كاملة ضد الأضرار التي لحقت بسيارتك بسبب حادث. كما أن أي تأمين شامل يشمل بشكل إفتراضي التأمين ضد الغير، بالإضافة إلى ذلك توفر )وثيقة التأمين الشامل تغطية لسيارتك ضد الأضرار الناجمة عن الحريق، السرقة، الكوارث الطبيعية (الفيضانات، العواصف ، وما إلى ذلك)"
+    },
+    "Auth": {
+        "SignInText": "تسجيل الدخول",
+        "SignUpText": "إنشاء حساب",
+        "welcomeBack":"مرحبا بعودتك مرة اخرى ",
+        "welcome":"مرحبا بك في موقع امنت ",
+        "RememberMeText": "تزكرني",
+        "ForgotPasswordText": " نسيت كلمة المرور؟",
+        "CreateAccountText": " إنشاء حساب  ",
+        "SignToExistingText": "تسجيل الدخول",
+        "PhoneNumberText": "رقم الهاتف",
+        "DontHaveAccountText": "ليس لديك حساب؟",
+        "HaveAccountText": "لديك حساب ؟",
+        "check":"بالنقر على تسجيل حساب فأنك توافق على ",
+        "check2":" التي نتبعها وانك قرات",
+        "check3":" واقر ان جميع البيانات صحيحة واتحمل مسؤولية صحتها",
+
+        "EmailText": "البريد الإلكتروني",
+        "PasswordText": "كلمة المرور",
+        "ConfirmPasswordText": "تأكيد كلمة المرور",
+        "AccontActivationText": "تفعيل الحساب",
+        "VerifyAccountText": "يرجى تأكيد أن رقم الهاتف المحمول هذا خاص بك من خلال إدخال الرمز الموجود في بريدك Email التي تم إرسالها لك",
+        "AccountVerifiedText": "تم تأكيد ملكية حسابك. يمكنك الأن الدخول",
+        "VerificationCodeText": "رمز التحقق",
+        "ResendVerificationCodeText": "إعادة إرسال رمز التحقق",
+        "ResendVerSuccessAlert": "تمت إعادة إرسال رمز التحقق",
+        "ResendVerErrorAlert": "",
+        "PasswordReset": {
+            "NewPasswordText": "كلمة المرور الجديدة",
+            "LastPhoneDigitsText": "اخر اربعة ارقام من رقم الهاتف",
+            "ResetCode": "رمز التحقق",
+            "ResetPasswordText": "إسترجاع كلمة المرور",
+            "ResetText": "إسترجاع",
+            "VerificationStatement": "أدخل رمز التحقق المرسل إلى بريدك لتغير كلمة المرور",
+            "CodeResendText": "تم إعادة إرسال رمز التحقق",
+            "PasswordResetedText": "تم تغير كلمة المرور"
+        }
+    },
+    "Profile": {
+        "Menu": {
+            "NewInsurancePolicyText": "  شراء وثيقة تأمين جديده",
+            "PoliciesText": "وثائق التأمين",
+            "AccountSettingsText": "إعدادات الحساب",
+            "RegisteredVehiclesText": "المركبات المسجلة",
+            "RegisteredAccounts": "الهويات المسجلة",
+            "TechnicalSupportText": "الدعم الفني",
+            "SavedQuotationText": "الأسعار المحفوظة",
+            "InvoicesText": "الفواتير",
+            "ClaimsText": "المطالبات"
+        },
+        "PanelItems": {
+            "Policies": {
+                "PoliciesDetails":"تفاصيل الوثيقة",
+                "BoughtText": "وثائق تم شرائها",
+                "ExpiredText": "وثائق منتهية",
+                "ExpiringText": "وثائق قاربت على الانتهاء",
+                "UncompletedText": "وثائق بإنتظار رفعها لنجم",
+                "PoliciesListText": "قائمة الوثائق",
+                "NoPoliciesText": "لا توجد وثائق",
+                "StoredPoliciesListText": "قائمة عروض الاسعار المحفوظة",
+                "NoStoredPoliciesText": "لا توجد عروض محفوظة",
+                "InsuranceCompany": "شركة التأمين",
+                "PolicyNumber": "رقم الوثيقة",
+                "PolicyInitiationDate": "تاريخ اصدار",
+                "PolicyStartDate": "بداية الوثيقة",
+                "PolicyEndDate": "تاريخ الانتهاء",
+                "PlateNumber": "رقم اللوحة",
+                "policyStatusTxt": "الحالة",
+                "Active": "مفعل",
+                "Expired": "منتهي",
+                "AlmostExpired": "قاربت على الإنتهاء",
+                "NajemUpdateTxt": "تحديث نجم",
+                "Pending": "قيد الإنتظار"
+            },
+
+            "VehicleList" : {
+                "OwnerID": "رقم هوية مالك المركبة",
+                "OwnerName": "إسم مالك المركبة",
+                "NationalID": "رقم هوية المؤمن له",
+                "InsName": "إسم المؤمن له",
+                "ProductType": "نوع التأمين"
+            },
+            "AccountSettings": {
+                "EmailText": "البريد الالكتروني",
+                "PasswordText": "كلمة المرور",
+                "PhoneText": "رقم الهاتف",
+                "LanguageText": "لغة التواصل المفضلة",
+                "EditBtnText": "تعديل",
+                "PasswordChangeText": "تغير كلمة المرور",
+                "EmailChangeText": "تغير البريد الالكتروني",
+                "PhoneChangeText": "تغير رقم الهاتف",
+                "NewPhoneNumber": "رقم الهاتف الجديد",
+                "OldPassword": "كلمة المرور القديمة",
+                "NewPassword": "كلمة المرور الجديدة",
+                "NewPasswordConfirm": "تأكيد كلمة المرور الجديدة",
+                "NewEmail": "البريد الإلكتروني الجديد"
+            },
+            "PriviousQuote": {
+                "QuoteReference": "الكود المرجعي",
+                "DeductibleValue": "قيمة التحمل",
+                "TotalPremium": "إجمالي المبلغ",
+                "Model": "الموديل",
+                "Status": "الحالة",
+                "ProductType": "نوع التأمين",
+                "Remaining": "المتبقي",
+                "Purchase": "إشتري الأن",
+                "CreatedOn": "تاريخ الإصدار",
+                "CurrencyTxt": "ر.س",
+                "Delete":"حذف"
+            },
+            "Invoices": {
+                "QuoteReference": "الكود المرجعي",
+                "DateOfInvoice": "تاريخ الفاتورة",
+                "NationalIDLabel": "رقم الهوية",
+                "SequenceNumText": "الرقم التسلسلي",
+                "ProductType": "نوع التأمين",
+                "TotalPremium": "إجمالي المبلغ",
+                "Print":"طباعة",
+                "NoInvoices":" لا توجد فواتير"
+
+
+            },
+            "PurchsePolicy": {
+                "RegisteredID": "الهويات المسجلة",
+                "AddIdBtn": "إضافة هوية",
+                "FullName": " الإسم",
+                "BirthDate": "تاريخ الميلاد",
+                "NationalIDLabel": "رقم الهوية  ",
+                "OwnerNationalIdLabel": "رقم هوية مالك المركبة",
+                "SelectBtn":"إختيار",
+                "CancelBtn": "إلغاء",
+                "InsureBtn": "تأمين",
+                "RegistredVehicles": "المركبات المسجلة",
+                "AddVehiclesBtn": "إضافة مركبة",
+                "AddIDFormTitle": "يرجى إدخال بيانات الهوية",
+                "AddVehiclesFormTitle": "يرجى إدخال بيانات المركبة التي ترغب في تأمينها",
+                "PolicyLeft":"باقي عدد ",
+                "Policy":"بوليصة"
+            }
+        },
+        "Claims": {
+          "PolicyNumber": "رقم الوثيقة",
+          "ClientNameText": "أسم العميل",
+          "AccidentDetailsText": "تفاصيل الحادث",
+          "AccidentDateText": "تاريخ الحادث",
+          "ClaimsDetailsText": "تفاصيل المطالبة",
+          "ClaimsText": "المطالبات",
+          "ClaimNumberText":"رقم المطالبة",
+          "ClaimDateText":"تاريخ المطالبة",
+          "ClaimDetailsText":"تفاصيل المطالبة",
+          "ClaimStatus":"حالة المطالبة",
+          "NewClaimText": "مطالبة جديدة"
+      },
+      "Support":{
+        "TicketDetail":"تفاصيل التذكرة",
+        "IssueDate":"تاريخ الإنشاء",
+        "WriteInquireHere":"أكتب إستفسار هنا",
+        "AddTicket":"إضافة تذكرة",
+        "TicketList":"قائمة التذاكر السابقة "
+      }
+
+
+
+    },
+    "Header": {
+        "logoUrl": "https://www.concordarabia.com/images/concord-logo-ar.png",
+        "MainPageText": "الرئيسية",
+        "ContactText": "اتصل بنا",
+        "Benefits": "مميزاتنا",
+        "InsuranceCoverage": "التغطية التأمينية",
+        "Parteners": "شركاؤنا",
+        "LoginText": "تسجيل الدخول",
+        "LogoutText": "تسجيل الخروج",
+        "MyAccountText": "حسابي",
+        "AboutText": "عن المأمون",
+        "RiskText": "إدارة المخاطر",
+        "ServiceText": "الخدمات",
+        "ClientsText": "العملاء",
+        "ContactTitle": "تواصل معنا",
+        "Demo": "التشغيل التجريبي"
+    },
+    "body":{
+    "quoteRequesterDetails": "  تفاصيل طالب الوثيقة",
+    "VehileDetails":"تفاصيل المركبة",
+    "Quotations":"عروض الاسعار ",
+    "PayTheFees":"سداد الرسوم"
+
+    },
+    "Footer": {
+        "CopyRights": "جميع الحقوق محفوظة لدى موقع أمنت| 2022",
+        "Contact": "تواصل معنا",
+        "Loacation1": "Jeddah",
+        "Loacation2": "Riyadh",
+        "Links": "الروابط",
+        "Address": "شارع عثمان بن عفان ",
+        "Building": "مبنى اليوسيفية - المأمون",
+        "City": " المنطقة الشرقية جدة",
+        "Country": "المملكة العربية السعودية",
+        "Time": " وقت العمل: 09:00-17:00",
+        "MainPageText": "الرئيسية",
+        "ContactText": "اتصل بنا",
+        "MyAccountText": "حسابي",
+        "Company": "فرع جدة",
+        "About": "نبذة عنا",
+        "Product": "منتجات التأمين",
+        "Services": "خدماتنا",
+        "Terms": "الشروط والأحكام",
+        "Terms&Conditions": "الشروط والأحكام",
+        "Privacy": "سياسة الخصوصية",
+        "Questions": " مكتبة المعرفة"
+
+    },
+    "Almamoon":{
+      "About":"المأمون هي شركة مبتكرة تهدف إلى أعلى المعايير المهنية في جميع الأوقات. شركة المأمون نمت  بسرعة لتصبح واحدة من أكبر الوسطاء السعوديين في مجال تأمين."
+    },
+    "Vehicle": {
+        "AddVehicle": "اضف مركبة"
+    },
+    "QuotationRequestForms": {
+        "InsuranceInfo": {
+            "contactType": " التواصل من خلال",
+            "InsurancePurpose": "نوع التأمين",
+            "NewInsurance": "تأمين جديد",
+            "NewVehicleOwner": " نقل ملكية",
+            "NationalIDLabel": "رقم الهوية / الإقامة لطالب الوثيقة",
+            "PlaceOfManufacture": "مكان الصيانة",
+            "VehicleIdentificationNumber": "رقم هوية مالك المركبة ",
+            "PolicyEffectiveDate": "تاريخ بداية الوثيقة",
+            "manufacturingYear": "سنة الصنع",
+            "Continue": "التالي"
+        },
+        "VehicleInfo": {
+            "EstimatedVehicleValue": "القيمة التقديرية للمركبة",
+            "CurrencyText": "ر.س",
+            "DrivingCity": "مدينة قيادة المركبة",
+            "PurposeOfVehicleUse": "الغرض من الاستخدام",
+            "TransmissionType": "نوع ناقل الحركة",
+            "VehicleParking": "مكان ايقاف المركبة",
+            "vehicleCurrentMileage": "عدد الكيلومترات التي قطعتها المركبة",
+            "AccidentCounts": " عدد الحوادث ",
+            "modifications": "هل هنالك تعديلات على المركبة؟",
+            "modificationsDescription": "التعديلات",
+            "Mileage": "الكيلومترات المتوقع قطعها في السنة",
+            "AddDriver": "هل تريد إضافة سائق ؟",
+            "Yes": "نعم"
+            ,"No": "لأ",
+            "previous": "السابق"
+        },
+        "DriverInfo": {
+            "Gender": "النوع",
+            "Male": "ذكر",
+            "Female": "أنثى",
+            "Birth": "تاريخ الميلاد",
+            "Education": "المستوى الدراسي",
+            "Status": "الحالة الاجتماعية",
+            "Single": "أعزب",
+            "Married": "متزوج",
+            "Percentage": "نسبة القيادة لمالك المركبة",
+            "LicenseType": "نوع الرخصة",
+            "WorkCity": "مدينة العمل ",
+            "HomeCity": "السكن",
+            "WorkCompanyName": " اسم و عنوان جهة العمل",
+            "Children": "عدد الأبناء أقل من عمر 16 سنة",
+            "AccidentCounts": " عدد الحوادث في اخر( 5)اعوام",
+            "ClaimCount": "عدد المطالبات في اخر( 5)اعوام",
+            "Relation": "صلة القرابة",
+            "Occupation": "المهنة"
+
+        },
+        "MoreDetails": {
+            "Address": "عنوان المنزل نفس عنوان مالك الوثيقة؟",
+            "Conditions": "هل لديك قيود صحية؟",
+            "Violations": "هل لديك مخالفات مرورية؟",
+            "License": "هل لديك رخصة قيادة سارية المفعول من دول أخري؟",
+            "VehicleSpecification": "مواصفات المركبة",
+            "LicenseType": "نوع الرخصة",
+            "Country": "الدولة",
+            "years": "عدد سنوات امتلاك الرخصة",
+            "AddBtn": "إضافة",
+            "RemoveBtn": "حذف"
+        },
+        "AdditionalDriver": {
+            "Address": "عنوان المنزل نفس عنوان مالك الوثيقة؟",
+            "AddDriver": "هل تريد إضافة سائق؟",
+            "Conditions": "هل هنالك قيود صحية على السائق الاضافي؟",
+            "Violations": "هل لدى السائق الإضافي مخالفات مرورية؟",
+            "License": "هل لدى السائق الإضافي رخصة قيادة سارية المفعول من دول أخرى؟",
+            "NationalIDLabel": "رقم الهوية / الإقامة للسائق الإضافي",
+            "Percentage": "نسبة القيادة للسائق الإضافي",
+            "SaveBtn": "حفظ",
+            "CancelBtn": "إلغاء"
+        },
+        "DriverList": {
+            "NationalIDLabel": "رقم الهوية",
+            "AddDriver": "إضافة سائق",
+            "RemoveBtn": "حذف",
+            "EditBtn": "تعديل",
+            "AdditionalsDrivers": "سائقي المركبة:",
+            "DriverType": "الوصف",
+            "Percentage": "نسبة القيادة",
+            "DriverTypeTxt1": "مالك المركبة",
+            "DriverTypeTxt2": "سائق إضافي"
+        },
+        "ClientInfoModal": {
+            "Title": "تحديث معلومات طالب الوثيقة",
+            "Email": "البريد الإلكتروني",
+            "Phone": "رقم الهاتف",
+            "BackBtn": "رجوع",
+            "Continue": "إستمرار",
+            "PreviousQuoteTitle": "لديك عروض أسعار محفوظة",
+            "ReqNewQuote": " هل تريد طلب تسعيرة جديدة؟",
+            "SavedBtn": "إظهار عروض الأسعار المحفوظة",
+            "ReqNewQuoteBtn": "طلب تسعيرة جديدة"
+        },
+        "StepsTitles": {
+            "InsuranceInfo": "تفاصيل التأمين",
+            "VehicleInfo": "تفاصيل المركبة",
+            "DriverInfo": "تفاصيل طالب الوثيقة",
+            "Other": "تفاصيل أخرى",
+            "AddDriverInfo": "تفاصيل السائق الاضافي",
+            "AddDriversInfo": "تفاصيل سائقي المركبة ",
+            "ShowQuoteBtn": "إظهار عروض الأسعار"
+        },
+        "Tooltips": {
+            "DrivingCity": "في اي مدينة يتم فيها قيادة المركبة؟",
+            "DriverNoOfAccident": "عدد الحوادث التي حدثت بهذه  للمركبة",
+            "AdditionalDriverNoOfAccident": "عدد الحوادث التي حدثت للسائق الإضافي",
+            "AdditionalDriver": "لتغطية جميع سائقي المركبة يتطلب إدخال كافة بياناتهم",
+            "DownloadBtn": "تحميل وثيقة التأمين ",
+            "PrintBtn": "طباعة الفاتورة ",
+            "Renew": "تجديد الفاتورة "
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.eye-icon {
+	color: #333;
+}
+
+.eye-icon i {
+	font-size: 16px;
+	margin: auto;
+}
+.center{
+    text-align: center;
+}
+span{
+	font-size: 12px;
+}
+a{
+	font-size: 12px;
+}
+.date{
+    border-radius: 0 10px 10px 0 !important;
+}
+
+
+/* .submit-btn{
+	padding: 5px 20px;
+	border: 0px solid #0B70CB;
+	cursor: pointer;
+	border-radius: 30px;
+	
+}
+ */
+ .span{
+	 margin-top: 20px;
+	 background-color: #EFFAFC  ;
+	 background: #EFFAFC ;
+ }
+ .v-meassageRight{
+	color: #59b922f6;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	text-align: start;
+  }

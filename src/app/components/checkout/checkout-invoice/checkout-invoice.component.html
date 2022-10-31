@@ -1,0 +1,327 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                          share by whatsapp & email                      -->
+<!-- ----------------------------------------------------------------------- -->
+<ng-template  #SharbyModal let-modal  class="row">
+   <div class="Rectangle " ></div>
+   
+<div class=" d-flex  justify-content-center back"  > 
+
+    <!-- The text field -->
+<input type="text" class="col-8 copylink" [value]="this.purchaseRespone.documents[0].url" id="myInput" >
+
+<!-- The button used to copy the text -->
+<button (click)="copyMessage(this.purchaseRespone.documents[0].url)" value="copy" class="copyButton ml-1"  >Copy this</button>
+</div>
+   <div class="modal-body cont-modal-body flex-column">
+     <div class="payment-type">
+          <!-- Email Input -->
+          <form [formGroup]="SharebyFormGroup" class="mt-4 " >
+            <!-- -------------------------------- sms -------------------------------- -->
+            <div class="back-label">
+            <div class="row">
+               <div class="col-lg-7 d-flex justify-content-start">
+                  <label class="form-title question-lable">
+                     {{ "PaymentStatus.Success.ShareBy" | translate }} {{ "PaymentStatus.Success.SMS" | translate }}
+                  </label>
+               </div>
+               <div class="col-lg-5 d-flex justify-content-end">
+                  <label class="switch">
+                     <input type="checkbox" class="question-checkbox" (change)=" smsTogglee()" />
+                     <span class="slider round"> </span> </label><label><span class="ui"></span></label>
+               </div>
+            </div>  
+            <div class="form-group  " *ngIf="smsToggle"> 
+              <div class="input-group">
+                <input class="form-control date" formControlName="phoneNumber" type="email" [placeholder]="('PaymentStatus.Success.SMS' | translate)"  />
+        
+            </div>
+          </div>
+         </div>
+             <!-- -------------------------------- Email -------------------------------- -->
+             <div class="back-label">
+
+          <div class="row">
+            <div class="col-lg-7 d-flex justify-content-start">
+               <label class="form-title question-lable">        
+                  {{ "PaymentStatus.Success.ShareBy" | translate }} {{ "Auth.EmailText" | translate }}
+               </label>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-end">
+               <label class="switch">
+                  <input type="checkbox" class="question-checkbox" (change)="sharebyTogel()" />
+                  <span class="slider round"> </span> </label><label><span class="ui"></span></label>
+            </div>
+         </div>  
+         <div class="form-group  " *ngIf="emailToggle"> 
+           <div class="input-group">
+             <input class="form-control date" formControlName="email" type="email" [placeholder]="('Auth.EmailText' | translate)"  />
+     
+         </div>
+       </div>       </div>
+
+                        <!-- -------------------------------- whatsapp -------------------------------- -->
+              <div class="back-label">
+               <div class="row">
+                  <div class="col-lg-7 d-flex justify-content-start">
+                     <label class="form-title question-lable">
+                        {{ "PaymentStatus.Success.ShareBy" | translate }} {{ "PaymentStatus.Success.WhatsApp" | translate }}
+                     </label>
+                  </div>
+                  <div class="col-lg-5 d-flex justify-content-end">
+                     <label class="switch">
+                        <input type="checkbox" class="question-checkbox" (change)="whatsApplTogglee()" />
+                        <span class="slider round"> </span> </label><label><span class="ui"></span></label>
+                  </div>
+               </div>  
+               <div class="form-group  " *ngIf="whatsApplToggle"> 
+               <div class="input-group">
+                  <input class="form-control date" formControlName="emailCtrl" type="email" [placeholder]="('PaymentStatus.Success.WhatsApp' | translate)"  />
+                  </div>
+
+               </div>
+               </div>
+     <!-- ------------------------------- Submit -------------------------------- -->
+     <div class=" d-flex justify-content-center brder ">
+      <button (click)="submit()" class="submit-btn mt-3 form-control" type="submit" >
+          {{"Auth.SignInText"| translate}}
+          <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"
+              aria-hidden="true"></span>
+      </button>
+  </div>
+  </form>
+  
+  
+         
+     </div>
+   </div>
+</ng-template>
+
+
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                       Download and Print Buttons                        -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="row mb-2">
+   <div class="col-lg-12 px-0">
+      <div class="">
+         <div class="col-lg-12">
+            <div class="d-flex justify-content-center align-item-center">
+               <fa-icon icon="check-circle" size="lg" class="icon custom-icon"></fa-icon>
+              
+            </div>
+         </div>
+         <div class="col-lg-10 offset-lg-1 mt-2.5">
+            <p class="text-center p" style="font-size: medium;">{{ "PaymentStatus.Success.SuceessTitle" | translate }}</p>
+            <div class="d-flex justify-content-center align-item-center">
+               <button class="submit-btn mt-2" type="submit"
+                  (click)="download()">
+                  <fa-icon icon="download" size="lg" class="icon" ></fa-icon>
+                  {{'PaymentStatus.Success.DownloadBtn' | translate}}
+                  {{ lang === 'ar' ? purchaseRespone.documents[1].nameAr :
+                     purchaseRespone.documents[1].name }}
+                     <span *ngIf="invoiceSpinner" class="spinner-border spinner-border-sm" role="status"
+                     aria-hidden="true"></span>
+               </button>
+
+               <button class="submit-btn mx-2 mt-2" type="submit" (click)="Print()">
+                  <fa-icon icon="print" size="lg" class="icon" ></fa-icon>
+                  {{'PaymentStatus.Success.PrintBtn' | translate}}
+                  {{ lang === 'ar' ? purchaseRespone.documents[0].nameAr :
+                  purchaseRespone.documents[0].name }}
+                  <span *ngIf="policySpinner" class="spinner-border spinner-border-sm" role="status"
+                     aria-hidden="true"></span> </button>
+
+                  <div class="share-button  mt-2">
+                     <div class="share-button__back">
+                       <a class="share__link"  (click)="openWhatsApp()" title="Whatsapp">
+                     <svg class="iconstyle" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">>    <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"/></svg>
+                   </a>
+                     <a class="share__link "  title="SMS" (click)="openShreBy(SharbyModal)" >
+                 <img class="iconstyle" src="../../../../assets//img/Icon-png//icons8-sms-50.png" alt="">
+                   </a>
+                 
+                   
+                   <a class="share__link" (click)="openEmail()" title="Email">
+                     <img class="iconstyle" src="../../../../assets//img/Icon-png//icons8-email-64.png" alt="">
+                   </a>
+            
+                     </div>
+                     <div class="share-button__front">
+                       <p class="share-button__text"> <fa-icon icon="share" size="lg" class="icon" ></fa-icon>
+                        {{'PaymentStatus.Success.ShareBy' | translate}}</p>
+                     </div>
+                   </div>
+               
+
+
+
+              <!--  <button class="submit-btn mx-2 mt-2" type="submit" (click)="openWhatsApp()">
+                  <fa-icon icon="share" size="lg" class="icon" ></fa-icon>
+                  {{'PaymentStatus.Success.ShareBy' | translate}}
+                  <a href="mailto:"></a>
+
+                  <span *ngIf="policySpinner" class="spinner-border spinner-border-sm" role="status"
+                     aria-hidden="true"></span>
+               </button>
+ -->
+            </div>
+         </div>
+      </div>
+   </div>
+
+   </div>
+   <div class="row mt-4">
+      <div class="title col-12 d-flex align-items-center ">
+         <span class="" > {{'PaymentStatus.Success.PolicyDetails' | translate}}</span>
+       </div>
+   
+   <div class=" table-responsive-sm row w-100">
+   
+   
+     <!-- IC Logo -->
+     <div class="col-md-2 d-flex align-items-center"    >
+      <img class="company-image w-100 " [src]='getCompanyLogo()'>
+   </div>
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                             policy Details                              -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="col-sm-5">
+            <table class="table">
+               <tr>
+                  <th  style="width: 25%;">{{ 'App.CompanyText' | translate }}:</th>
+                  <td>{{ lang === 'ar' ? purchaseRespone.insuranceCompanyNameAr :
+                     purchaseRespone.insuranceCompanyName }}
+                  </td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.ProductType' | translate }}:</th>
+                  <td>{{ lang === 'ar' ? purchaseRespone.productNameAr :
+                     purchaseRespone.productName }}
+                  </td>
+               </tr>
+               <tr>
+                  <th  style="width: 40%;">{{ 'Checkout.PolicyDetails.PolicyNumber' | translate }}:</th>
+                  <td>{{ purchaseRespone.policyNumber}}</td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.PolicyInitiationDate' | translate }}:</th>
+                  <td>{{ purchaseRespone.policyIssueDate | date: "dd/MM/yyyy" }}</td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.PolicyStart' | translate }}:</th>
+                  <td>{{ purchaseRespone.policyEffectiveDate| date: "dd/MM/yyyy" }}</td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.PolicyEndDate' | translate }}:</th>
+                  <td>{{ purchaseRespone.policyExpiryDate | date: "dd/MM/yyyy" }}</td>
+               </tr>
+               
+   
+   
+            </table>
+         </div>
+   
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                             Vehicle Details                             -->
+         <!-- ------------------------------------------------------           ----------------- -->
+   
+         <div class="col-sm-5">
+   
+            <table class="table">
+               <tr >
+                  <th *ngIf="purchaseRespone.vehicleIdTypeId==1">{{'Checkout.PolicyDetails.SequenceNum'  | translate }}:</th>
+                  <th *ngIf="purchaseRespone.vehicleIdTypeId==2">{{  'Landing.CustomCardText'| translate }}:</th>
+                  <td>{{ purchaseRespone.vehicleId }}</td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.VehicleDescription' | translate }}:</th>
+                  <td>{{ purchaseRespone.vehicleDescription }}</td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.VehicleMajorColor' | translate }}:</th>
+                  <td>{{ purchaseRespone.vehicleColor }} </td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.vehicleChassieNo' | translate }}:</th>
+                  <td>{{ purchaseRespone.vehicleChassieNo }} </td>
+               </tr>
+               <tr>
+                  <th>{{ 'Policy.VehicleData.SumInsured' | translate }}:</th>
+                  <td>{{ purchaseRespone.vehicleSumInsured }}</td>
+               </tr>
+               <tr>
+                  <th>{{ 'Checkout.PolicyDetails.RepairsLocation' | translate }}:</th>
+                  <td>{{ purchaseRespone.vehicleRepairMethod }}</td>
+               </tr>
+            </table>
+   
+         </div>
+       
+   
+   </div>
+   </div>
+   
+
+<div class="row " >
+   <hr style="height:1px; width:90%; border-width:0; color:rgb(41, 4, 4); background-color:rgb(48, 6, 6)" >  
+</div>
+
+<div class="row">
+   <div class="col-sm-7 ">
+
+      <div class="row"> 
+         <div class="row">
+
+         </div>
+      <!--    <div class="row mt-5 " style="position: relative;">
+            <svg style="position: absolute; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,85.3C640,64,800,32,960,42.7C1120,53,1280,107,1360,133.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      
+             <svg style="position: relative;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0b70cb" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,197.3C384,171,480,117,576,101.3C672,85,768,107,864,96C960,85,1056,43,1152,26.7C1248,11,1344,21,1392,26.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+       
+          
+         </div>
+     -->
+     
+      </div>
+
+
+   </div>
+
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                             Policy Premium                              -->
+   <!-- ----------------------------------------------------------------------- -->
+
+   <div class="col-sm-5  ">
+      <div class=""><!-- table-bordered  -->
+      <table class="table table-borderless ">
+         
+         <tr >
+            <th>{{ 'Quote.ExtraBenefitsTitle' | translate }}:</th>
+            <td class="currency"><span class="text-color">{{ purchaseRespone.totalAdditionalBenefits | number : '1.2-2'}}
+                  <small>{{ 'App.Currency' | translate }}</small></span></td>
+         </tr>
+         <tr   >
+            <th style="width: 50%;">{{ 'Checkout.BasicInstallment' | translate }}:</th>
+            <td class="currency"><span class="text-color">{{ purchaseRespone.netPremiumWithoutBenefits | number : '1.2-2'}}
+                  <small>{{ 'App.Currency' | translate }}</small></span></td>
+         </tr>
+         <tr >
+            <th>{{ 'Checkout.VAT' | translate }}:</th>     
+            <td class="currency"><span class="text-color">{{ purchaseRespone.totalVATAmount | number : '1.2-2'}}
+                  <small>{{ 'App.Currency' | translate }}</small></span></td>
+         </tr>
+        
+         <tr >
+            <th >{{ 'App.TotalPriceText' | translate }}:</th>
+            <td class="currency font-weight-bold "><span class="text-color  " style="font-size: medium;  ">{{ purchaseRespone.policyPremium | number : '1.2-2' }}
+                  <small style="font-weight: bold; ">{{ 'App.Currency' | translate }}</small>
+               </span>
+            </td>
+         </tr>
+      </table>
+   </div>
+   </div>
+</div>

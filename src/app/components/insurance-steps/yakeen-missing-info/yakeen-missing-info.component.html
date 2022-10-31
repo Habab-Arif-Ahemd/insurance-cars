@@ -1,0 +1,106 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                              Errors Alert                               -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="row alert-box" *ngIf="isErrorAlertVisible" id="errorAlert">
+    <ngb-alert class="alert col-12" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">
+
+        <small>
+            <i class="icon ion-md-alert"></i>
+            {{ yakeenMissingData.responseMessage }}
+        </small>
+        <small *ngIf="yakeenMissingData.validationErrors">
+            <ul class="errors-list">
+                <li *ngFor="let error of yakeenMissingData.validationErrors">
+                    {{error}}
+                </li>
+            </ul>
+        </small>
+    </ngb-alert>
+</div>
+<div>
+    <form [formGroup]="yakeenInfoFormGroup">
+        <div class="row">
+            <div *ngIf="checkFormControlExistence('Make')" class="col-xl-12">
+                <div class="form-group">
+                    <label> الماركة
+                        <i class="fa fa-question-circle tooltip-icon" placement="top" ngbTooltip="Tooltip on top"
+                            aria-hidden="true">
+                        </i>
+                    </label>
+                    <ng-select [items]="vehicleMakeStepData" bindValue="id" formControlName="Make"
+                        [loading]="!vehicleMakeStepData" [searchFn]="termSearchFn" 
+                        [ngClass]="{ 'ng-invalid': f.Make.errors && f.Make.errors.touched }">
+                        <ng-template ng-label-tmp let-item="item">
+                           <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                        </ng-template>
+                        <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                           <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                        </ng-template>
+                    </ng-select>
+                    <div *ngIf="f.Make.errors && f.Make.errors.touched">
+                        <div class="v-meassage" *ngIf="f.Make.errors.required">
+                            {{ 'Errors.EmptyInputField' | translate }}</div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="checkFormControlExistence('Model')" class="col-xl-12">
+                <div class="form-group">
+                    <label> الموديل</label>
+                    <ng-select [items]="vehicleModelStepData" bindValue="id" formControlName="Model"
+                        [loading]="!vehicleModelStepData" [searchFn]="termSearchFn"
+                        [ngClass]="{ 'ng-invalid': f.Model.errors && f.Model.errors.touched }">
+                        <ng-template ng-label-tmp let-item="item">
+                           <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                        </ng-template>
+                        <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                           <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                        </ng-template>
+                    </ng-select>
+                    <div *ngIf="f.Model.errors&& f.Model.errors.touched">
+                        <div class="v-meassage" *ngIf="f.Model.errors.required">
+                            {{ 'Errors.EmptyInputField' | translate }}</div>
+                    </div>
+                </div>
+            </div>
+        <div *ngIf="checkFormControlExistence('VehicleCapacity')" class="col-xl-12">
+            <div class="form-group">
+                <label> سعة المركبة </label>
+                <input type="text" class="form-control" formControlName="VehicleCapacity" maxlength="2"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            </div>
+            <div *ngIf="f.VehicleCapacity.errors && f.VehicleCapacity.errors.touched">
+                <div class="v-meassage" *ngIf="f.VehicleCapacity.errors.required">
+                    {{ 'Errors.EmptyInputField' | translate }}</div>
+            </div>
+        </div>
+        <div *ngIf="checkFormControlExistence('AddressCity')"  class="col-xl-12">
+            <div class="form-group">
+                <label> العنوان </label>
+                <input type="text" class="form-control" formControlName="AddressCity">
+            </div>
+            <div *ngIf="f.AddressCity.errors  && f.AddressCity.errors.touched">
+                <div class="v-meassage" *ngIf="f.AddressCity.errors.required">
+                    {{ 'Errors.EmptyInputField' | translate }}</div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="row">
+            <div class="col-12 d-flex justify-content-end ">
+                <button type="button" class="  btn btn-labeled btn-primary mr-3" (click)="submitForm()" [disabled]="isLoading">
+                    <span *ngIf="isLoading" class="spinner-border spinner-border-sm text-white" role="status"
+                        aria-hidden="true"></span>
+                    <i class="icon ion-ios-save" *ngIf="!isLoading"></i>
+                    {{ 'QuotationRequestForms.AdditionalDriver.SaveBtn' | translate }}
+                    <!-- <span  class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> -->
+                </button>
+                <button type="button" class="btn  btn-danger cancel-driver-btn" (click)="modalService.dismissAll()">
+                    <i class="icon ion-ios-close"></i>
+                    {{ 'QuotationRequestForms.AdditionalDriver.CancelBtn' | translate }}
+                </button>
+            </div>
+        </div>
+    </form>
+
+
+</div>

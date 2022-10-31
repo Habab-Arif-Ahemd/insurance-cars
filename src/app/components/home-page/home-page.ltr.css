@@ -1,0 +1,31 @@
+body[dir="ltr"] {
+    background-color: teal;
+}  
+body[dir="ltr"] .faq-accordion button .icon {
+    position: absolute;
+    top: 18px;
+    /* text-align: right !important; */
+    left: auto !important;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  
+body[dir="ltr"] .sub-heading-2 {
+     padding: 0px 20px 0px 00px;
+     /* border-right: 2px solid #b21b1b; */
+     border-left: 0;
+ } 
+ body[dir="ltr"] .point-list .list-icon {
+     float: left;
+     color: #3983c0;
+     font-size: 80px;
+     margin-top: 50px;
+}
+body[dir="ltr"] .point-list .list-text{
+     margin-left: 100px;
+ }
+
+  

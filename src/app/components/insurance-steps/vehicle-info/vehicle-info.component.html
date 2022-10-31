@@ -1,0 +1,428 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Yakeen Missing Data Form                            -->
+<!-- ----------------------------------------------------------------------- -->
+<ng-template #yakeenMissingDataModal let-modal id="yakeenMissingDataModal">
+   <!-- Body -->
+
+   <div class="modal-body cont-modal-body flex-column">
+      <app-yakeen-missing-info (yakeenFormSubmitted)="sendQuotesRequest($event)"
+         [yakeenMissingData]="yakeenMissingData"></app-yakeen-missing-info>
+   </div>
+</ng-template>
+
+<div *ngIf="isConfirmingIdentity">
+   <app-update-client-info (sendQuotesRequest)="sendQuotesRequest()" (backToForms)="isConfirmingIdentity = false">
+   </app-update-client-info>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 Loading                                 -->
+<!-- ----------------------------------------------------------------------- -->
+<div *ngIf="isLoadingQuotes" style="">
+<!--    <app-loading></app-loading>
+ -->   
+ <app-car-loading></app-car-loading>
+</div>
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           vehicleInfo Form                            -->
+<!-- ----------------------------------------------------------------------- -->
+<div *ngIf="!isLoadingQuotes" class="mt-3">
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                              Errors Alert                               -->
+   <!-- ----------------------------------------------------------------------- -->
+   <!--  -->
+   <!-- <alert *ngIf="isSuccessAlertVisible" type="success" [dismissible]="true"
+                        (onClosed)="isSuccessAlertVisible = !isSuccessAlertVisible">
+                        <small>{{successMessage}}</small>
+      </alert> -->
+   <!--  -->
+   <div class="alert-box alert-danger mb-2" id="errorAlert" *ngIf="isErrorAlertVisible">
+      <alert class=" " type="" (onClosed)="isErrorAlertVisible = !isErrorAlertVisible">
+         <small>
+            <fa-icon icon="exclamation-circle" class="icon"></fa-icon>
+            {{ errorMessage }}
+         </small>
+         <small *ngIf="validationErrors">
+            <ul class="errors-list">
+               <li *ngFor="let error of validationErrors">
+                  {{error}}
+               </li>
+            </ul>
+         </small>
+      </alert>
+   </div>
+
+   <div class=" img-container ">
+  
+      <form [formGroup]="vehicleInfoFormGroup">
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                                 if it came from profile                 -->
+         <!-- ----------------------------------------------------------------------- -->
+
+         <div class="row">
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                         vehicle Sum Insured Input                         -->
+            <!-- ----------------------------------------------------------------------- -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+               <!-- <label>
+                  {{ "QuotationRequestForms.VehicleInfo.EstimatedVehicleValue" | translate}}
+               </label> -->
+               <div class="input-group">
+                  <input type="text" min="0" class="form-control date comaa" formControlName="vehicleSumInsured" matInput
+                     mask='separator .2' thousandSeparator=','
+                     [ngClass]="{'is-invalid': estimatedVehicleValueMessage}" 
+                     placeholder="{{ 'QuotationRequestForms.VehicleInfo.EstimatedVehicleValue' | translate}}"/>
+                  <div class=" ">
+                     <span class="input-group-text calendar-icon">
+                        {{
+                        "QuotationRequestForms.VehicleInfo.CurrencyText" | translate
+                        }}</span>
+
+
+                  </div>
+
+                  <span class="invalid-feedback">
+                     {{estimatedVehicleValueMessage }}
+                  </span>
+                  
+               </div>
+               <div *ngIf="f.vehicleSumInsured.errors  && f.vehicleSumInsured.touched">
+                  <div class="v-meassage" *ngIf="f.vehicleSumInsured.errors.required">
+                     {{ "Errors.EmptyInputField" | translate }}
+                  </div>
+               </div>
+
+            </div>
+
+
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                           vehicle Use Id Input                            -->
+            <!-- ----------------------------------------------------------------------- -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+               <div class="form-group">
+                  <!-- <label>
+                     {{
+                     "QuotationRequestForms.VehicleInfo.PurposeOfVehicleUse"
+                     | translate
+                     }}
+                  </label> -->
+                  <ng-select [items]="stepsData.VehicleUses" bindValue="id" formControlName="vehicleUseId"
+                     [loading]="!stepsData.VehicleUses" [searchFn]="termSearchFn"
+                     [ngClass]="{ 'ng-invalid': submitted && f.vehicleUseId.errors }" 
+                     placeholder="{{ 'QuotationRequestForms.VehicleInfo.PurposeOfVehicleUse' | translate}}">
+                     <ng-template ng-label-tmp let-item="item">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                     <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                  </ng-select>
+                  <div *ngIf="f.vehicleUseId.errors  && f.vehicleUseId.touched">
+                     <div class="v-meassage" *ngIf="f.vehicleUseId.errors.required">
+                        {{ "Errors.EmptyInputField" | translate }}
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                    Vehicle Transmission TypeId  Input                   -->
+            <!-- ----------------------------------------------------------------------- -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+               <div class="form-group">
+                  <!-- <label>
+                     {{
+                     "QuotationRequestForms.VehicleInfo.TransmissionType" | translate
+                     }}
+                  </label> -->
+                  <ng-select [items]="stepsData.TransmissionTypes" bindValue="id"
+                     formControlName="vehicleTransmissionTypeId" [loading]="!stepsData.TransmissionTypes"
+                     [searchFn]="termSearchFn" [ngClass]="{'ng-invalid': submitted && f.vehicleTransmissionTypeId.errors}"
+                     placeholder="{{ 'QuotationRequestForms.VehicleInfo.TransmissionType' | translate}}">
+                     <ng-template ng-label-tmp let-item="item">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                     <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                  </ng-select>
+                  <div *ngIf="f.vehicleTransmissionTypeId.touched && f.vehicleTransmissionTypeId.errors">
+                     <div class="v-meassage" *ngIf="f.vehicleTransmissionTypeId.errors.required">
+                        {{ "Errors.EmptyInputField" | translate }}
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                     Vehicle Parking Location Id  Input                  -->
+            <!-- ----------------------------------------------------------------------- -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+               <div class="form-group">
+                  <!-- <label>{{
+                     "QuotationRequestForms.VehicleInfo.VehicleParking" | translate
+                     }}
+                  </label> -->
+                  <ng-select [items]="stepsData.ParkingLocations" bindValue="id"
+                     formControlName="vehicleParkingLocationId" [loading]="!stepsData.ParkingLocations"
+                     [searchFn]="termSearchFn" [ngClass]="{'ng-invalid': f.vehicleParkingLocationId.errors}"
+                     placeholder="{{ 'QuotationRequestForms.VehicleInfo.VehicleParking' | translate}}">
+                     <ng-template ng-label-tmp let-item="item">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                     <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                  </ng-select>
+                  <div *ngIf="f.vehicleParkingLocationId.touched && f.vehicleParkingLocationId.errors">
+                     <div class="v-meassage" *ngIf="f.vehicleParkingLocationId.errors.required">
+                        {{ "Errors.EmptyInputField" | translate }}
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+            <!-- ------------------------ VehicleRepairMethods Input ------------------------- -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+               <div class="form-group">
+               <!-- <label>{{
+                  "QuotationRequestForms.InsuranceInfo.PlaceOfManufacture" | translate
+                  }}</label> -->
+                  <ng-select [items]="stepsData.VehicleRepairMethods" bindValue="id"
+                     formControlName="vehicleRepairMethodId"  [loading]="!stepsData.VehicleRepairMethods" 
+                     [searchFn]="termSearchFn" [ngClass]="{'is-invalid':  f.vehicleRepairMethodId.errors}"
+                     placeholder="{{ 'QuotationRequestForms.InsuranceInfo.PlaceOfManufacture' | translate}}">
+                     <ng-template ng-label-tmp let-item="item">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                     <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                     </ng-template>
+                  </ng-select>
+                  <div *ngIf="f.vehicleRepairMethodId.touched && f.vehicleRepairMethodId.errors">
+                     <div class="v-meassage" *ngIf="f.vehicleRepairMethodId.errors.required">
+                        {{ "Errors.EmptyInputField" | translate }}
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                         isVehicleModified input                         -->
+            <!-- ----------------------------------------------------------------------- -->
+
+            <div class="col-sm-6 col-md-4 col-lg-4">
+               <label>{{ "QuotationRequestForms.VehicleInfo.modifications" | translate }}
+               </label>
+               <div class="form-group">
+                  <!-- <ng-select [items]="stepsData.VehicleRepairMethods" bindValue="true"
+                     formControlName="isVehicleModified"   
+                     placeholder="{{ 'QuotationRequestForms.VehicleInfo.modifications' | translate}}">
+                     <ng-template ng-label-tmp let-item="item">
+                        <span>{{ "QuotationRequestForms.VehicleInfo.Yes" | translate }}</span>
+                     </ng-template>
+                     <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{"QuotationRequestForms.VehicleInfo.No" | translate }}</span>
+                     </ng-template>
+                  </ng-select> -->
+
+                  <label>
+                     <input type="radio" class="option-input radio" [value]="true" formControlName="isVehicleModified"
+                        (change)="hasVehicleModified(true)" />
+                     <span class="radio-text">
+                        {{ "QuotationRequestForms.VehicleInfo.Yes" | translate }}
+                     </span>
+                  </label>
+
+                  <label>
+                     <input type="radio" class="option-input radio" formControlName="isVehicleModified" [value]="false"
+                        (change)="hasVehicleModified(false)" />
+                     <span class="radio-text">
+                        {{"QuotationRequestForms.VehicleInfo.No" | translate }}</span>
+                  </label>
+               </div>
+
+
+            </div>
+
+
+            <div class="col-sm-12 col-md-12 col-lg-12" *ngIf="f.isVehicleModified.value">
+               <div class="form-group">
+                  <label>
+                     {{
+                     "QuotationRequestForms.VehicleInfo.modificationsDescription"
+                     | translate
+                     }}
+                  </label>
+                  <textarea class="form-control" rows="2" formControlName="vehicleModificationDetails" [ngClass]="{
+                'is-invalid':  f.vehicleModificationDetails.errors
+              }"></textarea>
+                  <div *ngIf="f.vehicleModificationDetails.touched && f.vehicleModificationDetails.errors">
+                     <div class="v-meassage" *ngIf="f.vehicleModificationDetails.errors.required">
+                        {{ "Errors.EmptyInputField" | translate }}
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                     Vehicle Specification Question                      -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="row">
+            <div class="col-lg-12 d-flex justify-content-start">
+               <label class="form-title question-lable">
+                  {{ 'QuotationRequestForms.MoreDetails.VehicleSpecification' | translate }}
+               </label>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center toggle-head">
+               <label class="switch mt-3">
+                  <span > <img src = "../../../../assets/img/Icon-png/add-square.png"></span> 
+                  <input type="checkbox" class="question-checkbox" (change)="showVehicleSpecifications()" />
+               </label>
+               
+               <label class="form-title question-lable mt-3">
+                  {{ 'QuotationRequestForms.MoreDetails.AddVehicleSpecification' | translate }}
+               </label>
+              
+            </div>
+         </div>
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                    Vehicle Specification Checkboxes                     -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="row mt-3" *ngIf="driverVehicleSpecification">
+            <!-- spinner -->
+
+
+            <!--  -->
+
+
+            <div class="spinner-border" role="status" *ngIf="!stepsData.VehicleSpecifications">
+               <span class="sr-only">Loading...</span>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4" style="display: inherit;"
+               *ngFor="let VehicleSpecification of stepsData.VehicleSpecifications; let i = index;">
+               <label>
+                  <input type="checkbox" class="option-input checkbox" [id]="VehicleSpecification?.name + i"
+                     [checked]="VehicleSpecification.checked"
+                     (change)="addVehicleSpecification(VehicleSpecification.id)" />
+
+                  {{ lang === 'ar' ? VehicleSpecification.nameAr : VehicleSpecification.name }}
+               </label>
+            </div>
+         </div>
+
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                           Continuation hababbbbbbb                            -->
+         <!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                           Continuation Modal                            -->
+         <!-- ----------------------------------------------------------------------- -->
+         <ng-template #continuationModal let-modal id="continuationModal">
+
+            <!-- Header -->
+            <div class="modal-header">
+               <h5 class="modal-title" id="modal-basic-title">
+                  {{ 'QuotationRequestForms.ClientInfoModal.PreviousQuoteTitle' | translate}}</h5>
+
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body cont-modal-body flex-column">
+               <h6 class="flex-centered">
+                  {{ 'QuotationRequestForms.ClientInfoModal.ReqNewQuote' | translate}}
+               </h6>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer flex-centered">
+               <button class="primary-btn" (click)="requestNewQuotation()">
+                  {{ 'QuotationRequestForms.ClientInfoModal.ReqNewQuoteBtn' | translate}}
+               </button>
+               <button class="btn btn-warning text-white" (click)="navigateSavedQuote()">
+                  {{ 'QuotationRequestForms.ClientInfoModal.SavedBtn' | translate}}
+               </button>
+            </div>
+
+         </ng-template>
+
+
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                           Continuation hababbbbbbb                            -->
+         <!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                              Drivers List                               -->
+         <!-- ----------------------------------------------------------------------- -->
+         <hr>
+
+         <div class="add-driver mt-3">
+
+
+            <app-drivers-page></app-drivers-page>
+         </div>
+         <hr>
+
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                           Navigation Buttons                            -->
+         <!-- ----------------------------------------------------------------------- -->
+         <div class="wizard-nav-btns row mt-2">
+            <div class="col d-flex justify-content-start">
+               <button (click)="showInsuredInfo()" class="submit-btn" type="submit">
+                  <div *ngIf="lang==='ar'">
+                     <fa-icon icon="arrow-right" size="sm" class="icon" class="custom-icon"></fa-icon>
+                     {{ 'QuotationRequestForms.VehicleInfo.previous' | translate }}
+                  </div>
+                  <div *ngIf="lang==='en'">
+                     <fa-icon icon="arrow-left" size="sm" class="icon" class="custom-icon"></fa-icon>
+                     {{ 'QuotationRequestForms.VehicleInfo.previous' | translate }}
+                  </div>
+               </button>
+            </div>
+
+
+            
+            <div class="col d-flex justify-content-end" style="width: 100%">
+               <button class="submit-btn " type="submit" data-toggle="modal" data-target="#exampleModal"
+                  (click)="watchFormsBeforeSendRequest()" [disabled]="vehicleInfoFormGroup.invalid">
+                  {{ 'QuotationRequestForms.StepsTitles.ShowQuoteBtn' | translate }}
+                  <fa-icon icon="arrow-left" size="sm" class="mx-2"></fa-icon>
+                  <span *ngIf="isLoadingQuotes" class="spinner-border spinner-border-sm" role="status"
+                     aria-hidden="true"></span>
+               </button>
+
+            </div>
+
+
+
+
+
+
+            
+         </div>
+      </form>
+   </div>

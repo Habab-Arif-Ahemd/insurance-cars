@@ -1,0 +1,52 @@
+<div class="bg">
+    <div [class.custom-container]="activeStep.quotes ||activeStep.checkout" [class.container]="!isLoadingQuotes">
+        <div class=" card" *ngIf="!isLoadingQuotes">
+            <div id="wizard" role="application" class="wizard clearfix horzitnal">
+                <div class="steps clearfix">
+                    <ul role="tablist">
+
+                        <!-- <div [class.quote-container]="activeStep.quotes||activeStep.checkout" class="container">
+            <div class="card" >
+                <div id="wizard" role="application" class="wizard clearfix horzitnal">
+                    <div class="steps clearfix">
+                        <ul role="tablist"> -->
+                        <li role="tab" (click)="enterToStep('insured-info')" [class.current]="activeStep.insuredInfo">
+                            <fa-icon class="fa iconstyle" icon="id-card"></fa-icon>
+                            <h6 class="bd-wizard-step-title "> {{ 'body.quoteRequesterDetails' | translate }} </h6>
+                            <hr class="hr">
+                        </li>
+                        <li role="tab" (click)="enterToStep('vehicle-info')" [class.current]="activeStep.vehicleInfo">
+                            <fa-icon class=" fa iconstyle" icon="car"></fa-icon>
+                            <h6 class="bd-wizard-step-title "> {{ 'body.VehileDetails' | translate }}</h6>
+                            <hr class="hr">
+                            <!-- sssssssss -->
+                            <div class="button"></div>
+                        </li>
+                        <li role="tab" (click)="enterToStep('quotes')" [class.current]="activeStep.quotes">
+                            <fa-icon class="fa iconstyle" icon="layer-group"></fa-icon>
+                            <h6 class="bd-wizard-step-title "> {{ 'body.Quotations' | translate }}</h6>
+                            <hr class="hr">
+                            <!-- sssssssss -->
+                            <div class="button"></div>
+
+                        </li>
+                        <li role="tab" (click)="enterToStep('checkout')"
+                            [class.current]="(activeStep.checkout || activeStep.status)">
+                            <fa-icon class="fa iconstyle" icon="credit-card"></fa-icon>
+                            <h6 class="bd-wizard-step-title "> {{ 'body.PayTheFees' | translate }}</h6>
+                            <hr class="hr">
+                            <!-- sssssssss -->
+                            <div class="button"></div>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="boxed-item mb-5 py-2">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

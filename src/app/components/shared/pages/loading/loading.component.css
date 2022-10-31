@@ -1,0 +1,42 @@
+.loader-container {
+    /* background: #e9e9e9;; */
+    background-color: #fff ;
+    padding: 17em 5em;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+ }
+ .loader-wrapper {
+    margin: auto;
+    display: flex;
+ }
+ .loading-msg {
+    font-family: 'Tajawal', sans-serif;
+    margin: 3em auto;
+    font-size: 18px;
+ }
+ 
+
+/* habab test */
+
+.imgsize{
+width: 430px;
+height: 600px;}
+
+ .red {
+width: 123px;
+   background-color: none;
+   font-weight: bold;
+   position: relative;
+   animation: mymove 3s infinite;
+ }
+ @keyframes mymove {
+   from {right: 0px;}
+   to {right:  185px; }
+ }
+ .loaderSize{
+    width: 330px;
+    height: 150px;
+ }
+/*  from {left: 0px; }
+ to {left:  350px; } */

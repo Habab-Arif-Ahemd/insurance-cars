@@ -1,0 +1,133 @@
+.footer-img{
+  width: 157px;
+  height: 72px;
+  /* margin: auto; */
+}
+.footer-img2{
+  height: 160px;
+  margin-top: -21px;
+}
+.p{
+  color:#0166afda!important;
+}
+
+
+ h5 {
+    font-size: 1.8rem;
+    line-height: 1.375;
+    font-weight: 500;
+    color: #005DBD;
+     /* #1B84B2 */
+ }
+ h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: auto;
+  color: #26282b;
+  padding-bottom: 19px !important;
+   /* #1B84B2 */
+}
+.links {
+   color:  rgb(128, 128, 128);
+   font-size: 16px;
+   /* margin: 0 10px; */
+   /* padding: 5px 0; */
+
+   /* transition: 2.5s; */
+ }
+
+ .links:hover {
+  color: #005DBD;
+   width: 0;
+   height: 1px;
+   
+   /* transition:0.4s; */
+ }
+
+.auth {
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.copy-rights {
+  background-color: #005DBD;
+  height: 67px;
+}
+
+.copy-right-center {
+  color: #fff;
+  font-size: 18px;
+}
+ .time{
+   font-size: 15px;
+   font-weight: bold;
+ }
+ /* images */
+ .bank-images {
+   background: #fff;
+   padding: 4px 8px;
+   border-radius: 20px;
+   width: 90px;
+   height: 35px;
+   display: unset;
+   margin: auto .5em;
+   box-shadow: 0 0 4px 4px rgba(0,0,0,.13);
+   
+ }
+ .bank-images img {
+   width: 50px;
+ }
+ /* icons */
+ .icon-style{
+   height: 100px;
+   width: 30px;
+ }
+
+ .icon-brand{
+  width: 20px;
+  height: 20px;
+ }
+ /* copyright */
+ .copyright-content {
+   padding-top: 15px;
+   text-align: center;
+ }
+
+ .copyright-content a {
+   font-size: 16px;
+   color: #fff;
+   -webkit-transition: all 0.3s ease-out 0s;
+   -moz-transition: all 0.3s ease-out 0s;
+   -ms-transition: all 0.3s ease-out 0s;
+   -o-transition: all 0.3s ease-out 0s;
+   transition: all 0.3s ease-out 0s;
+ }
+ .copyright-content a:hover {
+   color: #fe8464;
+ }
+ .logo img {
+   width: 7em;
+   height: 16vh;
+   background-color: #fff;
+   border-radius: 50%;
+ }
+ .text{
+    color:#0166afda;
+ }
+.brd-line{
+   border-top: cornsilk 3px;
+}
+.ftr  {
+   background: #ddd0d0;
+   border:2px solid;
+   width:750px;
+   height:30px;
+ }
+ .pay-img{
+    float: left;
+ }
+ /* h5{
+   margin-right: 15px;
+   margin-left: 15px;
+ } */

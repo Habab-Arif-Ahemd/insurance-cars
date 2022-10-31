@@ -1,0 +1,107 @@
+
+<div class="loader-card mt-3" *ngIf=""> 
+  <div class="content-container loader-wrapper flex-centered flex-container">
+  <div class="loading">
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+   </div>
+  </div>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                             VehicleIdTypes                              -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col">
+      <!-- Page Name -->
+      <h5 class="float-left" style="font-weight: bold">
+        {{ "Profile.Claims.ClaimsText" | translate }}
+      </h5>
+      <!-- Add Claim   button -->
+      <div class="float-right">
+        <button type="button" class="btn identites-header float-right" [routerLink]="['/user/claims/new']">
+          <fa-icon icon="plus" class="icon"></fa-icon>
+          إضافة مطالبة
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  Display Claim  List  -->
+<div class="container-fluid">
+
+  <section id="sectionJobList" class="section section-job-list gradient-light--lean-left">
+    <div class="container-fluid">
+
+      <div class="row row-grid justify-content-center">
+        <div class="col-md-12">
+          <div class="job-list__wrapper mb-6">
+            <a class="card p-0 mb-3 border-0 shadow-sm shadow--on-hover">
+              <div class="card-body">
+                <span class="row justify-content-between align-items-center">
+                  <span class="col-md-3 color--heading">
+                   الحالة
+                  </span>
+
+                  <span class="col-5 col-md-3 my-3 my-sm-0 color--text">
+                    <i class="fas fa-clock mr-1"></i> الرقم
+                  </span>
+                  <span class="col-5 col-md-3 my-3 my-sm-0 color--text">
+                    <i class="fas fa-clock mr-1"></i> التاريخ
+                  </span>
+
+                  <span class="col-7 col-md-3 my-3 my-sm-0 color--text">
+                    <i class="fas fa-map-marker-alt mr-1"></i>التفاصيل
+                  </span>
+
+                  <span class="d-none d-md-block col-1 text-center color--text">
+                    <small><i class="fas fa-chevron-right"></i></small>
+                  </span>
+                </span>
+              </div>
+            </a> <!-- Job Card -->
+            <a class="card p-0 mb-3 border-0 shadow-sm shadow--on-hover" *ngFor="let claim of claims">
+              <div class="card-body">
+                <span class="row justify-content-between align-items-center">
+                  <span class="col-md-3 color--heading">
+                    <span class="badge" style="width: 100px;padding: 8px 10px; border-radius: 50px;color:#fff"
+                    [ngClass]="{'badge-success':claim.statusId===1, 'badge-warning': claim.statusId===2, 'badge-danger':claim.statusId===3}">{{claim.status}}</span>
+                  </span>
+
+                  <span class="col-md-3 my-3 my-sm-0 color--text">
+                    <p scope="row" [routerLink]="['/user/claims/details']" >
+                      {{claim.claimNo}}
+                    </p>
+                  </span>
+                  <span class="col-md-3 my-3 my-sm-0 color--text">
+                    <p style="direction: ltr" [routerLink]="['/user/claims/details']">{{claim.date}}</p>
+                  </span>
+
+                  <span class="col-md-3 my-3 my-sm-0 color--text">
+                    <p>
+                      {{ claim.showFullDetail ? claim.Details : (claim.Details | slice: 0:20) }}
+                      <span *ngIf="!claim.showFullDetail">...</span>
+                      <a href="javascript:;" *ngIf="!claim.showFullDetail"
+                        (click)="claim.showFullDetail = !claim.showFullDetail">عرض المزيد</a>
+                      <span *ngIf="claim.showFullDetail">...</span>
+                      <a href="javascript:;" *ngIf="claim.showFullDetail"
+                        (click)="claim.showFullDetail = !claim.showFullDetail">عرض أقل</a>
+                    </p>
+                  </span>
+
+                </span>
+              </div>
+            </a> <!-- cliams Card -->
+
+          
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>

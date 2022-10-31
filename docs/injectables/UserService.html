@@ -1,0 +1,1589 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>UserService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/user/user.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#activeSettingsPanel">activeSettingsPanel</a>
+                            </li>
+                            <li>
+                                <a href="#apiUrl">apiUrl</a>
+                            </li>
+                            <li>
+                                <a href="#initialActivePanels">initialActivePanels</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeDefaultLanguage">changeDefaultLanguage</a>
+                            </li>
+                            <li>
+                                <a href="#changePassword">changePassword</a>
+                            </li>
+                            <li>
+                                <a href="#changePhoneNumber">changePhoneNumber</a>
+                            </li>
+                            <li>
+                                <a href="#changeUsername">changeUsername</a>
+                            </li>
+                            <li>
+                                <a href="#fetchUserProfileData">fetchUserProfileData</a>
+                            </li>
+                            <li>
+                                <a href="#getActiveSettingsPanel">getActiveSettingsPanel</a>
+                            </li>
+                            <li>
+                                <a href="#getUserProfileData">getUserProfileData</a>
+                            </li>
+                            <li>
+                                <a href="#requestPasswordChange">requestPasswordChange</a>
+                            </li>
+                            <li>
+                                <a href="#requestPasswordReset">requestPasswordReset</a>
+                            </li>
+                            <li>
+                                <a href="#requestPhoneNumberChange">requestPhoneNumberChange</a>
+                            </li>
+                            <li>
+                                <a href="#requestUsernameChange">requestUsernameChange</a>
+                            </li>
+                            <li>
+                                <a href="#resendVerficationCode">resendVerficationCode</a>
+                            </li>
+                            <li>
+                                <a href="#resetActiveSettingsPanel">resetActiveSettingsPanel</a>
+                            </li>
+                            <li>
+                                <a href="#resetPassword">resetPassword</a>
+                            </li>
+                            <li>
+                                <a href="#sendVerificationCode">sendVerificationCode</a>
+                            </li>
+                            <li>
+                                <a href="#setActiveSettingsPanel">setActiveSettingsPanel</a>
+                            </li>
+                            <li>
+                                <a href="#setUserProfileData">setUserProfileData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/services/user/user.service.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeDefaultLanguage"></a>
+                    <span class="name">
+                        <b>
+                            changeDefaultLanguage
+                        </b>
+                        <a href="#changeDefaultLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeDefaultLanguage(languageChangeRequest: <a href="../interfaces/DefaultLangChangeRequest.html">DefaultLangChangeRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/services/user/user.service.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>languageChangeRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/DefaultLangChangeRequest.html" target="_self" >DefaultLangChangeRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changePassword"></a>
+                    <span class="name">
+                        <b>
+                            changePassword
+                        </b>
+                        <a href="#changePassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changePassword(passwordChangeVerificationRequest: <a href="../interfaces/PasswordChangeVerficationReq.html">PasswordChangeVerficationReq</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/services/user/user.service.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>passwordChangeVerificationRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PasswordChangeVerficationReq.html" target="_self" >PasswordChangeVerficationReq</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changePhoneNumber"></a>
+                    <span class="name">
+                        <b>
+                            changePhoneNumber
+                        </b>
+                        <a href="#changePhoneNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changePhoneNumber(phoneNumberChangeVerificationRequest: <a href="../interfaces/PhoneChangeVerificationReq.html">PhoneChangeVerificationReq</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/services/user/user.service.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>phoneNumberChangeVerificationRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PhoneChangeVerificationReq.html" target="_self" >PhoneChangeVerificationReq</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeUsername"></a>
+                    <span class="name">
+                        <b>
+                            changeUsername
+                        </b>
+                        <a href="#changeUsername"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeUsername(usernameChangeVerificationRequest: <a href="../interfaces/UsernameChangeVerificationReq.html">UsernameChangeVerificationReq</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/services/user/user.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>usernameChangeVerificationRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/UsernameChangeVerificationReq.html" target="_self" >UsernameChangeVerificationReq</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchUserProfileData"></a>
+                    <span class="name">
+                        <b>
+                            fetchUserProfileData
+                        </b>
+                        <a href="#fetchUserProfileData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchUserProfileData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/services/user/user.service.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;UserProfileDataRes&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getActiveSettingsPanel"></a>
+                    <span class="name">
+                        <b>
+                            getActiveSettingsPanel
+                        </b>
+                        <a href="#getActiveSettingsPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getActiveSettingsPanel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/services/user/user.service.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ActiveSettingsPanels.html" target="_self" >BehaviorSubject&lt;ActiveSettingsPanels&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserProfileData"></a>
+                    <span class="name">
+                        <b>
+                            getUserProfileData
+                        </b>
+                        <a href="#getUserProfileData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUserProfileData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/app/services/user/user.service.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/UserProfileData.html" target="_self" >UserProfileData</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requestPasswordChange"></a>
+                    <span class="name">
+                        <b>
+                            requestPasswordChange
+                        </b>
+                        <a href="#requestPasswordChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requestPasswordChange(passwordChangeRequest: <a href="../interfaces/PasswordChangeRequest.html">PasswordChangeRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/services/user/user.service.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>passwordChangeRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PasswordChangeRequest.html" target="_self" >PasswordChangeRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requestPasswordReset"></a>
+                    <span class="name">
+                        <b>
+                            requestPasswordReset
+                        </b>
+                        <a href="#requestPasswordReset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requestPasswordReset(passwordResetRequest: <a href="../interfaces/PasswordResetReq.html">PasswordResetReq</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/services/user/user.service.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>passwordResetRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PasswordResetReq.html" target="_self" >PasswordResetReq</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requestPhoneNumberChange"></a>
+                    <span class="name">
+                        <b>
+                            requestPhoneNumberChange
+                        </b>
+                        <a href="#requestPhoneNumberChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requestPhoneNumberChange(phoneNumberChangeRequest: <a href="../interfaces/PhoneChangeRequest.html">PhoneChangeRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/services/user/user.service.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>phoneNumberChangeRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PhoneChangeRequest.html" target="_self" >PhoneChangeRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requestUsernameChange"></a>
+                    <span class="name">
+                        <b>
+                            requestUsernameChange
+                        </b>
+                        <a href="#requestUsernameChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requestUsernameChange(usernameChangeRequest: <a href="../interfaces/UsernameChangeRequest.html">UsernameChangeRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/services/user/user.service.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>usernameChangeRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/UsernameChangeRequest.html" target="_self" >UsernameChangeRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resendVerficationCode"></a>
+                    <span class="name">
+                        <b>
+                            resendVerficationCode
+                        </b>
+                        <a href="#resendVerficationCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resendVerficationCode(UserVerificationData: <a href="../interfaces/RegistrationResponse.html">RegistrationResponse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/services/user/user.service.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>UserVerificationData</td>
+                                    <td>
+                                                <code><a href="../interfaces/RegistrationResponse.html" target="_self" >RegistrationResponse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetActiveSettingsPanel"></a>
+                    <span class="name">
+                        <b>
+                            resetActiveSettingsPanel
+                        </b>
+                        <a href="#resetActiveSettingsPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetActiveSettingsPanel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/services/user/user.service.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetPassword"></a>
+                    <span class="name">
+                        <b>
+                            resetPassword
+                        </b>
+                        <a href="#resetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetPassword(passwordResetVerificationRequest: <a href="../interfaces/PasswordResetVerificationReq.html">PasswordResetVerificationReq</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/services/user/user.service.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>passwordResetVerificationRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PasswordResetVerificationReq.html" target="_self" >PasswordResetVerificationReq</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendVerificationCode"></a>
+                    <span class="name">
+                        <b>
+                            sendVerificationCode
+                        </b>
+                        <a href="#sendVerificationCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendVerificationCode(verificationCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/services/user/user.service.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>verificationCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setActiveSettingsPanel"></a>
+                    <span class="name">
+                        <b>
+                            setActiveSettingsPanel
+                        </b>
+                        <a href="#setActiveSettingsPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setActiveSettingsPanel(activePanelsObj: <a href="../interfaces/ActiveSettingsPanels.html">ActiveSettingsPanels</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/services/user/user.service.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>activePanelsObj</td>
+                                    <td>
+                                                <code><a href="../interfaces/ActiveSettingsPanels.html" target="_self" >ActiveSettingsPanels</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserProfileData"></a>
+                    <span class="name">
+                        <b>
+                            setUserProfileData
+                        </b>
+                        <a href="#setUserProfileData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setUserProfileData(userProfileData: <a href="../interfaces/UserProfileData.html">UserProfileData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/services/user/user.service.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userProfileData</td>
+                                    <td>
+                                                <code><a href="../interfaces/UserProfileData.html" target="_self" >UserProfileData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activeSettingsPanel"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            activeSettingsPanel</b>
+                            <a href="#activeSettingsPanel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/ActiveSettingsPanels.html" target="_self" >BehaviorSubject&lt;ActiveSettingsPanels&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;ActiveSettingsPanels&gt;(this.initialActivePanels)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/services/user/user.service.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="apiUrl"></a>
+                        <span class="name">
+                            <b>
+                            apiUrl</b>
+                            <a href="#apiUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.apiUrl</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/services/user/user.service.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initialActivePanels"></a>
+                        <span class="name">
+                            <b>
+                            initialActivePanels</b>
+                            <a href="#initialActivePanels"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+      password: false, email: false, phone: false, misc: false
+   }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/services/user/user.service.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { LocallyStoredItemsKeys } from &#x27;src/app/models/app/LocallyStoredItemsKeys&#x27;;
+import { environment } from &#x27;src/environments/environment&#x27;;
+import { UserVerification } from &#x27;src/app/payload/requests/auth/UserVerification&#x27;;
+import { ApiRoutes } from &#x27;src/app/models/app/ApiRoutes&#x27;;
+import { BehaviorSubject, Observable } from &#x27;rxjs&#x27;;
+import { ActiveSettingsPanels } from &#x27;src/app/models/app/ActiveSettingsPanels&#x27;;
+import { UsernameChangeRequest } from &#x27;src/app/payload/requests/user/UsernameChangeReq&#x27;;
+import { UsernameChangeVerificationReq } from &#x27;src/app/payload/requests/user/UsernameChangeVerificationReq&#x27;;
+import { PhoneChangeRequest } from &#x27;src/app/payload/requests/user/PhoneChangeReq&#x27;;
+import { PhoneChangeVerificationReq } from &#x27;src/app/payload/requests/user/PhoneChangeVerificationReq&#x27;;
+import { DefaultLangChangeRequest } from &#x27;src/app/payload/requests/user/DefaultLangChangeReq&#x27;;
+import { PasswordResetVerificationReq } from &#x27;src/app/payload/requests/user/PasswordResetVerificationReq&#x27;;
+import { PasswordResetReq } from &#x27;src/app/payload/requests/user/PasswordResetReq&#x27;;
+import { PasswordChangeRequest } from &#x27;src/app/payload/requests/user/PasswordChangeReq&#x27;;
+import { PasswordChangeVerficationReq } from &#x27;src/app/payload/requests/user/PasswordChangeVerficationReq&#x27;;
+import { UserProfileDataRes, UserProfileData } from &#x27;src/app/payload/responses/user/UserProfileDataRes&#x27;;
+import { RegistrationResponse } from &#x27;src/app/payload/responses/auth/RegistrationResponse&#x27;;
+
+
+@Injectable({
+   providedIn: &#x27;root&#x27;
+})
+
+
+export class UserService {
+
+   apiUrl: string &#x3D; environment.apiUrl;
+
+   initialActivePanels &#x3D; {
+      password: false, email: false, phone: false, misc: false
+   };
+
+   private activeSettingsPanel: BehaviorSubject&lt;ActiveSettingsPanels&gt; &#x3D; new BehaviorSubject&lt;ActiveSettingsPanels&gt;(this.initialActivePanels);
+
+
+   constructor(private http: HttpClient) { }
+
+
+   sendVerificationCode(verificationCode: number) {
+
+      // Get verification data from local storage
+      const verificationUserId &#x3D; localStorage.getItem(LocallyStoredItemsKeys.VerificationUserId);
+      const verificationPhoneNum &#x3D; localStorage.getItem(LocallyStoredItemsKeys.VerificationPhoneNumber);
+
+      // Construct verification request body
+      const verificationReq: UserVerification &#x3D; {
+         userId: verificationUserId,
+         phoneNumber: verificationPhoneNum,
+         code: verificationCode.toString()
+      };
+
+      // Send the verification request
+      return this.http.post(this.apiUrl + ApiRoutes.Account.VerifyPhone, verificationReq);
+   }
+   resendVerficationCode(UserVerificationData: RegistrationResponse) {
+       // Send the verification request
+       return this.http.post(this.apiUrl + ApiRoutes.Account.ResendVerfication, UserVerificationData);
+   }
+
+   requestPasswordChange(passwordChangeRequest: PasswordChangeRequest) {
+      return this.http.post(this.apiUrl + ApiRoutes.Profile.PasswordChangeRequest, passwordChangeRequest);
+   }
+   
+   changePassword(passwordChangeVerificationRequest: PasswordChangeVerficationReq) {
+      return this.http.post(this.apiUrl + ApiRoutes.Profile.PasswordChange, passwordChangeVerificationRequest);
+   }
+
+
+   requestPasswordReset(passwordResetRequest: PasswordResetReq) {
+      return this.http.post(this.apiUrl + ApiRoutes.Account.PasswordResetRequest, passwordResetRequest);
+   }
+
+   resetPassword(passwordResetVerificationRequest: PasswordResetVerificationReq) {
+      return this.http.post(this.apiUrl + ApiRoutes.Account.PasswordReset, passwordResetVerificationRequest);
+   }
+
+
+   requestUsernameChange(usernameChangeRequest: UsernameChangeRequest) {
+      return this.http.post(this.apiUrl + ApiRoutes.Profile.UsernameChangeRequest, usernameChangeRequest);
+   }
+
+   changeUsername(usernameChangeVerificationRequest: UsernameChangeVerificationReq) {
+      return this.http.post(this.apiUrl + ApiRoutes.Profile.UsernameChange, usernameChangeVerificationRequest);
+   }
+
+
+   requestPhoneNumberChange(phoneNumberChangeRequest: PhoneChangeRequest) {
+      return this.http.post(this.apiUrl + ApiRoutes.Profile.PhoneNumberChangeRequest, phoneNumberChangeRequest);
+   }
+
+   changePhoneNumber(phoneNumberChangeVerificationRequest: PhoneChangeVerificationReq) {
+      return this.http.post(this.apiUrl + ApiRoutes.Profile.PhoneNumberChange, phoneNumberChangeVerificationRequest);
+   }
+
+
+   changeDefaultLanguage(languageChangeRequest: DefaultLangChangeRequest) {
+      return this.http.post(this.apiUrl + ApiRoutes.Profile.ChangeLanguage, languageChangeRequest);
+   }
+
+
+   fetchUserProfileData(): Observable&lt;UserProfileDataRes&gt; {
+      let url &#x3D; this.apiUrl + ApiRoutes.Profile.GetAccountinfo;
+      return this.http.get&lt;UserProfileDataRes&gt;(this.apiUrl + ApiRoutes.Profile.GetAccountinfo);
+   }
+
+
+   /* Setters and Getters */
+
+   getActiveSettingsPanel(): BehaviorSubject&lt;ActiveSettingsPanels&gt; {
+      return this.activeSettingsPanel;
+   }
+
+   setActiveSettingsPanel(activePanelsObj: ActiveSettingsPanels) {
+      this.activeSettingsPanel.next(activePanelsObj);
+   }
+
+   resetActiveSettingsPanel() {
+      this.activeSettingsPanel.next({ password: false, email: false, phone: false, misc: false });
+   }
+
+   getUserProfileData(): UserProfileData {
+      return JSON.parse(localStorage.getItem(LocallyStoredItemsKeys.ProfileData));
+   }
+
+   setUserProfileData(userProfileData: UserProfileData) {
+      localStorage.setItem(LocallyStoredItemsKeys.ProfileData, JSON.stringify(userProfileData));
+   }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,2218 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DriverInfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-driver-info</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./driver-info.component.css,<br>../../quotation-request-page/quotation-request-page.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./driver-info.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#driverInfoForm">driverInfoForm</a>
+                            </li>
+                            <li>
+                                <a href="#fromZeroToTen">fromZeroToTen</a>
+                            </li>
+                            <li>
+                                <a href="#hasChildren">hasChildren</a>
+                            </li>
+                            <li>
+                                <a href="#insuredWorkCityId">insuredWorkCityId</a>
+                            </li>
+                            <li>
+                                <a href="#isDrivingPercentageComplete">isDrivingPercentageComplete</a>
+                            </li>
+                            <li>
+                                <a href="#lang">lang</a>
+                            </li>
+                            <li>
+                                <a href="#months">months</a>
+                            </li>
+                            <li>
+                                <a href="#previousQuote">previousQuote</a>
+                            </li>
+                            <li>
+                                <a href="#previousQuoteDriver">previousQuoteDriver</a>
+                            </li>
+                            <li>
+                                <a href="#previousQuoteDriverBirthDate">previousQuoteDriverBirthDate</a>
+                            </li>
+                            <li>
+                                <a href="#previousQuoteDriverBirthDateMonth">previousQuoteDriverBirthDateMonth</a>
+                            </li>
+                            <li>
+                                <a href="#previousQuoteDriverBirthDateYear">previousQuoteDriverBirthDateYear</a>
+                            </li>
+                            <li>
+                                <a href="#removeDriverModal">removeDriverModal</a>
+                            </li>
+                            <li>
+                                <a href="#stepNumber">stepNumber</a>
+                            </li>
+                            <li>
+                                <a href="#stepsData">stepsData</a>
+                            </li>
+                            <li>
+                                <a href="#submitted">submitted</a>
+                            </li>
+                            <li>
+                                <a href="#termSearchFn">termSearchFn</a>
+                            </li>
+                            <li>
+                                <a href="#years">years</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#formatDate">formatDate</a>
+                            </li>
+                            <li>
+                                <a href="#getPreviousQuoteRequest">getPreviousQuoteRequest</a>
+                            </li>
+                            <li>
+                                <a href="#getStepData">getStepData</a>
+                            </li>
+                            <li>
+                                <a href="#hasChild">hasChild</a>
+                            </li>
+                            <li>
+                                <a href="#initForm">initForm</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#submitForm">submitForm</a>
+                            </li>
+                            <li>
+                                <a href="#watchDriversPercentage">watchDriversPercentage</a>
+                            </li>
+                            <li>
+                                <a href="#watchFormAfterSubmit">watchFormAfterSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#watchIdentityNoToshowDate">watchIdentityNoToshowDate</a>
+                            </li>
+                            <li>
+                                <a href="#watchStepNum">watchStepNum</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#scroll">scroll</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#f">f</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(insuranceSteps: <a href="../injectables/InsuranceStepsService.html">InsuranceStepsService</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, scrollOnErrer: <a href="../injectables/Scroll.html">Scroll</a>, appService: <a href="../injectables/AppService.html">AppService</a>, formvalidationService: <a href="../injectables/FormsValidationService.html">FormsValidationService</a>, modal: NgbModal)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>insuranceSteps</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsService.html" target="_self" >InsuranceStepsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>scrollOnErrer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Scroll.html" target="_self" >Scroll</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppService.html" target="_self" >AppService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formvalidationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormsValidationService.html" target="_self" >FormsValidationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modal</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scroll"></a>
+                        <b>scroll</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:36</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatDate"></a>
+                    <span class="name">
+                        <b>
+                            formatDate
+                        </b>
+                        <a href="#formatDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formatDate(d)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="185"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:185</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>d</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPreviousQuoteRequest"></a>
+                    <span class="name">
+                        <b>
+                            getPreviousQuoteRequest
+                        </b>
+                        <a href="#getPreviousQuoteRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPreviousQuoteRequest()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStepData"></a>
+                    <span class="name">
+                        <b>
+                            getStepData
+                        </b>
+                        <a href="#getStepData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStepData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:235</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasChild"></a>
+                    <span class="name">
+                        <b>
+                            hasChild
+                        </b>
+                        <a href="#hasChild"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hasChild()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="241"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:241</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initForm"></a>
+                    <span class="name">
+                        <b>
+                            initForm
+                        </b>
+                        <a href="#initForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitForm"></a>
+                    <span class="name">
+                        <b>
+                            submitForm
+                        </b>
+                        <a href="#submitForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submitForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchDriversPercentage"></a>
+                    <span class="name">
+                        <b>
+                            watchDriversPercentage
+                        </b>
+                        <a href="#watchDriversPercentage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchDriversPercentage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="193"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:193</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchFormAfterSubmit"></a>
+                    <span class="name">
+                        <b>
+                            watchFormAfterSubmit
+                        </b>
+                        <a href="#watchFormAfterSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchFormAfterSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="325"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:325</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchIdentityNoToshowDate"></a>
+                    <span class="name">
+                        <b>
+                            watchIdentityNoToshowDate
+                        </b>
+                        <a href="#watchIdentityNoToshowDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchIdentityNoToshowDate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="265"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:265</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchStepNum"></a>
+                    <span class="name">
+                        <b>
+                            watchStepNum
+                        </b>
+                        <a href="#watchStepNum"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchStepNum()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="259"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:259</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="driverInfoForm"></a>
+                        <span class="name">
+                            <b>
+                            driverInfoForm</b>
+                            <a href="#driverInfoForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fromZeroToTen"></a>
+                        <span class="name">
+                            <b>
+                            fromZeroToTen</b>
+                            <a href="#fromZeroToTen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>DropDownValues.fromZeroToTen</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasChildren"></a>
+                        <span class="name">
+                            <b>
+                            hasChildren</b>
+                            <a href="#hasChildren"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="insuredWorkCityId"></a>
+                        <span class="name">
+                            <b>
+                            insuredWorkCityId</b>
+                            <a href="#insuredWorkCityId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isDrivingPercentageComplete"></a>
+                        <span class="name">
+                            <b>
+                            isDrivingPercentageComplete</b>
+                            <a href="#isDrivingPercentageComplete"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lang"></a>
+                        <span class="name">
+                            <b>
+                            lang</b>
+                            <a href="#lang"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="months"></a>
+                        <span class="name">
+                            <b>
+                            months</b>
+                            <a href="#months"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousQuote"></a>
+                        <span class="name">
+                            <b>
+                            previousQuote</b>
+                            <a href="#previousQuote"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/QuoteRequest.html" target="_self" >QuoteRequest</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousQuoteDriver"></a>
+                        <span class="name">
+                            <b>
+                            previousQuoteDriver</b>
+                            <a href="#previousQuoteDriver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Driver.html" target="_self" >Driver</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousQuoteDriverBirthDate"></a>
+                        <span class="name">
+                            <b>
+                            previousQuoteDriverBirthDate</b>
+                            <a href="#previousQuoteDriverBirthDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousQuoteDriverBirthDateMonth"></a>
+                        <span class="name">
+                            <b>
+                            previousQuoteDriverBirthDateMonth</b>
+                            <a href="#previousQuoteDriverBirthDateMonth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousQuoteDriverBirthDateYear"></a>
+                        <span class="name">
+                            <b>
+                            previousQuoteDriverBirthDateYear</b>
+                            <a href="#previousQuoteDriverBirthDateYear"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="removeDriverModal"></a>
+                        <span class="name">
+                            <b>
+                            removeDriverModal</b>
+                            <a href="#removeDriverModal"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;removeDriverModal&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepNumber"></a>
+                        <span class="name">
+                            <b>
+                            stepNumber</b>
+                            <a href="#stepNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepsData"></a>
+                        <span class="name">
+                            <b>
+                            stepsData</b>
+                            <a href="#stepsData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitted"></a>
+                        <span class="name">
+                            <b>
+                            submitted</b>
+                            <a href="#submitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="termSearchFn"></a>
+                        <span class="name">
+                            <b>
+                            termSearchFn</b>
+                            <a href="#termSearchFn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>AppUtils.searchItemTerm</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="years"></a>
+                        <span class="name">
+                            <b>
+                            years</b>
+                            <a href="#years"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>number[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="f"></a>
+                        <span class="name"><b>f</b><a href="#f"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>f()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/components/quotation-request/drivers/driver-info/driver-info.component.ts:102</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  OnInit,
+  Output,
+  ViewChild,
+  ElementRef,
+} from &quot;@angular/core&quot;;
+import { FormBuilder, FormGroup, Validators } from &quot;@angular/forms&quot;;
+import DropDownValues from &quot;src/app/helpers/utils/DropDownValues&quot;;
+import { Scroll } from &quot;src/app/helpers/utils/scroll&quot;;
+import { Driver } from &quot;src/app/models/insurance-steps/Driver&quot;;
+import { QuoteRequest } from &quot;src/app/models/insurance-steps/QuoteRequest&quot;;
+import { AppService } from &quot;src/app/services/app.service&quot;;
+import { InsuranceStepsService } from &quot;src/app/services/insurance-steps/insurance-steps.service&quot;;
+import { FormsNames } from &quot;src/app/models/insurance-steps/StepsFormsName&quot;;
+import { FormsValidationService } from &quot;src/app/services/insurance-steps/forms-validation.service&quot;;
+import { NgbActiveModal, NgbModal } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+import AppUtils from &#x27;src/app/helpers/utils/AppUtils&#x27;;
+
+
+@Component({
+  selector: &quot;app-driver-info&quot;,
+  templateUrl: &quot;./driver-info.component.html&quot;,
+  styleUrls: [
+    &quot;./driver-info.component.css&quot;,
+    &quot;../../quotation-request-page/quotation-request-page.component.css&quot;,
+  ],
+})
+export class DriverInfoComponent implements OnInit {
+
+  @ViewChild(&#x27;removeDriverModal&#x27;) removeDriverModal: ElementRef;
+  /* @Input() eventsSubmit: Observable&lt;void&gt;;
+  private eventsSubscription: Subscription; */
+  @Output() scroll &#x3D; new EventEmitter();
+
+  driverInfoForm: FormGroup;
+
+  hasChildren &#x3D; false;
+  stepNumber;
+  stepsData;
+  submitted: boolean;
+  insuredWorkCityId: number;
+
+  fromZeroToTen &#x3D; DropDownValues.fromZeroToTen;
+  isDrivingPercentageComplete: boolean;
+  lang: string;
+
+  months: { id: number; nameAr: string; name: string }[];
+  years: number[] &#x3D; [];
+
+  previousQuote: QuoteRequest;
+  previousQuoteDriver: Driver;
+  previousQuoteDriverBirthDate: any;
+  previousQuoteDriverBirthDateMonth: any;
+  previousQuoteDriverBirthDateYear: any;
+  termSearchFn &#x3D; AppUtils.searchItemTerm;
+
+  
+  constructor(
+    private insuranceSteps: InsuranceStepsService,
+    private fb: FormBuilder,
+    private scrollOnErrer: Scroll,
+    private appService: AppService,
+    private formvalidationService: FormsValidationService,
+    private modal: NgbModal
+  ) {}
+
+  ngOnInit() {
+    this.initForm();
+    this.watchStepNum();
+    this.watchDriversPercentage();
+    // this.watchDrivingPercentage();
+    this.appService.getAppLang().subscribe((language) &#x3D;&gt; {
+      this.lang &#x3D; language;
+    });
+    this.watchIdentityNoToshowDate();
+  }
+
+  initForm() {
+    this.driverInfoForm &#x3D; this.fb.group({
+      typeId: [1],
+      genderId: [&quot;M&quot;],
+      birthDate: [null],
+      educationLevelId: [null, [Validators.required]],
+      socialStatusId: [1],
+      drivingPercentageId: [null, [Validators.required]],
+      licenseTypeId: [null, [Validators.required]],
+      workCityId: [null, [Validators.required]],
+      childrenUnder16Years: [null],
+      numberOfAccidentsLast5Years: [null],
+      numberOfClaimsLast5Years: [null],
+      month: [null, [Validators.required]],
+      year: [null, [Validators.required]],
+    });
+    this.getStepData();
+    this.getPreviousQuoteRequest();
+    this.watchFormAfterSubmit();
+  }
+
+  get f() {
+    return this.driverInfoForm.controls;
+  }
+
+  submitForm() {
+    this.submitted &#x3D; true;
+    if (this.driverInfoForm.invalid) {
+      const firstElementWithError &#x3D; document.querySelector(
+        &quot;.ng-invalid[formControlName]&quot;
+      );
+      this.scrollOnErrer.scrollTo(firstElementWithError);
+      return;
+    }
+
+    const birthDate &#x3D; {
+      year: this.driverInfoForm.value.year,
+      month: this.driverInfoForm.value.month,
+    };
+
+    const formattedDate &#x3D; this.formatDate(birthDate);
+    this.driverInfoForm.value.birthDate &#x3D; formattedDate;
+    const currentQuoteReq &#x3D; this.insuranceSteps.getUserQuoteRequest().value;
+    const mainDriver &#x3D; this.driverInfoForm.value;
+    mainDriver.identityNumber &#x3D; currentQuoteReq.insuredIdentityNumber;
+    // mainDriver.numberOfAccidents &#x3D; currentQuoteReq.numberOfAccidents;
+    mainDriver.homeCityId &#x3D; null;
+
+    const tempDrivers &#x3D; [];
+
+    tempDrivers.push(mainDriver);
+    currentQuoteReq.insuredBirthDate &#x3D; mainDriver.birthDate;
+    currentQuoteReq.insuredGenderId &#x3D; mainDriver.genderId;
+    currentQuoteReq.insuredSocialStatusId &#x3D; mainDriver.socialStatusId;
+    currentQuoteReq.InsuredEducationLevelId &#x3D; mainDriver.educationLevelId;
+    currentQuoteReq.childrenUnder16Years &#x3D; mainDriver.childrenUnder16Years;
+    currentQuoteReq.insuredWorkCityId &#x3D; mainDriver.workCityId;
+    /* Check if previous quotation has drivers */
+    if (currentQuoteReq.drivers) {
+      /* loop throw driver  */
+
+      currentQuoteReq.drivers.forEach((driver) &#x3D;&gt; {
+        if (driver.typeId &#x3D;&#x3D; 1) {
+          driver.genderId &#x3D; mainDriver.genderId;
+          driver.birthDate &#x3D; mainDriver.birthDate;
+          driver.educationLevelId &#x3D; mainDriver.educationLevelId;
+          driver.socialStatusId &#x3D; mainDriver.socialStatusId;
+          driver.drivingPercentageId &#x3D; mainDriver.drivingPercentageId;
+          driver.childrenUnder16Years &#x3D; mainDriver.childrenUnder16Years;
+          (driver.numberOfAccidentsLast5Years &#x3D;
+            mainDriver.numberOfAccidentsLast5Years),
+            (driver.numberOfClaimsLast5Years &#x3D;
+              mainDriver.numberOfClaimsLast5Years);
+        }
+      });
+    } else {
+      mainDriver.medicalConditions &#x3D; [];
+      mainDriver.driverViolations &#x3D; [];
+      mainDriver.driverLicenses &#x3D; new Array({
+        licenseTypeId: this.driverInfoForm.value.licenseTypeId,
+        countryId: 113,
+        numberOfYears: 1,
+        isSaudiLicense: true,
+      });
+      currentQuoteReq.drivers &#x3D; tempDrivers;
+    }
+
+    // Remove the date from the form
+    delete this.driverInfoForm.value.day;
+    delete this.driverInfoForm.value.month;
+    delete this.driverInfoForm.value.year;
+    delete this.driverInfoForm.value.workCityId;
+    this.insuranceSteps.overridenSetQuoteRequest(currentQuoteReq);
+    if (this.stepNumber &#x3D;&#x3D; 3) {
+      this.insuranceSteps.setCurrentStepNum(4);
+      this.formvalidationService.addFormsStatus({
+        formName: FormsNames.driverInfoForm,
+        isValid: true,
+      });
+    }
+
+    // this.submitted &#x3D; false;
+  }
+
+  formatDate(d): string {
+    if (d &#x3D;&#x3D;&#x3D; null) {
+      return null;
+    }
+
+    return [d.month &lt; 10 ? &quot;0&quot; + d.month : d.month, d.year].join(&quot;/&quot;);
+  }
+
+  watchDriversPercentage() {
+    this.driverInfoForm
+      .get(&quot;drivingPercentageId&quot;)
+      .valueChanges.subscribe((val) &#x3D;&gt; {
+        const currentDriversPercentages: any[] &#x3D; this.insuranceSteps.getUserQuoteRequest()
+          .value.drivers;
+        let mainDriverExists &#x3D; false; // Indicates whether the main driver exists in the array
+        let percentagesSum &#x3D; 0; // Indicates the sum of all additional drivers percentages in the array
+
+        currentDriversPercentages.forEach((driver) &#x3D;&gt; {
+          // If the main driver exists
+          if (driver.typeId &#x3D;&#x3D;&#x3D; 1) {
+            mainDriverExists &#x3D; true;
+          }
+          //  Calculate the sum of the additional drivers
+          if (driver.typeId !&#x3D;&#x3D; 1) {
+            percentagesSum +&#x3D; driver.drivingPercentageId;
+          }
+        });
+        // Add the value to be added to the percentages sum
+        percentagesSum +&#x3D; val;
+        if (mainDriverExists) {
+          // Check if the selected percentage and previous percentages sum exceeds 100
+          if (percentagesSum &gt; 100) {
+           
+            // Show validation error
+             this.f.drivingPercentageId.setErrors({
+              drivingPercentageComplete: true,
+            }); 
+           
+          } else {
+          
+             this.f.drivingPercentageId.setErrors(null); 
+
+            // Update main driver with the new value
+          }
+        }
+      });
+  }
+
+ 
+ 
+  getStepData() {
+    this.insuranceSteps.getInsuranceStepsData().subscribe((stepsData) &#x3D;&gt; {
+      this.stepsData &#x3D; stepsData;
+    });
+  }
+
+  hasChild() {
+    //    this.driverInfoForm.get(&quot;childrenUnder16Years&quot;).reset();
+    this.hasChildren &#x3D; !this.hasChildren;
+    if (this.hasChildren) {
+      this.driverInfoForm.controls[&quot;childrenUnder16Years&quot;].setValidators([
+        Validators.required,
+      ]);
+      this.driverInfoForm.controls[
+        &quot;childrenUnder16Years&quot;
+      ].updateValueAndValidity();
+    } else {
+      this.driverInfoForm.controls[&quot;childrenUnder16Years&quot;].setValidators(null);
+      this.driverInfoForm.controls[
+        &quot;childrenUnder16Years&quot;
+      ].updateValueAndValidity();
+    }
+  }
+
+  watchStepNum() {
+    this.insuranceSteps.getCurrentStepNum().subscribe((stepNum) &#x3D;&gt; {
+      this.stepNumber &#x3D; stepNum;
+    });
+  }
+
+  watchIdentityNoToshowDate() {
+    var currentMeladiDate &#x3D; new Date();
+    var currentHijriYear: any &#x3D; new Intl.DateTimeFormat(&quot;ar-TN-u-ca-islamic&quot;, {
+      year: &quot;numeric&quot;,
+    }).format(Date.now());
+    this.insuranceSteps.getUserQuoteRequest().subscribe((stepsData) &#x3D;&gt; {
+      // this.insuredId &#x3D; stepsData.insuredIdentityNumber;
+      if (stepsData.insuredIdentityNumber.toString().startsWith(&quot;2&quot;)) {
+        this.months &#x3D; DropDownValues.MeladiMonths;
+
+        var currentYear &#x3D; currentMeladiDate.getFullYear();
+        var b &#x3D; currentYear - 90;
+        for (b; b &lt;&#x3D; currentYear - 17; b++) {
+          this.years.push(b);
+        }
+      } else {
+        this.months &#x3D; DropDownValues.higriMonths;
+        var b &#x3D; parseInt(currentHijriYear.substring(0, 4)) - 90;
+        for (b; b &lt;&#x3D; parseInt(currentHijriYear.substring(0, 4)) - 17; b++) {
+          this.years.push(b);
+        }
+      }
+    });
+  }
+
+  getPreviousQuoteRequest() {
+    this.previousQuote &#x3D; this.insuranceSteps.getUserQuoteRequest().value;
+    this.f.workCityId.setValue(this.previousQuote.drivingCityId);
+
+    if (this.previousQuote.drivers) {
+      let driver &#x3D; this.previousQuote.drivers.filter((drivers) &#x3D;&gt; {
+        return drivers.typeId &#x3D;&#x3D; 1;
+      })[0];
+
+      this.previousQuoteDriver &#x3D; driver;
+      let year &#x3D; driver.birthDate.substring(3, 7);
+      let month &#x3D; driver.birthDate.substring(0, 2);
+
+      month.startsWith(&quot;0&quot;)
+        ? this.f.month.setValue(parseInt(driver.birthDate.substring(1, 2)))
+        : this.f.month.setValue(parseInt(month));
+      this.f.year.setValue(parseInt(year));
+
+      this.f.educationLevelId.setValue(driver.educationLevelId);
+      this.f.drivingPercentageId.setValue(driver.drivingPercentageId);
+      this.f.numberOfAccidentsLast5Years.setValue(
+        driver.numberOfAccidentsLast5Years
+      );
+      this.f.numberOfClaimsLast5Years.setValue(driver.numberOfClaimsLast5Years);
+      driver.driverLicenses.filter((license) &#x3D;&gt; {
+        if (license.isSaudiLicense) {
+          this.f.licenseTypeId.setValue(license.licenseTypeId);
+        }
+      });
+      this.previousQuoteDriver.socialStatusId &#x3D;&#x3D; 2
+        ? this.hasChild()
+        : (this.hasChildren &#x3D; false);
+    }
+  }
+
+  watchFormAfterSubmit() {
+    this.driverInfoForm.valueChanges.subscribe(() &#x3D;&gt; {
+      if (this.driverInfoForm.valid &amp;&amp; this.stepNumber &gt;&#x3D; 4) {
+        this.formvalidationService.addFormsStatus({
+          formName: FormsNames.driverInfoForm,
+          isValid: true,
+        });
+        this.submitForm();
+      } else {
+        this.formvalidationService.addFormsStatus({
+          formName: FormsNames.driverInfoForm,
+          isValid: false,
+        });
+      }
+    });
+  }
+  /*  ngOnDestroy() {
+    this.eventsSubscription.unsubscribe();
+  } */
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;driverInfoForm&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+
+        &lt;div class&#x3D;&quot;col-sm-12 col-md-2 col-lg-2 flex-container&quot;&gt;
+            &lt;div class&#x3D;&quot;flex-centered mt-0&quot;&gt;
+                &lt;div class&#x3D;&quot;round round-lg hollow color&quot; style&#x3D;&quot;margin: 10px auto;&quot;&gt;
+                    &lt;span&gt;3&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;logo-wrapper&quot;&gt;
+                    &lt;h6&gt;{{&#x27;QuotationRequestForms.StepsTitles.DriverInfo&#x27; | translate }} &lt;/h6&gt;
+                    &lt;img src&#x3D;&#x27;../../../../assets/images/icons8-user-80.png&#x27; class&#x3D;&quot;logo&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-sm-12 col-md-9 col-lg-9 border-right border-left border-bottom&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Gender&#x27; | translate }}&lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; formControlName&#x3D;&quot;genderId&quot; value&#x3D;&quot;M&quot;
+                                [checked]&#x3D;&quot;previousQuoteDriver? previousQuoteDriver.genderId &#x3D;&#x3D;&#x3D; &#x27;M&#x27;: true&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Male&#x27; | translate }} &lt;/span&gt;
+                        &lt;/label&gt;
+
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; formControlName&#x3D;&quot;genderId&quot; value&#x3D;&quot;F&quot;
+                                [checked]&#x3D;&quot;previousQuoteDriver? previousQuoteDriver.genderId &#x3D;&#x3D;&#x3D; &#x27;F&#x27;: false&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Female&#x27; | translate }}&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+
+                &lt;!--  date picker --&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Birth&#x27; | translate }} &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;col&quot;&gt;
+                            &lt;ng-select [items]&#x3D;&quot;months&quot; [searchFn]&#x3D;&quot;termSearchFn&quot; bindValue&#x3D;&quot;id&quot; formControlName&#x3D;&quot;month&quot;
+                                placeholder&#x3D;&quot;MM&quot; [ngStyle]&#x3D;&quot;{&#x27;display&#x27;:&#x27;block&#x27;, &#x27;width&#x27;: &#x27;100%&#x27;}&quot;
+                                [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: submitted &amp;&amp; f.month.errors }&quot;&gt;
+
+                                &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                    &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                                &lt;/ng-template&gt;
+                                &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                    &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                                &lt;/ng-template&gt;
+                            &lt;/ng-select&gt;
+
+                            &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.month.errors&quot;&gt;
+                                &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.month.errors.required&quot;&gt;
+                                    {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;col&quot;&gt;
+                            &lt;ng-select [items]&#x3D;&quot;years&quot; [bindLabel]&#x3D;&quot;years&quot; [bindValue]&#x3D;&quot;years&quot;
+                                [ngStyle]&#x3D;&quot;{&#x27;display&#x27;:&#x27;block&#x27;, &#x27;width&#x27;: &#x27;100%&#x27;}&quot; formControlName&#x3D;&quot;year&quot;
+                                placeholder&#x3D;&quot;YYYY&quot; [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: submitted &amp;&amp; f.year.errors }&quot;&gt;&lt;/ng-select&gt;
+                            &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.year.errors&quot;&gt;
+                                &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.year.errors.required&quot;&gt;
+                                    {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;!-- //  date picker --&gt;
+
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Education&#x27; | translate }}
+                            &lt;i class&#x3D;&quot;fa fa-question-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot; ngbTooltip&#x3D;&quot;Tooltip on top&quot;
+                                aria-hidden&#x3D;&quot;true&quot;&gt;
+                            &lt;/i&gt;
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData?.EducationLevels&quot; bindValue&#x3D;&quot;id&quot;
+                            formControlName&#x3D;&quot;educationLevelId&quot; [loading]&#x3D;&quot;!stepsData?.EducationLevels&quot;
+                            [searchFn]&#x3D;&quot;termSearchFn&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: submitted &amp;&amp; f.educationLevelId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+                        &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.educationLevelId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.educationLevelId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.birthDate.errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;f.birthDate.errors.required&quot;&gt;{{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Status&#x27; | translate }} &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; formControlName&#x3D;&quot;socialStatusId&quot; value&#x3D;1
+                                [checked]&#x3D;&quot;previousQuoteDriver? previousQuoteDriver.socialStatusId&#x3D;&#x3D; 1 : true&quot;
+                                (change)&#x3D;&quot;hasChild()&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Single&#x27; | translate }}
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; formControlName&#x3D;&quot;socialStatusId&quot; value&#x3D;2
+                                [checked]&#x3D;&quot;previousQuoteDriver? previousQuoteDriver.socialStatusId&#x3D;&#x3D; 2 : false&quot;
+                                (change)&#x3D;&quot;hasChild()&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt;
+                                {{ &#x27;QuotationRequestForms.DriverInfo.Married&#x27;| translate }}
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;{{ &#x27;QuotationRequestForms.DriverInfo.Percentage&#x27; | translate }}
+                            &lt;i class&#x3D;&quot;fa fa-question-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot; ngbTooltip&#x3D;&quot;Tooltip on top&quot;
+                                aria-hidden&#x3D;&quot;true&quot;&gt;
+                            &lt;/i&gt;
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.DrivingPercentages&quot; bindValue&#x3D;&quot;id&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                            formControlName&#x3D;&quot;drivingPercentageId&quot; [loading]&#x3D;&quot;!stepsData.DrivingPercentages&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: submitted &amp;&amp; f.drivingPercentageId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+
+                        &lt;div *ngIf&#x3D;&quot;f.drivingPercentageId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;submitted &amp;&amp; f.drivingPercentageId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                                &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.drivingPercentageId.dirty &amp;&amp; f.drivingPercentageId.errors.drivingPercentageComplete&quot;&gt;
+                                    {{ &#x27;Errors.InCompletePercentage&#x27; | translate }}
+                                &lt;/div&gt;
+                            
+                        &lt;/div&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+          
+
+
+            &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;label&gt;{{ &#x27;QuotationRequestForms.DriverInfo.LicenseType&#x27; | translate }}
+                        &lt;i class&#x3D;&quot;fa fa-question-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot; ngbTooltip&#x3D;&quot;Tooltip on top&quot;
+                            aria-hidden&#x3D;&quot;true&quot;&gt;
+                        &lt;/i&gt;
+                    &lt;/label&gt;
+                    &lt;ng-select [items]&#x3D;&quot;stepsData.LicenseTypes&quot; bindValue&#x3D;&quot;id&quot; formControlName&#x3D;&quot;licenseTypeId&quot;
+                        [loading]&#x3D;&quot;!stepsData.LicenseTypes&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                        [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: submitted &amp;&amp; f.licenseTypeId.errors }&quot;&gt;
+                        &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                            &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                        &lt;/ng-template&gt;
+                        &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                            &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                        &lt;/ng-template&gt;
+                    &lt;/ng-select&gt;
+                    &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.licenseTypeId.errors&quot;&gt;
+                        &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.licenseTypeId.errors.required&quot;&gt;
+                            {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+
+            &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot; *ngIf&#x3D;&quot;hasChildren&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;label&gt;{{ &#x27;QuotationRequestForms.DriverInfo.Children&#x27; | translate }}
+                        &lt;i class&#x3D;&quot;fa fa-question-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot; ngbTooltip&#x3D;&quot;Tooltip on top&quot;
+                            aria-hidden&#x3D;&quot;true&quot;&gt;
+                        &lt;/i&gt;
+                    &lt;/label&gt;
+                    &lt;ng-select [items]&#x3D;&quot;fromZeroToTen&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                        [ngModel]&#x3D;&quot;previousQuoteDriver?previousQuoteDriver.childrenUnder16Years: null&quot;
+                        formControlName&#x3D;&quot;childrenUnder16Years&quot;
+                        [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: submitted &amp;&amp; f.childrenUnder16Years.errors }&quot;&gt;
+                    &lt;/ng-select&gt;
+                    &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.childrenUnder16Years.errors&quot;&gt;
+                        &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.childrenUnder16Years.errors.required&quot;&gt;
+                            {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;label&gt;{{ &#x27;QuotationRequestForms.DriverInfo.WorkCity&#x27; | translate }}
+                        &lt;i class&#x3D;&quot;fa fa-question-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot; ngbTooltip&#x3D;&quot;Tooltip on top&quot;
+                            aria-hidden&#x3D;&quot;true&quot;&gt;
+                        &lt;/i&gt;
+                    &lt;/label&gt;
+                    &lt;ng-select [items]&#x3D;&quot;stepsData.Cities&quot; bindValue&#x3D;&quot;id&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                        formControlName&#x3D;&quot;workCityId&quot; [loading]&#x3D;&quot;!stepsData.Cities&quot;
+                        [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: submitted &amp;&amp; f.workCityId.errors }&quot;&gt;
+                        &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                            &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                        &lt;/ng-template&gt;
+                        &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                            &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                        &lt;/ng-template&gt;
+                    &lt;/ng-select&gt;
+                    &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.workCityId.errors&quot;&gt;
+                        &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.workCityId.errors.required&quot;&gt;
+                            {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.AccidentCounts&#x27; | translate }}
+                        &lt;i class&#x3D;&quot;icon ion-md-help-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot;
+                            [ngbTooltip]&#x3D;&quot;(&#x27;QuotationRequestForms.Tooltips.DriverNoOfAccident&#x27; | translate)&quot;
+                            aria-hidden&#x3D;&quot;true&quot; style&#x3D;&quot;width:20.0;&quot;&gt;
+                        &lt;/i&gt;
+                    &lt;/label&gt;
+                    &lt;ng-select [items]&#x3D;&quot;fromZeroToTen&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot;
+                        [ngModel]&#x3D;&quot;previousQuoteDriver?.numberOfAccidentsLast5Years&quot;
+                        formControlName&#x3D;&quot;numberOfAccidentsLast5Years&quot;&gt;
+                    &lt;/ng-select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.ClaimCount&#x27; | translate }}
+                        &lt;i class&#x3D;&quot;icon ion-md-help-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot;
+                            [ngbTooltip]&#x3D;&quot;(&#x27;QuotationRequestForms.Tooltips.DriverNoOfAccident&#x27; | translate)&quot;
+                            aria-hidden&#x3D;&quot;true&quot; style&#x3D;&quot;width:20.0;&quot;&gt;
+                        &lt;/i&gt;
+                    &lt;/label&gt;
+                    &lt;ng-select [items]&#x3D;&quot;fromZeroToTen&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot;
+                        [ngModel]&#x3D;&quot;previousQuoteDriver?.numberOfClaimsLast5Years&quot;
+                        formControlName&#x3D;&quot;numberOfClaimsLast5Years&quot;&gt;
+                    &lt;/ng-select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-sm-12 col-md-1 col-lg-1&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div [ngClass]&#x3D;&quot;{&#x27;check-icon&#x27;:driverInfoForm.valid, &#x27;check-icon-invalid&#x27;: driverInfoForm.invalid }&quot;&gt;
+                &lt;i class&#x3D;&quot;icon ion-md-checkmark-circle&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+       
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;row continue-btn&quot; *ngIf&#x3D;&quot;stepNumber &#x3D;&#x3D;&#x3D; 3&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-sm &quot; id&#x3D;&quot;continue-btn&quot; (click)&#x3D;&quot;submitForm()&quot;
+            (click)&#x3D;&quot;scroll.emit(&#x27;moreDetails&#x27;)&quot;&gt;
+            {{ &#x27;QuotationRequestForms.InsuranceInfo.Continue&#x27; | translate }}
+            &lt;i *ngIf&#x3D;&quot;lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27;&quot; class&#x3D;&quot;icon ion-md-arrow-round-back&quot;&gt;&lt;/i&gt;
+            &lt;i *ngIf&#x3D;&quot;lang &#x3D;&#x3D;&#x3D; &#x27;en&#x27;&quot; class&#x3D;&quot;icon ion-md-arrow-round-forward&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./driver-info.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.calendar-icon {
+  background-color: #00a2ae;
+  color: white;
+  padding: 0em 6px;
+}
+</code></pre>
+                <p class="comment">
+                    <code>../../quotation-request-page/quotation-request-page.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.mobile-container{
+  padding: 0em;
+}
+.boxed-item {
+  margin-bottom: 0.5em;
+  padding: 2em 1em 1em 0em;
+}
+.check-box {
+  display: flex;
+  align-self: center;
+}
+
+.icon {
+   margin: 0 5px;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+.logo-wrapper h6 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.continue-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+ .continue-btn button {
+  background-color: #00a2ae;
+  color: #ffff;
+  width: 87px;
+}
+.add-driver-checkbox {
+  padding-bottom: 15px;
+}
+.tooltip-icon {
+  color: #044280;
+}
+.check svg {
+  width: unset;
+}
+.check-icon {
+  font-size: 50px;
+  color: #00a2ae;
+  transition: all 0.8s ease;
+  opacity: 1;
+  display: block;
+  margin: 18px auto;
+ 
+}
+.check-icon-invalid {
+  font-size: 50px;
+  color: #fff;
+  opacity: 0;
+  display: block;
+  margin: 18px auto;
+}
+
+
+.send-btn {
+  background: #00a2ae;
+  color: #fff;
+}
+
+.alert {
+  display:inline-block;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .continue-btn {
+    width: 160px;
+   
+  }
+  
+  .check-icon {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><form [formGroup]="driverInfoForm">    <div class="row">        <div class="col-sm-12 col-md-2 col-lg-2 flex-container">            <div class="flex-centered mt-0">                <div class="round round-lg hollow color" style="margin: 10px auto;">                    <span>3</span>                </div>                <div class="logo-wrapper">                    <h6>{{\'QuotationRequestForms.StepsTitles.DriverInfo\' | translate }} </h6>                    <img src=\'../../../../assets/images/icons8-user-80.png\' class="logo">                </div>            </div>        </div>        <div class="col-sm-12 col-md-9 col-lg-9 border-right border-left border-bottom">            <div class="row">                <div class="col-sm-12 col-md-6 col-lg-4">                    <label> {{ \'QuotationRequestForms.DriverInfo.Gender\' | translate }}</label>                    <div class="form-group">                        <label>                            <input type="radio" class="option-input radio" formControlName="genderId" value="M"                                [checked]="previousQuoteDriver? previousQuoteDriver.genderId === \'M\': true" />                            <span class="radio-text"> {{ \'QuotationRequestForms.DriverInfo.Male\' | translate }} </span>                        </label>                        <label>                            <input type="radio" class="option-input radio" formControlName="genderId" value="F"                                [checked]="previousQuoteDriver? previousQuoteDriver.genderId === \'F\': false" />                            <span class="radio-text"> {{ \'QuotationRequestForms.DriverInfo.Female\' | translate }}</span>                        </label>                    </div>                </div>                <!--  date picker -->                <div class="col-sm-12 col-md-4 col-lg-4">                    <label> {{ \'QuotationRequestForms.DriverInfo.Birth\' | translate }} </label>                    <div class="row">                        <div class="col">                            <ng-select [items]="months" [searchFn]="termSearchFn" bindValue="id" formControlName="month"                                placeholder="MM" [ngStyle]="{\'display\':\'block\', \'width\': \'100%\'}"                                [ngClass]="{ \'ng-invalid\': submitted && f.month.errors }">                                <ng-template ng-label-tmp let-item="item">                                    <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                                </ng-template>                                <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                    <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                                </ng-template>                            </ng-select>                            <div *ngIf="submitted && f.month.errors">                                <div class="v-meassage" *ngIf="f.month.errors.required">                                    {{ \'Errors.EmptyInputField\' | translate }}</div>                            </div>                        </div>                        <div class="col">                            <ng-select [items]="years" [bindLabel]="years" [bindValue]="years"                                [ngStyle]="{\'display\':\'block\', \'width\': \'100%\'}" formControlName="year"                                placeholder="YYYY" [ngClass]="{ \'ng-invalid\': submitted && f.year.errors }"></ng-select>                            <div *ngIf="submitted && f.year.errors">                                <div class="v-meassage" *ngIf="f.year.errors.required">                                    {{ \'Errors.EmptyInputField\' | translate }}</div>                            </div>                        </div>                    </div>                </div>                <!-- //  date picker -->                <div class="col-sm-12 col-md-6 col-lg-4">                    <div class="form-group">                        <label> {{ \'QuotationRequestForms.DriverInfo.Education\' | translate }}                            <i class="fa fa-question-circle tooltip-icon" placement="top" ngbTooltip="Tooltip on top"                                aria-hidden="true">                            </i>                        </label>                        <ng-select [items]="stepsData?.EducationLevels" bindValue="id"                            formControlName="educationLevelId" [loading]="!stepsData?.EducationLevels"                            [searchFn]="termSearchFn"                            [ngClass]="{ \'ng-invalid\': submitted && f.educationLevelId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                        <div *ngIf="submitted && f.educationLevelId.errors">                            <div class="v-meassage" *ngIf="f.educationLevelId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                        <div *ngIf="submitted && f.birthDate.errors" class="invalid-feedback">                            <div *ngIf="f.birthDate.errors.required">{{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                    </div>                </div>                <div class="col-sm-12 col-md-6 col-lg-4">                    <label> {{ \'QuotationRequestForms.DriverInfo.Status\' | translate }} </label>                    <div class="form-group">                        <label>                            <input type="radio" class="option-input radio" formControlName="socialStatusId" value=1                                [checked]="previousQuoteDriver? previousQuoteDriver.socialStatusId== 1 : true"                                (change)="hasChild()" />                            <span class="radio-text"> {{ \'QuotationRequestForms.DriverInfo.Single\' | translate }}                            </span>                        </label>                        <label>                            <input type="radio" class="option-input radio" formControlName="socialStatusId" value=2                                [checked]="previousQuoteDriver? previousQuoteDriver.socialStatusId== 2 : false"                                (change)="hasChild()" />                            <span class="radio-text">                                {{ \'QuotationRequestForms.DriverInfo.Married\'| translate }}                            </span>                        </label>                    </div>                </div>                <div class="col-sm-12 col-md-6 col-lg-4">                    <div class="form-group">                        <label>{{ \'QuotationRequestForms.DriverInfo.Percentage\' | translate }}                            <i class="fa fa-question-circle tooltip-icon" placement="top" ngbTooltip="Tooltip on top"                                aria-hidden="true">                            </i>                        </label>                        <ng-select [items]="stepsData.DrivingPercentages" bindValue="id" [searchFn]="termSearchFn"                            formControlName="drivingPercentageId" [loading]="!stepsData.DrivingPercentages"                            [ngClass]="{ \'ng-invalid\': submitted && f.drivingPercentageId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                        <div *ngIf="f.drivingPercentageId.errors">                            <div class="v-meassage" *ngIf="submitted && f.drivingPercentageId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                                <div class="v-meassage" *ngIf="f.drivingPercentageId.dirty && f.drivingPercentageId.errors.drivingPercentageComplete">                                    {{ \'Errors.InCompletePercentage\' | translate }}                                </div>                                                    </div>                                            </div>                </div>                      <div class="col-sm-12 col-md-6 col-lg-4">                <div class="form-group">                    <label>{{ \'QuotationRequestForms.DriverInfo.LicenseType\' | translate }}                        <i class="fa fa-question-circle tooltip-icon" placement="top" ngbTooltip="Tooltip on top"                            aria-hidden="true">                        </i>                    </label>                    <ng-select [items]="stepsData.LicenseTypes" bindValue="id" formControlName="licenseTypeId"                        [loading]="!stepsData.LicenseTypes" [searchFn]="termSearchFn"                        [ngClass]="{ \'ng-invalid\': submitted && f.licenseTypeId.errors }">                        <ng-template ng-label-tmp let-item="item">                            <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                        </ng-template>                        <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                            <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                        </ng-template>                    </ng-select>                    <div *ngIf="submitted && f.licenseTypeId.errors">                        <div class="v-meassage" *ngIf="f.licenseTypeId.errors.required">                            {{ \'Errors.EmptyInputField\' | translate }}</div>                    </div>                </div>            </div>            <div class="col-sm-12 col-md-6 col-lg-4" *ngIf="hasChildren">                <div class="form-group">                    <label>{{ \'QuotationRequestForms.DriverInfo.Children\' | translate }}                        <i class="fa fa-question-circle tooltip-icon" placement="top" ngbTooltip="Tooltip on top"                            aria-hidden="true">                        </i>                    </label>                    <ng-select [items]="fromZeroToTen" bindLabel="name" bindValue="id" [searchFn]="termSearchFn"                        [ngModel]="previousQuoteDriver?previousQuoteDriver.childrenUnder16Years: null"                        formControlName="childrenUnder16Years"                        [ngClass]="{ \'ng-invalid\': submitted && f.childrenUnder16Years.errors }">                    </ng-select>                    <div *ngIf="submitted && f.childrenUnder16Years.errors">                        <div class="v-meassage" *ngIf="f.childrenUnder16Years.errors.required">                            {{ \'Errors.EmptyInputField\' | translate }}</div>                    </div>                </div>            </div>            <div class="col-sm-12 col-md-6 col-lg-4">                <div class="form-group">                    <label>{{ \'QuotationRequestForms.DriverInfo.WorkCity\' | translate }}                        <i class="fa fa-question-circle tooltip-icon" placement="top" ngbTooltip="Tooltip on top"                            aria-hidden="true">                        </i>                    </label>                    <ng-select [items]="stepsData.Cities" bindValue="id" [searchFn]="termSearchFn"                        formControlName="workCityId" [loading]="!stepsData.Cities"                        [ngClass]="{ \'ng-invalid\': submitted && f.workCityId.errors }">                        <ng-template ng-label-tmp let-item="item">                            <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                        </ng-template>                        <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                            <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                        </ng-template>                    </ng-select>                    <div *ngIf="submitted && f.workCityId.errors">                        <div class="v-meassage" *ngIf="f.workCityId.errors.required">                            {{ \'Errors.EmptyInputField\' | translate }}</div>                    </div>                </div>            </div>            <div class="col-sm-12 col-md-6 col-lg-4">                <div class="form-group">                    <label> {{ \'QuotationRequestForms.DriverInfo.AccidentCounts\' | translate }}                        <i class="icon ion-md-help-circle tooltip-icon" placement="top"                            [ngbTooltip]="(\'QuotationRequestForms.Tooltips.DriverNoOfAccident\' | translate)"                            aria-hidden="true" style="width:20.0;">                        </i>                    </label>                    <ng-select [items]="fromZeroToTen" bindLabel="name" bindValue="id"                        [ngModel]="previousQuoteDriver?.numberOfAccidentsLast5Years"                        formControlName="numberOfAccidentsLast5Years">                    </ng-select>                </div>            </div>            <div class="col-sm-12 col-md-6 col-lg-4">                <div class="form-group">                    <label> {{ \'QuotationRequestForms.DriverInfo.ClaimCount\' | translate }}                        <i class="icon ion-md-help-circle tooltip-icon" placement="top"                            [ngbTooltip]="(\'QuotationRequestForms.Tooltips.DriverNoOfAccident\' | translate)"                            aria-hidden="true" style="width:20.0;">                        </i>                    </label>                    <ng-select [items]="fromZeroToTen" bindLabel="name" bindValue="id"                        [ngModel]="previousQuoteDriver?.numberOfClaimsLast5Years"                        formControlName="numberOfClaimsLast5Years">                    </ng-select>                </div>            </div>        </div>    </div>    <div class="col-sm-12 col-md-1 col-lg-1">        <div class="row">            <div [ngClass]="{\'check-icon\':driverInfoForm.valid, \'check-icon-invalid\': driverInfoForm.invalid }">                <i class="icon ion-md-checkmark-circle"></i>            </div>        </div>           </div>    </div>    <div class="row continue-btn" *ngIf="stepNumber === 3">        <button type="button" class="btn btn-sm " id="continue-btn" (click)="submitForm()"            (click)="scroll.emit(\'moreDetails\')">            {{ \'QuotationRequestForms.InsuranceInfo.Continue\' | translate }}            <i *ngIf="lang === \'ar\'" class="icon ion-md-arrow-round-back"></i>            <i *ngIf="lang === \'en\'" class="icon ion-md-arrow-round-forward"></i>        </button>    </div></form></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'DriverInfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DriverInfoComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

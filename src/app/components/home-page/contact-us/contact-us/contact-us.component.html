@@ -1,0 +1,91 @@
+<div class="section-larger bg-img img-bg">
+    <div class="container mt-4">
+      <!-- TODO: fix columns -->
+      <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12">
+        <div class="boxed-item">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 mt-4">
+              <img src="../../../../assets/img/services/call.png" class="img-fluid" alt="Call" />
+            </div>
+            <div class="col-xl-10 col-lg-10 col-md-6 ">
+              <form [formGroup]="ContactusFormGroup" class="form-group">
+                <div class="row">
+                  <div class=" form-title  ">
+                    <h5> {{"Ads.ContactUs" | translate}}</h5>
+                  </div>
+             
+                </div>
+               
+                <!-- --------------------- Contact Input ---------------------- -->
+                <div class="row mt-4 p-0">
+
+           <div class="col-12">
+            <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">
+              <small>{{ errorMessage }}</small>
+              <small *ngIf="validationErrors">
+                 <ul class="errors-list">
+                    <li *ngFor="let error of validationErrors">{{error}}</li>
+                 </ul>
+              </small>
+           </ngb-alert>
+           </div>
+                  <div class="col-lg-6 mt-2 pl-0">
+                    <input formControlName="name" type="text" name="name" [placeholder]="'Ads.InputName' | translate" class="form-control">
+                  </div>
+                  <div class="col-lg-6  mt-2 pl-0">
+
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input class="form-control"  formControlName="phoneNumber" [placeholder]="('Ads.InputPhone' | translate)" maxlength="9"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text">
+                         <div class=" ">
+                            <span class="input-group-text calendar-icon">
+                              966+</span>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="col-lg-6 mt-2 pl-0">
+                    <input  formControlName="email" type="email" name="email" [placeholder]="'Auth.EmailText' | translate" class="form-control">
+                  </div>
+                  <div class="col-lg-6 mt-2 pl-0 ">
+                    <div class="flex-container">
+                    <div class="form-item captcha" style="width: 100%; display: flex;">
+                       <canvas #captchacanvas width="200" height="28"></canvas>
+                       <button (click)="initCaptchaContent()" class="captcha-reset-btn bouncy"
+                          type="button">
+                          <fa-icon icon="sync-alt" class="icon"></fa-icon>
+                       </button>
+                       <input formControlName="captcha" style="width: 38%; direction: rtl;"
+                          [placeholder]="('App.InputCaptchaText' | translate)" class="form-control"
+                          type="text">
+                    </div>
+                    </div>
+                      <div *ngIf=" " class="v-msg">
+                          {{ 'Errors.InvalidCaptcha' | translate }}
+                      </div>
+                 </div> 
+           
+                </div>
+                <div class="row mt-4 ">
+                    <textarea   formControlName="message" id="subject" name="subject" placeholder=" " style="height:300px; "  class="form-control"></textarea>
+
+                </div>
+                <div class="row mt-4 justify-content-center ">
+                  <button (click)="submit()"  
+                     class="submit-btn  " type="submit">
+                     {{ 'App.ContinueText' | translate }}
+                     <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"
+                        aria-hidden="true"></span>
+                  </button>
+               </div>
+
+              </form>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  </div>

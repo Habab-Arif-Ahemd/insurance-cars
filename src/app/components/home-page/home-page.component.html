@@ -1,0 +1,365 @@
+<app-banner></app-banner>
+<!-- side bar 2 -->
+
+<!-- Why Us Section -->
+<section id="Why-Us"></section>
+<div class="why-us ">
+  <div class="col d-flex justify-content-center">
+    <img src="../../../assets/img/app-landing/car.svg" class="img-fluid" alt="Call" />
+    <div class="mx-4 mt-4">
+      <h3 class="why-us-title">{{ "Ads.WhyUs" | translate }}</h3>
+    </div>
+  </div>
+  <section class="feature-section sec-pad">
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 feature-block my-2 " *ngFor="let service of ourServices">
+          <div class="feature-block-one mt-4 mx-3">
+            <div class="inner-box">
+              <!-- <div class="bg-layer" style="background-image: url(assets/images/resource/feature-1.jpg);"></div> -->
+              <div class="icon-box ">
+                <img src="{{ service.icon }}">
+              </div>
+
+
+              <div class=" ">
+                <p>{{ lang === "ar" ? service.titleAr : service.titleEn }}</p>
+                <h3>{{ lang === "ar" ? service.descAr : service.descEn }}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Why Us End -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Insurance Coverage                          -->
+<!-- ----------------------------------------------------------------------- -->
+<section id="Insurance-Coverage">
+  <div class="section-larger bg-img-left">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-12 col-md-12 col-sm-12 text-container-right d-flex justify-content-center align-items-center">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12  ">
+            <img src="../../../assets/img/shape/coverage.svg">
+          </div>
+          <div class="container-text mt-4">
+
+            <h4 class="coverage">{{ "InsuranceCovered.QuestionAboutCoverage" | translate }}</h4>
+
+            <!-- Specific methods and techniques have changed considerably over the years -->
+            <!-- <div class="boxed-item col-lg-10 col-md-12 col-sm-12 p-2 mt-3">
+              <span class="sub-head">
+                <fa-icon icon="caret-left" class="icon-left"></fa-icon> {{ "InsuranceCovered.NotesAboutCoverage" |
+                translate }}
+              </span>
+            </div>
+            <p></p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- <div class="col-lg-12 col-md-12 col-sm-12  d-flex justify-content-center align-items-center"> -->
+        <div class="offset-lg-1"></div>
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class="col-icon-bg-cntr mt-5">
+            <img src="../../../assets/img/Icon-png/TPL.png" class="img-fluid img-icon d-block mb-4" alt="" />
+
+            <h6>
+              <fa-icon icon="caret-left" class="icon icon-left"></fa-icon> {{ "InsuranceCovered.InsuranceTypeOne" |
+              translate }}
+            </h6>
+            <p>
+              {{ "InsuranceCovered.InsuranceTypeOneDetails" | translate }}
+              <br /><br />
+              <!-- <a href="">  التأمين ضد الغير </a>. -->
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class="col-icon-bg-cntr mt-1">
+            <img src="../../../assets/img/Icon-png/comp.png" class="img-fluid img-icon d-block mb-4" alt="" />
+            <h6>
+              <fa-icon icon="caret-left" class="icon icon-left"></fa-icon> {{ "InsuranceCovered.InsuranceTypeTwo" |
+              translate }}
+            </h6>
+            <p>
+              {{ "InsuranceCovered.InsuranceTypeTwoDetails" | translate }}
+              <!-- <a href="">التأمين الشامل</a> -->
+            </p>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                parteners                                -->
+<!-- ----------------------------------------------------------------------- -->
+<section id="Parteners"></section>
+<section class="partners-section pt-3">
+  <div class="container ">
+    <div class="">
+      <div class="row">
+        <div class="col-lg-2 ">
+          <div class="  d-flex justify-content-center">
+            <img src="../../../assets/img/Clients/Group.svg" alt="">
+          </div>
+          <div class="sec-title text-center mt-1">
+            <h4>{{ "Ads.Title" | translate }}</h4>
+          </div>
+        </div>
+
+        <div class="col-xl-10 col-lg-10 col-md-8 col-sm-12 carousel flex-centered py-3">
+          <owl-carousel-o [options]="partnersCarouselOpts" class="hover02 column">
+            <ng-template carouselSlide class="flex-container partner-item">
+              <div class="partner-logo flex-container flex-centered">
+                <figure>
+                  <img src="../../../assets/img/Clients/GGE.png" alt="" />
+                </figure>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide class="flex-container">
+              <div class="partner-logo flex-container flex-centered">
+                <figure>
+                  <img src="../../../assets/img/Clients/Tokio Marine.png" alt="" />
+                </figure>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide class="flex-container">
+              <div class="partner-logo flex-container flex-centered">
+                <figure>
+                  <img src="../../../assets/img/Clients/Walaa.png" alt="" />
+                </figure>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide class="flex-container">
+              <div class="partner-logo flex-container flex-centered">
+                <figure>
+                  <img src="../../../assets/img/Clients/W.png" alt="" />
+                </figure>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide class="flex-container">
+              <div class="partner-logo flex-container flex-centered">
+                <figure>
+                  <img src="../../../assets/img/Clients/salama.jpg" alt="" />
+                </figure>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide class="flex-container">
+              <div class="partner-logo flex-container flex-centered">
+                <figure>
+                  <img src="../../../assets/img/Clients/Alrajhi.png" alt="" />
+                </figure>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Free Call Back                              -->
+<!-- ----------------------------------------------------------------------- -->
+<section id="Call-Back"></section>
+<div class="section-larger bg-img">
+  <div class="container">
+    <!-- TODO: fix columns -->
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-3 col-md-10 col-sm-12 flex-container flex-centered d-flex justify-content-center">
+        <img src="../../../assets/img/services/phone&mail icon.png" class="" alt="Call" />
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5  flex-container flex-centered contact-us">
+        <h4 class="coverage">{{ "Ads.CallBack" | translate }}</h4>
+      </div>
+
+      <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12">
+        <div class="boxed-item">
+          <div class="row">
+
+            <div class="col-xl-10 col-lg-10 col-md-6 flex-centered">
+              <form [formGroup]="ContactusFormGroupHomepage" class="form-group">
+                <!-- --------------------- Contact Input ---------------------- -->
+                <div class="">
+                  <!-- Error(s) Alert -->
+
+                  <!-- Name Input -->
+                  <div class="">
+                    <input formControlName="name" type="text" name="name" [placeholder]="'Ads.InputName' | translate"
+                      class="form-control" />
+                  </div>
+
+                  <!-- Insurane Type -->
+                  <div class="mt-3">
+                    <ng-select [items]="productType" formControlName="insuranceTypeId" bindLabel="name" bindValue="id"
+                      [placeholder]="
+                        'QuotationRequestForms.InsuranceInfo.InsurancePurpose'
+                          | translate
+                      ">
+                      <ng-template ng-label-tmp let-item="item">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                      </ng-template>
+                      <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                      </ng-template>
+                    </ng-select>
+                  </div>
+
+                  <!-- Contact Type -->
+                  <div class="mt-3">
+                    <ng-select [items]="contactType" formControlName="contactType" (change)="selectContactType($event)"
+                      bindValue="id" [placeholder]="'QuotationRequestForms.InsuranceInfo.contactType'| translate">
+                      <ng-template ng-label-tmp let-item="item">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                      </ng-template>
+                      <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{ lang === "ar" ? item.nameAr : item.name }}</span>
+                      </ng-template>
+                    </ng-select>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div *ngIf="isContactTypeIsPhone" class="mt-3">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input class="form-control date" formControlName="phoneNumber"
+                          [placeholder]="'Auth.PhoneNumberText' | translate" maxlength="9"
+                          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                          type="text" />
+                        <div class=" ">
+                          <span class="input-group-text calendar-icon">
+                            966+</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div *ngIf="isContactTypeEmail" class="mt-3">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input class="form-control date" type="email" formControlName="email"
+                          [placeholder]="'Auth.EmailText' | translate" type="text" />
+
+                        <div class="input-group-append ">
+                          <span class=" input-group-text calendar-icon">
+                            <fa-icon icon="at"> </fa-icon>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Contact Type -->
+
+                </div>
+
+                <!-- ---------------------------- Submit Button ---------------------------- -->
+                <div class=" mt-4 justify-content-center">
+                  <button (click)="submit()" class="form-control submit-btn-wrapper btn-prim-round" type="submit"
+                    style="cursor: pointer">
+                    {{ "Ads.SendButton" | translate }}
+                    <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"
+                      aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <ngb-alert *ngIf="isErrorAlertVisible" type="danger"
+                      (close)="isErrorAlertVisible = !isErrorAlertVisible">
+                      <small>{{ errorMessage }}</small>
+                      <small *ngIf="validationErrors">
+                        <ul class="errors-list">
+                          <li *ngFor="let error of validationErrors">
+                            {{ error }}
+                          </li>
+                        </ul>
+                      </small>
+                    </ngb-alert>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Four points and text Ends here -->
+
+<!-- Feedback section Starts here -->
+<section id="FAQ"></section>
+<section class="faq-section">
+  <div class="inner-container">
+    <div class="pattern-layer wow slideInRight animated animated animated" data-wow-delay="500ms"
+      data-wow-duration="1500ms" style="background-image: url(../../../assets/img/bg/pattern-9.png)"></div>
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-lg-5 col-md-6 col-sm-12 image-column ">
+          <div class="image_block_5 animatetoright py-3 ">
+              <figure class="faq-sec">
+                <img src="../../../assets/img/bg/faq.png" alt="" />
+              </figure>
+            <div class="faq-text">
+              <h4 class="why-us-title p-0">{{ "Faq.Title" | translate }}</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-12 inner-column">
+          <div class="inner-box mt-35">
+            <div>
+              <!-- ----------------------------------------------------------------------- -->
+              <!--                                ACCORDIAN                                -->
+              <!-- ----------------------------------------------------------------------- -->
+              <div *ngFor="let question of commonQestions" class="faq-accordion">
+                <div class="accordion-item">
+                  <button (click)="question.isActive = !question.isActive" [attr.aria-expanded]="question.isActive"
+                    aria-controls="{{ question.id }}" aria-expanded="true">
+                    <span class="accordion-title">
+                      {{
+                      lang === "ar"
+                      ? question.questionar
+                      : question.questionen
+                      }} </span>
+                    <span class="icon" aria-hidden="true">
+                      <!-- <fa-icon icon="car"></fa-icon> -->
+                    </span>
+                  </button>
+                  <div [collapse]="!question.isActive" id="{{ question.id }}" class="accordion-content">
+                    <p>
+                      {{
+                      lang === "ar" ? question.answerar : question.answeren
+                      }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- side bar 1 -->
+
+<!--   </div>
+</div>
+ 
+ -->

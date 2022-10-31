@@ -1,0 +1,40 @@
+ 
+/* ------------------------------------------------------------------------- */
+/*                             Page Loader                               */
+/*  -----------------------------------------------------------------------  */
+
+@import"../css_loader.css";
+@import"../profile.scss";
+th {
+   text-align: start;
+}
+.btn-primary{
+   margin: 30px;
+}
+/* pagination overwrite */
+ngb-pagination ::ng-deep a {
+   color: rgb(6, 7, 7) !important;
+ }
+ 
+ ngb-pagination ::ng-deep .page-item.active .page-link {
+   border-color: rgb(82, 163, 238);
+   background-color:  #0B70CB;
+ }
+ 
+ ngb-pagination ::ng-deep .page-item.active .page-link:focus, .page-link:not(:disabled):not(.disabled):active:focus {
+   box-shadow: 0 0 0 0.1rem dimgrey;
+ }
+ 
+ ngb-pagination ::ng-deep .page-link:not(:disabled):not(.disabled):active:focus {
+   box-shadow: 0 0 0 0.1rem #0B70CB;
+ }
+ .identites-header {
+  background: #0167af;
+  color: white;
+  margin-top: 2px;
+  padding: 5px 30px;
+  border-radius: 20px;
+}
+.card{
+  box-shadow: 0 20px 40px #d3dce8e5;
+}

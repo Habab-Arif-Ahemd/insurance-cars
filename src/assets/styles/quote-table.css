@@ -1,0 +1,125 @@
+.quote-main {
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+    width: 1170px;
+    margin: 0 auto;
+  }
+  .quote-table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 0 none;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+  }
+  .quote-table tr:not(:last-child) {
+    border-bottom: 10px solid rgba(0, 0, 0, 0.03);
+  }
+  .quote-table tr td {
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 8px 24px;
+  }
+  .quote-table tr td:first-child {
+    border-left: 0 none;
+  }
+  .quote-table tr td:not(:first-child) {
+    text-align: center;
+  }
+  .quote-table tr:nth-child(even) {
+    background-color: #FFFFFF;
+  }
+  .quote-table tr:hover {
+    background-color: none;
+    border-radius: 20px;
+  }
+  .quote-table .fa-check {
+    color: #0B70CB;
+  }
+  .quote-table .fa-times {
+    color: #D8D6E3;
+  }
+
+  /* Highlighted column */
+  .quote-table tr:nth-child(2n) td:nth-child(3) {
+    background-color: rgba(216, 214, 227, 0.25);
+  }
+  .quote-table tr td:nth-child(3) {
+    background-color: rgba(216, 214, 227, 0.15);
+    padding: 8px 48px;
+  }
+  .quote-table tr td:nth-child(3) .fa-check,
+  .quote-table tr:nth-child(2n) td:nth-child(3) .fa-check {
+    /* color: #ffffff; */
+  }
+  /**/
+
+  .quote-table tr.quote-table-head td {
+    font-size: 20px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+  }
+  .quote-table tr.quote-table-head {
+    background-color: #FFFFFF;
+    color: #0B70CB;
+  }
+  .quote-table td.quote {
+    color: #fff;
+    padding: 8px 2px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .quote-table td.quote a {
+    background-color: none;
+    color: #FFFFFF;
+    padding: 5px 0px;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 501;
+    /* text-transform: uppercase; */
+    display: inline-block;
+    border-radius: 64px;
+  }
+  .quote-table td.quote h4 {
+    background-color: none;
+    color: #1D1D1B;
+    padding: 5px 0px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    display: inline-block;
+    border-radius: 64px;
+  }
+  .quote-table td.quote-table-popular {
+    border-top: 3px solid #0B70CB;
+    color: #0B70CB;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px 48px;
+    font-weight: 700;
+  }
+  .quote-table .quote-blank {
+    background-color: #0B70CB;
+    border: 0 none;
+  }
+  .buy{
+    background-color: #6C737A;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 501;
+  }
+
+  img{
+    width: 70px;
+    height: 70px;
+  }
+  .icon{
+    color: #0B70CB;
+  }
+
+  .icon-buy{
+    color: #FFFFFF;
+  }
+
+  .check_icon{
+    color: #0B70CB;
+  }
+

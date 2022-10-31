@@ -1,0 +1,67 @@
+<div class="row" *ngIf="currentDrivers?.length > 0">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="row" *ngIf="inCompleteDrivingPercentage">
+            <alert class="alert col-12" type="danger" *ngIf="!percentageAlert" (close)="percentageAlert=true">
+                {{ 'Errors.CompletedPerentage' | translate }}</alert>
+        </div>
+        <div class="driver-list-wrapper" *ngIf="currentDrivers?.length > 0">
+            <div class="row pt-3">
+                <div class="col-6 form-wizard-title">
+                    <h6> {{ 'QuotationRequestForms.DriverList.AdditionalsDrivers' | translate }}</h6>
+                </div>
+                <div class="col-6">
+
+                    <button type="submit" class="btn btn-sm save-driver-btn btn-labeled btn-primary"
+                        (click)="submitAddDriver()">
+                        <i class="icon ion-ios-add-circle-outline"></i>
+                        {{ 'QuotationRequestForms.DriverList.AddDriver' | translate }}
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">{{ 'QuotationRequestForms.DriverList.DriverType' | translate }}</th>
+                            <th scope="col">{{ 'QuotationRequestForms.DriverList.NationalIDLabel' | translate }}</th>
+                            <th scope="col">{{ 'QuotationRequestForms.DriverInfo.Birth' | translate }}</th>
+                            <th scope="col">{{ 'QuotationRequestForms.DriverList.Percentage' | translate }}</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let driver of currentDrivers">
+                            <td *ngIf="driver.typeId == 1">
+                                {{ 'QuotationRequestForms.DriverList.DriverTypeTxt1' | translate }}</td>
+                            <td *ngIf="driver.typeId == 2">
+                                {{ 'QuotationRequestForms.DriverList.DriverTypeTxt2' | translate }}</td>
+                            <td >{{driver.identityNumber}}</td>
+                            <td *ngIf="!driver.isSaudi">{{driver.birthDateG}}</td>
+                            <td *ngIf="driver.isSaudi">{{driver.birthDateH}}</td>
+                            <!-- <td>{{driver.birthDateH}}</td> -->
+                            <td>{{driver.drivingPercentageId}}%</td>
+
+
+                            <td *ngIf="driver.typeId == 2" class="btns">
+                               <button class="btn btn-sm btn-danger rmv-btn mr-1 ml-1"
+                                    (click)="removeDriver(driver)">
+                                    <i class="icon ion-ios-trash"></i>
+                                    {{ 'QuotationRequestForms.DriverList.RemoveBtn' | translate }}
+                                </button>
+                                <!-- -->
+                                <button class="btn btn-sm btn-success rmv-btn mr-1 ml-1"
+                                (click)="editDriver(driver)" >
+                                <i class="icon ion-ios-create"></i>
+                                {{ 'QuotationRequestForms.DriverList.EditBtn' | translate }}
+                            </button>
+                              </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

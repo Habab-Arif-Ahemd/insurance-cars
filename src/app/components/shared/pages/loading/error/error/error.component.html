@@ -1,0 +1,51 @@
+<div class="flex-container error-container">
+    <div class="flex-centered flex-column">
+ 
+       <!-- ----------------------------------------------------------------------- -->
+       <!--                                  Icon                                   -->
+       <!-- ----------------------------------------------------------------------- -->
+       <div class="error-icon flex-centered">
+          <i class="icon ion-md-alert"></i>
+       </div>
+ 
+ 
+       <!-- ----------------------------------------------------------------------- -->
+       <!--                              Server Error                               -->
+       <!-- ----------------------------------------------------------------------- -->
+       <div *ngIf="type === 'ServerError'" class="flex-centered flex-column">
+          <div class="error-title flex-centered">
+             <span>{{ 'Errors.ServerErrorTitle' | translate }}</span>
+          </div>
+    
+          <div class="error-message flex-container flex-centered">
+             <span class="flex-centered">{{ 'Errors.ServerErrorSubtitle' | translate }}</span>
+             <i class="icon ion-md-alert flex-centered"></i>
+          </div>
+       </div>
+ 
+ 
+       <!-- ----------------------------------------------------------------------- -->
+       <!--                      Unavailable Quotations Error                       -->
+       <!-- ----------------------------------------------------------------------- -->
+       <div *ngIf="type === 'QuotationsUnavailable'" class="flex-centered flex-column">
+          <div class="error-title flex-centered">
+             <span>{{ 'Errors.UnaviablableQuotationsTitle' | translate }}</span>
+          </div>
+    
+          <div class="error-message flex-container flex-centered">
+             <span class="flex-centered">{{ 'Errors.UnaviablableQuotations' | translate }}</span>
+             <i class="icon ion-md-alert flex-centered"></i>
+          </div>
+       </div>
+ 
+    
+       <!-- ----------------------------------------------------------------------- -->
+       <!--                            Navigation Button                            -->
+       <!-- ----------------------------------------------------------------------- -->
+       <button (click)="rerouteError()" class="primary-btn return-btn flex-centered">
+          <span>{{ 'App.BackText' | translate }}</span>
+       </button>
+ 
+    </div>
+ </div>
+ 

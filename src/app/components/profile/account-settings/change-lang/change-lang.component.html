@@ -1,0 +1,48 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Language Chane Form                         -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="container">
+  <div class="col-8 mt-4">
+    <h5><fa-icon icon="user-edit" class="icon"></fa-icon>
+  تغيير اللغة
+  </h5>
+  <br/>
+<form [formGroup]="changeLangForm">
+  <div class="form-group">
+    <label>
+      إختر اللغة
+    </label>
+    <select class="form-control" formControlName="language">
+      <option value="ar" selected>العربية</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+  <div class="form-group">
+
+      <button type="submit" class="btn btn-primary" (click)="changelang()">
+        <fa-icon
+          icon="save"
+          size="xs"
+          class="icon"
+          *ngIf="!isLoading"
+        ></fa-icon>
+        {{ "App.SaveChangesText" | translate }}
+        <span
+          *ngIf="isLoading"
+          class="spinner-border spinner-border-sm"
+          role="status"
+          aria-hidden="true"
+        ></span>
+      </button>
+
+      <button
+      type="butt  on"
+      class="btn btn-danger ml-3"
+   [routerLink]="['/user/account/']"
+    >
+      <fa-icon icon="times-circle" size="xs" class="icon"></fa-icon>
+      {{ "App.CancelText" | translate }}
+    </button>
+  </div>
+</form>
+</div>  </div>

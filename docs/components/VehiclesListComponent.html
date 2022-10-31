@@ -1,0 +1,676 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>VehiclesListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/user/vehicles-list/vehicles-list.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-vehicles-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./vehicles-list.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./vehicles-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#vehicleInfo">vehicleInfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getVehicles">getVehicles</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(profileService: <a href="../injectables/ProfileService.html">ProfileService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/user/vehicles-list/vehicles-list.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProfileService.html" target="_self" >ProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getVehicles"></a>
+                    <span class="name">
+                        <b>
+                            getVehicles
+                        </b>
+                        <a href="#getVehicles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getVehicles()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/components/user/vehicles-list/vehicles-list.component.ts:18</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/components/user/vehicles-list/vehicles-list.component.ts:15</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading</b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/user/vehicles-list/vehicles-list.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="vehicleInfo"></a>
+                        <span class="name">
+                            <b>
+                            vehicleInfo</b>
+                            <a href="#vehicleInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/VehicleInfo.html" target="_self" >VehicleInfo[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/user/vehicles-list/vehicles-list.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { ProfileService } from &quot;src/app/services/profile/profile.service&quot;;
+import { VehicleInfo } from &#x27;src/app/models/VehicleInfo&#x27;;
+
+@Component({
+  selector: &quot;app-vehicles-list&quot;,
+  templateUrl: &quot;./vehicles-list.component.html&quot;,
+  styleUrls: [&quot;./vehicles-list.component.css&quot;]
+})
+export class VehiclesListComponent implements OnInit {
+  vehicleInfo: VehicleInfo[] &#x3D; [];
+  isLoading: boolean &#x3D; false;
+  constructor(private profileService: ProfileService) {}
+
+  ngOnInit() {
+    this.getVehicles();
+  }
+  getVehicles() {
+    this.isLoading &#x3D; true;
+    this.profileService.getVehiclesList().subscribe(vehicleInfo &#x3D;&gt; {
+      vehicleInfo.data.forEach(vehicleInfo &#x3D;&gt; { this.vehicleInfo.push(vehicleInfo);})
+      this.isLoading &#x3D; false;
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+&lt;div *ngIf&#x3D;&quot;!isLoading&quot;&gt;
+   &lt;div class&#x3D;&quot;card&quot; *ngFor&#x3D;&quot;let vehicle of vehicleInfo&quot;&gt;
+      &lt;div class&#x3D;&quot;row pt-1&quot;&gt;
+         &lt;div class&#x3D;&quot;col-lg-9 col-md-9 col-sm-12 col-xs-12  pt-2 &quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+               &lt;div class&#x3D;&quot;col insur-info&quot;&gt;
+                  &lt;h6&gt; رقم الهوية / الإقامة&lt;/h6&gt;
+                  &lt;label&gt;{{vehicle.insuredIdentityNumber}}&lt;/label&gt;
+                  &lt;h6&gt; اسم مالك المركبة&lt;/h6&gt;
+                  &lt;label&gt;{{ vehicle.vehicleOwnerName }}&lt;/label&gt;
+                  &lt;h6&gt;الرقم المتسلسل&lt;/h6&gt;
+                  &lt;label&gt;{{ vehicle.vehicleId }}&lt;/label&gt;
+               &lt;/div&gt;
+               &lt;div class&#x3D;&quot;col insur-info&quot;&gt;
+                  &lt;h6&gt;الموديل&lt;/h6&gt;
+                  &lt;label&gt; ({{vehicle.vehicleMakerAr}} ,{{vehicle.vehicleModelAr}}, {{vehicle.vehicleModelYear}})&lt;/label&gt;
+                  &lt;h6&gt;اللون&lt;/h6&gt;
+                  &lt;label&gt;{{ vehicle.vehicleMajorColorAr }}&lt;/label&gt;
+
+                  &lt;div class&#x3D;&quot;align-self-end ml-auto pt-2&quot;&gt;
+                     &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn  btn-sm detail-btn&quot;&gt;
+                        &lt;i class&#x3D;&quot;icon ion-ios-information-circle-outline&quot;&gt;&lt;/i&gt;
+                        التفاصيل&lt;/button&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+
+
+            &lt;/div&gt;
+
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;col-lg-3 col-md-3 col-sm-12 col-xs-12 &quot;&gt;
+            &lt;!-- Vehicle Illustration --&gt;
+            &lt;div class&#x3D;&quot;vehicle-illustration flex-container&quot;&gt;
+               &lt;img src&#x3D;&quot;../../../assets/images/Vehicle-Front-lg.svg&quot; alt&#x3D;&quot;Vehicle Image&quot; class&#x3D;&quot;flex-centered&quot;&gt;
+               &lt;div class&#x3D;&quot;vehicle-plate noselect&quot;&gt;
+                  &lt;div class&#x3D;&quot;plate-num-ar&quot;&gt;
+                     {{vehicle.vehiclePlateNumber}}
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;plate-txt-ar&quot;&gt;
+                     {{vehicle.vehiclePlateFirstLetterAr}} {{vehicle.vehiclePlateSecondLetterAr}}
+                     {{vehicle.vehiclePlateThirdLetterAr}}
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;plate-num-en&quot;&gt;
+                     {{vehicle.vehiclePlateNumber}}
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;plate-txt-en&quot;&gt;
+                     {{vehicle.vehiclePlateFirstLetter}} {{vehicle.vehiclePlateSecondLetter}}
+                     {{vehicle.vehiclePlateThirdLetter}}
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;plate-logo flex-container&quot;&gt;
+                     &lt;span class&#x3D;&quot;flex-centered&quot;&gt;KSA&lt;/span&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+         &lt;/div&gt;
+
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;text-center&quot;&gt;
+   &lt;div class&#x3D;&quot;spinner-border&quot; role&#x3D;&quot;status&quot;&gt;
+     &lt;span class&#x3D;&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./vehicles-list.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+h6{
+    font-weight: bold;
+}
+
+.card {
+    -webkit-box-shadow: -9px 14px 13px -14px rgba(135,135,135,1);
+    -moz-box-shadow: -9px 14px 13px -14px rgba(135,135,135,1);
+    box-shadow: -9px 14px 13px -14px rgba(135,135,135,1);
+}
+
+.insur-info{
+    padding: 10px 40px;
+   /*  border-left: rgba(135,135,135,1) 1px solid; */
+}
+.detail-btn{
+    color: #ffff;
+    background-color: #00A2AE;
+    float: left;
+}
+
+/* vehicle-illustrati */
+.vehicle-illustration {
+    position: relative;
+    background: #11b9c5;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 5px 0 8px 0 #00000023;
+ }
+ 
+ .vehicle-illustration img {
+    width: 71%;
+    height: 197px;
+    margin-left: 31px;
+ }
+ 
+ .vehicle-illustration .vehicle-plate {
+    position: absolute;
+    left: 25.9%;
+    top: 61%;
+    height: 30px;
+    width: 61px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    &#x27;logo numar numar numar numar txtar txtar txtar txtar&#x27;
+    &#x27;logo numen numen numen numen txten txten txten txten&#x27;;
+ }
+ 
+ .vehicle-plate &gt; div {
+    font-size: 10px;
+    border: 1px solid #1d1d1d;
+    background-color: #fff;
+    text-align: center;
+ }
+ 
+ .plate-num-ar {
+    grid-area: numar;
+ 
+ }
+ 
+ .plate-txt-ar {
+    grid-area: txtar;
+    border-top-left-radius: 3px;
+ }
+ 
+ .plate-num-en {
+    grid-area: numen;
+ }
+ 
+ .plate-txt-en {
+    grid-area: txten;
+    border-bottom-left-radius: 3px;
+ }
+ 
+ .plate-logo {
+    grid-area: logo;
+    word-break: break-all;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+ }
+ 
+ .plate-logo span {
+    width: 8px;
+    font-size: 8px;
+    line-height: 1.3;
+ }
+ 
+ .spinner-border {
+   margin: 15% auto;
+   color: #00a2ae;
+ }
+ </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="!isLoading">   <div class="card" *ngFor="let vehicle of vehicleInfo">      <div class="row pt-1">         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12  pt-2 ">            <div class="row">               <div class="col insur-info">                  <h6> رقم الهوية / الإقامة</h6>                  <label>{{vehicle.insuredIdentityNumber}}</label>                  <h6> اسم مالك المركبة</h6>                  <label>{{ vehicle.vehicleOwnerName }}</label>                  <h6>الرقم المتسلسل</h6>                  <label>{{ vehicle.vehicleId }}</label>               </div>               <div class="col insur-info">                  <h6>الموديل</h6>                  <label> ({{vehicle.vehicleMakerAr}} ,{{vehicle.vehicleModelAr}}, {{vehicle.vehicleModelYear}})</label>                  <h6>اللون</h6>                  <label>{{ vehicle.vehicleMajorColorAr }}</label>                  <div class="align-self-end ml-auto pt-2">                     <button type="button" class="btn  btn-sm detail-btn">                        <i class="icon ion-ios-information-circle-outline"></i>                        التفاصيل</button>                  </div>               </div>            </div>         </div>         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">            <!-- Vehicle Illustration -->            <div class="vehicle-illustration flex-container">               <img src="../../../assets/images/Vehicle-Front-lg.svg" alt="Vehicle Image" class="flex-centered">               <div class="vehicle-plate noselect">                  <div class="plate-num-ar">                     {{vehicle.vehiclePlateNumber}}                  </div>                  <div class="plate-txt-ar">                     {{vehicle.vehiclePlateFirstLetterAr}} {{vehicle.vehiclePlateSecondLetterAr}}                     {{vehicle.vehiclePlateThirdLetterAr}}                  </div>                  <div class="plate-num-en">                     {{vehicle.vehiclePlateNumber}}                  </div>                  <div class="plate-txt-en">                     {{vehicle.vehiclePlateFirstLetter}} {{vehicle.vehiclePlateSecondLetter}}                     {{vehicle.vehiclePlateThirdLetter}}                  </div>                  <div class="plate-logo flex-container">                     <span class="flex-centered">KSA</span>                  </div>               </div>            </div>         </div>      </div>   </div></div><div *ngIf="isLoading" class="text-center">   <div class="spinner-border" role="status">     <span class="sr-only">Loading...</span>   </div> </div></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'VehiclesListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'VehiclesListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

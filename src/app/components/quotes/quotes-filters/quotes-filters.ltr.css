@@ -1,0 +1,24 @@
+body[dir='ltr'] .quotes-header {
+   margin-left: 0;
+   margin-right: auto;
+}
+
+body[dir='ltr'] .filters-container .quotes-header i {
+   margin-right: 5px;
+   margin-left: 0;
+   padding: 4px 10px 3px 10px;
+}
+
+body[dir='ltr'] .filter-item {
+   margin-right: 0;
+   margin-left: 1em;
+}
+
+body[dir='ltr'] .filter.descending-switched .filter-value {
+   margin-right: 0;
+   margin-left: -40px !important;
+}
+
+body[dir='ltr'] .filter-icon-wrapper.descending-switched {
+   transform: translateX(calc(200px - 42px));
+}

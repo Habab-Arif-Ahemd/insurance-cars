@@ -1,0 +1,53 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--            Specifications + Medical Conditions + Violations             -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="container ">
+<form [formGroup]="driverMoreDetailsFormGroup">
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                       Medical Conditons Question                        -->
+   <!-- ----------------------------------------------------------------------- -->
+   <div class="row check-backgroun ">
+      <div class="col-lg-7 d-flex justify-content-start">
+         
+         <label class="switch ">
+            
+            <input type="checkbox" class="question-checkbox" (change)="showMedicalConditions()" />
+            <span class="slider round"> </span> </label>
+
+         <label class="form-title question-lable ">
+            {{ 'QuotationRequestForms.MoreDetails.Conditions' | translate }}
+         </label>
+      </div>
+<!--       <div class="col-lg-5 d-flex justify-content-end">
+         
+         <label class="switch">
+            
+            <input type="checkbox" class="question-checkbox" (change)="showMedicalConditions()" />
+            <span class="slider round"> </span> </label>
+            <label><span class="ui"></span></label>
+      </div> -->
+
+   </div>
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                      Medical Conditons Checkboxes                       -->
+   <!-- ----------------------------------------------------------------------- -->
+   <div *ngIf="isMedicalCheckboxEmpty" class="v-meassage  ">
+      {{ 'Errors.MedicalConditionInvalid' | translate }}
+   </div>
+   <div class="row" *ngIf="showDriverMedical">
+      <!-- spinner -->
+      <div class="spinner-border" role="status" *ngIf="!stepsData.MedicalConditions">
+         <span class="sr-only">Loading...</span>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4 p-0 m-0"  style="display: inherit;"
+         *ngFor="let medical of stepsData.MedicalConditions; let i = index;">
+         <label>
+            <input type="checkbox" class="option-input checkbox" [id]="medical?.name + i" [checked]="medical.checked"
+               (change)="addMedicalCondition(medical.id)" />
+            {{ lang === 'ar' ? medical.nameAr : medical.name }}
+         </label>
+      </div>
+   </div>
+</form>
+
+</div>

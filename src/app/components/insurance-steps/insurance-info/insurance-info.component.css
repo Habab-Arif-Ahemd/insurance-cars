@@ -1,0 +1,65 @@
+.date{
+  border-radius: 0 10px 10px 0 !important;
+}
+.divv {
+  background-color: #eff0f6;
+  border: .01rem solid #e0e1ed;
+  color: #8e8ea1;
+  border-radius: 5px;
+}
+.container {
+  width: 220px;
+}
+
+.switch {
+  position: relative;
+  height: 30px;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px , 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 58px;
+  line-height: 26px;
+  font-size: 11px;
+  color:#888;;
+  text-align: center;
+  cursor: pointer;
+}
+
+.switch-label:hover {
+  color:#fff;
+}
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: rgb(26, 25, 25);
+  text-shadow: 0 1px 0px rgba(1, 1, 1, .1);
+  transition: 0.15s ease-out;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 80px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 58px;
+  height: 25px;
+  background: #0B70CB;
+  border-radius: 6px;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 1px rgba(0, 0, 0, 0.2);
+  transition: left 0.15s ease-out;
+}

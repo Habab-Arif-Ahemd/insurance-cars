@@ -1,0 +1,896 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PoliciesPanelComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/user/policies/policies-panel/policies-panel.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-policies-panel</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./policies-panel.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./policies-panel.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#isLoadingPoliciesAnalytics">isLoadingPoliciesAnalytics</a>
+                            </li>
+                            <li>
+                                <a href="#isLoadingUserPolicies">isLoadingUserPolicies</a>
+                            </li>
+                            <li>
+                                <a href="#polciesColors">polciesColors</a>
+                            </li>
+                            <li>
+                                <a href="#policiesAnalytics">policiesAnalytics</a>
+                            </li>
+                            <li>
+                                <a href="#userPolicies">userPolicies</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDashboardData">getDashboardData</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(profileService: <a href="../injectables/ProfileService.html">ProfileService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProfileService.html" target="_self" >ProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDashboardData"></a>
+                    <span class="name">
+                        <b>
+                            getDashboardData
+                        </b>
+                        <a href="#getDashboardData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDashboardData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoadingPoliciesAnalytics"></a>
+                        <span class="name">
+                            <b>
+                            isLoadingPoliciesAnalytics</b>
+                            <a href="#isLoadingPoliciesAnalytics"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoadingUserPolicies"></a>
+                        <span class="name">
+                            <b>
+                            isLoadingUserPolicies</b>
+                            <a href="#isLoadingUserPolicies"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="polciesColors"></a>
+                        <span class="name">
+                            <b>
+                            polciesColors</b>
+                            <a href="#polciesColors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+      bought: &#x27;#00a2ae&#x27;,
+      expiring: &#x27;#e3b87b&#x27;,
+      expired: &#x27;#f75959&#x27;,
+      uncompleted: &#x27;#7eaced&#x27;
+   }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="policiesAnalytics"></a>
+                        <span class="name">
+                            <b>
+                            policiesAnalytics</b>
+                            <a href="#policiesAnalytics"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/DashboardResponse.html" target="_self" >DashboardResponse</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userPolicies"></a>
+                        <span class="name">
+                            <b>
+                            userPolicies</b>
+                            <a href="#userPolicies"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+      /*
+      { insuranceCompany: &#x27;شركة 01&#x27;, id: 653298, status: &#x27;سارية&#x27;, initiationDate: &#x27;10/01/2020&#x27;, startDate: &#x27;09/02/2020&#x27;, endDate: &#x27;12/05/2021&#x27;},
+      { insuranceCompany: &#x27;شركة 02&#x27;, id: 357951, status: &#x27;سارية&#x27;, initiationDate: &#x27;10/01/2020&#x27;, startDate: &#x27;09/02/2020&#x27;, endDate: &#x27;12/05/2021&#x27;},
+      */
+   ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/components/user/policies/policies-panel/policies-panel.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ProfileService } from &#x27;src/app/services/profile/profile.service&#x27;;
+import { DashboardResponse } from &#x27;src/app/models/order-preview/DashboardResponse&#x27;;
+
+
+@Component({
+   selector: &#x27;app-policies-panel&#x27;,
+   templateUrl: &#x27;./policies-panel.component.html&#x27;,
+   styleUrls: [&#x27;./policies-panel.component.css&#x27;]
+})
+
+
+export class PoliciesPanelComponent implements OnInit {
+
+   polciesColors &#x3D; {
+      bought: &#x27;#00a2ae&#x27;,
+      expiring: &#x27;#e3b87b&#x27;,
+      expired: &#x27;#f75959&#x27;,
+      uncompleted: &#x27;#7eaced&#x27;
+   };
+
+   userPolicies: any[] &#x3D; [
+      /*
+      { insuranceCompany: &#x27;شركة 01&#x27;, id: 653298, status: &#x27;سارية&#x27;, initiationDate: &#x27;10/01/2020&#x27;, startDate: &#x27;09/02/2020&#x27;, endDate: &#x27;12/05/2021&#x27;},
+      { insuranceCompany: &#x27;شركة 02&#x27;, id: 357951, status: &#x27;سارية&#x27;, initiationDate: &#x27;10/01/2020&#x27;, startDate: &#x27;09/02/2020&#x27;, endDate: &#x27;12/05/2021&#x27;},
+      */
+   ];
+
+   isLoadingPoliciesAnalytics &#x3D; false;
+   isLoadingUserPolicies &#x3D; false;
+   policiesAnalytics: DashboardResponse;
+
+
+   constructor(private profileService: ProfileService) { }
+
+
+   ngOnInit() {
+      this.getDashboardData();
+    }
+
+   getDashboardData() {
+      this.isLoadingPoliciesAnalytics &#x3D; true;
+      this.profileService.getDashboardData().subscribe(policiesAnalytics &#x3D;&gt; {
+         this.policiesAnalytics &#x3D; policiesAnalytics
+         this.isLoadingPoliciesAnalytics &#x3D; false;
+         console.log(this.policiesAnalytics)
+      })
+   }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+ &lt;div *ngIf&#x3D;&quot;isLoadingPoliciesAnalytics&quot; class&#x3D;&quot;text-center&quot;&gt;
+   &lt;div class&#x3D;&quot;spinner-border&quot; role&#x3D;&quot;status&quot;&gt;
+     &lt;span class&#x3D;&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div *ngIf&#x3D;&quot;!isLoadingPoliciesAnalytics&quot; class&#x3D;&quot;policies-panel-container&quot;&gt;
+   &lt;!-- BADGES --&gt;
+   &lt;div class&#x3D;&quot;policies-badges-container&quot;&gt;
+
+      &lt;!-- Bought Policies --&gt;
+      &lt;div class&#x3D;&quot;bought-polcies policy-badge bouncy&quot;&gt;
+
+         &lt;div class&#x3D;&quot;badge-amount&quot;&gt;
+            &lt;span [style.color]&#x3D;&quot;polciesColors.bought&quot;&gt;{{ policiesAnalytics.totalPursharedPolicy }}&lt;/span&gt;
+            &lt;i class&#x3D;&quot;ion-md-done-all&quot; [style.background]&#x3D;&quot;polciesColors.bought&quot;&gt;&lt;/i&gt;
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-title&quot;&gt;
+            {{ &#x27;Profile.PanelItems.Policies.BoughtText&#x27; | translate }}
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-decoration&quot; [style.background]&#x3D;&quot;polciesColors.bought&quot;&gt;&lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;!-- Expiring Policies --&gt;
+      &lt;div class&#x3D;&quot;expiring-polcies policy-badge bouncy&quot;&gt;
+
+         &lt;div class&#x3D;&quot;badge-amount&quot;&gt;
+            &lt;span [style.color]&#x3D;&quot;polciesColors.expiring&quot;&gt;{{ policiesAnalytics.totalAlmostExpried }}&lt;/span&gt;
+            &lt;i class&#x3D;&quot;ion-ios-timer&quot; [style.background]&#x3D;&quot;polciesColors.expiring&quot;&gt;&lt;/i&gt;
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-title&quot;&gt;
+            {{ &#x27;Profile.PanelItems.Policies.ExpiringText&#x27; | translate }}
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-decoration&quot; [style.background]&#x3D;&quot;polciesColors.expiring&quot;&gt;&lt;/div&gt;
+         
+      &lt;/div&gt;
+
+      &lt;!-- Expired Policies --&gt;
+      &lt;div class&#x3D;&quot;expired-polcies policy-badge bouncy&quot;&gt;
+
+         &lt;div class&#x3D;&quot;badge-amount&quot;&gt;
+            &lt;span [style.color]&#x3D;&quot;polciesColors.expired&quot;&gt;{{ policiesAnalytics.totalExpiry }}&lt;/span&gt;
+            &lt;i class&#x3D;&quot;ion-md-close-circle&quot; [style.background]&#x3D;&quot;polciesColors.expired&quot;&gt;&lt;/i&gt;
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-title&quot;&gt;
+            {{ &#x27;Profile.PanelItems.Policies.ExpiredText&#x27; | translate }}
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-decoration&quot; [style.background]&#x3D;&quot;polciesColors.expired&quot;&gt;&lt;/div&gt;
+         
+      &lt;/div&gt;
+
+      &lt;!-- Uncompleted Policies --&gt;
+      &lt;div class&#x3D;&quot;uncompleted-polcies policy-badge bouncy&quot;&gt;
+
+         &lt;div class&#x3D;&quot;badge-amount&quot;&gt;
+            &lt;span [style.color]&#x3D;&quot;polciesColors.uncompleted&quot;&gt;{{ policiesAnalytics.totalPendingNajm }}&lt;/span&gt;
+            &lt;i class&#x3D;&quot;ion-ios-bookmarks&quot; [style.background]&#x3D;&quot;polciesColors.uncompleted&quot;&gt;&lt;/i&gt;
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-title&quot;&gt;
+            {{ &#x27;Profile.PanelItems.Policies.UncompletedText&#x27; | translate }}
+         &lt;/div&gt;
+
+         &lt;div class&#x3D;&quot;badge-decoration&quot; [style.background]&#x3D;&quot;polciesColors.uncompleted&quot;&gt;&lt;/div&gt;
+         
+      &lt;/div&gt;
+
+   &lt;/div&gt;
+
+
+   &lt;!-- ALL POLICIES LIST --&gt;
+   &lt;div class&#x3D;&quot;policies-list-container&quot;&gt;
+      
+      &lt;!-- Header --&gt;
+      &lt;h6 class&#x3D;&quot;policies-type-header&quot;&gt;
+         &lt;i class&#x3D;&quot;ion-md-apps&quot;&gt;&lt;/i&gt;
+         {{ &#x27;Profile.PanelItems.Policies.PoliciesListText&#x27; | translate }}
+      &lt;/h6&gt;
+
+      &lt;!-- Table --&gt;
+      &lt;table class&#x3D;&quot;policies-table table&quot;&gt;
+
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th scope&#x3D;&quot;col&quot;&gt;{{ &#x27;Profile.PanelItems.Policies.PolicyInitiationDate&#x27; | translate }}&lt;/th&gt;
+               &lt;th scope&#x3D;&quot;col&quot;&gt;{{ &#x27;App.StatusText&#x27; | translate }}&lt;/th&gt;
+               &lt;th scope&#x3D;&quot;col&quot;&gt;{{ &#x27;Profile.PanelItems.Policies.PolicyNumber&#x27; | translate }}&lt;/th&gt;
+               &lt;th scope&#x3D;&quot;col&quot;&gt;{{ &#x27;Profile.PanelItems.Policies.InsuranceCompany&#x27; | translate }}&lt;/th&gt;
+               &lt;th scope&#x3D;&quot;col&quot;&gt;{{ &#x27;Profile.PanelItems.Policies.PolicyStartDate&#x27; | translate }}&lt;/th&gt;
+               &lt;th scope&#x3D;&quot;col&quot;&gt;{{ &#x27;Profile.PanelItems.Policies.PolicyEndDate&#x27; | translate }}&lt;/th&gt;
+               &lt;th scope&#x3D;&quot;col&quot;&gt;&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+
+         &lt;tbody&gt;
+            &lt;tr *ngFor&#x3D;&quot;let policy of userPolicies; index as i&quot;&gt;
+               &lt;td&gt;{{ policy.initiationDate }}&lt;/td&gt;
+               &lt;td&gt;{{ policy.status }}&lt;/td&gt;
+               &lt;td&gt;{{ policy.id }}&lt;/td&gt;
+               &lt;td&gt;{{ policy.insuranceCompany }}&lt;/td&gt;
+               &lt;td&gt;{{ policy.startDate }}&lt;/td&gt;
+               &lt;td&gt;{{ policy.endDate }}&lt;/td&gt;
+               &lt;td&gt;
+                  &lt;button class&#x3D;&quot;primary-btn&quot; style&#x3D;&quot;padding: 0 10px; height: 35px;&quot;&gt;  
+                     &lt;span&gt;{{ &#x27;App.PrintText&#x27; | translate }}&lt;/span&gt;
+                     &lt;i class&#x3D;&quot;ion-md-print&quot;&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+               &lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+
+      &lt;/table&gt;
+
+      &lt;!-- Empty Alert --&gt;
+      &lt;div *ngIf&#x3D;&quot;userPolicies.length &#x3D;&#x3D;&#x3D; 0 &amp;&amp; !isLoadingUserPolicies&quot; class&#x3D;&quot;empty-policies-container&quot;&gt;
+         &lt;h6&gt;
+            &lt;i class&#x3D;&quot;empty-header-icon ion-ios-alert&quot;&gt;&lt;/i&gt;
+            {{ &#x27;Profile.PanelItems.Policies.NoPoliciesText&#x27; | translate }}
+         &lt;/h6&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Loader --&gt;
+      &lt;div *ngIf&#x3D;&quot;isLoadingUserPolicies&quot; class&#x3D;&quot;empty-policies-container&quot;&gt;
+         &lt;span class&#x3D;&quot;loader spinner-border spinner-border-lg&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;/div&gt;
+
+   &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./policies-panel.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.policies-panel-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.policies-badges-container {
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-evenly;
+}
+
+.policy-badge {
+   width: 190px;
+   height: 110px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, auto);
+   background: #fff;
+   border: 1px solid #cecece;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 1em 5px;
+   box-shadow: 0 0 2px 2px #00000004;
+   cursor: pointer;
+   transition: all .3s ease;
+}
+
+.policy-badge:hover {
+   box-shadow: 0 0 10px 4px #00000016;
+   width: 205px;
+   margin-top: -3px;
+   border-color: #dadada;
+}
+
+.policy-badge:hover .badge-amount i {
+   animation: bounce .5s linear;
+}
+
+.badge-amount {
+   grid-column: span 2;
+   display: flex;
+   height: 26px;
+}
+
+.badge-amount span {
+   font-size: 24px;
+   color: #555555;
+   font-weight: 400;
+   margin-top: -7px;
+}
+
+.badge-amount i {
+   margin-right: auto;
+   font-size: 18px;
+   color: #fff;
+   background: #00a2ae;
+   border-radius: 2px;
+   padding: 0 7px;
+}
+
+.badge-title {
+   grid-column: span 2;
+   text-align: center;
+}
+
+.badge-decoration {
+   margin-top: 5px;
+   grid-column: span 2;
+   height: 3px;
+   background: #00a2ae;
+}
+
+.policies-type-header {
+   margin: 20px 0;
+   font-weight: bold;
+}
+
+.policies-type-header i {
+   margin: 0 5px;
+}
+
+.policies-list-container {
+   margin-top: 1em;
+}
+
+.policies-table tbody {
+   position: relative;
+   min-height: 150px;
+}
+
+.policies-table tbody tr:hover {
+   background: #ebebeb;
+}
+
+.empty-policies-container {
+   height: 100px;
+   width: 100%;
+   display: flex;
+   background: #f1f1f1;
+}
+
+.empty-policies-container h6 {
+   margin: auto;
+}
+
+.empty-header-icon {
+   margin: 0 10px;
+   font-size: 22px;
+   color: #00a2ae;
+}
+
+.empty-policies-container .loader {
+   width: 3rem;
+   height: 3rem;
+   color: #00a2ae;
+}
+.spinner-border {
+   margin: 15% auto;
+   color: #00a2ae;
+ }
+ </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div> <div *ngIf="isLoadingPoliciesAnalytics" class="text-center">   <div class="spinner-border" role="status">     <span class="sr-only">Loading...</span>   </div> </div><div *ngIf="!isLoadingPoliciesAnalytics" class="policies-panel-container">   <!-- BADGES -->   <div class="policies-badges-container">      <!-- Bought Policies -->      <div class="bought-polcies policy-badge bouncy">         <div class="badge-amount">            <span [style.color]="polciesColors.bought">{{ policiesAnalytics.totalPursharedPolicy }}</span>            <i class="ion-md-done-all" [style.background]="polciesColors.bought"></i>         </div>         <div class="badge-title">            {{ \'Profile.PanelItems.Policies.BoughtText\' | translate }}         </div>         <div class="badge-decoration" [style.background]="polciesColors.bought"></div>      </div>      <!-- Expiring Policies -->      <div class="expiring-polcies policy-badge bouncy">         <div class="badge-amount">            <span [style.color]="polciesColors.expiring">{{ policiesAnalytics.totalAlmostExpried }}</span>            <i class="ion-ios-timer" [style.background]="polciesColors.expiring"></i>         </div>         <div class="badge-title">            {{ \'Profile.PanelItems.Policies.ExpiringText\' | translate }}         </div>         <div class="badge-decoration" [style.background]="polciesColors.expiring"></div>               </div>      <!-- Expired Policies -->      <div class="expired-polcies policy-badge bouncy">         <div class="badge-amount">            <span [style.color]="polciesColors.expired">{{ policiesAnalytics.totalExpiry }}</span>            <i class="ion-md-close-circle" [style.background]="polciesColors.expired"></i>         </div>         <div class="badge-title">            {{ \'Profile.PanelItems.Policies.ExpiredText\' | translate }}         </div>         <div class="badge-decoration" [style.background]="polciesColors.expired"></div>               </div>      <!-- Uncompleted Policies -->      <div class="uncompleted-polcies policy-badge bouncy">         <div class="badge-amount">            <span [style.color]="polciesColors.uncompleted">{{ policiesAnalytics.totalPendingNajm }}</span>            <i class="ion-ios-bookmarks" [style.background]="polciesColors.uncompleted"></i>         </div>         <div class="badge-title">            {{ \'Profile.PanelItems.Policies.UncompletedText\' | translate }}         </div>         <div class="badge-decoration" [style.background]="polciesColors.uncompleted"></div>               </div>   </div>   <!-- ALL POLICIES LIST -->   <div class="policies-list-container">            <!-- Header -->      <h6 class="policies-type-header">         <i class="ion-md-apps"></i>         {{ \'Profile.PanelItems.Policies.PoliciesListText\' | translate }}      </h6>      <!-- Table -->      <table class="policies-table table">         <thead>            <tr>               <th scope="col">{{ \'Profile.PanelItems.Policies.PolicyInitiationDate\' | translate }}</th>               <th scope="col">{{ \'App.StatusText\' | translate }}</th>               <th scope="col">{{ \'Profile.PanelItems.Policies.PolicyNumber\' | translate }}</th>               <th scope="col">{{ \'Profile.PanelItems.Policies.InsuranceCompany\' | translate }}</th>               <th scope="col">{{ \'Profile.PanelItems.Policies.PolicyStartDate\' | translate }}</th>               <th scope="col">{{ \'Profile.PanelItems.Policies.PolicyEndDate\' | translate }}</th>               <th scope="col"></th>            </tr>         </thead>         <tbody>            <tr *ngFor="let policy of userPolicies; index as i">               <td>{{ policy.initiationDate }}</td>               <td>{{ policy.status }}</td>               <td>{{ policy.id }}</td>               <td>{{ policy.insuranceCompany }}</td>               <td>{{ policy.startDate }}</td>               <td>{{ policy.endDate }}</td>               <td>                  <button class="primary-btn" style="padding: 0 10px; height: 35px;">                       <span>{{ \'App.PrintText\' | translate }}</span>                     <i class="ion-md-print"></i>                  </button>               </td>            </tr>         </tbody>      </table>      <!-- Empty Alert -->      <div *ngIf="userPolicies.length === 0 && !isLoadingUserPolicies" class="empty-policies-container">         <h6>            <i class="empty-header-icon ion-ios-alert"></i>            {{ \'Profile.PanelItems.Policies.NoPoliciesText\' | translate }}         </h6>      </div>      <!-- Loader -->      <div *ngIf="isLoadingUserPolicies" class="empty-policies-container">         <span class="loader spinner-border spinner-border-lg" role="status" aria-hidden="true"></span>      </div>   </div></div></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'PoliciesPanelComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PoliciesPanelComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

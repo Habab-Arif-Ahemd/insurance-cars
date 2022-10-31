@@ -1,0 +1,10 @@
+[dir='ltr'].calendar-icon{
+  background-color: #3b8bc6;
+   color: white;
+   max-height: 45px;
+   padding: 10px;
+   width: 100%;
+   border: #3b8bc6 1px solid;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 0px;
+} 

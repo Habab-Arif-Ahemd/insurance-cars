@@ -1,0 +1,82 @@
+.img-bg{
+    opacity: 1;
+    position: relative;
+    background: url(../../../../../assets/img/services/banner-bg.png) no-repeat top center,
+
+}
+/* content: "";
+display: block;
+height: 85vh;
+position: relative;
+background:url(../../../../../../assets//img/loadercar/gray.png) center bottom;
+ background-size: cover;
+background-repeat: repeat-x;
+width: 100%;
+right: 0px;
+z-index: 1;
+animation: background 60s linear;
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+ */
+
+
+ 
+/*-------------------------------------------------------*/
+/* Captcha */
+/*-------------------------------------------------------*/
+.captcha {
+    height: 44px;
+    border-radius: 10px;
+  }
+  
+  .captcha input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    height: 44px;
+    color: #0B70CB;
+  }
+  
+  .captcha-reset-btn {
+    width: 17%;
+    padding: 0;
+    color: #4d4d4d;
+    background: white;
+    /* font-size: 22px; */
+    border: 1px solid #d6d6d6;
+    border-right: 0;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  .captcha-reset-btn:focus {
+    outline: none;
+  }
+  
+  .captcha-reset-btn:hover,
+  .captcha-reset-btn:active {
+    color: #4d4d4d;
+    background: white;
+    border: 1px solid #d6d6d6;
+    border-right: 0;
+    border-radius: 0;
+  }
+  .submit-btn-wrapper{
+    background-color: #0B70CB;
+    color: #ffff;
+    padding: 0px 35px;
+    border: 1px solid #0B70CB;
+    /* margin-left: 100px; */
+    /* border-radius: 50px; */
+  
+  }
+  canvas {
+    width: 45%;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+  }
+  
+  .input-date{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }

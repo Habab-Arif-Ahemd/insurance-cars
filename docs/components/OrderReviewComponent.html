@@ -1,0 +1,3193 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>OrderReviewComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/order-review/order-review.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-order-review</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./order-review.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./order-review.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#accordionsState">accordionsState</a>
+                            </li>
+                            <li>
+                                <a href="#activeAttachmentUpload">activeAttachmentUpload</a>
+                            </li>
+                            <li>
+                                <a href="#checkoutId">checkoutId</a>
+                            </li>
+                            <li>
+                                <a href="#isCardPaymentFormVisible">isCardPaymentFormVisible</a>
+                            </li>
+                            <li>
+                                <a href="#isContinuationModalDisplayed">isContinuationModalDisplayed</a>
+                            </li>
+                            <li>
+                                <a href="#isInvalidFileAlertDisplayed">isInvalidFileAlertDisplayed</a>
+                            </li>
+                            <li>
+                                <a href="#isOnMidScreen">isOnMidScreen</a>
+                            </li>
+                            <li>
+                                <a href="#isSavingOrder">isSavingOrder</a>
+                            </li>
+                            <li>
+                                <a href="#lang">lang</a>
+                            </li>
+                            <li>
+                                <a href="#orderedQuote">orderedQuote</a>
+                            </li>
+                            <li>
+                                <a href="#orderFiles">orderFiles</a>
+                            </li>
+                            <li>
+                                <a href="#paymentResultPageUrl">paymentResultPageUrl</a>
+                            </li>
+                            <li>
+                                <a href="#uploader">uploader</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkInvalidFileUpload">checkInvalidFileUpload</a>
+                            </li>
+                            <li>
+                                <a href="#getAppLang">getAppLang</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getPreviewQuote">getPreviewQuote</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initCheckoutRequest">initCheckoutRequest</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initUploader">initUploader</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openContinuationModal">openContinuationModal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#renderPaymentform">renderPaymentform</a>
+                            </li>
+                            <li>
+                                <a href="#saveOrderProgress">saveOrderProgress</a>
+                            </li>
+                            <li>
+                                <a href="#setActiveAttachmentUpload">setActiveAttachmentUpload</a>
+                            </li>
+                            <li>
+                                <a href="#toggleAccordion">toggleAccordion</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:resize">window:resize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, modalService: NgbModal, appService: <a href="../injectables/AppService.html">AppService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, quoteService: <a href="../injectables/QuoteService.html">QuoteService</a>, orderReviewService: <a href="../injectables/OrderReviewService.html">OrderReviewService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/app/components/order-review/order-review.component.ts:134</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppService.html" target="_self" >AppService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>quoteService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QuoteService.html" target="_self" >QuoteService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>orderReviewService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OrderReviewService.html" target="_self" >OrderReviewService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:resize"></a>
+                    <span class="name">
+                        <b>
+                            window:resize
+                        </b>
+                        <a href="#window:resize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:resize(event?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:164</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkInvalidFileUpload"></a>
+                    <span class="name">
+                        <b>
+                            checkInvalidFileUpload
+                        </b>
+                        <a href="#checkInvalidFileUpload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkInvalidFileUpload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="440"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:440</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppLang"></a>
+                    <span class="name">
+                        <b>
+                            getAppLang
+                        </b>
+                        <a href="#getAppLang"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAppLang()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="408"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:408</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPreviewQuote"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getPreviewQuote
+                        </b>
+                        <a href="#getPreviewQuote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPreviewQuote()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves the preview quote / checkout data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initCheckoutRequest"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            initCheckoutRequest
+                        </b>
+                        <a href="#initCheckoutRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initCheckoutRequest()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="271"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:271</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes the user&#39;s payment</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initUploader"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            initUploader
+                        </b>
+                        <a href="#initUploader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initUploader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="192"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:192</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes the vehicle images uploader and handles the uploads</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openContinuationModal"></a>
+                    <span class="name">
+                        <b>
+                            openContinuationModal
+                        </b>
+                        <a href="#openContinuationModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openContinuationModal(modal: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="389"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:389</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>modal</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="renderPaymentform"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            renderPaymentform
+                        </b>
+                        <a href="#renderPaymentform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>renderPaymentform()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveOrderProgress"></a>
+                    <span class="name">
+                        <b>
+                            saveOrderProgress
+                        </b>
+                        <a href="#saveOrderProgress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveOrderProgress()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="452"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:452</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setActiveAttachmentUpload"></a>
+                    <span class="name">
+                        <b>
+                            setActiveAttachmentUpload
+                        </b>
+                        <a href="#setActiveAttachmentUpload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setActiveAttachmentUpload(attachment: <a href="../interfaces/PolicyOrderAttachment.html">PolicyOrderAttachment</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="435"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:435</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>attachment</td>
+                                    <td>
+                                                <code><a href="../interfaces/PolicyOrderAttachment.html" target="_self" >PolicyOrderAttachment</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleAccordion"></a>
+                    <span class="name">
+                        <b>
+                            toggleAccordion
+                        </b>
+                        <a href="#toggleAccordion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleAccordion(accordion: <a href="../interfaces/Driver.html">"Drivers" | "ImageUpload" | "Payment" | "Card" | "Sadad"</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="413"
+                            class="link-to-prism">src/app/components/order-review/order-review.component.ts:413</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>accordion</td>
+                                    <td>
+                                                <code><a href="../interfaces/Driver.html" target="_self" >&quot;Drivers&quot; | &quot;ImageUpload&quot; | &quot;Payment&quot; | &quot;Card&quot; | &quot;Sadad&quot;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="accordionsState"></a>
+                        <span class="name">
+                            <b>
+                            accordionsState</b>
+                            <a href="#accordionsState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+      isDriversDisplayed: true, isImageUploadDisplayed: true, isPaymentDisplayed: true,
+      isCardPaymentDisplayed: false, isSadadPaymentDisplayed: false
+   }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/components/order-review/order-review.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activeAttachmentUpload"></a>
+                        <span class="name">
+                            <b>
+                            activeAttachmentUpload</b>
+                            <a href="#activeAttachmentUpload"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/PolicyOrderAttachment.html" target="_self" >PolicyOrderAttachment</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/app/components/order-review/order-review.component.ts:87</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="checkoutId"></a>
+                        <span class="name">
+                            <b>
+                            checkoutId</b>
+                            <a href="#checkoutId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/components/order-review/order-review.component.ts:71</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isCardPaymentFormVisible"></a>
+                        <span class="name">
+                            <b>
+                            isCardPaymentFormVisible</b>
+                            <a href="#isCardPaymentFormVisible"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/components/order-review/order-review.component.ts:77</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isContinuationModalDisplayed"></a>
+                        <span class="name">
+                            <b>
+                            isContinuationModalDisplayed</b>
+                            <a href="#isContinuationModalDisplayed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/components/order-review/order-review.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isInvalidFileAlertDisplayed"></a>
+                        <span class="name">
+                            <b>
+                            isInvalidFileAlertDisplayed</b>
+                            <a href="#isInvalidFileAlertDisplayed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/components/order-review/order-review.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isOnMidScreen"></a>
+                        <span class="name">
+                            <b>
+                            isOnMidScreen</b>
+                            <a href="#isOnMidScreen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/components/order-review/order-review.component.ts:75</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isSavingOrder"></a>
+                        <span class="name">
+                            <b>
+                            isSavingOrder</b>
+                            <a href="#isSavingOrder"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/components/order-review/order-review.component.ts:76</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lang"></a>
+                        <span class="name">
+                            <b>
+                            lang</b>
+                            <a href="#lang"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/components/order-review/order-review.component.ts:74</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orderedQuote"></a>
+                        <span class="name">
+                            <b>
+                            orderedQuote</b>
+                            <a href="#orderedQuote"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/PreviewQuoteResponse.html" target="_self" >PreviewQuoteResponse</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/components/order-review/order-review.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orderFiles"></a>
+                        <span class="name">
+                            <b>
+                            orderFiles</b>
+                            <a href="#orderFiles"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/PolicyOrderAttachment.html" target="_self" >PolicyOrderAttachment[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+      {
+         title: &quot;Front-view&quot;,
+         titleAr: &quot;الجهة الأمامية&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Front.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Back-view&quot;,
+         titleAr: &quot;الجهة الخلفية&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Rear.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Right-side&quot;,
+         titleAr: &quot;الجهة اليمنى&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Right.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Left-side&quot;,
+         titleAr: &quot;الجهة اليسرى&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Left.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Plate number&quot;,
+         titleAr: &quot;رقم الهيكل&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Right.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      }
+   ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/components/order-review/order-review.component.ts:88</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paymentResultPageUrl"></a>
+                        <span class="name">
+                            <b>
+                            paymentResultPageUrl</b>
+                            <a href="#paymentResultPageUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.appUrl + AppRoutes.paymentSuccess</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/components/order-review/order-review.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uploader"></a>
+                        <span class="name">
+                            <b>
+                            uploader</b>
+                            <a href="#uploader"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>FileUploader</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/components/order-review/order-review.component.ts:86</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AppRoutes } from &#x27;src/app/models/app/AppRoutes&#x27;;
+import { CheckoutIdRequest } from &#x27;./../../models/order-preview/CheckoutIdRequest&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { PaymentTypes } from &#x27;./../../models/app/PaymentTypes&#x27;;
+import { Component, OnInit, HostListener } from &quot;@angular/core&quot;;
+import { QuoteService } from &quot;src/app/services/quote/quote.service&quot;;
+import { AppService } from &quot;src/app/services/app.service&quot;;
+import { FileUploader } from &quot;ng2-file-upload&quot;;
+import AppUtils from &#x27;src/app/helpers/utils/AppUtils&#x27;;
+import { PreviewQuoteResponse } from &quot;src/app/payload/responses/quotes/PreviewQuoteResponse&quot;;
+import { NgbModal } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+import { trigger, state, style, transition, animate } from &#x27;@angular/animations&#x27;;
+import { ApiRoutes } from &#x27;src/app/models/app/ApiRoutes&#x27;;
+import { environment } from &#x27;src/environments/environment&#x27;;
+import { PolicyOrderAttachment } from &#x27;src/app/models/order-preview/PolicyOrderAttachment&#x27;;
+import { AuthService } from &#x27;src/app/services/auth/auth.service&#x27;;
+import { OrderAttachmentUploadResponse } from &#x27;src/app/payload/responses/order-preview/OrderAttachmentUploadResponse&#x27;;
+import { SavedQuoteRequest } from &#x27;src/app/models/order-preview/SavedQuoteRequest&#x27;;
+import { OrderReviewService } from &#x27;src/app/services/order-review/order-review.service&#x27;;
+declare const hyperpayModule: any;
+
+@Component({
+   selector: &quot;app-order-review&quot;,
+   templateUrl: &quot;./order-review.component.html&quot;,
+   styleUrls: [&quot;./order-review.component.css&quot;],
+   animations: [
+      trigger(&quot;PolicyDetailsAnim&quot;, [
+         state(&quot;in&quot;, style({ opacity: 1, transform: &quot;translateX(0)&quot; })),
+         transition(&quot;:enter&quot;, [
+            style({ opacity: 0, transform: &quot;translateX(300px)&quot; }),
+            animate(&#x27;.5s 500ms&#x27;)
+         ])
+      ]),
+      trigger(&quot;VehicleDriversAnim&quot;, [
+         state(&quot;in&quot;, style({ opacity: 1, transform: &quot;translateX(0)&quot; })),
+         transition(&quot;:enter&quot;, [
+            style({ opacity: 0, transform: &quot;translateX(300px)&quot; }),
+            animate(&#x27;.5s 900ms&#x27;)
+         ])
+      ]),
+      trigger(&quot;ImagesUploadAnim&quot;, [
+         state(&quot;in&quot;, style({ opacity: 1, transform: &quot;translateX(0)&quot; })),
+         transition(&quot;:enter&quot;, [
+            style({ opacity: 0, transform: &quot;translateX(300px)&quot; }),
+            animate(&#x27;.5s 1200ms&#x27;)
+         ])
+      ]),
+      trigger(&quot;OrderPreviewAnim&quot;, [
+         state(&quot;in&quot;, style({ opacity: 1, transform: &quot;translateX(0)&quot; })),
+         transition(&quot;:enter&quot;, [
+            style({ opacity: 0, transform: &quot;translateX(300px)&quot; }),
+            animate(&#x27;.5s 1500ms&#x27;)
+         ])
+      ]),
+      trigger(&quot;PaymentAnim&quot;, [
+         state(&quot;in&quot;, style({ opacity: 1, transform: &quot;translateY(0)&quot; })),
+         transition(&quot;:enter&quot;, [
+            style({ opacity: 0, transform: &quot;translateY(-300)&quot; }),
+            animate(&#x27;.5s 1800ms&#x27;)
+         ])
+      ])
+   ]
+})
+
+
+export class OrderReviewComponent implements OnInit {
+
+   /* DATA */
+   orderedQuote: PreviewQuoteResponse;
+   paymentResultPageUrl: string &#x3D; environment.appUrl + AppRoutes.paymentSuccess;
+   checkoutId: string;
+
+   /* UI */
+   lang;
+   isOnMidScreen: boolean;
+   isSavingOrder &#x3D; false;
+   isCardPaymentFormVisible &#x3D; true;
+   isInvalidFileAlertDisplayed &#x3D; false;
+   isContinuationModalDisplayed &#x3D; false;
+   accordionsState &#x3D; {
+      isDriversDisplayed: true, isImageUploadDisplayed: true, isPaymentDisplayed: true,
+      isCardPaymentDisplayed: false, isSadadPaymentDisplayed: false
+   };
+
+   /* UPLOAD */
+   uploader: FileUploader;
+   activeAttachmentUpload: PolicyOrderAttachment;
+   orderFiles: PolicyOrderAttachment[] &#x3D; [
+      {
+         title: &quot;Front-view&quot;,
+         titleAr: &quot;الجهة الأمامية&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Front.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Back-view&quot;,
+         titleAr: &quot;الجهة الخلفية&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Rear.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Right-side&quot;,
+         titleAr: &quot;الجهة اليمنى&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Right.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Left-side&quot;,
+         titleAr: &quot;الجهة اليسرى&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Left.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      },
+      {
+         title: &quot;Plate number&quot;,
+         titleAr: &quot;رقم الهيكل&quot;,
+         imageUrl: &quot;../../../../assets/images/Vehicle-Right.svg&quot;,
+         isUploaded: false,
+         isUploading: false,
+         uploadProgress: 0,
+         isInvalidFile: false
+      }
+   ];
+
+
+   constructor(
+      private router: Router,
+      private modalService: NgbModal,
+      private appService: AppService,
+      private authService: AuthService,
+      private quoteService: QuoteService,
+      private orderReviewService: OrderReviewService
+   ) { }
+
+
+   ngOnInit() {
+      this.initCheckoutRequest();
+      this.getPreviewQuote();
+      this.getScreenSize();
+      this.initUploader();
+      this.getAppLang();
+      window.scroll({ top: 0 });
+   }
+
+
+
+   /* -------------------------------------------------------------------------- */
+   /*                               INITIALIZATION                               */
+   /* -------------------------------------------------------------------------- */
+
+   // Listen for window size changes
+   @HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])
+   getScreenSize(event?): void {
+      // If browser window is resized below mid screen size width
+      window.innerWidth &lt;&#x3D; 858 ? this.isOnMidScreen &#x3D; true : this.isOnMidScreen &#x3D; false;
+   }
+
+
+   /**
+    * Retrieves the preview quote / checkout data
+    */
+   private getPreviewQuote(): void {
+      this.orderedQuote &#x3D; this.quoteService.getPreviewQuote();
+      // Sort driver array to start with main driver
+      this.orderedQuote.vehicleDrivers.sort((a, b) &#x3D;&gt; (a.typeId &gt; b. typeId)? 1 : -1);
+      this.orderedQuote.quoteInfo.isSelectedForOrdering &#x3D; true;
+      this.orderedQuote.quoteInfo.product.isSelected &#x3D; true;
+      this.orderedQuote.quoteInfo.product.hasExtraBenefits &#x3D; true;
+      this.orderedQuote.quoteInfo.product.benefits.forEach(benefit &#x3D;&gt; {
+         if (benefit.benefitTypeId &#x3D;&#x3D;&#x3D; 3) {
+            benefit.isSelected &#x3D; true;
+            benefit.isChecked &#x3D; true;
+         }
+      });
+   }
+
+
+   /**
+    * Initializes the vehicle images uploader and handles the uploads
+    */
+   private initUploader(): void {
+
+      /* Uploader options */
+      this.uploader &#x3D; new FileUploader({
+
+         /* Request Opts */
+         url: environment.apiUrl + ApiRoutes.Quotation.PreviewAttachment,
+         headers: [{ name: &#x27;Accept&#x27;, value: &#x27;application/json&#x27; }],
+         autoUpload: true,
+
+         /* File Opts */
+         allowedMimeType: [&#x27;image/png&#x27;, &#x27;image/jpeg&#x27;, &#x27;image/gif&#x27;, &#x27;image/tiff&#x27;, &#x27;image/bmp&#x27;],
+         allowedFileType: [&#x27;image&#x27;],
+         maxFileSize: 30000000 // 30MB
+
+      });
+
+      this.uploader.onWhenAddingFileFailed &#x3D; () &#x3D;&gt; {
+         this.activeAttachmentUpload.isInvalidFile &#x3D; true;
+         this.checkInvalidFileUpload();
+      };
+      
+      this.uploader.onAfterAddingFile &#x3D; () &#x3D;&gt; {
+         this.activeAttachmentUpload.isInvalidFile &#x3D; false;
+         this.checkInvalidFileUpload();
+      };
+
+      /* Form data */
+      this.uploader.onBuildItemForm &#x3D; (item, form) &#x3D;&gt; {
+         form.append(&#x27;UserId&#x27;, this.authService.getTokenUserId());
+         form.append(&#x27;ReferenceId&#x27;, this.orderedQuote.referenceId);
+      };
+
+      /* Before upload options */
+      this.uploader.onBeforeUploadItem &#x3D; item &#x3D;&gt; {
+         item.withCredentials &#x3D; false;
+         item.alias &#x3D; &#x27;Attachment&#x27;;
+         item.file.name &#x3D; this.activeAttachmentUpload.title + &quot;.&quot; + item._file.name.split(&#x27;.&#x27;).pop();
+      };
+
+      /* Upload progress */
+      this.uploader.onProgressItem &#x3D; (item, progress) &#x3D;&gt; {
+         if (progress &lt; 100) {
+            this.activeAttachmentUpload.isUploading &#x3D; true;
+            this.activeAttachmentUpload.uploadProgress &#x3D; progress;
+         }
+         item.onComplete &#x3D; (res) &#x3D;&gt; {
+            this.activeAttachmentUpload.isUploading &#x3D; false;
+         }
+      };
+
+      /* Success callback */
+      this.uploader.onSuccessItem &#x3D; (item, response, status) &#x3D;&gt; {
+
+         // Get response object
+         let uploadRes: OrderAttachmentUploadResponse &#x3D; JSON.parse(response);
+
+         // Construct image source url to view the image
+         this.activeAttachmentUpload.imageUrl &#x3D; 
+         environment.apiUrl + 
+         ApiRoutes.Quotation.PreviewAttachment + 
+         &#x27;?userId&#x3D;&#x27; + uploadRes.userId +
+         &#x27;&amp;referenceId&#x3D;&#x27; + uploadRes.referenceId +
+         &#x27;&amp;attachmentFileName&#x3D;&#x27;+ uploadRes.attachmentFileName;
+
+         // Update uploaded status and display the image
+         this.activeAttachmentUpload.isUploaded &#x3D; true;
+
+      };
+
+      /* Error callback */
+      this.uploader.onErrorItem &#x3D; (item, response, status) &#x3D;&gt; {};
+
+   }
+
+
+   /**
+    * Initializes the user&#x27;s payment
+    */
+   private initCheckoutRequest() {
+
+      // TODO: Replace clientQuoteId with reference Id later
+      let checkoutIdReq: CheckoutIdRequest &#x3D; {
+         clientQuoteId: &#x27;300623F8-8C9A-4EE4-92E4-028B017B4C73&#x27;,
+         iban: &#x27;&#x27;,
+         bankId: 0
+      };
+
+      this.orderReviewService.getCheckoutId(checkoutIdReq).subscribe(
+         (res: any) &#x3D;&gt; {
+            this.checkoutId &#x3D; res.checkoutId;
+            this.renderPaymentform();
+         }
+      );
+
+   }
+
+
+   private renderPaymentform() {
+
+      // Watch payment form inputs change when form is loaded
+      /* hyperpayModule.paymentFormReady().then(() &#x3D;&gt; {
+
+         console.log(&#x27;Getting card holder input&#x27;);
+
+         let cardNumIpt &#x3D; document.getElementsByName(&quot;card.holder&quot;)[0];
+         cardNumIpt.addEventListener(&#x27;change&#x27;, (event) &#x3D;&gt; {
+            console.log(&#x27;event&#x27;);
+            console.log(event);
+         });
+         cardNumIpt.oninput &#x3D; (val) &#x3D;&gt; {
+            console.log(&#x27;On Ipt&#x27;);
+            console.log(val);
+         };
+
+      }); */
+
+      this.appService.getAppLang().subscribe(async (lang) &#x3D;&gt; {
+
+         let hyperpayOptsScriptId &#x3D; &#x27;payment-form-options&#x27;;
+         let hyperpayScriptId &#x3D; &#x27;hyperpay-script&#x27;;
+         this.checkoutId &#x3D; this.checkoutId;
+
+         /* ------------------------- Create HyperPay Scripts ------------------------ */
+
+         // Create new HyperPay payment script
+         const newHyperpayScript &#x3D; document.createElement(&quot;script&quot;);
+         newHyperpayScript.id &#x3D; hyperpayScriptId;
+         newHyperpayScript.src &#x3D; &#x60;https://test.oppwa.com/v1/paymentWidgets.js?checkoutId&#x3D;${this.checkoutId}&#x60;;
+         newHyperpayScript.async &#x3D; true;
+
+         // Create new HyperPay options script with options
+         const optionsScript &#x3D; document.createElement(&quot;script&quot;);
+         optionsScript.id &#x3D; hyperpayOptsScriptId;
+         optionsScript.type &#x3D; &#x27;text/javascript&#x27;;
+         optionsScript.innerHTML &#x3D; &#x60;
+            var wpwlOptions &#x3D; {
+               style: &quot;card&quot;,
+               locale: &quot;${lang}&quot;,
+               brandDetection: true,
+               brandDetectionType: &quot;binlist&quot;,
+               brandDetectionPriority: [&quot;MADA&quot;,&quot;VISA&quot;,&quot;MASTER&quot;],
+               createRegistration: false,
+               onReady: () &#x3D;&gt; hyperpayModule.paymentFormReady().resolve()
+            };
+         &#x60;;
+      
+         /* ----------------- Replace old options script if it exists ---------------- */
+         
+         // Get old options script
+         const oldOptsScript &#x3D; document.getElementById(hyperpayOptsScriptId);
+         
+         // If it exists
+         if (oldOptsScript) {
+      
+            // Remove the hyperpay payment form from DOM 
+            this.isCardPaymentFormVisible &#x3D; false;
+      
+            await AppUtils.delay(100);
+      
+            // Display and add the hyperpay payment form to DOM again
+            this.isCardPaymentFormVisible &#x3D; true;
+      
+            // Replace options script with new language
+            document.head.replaceChild(optionsScript, oldOptsScript);
+            
+         } else {
+            // Append it
+            document.head.appendChild(optionsScript);
+         }
+      
+      
+         /* ----------------- Reload old hyperpay script if it exists ---------------- */
+      
+         // Get the old hyperpay script
+         const oldHyperpayScript &#x3D; document.getElementById(hyperpayScriptId);
+         
+         // If it exists
+         if (oldHyperpayScript) {
+            // Reload it
+            document.head.removeChild(oldHyperpayScript);
+            document.head.appendChild(newHyperpayScript);
+         } else {
+            // Append it
+            document.head.appendChild(newHyperpayScript);
+         }
+            
+      });
+
+   }
+
+
+
+   /* -------------------------------------------------------------------------- */
+   /*                               USER INTERFACE                               */
+   /* -------------------------------------------------------------------------- */
+
+   openContinuationModal(modal: any) {
+      // If closed
+      if (!this.isContinuationModalDisplayed) {
+         // Open the modal
+         this.modalService.open(modal, {
+            centered: true, beforeDismiss: () &#x3D;&gt; {
+               // Switch flag when dissmissed to uncheck the checkbox
+               this.isContinuationModalDisplayed &#x3D; false;
+               // Close the modal
+               return true;
+            },
+            size: &#x27;lg&#x27;
+         });
+         // Set flag to check the checkbox
+         this.isContinuationModalDisplayed &#x3D; true;
+      }
+   }
+
+
+   getAppLang() {
+      this.appService.getAppLang().subscribe(lang &#x3D;&gt; (this.lang &#x3D; lang));
+   }
+
+
+   toggleAccordion(accordion: &#x27;Drivers&#x27; | &#x27;ImageUpload&#x27; | &#x27;Payment&#x27; | &#x27;Card&#x27; | &#x27;Sadad&#x27;) {
+      switch (accordion) {
+         case &#x27;Drivers&#x27;:
+            this.accordionsState.isDriversDisplayed &#x3D; !this.accordionsState.isDriversDisplayed;
+            break;
+         case &#x27;ImageUpload&#x27;:
+            this.accordionsState.isImageUploadDisplayed &#x3D; !this.accordionsState.isImageUploadDisplayed;
+            break;
+         case &#x27;Payment&#x27;:
+            this.accordionsState.isPaymentDisplayed &#x3D; !this.accordionsState.isPaymentDisplayed;
+            break;
+         case &#x27;Card&#x27;:
+            this.accordionsState.isCardPaymentDisplayed &#x3D; !this.accordionsState.isCardPaymentDisplayed;
+            break;
+         case &#x27;Sadad&#x27;:
+            this.accordionsState.isSadadPaymentDisplayed &#x3D; !this.accordionsState.isSadadPaymentDisplayed;
+            break;
+         default: break;
+      }
+   }
+
+
+   setActiveAttachmentUpload(attachment: PolicyOrderAttachment) {
+      this.activeAttachmentUpload &#x3D; attachment;
+   }
+
+
+   checkInvalidFileUpload() {
+      let invalidFiles &#x3D; this.orderFiles.filter(file &#x3D;&gt; file.isInvalidFile);
+      if (invalidFiles.length &gt; 0) this.isInvalidFileAlertDisplayed &#x3D; true;
+      else this.isInvalidFileAlertDisplayed &#x3D; false;
+   }
+
+
+
+   /* -------------------------------------------------------------------------- */
+   /*                                API / SUBMIT                                */
+   /* -------------------------------------------------------------------------- */
+
+   saveOrderProgress() {
+
+      // Display loader
+      this.isSavingOrder &#x3D; true;
+      let reqBody:  SavedQuoteRequest &#x3D; {quoteId: this.orderedQuote.referenceId}; 
+     // reqBody.quoteId &#x3D; this.orderedQuote.referenceId;
+      this.quoteService.saveOrder(reqBody).subscribe(
+         (res) &#x3D;&gt; {
+            console.log(res);
+            this.modalService.dismissAll();
+            this.router.navigate([&#x27;/user/previous-quotes&#x27;]);
+
+         },
+         (err) &#x3D;&gt; {
+            console.log(err);
+            // Stop loader
+            this.isSavingOrder &#x3D; false;
+            // TODO: Handle error
+         }
+      );
+
+   }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;order-review-container&quot;&gt;
+
+    &lt;!-- ----------------------------------------------------------------------- --&gt;
+    &lt;!--                           Continuation Modal                            --&gt;
+    &lt;!-- ----------------------------------------------------------------------- --&gt;
+
+    &lt;ng-template #continuationModal let-modal&gt;
+
+        &lt;!-- Header --&gt;
+        &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+            &lt;h4 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-basic-title&quot;&gt;{{ &#x27;Checkout.ContinuationModal.ContinueLaterQuestion&#x27; | translate }}&lt;/h4&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;modal.dismiss()&quot;&gt;
+                &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Body --&gt;
+        &lt;div class&#x3D;&quot;modal-body cont-modal-body flex-column&quot;&gt;
+            &lt;i class&#x3D;&quot;ion-md-alert flex-centered&quot;&gt;&lt;/i&gt;
+            &lt;hr&gt;
+            &lt;p class&#x3D;&quot;flex-centered&quot;&gt;
+                {{ &#x27;Checkout.ContinuationModal.ReferenceIdText&#x27; | translate }} &lt;b&gt;{{ orderedQuote?.quoteInfo.quoteReferenceId }}&lt;/b&gt;
+            &lt;/p&gt;
+            &lt;p class&#x3D;&quot;flex-centered&quot;&gt;
+                {{ &#x27;Checkout.ContinuationModal.BuyBeforeText&#x27; | translate }} &lt;b&gt; {{ orderedQuote.quoteInfo.quotationEndDate | date: &quot;EEEE, MMMM d, y&quot; : &#x27;&#x27; : lang }}&lt;/b&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Footer --&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button (click)&#x3D;&quot;saveOrderProgress()&quot; class&#x3D;&quot;primary-btn&quot;&gt;
+                &lt;span&gt;{{ &#x27;App.AgreeText&#x27; | translate }}&lt;/span&gt;
+                &lt;span *ngIf&#x3D;&quot;isSavingOrder&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button (click)&#x3D;&quot;modal.dismiss()&quot; class&#x3D;&quot;primary-btn danger&quot;&gt;
+                &lt;span&gt;{{ &#x27;App.CancelText&#x27; | translate }}&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/ng-template&gt;
+
+
+
+    &lt;!-- ----------------------------------------------------------------------- --&gt;
+    &lt;!--                  Order Completion (Right column [ar])                   --&gt;
+    &lt;!-- ----------------------------------------------------------------------- --&gt;
+
+    &lt;div class&#x3D;&quot;order-completion-container flex-column&quot;&gt;
+
+        &lt;!-- Policy details preview --&gt;
+        &lt;div [@PolicyDetailsAnim] class&#x3D;&quot;policy-details data-box&quot;&gt;
+
+            &lt;!-- Data Details --&gt;
+            &lt;div class&#x3D;&quot;data&quot;&gt;
+
+                &lt;!-- Insurance Info --&gt;
+                &lt;div class&#x3D;&quot;flex-container&quot;&gt;
+                    &lt;table class&#x3D;&quot;flex-centered&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.PolicyStart&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{ orderedQuote.quoteInfo.quotationStartDate | date: &quot;dd/MM/yyyy&quot; : &#x27;&#x27; : lang }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.ProductType&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? orderedQuote.quoteInfo.product.nameAr : orderedQuote.quoteInfo.product.name }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.IdentityNumber&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{  orderedQuote.insuredInfo.identityNumber }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.FullName&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td *ngIf&#x3D;&quot;lang &#x3D;&#x3D;&#x3D; &#x27;en&#x27;&quot;&gt;{{  orderedQuote.insuredInfo.firstName }} {{  orderedQuote.insuredInfo.middleName }} {{  orderedQuote.insuredInfo.lastName }}&lt;/td&gt;
+                            &lt;td *ngIf&#x3D;&quot;lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27;&quot;&gt;{{  orderedQuote.insuredInfo.firstNameAr }} {{  orderedQuote.insuredInfo.middleNameAr }} {{  orderedQuote.insuredInfo.lastNameAr }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.Birthdate&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{  orderedQuote.insuredInfo.birthDate }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Vehicle Info --&gt;
+                &lt;div class&#x3D;&quot;vehicle-info flex-container&quot;&gt;
+                    &lt;table class&#x3D;&quot;flex-centered&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.SequenceNum&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{  orderedQuote.vehicleInfo.vehicleId }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.VehicleDescription&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{  orderedQuote.vehicleInfo.model }} {{  orderedQuote.vehicleInfo.plateNumber }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.VehicleMajorColor &#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{  orderedQuote.vehicleInfo.colorAr  }} 
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.DrivingCity&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? orderedQuote.vehicleInfo.drivingCityAr : orderedQuote.vehicleInfo.drivingCity }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Checkout.PolicyDetails.RepairsLocation&#x27; | translate }}:&lt;/th&gt;
+                            &lt;td&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? orderedQuote.vehicleInfo.repairMethodAr : orderedQuote.vehicleInfo.repairMethod }}&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;!-- Vehicle Illustration --&gt;
+            &lt;div class&#x3D;&quot;vehicle-illustration flex-container&quot;&gt;
+                &lt;img src&#x3D;&quot;../../../assets/images/Vehicle-Front-lg.svg&quot; class&#x3D;&quot;flex-centered&quot; id&#x3D;&quot;illustration-img&quot; alt&#x3D;&quot;Vehicle Image&quot;&gt;
+                &lt;div class&#x3D;&quot;vehicle-plate review-plate noselect&quot; id&#x3D;&quot;illustration-plate&quot;&gt;
+                    &lt;div class&#x3D;&quot;plate-num-ar&quot;&gt;
+                        {{orderedQuote.vehicleInfo.plateNumber}}
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;plate-txt-ar&quot;&gt;
+                        {{orderedQuote.vehicleInfo.plateFirstLetterAr}} {{orderedQuote.vehicleInfo.plateSecondLetterAr}} {{orderedQuote.vehicleInfo.plateThirdLetterAr}}
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;plate-num-en&quot;&gt;
+                        {{orderedQuote.vehicleInfo.plateNumber}}
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;plate-txt-en&quot;&gt;
+                        {{orderedQuote.vehicleInfo.plateFirstLetter}} {{orderedQuote.vehicleInfo.plateSecondLetter}} {{orderedQuote.vehicleInfo.plateThirdLetter}}
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;plate-logo flex-container&quot;&gt;
+                        &lt;span class&#x3D;&quot;flex-centered&quot;&gt;KSA&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;!-- Vehicle Drivers --&gt;
+        &lt;div [@VehicleDriversAnim] class&#x3D;&quot;data-box accordion-box&quot;&gt;
+
+            &lt;div class&#x3D;&quot;header&quot;&gt;
+                &lt;div class&#x3D;&quot;title flex-container&quot;&gt;
+                    &lt;div (click)&#x3D;&quot;toggleAccordion(&#x27;Drivers&#x27;)&quot; id&#x3D;&quot;user-data-wrapper&quot; class&#x3D;&quot;bouncy noselect&quot;&gt;
+                        &lt;span&gt;{{ &#x27;Checkout.Drivers.VehicleDrivers&#x27; | translate }}&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;toggler flex-container bouncy&quot;&gt;
+                    &lt;a (click)&#x3D;&quot;toggleAccordion(&#x27;Drivers&#x27;)&quot; class&#x3D;&quot;flex-centered body-view-link secondary-lime&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+                        &lt;i [ngClass]&#x3D;&quot;accordionsState.isDriversDisplayed ? &#x27;ion-md-remove-circle&#x27; : &#x27;ion-md-add-circle&#x27;&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;content flex-container&quot; [ngClass]&#x3D;&quot;accordionsState.isDriversDisplayed ? &#x27;visible&#x27; : &#x27;hidden&#x27;&quot;&gt;
+                &lt;div class&#x3D;&quot;content-container flex-centered&quot; style&#x3D;&quot;overflow: hidden;&quot;&gt;
+                    
+                    &lt;table class&#x3D;&quot;table table-borderless&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;{{ &#x27;QuotationRequestForms.DriverList.NationalIDLabel&#x27; | translate }}&lt;/th&gt;
+                                &lt;th&gt;{{ &#x27;Misc.FullName&#x27; | translate }}&lt;/th&gt;
+                                &lt;th&gt;{{ &#x27;QuotationRequestForms.DriverInfo.Birth&#x27; | translate }}&lt;/th&gt;
+                                &lt;th&gt;{{ &#x27;Checkout.Drivers.DrivingPercentage&#x27; | translate }}&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr *ngFor&#x3D;&quot;let driver of orderedQuote.vehicleDrivers&quot;&gt;
+                                &lt;td&gt;{{ driver.identityNumber }}&lt;/td&gt;
+                                &lt;td&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? driver.fullNameAr : driver.fullName }}&lt;/td&gt;
+                                &lt;td&gt;{{ driver.birthDate }}&lt;/td&gt;
+                                &lt;td&gt;{{ driver.drivingPercentageId }}%&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;!-- Vehicle Images Upload (for comprehensive insurance type) --&gt;
+        &lt;div *ngIf&#x3D;&quot;orderedQuote.quoteInfo.product.productTypeId &#x3D;&#x3D; 2&quot; [@ImagesUploadAnim] class&#x3D;&quot;data-box accordion-box&quot;&gt;
+
+            &lt;!-- Header (title + toggle button) --&gt;
+            &lt;div class&#x3D;&quot;header&quot;&gt;
+                &lt;div class&#x3D;&quot;title flex-container&quot;&gt;
+                    &lt;div (click)&#x3D;&quot;toggleAccordion(&#x27;ImageUpload&#x27;)&quot; id&#x3D;&quot;user-data-wrapper&quot; class&#x3D;&quot;bouncy noselect&quot;&gt;
+                        &lt;span&gt;{{ &#x27;Checkout.Attachments.VehicleImages&#x27; | translate }}&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;toggler flex-container bouncy&quot;&gt;
+                    &lt;a (click)&#x3D;&quot;toggleAccordion(&#x27;ImageUpload&#x27;)&quot; class&#x3D;&quot;flex-centered body-view-link secondary-lime&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+                        &lt;i [ngClass]&#x3D;&quot;accordionsState.isImageUploadDisplayed ? &#x27;ion-md-remove-circle&#x27; : &#x27;ion-md-add-circle&#x27;&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Content (uploaders + checkbox) --&gt;
+            &lt;div class&#x3D;&quot;content flex-column&quot; [ngClass]&#x3D;&quot;accordionsState.isImageUploadDisplayed ? &#x27;visible&#x27; : &#x27;hidden&#x27;&quot;&gt;
+                
+                &lt;!-- Image Uploaders --&gt;
+                &lt;div class&#x3D;&quot;content-container vehicle-images-container flex-centered flex-container&quot;&gt;      
+                    
+                    &lt;!-- Uploaders --&gt;
+                    &lt;div *ngFor&#x3D;&quot;let orderFile of orderFiles&quot; class&#x3D;&quot;vehicle-img-uploader bouncy&quot; [class.invalid-upload]&#x3D;&quot;orderFile.isInvalidFile&quot;&gt;
+
+                        &lt;!-- Plus Icon --&gt;
+                        &lt;div class&#x3D;&quot;add-icon&quot;&gt;
+                            &lt;i class&#x3D;&quot;ion-md-add&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- File Input --&gt;
+                        &lt;input (click)&#x3D;&quot;setActiveAttachmentUpload(orderFile)&quot; type&#x3D;&quot;file&quot; accept&#x3D;&quot;image/*&quot; ng2FileSelect [uploader]&#x3D;&quot;uploader&quot; id&#x3D;&quot;file_upload&quot; #file/&gt;
+
+                        &lt;!-- Image / Icon / Progress --&gt;
+                        &lt;div class&#x3D;&quot;img flex-container&quot;&gt;
+                            &lt;img *ngIf&#x3D;&quot;!orderFile.isUploading &amp;&amp; !orderFile.isUploaded &amp;&amp; !(orderFile.title &#x3D;&#x3D;&#x3D; &#x27;Plate number&#x27;)&quot; [src]&#x3D;&quot;orderFile.imageUrl&quot; alt&#x3D;&quot;Vehicle Image&quot; class&#x3D;&quot;flex-centered&quot;&gt;
+                            &lt;span *ngIf&#x3D;&quot;orderFile.isUploading&quot; class&#x3D;&quot;flex-centered&quot;&gt;{{ orderFile.uploadProgress }}%&lt;/span&gt;
+                            &lt;img *ngIf&#x3D;&quot;orderFile.isUploaded&quot; [src]&#x3D;&quot;orderFile.imageUrl&quot; alt&#x3D;&quot;&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;orderFile.title &#x3D;&#x3D;&#x3D; &#x27;Plate number&#x27; &amp;&amp; !orderFile.isUploading &amp;&amp; !orderFile.isUploaded&quot; class&#x3D;&quot;vehicle-plate review-plate uploader-plate noselect flex-centered&quot;&gt;
+                                &lt;div class&#x3D;&quot;plate-num-ar&quot;&gt;
+                                    {{orderedQuote.vehicleInfo.plateNumber}}
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;plate-txt-ar&quot;&gt;
+                                    {{orderedQuote.vehicleInfo.plateFirstLetterAr}} {{orderedQuote.vehicleInfo.plateSecondLetterAr}} {{orderedQuote.vehicleInfo.plateThirdLetterAr}}
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;plate-num-en&quot;&gt;
+                                    {{orderedQuote.vehicleInfo.plateNumber}}
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;plate-txt-en&quot;&gt;
+                                    {{orderedQuote.vehicleInfo.plateFirstLetter}} {{orderedQuote.vehicleInfo.plateSecondLetter}} {{orderedQuote.vehicleInfo.plateThirdLetter}}
+                                &lt;/div&gt;
+                                &lt;div class&#x3D;&quot;plate-logo flex-container&quot;&gt;
+                                    &lt;span class&#x3D;&quot;flex-centered&quot;&gt;KSA&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Image Title --&gt;
+                        &lt;div class&#x3D;&quot;title flex-container&quot;&gt;
+                            &lt;span class&#x3D;&quot;flex-centered&quot;&gt;
+                                {{ lang &#x3D;&#x3D;&#x3D;&#x27;ar&#x27; ? orderFile.titleAr : orderFile.title }}
+                            &lt;/span&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;!-- Invalid File Alert --&gt;
+                    &lt;ngb-alert *ngIf&#x3D;&quot;isInvalidFileAlertDisplayed&quot; (close)&#x3D;&quot;isInvalidFileAlertDisplayed &#x3D; false&quot; class&#x3D;&quot;alert alert-danger flex-container&quot;&gt;
+                        &lt;i class&#x3D;&quot;ion-md-information-circle-outline flex-centered&quot; style&#x3D;&quot;margin: auto 10px; font-size: 24px;&quot;&gt;&lt;/i&gt;
+                        &lt;span class&#x3D;&quot;flex-centered&quot; style&#x3D;&quot;margin: auto 0;&quot;&gt;
+                            الملف المرفق غير مسموح به, الرجاء تحميل صور فقط من النوع PNG, JPG او JPEG
+                        &lt;/span&gt;
+                    &lt;/ngb-alert&gt;
+
+                &lt;/div&gt;
+
+                &lt;!-- Footer (continue later checkbox) --&gt;
+                &lt;div class&#x3D;&quot;footer flex-column&quot;&gt;
+                    &lt;div class&#x3D;&quot;flex-centered continuation-cbx&quot; style&#x3D;&quot;margin-right: 10px; width: 100%;&quot;&gt;
+
+                        &lt;!-- Checkbox --&gt;
+                        &lt;input (change)&#x3D;&quot;openContinuationModal(continuationModal)&quot; [checked]&#x3D;&quot;isContinuationModalDisplayed&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;order-later-cbx&quot; class&#x3D;&quot;cbx&quot; style&#x3D;&quot;display: none;&quot;&gt;
+                        &lt;label for&#x3D;&quot;order-later-cbx&quot; class&#x3D;&quot;check noselect flex-container&quot;&gt;
+                            &lt;svg width&#x3D;&quot;18px&quot; height&#x3D;&quot;18px&quot; viewBox&#x3D;&quot;0 0 20 18&quot; style&#x3D;&quot;width: 30px;&quot;&gt;&lt;path d&#x3D;&quot;M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z&quot;&gt;&lt;/path&gt;&lt;polyline points&#x3D;&quot;1 9 7 14 15 4&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+                            &lt;span&gt;{{ &#x27;Checkout.Attachments.ContinueLaterTxt&#x27; | translate }}&lt;/span&gt;
+                        &lt;/label&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;!-- Order Preview (mobile flip Card) --&gt;
+        &lt;div [@OrderPreviewAnim] *ngIf&#x3D;&quot;isOnMidScreen&quot; class&#x3D;&quot;order-preview-container&quot;&gt;
+
+
+            &lt;!-- Order Data Preview (Flip card sides) ----------------------------------------------&gt;
+            &lt;!--------------------------------------------------------------------------------------&gt;
+            &lt;div class&#x3D;&quot;data-preview-flip-card&quot;&gt;
+                &lt;div class&#x3D;&quot;content&quot;&gt;
+                    
+                    &lt;!-- Front --&gt;
+                    &lt;div class&#x3D;&quot;front flex-column&quot;&gt;
+                        
+                        &lt;!-- IC Logo --&gt;
+                        &lt;div class&#x3D;&quot;company-logo flex-column&quot;&gt;
+                            &lt;img [src]&#x3D;&quot;orderedQuote.quoteInfo.insuranceCompany.logo || &#x27;https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg&#x27;&quot; alt&#x3D;&quot;Company Logo&quot; class&#x3D;&quot;flex-centered&quot;&gt;
+                            &lt;span class&#x3D;&quot;flex-centered&quot;&gt;{{ orderedQuote.quoteInfo.insuranceCompany.name }}&lt;/span&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Data --&gt;
+                        &lt;div class&#x3D;&quot;data flex-column&quot;&gt;
+
+                            &lt;!-- Costs --&gt;
+                            &lt;div class&#x3D;&quot;costs flex-column&quot;&gt;
+
+                                &lt;span id&#x3D;&quot;header&quot;&gt;{{ &#x27;Checkout.CostsDetails&#x27; | translate }}&lt;/span&gt;
+
+                                &lt;table&gt;
+
+                                    &lt;!-- Policy Price --&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;{{ &#x27;Checkout.PolicyPrice&#x27; | translate }}&lt;/th&gt;
+                                        &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                            &lt;span&gt;
+                                                {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : &#x27;1.2-2&#x27; }}
+                                                &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                            &lt;/span&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+
+                                    &lt;!-- Which includes text --&gt;
+                                    &lt;tr&gt;
+                                        &lt;th&gt;&lt;small&gt;&lt;b&gt;{{ &#x27;Misc.Includes&#x27; | translate }}&lt;/b&gt;&lt;/small&gt;&lt;/th&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+
+                                    &lt;!-- Premium Breakdowns --&gt;
+                                    &lt;tr *ngFor&#x3D;&quot;let pmd of orderedQuote.quoteInfo.product.deductibles.premiumBreakdowns&quot;&gt;
+                                        &lt;th&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? pmd.nameAr : pmd.name }}&lt;/th&gt;
+                                        &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                            &lt;span&gt;
+                                                {{ pmd.breakdownAmount | number : &#x27;1.2-2&#x27; }}
+                                                &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                            &lt;/span&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+
+                                    &lt;!-- Discounts --&gt;
+                                    &lt;tr *ngFor&#x3D;&quot;let discount of orderedQuote.quoteInfo.product.deductibles.discounts&quot;&gt;
+                                        &lt;th&gt;
+                                            &lt;div class&#x3D;&quot;quote-detail-item-title&quot;&gt;
+                                                &lt;span&gt; {{ lang&#x3D;&#x3D;&#x27;ar&#x27; ? discount.nameAr : discount.name }} &lt;/span&gt;
+                                            &lt;/div&gt;
+                                        &lt;/th&gt;
+                                        &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                            &lt;span&gt;
+                                                {{ discount.discountAmount | number : &#x27;1.2-2&#x27; }}
+                                                &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                            &lt;/span&gt;
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    
+                                &lt;/table&gt;
+
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+
+                    &lt;!-- Back --&gt;
+                    &lt;div class&#x3D;&quot;back flex-column&quot;&gt;
+                        &lt;span class&#x3D;&quot;ic-name&quot;&gt;{{ orderedQuote.quoteInfo.insuranceCompany.name }}&lt;/span&gt;
+                        &lt;p class&#x3D;&quot;ic-description&quot;&gt;{{ orderedQuote.quoteInfo.insuranceCompany.description }}&lt;/p&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;!-- Order Prices Preview (Bottom prices boxes) ----------------------------------------&gt;
+            &lt;!--------------------------------------------------------------------------------------&gt;
+            &lt;div class&#x3D;&quot;prices-preview&quot;&gt;
+
+                &lt;div id&#x3D;&quot;deductible&quot;&gt;
+                    &lt;table&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Misc.LiabilityCost&#x27; | translate }}&lt;/th&gt;
+                            &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                &lt;span&gt;
+                                    {{ orderedQuote.quoteInfo.product.deductibles.deductibleValue | number : &#x27;1.2-2&#x27; }}
+                                    &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                &lt;/span&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+    
+                &lt;div id&#x3D;&quot;total&quot;&gt;
+                    &lt;table&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;{{ &#x27;Misc.TotalCost&#x27; | translate }}&lt;/th&gt;
+                            &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                &lt;span&gt;
+                                    {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : &#x27;1.2-2&#x27; }}
+                                    &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                &lt;/span&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;!-- Payment --&gt;
+        &lt;div [@PaymentAnim] class&#x3D;&quot;data-box accordion-box&quot; id&#x3D;&quot;payment-box&quot; style&#x3D;&quot;z-index: 2;&quot;&gt;
+            
+            &lt;div class&#x3D;&quot;header&quot;&gt;
+                &lt;div class&#x3D;&quot;title flex-container&quot;&gt;
+                    &lt;div (click)&#x3D;&quot;toggleAccordion(&#x27;Payment&#x27;)&quot; id&#x3D;&quot;user-data-wrapper&quot; class&#x3D;&quot;bouncy noselect&quot;&gt;
+                        &lt;span&gt;{{ &#x27;Checkout.Payment.Payment&#x27; | translate }}&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;toggler flex-container bouncy&quot;&gt;
+                    &lt;a (click)&#x3D;&quot;toggleAccordion(&#x27;Payment&#x27;)&quot; class&#x3D;&quot;flex-centered body-view-link secondary-lime&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+                        &lt;i [ngClass]&#x3D;&quot;accordionsState.isPaymentDisplayed ? &#x27;ion-md-remove-circle&#x27; : &#x27;ion-md-add-circle&#x27;&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;content&quot; [ngClass]&#x3D;&quot;accordionsState.isPaymentDisplayed ? &#x27;visible&#x27; : &#x27;hidden&#x27;&quot;&gt;
+                &lt;div class&#x3D;&quot;content-container payment-container&quot;&gt;
+
+                    &lt;!-- Disclaimer --&gt;
+                    &lt;div class&#x3D;&quot;alert alert-info flex-container&quot; role&#x3D;&quot;alert&quot;&gt;
+                        &lt;i class&#x3D;&quot;ion-md-information-circle-outline flex-centered&quot; style&#x3D;&quot;margin: auto 10px; font-size: 24px;&quot;&gt;&lt;/i&gt;
+                        &lt;span class&#x3D;&quot;flex-centered&quot; style&#x3D;&quot;margin: auto 0;&quot;&gt;{{ &#x27;Checkout.Payment.IbanNote&#x27; | translate }}&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- IBAN --&gt;
+                    &lt;div class&#x3D;&quot;iban-container flex-container&quot;&gt;
+
+                        &lt;!-- IBAN Input --&gt;
+                        &lt;div class&#x3D;&quot;iban-wrapper flex-container flex-centered&quot;&gt;
+                            &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;iban&quot; placeholder&#x3D;&quot;IBAN&quot; class&#x3D;&quot;form-control&quot; dir&#x3D;&quot;ltr&quot;/&gt;
+                            &lt;span&gt;SA&lt;/span&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Empty Spot --&gt;
+                        &lt;div&gt;&lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;!-- Payment Accordions/Forms --&gt;
+                    &lt;div class&#x3D;&quot;payment-wrapper&quot;&gt;
+                        &lt;div class&#x3D;&quot;selector-form-wrapper&quot;&gt;
+
+                            &lt;!-- Card Payment --&gt;
+                            &lt;div class&#x3D;&quot;accordion-box light&quot;&gt;
+
+                                &lt;div class&#x3D;&quot;header&quot;&gt;
+                                    &lt;div class&#x3D;&quot;title flex-container&quot;&gt;
+                                        &lt;div (click)&#x3D;&quot;toggleAccordion(&#x27;Card&#x27;)&quot; id&#x3D;&quot;user-data-wrapper&quot; class&#x3D;&quot;bouncy noselect&quot;&gt;
+                                            &lt;img src&#x3D;&quot;../../../assets/images/payment-cards.png&quot; alt&#x3D;&quot;Card&quot; style&#x3D;&quot;width: 170px;&quot;&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;toggler flex-container bouncy&quot;&gt;
+                                        &lt;a (click)&#x3D;&quot;toggleAccordion(&#x27;Card&#x27;)&quot; class&#x3D;&quot;flex-centered body-view-link secondary-lime&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+                                            &lt;i [ngClass]&#x3D;&quot;accordionsState.isCardPaymentDisplayed ? &#x27;ion-md-arrow-dropup&#x27; : &#x27;ion-md-arrow-dropdown&#x27;&quot;&gt;&lt;/i&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class&#x3D;&quot;content&quot; [ngClass]&#x3D;&quot;accordionsState.isCardPaymentDisplayed ? &#x27;visible&#x27; : &#x27;hidden&#x27;&quot;&gt;
+                                    &lt;div *ngIf&#x3D;&quot;isCardPaymentFormVisible&quot; class&#x3D;&quot;content-container flex-centered flex-container&quot;&gt;
+                                        &lt;form [action]&#x3D;&quot;paymentResultPageUrl&quot; class&#x3D;&quot;paymentWidgets flex-centered&quot; data-brands&#x3D;&quot;VISA MASTER MADA&quot; method&#x3D;&quot;POST&quot;&gt;&lt;/form&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                            &lt;!-- Sadad Payment --&gt;
+                            &lt;div class&#x3D;&quot;accordion-box light&quot;&gt;
+
+                                &lt;div class&#x3D;&quot;header&quot;&gt;
+                                    &lt;div class&#x3D;&quot;title flex-container&quot;&gt;
+                                        &lt;div (click)&#x3D;&quot;toggleAccordion(&#x27;Sadad&#x27;)&quot; id&#x3D;&quot;user-data-wrapper&quot; class&#x3D;&quot;bouncy noselect&quot;&gt;
+                                            &lt;img src&#x3D;&quot;../../../assets/images/payment-sadad.png&quot; alt&#x3D;&quot;Sadad&quot; style&#x3D;&quot;width: 80px;&quot;&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class&#x3D;&quot;toggler flex-container bouncy&quot;&gt;
+                                        &lt;a (click)&#x3D;&quot;toggleAccordion(&#x27;Sadad&#x27;)&quot; class&#x3D;&quot;flex-centered body-view-link secondary-lime&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+                                            &lt;i [ngClass]&#x3D;&quot;accordionsState.isSadadPaymentDisplayed ? &#x27;ion-md-arrow-dropup&#x27; : &#x27;ion-md-arrow-dropdown&#x27;&quot;&gt;&lt;/i&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class&#x3D;&quot;content&quot; [ngClass]&#x3D;&quot;accordionsState.isSadadPaymentDisplayed ? &#x27;visible&#x27; : &#x27;hidden&#x27;&quot;&gt;
+                                    &lt;div class&#x3D;&quot;content-container flex-centered flex-container&quot;&gt;
+                                        SADAD
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;!-- Continue Later Checkbox (For incomprehensive insurance, since image upload isn&#x27;t included for it) --&gt;
+        &lt;div *ngIf&#x3D;&quot;!(orderedQuote.quoteInfo.product.productTypeId &#x3D;&#x3D; 2)&quot; class&#x3D;&quot;alert alert-info&quot; role&#x3D;&quot;alert&quot;&gt;
+            &lt;div class&#x3D;&quot;flex-centered continuation-cbx&quot; style&#x3D;&quot;margin-right: 10px; width: 100%;&quot;&gt;
+                &lt;input (change)&#x3D;&quot;openContinuationModal(continuationModal)&quot; [checked]&#x3D;&quot;isContinuationModalDisplayed&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;order-later-cbx&quot; class&#x3D;&quot;cbx&quot; style&#x3D;&quot;display: none;&quot;&gt;
+                &lt;label for&#x3D;&quot;order-later-cbx&quot; class&#x3D;&quot;check noselect flex-container&quot;&gt;
+                    &lt;svg width&#x3D;&quot;18px&quot; height&#x3D;&quot;18px&quot; viewBox&#x3D;&quot;0 0 20 18&quot; style&#x3D;&quot;width: 30px;&quot;&gt;&lt;path d&#x3D;&quot;M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z&quot;&gt;&lt;/path&gt;&lt;polyline points&#x3D;&quot;1 9 7 14 15 4&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;
+                    &lt;span&gt;{{ &#x27;Checkout.Attachments.ContinueLaterTxt&#x27; | translate }}&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Checkout Buttons --&gt;
+        &lt;div class&#x3D;&quot;checkout-btns flex-container&quot;&gt;
+            &lt;button routerLink&#x3D;&quot;/quotes&quot; class&#x3D;&quot;primary-btn info checkout-back-btn&quot;&gt;
+                &lt;span&gt;{{ &#x27;App.BackText&#x27; | translate }}&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button class&#x3D;&quot;primary-btn checkout-buy-btn&quot;&gt;
+                &lt;span&gt;{{ &#x27;App.BuyText&#x27; | translate }}&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+
+    &lt;!-- ----------------------------------------------------------------------- --&gt;
+    &lt;!--                        Order Preview (Flip Card)                        --&gt;
+    &lt;!-- ----------------------------------------------------------------------- --&gt;
+
+    &lt;div *ngIf&#x3D;&quot;!isOnMidScreen&quot; class&#x3D;&quot;order-preview-container&quot;&gt;
+
+        &lt;!-- Order Data Preview (Flip card sides) ----------------------------------------------&gt;
+        &lt;!--------------------------------------------------------------------------------------&gt;
+        &lt;div class&#x3D;&quot;data-preview-flip-card&quot;&gt;
+            &lt;div class&#x3D;&quot;content&quot;&gt;
+                
+                &lt;!-- Front --&gt;
+                &lt;div class&#x3D;&quot;front flex-column&quot;&gt;
+                    
+                    &lt;!-- IC Logo --&gt;
+                    &lt;div class&#x3D;&quot;company-logo flex-column&quot;&gt;
+                        &lt;img [src]&#x3D;&quot;orderedQuote.quoteInfo.insuranceCompany.logo || &#x27;https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg&#x27;&quot; alt&#x3D;&quot;Company Logo&quot; class&#x3D;&quot;flex-centered&quot;&gt;
+                        &lt;span class&#x3D;&quot;flex-centered&quot;&gt;{{orderedQuote.quoteInfo.insuranceCompany.name}}&lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- Data --&gt;
+                    &lt;div class&#x3D;&quot;data flex-column&quot;&gt;
+
+                        &lt;!-- Costs --&gt;
+                        &lt;div class&#x3D;&quot;costs flex-column&quot;&gt;
+
+                            &lt;span id&#x3D;&quot;header&quot;&gt;{{ &#x27;Checkout.CostsDetails&#x27; | translate }}&lt;/span&gt;
+
+                            &lt;table&gt;
+
+                                &lt;!-- Policy Price --&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;{{ &#x27;Checkout.PolicyPrice&#x27; | translate }}&lt;/th&gt;
+                                    &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                        &lt;span&gt;
+                                            {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : &#x27;1.2-2&#x27; }}
+                                            &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                        &lt;/span&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;!-- Which includes text --&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;&lt;small&gt;&lt;b&gt;{{ &#x27;Misc.Includes&#x27; | translate }}&lt;/b&gt;&lt;/small&gt;&lt;/th&gt;
+                                    &lt;td&gt;&lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;!-- Premium Breakdowns --&gt;
+                                &lt;tr *ngFor&#x3D;&quot;let pmd of orderedQuote.quoteInfo.product.deductibles.premiumBreakdowns&quot;&gt;
+                                    &lt;th&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? pmd.nameAr : pmd.name }}&lt;/th&gt;
+                                    &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                        &lt;span&gt;
+                                            {{ pmd.breakdownAmount | number : &#x27;1.2-2&#x27; }}
+                                            &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                        &lt;/span&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;!-- Discounts --&gt;
+                                &lt;tr *ngFor&#x3D;&quot;let discount of orderedQuote.quoteInfo.product.deductibles.discounts&quot;&gt;
+                                    &lt;th&gt;
+                                        &lt;div class&#x3D;&quot;quote-detail-item-title&quot;&gt;
+                                            &lt;span&gt; {{ lang&#x3D;&#x3D;&#x27;ar&#x27; ? discount.nameAr : discount.name }} &lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/th&gt;
+                                    &lt;td class&#x3D;&quot;amount&quot;&gt;
+                                        &lt;span&gt;
+                                            {{ discount.discountAmount | number : &#x27;1.2-2&#x27; }}
+                                            &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                                        &lt;/span&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                                
+                            &lt;/table&gt;
+
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+
+                &lt;!-- Back --&gt;
+                &lt;div class&#x3D;&quot;back flex-column&quot;&gt;
+                    &lt;span class&#x3D;&quot;ic-name&quot;&gt;{{ orderedQuote.quoteInfo.insuranceCompany.name }}&lt;/span&gt;
+                    &lt;p class&#x3D;&quot;ic-description&quot;&gt;{{ orderedQuote.quoteInfo.insuranceCompany.description }}&lt;/p&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;!-- Order Prices Preview (Bottom prices boxes) ----------------------------------------&gt;
+        &lt;!--------------------------------------------------------------------------------------&gt;
+        &lt;div class&#x3D;&quot;prices-preview&quot;&gt;
+
+            &lt;div id&#x3D;&quot;deductible&quot;&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;{{ &#x27;Misc.LiabilityCost&#x27; | translate }}&lt;/th&gt;
+                        &lt;td class&#x3D;&quot;amount&quot;&gt;
+                            &lt;span&gt;
+                                {{ orderedQuote.quoteInfo.product.deductibles.deductibleValue | number : &#x27;1.2-2&#x27; }}
+                                &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                            &lt;/span&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+
+            &lt;div id&#x3D;&quot;total&quot;&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;{{ &#x27;Misc.TotalCost&#x27; | translate }}&lt;/th&gt;
+                        &lt;td class&#x3D;&quot;amount&quot;&gt;
+                            &lt;span&gt;
+                                {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : &#x27;1.2-2&#x27; }}
+                                &lt;small class&#x3D;&quot;currency&quot;&gt;{{ &#x27;App.Currency&#x27; | translate }}&lt;/small&gt;
+                            &lt;/span&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./order-review.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* -------------------------------------------------------------------------- */
+/*                                 Page Layout                                */
+/* -------------------------------------------------------------------------- */
+
+.order-review-container {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 7fr 3fr;
+   gap: 4em;
+   padding: 2em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                             Continuation Modal                             */
+/* -------------------------------------------------------------------------- */
+
+.cont-modal-body {
+   font-size: 20px;
+   text-align: center;
+}
+
+.cont-modal-body i {
+   color: #00a2ae;
+   font-size: 5em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Preview Flip Card                             */
+/* -------------------------------------------------------------------------- */
+
+.order-preview-container {
+   position: sticky;
+   top: 80px;
+   width: 100%;
+   height: auto;
+   background-color: transparent;
+   display: flex;
+   flex-direction: column;
+   align-self: start;
+}
+
+.data-preview-flip-card {
+   width: 100%;
+   height: 100%;
+   perspective: 2000px;
+}
+
+.data-preview-flip-card .content {
+   position: relative;
+   width: 100%;
+   height: auto;
+   transition: transform 1s;
+   transform-style: preserve-3d;
+}
+
+.data-preview-flip-card:hover .content {
+   transform: rotateY( 180deg );
+   transition: transform 0.5s;
+}
+
+.data-preview-flip-card .content .front,
+.data-preview-flip-card .content .back {
+   text-align: right;
+   backface-visibility: hidden;
+   box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.data-preview-flip-card .content .front {
+   position: relative;
+   background: white;
+}
+
+.data-preview-flip-card .content .back {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   padding: 1em;
+   background: #11b9c5;
+   color: white;
+   transform: rotateY( 180deg );
+}
+
+/* ----------------------------- Front Contents ----------------------------- */
+
+.data-preview-flip-card .content .front .company-logo {
+   background: #11b9c5;
+   height: 110px;
+   padding: 10px 0 5px 0;
+   color: #fff;
+}
+
+.data-preview-flip-card .content .front .company-logo img {
+   height: 70px;
+   width: 70px;
+   border-radius: 50%;
+}
+
+.data-preview-flip-card .content .front .data {
+   margin: 1em;
+}
+
+.data-preview-flip-card .content .front .data * {
+   width: 100%;
+}
+
+.data-preview-flip-card .content .front .data #header {
+   font-size: 16px;
+   margin-bottom: 15px;
+   font-weight: bold;
+}
+
+.data-preview-flip-card .content .front .data table tr {
+   height: 30px;
+}
+
+.data-preview-flip-card .content .front .data table tr th {
+   font-weight: 200;
+   width: 75%;
+   text-align: right;
+}
+
+.data-preview-flip-card .content .front .data table tr td {
+   width: 25%;
+   text-align: right;
+}
+
+.data-preview-flip-card .content .front .data table tr .amount {
+   color: #00a2ae;
+   font-weight: bold;
+}
+
+.data-preview-flip-card .content .front .data table tr .amount .currency {
+   font-size: 12px;
+}
+
+/* ------------------------------ Back Contents ----------------------------- */
+
+.data-preview-flip-card .content .back .ic-name{
+   font-size: 16px;
+}
+
+.data-preview-flip-card .content .back .ic-description {
+   font-size: 14px;
+}
+
+/* ----------------------------- Prices Preview ----------------------------- */
+
+.prices-preview {
+   margin-top: 10px;
+   height: 100%;
+   width: 100%;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   gap: 5px;
+}
+
+.prices-preview #deductible, .prices-preview #total {
+   width: 100%;
+   height: 50px;
+   padding: 10px;
+   background: #11b9c5;
+   color: #fff;
+}
+
+.prices-preview table,
+.prices-preview table tr {
+   width: 100%;
+}
+
+.prices-preview table tr th {
+   width: 65%;
+   text-align: right;
+}
+
+.prices-preview table tr td {
+   width: 35%;
+   text-align: right;
+}
+
+.prices-preview .amount {
+   font-size: 20px;
+}
+
+.prices-preview .amount .currency {
+   font-size: 12px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 Order Data                                 */
+/* -------------------------------------------------------------------------- */
+
+.order-completion-container {
+   width: 100%;
+   height: auto;
+}
+
+.order-completion-container .data-box {
+   width: 100%;
+   background: #fff;
+   margin: 1em auto;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-completion-container .data-box:first-child {
+   margin-top: 0;
+}
+
+.order-completion-container .data-box#payment-box {
+   margin-bottom: 2em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Policy Details                               */
+/* -------------------------------------------------------------------------- */
+
+.order-completion-container .policy-details {
+   display: grid;
+   grid-template-columns: auto 250px;
+   height: 100%;
+}
+
+.vehicle-illustration {
+   position: relative;
+   background: #11b9c5;
+   border-top-right-radius: 50%;
+   border-bottom-right-radius: 50%;
+   box-shadow: 5px 0 8px 0 #00000023;
+}
+
+.vehicle-illustration img {
+   width: 80%;
+   height: 260px;
+   margin-left: 15px;
+}
+
+.vehicle-plate {
+   display: grid;
+   grid-template-areas:
+   &#x27;logo numar numar numar numar txtar txtar txtar txtar&#x27;
+   &#x27;logo numen numen numen numen txten txten txten txten&#x27;;
+}
+
+.vehicle-illustration .vehicle-plate {
+   position: absolute;
+   left: 18%;
+   top: 60%;
+   height: 30px;
+   width: 85px;
+   margin: auto;
+}
+
+.vehicle-plate.uploader-plate {
+   position: relative;
+   height: 45px;
+   width: 80%;
+   color: black;
+   pointer-events:none;
+}
+
+.vehicle-plate &gt; div {
+   font-size: 10px;
+   border: 1px solid #1d1d1d;
+   background-color: #fff;
+   text-align: center;
+}
+
+.plate-num-ar {
+   grid-area: numar;
+}
+
+.plate-txt-ar {
+   grid-area: txtar;
+   border-top-left-radius: 3px;
+}
+
+.plate-num-en {
+   grid-area: numen;
+}
+
+.plate-txt-en {
+   grid-area: txten;
+   border-bottom-left-radius: 3px;
+}
+
+.plate-logo {
+   grid-area: logo;
+   word-break: break-all;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+}
+
+.plate-logo span {
+   width: 8px;
+   font-size: 8px;
+   line-height: 1.3;
+}
+
+.order-completion-container .policy-details .data {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   height: 100%;
+   padding: 2em 2em 2em 0;
+}
+
+.order-completion-container .policy-details .data * {
+   width: 100%;
+}
+
+.order-completion-container .policy-details .data table {
+   width: 100%;
+}
+
+.order-completion-container .policy-details .data table tr {
+   height: 35px;
+}
+
+.order-completion-container .policy-details .data table tr th {
+   font-weight: bold;
+   width: 60%;
+}
+
+.order-completion-container .policy-details .data table tr td {
+   color: #4e4e4e;
+   width: 40%;
+}
+
+.order-completion-container .vehicle-info {
+   padding-right: 2em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                            Vehicle Images Upload                           */
+/* -------------------------------------------------------------------------- */
+
+.vehicle-images-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.vehicle-images-container .alert {
+   width: 100%;
+   margin: 10px;
+}
+
+.vehicle-img-uploader {
+   position: relative;
+   width: 150px;
+   height: 170px;
+   display: grid;
+   grid-template-rows: 135px 35px;
+   margin: 15px auto;
+   border: 1px solid #eeeeee;
+   color: #fff;
+   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.07);
+   z-index: 1;
+}
+
+.vehicle-img-uploader.invalid-upload {
+   box-shadow: 0 0 4px 3px #ff6969;
+   border: 0;
+}
+
+.vehicle-img-uploader .img {
+   background: #11b9c5;
+   font-size: 35px;
+}
+
+.vehicle-img-uploader img {
+   width: 100%;
+   height: 100%;
+}
+
+.vehicle-img-uploader .title {
+   background-color: #0b96a0;
+}
+
+.vehicle-img-uploader input {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   opacity: 0;
+   width: 150px;
+   height: 170px;
+   cursor: pointer;
+}
+
+.vehicle-img-uploader .add-icon {
+   position: absolute;
+   top: 0;
+   left: 5px;
+   color: #ffffff;
+   font-size: 16px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Checkout Buttons                              */
+/* -------------------------------------------------------------------------- */
+
+.checkout-btns {
+   width: 100%;
+}
+
+.checkout-btns button {
+   width: 150px;
+   height: 52px;
+   border-radius: 0;
+   background: #11b9c5;
+}
+
+.checkout-btns button:hover {
+   background: #0fa3ad;
+}
+
+.checkout-btns button:active {
+   background: #0b96a0;
+}
+
+.checkout-buy-btn {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.checkout-back-btn {
+   margin-left: auto;
+   margin-right: 0;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Payment                                  */
+/* -------------------------------------------------------------------------- */
+
+.payment-container {
+   display: grid;
+   grid-template-rows: auto auto auto;
+   margin: 10px 0;
+}
+
+.payment-wrapper {
+   /* display: grid;
+   grid-template-columns: 60% 40%; */
+   width: 100%;
+}
+
+.iban-container {
+   display: grid;
+   grid-template-columns: 63% 37%;
+   width: 100%;
+   margin-bottom: 4em;
+}
+
+.iban-wrapper {
+   width: 100%;
+}
+
+.iban-wrapper span {
+   margin: 5px;
+   margin-left: 0;
+   font-size: 16px;
+}
+
+.selector-form-wrapper {
+   /* display: grid;
+   grid-template-columns: 200px auto; */
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 1150px) {
+
+   .prices-preview table tr th {
+      font-size: 13px;
+   }
+
+   .policy-details {
+      font-size: 12px;
+   }
+
+   .payment-container {
+      gap: 10px;
+   }
+
+   .payment-wrapper {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+      gap: 10px;
+   }
+
+   .selector-form-wrapper {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+      gap: 10px;
+   }
+
+   .iban-container {
+      grid-template-columns: 100%;
+   }
+
+}
+
+@media (max-width: 858px) {
+
+   .order-review-container {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+      gap: 1em;
+      padding: 2em 1em;
+   }
+
+   .order-preview-container {
+      /* Place it on top */
+      grid-row: 2;
+      /* Not Sticky */
+      position: initial;
+   }
+
+}
+
+@media (max-width: 590px) {
+
+   .prices-preview table tr th {
+      font-size: 14px;
+   }
+
+   .policy-details {
+      font-size: 14px;
+   }
+
+   .order-completion-container .policy-details {
+      grid-template-columns: 100%;
+      grid-template-rows: .75fr 1fr;
+   }
+
+   .order-completion-container .policy-details .vehicle-illustration {
+      grid-row: 1;
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      box-shadow: 0 5px 8px 0 #00000023;
+   }
+
+   .vehicle-illustration .vehicle-plate {
+      left: 32%;
+      top: 65%;
+      height: 35px;
+      width: 105px;
+   }
+   
+   .order-completion-container .policy-details .data {
+      grid-row: 2;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .order-completion-container .vehicle-info {
+      padding-right: 0;
+   }
+
+   .checkout-btns button {
+      width: 45%;
+   }
+
+}
+
+@media (max-width: 410px) {
+   .card-container {
+      display: none;
+   }
+
+   .prices-preview .amount {
+      font-size: 16px;
+   }
+   
+   .prices-preview .amount .currency {
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 340px) {
+   .order-completion-container .policy-details {
+      grid-template-rows: .6fr 1fr;
+   }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="order-review-container">    <!-- ----------------------------------------------------------------------- -->    <!--                           Continuation Modal                            -->    <!-- ----------------------------------------------------------------------- -->    <ng-template #continuationModal let-modal>        <!-- Header -->        <div class="modal-header">            <h4 class="modal-title" id="modal-basic-title">{{ \'Checkout.ContinuationModal.ContinueLaterQuestion\' | translate }}</h4>            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">                <span aria-hidden="true">&times;</span>            </button>        </div>        <!-- Body -->        <div class="modal-body cont-modal-body flex-column">            <i class="ion-md-alert flex-centered"></i>            <hr>            <p class="flex-centered">                {{ \'Checkout.ContinuationModal.ReferenceIdText\' | translate }} <b>{{ orderedQuote?.quoteInfo.quoteReferenceId }}</b>            </p>            <p class="flex-centered">                {{ \'Checkout.ContinuationModal.BuyBeforeText\' | translate }} <b> {{ orderedQuote.quoteInfo.quotationEndDate | date: "EEEE, MMMM d, y" : \'\' : lang }}</b>            </p>        </div>        <!-- Footer -->        <div class="modal-footer">            <button (click)="saveOrderProgress()" class="primary-btn">                <span>{{ \'App.AgreeText\' | translate }}</span>                <span *ngIf="isSavingOrder" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>            </button>            <button (click)="modal.dismiss()" class="primary-btn danger">                <span>{{ \'App.CancelText\' | translate }}</span>            </button>        </div>    </ng-template>    <!-- ----------------------------------------------------------------------- -->    <!--                  Order Completion (Right column [ar])                   -->    <!-- ----------------------------------------------------------------------- -->    <div class="order-completion-container flex-column">        <!-- Policy details preview -->        <div [@PolicyDetailsAnim] class="policy-details data-box">            <!-- Data Details -->            <div class="data">                <!-- Insurance Info -->                <div class="flex-container">                    <table class="flex-centered">                        <tr>                            <th>{{ \'Checkout.PolicyDetails.PolicyStart\' | translate }}:</th>                            <td>{{ orderedQuote.quoteInfo.quotationStartDate | date: "dd/MM/yyyy" : \'\' : lang }}</td>                        </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.ProductType\' | translate }}:</th>                            <td>{{ lang === \'ar\' ? orderedQuote.quoteInfo.product.nameAr : orderedQuote.quoteInfo.product.name }}</td>                        </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.IdentityNumber\' | translate }}:</th>                            <td>{{  orderedQuote.insuredInfo.identityNumber }}</td>                        </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.FullName\' | translate }}:</th>                            <td *ngIf="lang === \'en\'">{{  orderedQuote.insuredInfo.firstName }} {{  orderedQuote.insuredInfo.middleName }} {{  orderedQuote.insuredInfo.lastName }}</td>                            <td *ngIf="lang === \'ar\'">{{  orderedQuote.insuredInfo.firstNameAr }} {{  orderedQuote.insuredInfo.middleNameAr }} {{  orderedQuote.insuredInfo.lastNameAr }}</td>                        </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.Birthdate\' | translate }}:</th>                            <td>{{  orderedQuote.insuredInfo.birthDate }}</td>                        </tr>                    </table>                </div>                <!-- Vehicle Info -->                <div class="vehicle-info flex-container">                    <table class="flex-centered">                        <tr>                            <th>{{ \'Checkout.PolicyDetails.SequenceNum\' | translate }}:</th>                            <td>{{  orderedQuote.vehicleInfo.vehicleId }}</td>                        </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.VehicleDescription\' | translate }}:</th>                            <td>{{  orderedQuote.vehicleInfo.model }} {{  orderedQuote.vehicleInfo.plateNumber }}</td>                        </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.VehicleMajorColor \' | translate }}:</th>                            <td>{{  orderedQuote.vehicleInfo.colorAr  }}                         </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.DrivingCity\' | translate }}:</th>                            <td>{{ lang === \'ar\' ? orderedQuote.vehicleInfo.drivingCityAr : orderedQuote.vehicleInfo.drivingCity }}</td>                        </tr>                        <tr>                            <th>{{ \'Checkout.PolicyDetails.RepairsLocation\' | translate }}:</th>                            <td>{{ lang === \'ar\' ? orderedQuote.vehicleInfo.repairMethodAr : orderedQuote.vehicleInfo.repairMethod }}</td>                        </tr>                    </table>                </div>            </div>            <!-- Vehicle Illustration -->            <div class="vehicle-illustration flex-container">                <img src="../../../assets/images/Vehicle-Front-lg.svg" class="flex-centered" id="illustration-img" alt="Vehicle Image">                <div class="vehicle-plate review-plate noselect" id="illustration-plate">                    <div class="plate-num-ar">                        {{orderedQuote.vehicleInfo.plateNumber}}                    </div>                    <div class="plate-txt-ar">                        {{orderedQuote.vehicleInfo.plateFirstLetterAr}} {{orderedQuote.vehicleInfo.plateSecondLetterAr}} {{orderedQuote.vehicleInfo.plateThirdLetterAr}}                    </div>                    <div class="plate-num-en">                        {{orderedQuote.vehicleInfo.plateNumber}}                    </div>                    <div class="plate-txt-en">                        {{orderedQuote.vehicleInfo.plateFirstLetter}} {{orderedQuote.vehicleInfo.plateSecondLetter}} {{orderedQuote.vehicleInfo.plateThirdLetter}}                    </div>                    <div class="plate-logo flex-container">                        <span class="flex-centered">KSA</span>                    </div>                </div>            </div>        </div>        <!-- Vehicle Drivers -->        <div [@VehicleDriversAnim] class="data-box accordion-box">            <div class="header">                <div class="title flex-container">                    <div (click)="toggleAccordion(\'Drivers\')" id="user-data-wrapper" class="bouncy noselect">                        <span>{{ \'Checkout.Drivers.VehicleDrivers\' | translate }}</span>                    </div>                </div>                <div class="toggler flex-container bouncy">                    <a (click)="toggleAccordion(\'Drivers\')" class="flex-centered body-view-link secondary-lime" href="javascript:void(0)">                        <i [ngClass]="accordionsState.isDriversDisplayed ? \'ion-md-remove-circle\' : \'ion-md-add-circle\'"></i>                    </a>                </div>            </div>            <div class="content flex-container" [ngClass]="accordionsState.isDriversDisplayed ? \'visible\' : \'hidden\'">                <div class="content-container flex-centered" style="overflow: hidden;">                                        <table class="table table-borderless">                        <thead>                            <tr>                                <th>{{ \'QuotationRequestForms.DriverList.NationalIDLabel\' | translate }}</th>                                <th>{{ \'Misc.FullName\' | translate }}</th>                                <th>{{ \'QuotationRequestForms.DriverInfo.Birth\' | translate }}</th>                                <th>{{ \'Checkout.Drivers.DrivingPercentage\' | translate }}</th>                            </tr>                        </thead>                        <tbody>                            <tr *ngFor="let driver of orderedQuote.vehicleDrivers">                                <td>{{ driver.identityNumber }}</td>                                <td>{{ lang === \'ar\' ? driver.fullNameAr : driver.fullName }}</td>                                <td>{{ driver.birthDate }}</td>                                <td>{{ driver.drivingPercentageId }}%</td>                            </tr>                        </tbody>                    </table>                                    </div>            </div>        </div>        <!-- Vehicle Images Upload (for comprehensive insurance type) -->        <div *ngIf="orderedQuote.quoteInfo.product.productTypeId == 2" [@ImagesUploadAnim] class="data-box accordion-box">            <!-- Header (title + toggle button) -->            <div class="header">                <div class="title flex-container">                    <div (click)="toggleAccordion(\'ImageUpload\')" id="user-data-wrapper" class="bouncy noselect">                        <span>{{ \'Checkout.Attachments.VehicleImages\' | translate }}</span>                    </div>                </div>                <div class="toggler flex-container bouncy">                    <a (click)="toggleAccordion(\'ImageUpload\')" class="flex-centered body-view-link secondary-lime" href="javascript:void(0)">                        <i [ngClass]="accordionsState.isImageUploadDisplayed ? \'ion-md-remove-circle\' : \'ion-md-add-circle\'"></i>                    </a>                </div>            </div>            <!-- Content (uploaders + checkbox) -->            <div class="content flex-column" [ngClass]="accordionsState.isImageUploadDisplayed ? \'visible\' : \'hidden\'">                                <!-- Image Uploaders -->                <div class="content-container vehicle-images-container flex-centered flex-container">                                              <!-- Uploaders -->                    <div *ngFor="let orderFile of orderFiles" class="vehicle-img-uploader bouncy" [class.invalid-upload]="orderFile.isInvalidFile">                        <!-- Plus Icon -->                        <div class="add-icon">                            <i class="ion-md-add"></i>                        </div>                        <!-- File Input -->                        <input (click)="setActiveAttachmentUpload(orderFile)" type="file" accept="image/*" ng2FileSelect [uploader]="uploader" id="file_upload" #file/>                        <!-- Image / Icon / Progress -->                        <div class="img flex-container">                            <img *ngIf="!orderFile.isUploading && !orderFile.isUploaded && !(orderFile.title === \'Plate number\')" [src]="orderFile.imageUrl" alt="Vehicle Image" class="flex-centered">                            <span *ngIf="orderFile.isUploading" class="flex-centered">{{ orderFile.uploadProgress }}%</span>                            <img *ngIf="orderFile.isUploaded" [src]="orderFile.imageUrl" alt="">                            <div *ngIf="orderFile.title === \'Plate number\' && !orderFile.isUploading && !orderFile.isUploaded" class="vehicle-plate review-plate uploader-plate noselect flex-centered">                                <div class="plate-num-ar">                                    {{orderedQuote.vehicleInfo.plateNumber}}                                </div>                                <div class="plate-txt-ar">                                    {{orderedQuote.vehicleInfo.plateFirstLetterAr}} {{orderedQuote.vehicleInfo.plateSecondLetterAr}} {{orderedQuote.vehicleInfo.plateThirdLetterAr}}                                </div>                                <div class="plate-num-en">                                    {{orderedQuote.vehicleInfo.plateNumber}}                                </div>                                <div class="plate-txt-en">                                    {{orderedQuote.vehicleInfo.plateFirstLetter}} {{orderedQuote.vehicleInfo.plateSecondLetter}} {{orderedQuote.vehicleInfo.plateThirdLetter}}                                </div>                                <div class="plate-logo flex-container">                                    <span class="flex-centered">KSA</span>                                </div>                            </div>                        </div>                        <!-- Image Title -->                        <div class="title flex-container">                            <span class="flex-centered">                                {{ lang ===\'ar\' ? orderFile.titleAr : orderFile.title }}                            </span>                        </div>                    </div>                    <!-- Invalid File Alert -->                    <ngb-alert *ngIf="isInvalidFileAlertDisplayed" (close)="isInvalidFileAlertDisplayed = false" class="alert alert-danger flex-container">                        <i class="ion-md-information-circle-outline flex-centered" style="margin: auto 10px; font-size: 24px;"></i>                        <span class="flex-centered" style="margin: auto 0;">                            الملف المرفق غير مسموح به, الرجاء تحميل صور فقط من النوع PNG, JPG او JPEG                        </span>                    </ngb-alert>                </div>                <!-- Footer (continue later checkbox) -->                <div class="footer flex-column">                    <div class="flex-centered continuation-cbx" style="margin-right: 10px; width: 100%;">                        <!-- Checkbox -->                        <input (change)="openContinuationModal(continuationModal)" [checked]="isContinuationModalDisplayed" type="checkbox" id="order-later-cbx" class="cbx" style="display: none;">                        <label for="order-later-cbx" class="check noselect flex-container">                            <svg width="18px" height="18px" viewBox="0 0 20 18" style="width: 30px;"><path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path><polyline points="1 9 7 14 15 4"></polyline></svg>                            <span>{{ \'Checkout.Attachments.ContinueLaterTxt\' | translate }}</span>                        </label>                    </div>                </div>                            </div>        </div>        <!-- Order Preview (mobile flip Card) -->        <div [@OrderPreviewAnim] *ngIf="isOnMidScreen" class="order-preview-container">            <!-- Order Data Preview (Flip card sides) ---------------------------------------------->            <!-------------------------------------------------------------------------------------->            <div class="data-preview-flip-card">                <div class="content">                                        <!-- Front -->                    <div class="front flex-column">                                                <!-- IC Logo -->                        <div class="company-logo flex-column">                            <img [src]="orderedQuote.quoteInfo.insuranceCompany.logo || \'https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg\'" alt="Company Logo" class="flex-centered">                            <span class="flex-centered">{{ orderedQuote.quoteInfo.insuranceCompany.name }}</span>                        </div>                        <!-- Data -->                        <div class="data flex-column">                            <!-- Costs -->                            <div class="costs flex-column">                                <span id="header">{{ \'Checkout.CostsDetails\' | translate }}</span>                                <table>                                    <!-- Policy Price -->                                    <tr>                                        <th>{{ \'Checkout.PolicyPrice\' | translate }}</th>                                        <td class="amount">                                            <span>                                                {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : \'1.2-2\' }}                                                <small class="currency">{{ \'App.Currency\' | translate }}</small>                                            </span>                                        </td>                                    </tr>                                    <!-- Which includes text -->                                    <tr>                                        <th><small><b>{{ \'Misc.Includes\' | translate }}</b></small></th>                                        <td></td>                                    </tr>                                    <!-- Premium Breakdowns -->                                    <tr *ngFor="let pmd of orderedQuote.quoteInfo.product.deductibles.premiumBreakdowns">                                        <th>{{ lang === \'ar\' ? pmd.nameAr : pmd.name }}</th>                                        <td class="amount">                                            <span>                                                {{ pmd.breakdownAmount | number : \'1.2-2\' }}                                                <small class="currency">{{ \'App.Currency\' | translate }}</small>                                            </span>                                        </td>                                    </tr>                                    <!-- Discounts -->                                    <tr *ngFor="let discount of orderedQuote.quoteInfo.product.deductibles.discounts">                                        <th>                                            <div class="quote-detail-item-title">                                                <span> {{ lang==\'ar\' ? discount.nameAr : discount.name }} </span>                                            </div>                                        </th>                                        <td class="amount">                                            <span>                                                {{ discount.discountAmount | number : \'1.2-2\' }}                                                <small class="currency">{{ \'App.Currency\' | translate }}</small>                                            </span>                                        </td>                                    </tr>                                                                    </table>                            </div>                        </div>                    </div>                    <!-- Back -->                    <div class="back flex-column">                        <span class="ic-name">{{ orderedQuote.quoteInfo.insuranceCompany.name }}</span>                        <p class="ic-description">{{ orderedQuote.quoteInfo.insuranceCompany.description }}</p>                    </div>                </div>            </div>            <!-- Order Prices Preview (Bottom prices boxes) ---------------------------------------->            <!-------------------------------------------------------------------------------------->            <div class="prices-preview">                <div id="deductible">                    <table>                        <tr>                            <th>{{ \'Misc.LiabilityCost\' | translate }}</th>                            <td class="amount">                                <span>                                    {{ orderedQuote.quoteInfo.product.deductibles.deductibleValue | number : \'1.2-2\' }}                                    <small class="currency">{{ \'App.Currency\' | translate }}</small>                                </span>                            </td>                        </tr>                    </table>                </div>                    <div id="total">                    <table>                        <tr>                            <th>{{ \'Misc.TotalCost\' | translate }}</th>                            <td class="amount">                                <span>                                    {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : \'1.2-2\' }}                                    <small class="currency">{{ \'App.Currency\' | translate }}</small>                                </span>                            </td>                        </tr>                    </table>                </div>            </div>        </div>        <!-- Payment -->        <div [@PaymentAnim] class="data-box accordion-box" id="payment-box" style="z-index: 2;">                        <div class="header">                <div class="title flex-container">                    <div (click)="toggleAccordion(\'Payment\')" id="user-data-wrapper" class="bouncy noselect">                        <span>{{ \'Checkout.Payment.Payment\' | translate }}</span>                    </div>                </div>                <div class="toggler flex-container bouncy">                    <a (click)="toggleAccordion(\'Payment\')" class="flex-centered body-view-link secondary-lime" href="javascript:void(0)">                        <i [ngClass]="accordionsState.isPaymentDisplayed ? \'ion-md-remove-circle\' : \'ion-md-add-circle\'"></i>                    </a>                </div>            </div>            <div class="content" [ngClass]="accordionsState.isPaymentDisplayed ? \'visible\' : \'hidden\'">                <div class="content-container payment-container">                    <!-- Disclaimer -->                    <div class="alert alert-info flex-container" role="alert">                        <i class="ion-md-information-circle-outline flex-centered" style="margin: auto 10px; font-size: 24px;"></i>                        <span class="flex-centered" style="margin: auto 0;">{{ \'Checkout.Payment.IbanNote\' | translate }}</span>                    </div>                    <!-- IBAN -->                    <div class="iban-container flex-container">                        <!-- IBAN Input -->                        <div class="iban-wrapper flex-container flex-centered">                            <input type="text" name="iban" placeholder="IBAN" class="form-control" dir="ltr"/>                            <span>SA</span>                        </div>                        <!-- Empty Spot -->                        <div></div>                    </div>                    <!-- Payment Accordions/Forms -->                    <div class="payment-wrapper">                        <div class="selector-form-wrapper">                            <!-- Card Payment -->                            <div class="accordion-box light">                                <div class="header">                                    <div class="title flex-container">                                        <div (click)="toggleAccordion(\'Card\')" id="user-data-wrapper" class="bouncy noselect">                                            <img src="../../../assets/images/payment-cards.png" alt="Card" style="width: 170px;">                                        </div>                                    </div>                                    <div class="toggler flex-container bouncy">                                        <a (click)="toggleAccordion(\'Card\')" class="flex-centered body-view-link secondary-lime" href="javascript:void(0)">                                            <i [ngClass]="accordionsState.isCardPaymentDisplayed ? \'ion-md-arrow-dropup\' : \'ion-md-arrow-dropdown\'"></i>                                        </a>                                    </div>                                </div>                                <div class="content" [ngClass]="accordionsState.isCardPaymentDisplayed ? \'visible\' : \'hidden\'">                                    <div *ngIf="isCardPaymentFormVisible" class="content-container flex-centered flex-container">                                        <form [action]="paymentResultPageUrl" class="paymentWidgets flex-centered" data-brands="VISA MASTER MADA" method="POST"></form>                                    </div>                                </div>                            </div>                            <!-- Sadad Payment -->                            <div class="accordion-box light">                                <div class="header">                                    <div class="title flex-container">                                        <div (click)="toggleAccordion(\'Sadad\')" id="user-data-wrapper" class="bouncy noselect">                                            <img src="../../../assets/images/payment-sadad.png" alt="Sadad" style="width: 80px;">                                        </div>                                    </div>                                    <div class="toggler flex-container bouncy">                                        <a (click)="toggleAccordion(\'Sadad\')" class="flex-centered body-view-link secondary-lime" href="javascript:void(0)">                                            <i [ngClass]="accordionsState.isSadadPaymentDisplayed ? \'ion-md-arrow-dropup\' : \'ion-md-arrow-dropdown\'"></i>                                        </a>                                    </div>                                </div>                                <div class="content" [ngClass]="accordionsState.isSadadPaymentDisplayed ? \'visible\' : \'hidden\'">                                    <div class="content-container flex-centered flex-container">                                        SADAD                                    </div>                                </div>                            </div>                        </div>                    </div>                </div>            </div>        </div>        <!-- Continue Later Checkbox (For incomprehensive insurance, since image upload isn\'t included for it) -->        <div *ngIf="!(orderedQuote.quoteInfo.product.productTypeId == 2)" class="alert alert-info" role="alert">            <div class="flex-centered continuation-cbx" style="margin-right: 10px; width: 100%;">                <input (change)="openContinuationModal(continuationModal)" [checked]="isContinuationModalDisplayed" type="checkbox" id="order-later-cbx" class="cbx" style="display: none;">                <label for="order-later-cbx" class="check noselect flex-container">                    <svg width="18px" height="18px" viewBox="0 0 20 18" style="width: 30px;"><path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path><polyline points="1 9 7 14 15 4"></polyline></svg>                    <span>{{ \'Checkout.Attachments.ContinueLaterTxt\' | translate }}</span>                </label>            </div>        </div>        <!-- Checkout Buttons -->        <div class="checkout-btns flex-container">            <button routerLink="/quotes" class="primary-btn info checkout-back-btn">                <span>{{ \'App.BackText\' | translate }}</span>            </button>            <button class="primary-btn checkout-buy-btn">                <span>{{ \'App.BuyText\' | translate }}</span>            </button>        </div>    </div>    <!-- ----------------------------------------------------------------------- -->    <!--                        Order Preview (Flip Card)                        -->    <!-- ----------------------------------------------------------------------- -->    <div *ngIf="!isOnMidScreen" class="order-preview-container">        <!-- Order Data Preview (Flip card sides) ---------------------------------------------->        <!-------------------------------------------------------------------------------------->        <div class="data-preview-flip-card">            <div class="content">                                <!-- Front -->                <div class="front flex-column">                                        <!-- IC Logo -->                    <div class="company-logo flex-column">                        <img [src]="orderedQuote.quoteInfo.insuranceCompany.logo || \'https://image.shutterstock.com/image-vector/car-shield-icon-260nw-1024735741.jpg\'" alt="Company Logo" class="flex-centered">                        <span class="flex-centered">{{orderedQuote.quoteInfo.insuranceCompany.name}}</span>                    </div>                    <!-- Data -->                    <div class="data flex-column">                        <!-- Costs -->                        <div class="costs flex-column">                            <span id="header">{{ \'Checkout.CostsDetails\' | translate }}</span>                            <table>                                <!-- Policy Price -->                                <tr>                                    <th>{{ \'Checkout.PolicyPrice\' | translate }}</th>                                    <td class="amount">                                        <span>                                            {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : \'1.2-2\' }}                                            <small class="currency">{{ \'App.Currency\' | translate }}</small>                                        </span>                                    </td>                                </tr>                                <!-- Which includes text -->                                <tr>                                    <th><small><b>{{ \'Misc.Includes\' | translate }}</b></small></th>                                    <td></td>                                </tr>                                <!-- Premium Breakdowns -->                                <tr *ngFor="let pmd of orderedQuote.quoteInfo.product.deductibles.premiumBreakdowns">                                    <th>{{ lang === \'ar\' ? pmd.nameAr : pmd.name }}</th>                                    <td class="amount">                                        <span>                                            {{ pmd.breakdownAmount | number : \'1.2-2\' }}                                            <small class="currency">{{ \'App.Currency\' | translate }}</small>                                        </span>                                    </td>                                </tr>                                <!-- Discounts -->                                <tr *ngFor="let discount of orderedQuote.quoteInfo.product.deductibles.discounts">                                    <th>                                        <div class="quote-detail-item-title">                                            <span> {{ lang==\'ar\' ? discount.nameAr : discount.name }} </span>                                        </div>                                    </th>                                    <td class="amount">                                        <span>                                            {{ discount.discountAmount | number : \'1.2-2\' }}                                            <small class="currency">{{ \'App.Currency\' | translate }}</small>                                        </span>                                    </td>                                </tr>                                                            </table>                        </div>                    </div>                </div>                <!-- Back -->                <div class="back flex-column">                    <span class="ic-name">{{ orderedQuote.quoteInfo.insuranceCompany.name }}</span>                    <p class="ic-description">{{ orderedQuote.quoteInfo.insuranceCompany.description }}</p>                </div>            </div>        </div>        <!-- Order Prices Preview (Bottom prices boxes) ---------------------------------------->        <!-------------------------------------------------------------------------------------->        <div class="prices-preview">            <div id="deductible">                <table>                    <tr>                        <th>{{ \'Misc.LiabilityCost\' | translate }}</th>                        <td class="amount">                            <span>                                {{ orderedQuote.quoteInfo.product.deductibles.deductibleValue | number : \'1.2-2\' }}                                <small class="currency">{{ \'App.Currency\' | translate }}</small>                            </span>                        </td>                    </tr>                </table>            </div>            <div id="total">                <table>                    <tr>                        <th>{{ \'Misc.TotalCost\' | translate }}</th>                        <td class="amount">                            <span>                                {{ orderedQuote.quoteInfo.product.deductibles.totalPremium | number : \'1.2-2\' }}                                <small class="currency">{{ \'App.Currency\' | translate }}</small>                            </span>                        </td>                    </tr>                </table>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'OrderReviewComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'OrderReviewComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

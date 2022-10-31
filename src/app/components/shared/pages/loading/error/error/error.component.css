@@ -1,0 +1,29 @@
+.error-container {
+    height: 90vh;
+    background: url("../../../../../../../assets/img/bg_shape_3.png");
+    background-repeat: repeat-y;
+ }
+ 
+ .error-icon {
+    font-size: 10vw;
+    color: #225fe4;
+    transform: scale(1.5);
+ }
+ 
+ .error-title {
+    font-size: 28px;
+    font-weight: bold;
+ }
+ 
+ .error-message {
+    margin: 10px auto;
+    font-size: 16px;
+ }
+ 
+ .error-message i {
+    color: #e74757;
+    font-size: 24px;
+    margin: auto 8px;
+ }
+ 
+ 

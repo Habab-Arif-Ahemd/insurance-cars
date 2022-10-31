@@ -1,0 +1,58 @@
+<div class="boxed-item striped-top padded">
+
+    <!-- Header -->
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">
+            {{'QuotationRequestForms.ClientInfoModal.Title'| translate}}
+        </h4>
+
+    </div>
+
+    <!-- Body -->
+    <div class="modal-body cont-modal-body flex-column">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                            confirm  Identity form                              -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <form [formGroup]="confirmIdentityForm">
+            <!-- Email Input -->
+            <label class="pt-2">{{'QuotationRequestForms.ClientInfoModal.Email'| translate}}</label>
+            <input formControlName="email" type="email" class="form-control" />
+            <div *ngIf="submitted && f.email.errors">
+                <div class="v-meassage" *ngIf="f.email.errors.required">
+                    {{ 'Errors.EmptyInputField' | translate }}
+                </div>
+                <div class="v-meassage" *ngIf="f.email.errors.pattern">
+                    {{ 'Errors.InvalidEmail' | translate }}
+                </div>
+            </div>
+
+
+            <!-- Phone Input -->
+            <label class="pt-2">{{'QuotationRequestForms.ClientInfoModal.Phone'| translate}}</label>
+            <div class="phone-ipt-container">
+                <div class="phone-key-ipt form-control" disabled>+966</div>
+                <input formControlName="phoneNumber" [placeholder]="('Auth.PhoneNumberText' | translate)"
+                   class="phone-ipt form-control" maxlength="9"
+                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" />
+             </div>
+
+            <div *ngIf="submitted && f.phoneNumber.errors">
+                <div class="v-meassage" *ngIf="f.phoneNumber.errors.required">
+                    {{ 'Errors.EmptyInputField' | translate }}</div>
+                <div class="v-meassage" *ngIf="f.phoneNumber.errors.minlength">
+                    {{ 'Errors.IncompleteInputField' | translate }}</div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="modal-footer">
+        <button class="primary-btn" (click)="submitConfirmEmail()">
+            <span>{{'QuotationRequestForms.ClientInfoModal.Continue'| translate}}</span>
+        </button>
+        <button class="primary-btn danger" (click)="backToForms.emit()">
+            <span>{{'QuotationRequestForms.ClientInfoModal.BackBtn' | translate}}</span>
+        </button>
+    </div>
+</div>

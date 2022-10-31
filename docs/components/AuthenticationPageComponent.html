@@ -1,0 +1,3951 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AuthenticationPageComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/Auth/auth.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-auth</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./auth.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./auth.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#errorMessage">errorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#fieldTextType">fieldTextType</a>
+                            </li>
+                            <li>
+                                <a href="#isErrorAlertVisible">isErrorAlertVisible</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#isPasswordResetVisible">isPasswordResetVisible</a>
+                            </li>
+                            <li>
+                                <a href="#isRegistrationVisible">isRegistrationVisible</a>
+                            </li>
+                            <li>
+                                <a href="#isRememberMeChecked">isRememberMeChecked</a>
+                            </li>
+                            <li>
+                                <a href="#isRequestingPasswordReset">isRequestingPasswordReset</a>
+                            </li>
+                            <li>
+                                <a href="#isResending">isResending</a>
+                            </li>
+                            <li>
+                                <a href="#isRightPanelActive">isRightPanelActive</a>
+                            </li>
+                            <li>
+                                <a href="#isSubmitting">isSubmitting</a>
+                            </li>
+                            <li>
+                                <a href="#isSuccessAlertVisible">isSuccessAlertVisible</a>
+                            </li>
+                            <li>
+                                <a href="#isVerificationVisible">isVerificationVisible</a>
+                            </li>
+                            <li>
+                                <a href="#loginFormGroup">loginFormGroup</a>
+                            </li>
+                            <li>
+                                <a href="#passwordResetFormGroup">passwordResetFormGroup</a>
+                            </li>
+                            <li>
+                                <a href="#registrationFormGroup">registrationFormGroup</a>
+                            </li>
+                            <li>
+                                <a href="#returnUrl">returnUrl</a>
+                            </li>
+                            <li>
+                                <a href="#selectedField">selectedField</a>
+                            </li>
+                            <li>
+                                <a href="#successMessage">successMessage</a>
+                            </li>
+                            <li>
+                                <a href="#userPasswordResetData">userPasswordResetData</a>
+                            </li>
+                            <li>
+                                <a href="#validationErrors">validationErrors</a>
+                            </li>
+                            <li>
+                                <a href="#verificationCode">verificationCode</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkResumedQuoteSelect">checkResumedQuoteSelect</a>
+                            </li>
+                            <li>
+                                <a href="#clearVerificationData">clearVerificationData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#displayAlert">displayAlert</a>
+                            </li>
+                            <li>
+                                <a href="#initActiveFormState">initActiveFormState</a>
+                            </li>
+                            <li>
+                                <a href="#initForms">initForms</a>
+                            </li>
+                            <li>
+                                <a href="#issuePasswordReset">issuePasswordReset</a>
+                            </li>
+                            <li>
+                                <a href="#login">login</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#register">register</a>
+                            </li>
+                            <li>
+                                <a href="#reissuePasswordReset">reissuePasswordReset</a>
+                            </li>
+                            <li>
+                                <a href="#resendVerficationCode">resendVerficationCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#resetForms">resetForms</a>
+                            </li>
+                            <li>
+                                <a href="#resetPassword">resetPassword</a>
+                            </li>
+                            <li>
+                                <a href="#saveVerificationData">saveVerificationData</a>
+                            </li>
+                            <li>
+                                <a href="#sendVerificationCode">sendVerificationCode</a>
+                            </li>
+                            <li>
+                                <a href="#toggleFieldTextType">toggleFieldTextType</a>
+                            </li>
+                            <li>
+                                <a href="#toggleLoginForm">toggleLoginForm</a>
+                            </li>
+                            <li>
+                                <a href="#togglePasswordResetForm">togglePasswordResetForm</a>
+                            </li>
+                            <li>
+                                <a href="#toggleRegistrationForm">toggleRegistrationForm</a>
+                            </li>
+                            <li>
+                                <a href="#toggleRightPanel">toggleRightPanel</a>
+                            </li>
+                            <li>
+                                <a href="#toggleVerificationForm">toggleVerificationForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#authSource">authSource</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#loginForm">loginForm</a>
+                                </li>
+                                <li>
+                                    <a href="#registrationForm">registrationForm</a>
+                                </li>
+                                <li>
+                                    <a href="#passwordResetForm">passwordResetForm</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(authService: <a href="../injectables/AuthService.html">AuthService</a>, userService: <a href="../injectables/UserService.html">UserService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, activedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/components/Auth/auth.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="authSource"></a>
+                        <b>authSource</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#AuthSource" target="_self" >AuthSource</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/Auth/auth.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkResumedQuoteSelect"></a>
+                    <span class="name">
+                        <b>
+                            checkResumedQuoteSelect
+                        </b>
+                        <a href="#checkResumedQuoteSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkResumedQuoteSelect()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="718"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:718</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearVerificationData"></a>
+                    <span class="name">
+                        <b>
+                            clearVerificationData
+                        </b>
+                        <a href="#clearVerificationData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearVerificationData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="710"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:710</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayAlert"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            displayAlert
+                        </b>
+                        <a href="#displayAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>displayAlert(alertType: "ErrorAlert" | "SuccessAlert", apiResponse: <a href="../interfaces/ApiResponse.html">ApiResponse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="317"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:317</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Displays an alert with the retreived message(s) from an API response</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>alertType</td>
+                                    <td>
+                                            <code>&quot;ErrorAlert&quot; | &quot;SuccessAlert&quot;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Specifies the alert type of Success or Error</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>apiResponse</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiResponse.html" target="_self" >ApiResponse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initActiveFormState"></a>
+                    <span class="name">
+                        <b>
+                            initActiveFormState
+                        </b>
+                        <a href="#initActiveFormState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initActiveFormState()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes the opened authentication window side based on url or route</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initForms"></a>
+                    <span class="name">
+                        <b>
+                            initForms
+                        </b>
+                        <a href="#initForms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initForms()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes form groups and the controls validations</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="issuePasswordReset"></a>
+                    <span class="name">
+                        <b>
+                            issuePasswordReset
+                        </b>
+                        <a href="#issuePasswordReset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>issuePasswordReset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="565"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:565</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                        <b>
+                            login
+                        </b>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>login()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="373"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:373</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Authenticates user</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="register"></a>
+                    <span class="name">
+                        <b>
+                            register
+                        </b>
+                        <a href="#register"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>register()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="441"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:441</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sends a registration request with the entered registration data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reissuePasswordReset"></a>
+                    <span class="name">
+                        <b>
+                            reissuePasswordReset
+                        </b>
+                        <a href="#reissuePasswordReset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reissuePasswordReset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="559"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:559</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resendVerficationCode"></a>
+                    <span class="name">
+                        <b>
+                            resendVerficationCode
+                        </b>
+                        <a href="#resendVerficationCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resendVerficationCode()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="521"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:521</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetForms"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            resetForms
+                        </b>
+                        <a href="#resetForms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetForms()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="303"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:303</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Resets all of the authentication forms</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetPassword"></a>
+                    <span class="name">
+                        <b>
+                            resetPassword
+                        </b>
+                        <a href="#resetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetPassword()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="625"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:625</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveVerificationData"></a>
+                    <span class="name">
+                        <b>
+                            saveVerificationData
+                        </b>
+                        <a href="#saveVerificationData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveVerificationData(res: <a href="../interfaces/RegistrationResponse.html">RegistrationResponse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="702"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:702</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>res</td>
+                                    <td>
+                                                <code><a href="../interfaces/RegistrationResponse.html" target="_self" >RegistrationResponse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendVerificationCode"></a>
+                    <span class="name">
+                        <b>
+                            sendVerificationCode
+                        </b>
+                        <a href="#sendVerificationCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendVerificationCode()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="489"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:489</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleFieldTextType"></a>
+                    <span class="name">
+                        <b>
+                            toggleFieldTextType
+                        </b>
+                        <a href="#toggleFieldTextType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleFieldTextType()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="293"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:293</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Toggles the password fields type and eye icon</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleLoginForm"></a>
+                    <span class="name">
+                        <b>
+                            toggleLoginForm
+                        </b>
+                        <a href="#toggleLoginForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleLoginForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="277"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switches side and displays the login form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="togglePasswordResetForm"></a>
+                    <span class="name">
+                        <b>
+                            togglePasswordResetForm
+                        </b>
+                        <a href="#togglePasswordResetForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>togglePasswordResetForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="227"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:227</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switches side, then displays the password reset form instead of the registration form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleRegistrationForm"></a>
+                    <span class="name">
+                        <b>
+                            toggleRegistrationForm
+                        </b>
+                        <a href="#toggleRegistrationForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleRegistrationForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switches side, then displays the registration form instead of the verification or password reset forms</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleRightPanel"></a>
+                    <span class="name">
+                        <b>
+                            toggleRightPanel
+                        </b>
+                        <a href="#toggleRightPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleRightPanel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switches between the authentication window sides</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleVerificationForm"></a>
+                    <span class="name">
+                        <b>
+                            toggleVerificationForm
+                        </b>
+                        <a href="#toggleVerificationForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleVerificationForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="243"
+                            class="link-to-prism">src/app/components/Auth/auth.component.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Switches side, then displays the verification form instead of the registration form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorMessage"></a>
+                        <span class="name">
+                            <b>
+                            errorMessage</b>
+                            <a href="#errorMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/Auth/auth.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fieldTextType"></a>
+                        <span class="name">
+                            <b>
+                            fieldTextType</b>
+                            <a href="#fieldTextType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/Auth/auth.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isErrorAlertVisible"></a>
+                        <span class="name">
+                            <b>
+                            isErrorAlertVisible</b>
+                            <a href="#isErrorAlertVisible"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/components/Auth/auth.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading</b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/Auth/auth.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isPasswordResetVisible"></a>
+                        <span class="name">
+                            <b>
+                            isPasswordResetVisible</b>
+                            <a href="#isPasswordResetVisible"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/Auth/auth.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRegistrationVisible"></a>
+                        <span class="name">
+                            <b>
+                            isRegistrationVisible</b>
+                            <a href="#isRegistrationVisible"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/components/Auth/auth.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRememberMeChecked"></a>
+                        <span class="name">
+                            <b>
+                            isRememberMeChecked</b>
+                            <a href="#isRememberMeChecked"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/Auth/auth.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRequestingPasswordReset"></a>
+                        <span class="name">
+                            <b>
+                            isRequestingPasswordReset</b>
+                            <a href="#isRequestingPasswordReset"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/Auth/auth.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isResending"></a>
+                        <span class="name">
+                            <b>
+                            isResending</b>
+                            <a href="#isResending"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/Auth/auth.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRightPanelActive"></a>
+                        <span class="name">
+                            <b>
+                            isRightPanelActive</b>
+                            <a href="#isRightPanelActive"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/Auth/auth.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isSubmitting"></a>
+                        <span class="name">
+                            <b>
+                            isSubmitting</b>
+                            <a href="#isSubmitting"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/Auth/auth.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isSuccessAlertVisible"></a>
+                        <span class="name">
+                            <b>
+                            isSuccessAlertVisible</b>
+                            <a href="#isSuccessAlertVisible"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/components/Auth/auth.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isVerificationVisible"></a>
+                        <span class="name">
+                            <b>
+                            isVerificationVisible</b>
+                            <a href="#isVerificationVisible"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/Auth/auth.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loginFormGroup"></a>
+                        <span class="name">
+                            <b>
+                            loginFormGroup</b>
+                            <a href="#loginFormGroup"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/Auth/auth.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="passwordResetFormGroup"></a>
+                        <span class="name">
+                            <b>
+                            passwordResetFormGroup</b>
+                            <a href="#passwordResetFormGroup"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/Auth/auth.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="registrationFormGroup"></a>
+                        <span class="name">
+                            <b>
+                            registrationFormGroup</b>
+                            <a href="#registrationFormGroup"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/Auth/auth.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="returnUrl"></a>
+                        <span class="name">
+                            <b>
+                            returnUrl</b>
+                            <a href="#returnUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/components/Auth/auth.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedField"></a>
+                        <span class="name">
+                            <b>
+                            selectedField</b>
+                            <a href="#selectedField"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/Auth/auth.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="successMessage"></a>
+                        <span class="name">
+                            <b>
+                            successMessage</b>
+                            <a href="#successMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/components/Auth/auth.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userPasswordResetData"></a>
+                        <span class="name">
+                            <b>
+                            userPasswordResetData</b>
+                            <a href="#userPasswordResetData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/PasswordResetReq.html" target="_self" >PasswordResetReq</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/components/Auth/auth.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="validationErrors"></a>
+                        <span class="name">
+                            <b>
+                            validationErrors</b>
+                            <a href="#validationErrors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/components/Auth/auth.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="verificationCode"></a>
+                        <span class="name">
+                            <b>
+                            verificationCode</b>
+                            <a href="#verificationCode"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/components/Auth/auth.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loginForm"></a>
+                        <span class="name"><b>loginForm</b><a href="#loginForm"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>loginForm()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/app/components/Auth/auth.component.ts:140</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Returns the login form group controls</p>
+</div>
+
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="registrationForm"></a>
+                        <span class="name"><b>registrationForm</b><a href="#registrationForm"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>registrationForm()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/app/components/Auth/auth.component.ts:151</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Returns the registration form group controls</p>
+</div>
+
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="passwordResetForm"></a>
+                        <span class="name"><b>passwordResetForm</b><a href="#passwordResetForm"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>passwordResetForm()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/components/Auth/auth.component.ts:162</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Returns the password reset form group controls</p>
+</div>
+
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import { AuthService } from &#x27;src/app/services/auth/auth.service&#x27;;
+import { FormGroup, FormControl, Validators } from &#x27;@angular/forms&#x27;;
+import { UserLogin } from &#x27;../../payload/requests/auth/UserLogin&#x27;;
+import { UserRegistration } from &#x27;../../payload/requests/auth/UserRegistration&#x27;;
+import { UserService } from &#x27;src/app/services/user/user.service&#x27;;
+import { RegistrationResponse } from &#x27;src/app/payload/responses/auth/RegistrationResponse&#x27;;
+import { ResponseMessages } from &#x27;src/app/models/app/ResponseMessages&#x27;;
+import { Router, ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { AuthSource } from &#x27;src/app/models/app/AuthSource&#x27;;
+import { AppRoutes } from &#x27;src/app/models/app/AppRoutes&#x27;;
+import { LoginResponse } from &#x27;src/app/payload/responses/auth/LoginResponse&#x27;;
+import { ApiResponse } from &#x27;src/app/payload/responses/ApiResponse&#x27;;
+import { LocallyStoredItemsKeys } from &#x27;src/app/models/app/LocallyStoredItemsKeys&#x27;;
+import { PasswordResetReq } from &#x27;src/app/payload/requests/user/PasswordResetReq&#x27;;
+
+
+@Component({
+   selector: &quot;app-auth&quot;,
+   templateUrl: &quot;./auth.component.html&quot;,
+   styleUrls: [&quot;./auth.component.css&quot;],
+})
+
+
+export class AuthenticationPageComponent implements OnInit {
+
+   @Input(&quot;authSource&quot;) authSource: AuthSource;
+
+   /* UI */
+   isRightPanelActive;
+   isLoading &#x3D; false;
+   isResending &#x3D; false;
+   isSubmitting &#x3D; false;
+   isRememberMeChecked;
+   isRequestingPasswordReset &#x3D; false;
+   fieldTextType: boolean;
+   selectedField: number;
+
+   /* Forms */
+   loginFormGroup: FormGroup;
+   registrationFormGroup: FormGroup;
+   passwordResetFormGroup: FormGroup;
+
+   /* Alert */
+   errorMessage;
+   successMessage;
+   isErrorAlertVisible;
+   isSuccessAlertVisible;
+   validationErrors: string[];
+
+   /* Verification */
+   verificationCode: number;
+
+   /* Subpages */
+   isRegistrationVisible &#x3D; true;
+   isVerificationVisible &#x3D; false;
+   isPasswordResetVisible &#x3D; false;
+
+   /* Data */
+   userPasswordResetData: PasswordResetReq;
+   returnUrl: string;
+
+
+   constructor(
+      private authService: AuthService,
+      private userService: UserService,
+      private router: Router,
+      private activedRoute: ActivatedRoute
+   ) { }
+
+
+   ngOnInit() {
+      this.initForms();
+      this.initActiveFormState();
+   }
+
+
+   /* -------------------------------------------------------------------------- */
+   /*                               INITIALIZATION                               */
+   /* -------------------------------------------------------------------------- */
+
+   /**
+    * Initializes form groups and the controls validations
+    * @memberof AuthenticationPageComponent
+    */
+   initForms(): void {
+      /* Login form initialization */
+      this.loginFormGroup &#x3D; new FormGroup({
+         emailCtrl: new FormControl(&quot;&quot;, Validators.compose([
+            Validators.required,
+            Validators.pattern(/\w+([-+.&#x27;]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/),
+         ])),
+         passwordCtrl: new FormControl(&quot;&quot;, Validators.required),
+         rememberMeCtrl: new FormControl(&quot;&quot;),
+      });
+
+      /* Registration form initialization */
+      this.registrationFormGroup &#x3D; new FormGroup({
+         phoneNumberCtrl: new FormControl(&quot;&quot;, Validators.compose([
+            Validators.required, Validators.minLength(9)
+         ])),
+         emailCtrl: new FormControl(&quot;&quot;, Validators.compose([
+            Validators.required,
+            Validators.pattern(/\w+([-+.&#x27;]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/),
+         ])),
+         passwordCtrl: new FormControl(&quot;&quot;, Validators.required),
+         confirmPasswordCtrl: new FormControl(&quot;&quot;, Validators.required),
+      });
+
+      /* Password reset form initialization */
+      this.passwordResetFormGroup &#x3D; new FormGroup({
+         emailCtrl: new FormControl(&quot;&quot;, Validators.compose([
+            Validators.required,
+            Validators.pattern(/\w+([-+.&#x27;]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/),
+         ])),
+         phoneNumberCtrl: new FormControl(&quot;&quot;, Validators.compose([
+            Validators.required,
+            Validators.pattern(/^[0-9]*$/),
+            Validators.maxLength(4),
+            Validators.minLength(4),
+         ])),
+         passwordCtrl: new FormControl(&quot;&quot;, Validators.compose([
+            Validators.required, Validators.minLength(9)
+         ])),
+         confirmPasswordCtrl: new FormControl(&quot;&quot;, [Validators.required, , Validators.minLength(9)]),
+         resetTokenCtrl: new FormControl(&quot;&quot;, Validators.compose([
+            Validators.required,
+            Validators.pattern(/^[0-9]*$/),
+         ])),
+      });
+   }
+
+
+   /**
+    * Returns the login form group controls
+    * @readonly
+    * @type {*}
+    * @memberof AuthenticationPageComponent
+    */
+   get loginForm(): any {
+      return this.loginFormGroup.controls;
+   }
+
+
+   /**
+    * Returns the registration form group controls
+    * @readonly
+    * @type {*}
+    * @memberof AuthenticationPageComponent
+    */
+   get registrationForm(): any {
+      return this.registrationFormGroup.controls;
+   }
+
+
+   /**
+    * Returns the password reset form group controls
+    * @readonly
+    * @type {*}
+    * @memberof AuthenticationPageComponent
+    */
+   get passwordResetForm(): any {
+      return this.passwordResetFormGroup.controls;
+   }
+
+
+   /**
+    * Initializes the opened authentication window side based on url or route
+    * @memberof AuthenticationPageComponent
+    */
+   initActiveFormState(): void {
+      // Get current route
+      let currentRoute &#x3D; this.router.parseUrl(this.router.url).root.children[&quot;primary&quot;].segments.map((it) &#x3D;&gt; it.path).join(&quot;/&quot;);
+
+      switch (currentRoute) {
+         case AppRoutes.passwordReset:
+            // Get url parameters
+            let urlUserResetData: PasswordResetReq &#x3D; {
+               email: this.activedRoute.snapshot.queryParamMap.get(&quot;email&quot;),
+               lastPhoneDigits: this.activedRoute.snapshot.queryParamMap.get(&quot;bin&quot;),
+            };
+
+            let isRedirectedFromEmail &#x3D; !!(urlUserResetData.email &amp;&amp; urlUserResetData.lastPhoneDigits); // Indicates whether user has been redirected from email by checking the url parameters
+
+            // Open the password reset form if the parameters exist
+            if (isRedirectedFromEmail) {
+               this.togglePasswordResetForm();
+               this.isRequestingPasswordReset &#x3D; true;
+            }
+         break;
+         case AppRoutes.verification:
+            this.toggleVerificationForm();
+            this.toggleRightPanel();
+         break;
+         default: break;
+      }
+   }
+
+
+
+   /* -------------------------------------------------------------------------- */
+   /*                               USER INTERFACE                               */
+   /* -------------------------------------------------------------------------- */
+
+   /**
+    * Switches between the authentication window sides
+    * @memberof AuthenticationPageComponent
+    */
+   toggleRightPanel(): void {
+      // Toggle panels
+      this.isRightPanelActive &#x3D; !this.isRightPanelActive;
+      // Reset and hide error message
+      this.isErrorAlertVisible &#x3D; false;
+      this.errorMessage &#x3D; undefined;
+      // Reset and hide success message
+      this.isSuccessAlertVisible &#x3D; false;
+      this.isSubmitting &#x3D; false;
+      // Reset forms
+      this.resetForms();
+   }
+
+
+   /**
+    * Switches side, then displays the password reset form instead of the registration form
+    * @memberof AuthenticationPageComponent
+    */
+   togglePasswordResetForm(): void {
+      // Switch panel
+      this.toggleRightPanel();
+      // Hide registration form
+      this.isRegistrationVisible &#x3D; false;
+      // Hide verification form
+      this.isVerificationVisible &#x3D; false;
+      // Show password reset form
+      this.isPasswordResetVisible &#x3D; true;
+   }
+
+
+   /**
+    * Switches side, then displays the verification form instead of the registration form
+    * @memberof AuthenticationPageComponent
+    */
+   toggleVerificationForm(): void {
+      // Reset and hide error message
+      this.isErrorAlertVisible &#x3D; false;
+      this.errorMessage &#x3D; undefined;
+      this.isSubmitting &#x3D; false;
+      // Hide registration form
+      this.isRegistrationVisible &#x3D; false;
+      // Hide password reset form
+      this.isPasswordResetVisible &#x3D; false;
+      // Show verification form
+      this.isVerificationVisible &#x3D; true;
+   }
+
+
+   /**
+    * Switches side, then displays the registration form instead of the verification or password reset forms
+    * @memberof AuthenticationPageComponent
+    */
+   toggleRegistrationForm(): void {
+      // Switch panel
+      this.toggleRightPanel();
+      // Hide password reset form
+      this.isPasswordResetVisible &#x3D; false;
+      // Hide verification form
+      this.isVerificationVisible &#x3D; false;
+      // Show registration form
+      this.isRegistrationVisible &#x3D; true;
+   }
+
+
+   /**
+    * Switches side and displays the login form
+    * @memberof AuthenticationPageComponent
+    */
+   toggleLoginForm(): void {
+      // Switch panel
+      this.toggleRightPanel();
+      // Hide password reset form
+      this.isPasswordResetVisible &#x3D; false;
+      // Hide verification form
+      this.isVerificationVisible &#x3D; false;
+      // Show registration form
+      this.isRegistrationVisible &#x3D; false;
+   }
+
+
+   /**
+    * Toggles the password fields type and eye icon
+    * @memberof AuthenticationPageComponent
+    */
+   toggleFieldTextType(): void {
+      this.fieldTextType &#x3D; !this.fieldTextType;
+   }
+
+
+   /**
+    * Resets all of the authentication forms
+    * @private
+    * @memberof AuthenticationPageComponent
+    */
+   private resetForms(): void {
+      this.loginFormGroup.reset();
+      this.registrationFormGroup.reset();
+      this.passwordResetFormGroup.reset();
+   }
+
+
+   /**
+    * Displays an alert with the retreived message(s) from an API response
+    * @private
+    * @param {(&#x27;ErrorAlert&#x27; | &#x27;SuccessAlert&#x27;)} alertType Specifies the alert type of Success or Error
+    * @param {string} message The message to be displayed on the alert
+    * @memberof AuthenticationPageComponent
+    */
+   private displayAlert(alertType: &#x27;ErrorAlert&#x27; | &#x27;SuccessAlert&#x27;, apiResponse: ApiResponse): void {
+      switch (alertType) {
+         case &#x27;ErrorAlert&#x27;:
+
+            // Set error message
+            this.errorMessage &#x3D; apiResponse.responseMessage;
+
+            // Set validation errors
+            if (apiResponse.validationErrors &amp;&amp; apiResponse.validationErrors.length &gt; 0) {
+
+               // Init empty array
+               let errorsArr: string[] &#x3D; [];
+
+               // Push the errors into the array
+               apiResponse.validationErrors.forEach(err &#x3D;&gt; errorsArr.push(err.description));
+
+               // Set the validation errors
+               this.validationErrors &#x3D; errorsArr;
+
+            } else {
+               this.validationErrors &#x3D; null;
+            }
+
+            // Display alert
+            this.isErrorAlertVisible &#x3D; true;
+
+            // Hide after timeout
+            setTimeout(() &#x3D;&gt; this.isErrorAlertVisible &#x3D; false, 10000);
+
+         break;
+         case &#x27;SuccessAlert&#x27;:
+
+            // Set the success message
+            this.successMessage &#x3D; apiResponse.responseMessage;
+
+            // Display alert
+            this.isSuccessAlertVisible &#x3D; true;
+
+            // Hide after timeout
+            setTimeout(() &#x3D;&gt; this.isSuccessAlertVisible &#x3D; false, 10000);
+
+         break;
+         default: break;
+      }
+   }
+
+
+   
+   /* -------------------------------------------------------------------------- */
+   /*                                API / SUBMIT                                */
+   /* -------------------------------------------------------------------------- */
+
+   /**
+    * Authenticates user
+    * @memberof AuthenticationPageComponent
+    */
+   login(): void {
+
+      // Show the loader on button
+      this.isLoading &#x3D; true;
+
+      // Set submission state to true (used for form validation)
+      this.isSubmitting &#x3D; true;
+
+      // Validate form
+      if (this.loginFormGroup.invalid) {
+         this.isLoading &#x3D; false;
+         return;
+      }
+
+      // Construct user login payload object
+      const loginData: UserLogin &#x3D; {
+         userName: this.loginFormGroup.get(&quot;emailCtrl&quot;).value,
+         password: this.loginFormGroup.get(&quot;passwordCtrl&quot;).value,
+         rememberMe: this.isRememberMeChecked,
+      };
+
+      // Send request
+      this.authService.login(loginData).subscribe(
+         (res: LoginResponse) &#x3D;&gt; {
+            // Stop the loader
+            this.isLoading &#x3D; false;
+
+            if (res.isSuccess) {
+
+               // Check the if login was opened from the quotes page after selecting a quote while not authenticated
+               // this.checkResumedQuoteSelect();
+
+               if (this.authService.getIsAuthModalShown().value) {
+                  this.authService.setIsAuthModalShown(false);
+                  this.loginFormGroup.reset();
+               } else {
+                  this.router.navigate([AppRoutes.controlPanel.policies.uri]);
+               }
+
+            } else {
+               // Display error alert
+               this.displayAlert(&#x27;ErrorAlert&#x27;, res);
+            }
+         },
+         (err) &#x3D;&gt; {
+            // Get error response message
+            const errMsg &#x3D; err.error.responseMessage;
+
+            // Stop the loader
+            this.isLoading &#x3D; false;
+
+            // If user hasn&#x27;t verified their account
+            if (errMsg &#x3D;&#x3D;&#x3D; ResponseMessages.UnVerifiedAccount || errMsg &#x3D;&#x3D;&#x3D; ResponseMessages.UnVerifiedPhone) {
+               // Present the verification form
+               this.toggleVerificationForm();
+            }
+
+            // Display error alert
+            this.displayAlert(&#x27;ErrorAlert&#x27;, err.error);
+         }
+      );
+   }
+
+
+   /**
+    * Sends a registration request with the entered registration data
+    * @memberof AuthenticationPageComponent
+    */
+   register(): void {
+      // Show the loader on button
+      this.isLoading &#x3D; true;
+
+      // Set submission state to true (used for form validation)
+      this.isSubmitting &#x3D; true;
+
+      // Validate form
+      if (this.registrationFormGroup.invalid) {
+         this.isLoading &#x3D; false;
+         return;
+      }
+
+      // Construct user registration payload object
+      const registrationData: UserRegistration &#x3D; {
+         phoneNumber:
+            &quot;966&quot; + this.registrationFormGroup.get(&quot;phoneNumberCtrl&quot;).value,
+         email: this.registrationFormGroup.get(&quot;emailCtrl&quot;).value,
+         password: this.registrationFormGroup.get(&quot;passwordCtrl&quot;).value,
+         confirmPassword: this.registrationFormGroup.get(&quot;confirmPasswordCtrl&quot;)
+            .value,
+      };
+
+      this.authService.register(registrationData).subscribe(
+         (res: RegistrationResponse) &#x3D;&gt; {
+            // Stop the loader
+            this.isLoading &#x3D; false;
+
+            if (res.isSuccess) {
+               // Show verification form
+               this.toggleVerificationForm();
+               this.saveVerificationData(res);
+               this.registrationFormGroup.reset();
+            } else {
+               // Show error message
+               this.displayAlert(&#x27;ErrorAlert&#x27;, res);
+            }
+         },
+         (err) &#x3D;&gt; {
+            // Stop the loader
+            this.isLoading &#x3D; false;
+            // Display error alert
+            this.displayAlert(&#x27;ErrorAlert&#x27;, err.error);
+         }
+      );
+   }
+
+
+   sendVerificationCode(): void {
+      // Set submission state to true (used for form validation)
+      this.isSubmitting &#x3D; true;
+
+      if (this.verificationCode) {
+         // Show the loader on button
+         this.isLoading &#x3D; true;
+
+         // Send the request
+         this.userService.sendVerificationCode(this.verificationCode).subscribe(
+            (res: any) &#x3D;&gt; {
+               // Stop the loader
+               this.isLoading &#x3D; false;
+               if (res.isSuccess) {
+                  this.displayAlert(&#x27;SuccessAlert&#x27;, res);
+                  this.toggleLoginForm();
+                  // Display success message
+                  this.isSuccessAlertVisible &#x3D; true;
+               } else {
+                  this.displayAlert(&#x27;ErrorAlert&#x27;, res);
+               }
+            },
+            (err) &#x3D;&gt; {
+               // Stop the loader
+               this.isLoading &#x3D; false;
+               this.displayAlert(&#x27;ErrorAlert&#x27;, err.error);
+            }
+         );
+      }
+   }
+
+
+   resendVerficationCode(): void {
+
+      // Display loader
+      this.isResending &#x3D; true;
+      this.isLoading &#x3D; true;
+
+      // Get phone number and user ID from local storage
+      let userPhoneNumber &#x3D; localStorage.getItem(LocallyStoredItemsKeys.VerificationPhoneNumber);
+      let userId &#x3D; localStorage.getItem(LocallyStoredItemsKeys.VerificationUserId);
+
+      // Construct resend request data
+      let userVerficationData: RegistrationResponse &#x3D; {
+         phoneNumber: userPhoneNumber,
+         userId: userId,
+      };
+      
+      // Resend the request
+      this.userService.resendVerficationCode(userVerficationData).subscribe(
+         (res: any) &#x3D;&gt; {
+            // Stop the loader
+            this.isLoading &#x3D; false;
+            this.isResending &#x3D; false;
+            // Display alert
+            if (res.isSuccess) this.displayAlert(&#x27;SuccessAlert&#x27;, res);
+            else this.displayAlert(&#x27;ErrorAlert&#x27;, res);
+         },
+         (err) &#x3D;&gt; {
+            // Stop the loader
+            this.isLoading &#x3D; false;
+            this.isResending &#x3D; false;
+            // Display alert
+            this.displayAlert(&#x27;ErrorAlert&#x27;, err.error);
+         }
+      );
+
+   }
+
+
+   reissuePasswordReset(): void {
+      this.isResending &#x3D; true;
+      this.issuePasswordReset();
+   }
+
+
+   issuePasswordReset(): void {
+      // Get reset issuing request data from url parameters (when redirected from email message)
+      let urlUserResetData: PasswordResetReq &#x3D; {
+         email: this.activedRoute.snapshot.queryParamMap.get(&quot;email&quot;),
+         lastPhoneDigits: this.activedRoute.snapshot.queryParamMap.get(&quot;bin&quot;),
+      };
+
+      let isRedirectedFromEmail: boolean &#x3D; !!(urlUserResetData.email &amp;&amp; urlUserResetData.lastPhoneDigits); // Indicates whether the user has been redirected from email (url /account/reset with or without parameters)
+
+      // Show the loader on button
+      this.isLoading &#x3D; true;
+
+      // Hide the loader of the submit button if resending (show loader on resend button only)
+      if (this.isResending) this.isLoading &#x3D; false;
+
+      // Set submission state to true (used for form validation)
+      this.isSubmitting &#x3D; true;
+
+      // Validate form, unless user has been redirected from email (for which the data is in the url parameters)
+      if (!isRedirectedFromEmail &amp;&amp; this.passwordResetForm.emailCtrl.invalid &amp;&amp; this.passwordResetForm.phoneNumberCtrl.invalid) {
+         this.isLoading &#x3D; false;
+         this.isResending &#x3D; false;
+         return;
+      }
+
+      // Construct password reset issuing request
+      let passwordResetReq &#x3D; {
+         email: this.passwordResetForm.emailCtrl.value,
+         lastPhoneDigits: this.passwordResetForm.phoneNumberCtrl.value,
+      };
+
+      // Construct password reset issuing request from url parameters (when redirected from email message)
+      if (isRedirectedFromEmail) {
+         passwordResetReq &#x3D; urlUserResetData;
+      }
+
+      // Send the issue request
+      this.userService.requestPasswordReset(passwordResetReq).subscribe(
+         (res: ApiResponse) &#x3D;&gt; {
+            if (res.isSuccess) {
+               this.isRequestingPasswordReset &#x3D; true;
+               this.isSubmitting &#x3D; false;
+               this.isLoading &#x3D; false;
+               if (this.isResending) {
+                  this.displayAlert(&#x27;SuccessAlert&#x27;, res);
+                  this.isResending &#x3D; false;
+               }
+            } else {
+               this.displayAlert(&#x27;ErrorAlert&#x27;, res);
+            }
+         },
+         (err) &#x3D;&gt; {
+            // Stop the loader
+            this.isLoading &#x3D; false;
+            this.displayAlert(&#x27;ErrorAlert&#x27;, err.error);
+         }
+      );
+   }
+
+
+   resetPassword(): void {
+
+      // Get reset issuing request data from url parameters (when redirected from email message)
+      let urlUserResetParams: PasswordResetReq &#x3D; {
+         email: this.activedRoute.snapshot.queryParamMap.get(&quot;email&quot;),
+         lastPhoneDigits: this.activedRoute.snapshot.queryParamMap.get(&quot;bin&quot;),
+      };
+
+      let isRedirectedFromEmail: boolean &#x3D; !!(urlUserResetParams.email &amp;&amp; urlUserResetParams.lastPhoneDigits); // Indicates whether the user has been redirected from email (url /account/reset with or without parameters)
+
+      // Show the loader on button
+      this.isLoading &#x3D; true;
+
+      // Set submission state to true (used for form validation)
+      this.isSubmitting &#x3D; true;
+
+      // Validate form
+      if (
+         (!isRedirectedFromEmail &amp;&amp; this.passwordResetFormGroup.invalid) ||
+         (isRedirectedFromEmail &amp;&amp; (this.passwordResetForm.resetTokenCtrl.invalid || this.passwordResetForm.passwordCtrl.invalid))
+      ) {
+         this.isLoading &#x3D; false;
+         return;
+      }
+
+      // Construct password reset request
+      let passwordResetReq &#x3D; {
+         email: this.passwordResetFormGroup.get(&quot;emailCtrl&quot;).value,
+         code: this.passwordResetFormGroup.get(&quot;resetTokenCtrl&quot;).value,
+         newPassword: this.passwordResetFormGroup.get(&quot;passwordCtrl&quot;).value,
+      };
+
+      // Construct reset request data using url parameters (when redirected from email message)
+      let urlUserResetData &#x3D; {
+         email: urlUserResetParams.email,
+         code: this.passwordResetFormGroup.get(&quot;resetTokenCtrl&quot;).value,
+         newPassword: this.passwordResetFormGroup.get(&quot;passwordCtrl&quot;).value,
+      };
+
+      // Set password reset request using url parameters (when redirected from email message)
+      if (urlUserResetData.email) {
+         passwordResetReq &#x3D; urlUserResetData;
+      }
+
+      // Send the password reset request
+      this.userService.resetPassword(passwordResetReq).subscribe(
+         (res: ApiResponse) &#x3D;&gt; {
+            if (res.isSuccess) {
+               // To login
+               this.toggleRightPanel();
+               // Show success message (on login subpage)
+               this.displayAlert(&#x27;SuccessAlert&#x27;, res);
+               // Hide password reset subpage
+               this.isPasswordResetVisible &#x3D; false;
+               this.isRequestingPasswordReset &#x3D; false;
+               // Reset all spinners and validations
+               this.isSubmitting &#x3D; false;
+               this.isLoading &#x3D; false;
+               this.isResending &#x3D; false;
+               this.passwordResetFormGroup.reset();
+            } else {
+               this.displayAlert(&#x27;ErrorAlert&#x27;, res);
+            }
+         },
+         (err) &#x3D;&gt; {
+            this.isLoading &#x3D; false;
+            this.displayAlert(&#x27;ErrorAlert&#x27;, err.error);
+         }
+      );
+   }
+
+
+   
+   /*-------------------------------------------------------------------------- */
+   /*                                MISCELLANEOUS                               */
+   /* -------------------------------------------------------------------------- */
+
+   saveVerificationData(res: RegistrationResponse): void {
+      // Store phone number
+      localStorage.setItem(LocallyStoredItemsKeys.VerificationPhoneNumber, res.phoneNumber);
+      // Store user ID
+      localStorage.setItem(LocallyStoredItemsKeys.VerificationUserId, res.userId);
+   }
+
+
+   clearVerificationData(): void {
+      // Remove phone number
+      localStorage.removeItem(LocallyStoredItemsKeys.VerificationPhoneNumber);
+      // Remove user ID
+      localStorage.removeItem(LocallyStoredItemsKeys.VerificationUserId);
+   }
+
+
+   checkResumedQuoteSelect(): void {
+      if (this.authSource &#x3D;&#x3D;&#x3D; AuthSource.InsuranceForms) {
+         // Get the selected quote&#x27;s PreviewQuoteRequest
+         /* const previewQuoteReq: PreviewQuoteRequest &#x3D; JSON.parse(localStorage.getItem(LocallyStoredItemsKeys.PreviewQuoteRequest));
+   
+            // Send the preview quote request
+            this.quoteService.setSelectedQuote(previewQuoteReq).subscribe(
+               (res: PreviewQuoteResponse) &#x3D;&gt; {
+                  // Increment step number
+                  this.insuranceStepService.setCurrentStepNum(7);
+                  // Close the modal
+                  this.authService.setIsAuthModalShown(false);
+                  // Route to checkout page
+                  this.router.navigate([AppRoutes.checkout]);
+               },
+               err &#x3D;&gt; this.router.navigate([AppRoutes.error])
+            ); */
+      } else {
+         this.router.navigate([AppRoutes.controlPanel.policies.uri]);
+      }
+   }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;login-page-container&quot;&gt;
+   &lt;div class&#x3D;&quot;container flex-centered&quot; [ngClass]&#x3D;&quot;{ &#x27;right-panel-active&#x27; : isRightPanelActive }&quot;&gt;
+
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;!--                               LOGIN FORM                                --&gt;
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;div *ngIf&#x3D;&quot;!isVerificationVisible&quot; class&#x3D;&quot;form-container sign-in-container&quot;&gt;
+         &lt;form [formGroup]&#x3D;&quot;loginFormGroup&quot;&gt;
+
+            &lt;!-- Login Title --&gt;
+            &lt;h5 class&#x3D;&quot;auth-form-header&quot;&gt;
+               &lt;i class&#x3D;&quot;ion-md-lock&quot;&gt;&lt;/i&gt;
+               {{ &#x27;Auth.SignInText&#x27; | translate }}
+            &lt;/h5&gt;
+
+            &lt;!-- Error(s) Alert --&gt;
+            &lt;ngb-alert *ngIf&#x3D;&quot;isErrorAlertVisible&quot; type&#x3D;&quot;danger&quot; (close)&#x3D;&quot;isErrorAlertVisible &#x3D; !isErrorAlertVisible&quot;&gt;
+               &lt;small&gt;{{ errorMessage }}&lt;/small&gt;
+               &lt;small *ngIf&#x3D;&quot;validationErrors&quot;&gt;
+                  &lt;ul class&#x3D;&quot;errors-list&quot;&gt;
+                     &lt;li *ngFor&#x3D;&quot;let error of validationErrors&quot;&gt;
+                        {{error}}
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/small&gt;
+            &lt;/ngb-alert&gt;
+
+            &lt;!-- Success Alert --&gt;
+            &lt;ngb-alert *ngIf&#x3D;&quot;isSuccessAlertVisible&quot; type&#x3D;&quot;success&quot; (close)&#x3D;&quot;isSuccessAlertVisible &#x3D; !isSuccessAlertVisible&quot;&gt;
+               &lt;small&gt;{{successMessage}}&lt;/small&gt;
+            &lt;/ngb-alert&gt;
+
+
+            &lt;!-- Email Input --&gt;
+            &lt;input formControlName&#x3D;&quot;emailCtrl&quot; type&#x3D;&quot;email&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.EmailText&#x27; | translate)&quot; /&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; loginForm.emailCtrl.errors&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;loginForm.emailCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+               &lt;/div&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;loginForm.emailCtrl.errors.pattern&quot;&gt;
+                  {{ &#x27;Errors.InvalidEmail&#x27; | translate }}
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Backend validation errors --&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; loginFormGroup.errors?.Username&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngFor&#x3D;&quot;let description of loginFormGroup.errors.descriptions&quot;&gt;
+                  &lt;span *ngIf&#x3D;&quot;description.Username&quot;&gt;
+                     {{description.Username}}
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Password Input --&gt;
+            &lt;div class&#x3D;&quot;input-btn-group flex-container&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+               &lt;input formControlName&#x3D;&quot;passwordCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.PasswordText&#x27; | translate)&quot; [type]&#x3D;&quot;fieldTextType ? &#x27;text&#x27; : &#x27;password&#x27;&quot; class&#x3D;&quot;verification-code-ipt&quot; style&#x3D;&quot;width: 80%;&quot; /&gt;
+               &lt;!-- Eye Icon --&gt;
+               &lt;div (click)&#x3D;&quot;toggleFieldTextType()&quot; class&#x3D;&quot;primary-btn ghost reset-code-btn password-view-btn text-center&quot; style&#x3D;&quot;width: 20%;&quot;&gt;
+                  &lt;span class&#x3D;&quot;eye-icon&quot;&gt;
+                     &lt;i [ngClass]&#x3D;&quot;{&#x27;icon ion-md-eye&#x27;: !fieldTextType, &#x27;icon ion-md-eye-off&#x27;: fieldTextType}&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; loginForm.passwordCtrl.errors&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;loginForm.passwordCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Backend validation errors --&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; loginFormGroup.errors?.Password&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngFor&#x3D;&quot;let description of loginFormGroup.errors.descriptions&quot;&gt;
+                  &lt;span *ngIf&#x3D;&quot;description.Password&quot;&gt;
+                     {{description.Password}}
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;!-- Login Options --&gt;
+            &lt;div class&#x3D;&quot;login-opts-container&quot;&gt;
+
+               &lt;!-- RememberMe Checkbox --&gt;
+               &lt;!-- &lt;div id&#x3D;&quot;remember-me-check&quot;&gt;
+                  &lt;input (change)&#x3D;&quot;isRememberMeChecked &#x3D; !isRememberMeChecked&quot; formControlName&#x3D;&quot;rememberMeCtrl&quot;
+                     name&#x3D;&quot;remeber-me-check&quot; autocomplete&#x3D;&quot;on&quot; class&#x3D;&quot;cbx&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;&#x27;login-remember-cbx&#x27;&quot;
+                     style&#x3D;&quot;display: none;&quot;&gt;
+                  &lt;label for&#x3D;&quot;&#x27;login-remember-cbx&#x27;&quot; class&#x3D;&quot;check noselect&quot;&gt;
+                     &lt;svg width&#x3D;&quot;18px&quot; height&#x3D;&quot;18px&quot; viewBox&#x3D;&quot;0 0 20 18&quot;&gt;
+                        &lt;path
+                           d&#x3D;&quot;M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z&quot;&gt;
+                        &lt;/path&gt;
+                        &lt;polyline points&#x3D;&quot;1 9 7 14 15 4&quot;&gt;&lt;/polyline&gt;
+                     &lt;/svg&gt;
+                     &lt;span&gt; {{ &#x27;Auth.RememberMeText&#x27; | translate }} &lt;/span&gt;
+                  &lt;/label&gt;
+               &lt;/div&gt; --&gt;
+
+               &lt;!-- Forgot Password --&gt;
+               &lt;a (click)&#x3D;&quot;togglePasswordResetForm()&quot; id&#x3D;&quot;password-reset-link&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+                  {{ &#x27;Auth.ForgotPasswordText&#x27; | translate }}
+               &lt;/a&gt;
+
+            &lt;/div&gt;
+
+
+            &lt;!-- Login Button --&gt;
+            &lt;button (click)&#x3D;&quot;login()&quot; class&#x3D;&quot;primary-btn form-signin-btn&quot;&gt;
+               &lt;span&gt;{{ &#x27;Auth.SignInText&#x27; | translate }}&lt;/span&gt;
+               &lt;i *ngIf&#x3D;&quot;!isLoading&quot; class&#x3D;&quot;ion-md-log-in&quot;&gt;&lt;/i&gt;
+               &lt;span *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+
+         &lt;/form&gt;
+      &lt;/div&gt;
+
+
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;!--                            REGISTRATION FORM                            --&gt;
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;div *ngIf&#x3D;&quot;isRegistrationVisible&quot; class&#x3D;&quot;form-container sign-up-container&quot;&gt;
+         &lt;form [formGroup]&#x3D;&quot;registrationFormGroup&quot;&gt;
+
+            &lt;!-- Registration Title --&gt;
+            &lt;h5 class&#x3D;&quot;auth-form-header&quot;&gt;
+               &lt;i class&#x3D;&quot;ion-md-lock&quot;&gt;&lt;/i&gt;
+               {{ &#x27;Auth.SignUpText&#x27; | translate }}
+            &lt;/h5&gt;
+
+            &lt;!-- Error(s) Alert --&gt;
+            &lt;ngb-alert *ngIf&#x3D;&quot;isErrorAlertVisible&quot; type&#x3D;&quot;danger&quot; (close)&#x3D;&quot;isErrorAlertVisible &#x3D; !isErrorAlertVisible&quot;&gt;
+               &lt;small&gt;{{ errorMessage }}&lt;/small&gt;
+               &lt;small *ngIf&#x3D;&quot;validationErrors&quot;&gt;
+                  &lt;ul class&#x3D;&quot;errors-list&quot;&gt;
+                     &lt;li *ngFor&#x3D;&quot;let error of validationErrors&quot;&gt;{{error}}&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/small&gt;
+            &lt;/ngb-alert&gt;
+
+            &lt;!-- Phone Input --&gt;
+            &lt;div class&#x3D;&quot;phone-ipt-container&quot;&gt;
+               &lt;input placeholder&#x3D;&quot;+966&quot; class&#x3D;&quot;phone-key-ipt&quot; type&#x3D;&quot;text&quot; disabled&gt;
+               &lt;input formControlName&#x3D;&quot;phoneNumberCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.PhoneNumberText&#x27; | translate)&quot;
+                  class&#x3D;&quot;phone-ipt&quot; maxlength&#x3D;&quot;9&quot;
+                  oninput&#x3D;&quot;this.value &#x3D; this.value.replace(/[^0-9.]/g, &#x27;&#x27;).replace(/(\..*)\./g, &#x27;$1&#x27;);&quot; type&#x3D;&quot;text&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; registrationForm.phoneNumberCtrl.errors&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;registrationForm.phoneNumberCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;registrationForm.phoneNumberCtrl.errors.minlength&quot;&gt;
+                  {{ &#x27;Errors.IncompleteInputField&#x27; | translate }}&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Email Input --&gt;
+            &lt;input formControlName&#x3D;&quot;emailCtrl&quot; type&#x3D;&quot;email&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.EmailText&#x27; | translate)&quot; /&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; registrationForm.emailCtrl.errors&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;registrationForm.emailCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;registrationForm.emailCtrl.errors.pattern&quot;&gt;
+                  {{ &#x27;Errors.InvalidEmail&#x27; | translate }}&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Password Input --&gt;
+            &lt;div class&#x3D;&quot;input-btn-group flex-container&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+               &lt;input formControlName&#x3D;&quot;passwordCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.PasswordText&#x27; | translate)&quot; [type]&#x3D;&quot;fieldTextType ? &#x27;text&#x27; : &#x27;password&#x27;&quot; class&#x3D;&quot;verification-code-ipt&quot; style&#x3D;&quot;width: 80%;&quot;/&gt;
+               &lt;!-- Eye Icon --&gt;
+               &lt;div (click)&#x3D;&quot;toggleFieldTextType()&quot; class&#x3D;&quot;primary-btn ghost reset-code-btn password-view-btn text-center&quot; style&#x3D;&quot;width: 20%;&quot;&gt;
+                  &lt;span class&#x3D;&quot;eye-icon&quot;&gt;
+                     &lt;i [ngClass]&#x3D;&quot;{&#x27;icon ion-md-eye&#x27;: !fieldTextType, &#x27;icon ion-md-eye-off&#x27;: fieldTextType}&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Password Validation Message --&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; registrationForm.passwordCtrl.errors&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;registrationForm.passwordCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Password Confirmation Input --&gt;
+            &lt;div class&#x3D;&quot;input-btn-group flex-container&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+               &lt;input formControlName&#x3D;&quot;confirmPasswordCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.ConfirmPasswordText&#x27; | translate)&quot; [type]&#x3D;&quot;fieldTextType ? &#x27;text&#x27; : &#x27;password&#x27;&quot; class&#x3D;&quot;verification-code-ipt&quot; style&#x3D;&quot;width: 80%;&quot;/&gt;
+               &lt;!-- Eye Icon --&gt;
+               &lt;div (click)&#x3D;&quot;toggleFieldTextType()&quot; class&#x3D;&quot;primary-btn ghost reset-code-btn password-view-btn text-center&quot; style&#x3D;&quot;width: 20%;&quot;&gt;
+                  &lt;span class&#x3D;&quot;eye-icon&quot;&gt;
+                     &lt;i [ngClass]&#x3D;&quot;{&#x27;icon ion-md-eye&#x27;: !fieldTextType, &#x27;icon ion-md-eye-off&#x27;: fieldTextType}&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Password Confirmation Validation Messages --&gt;
+            &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; registrationForm.confirmPasswordCtrl.errors&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;registrationForm.confirmPasswordCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Submit Button --&gt;
+            &lt;button (click)&#x3D;&quot;register()&quot; class&#x3D;&quot;primary-btn form-signin-btn&quot; style&#x3D;&quot;margin-top: 1em;&quot;&gt;
+               &lt;span&gt;{{ &#x27;Auth.SignUpText&#x27; | translate }}&lt;/span&gt;
+               &lt;i *ngIf&#x3D;&quot;!isLoading&quot; class&#x3D;&quot;ion-md-person-add&quot;&gt;&lt;/i&gt;
+               &lt;span *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+
+         &lt;/form&gt;
+      &lt;/div&gt;
+
+
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;!--                            VERIFICATION FORM                            --&gt;
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;div *ngIf&#x3D;&quot;isVerificationVisible&quot; class&#x3D;&quot;form-container verification-container&quot;&gt;
+         &lt;div class&#x3D;&quot;flex-column&quot;&gt;
+
+            &lt;!-- Check Icon --&gt;
+            &lt;div class&#x3D;&quot;flex-container flex-centered&quot;&gt;
+               &lt;div class&#x3D;&quot;flex-column flex-centered&quot;&gt;
+                  &lt;i style&#x3D;&quot;margin: 10px auto; font-size: 70px;&quot; class&#x3D;&quot;ion-md-checkmark-circle secondary-lime&quot;&gt;&lt;/i&gt;
+                  &lt;h3 style&#x3D;&quot;text-align: center; margin: 10px;&quot;&gt;{{ &#x27;Auth.AccontActivationText&#x27; | translate }}&lt;/h3&gt;
+                  &lt;h6 style&#x3D;&quot;text-align: center;&quot;&gt;{{ &#x27;Auth.VerifyAccountText&#x27; | translate }}&lt;/h6&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;flex-container flex-centered&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+               &lt;div class&#x3D;&quot;flex-centered&quot;&gt;
+
+                  &lt;!-- Error(s) Alert --&gt;
+                  &lt;ngb-alert *ngIf&#x3D;&quot;isErrorAlertVisible&quot; type&#x3D;&quot;danger&quot; (close)&#x3D;&quot;isErrorAlertVisible &#x3D; !isErrorAlertVisible&quot;&gt;
+                     &lt;small&gt;{{ errorMessage }}&lt;/small&gt;
+                     &lt;small *ngIf&#x3D;&quot;validationErrors&quot;&gt;
+                        &lt;ul class&#x3D;&quot;errors-list&quot;&gt;
+                           &lt;li *ngFor&#x3D;&quot;let error of validationErrors&quot;&gt;
+                              {{error}}
+                           &lt;/li&gt;
+                        &lt;/ul&gt;
+                     &lt;/small&gt;
+                  &lt;/ngb-alert&gt;
+
+                  &lt;!-- Success Alert --&gt;
+                  &lt;ngb-alert *ngIf&#x3D;&quot;isSuccessAlertVisible&quot; type&#x3D;&quot;success&quot; (close)&#x3D;&quot;isSuccessAlertVisible &#x3D; !isSuccessAlertVisible&quot;&gt;
+                     &lt;small&gt;{{ &#x27;Auth.ResendVerSuccessAlert&#x27; | translate }}&lt;/small&gt;
+                  &lt;/ngb-alert&gt;
+
+                  &lt;!-- Validation Code Input --&gt;
+                  &lt;div class&#x3D;&quot;verification-ipt-group flex-container&quot;&gt;
+                     &lt;input [(ngModel)]&#x3D;&quot;verificationCode&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.VerificationCodeText&#x27; | translate)&quot; class&#x3D;&quot;verification-code-ipt&quot; type&#x3D;&quot;text&quot;&gt;
+                     &lt;!-- Submit Button --&gt;
+                     &lt;button (click)&#x3D;&quot;sendVerificationCode()&quot; class&#x3D;&quot;verification-code-btn primary-btn&quot;&gt;
+                        &lt;span&gt;{{ &#x27;App.ContinueText&#x27; | translate }}&lt;/span&gt;
+                        &lt;span *ngIf&#x3D;&quot;(isLoading &amp;&amp; !isResending)&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                     &lt;/button&gt;
+                  &lt;/div&gt;
+                  &lt;div *ngIf&#x3D;&quot;isSubmitting &amp;&amp; (!verificationCode || verificationCode.toString().length &#x3D;&#x3D;&#x3D; 0)&quot;&gt;
+                     &lt;div class&#x3D;&quot;v-meassage&quot;&gt;{{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Resend email link --&gt;
+                  &lt;div class&#x3D;&quot;text-center padded&quot;&gt;
+                     &lt;a (click)&#x3D;&quot;resendVerficationCode()&quot; id&#x3D;&quot;password-reset-link&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;
+                        {{ &#x27;Auth.ResendVerificationCodeText&#x27; | translate }}
+                        &lt;span *ngIf&#x3D;&quot;(isResending &amp;&amp; isLoading)&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+                     &lt;/a&gt;
+                  &lt;/div&gt;
+
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+         &lt;/div&gt;
+      &lt;/div&gt;
+
+
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;!--                           PASSWORD RESET FORM                           --&gt;
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;div *ngIf&#x3D;&quot;isPasswordResetVisible&quot; class&#x3D;&quot;password-reset-container&quot;&gt;
+         &lt;form [formGroup]&#x3D;&quot;passwordResetFormGroup&quot; class&#x3D;&quot;flex-centered&quot;&gt;
+
+            &lt;!-- Title --&gt;
+            &lt;h4 class&#x3D;&quot;auth-form-header&quot;&gt;
+               &lt;i class&#x3D;&quot;ion-ios-lock&quot;&gt;&lt;/i&gt;
+               {{ &#x27;Auth.PasswordReset.ResetPasswordText&#x27; | translate }}
+            &lt;/h4&gt;
+
+            &lt;!-- Subtitle --&gt;
+            &lt;h6 *ngIf&#x3D;&quot;isRequestingPasswordReset&quot; class&#x3D;&quot;auth-form-header&quot;&gt;
+               {{ &#x27;Auth.PasswordReset.VerificationStatement&#x27; | translate }}
+            &lt;/h6&gt;
+
+            &lt;!-- Error(s) Alert --&gt;
+            &lt;ngb-alert *ngIf&#x3D;&quot;isErrorAlertVisible&quot; type&#x3D;&quot;danger&quot; (close)&#x3D;&quot;isErrorAlertVisible &#x3D; !isErrorAlertVisible&quot;&gt;
+               &lt;small&gt;{{ errorMessage }}&lt;/small&gt;
+               &lt;small *ngIf&#x3D;&quot;validationErrors&quot;&gt;
+                  &lt;ul class&#x3D;&quot;errors-list&quot;&gt;
+                     &lt;li *ngFor&#x3D;&quot;let error of validationErrors&quot;&gt;{{error}}&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/small&gt;
+            &lt;/ngb-alert&gt;
+
+            &lt;!-- Success Message --&gt;
+            &lt;ngb-alert *ngIf&#x3D;&quot;isSuccessAlertVisible&quot; type&#x3D;&quot;success&quot; (close)&#x3D;&quot;isSuccessAlertVisible &#x3D; !isSuccessAlertVisible&quot;&gt;
+               &lt;small&gt;{{ &#x27;Auth.PasswordReset.CodeResendText&#x27; | translate }}&lt;/small&gt;
+            &lt;/ngb-alert&gt;
+
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;!--                               Email Input                               --&gt;
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;input *ngIf&#x3D;&quot;!isRequestingPasswordReset&quot; formControlName&#x3D;&quot;emailCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.EmailText&#x27; | translate)&quot; type&#x3D;&quot;email&quot; /&gt;
+            &lt;!-- Email Validation Messages --&gt;
+            &lt;div *ngIf&#x3D;&quot;!isRequestingPasswordReset &amp;&amp; isSubmitting &amp;&amp; passwordResetForm.emailCtrl.errors&quot; class&#x3D;&quot;error-group&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;passwordResetForm.emailCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+               &lt;/div&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;passwordResetForm.emailCtrl.errors.pattern&quot;&gt;
+                  {{ &#x27;Errors.InvalidEmail&#x27; | translate }}
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;!--                         Last Phone Digits Input                         --&gt;
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;input *ngIf&#x3D;&quot;!isRequestingPasswordReset&quot; formControlName&#x3D;&quot;phoneNumberCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.PasswordReset.LastPhoneDigitsText&#x27; | translate)&quot; maxlength&#x3D;&quot;4&quot; oninput&#x3D;&quot;this.value &#x3D; this.value.replace(/[^0-9.]/g, &#x27;&#x27;).replace(/(\..*)\./g, &#x27;$1&#x27;);&quot; type&#x3D;&quot;text&quot; /&gt;
+            &lt;!-- Phone Digits Validation Messages --&gt;
+            &lt;div *ngIf&#x3D;&quot;!isRequestingPasswordReset &amp;&amp; isSubmitting &amp;&amp; passwordResetForm.phoneNumberCtrl.errors&quot; class&#x3D;&quot;error-group&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;passwordResetForm.phoneNumberCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+               &lt;/div&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;passwordResetForm.phoneNumberCtrl.errors.minlength&quot;&gt;
+                  {{ &#x27;Errors.IncompleteInputField&#x27; | translate }}
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;!--                               Code Input                                --&gt;
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;div *ngIf&#x3D;&quot;isRequestingPasswordReset&quot; class&#x3D;&quot;flex-container&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+               &lt;input class&#x3D;&quot;verification-code-ipt&quot; formControlName&#x3D;&quot;resetTokenCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.PasswordReset.ResetCode&#x27; | translate)&quot; type&#x3D;&quot;text&quot; style&#x3D;&quot;width: 57%;&quot; /&gt;
+               &lt;!-- Resend Button --&gt;
+               &lt;button (click)&#x3D;&quot;reissuePasswordReset()&quot; class&#x3D;&quot;primary-btn reset-code-btn verification-code-btn&quot; style&#x3D;&quot;width: 43%;&quot;&gt;
+                  &lt;span *ngIf&#x3D;&quot;!isResending&quot;&gt;{{ &#x27;App.ResendText&#x27; | translate }}&lt;/span&gt;
+                  &lt;span *ngIf&#x3D;&quot;isResending&quot; class&#x3D;&quot;spinner-border spinner-border-sm centered&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+               &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- Code Validation Messages --&gt;
+            &lt;div *ngIf&#x3D;&quot;!isResending &amp;&amp; isRequestingPasswordReset &amp;&amp; isSubmitting &amp;&amp; passwordResetForm.resetTokenCtrl.errors&quot; class&#x3D;&quot;error-group&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;passwordResetForm.resetTokenCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;!--                           New Password Input                            --&gt;
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;div *ngIf&#x3D;&quot;isRequestingPasswordReset&quot; class&#x3D;&quot;flex-container&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+               &lt;input formControlName&#x3D;&quot;passwordCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.PasswordReset.NewPasswordText&#x27; | translate)&quot; [type]&#x3D;&quot;fieldTextType ? &#x27;text&#x27; : &#x27;password&#x27;&quot; class&#x3D;&quot;verification-code-ipt&quot; style&#x3D;&quot;width: 80%;&quot;/&gt;
+               &lt;!-- Eye Icon --&gt;
+               &lt;div (click)&#x3D;&quot;toggleFieldTextType()&quot; class&#x3D;&quot;primary-btn ghost reset-code-btn password-view-btn text-center&quot; style&#x3D;&quot;width: 20%;&quot;&gt;
+                  &lt;span class&#x3D;&quot;eye-icon&quot;&gt;
+                     &lt;i [ngClass]&#x3D;&quot;{&#x27;icon ion-md-eye&#x27;: !fieldTextType, &#x27;icon ion-md-eye-off&#x27;: fieldTextType}&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- New Password Validation Messages --&gt;
+            &lt;div *ngIf&#x3D;&quot;!isResending &amp;&amp; isRequestingPasswordReset &amp;&amp; isSubmitting &amp;&amp; passwordResetForm.passwordCtrl.errors&quot; class&#x3D;&quot;error-group&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;passwordResetForm.passwordCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;!--                       Password Confirmation Input                       --&gt;
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;div *ngIf&#x3D;&quot;isRequestingPasswordReset&quot; class&#x3D;&quot;flex-container&quot; style&#x3D;&quot;width: 100%;&quot;&gt;
+               &lt;input formControlName&#x3D;&quot;confirmPasswordCtrl&quot; [placeholder]&#x3D;&quot;(&#x27;Auth.ConfirmPasswordText&#x27; | translate)&quot; [type]&#x3D;&quot;fieldTextType ? &#x27;text&#x27; : &#x27;password&#x27;&quot; class&#x3D;&quot;verification-code-ipt&quot; style&#x3D;&quot;width: 80%;&quot;/&gt;
+               &lt;!-- Eye Icon --&gt;
+               &lt;div (click)&#x3D;&quot;toggleFieldTextType()&quot; class&#x3D;&quot;primary-btn ghost reset-code-btn password-view-btn text-center&quot; style&#x3D;&quot;width: 20%;&quot;&gt;
+                  &lt;span class&#x3D;&quot;eye-icon&quot;&gt;
+                     &lt;i [ngClass]&#x3D;&quot;{&#x27;icon ion-md-eye&#x27;: !fieldTextType, &#x27;icon ion-md-eye-off&#x27;: fieldTextType}&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Password Confirmation Validation Messages --&gt;
+            &lt;div *ngIf&#x3D;&quot;!isResending &amp;&amp; isRequestingPasswordReset &amp;&amp; isSubmitting  &amp;&amp; passwordResetForm.confirmPasswordCtrl.errors&quot;&gt;
+               &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;passwordResetForm.confirmPasswordCtrl.errors.required&quot;&gt;
+                  {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+               &lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;!--                      Reset Issue (Continue) Button                      --&gt;
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;button *ngIf&#x3D;&quot;!isRequestingPasswordReset&quot; (click)&#x3D;&quot;issuePasswordReset()&quot; class&#x3D;&quot;verification-code-btn primary-btn&quot; type&#x3D;&quot;button&quot;&gt;
+               &lt;span&gt;{{ &#x27;App.ContinueText&#x27; | translate }}&lt;/span&gt;
+               &lt;i *ngIf&#x3D;&quot;!isLoading&quot; class&#x3D;&quot;ion-md-done-all&quot;&gt;&lt;/i&gt;
+               &lt;span *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+
+
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;!--                          Reset (Submit) Button                          --&gt;
+            &lt;!-- ----------------------------------------------------------------------- --&gt;
+            &lt;button *ngIf&#x3D;&quot;isRequestingPasswordReset&quot; (click)&#x3D;&quot;resetPassword()&quot; class&#x3D;&quot;verification-code-btn primary-btn&quot; type&#x3D;&quot;button&quot;&gt;
+               &lt;span&gt;{{ &#x27;Auth.PasswordReset.ResetText&#x27; | translate }}&lt;/span&gt;
+               &lt;i *ngIf&#x3D;&quot;!isLoading&quot; class&#x3D;&quot;ion-md-done-all&quot;&gt;&lt;/i&gt;
+               &lt;span *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;spinner-border spinner-border-sm&quot; role&#x3D;&quot;status&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+
+         &lt;/form&gt;
+      &lt;/div&gt;
+
+
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;!--                          OVERLAY SLIDING MENU                           --&gt;
+      &lt;!-- ----------------------------------------------------------------------- --&gt;
+      &lt;div class&#x3D;&quot;overlay-container&quot;&gt;
+         &lt;div class&#x3D;&quot;overlay&quot;&gt;
+            &lt;div class&#x3D;&quot;overlay-panel overlay-left&quot;&gt;
+               &lt;h5 style&#x3D;&quot;margin-bottom: 1.5em;&quot;&gt;{{ &#x27;Auth.SignToExistingText&#x27; | translate }}&lt;/h5&gt;
+               &lt;button (click)&#x3D;&quot;toggleLoginForm()&quot; class&#x3D;&quot;primary-btn ghost bouncy&quot; id&#x3D;&quot;signIn&quot;&gt;
+                  &lt;span&gt;{{ &#x27;Auth.SignInText&#x27; | translate }}&lt;/span&gt;
+               &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;overlay-panel overlay-right&quot;&gt;
+               &lt;h5 style&#x3D;&quot;margin-bottom: 1.5em;&quot;&gt;{{ &#x27;Auth.CreateAccountText&#x27; | translate }}&lt;/h5&gt;
+               &lt;button (click)&#x3D;&quot;toggleRegistrationForm()&quot; class&#x3D;&quot;primary-btn ghost bouncy&quot; id&#x3D;&quot;signUp&quot;&gt;
+                  &lt;span&gt;{{ &#x27;Auth.SignUpText&#x27; | translate }}&lt;/span&gt;
+               &lt;/button&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+
+   &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./auth.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* AUTH CARD LAYOUT */
+
+.login-page-container {
+	background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(&quot;../../../assets/images/background.png&quot;);
+	display: flex;
+	min-height: calc(100vh - 70px);
+}
+
+* {
+   box-sizing: border-box;
+   transition: all .3s ease;
+}
+
+body {
+	 background: #f6f5f7; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: &#x27;Montserrat&#x27;, sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.hidden {
+	display: hidden;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 3px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.2), 0 10px 10px rgba(0,0,0,0.2);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 520px;
+	transform: skewX(7deg);
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/* Password View Eye Button */
+.password-view-btn {
+	background-color: #eee;
+	border-radius: 0;
+   margin-top: 5px;
+}
+
+
+
+/* OVERLAY */
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.5s ease-in-out;
+	z-index: 100;
+}
+
+.overlay {
+	background: rgb(0,203,218);
+	background: -webkit-linear-gradient(122deg, rgba(0,203,218,1) 0%, rgba(0,162,174,1) 50%, rgba(0,134,144,1) 100%);
+	background: linear-gradient(122deg, rgba(0,203,218,1) 0%, rgba(0,162,174,1) 50%, rgba(0,134,144,1) 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFF;
+	position: relative;
+	right: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.5s ease-in-out;
+}
+
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.5s ease-in-out;
+}
+
+.overlay-right {
+	left: 0;
+	transform: translateX(0%) skewX(-7deg);
+}
+
+.overlay-left {
+	left: 0;
+	transform: translateX(-100%) skewX(-7deg);
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.container.right-panel-active .overlay {
+	transform: translateX(0%);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(100%) skewX(-7deg);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0%) skewX(-7deg);
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+ngb-alert {
+	margin: 10px 0;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.error-group {
+   margin-bottom: 10px;
+}
+
+.errors-list {
+	text-align: right;
+}
+
+.eye-icon {
+	color: #333;
+}
+
+.eye-icon i {
+	font-size: 16px;
+	margin: auto;
+}
+
+
+/* LOGIN */
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.sign-in-container form {
+	transform: skewX(-6deg);
+}
+
+.login-opts-container {
+   display: flex;
+   margin-top: 10px;
+   width: 100%;
+}
+
+.login-opts-container #remember-me-check {
+   width: 30%;
+   text-align: right;
+}
+
+#remember-me-check svg {
+   width: 18%;
+}
+
+#remember-me-check span {
+   font-size: 13px;
+}
+
+.login-opts-container #password-reset-link {
+   width: 70%;
+   text-align: left;
+   margin-top: 0;
+}
+
+#password-reset-link:hover {
+   color: #00909b;
+}
+
+.auth-form-header {
+	margin-bottom: 1em;
+}
+
+.auth-form-header i {
+	margin: 0 5px;
+}
+
+.check svg {
+	margin: 5px;
+}
+
+.form-signin-btn {
+   margin-top: 5em;
+}
+
+.form-signin-btn i {
+	font-size: 18px;
+}
+
+
+
+/* REGISTRATION */
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.sign-up-container form {
+   transform: skewX(-6deg);
+}
+
+.phone-ipt-container {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.phone-key-ipt {
+   width: 25%;
+   direction: ltr;
+}
+
+.phone-ipt {
+	width: 75%;
+}
+
+
+
+/* ACCOUNT VERIFICATION */
+
+.verification-container {
+	right: 0;
+	width: 50%;
+	z-index: 10;
+	transform: skewX(-6deg);
+	display: flex;
+	padding: 2em;
+}
+
+.verification-code-ipt {
+   margin: 0 0 8px 0;
+   padding: 9px 15px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+}
+
+.verification-code-btn {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   margin-top: 5px;
+}
+
+
+
+/* PASSWORD RESET */
+
+.password-reset-container {
+   position: absolute;
+	right: 0;
+   width: 50%;
+   height: 100%;
+	z-index: 10;
+	transform: skewX(-6deg);
+	display: flex;
+   background: white;
+}
+
+.password-reset-container form {
+   width: 100%;
+}
+
+.reset-code-group {
+	width: 100%;
+}
+
+.reset-code-group .verification-code-ipt {
+	width: 57%;
+}
+
+.reset-code-btn {
+	width: 43%;
+   margin-top: 0;
+}
+
+.verification-ipt-group .verification-code-ipt {
+	margin: 5px 0;
+}
+
+
+/* MID SCREENS */
+
+@media (max-width: 858px) {
+	.container {
+		width: 90%;
+		transform: skewX(0deg);
+	}
+
+	.sign-in-container form,
+	.sign-up-container form,
+	.verification-container,
+	.password-reset-container {
+		transform: skewX(0deg);
+	}
+
+	.reset-code-btn span {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 760px) {
+
+	form {
+		padding: 0 30px;
+	}
+
+	.login-opts-container {
+		flex-direction: column;
+	}
+
+	.login-opts-container * {
+		text-align: center;
+		margin: auto;
+	}
+
+	#remember-me-check {
+		width: 100%;
+	}
+
+	#remember-me-check svg {
+		width: 30%;
+	}
+
+	.login-opts-container #password-reset-link {
+		text-align: center;
+		margin: 20px auto;
+		width: 100%;
+	}
+
+	.phone-key-ipt {
+		width: 40%;
+	}
+
+	.phone-ipt {
+		width: 60%;
+	}
+
+	.reset-code-group {
+		flex-direction: column;
+	}
+
+	.reset-code-group .verification-code-ipt {
+		width: 100%;
+	}
+
+	.reset-code-btn {
+		width: 100%;
+		background-color: transparent;
+   	border: 1px solid #00a2ae;
+   	color: #00a2ae;
+	}
+
+	.password-view-btn {
+		background-color: #eee;
+		border-color: #eee;
+	}
+
+}
+
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 500px) {
+
+	/* Layout */
+
+	form {
+		padding: 0 15px;
+	}
+
+	a {
+		font-size: 13px;
+	}
+
+	input {
+		padding: 8px 13px;
+		margin: 5px 0;
+	}
+
+	input[type&#x3D;&#x27;text&#x27;], input[type&#x3D;&#x27;email&#x27;] {
+		font-size: 12px;
+	}
+
+	input::placeholder {
+		font-size: 12px;
+	}
+
+	.login-page-container {
+		width: 100vw;
+		min-height: calc(100vh - 50px);
+		justify-content: center;
+	}
+
+	.container {
+      /* min-width: 85vh; */
+		min-width: 520px;
+		min-height: 80vw;
+		transform: rotate(270deg);
+	}
+
+	.container.right-panel-active .overlay-container{
+		transform: translateX(-401%);
+		border-top-right-radius: 40px;
+		border-bottom-right-radius: 40px;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+	}
+
+	.overlay-container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20%;
+		height: 100%;
+		border-bottom-left-radius: 40px;
+		border-top-left-radius: 40px;
+		transition: all .6s ease;
+	}
+
+	.container.right-panel-active .sign-in-container {
+		opacity: 0;
+	}
+
+
+	/* Overlay Content */
+
+	.overlay-panel * {
+		transform: skewX(7deg) rotate(90deg);
+	}
+
+	.overlay-panel h5 {
+		display: none;
+	}
+
+	.overlay-panel button {
+		width: 180px;
+		height: 50px;
+		/* border: 0; */
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	.overlay-panel button:hover  {
+		background: none;
+	}
+
+	.overlay-panel button:active span  {
+		transform: skewX(0deg) rotate(0deg) scale(.9);
+	}
+
+	.overlay-panel button span {
+		transform: skewX(0deg) rotate(0deg) scale(1.2);
+		font-weight: bold;
+	}
+
+
+	/* Forms */
+	.sign-in-container form,
+	.sign-up-container form,
+	.verification-container,
+	.password-reset-container {
+		transform: rotate(90deg) skewX(0deg);
+	}
+
+	/* Login */
+
+	.sign-in-container {
+		left: 15%;
+		width: 50%;
+	}
+
+	.form-signin-btn {
+		margin-top: 2em;
+	}
+
+	.login-opts-container #remember-me-check {
+		width: 100%;
+	}
+
+	#remember-me-check svg {
+		width: 7%;
+	}
+
+	#remember-me-check label {
+		text-align: right;
+	}
+
+	/* Registration */
+
+	.sign-up-container {
+		right: 65%;
+	}
+
+	/* Password Reset */
+
+	.password-reset-container {
+		right: 15%;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.container.right-panel-active .password-reset-container {
+		visibility: visible;
+		opacity: 1;
+	}
+
+
+	/* Verification */
+
+	.verification-container {
+		left: unset;
+		right: 5%;
+		padding: 1em;
+	}
+
+	.verification-ipt-group {
+		flex-direction: column;
+		margin: 10px 0;
+	}
+
+	.verification-ipt-group * {
+		margin: auto;
+		width: 100%;
+	}
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="login-page-container">   <div class="container flex-centered" [ngClass]="{ \'right-panel-active\' : isRightPanelActive }">      <!-- ----------------------------------------------------------------------- -->      <!--                               LOGIN FORM                                -->      <!-- ----------------------------------------------------------------------- -->      <div *ngIf="!isVerificationVisible" class="form-container sign-in-container">         <form [formGroup]="loginFormGroup">            <!-- Login Title -->            <h5 class="auth-form-header">               <i class="ion-md-lock"></i>               {{ \'Auth.SignInText\' | translate }}            </h5>            <!-- Error(s) Alert -->            <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">               <small>{{ errorMessage }}</small>               <small *ngIf="validationErrors">                  <ul class="errors-list">                     <li *ngFor="let error of validationErrors">                        {{error}}                     </li>                  </ul>               </small>            </ngb-alert>            <!-- Success Alert -->            <ngb-alert *ngIf="isSuccessAlertVisible" type="success" (close)="isSuccessAlertVisible = !isSuccessAlertVisible">               <small>{{successMessage}}</small>            </ngb-alert>            <!-- Email Input -->            <input formControlName="emailCtrl" type="email" [placeholder]="(\'Auth.EmailText\' | translate)" />            <div *ngIf="isSubmitting && loginForm.emailCtrl.errors">               <div class="v-meassage" *ngIf="loginForm.emailCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}               </div>               <div class="v-meassage" *ngIf="loginForm.emailCtrl.errors.pattern">                  {{ \'Errors.InvalidEmail\' | translate }}               </div>            </div>            <!-- Backend validation errors -->            <div *ngIf="isSubmitting && loginFormGroup.errors?.Username">               <div class="v-meassage" *ngFor="let description of loginFormGroup.errors.descriptions">                  <span *ngIf="description.Username">                     {{description.Username}}                  </span>               </div>            </div>                        <!-- Password Input -->            <div class="input-btn-group flex-container" style="width: 100%;">               <input formControlName="passwordCtrl" [placeholder]="(\'Auth.PasswordText\' | translate)" [type]="fieldTextType ? \'text\' : \'password\'" class="verification-code-ipt" style="width: 80%;" />               <!-- Eye Icon -->               <div (click)="toggleFieldTextType()" class="primary-btn ghost reset-code-btn password-view-btn text-center" style="width: 20%;">                  <span class="eye-icon">                     <i [ngClass]="{\'icon ion-md-eye\': !fieldTextType, \'icon ion-md-eye-off\': fieldTextType}"></i>                  </span>               </div>            </div>            <div *ngIf="isSubmitting && loginForm.passwordCtrl.errors">               <div class="v-meassage" *ngIf="loginForm.passwordCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}               </div>            </div>            <!-- Backend validation errors -->            <div *ngIf="isSubmitting && loginFormGroup.errors?.Password">               <div class="v-meassage" *ngFor="let description of loginFormGroup.errors.descriptions">                  <span *ngIf="description.Password">                     {{description.Password}}                  </span>               </div>            </div>            <!-- Login Options -->            <div class="login-opts-container">               <!-- RememberMe Checkbox -->               <!-- <div id="remember-me-check">                  <input (change)="isRememberMeChecked = !isRememberMeChecked" formControlName="rememberMeCtrl"                     name="remeber-me-check" autocomplete="on" class="cbx" type="checkbox" id="\'login-remember-cbx\'"                     style="display: none;">                  <label for="\'login-remember-cbx\'" class="check noselect">                     <svg width="18px" height="18px" viewBox="0 0 20 18">                        <path                           d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">                        </path>                        <polyline points="1 9 7 14 15 4"></polyline>                     </svg>                     <span> {{ \'Auth.RememberMeText\' | translate }} </span>                  </label>               </div> -->               <!-- Forgot Password -->               <a (click)="togglePasswordResetForm()" id="password-reset-link" href="javascript:void(0)">                  {{ \'Auth.ForgotPasswordText\' | translate }}               </a>            </div>            <!-- Login Button -->            <button (click)="login()" class="primary-btn form-signin-btn">               <span>{{ \'Auth.SignInText\' | translate }}</span>               <i *ngIf="!isLoading" class="ion-md-log-in"></i>               <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>            </button>         </form>      </div>      <!-- ----------------------------------------------------------------------- -->      <!--                            REGISTRATION FORM                            -->      <!-- ----------------------------------------------------------------------- -->      <div *ngIf="isRegistrationVisible" class="form-container sign-up-container">         <form [formGroup]="registrationFormGroup">            <!-- Registration Title -->            <h5 class="auth-form-header">               <i class="ion-md-lock"></i>               {{ \'Auth.SignUpText\' | translate }}            </h5>            <!-- Error(s) Alert -->            <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">               <small>{{ errorMessage }}</small>               <small *ngIf="validationErrors">                  <ul class="errors-list">                     <li *ngFor="let error of validationErrors">{{error}}</li>                  </ul>               </small>            </ngb-alert>            <!-- Phone Input -->            <div class="phone-ipt-container">               <input placeholder="+966" class="phone-key-ipt" type="text" disabled>               <input formControlName="phoneNumberCtrl" [placeholder]="(\'Auth.PhoneNumberText\' | translate)"                  class="phone-ipt" maxlength="9"                  oninput="this.value = this.value.replace(/[^0-9.]/g, \'\').replace(/(\..*)\./g, \'$1\');" type="text" />            </div>            <div *ngIf="isSubmitting && registrationForm.phoneNumberCtrl.errors">               <div class="v-meassage" *ngIf="registrationForm.phoneNumberCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}</div>               <div class="v-meassage" *ngIf="registrationForm.phoneNumberCtrl.errors.minlength">                  {{ \'Errors.IncompleteInputField\' | translate }}</div>            </div>            <!-- Email Input -->            <input formControlName="emailCtrl" type="email" [placeholder]="(\'Auth.EmailText\' | translate)" />            <div *ngIf="isSubmitting && registrationForm.emailCtrl.errors">               <div class="v-meassage" *ngIf="registrationForm.emailCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}</div>               <div class="v-meassage" *ngIf="registrationForm.emailCtrl.errors.pattern">                  {{ \'Errors.InvalidEmail\' | translate }}</div>            </div>            <!-- Password Input -->            <div class="input-btn-group flex-container" style="width: 100%;">               <input formControlName="passwordCtrl" [placeholder]="(\'Auth.PasswordText\' | translate)" [type]="fieldTextType ? \'text\' : \'password\'" class="verification-code-ipt" style="width: 80%;"/>               <!-- Eye Icon -->               <div (click)="toggleFieldTextType()" class="primary-btn ghost reset-code-btn password-view-btn text-center" style="width: 20%;">                  <span class="eye-icon">                     <i [ngClass]="{\'icon ion-md-eye\': !fieldTextType, \'icon ion-md-eye-off\': fieldTextType}"></i>                  </span>               </div>            </div>            <!-- Password Validation Message -->            <div *ngIf="isSubmitting && registrationForm.passwordCtrl.errors">               <div class="v-meassage" *ngIf="registrationForm.passwordCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}</div>            </div>            <!-- Password Confirmation Input -->            <div class="input-btn-group flex-container" style="width: 100%;">               <input formControlName="confirmPasswordCtrl" [placeholder]="(\'Auth.ConfirmPasswordText\' | translate)" [type]="fieldTextType ? \'text\' : \'password\'" class="verification-code-ipt" style="width: 80%;"/>               <!-- Eye Icon -->               <div (click)="toggleFieldTextType()" class="primary-btn ghost reset-code-btn password-view-btn text-center" style="width: 20%;">                  <span class="eye-icon">                     <i [ngClass]="{\'icon ion-md-eye\': !fieldTextType, \'icon ion-md-eye-off\': fieldTextType}"></i>                  </span>               </div>            </div>            <!-- Password Confirmation Validation Messages -->            <div *ngIf="isSubmitting && registrationForm.confirmPasswordCtrl.errors">               <div class="v-meassage" *ngIf="registrationForm.confirmPasswordCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}</div>            </div>            <!-- Submit Button -->            <button (click)="register()" class="primary-btn form-signin-btn" style="margin-top: 1em;">               <span>{{ \'Auth.SignUpText\' | translate }}</span>               <i *ngIf="!isLoading" class="ion-md-person-add"></i>               <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>            </button>         </form>      </div>      <!-- ----------------------------------------------------------------------- -->      <!--                            VERIFICATION FORM                            -->      <!-- ----------------------------------------------------------------------- -->      <div *ngIf="isVerificationVisible" class="form-container verification-container">         <div class="flex-column">            <!-- Check Icon -->            <div class="flex-container flex-centered">               <div class="flex-column flex-centered">                  <i style="margin: 10px auto; font-size: 70px;" class="ion-md-checkmark-circle secondary-lime"></i>                  <h3 style="text-align: center; margin: 10px;">{{ \'Auth.AccontActivationText\' | translate }}</h3>                  <h6 style="text-align: center;">{{ \'Auth.VerifyAccountText\' | translate }}</h6>               </div>            </div>            <div class="flex-container flex-centered" style="width: 100%;">               <div class="flex-centered">                  <!-- Error(s) Alert -->                  <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">                     <small>{{ errorMessage }}</small>                     <small *ngIf="validationErrors">                        <ul class="errors-list">                           <li *ngFor="let error of validationErrors">                              {{error}}                           </li>                        </ul>                     </small>                  </ngb-alert>                  <!-- Success Alert -->                  <ngb-alert *ngIf="isSuccessAlertVisible" type="success" (close)="isSuccessAlertVisible = !isSuccessAlertVisible">                     <small>{{ \'Auth.ResendVerSuccessAlert\' | translate }}</small>                  </ngb-alert>                  <!-- Validation Code Input -->                  <div class="verification-ipt-group flex-container">                     <input [(ngModel)]="verificationCode" [placeholder]="(\'Auth.VerificationCodeText\' | translate)" class="verification-code-ipt" type="text">                     <!-- Submit Button -->                     <button (click)="sendVerificationCode()" class="verification-code-btn primary-btn">                        <span>{{ \'App.ContinueText\' | translate }}</span>                        <span *ngIf="(isLoading && !isResending)" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>                     </button>                  </div>                  <div *ngIf="isSubmitting && (!verificationCode || verificationCode.toString().length === 0)">                     <div class="v-meassage">{{ \'Errors.EmptyInputField\' | translate }}</div>                  </div>                  <!-- Resend email link -->                  <div class="text-center padded">                     <a (click)="resendVerficationCode()" id="password-reset-link" href="javascript:void(0)">                        {{ \'Auth.ResendVerificationCodeText\' | translate }}                        <span *ngIf="(isResending && isLoading)" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>                     </a>                  </div>               </div>            </div>         </div>      </div>      <!-- ----------------------------------------------------------------------- -->      <!--                           PASSWORD RESET FORM                           -->      <!-- ----------------------------------------------------------------------- -->      <div *ngIf="isPasswordResetVisible" class="password-reset-container">         <form [formGroup]="passwordResetFormGroup" class="flex-centered">            <!-- Title -->            <h4 class="auth-form-header">               <i class="ion-ios-lock"></i>               {{ \'Auth.PasswordReset.ResetPasswordText\' | translate }}            </h4>            <!-- Subtitle -->            <h6 *ngIf="isRequestingPasswordReset" class="auth-form-header">               {{ \'Auth.PasswordReset.VerificationStatement\' | translate }}            </h6>            <!-- Error(s) Alert -->            <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">               <small>{{ errorMessage }}</small>               <small *ngIf="validationErrors">                  <ul class="errors-list">                     <li *ngFor="let error of validationErrors">{{error}}</li>                  </ul>               </small>            </ngb-alert>            <!-- Success Message -->            <ngb-alert *ngIf="isSuccessAlertVisible" type="success" (close)="isSuccessAlertVisible = !isSuccessAlertVisible">               <small>{{ \'Auth.PasswordReset.CodeResendText\' | translate }}</small>            </ngb-alert>            <!-- ----------------------------------------------------------------------- -->            <!--                               Email Input                               -->            <!-- ----------------------------------------------------------------------- -->            <input *ngIf="!isRequestingPasswordReset" formControlName="emailCtrl" [placeholder]="(\'Auth.EmailText\' | translate)" type="email" />            <!-- Email Validation Messages -->            <div *ngIf="!isRequestingPasswordReset && isSubmitting && passwordResetForm.emailCtrl.errors" class="error-group">               <div class="v-meassage" *ngIf="passwordResetForm.emailCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}               </div>               <div class="v-meassage" *ngIf="passwordResetForm.emailCtrl.errors.pattern">                  {{ \'Errors.InvalidEmail\' | translate }}               </div>            </div>            <!-- ----------------------------------------------------------------------- -->            <!--                         Last Phone Digits Input                         -->            <!-- ----------------------------------------------------------------------- -->            <input *ngIf="!isRequestingPasswordReset" formControlName="phoneNumberCtrl" [placeholder]="(\'Auth.PasswordReset.LastPhoneDigitsText\' | translate)" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, \'\').replace(/(\..*)\./g, \'$1\');" type="text" />            <!-- Phone Digits Validation Messages -->            <div *ngIf="!isRequestingPasswordReset && isSubmitting && passwordResetForm.phoneNumberCtrl.errors" class="error-group">               <div class="v-meassage" *ngIf="passwordResetForm.phoneNumberCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}               </div>               <div class="v-meassage" *ngIf="passwordResetForm.phoneNumberCtrl.errors.minlength">                  {{ \'Errors.IncompleteInputField\' | translate }}               </div>            </div>            <!-- ----------------------------------------------------------------------- -->            <!--                               Code Input                                -->            <!-- ----------------------------------------------------------------------- -->            <div *ngIf="isRequestingPasswordReset" class="flex-container" style="width: 100%;">               <input class="verification-code-ipt" formControlName="resetTokenCtrl" [placeholder]="(\'Auth.PasswordReset.ResetCode\' | translate)" type="text" style="width: 57%;" />               <!-- Resend Button -->               <button (click)="reissuePasswordReset()" class="primary-btn reset-code-btn verification-code-btn" style="width: 43%;">                  <span *ngIf="!isResending">{{ \'App.ResendText\' | translate }}</span>                  <span *ngIf="isResending" class="spinner-border spinner-border-sm centered" role="status" aria-hidden="true"></span>               </button>            </div>            <!-- Code Validation Messages -->            <div *ngIf="!isResending && isRequestingPasswordReset && isSubmitting && passwordResetForm.resetTokenCtrl.errors" class="error-group">               <div class="v-meassage" *ngIf="passwordResetForm.resetTokenCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}               </div>            </div>            <!-- ----------------------------------------------------------------------- -->            <!--                           New Password Input                            -->            <!-- ----------------------------------------------------------------------- -->            <div *ngIf="isRequestingPasswordReset" class="flex-container" style="width: 100%;">               <input formControlName="passwordCtrl" [placeholder]="(\'Auth.PasswordReset.NewPasswordText\' | translate)" [type]="fieldTextType ? \'text\' : \'password\'" class="verification-code-ipt" style="width: 80%;"/>               <!-- Eye Icon -->               <div (click)="toggleFieldTextType()" class="primary-btn ghost reset-code-btn password-view-btn text-center" style="width: 20%;">                  <span class="eye-icon">                     <i [ngClass]="{\'icon ion-md-eye\': !fieldTextType, \'icon ion-md-eye-off\': fieldTextType}"></i>                  </span>               </div>            </div>            <!-- New Password Validation Messages -->            <div *ngIf="!isResending && isRequestingPasswordReset && isSubmitting && passwordResetForm.passwordCtrl.errors" class="error-group">               <div class="v-meassage" *ngIf="passwordResetForm.passwordCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}               </div>            </div>                        <!-- ----------------------------------------------------------------------- -->            <!--                       Password Confirmation Input                       -->            <!-- ----------------------------------------------------------------------- -->            <div *ngIf="isRequestingPasswordReset" class="flex-container" style="width: 100%;">               <input formControlName="confirmPasswordCtrl" [placeholder]="(\'Auth.ConfirmPasswordText\' | translate)" [type]="fieldTextType ? \'text\' : \'password\'" class="verification-code-ipt" style="width: 80%;"/>               <!-- Eye Icon -->               <div (click)="toggleFieldTextType()" class="primary-btn ghost reset-code-btn password-view-btn text-center" style="width: 20%;">                  <span class="eye-icon">                     <i [ngClass]="{\'icon ion-md-eye\': !fieldTextType, \'icon ion-md-eye-off\': fieldTextType}"></i>                  </span>               </div>            </div>            <!-- Password Confirmation Validation Messages -->            <div *ngIf="!isResending && isRequestingPasswordReset && isSubmitting  && passwordResetForm.confirmPasswordCtrl.errors">               <div class="v-meassage" *ngIf="passwordResetForm.confirmPasswordCtrl.errors.required">                  {{ \'Errors.EmptyInputField\' | translate }}               </div>            </div>            <!-- ----------------------------------------------------------------------- -->            <!--                      Reset Issue (Continue) Button                      -->            <!-- ----------------------------------------------------------------------- -->            <button *ngIf="!isRequestingPasswordReset" (click)="issuePasswordReset()" class="verification-code-btn primary-btn" type="button">               <span>{{ \'App.ContinueText\' | translate }}</span>               <i *ngIf="!isLoading" class="ion-md-done-all"></i>               <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>            </button>            <!-- ----------------------------------------------------------------------- -->            <!--                          Reset (Submit) Button                          -->            <!-- ----------------------------------------------------------------------- -->            <button *ngIf="isRequestingPasswordReset" (click)="resetPassword()" class="verification-code-btn primary-btn" type="button">               <span>{{ \'Auth.PasswordReset.ResetText\' | translate }}</span>               <i *ngIf="!isLoading" class="ion-md-done-all"></i>               <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>            </button>         </form>      </div>      <!-- ----------------------------------------------------------------------- -->      <!--                          OVERLAY SLIDING MENU                           -->      <!-- ----------------------------------------------------------------------- -->      <div class="overlay-container">         <div class="overlay">            <div class="overlay-panel overlay-left">               <h5 style="margin-bottom: 1.5em;">{{ \'Auth.SignToExistingText\' | translate }}</h5>               <button (click)="toggleLoginForm()" class="primary-btn ghost bouncy" id="signIn">                  <span>{{ \'Auth.SignInText\' | translate }}</span>               </button>            </div>            <div class="overlay-panel overlay-right">               <h5 style="margin-bottom: 1.5em;">{{ \'Auth.CreateAccountText\' | translate }}</h5>               <button (click)="toggleRegistrationForm()" class="primary-btn ghost bouncy" id="signUp">                  <span>{{ \'Auth.SignUpText\' | translate }}</span>               </button>            </div>         </div>      </div>   </div></div></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'AuthenticationPageComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AuthenticationPageComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

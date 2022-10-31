@@ -1,0 +1,21 @@
+body[dir='ltr'] .body-view-link {
+   margin-left: auto;
+   margin-right: 20px;
+}
+
+body[dir='ltr'] .data-body .data-body-container table {
+   margin-left: 2em;
+   margin-right: auto;
+}
+
+body[dir='ltr'] .vehicle-logo-contianer {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   border-radius: 10px;
+  
+}
+
+body[dir='ltr'] .data-body-container .vehicle-logo-contianer img {
+   margin-right: auto;
+   /* margin-left: 1.5em; */
+}

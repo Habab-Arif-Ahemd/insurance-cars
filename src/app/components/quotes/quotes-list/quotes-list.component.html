@@ -1,0 +1,37 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 Loader                                  -->
+<!-- ----------------------------------------------------------------------- -->
+<div *ngIf="isLoadingQuotes" class="loader-card boxed-item mt-3">
+   <div class="content-container loader-wrapper flex-centered flex-container">
+      <div class="loading">
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+      </div>
+   </div>
+</div>
+
+<!-- Get Quotes -->
+<div *ngIf="!isLoadingQuotes ">
+   <div *ngFor="let quote of quotes">
+      <div *ngIf="quote.insuranceCompany.id !==6 ">
+         <ul class="p-1">
+            <li *ngFor="let product of quote.products">
+               <app-quote *ngIf=" displayedProductType == 0" [quote]="quote" [quoteProduct]="product"></app-quote>
+               <app-quote
+                  *ngIf="(displayedProductType==2  && (product.productTypeId == 2||product.productTypeId == 6) )  "
+                  [quote]="quote" [quoteProduct]="product"></app-quote>
+               <!-- <app-quote
+                  *ngIf="(( product.productTypeId == 1 || product.productTypeId == 3||product.productTypeId == 5 ) && displayedProductType ==1 )  "
+                  [quote]="quote" [quoteProduct]="product"></app-quote> -->
+
+
+
+            </li>
+
+         </ul>
+      </div>
+   </div>
+</div>

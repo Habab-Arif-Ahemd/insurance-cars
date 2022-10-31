@@ -1,0 +1,251 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Page  loader                                   -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<div class="loader-card mt-3" *ngIf="isLoadingPoliciesList">
+  <div class="content-container loader-wrapper flex-centered flex-container">
+    <div class="loading">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Cards                                          -->
+<!-- ----------------------------------------------------------------------- -->
+
+<div class="container-fluid mt-5 pt-1 card" *ngIf="!isLoadingPoliciesList">
+
+
+  <div class="row mt-5">
+
+
+    <div class="col-lg-3  col-md-6 col-sm-6" (click)="getPoliciesByStatus(policyStatus[policyStatus.Active])">
+      <div class="card card-stats" style="background-color:#E8FBF3; ;">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon Purshared">
+            <fa-icon icon="check" class="icon"></fa-icon>
+          </div>
+          <p class="card-category">{{ "Profile.PanelItems.Policies.BoughtText" | translate }}</p>
+          <h3 class="card-title">{{ dashboard.totalPursharedPolicy }}
+            <small></small>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-6" (click)="getPoliciesByStatus(policyStatus[policyStatus.AlmostExpired])">
+      <div class="card card-stats"  style="background-color:#E9F4FF; ;">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon AlmostExpried">
+            <fa-icon icon="tasks" class="icon"></fa-icon>
+          </div>
+          <p class="card-category">{{ "Profile.PanelItems.Policies.ExpiringText" | translate }}</p>
+          <h3 class="card-title">{{ dashboard.totalAlmostExpried }}
+            <small></small>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-6" (click)="getPoliciesByStatus(policyStatus[policyStatus.Expired])">
+      <div class="card card-stats"  style="background-color:#FFEBEC; ;">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon Expiry">
+            <fa-icon icon="clipboard-check" class="icon"></fa-icon>
+          </div>
+          <p class="card-category">{{ "Profile.PanelItems.Policies.ExpiredText" | translate }}</p>
+          <h3 class="card-title">{{ dashboard.totalExpiry }}
+            <small></small>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-6" (click)="getPoliciesByStatus(policyStatus[policyStatus.PendingNajm])">
+      <div class="card card-stats"  style="background-color:#F5F6F8; ;">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon Pending">
+            <fa-icon icon="clock" class="icon"></fa-icon>
+          </div>
+          <p class="card-category">{{ "Profile.PanelItems.Policies.UncompletedText" | translate }}</p>
+          <h3 class="card-title">{{ dashboard.totalPendingNajm }}
+            <small></small>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+
+  </div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                          Polices list                                   -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="container-fluid">
+    <h5 style="font-weight: bold">
+      {{ "Profile.PanelItems.Policies.PoliciesListText" | translate }}:
+    </h5>
+    
+    <div class="row box-card p-4 rounded-0 border-0"
+      *ngFor="let policy of policies |  slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+      <div class="col-lg-2 col-md-6 col-sm-12">
+        <img [src]="(insuranceCompanyLogo+ policy?.insurCompLogo)" alt="car" />
+      </div>
+      <div class="topic col-lg-4 col-md-6 col-sm-12">
+        <tr>
+          <th class="pb-2">
+            {{ "Profile.PanelItems.Policies.PolicyNumber" | translate }} :
+          </th>
+          <td>{{ policy.policyNumber }}</td>
+        </tr>
+        <tr>
+          <th class="pb-2">
+            {{
+            "Profile.PanelItems.Policies.PolicyInitiationDate" | translate
+            }}
+            :
+          </th>
+          <td>{{ policy.policyIssueDate | date: "dd-MMM-yyyy" }}</td>
+        </tr>
+        <tr>
+          <th class="pb-2">
+            {{ "Profile.PanelItems.Policies.PolicyStartDate" | translate }} :
+          </th>
+          <td>{{ policy.policyEffectiveDate | date: "dd-MMM-yyyy" }}</td>
+        </tr>
+        <tr>
+          <th class="pb-2">
+            {{ "Profile.PanelItems.Policies.PolicyEndDate" | translate }} :
+          </th>
+          <td>{{ policy.policyExpiryDate | date: "dd-MMM-yyyy" }}</td>
+        </tr>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <!-- <tr *ngIf="policy.vehicleIdTypeId === 1">
+          <th>{{ 'Policy.VehicleData.SequenceNumber' | translate }}:</th>
+          <td>{{ policy.vehicleId }}</td>
+        </tr>
+        <tr *ngIf="policy.vehicleIdTypeId === 2">
+          <th>{{ 'Policy.VehicleData.CustomCard' | translate }}:</th>
+          <td>{{ policy.vehicleId }}</td>
+        </tr> -->
+        <tr>
+          <th class="pb-2">
+            {{ "Checkout.PolicyDetails.SequenceNum" | translate }} :
+          </th>
+          <td>{{ policy.vehicleId }}</td>
+        </tr>
+        <tr>
+          <th class="pb-2">
+            {{ "Checkout.PolicyDetails.VehicleDescription" | translate }} :
+          </th>
+          <td>
+            ({{ lang === "en" ? policy.maker : policy.maker }}.
+            {{ lang === "en" ? policy.model : policy.model }}.
+            {{ policy.modelYear }})
+          </td>
+        </tr>
+        <tr>
+          <th class="pb-2">
+            {{ "Checkout.PolicyDetails.VehicleMajorColor" | translate }} :
+          </th>
+          <td>{{ policy.colorAr }}</td>
+        </tr>
+        <tr>
+          <th class="pb-2">
+            {{ "Profile.PanelItems.Policies.PlateNumber" | translate }}:
+          </th>
+          <td>
+            {{
+            lang === "en"
+            ? policy.plateFirstLetter
+            : policy.plateFirstLetterAr
+            }}
+            {{
+            lang === "en"
+            ? policy.plateSecondLetter
+            : policy.plateSecondLetterAr
+            }}
+            {{
+            lang === "en"
+            ? policy.plateThirdLetter
+            : policy.plateThirdLetterAr
+            }}
+            {{ policy.plateNumber }}
+          </td>
+        </tr>
+      </div>
+
+      <!-- Najm Status -->
+      <!-- <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 right-border">
+        <th>{{ 'Profile.PanelItems.Policies.policyStatusTxt' | translate }} </th>
+        <span class="badge badge-pill p-2" [ngClass]="{
+                    'badge-danger': policy.status == 1 || policy.status == 2,
+                    'badge-success': policy.status == 0                        
+                  }">
+            <span *ngIf="policy.status == 0">{{ 'Profile.PanelItems.Policies.Active' | translate }}</span>
+            <span
+                *ngIf="policy.status == 1">{{ 'Profile.PanelItems.Policies.AlmostExpired' | translate }}</span>
+            <span *ngIf="policy.status == 2">{{ 'Profile.PanelItems.Policies.Expired' | translate }}</span>
+        </span>
+
+
+        <th>{{ 'Profile.PanelItems.Policies.NajemUpdateTxt' | translate }} </th>
+        <span class="badge badge-pill p-2 text-white" [ngClass]="{
+                    'badge-warning':!policy.isNajmUpdated,
+                    'badge-success':policy.isNajmUpdated                      
+                  }">
+            <span *ngIf="!policy.isNajmUpdated">{{ 'Profile.PanelItems.Policies.Pending' | translate }} </span>
+            <span *ngIf="policy.isNajmUpdated">{{ 'Profile.PanelItems.Policies.Active' | translate }} </span>
+        </span>
+    </div> -->
+
+      <div class="col-lg-2 col-md-6 col-sm-12 ">
+        <div class="row">
+          <button class="submit-btn policy " type="submit" placement="top"
+          [ngbTooltip]="('QuotationRequestForms.Tooltips.PrintBtn' | translate)" aria-hidden="true"
+          (click)="downloadInvoice(policy.id)">
+          <fa-icon icon="print"></fa-icon>
+          {{'PaymentStatus.Success.PrintBtn' | translate}}
+          <span *ngIf="click" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        </button>
+        </div>
+        <div class="row">
+
+        <button class="submit-btn policy mt-2" type="submit" placement="top"
+          [ngbTooltip]="('QuotationRequestForms.Tooltips.DownloadBtn' | translate)" aria-hidden="true"
+          (click)="downloadPolicy(policy.id)">
+          <fa-icon icon="download"></fa-icon>
+          {{'PaymentStatus.Success.DownloadBtn' | translate}}
+          <!-- <span *ngIf="policySpinner" class="spinner-border spinner-border-sm" role="status"
+                     aria-hidden="true"></span> -->
+          <i *ngIf="policy.status == 1 || policy.status == 2" class="icon ion-md-refresh" placement="top"
+            [ngbTooltip]="('QuotationRequestForms.Tooltips.Renew' | translate)" aria-hidden="true"></i>
+        </button>        </div>
+
+      </div>
+
+    </div>
+    <div class="d-flex flex-wrap justify-content-center">
+      <ngb-pagination [pageSize]="4" [collectionSize]="policies.length " [(page)]="page" [boundaryLinks]="true">
+      </ngb-pagination>
+
+
+      <!-- Empty Alert -->
+      <div *ngIf="policies.length == 0 " class="row  p-4 rounded-0 border-0 mt-4 d-flex justify-content-center">
+        <h5>
+          <fa-icon icon="exclamation-triangle" class="icon"></fa-icon>
+          {{ 'Profile.PanelItems.Policies.NoPoliciesText' | translate }}
+        </h5>
+      </div>
+
+    </div>
+  </div>

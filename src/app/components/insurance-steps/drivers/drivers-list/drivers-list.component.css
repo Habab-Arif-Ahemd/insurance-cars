@@ -1,0 +1,29 @@
+.driver-list-wrapper {
+    width: 100%;
+  }
+  
+  .rmv-btn {
+    box-shadow: 0 0 1px #ccc;
+    transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #fff;
+  }
+  
+  .table th {
+    width: 20.8%;
+  }
+  .save-driver-btn {
+    float: left;
+    margin: 0 10px;
+  }
+  
+  .alert {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .btns {
+    text-align: end;
+    float: left;
+  }
+  

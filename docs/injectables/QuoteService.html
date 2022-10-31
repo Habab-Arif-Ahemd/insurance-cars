@@ -1,0 +1,1549 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>QuoteService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/quote/quote.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#expiredQuotesState">expiredQuotesState</a>
+                            </li>
+                            <li>
+                                <a href="#filteredQuotes">filteredQuotes</a>
+                            </li>
+                            <li>
+                                <a href="#quotes">quotes</a>
+                            </li>
+                            <li>
+                                <a href="#quotesUrl">quotesUrl</a>
+                            </li>
+                            <li>
+                                <a href="#selectedQuote">selectedQuote</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addExpiredQuote">addExpiredQuote</a>
+                            </li>
+                            <li>
+                                <a href="#filterByLiability">filterByLiability</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getDistinctQuotesProducts">getDistinctQuotesProducts</a>
+                            </li>
+                            <li>
+                                <a href="#getExpiredQuotesState">getExpiredQuotesState</a>
+                            </li>
+                            <li>
+                                <a href="#getPreviewQuote">getPreviewQuote</a>
+                            </li>
+                            <li>
+                                <a href="#getQuotes">getQuotes</a>
+                            </li>
+                            <li>
+                                <a href="#getQuotesArr">getQuotesArr</a>
+                            </li>
+                            <li>
+                                <a href="#getSelectedQuote">getSelectedQuote</a>
+                            </li>
+                            <li>
+                                <a href="#getStoredQuotes">getStoredQuotes</a>
+                            </li>
+                            <li>
+                                <a href="#resetQuotes">resetQuotes</a>
+                            </li>
+                            <li>
+                                <a href="#saveOrder">saveOrder</a>
+                            </li>
+                            <li>
+                                <a href="#setExpiredQuotesState">setExpiredQuotesState</a>
+                            </li>
+                            <li>
+                                <a href="#setQuotes">setQuotes</a>
+                            </li>
+                            <li>
+                                <a href="#setSelectedQuote">setSelectedQuote</a>
+                            </li>
+                            <li>
+                                <a href="#sortByPriceAscending">sortByPriceAscending</a>
+                            </li>
+                            <li>
+                                <a href="#sortByPriceDescending">sortByPriceDescending</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/services/quote/quote.service.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addExpiredQuote"></a>
+                    <span class="name">
+                        <b>
+                            addExpiredQuote
+                        </b>
+                        <a href="#addExpiredQuote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addExpiredQuote(quote: <a href="../interfaces/Quote.html">Quote</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="156"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:156</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>quote</td>
+                                    <td>
+                                                <code><a href="../interfaces/Quote.html" target="_self" >Quote</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterByLiability"></a>
+                    <span class="name">
+                        <b>
+                            filterByLiability
+                        </b>
+                        <a href="#filterByLiability"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filterByLiability(liabilityVal: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>liabilityVal</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDistinctQuotesProducts"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getDistinctQuotesProducts
+                        </b>
+                        <a href="#getDistinctQuotesProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDistinctQuotesProducts(quotes: <a href="../interfaces/Quote.html">Quote[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="216"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:216</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><hr>
+<p>Util</p>
+<hr>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>quotes</td>
+                                    <td>
+                                                <code><a href="../interfaces/Quote.html" target="_self" >Quote[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Quote.html" target="_self" >Quote[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getExpiredQuotesState"></a>
+                    <span class="name">
+                        <b>
+                            getExpiredQuotesState
+                        </b>
+                        <a href="#getExpiredQuotesState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getExpiredQuotesState()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:177</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>BehaviorSubject&lt;ExpiredQuotesState&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPreviewQuote"></a>
+                    <span class="name">
+                        <b>
+                            getPreviewQuote
+                        </b>
+                        <a href="#getPreviewQuote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPreviewQuote()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getQuotes"></a>
+                    <span class="name">
+                        <b>
+                            getQuotes
+                        </b>
+                        <a href="#getQuotes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getQuotes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Quote.html" target="_self" >BehaviorSubject&lt;Quote[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getQuotesArr"></a>
+                    <span class="name">
+                        <b>
+                            getQuotesArr
+                        </b>
+                        <a href="#getQuotesArr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getQuotesArr()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Quote.html" target="_self" >Quote[]</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSelectedQuote"></a>
+                    <span class="name">
+                        <b>
+                            getSelectedQuote
+                        </b>
+                        <a href="#getSelectedQuote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSelectedQuote()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Quote.html" target="_self" >BehaviorSubject&lt;Quote&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStoredQuotes"></a>
+                    <span class="name">
+                        <b>
+                            getStoredQuotes
+                        </b>
+                        <a href="#getStoredQuotes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStoredQuotes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><hr>
+<p>STORAGE</p>
+<hr>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Quote.html" target="_self" >Quote[]</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetQuotes"></a>
+                    <span class="name">
+                        <b>
+                            resetQuotes
+                        </b>
+                        <a href="#resetQuotes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetQuotes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveOrder"></a>
+                    <span class="name">
+                        <b>
+                            saveOrder
+                        </b>
+                        <a href="#saveOrder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveOrder(reqBody: <a href="../interfaces/SavedQuoteRequest.html">SavedQuoteRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="200"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:200</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>reqBody</td>
+                                    <td>
+                                                <code><a href="../interfaces/SavedQuoteRequest.html" target="_self" >SavedQuoteRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setExpiredQuotesState"></a>
+                    <span class="name">
+                        <b>
+                            setExpiredQuotesState
+                        </b>
+                        <a href="#setExpiredQuotesState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setExpiredQuotesState(expiredQuotesState: <a href="../interfaces/ExpiredQuotesState.html">ExpiredQuotesState</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>expiredQuotesState</td>
+                                    <td>
+                                                <code><a href="../interfaces/ExpiredQuotesState.html" target="_self" >ExpiredQuotesState</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setQuotes"></a>
+                    <span class="name">
+                        <b>
+                            setQuotes
+                        </b>
+                        <a href="#setQuotes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setQuotes(quotes: <a href="../interfaces/Quote.html">Quote[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>quotes</td>
+                                    <td>
+                                                <code><a href="../interfaces/Quote.html" target="_self" >Quote[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setSelectedQuote"></a>
+                    <span class="name">
+                        <b>
+                            setSelectedQuote
+                        </b>
+                        <a href="#setSelectedQuote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setSelectedQuote(quoteSelectRequest: <a href="../interfaces/PreviewQuoteRequest.html">PreviewQuoteRequest</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><hr>
+<p>API</p>
+<hr>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>quoteSelectRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/PreviewQuoteRequest.html" target="_self" >PreviewQuoteRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortByPriceAscending"></a>
+                    <span class="name">
+                        <b>
+                            sortByPriceAscending
+                        </b>
+                        <a href="#sortByPriceAscending"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortByPriceAscending()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortByPriceDescending"></a>
+                    <span class="name">
+                        <b>
+                            sortByPriceDescending
+                        </b>
+                        <a href="#sortByPriceDescending"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortByPriceDescending()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/services/quote/quote.service.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><hr>
+<p>FILTERS</p>
+<hr>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="expiredQuotesState"></a>
+                        <span class="name">
+                            <b>
+                            expiredQuotesState</b>
+                            <a href="#expiredQuotesState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BehaviorSubject&lt;ExpiredQuotesState&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;ExpiredQuotesState&gt;({
+      totalQuotes: 0, expiredQuotes: [], hasAllQuotesExpired: false
+   })</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/services/quote/quote.service.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filteredQuotes"></a>
+                        <span class="name">
+                            <b>
+                            filteredQuotes</b>
+                            <a href="#filteredQuotes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Quote.html" target="_self" >BehaviorSubject&lt;Quote[]&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;Quote[]&gt;([])</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/services/quote/quote.service.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="quotes"></a>
+                        <span class="name">
+                            <b>
+                            quotes</b>
+                            <a href="#quotes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Quote.html" target="_self" >BehaviorSubject&lt;Quote[]&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;Quote[]&gt;([])</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/services/quote/quote.service.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="quotesUrl"></a>
+                        <span class="name">
+                            <b>
+                            quotesUrl</b>
+                            <a href="#quotesUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.apiUrl + &quot;/quotes&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/services/quote/quote.service.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedQuote"></a>
+                        <span class="name">
+                            <b>
+                            selectedQuote</b>
+                            <a href="#selectedQuote"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Quote.html" target="_self" >BehaviorSubject&lt;Quote&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;Quote&gt;({} as Quote)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/services/quote/quote.service.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Product } from &#x27;src/app/models/quote/Product&#x27;;
+import { Quote } from &#x27;./../../models/quote/Quote&#x27;;
+import { ExpiredQuotesState } from &#x27;../../models/quote/ExpiredQuotesState&#x27;;
+import { environment } from &quot;./../../../environments/environment&quot;;
+import { HttpClient, HttpParams } from &quot;@angular/common/http&quot;;
+import { Injectable } from &quot;@angular/core&quot;;
+import { BehaviorSubject, Observable } from &quot;rxjs&quot;;
+import { LocallyStoredItemsKeys } from &quot;src/app/models/app/LocallyStoredItemsKeys&quot;;
+import { ApiRoutes } from &quot;src/app/models/app/ApiRoutes&quot;;
+import { QuotesListResponse } from &quot;src/app/payload/responses/quotes/QuotesListResponse&quot;;
+import { PreviewQuoteRequest } from &#x27;src/app/payload/requests/quote/PreviewQuoteRequest&#x27;;
+import { SavedQuoteRequest } from &#x27;src/app/models/order-preview/SavedQuoteRequest&#x27;;
+
+
+@Injectable({
+   providedIn: &quot;root&quot;
+})
+
+
+export class QuoteService {
+
+   quotesUrl &#x3D; environment.apiUrl + &quot;/quotes&quot;;
+
+   quotes: BehaviorSubject&lt;Quote[]&gt; &#x3D; new BehaviorSubject&lt;Quote[]&gt;([]);
+   filteredQuotes: BehaviorSubject&lt;Quote[]&gt; &#x3D; new BehaviorSubject&lt;Quote[]&gt;([]);
+   selectedQuote: BehaviorSubject&lt;Quote&gt; &#x3D; new BehaviorSubject&lt;Quote&gt;({} as Quote);
+   expiredQuotesState: BehaviorSubject&lt;ExpiredQuotesState&gt; &#x3D; new BehaviorSubject&lt;ExpiredQuotesState&gt;({
+      totalQuotes: 0, expiredQuotes: [], hasAllQuotesExpired: false
+   });
+
+
+   constructor(
+      private http: HttpClient
+   ) { }
+
+
+
+   /************************************************************
+   *   FILTERS
+   ************************************************************/
+
+   sortByPriceDescending() {
+
+      // Create distinct quotes with a single product each, in order to sort the products by price
+      let sortedQuotes: Quote[] &#x3D; this.getDistinctQuotesProducts(this.getQuotes().value.concat());
+
+      // Sort the quotes by their single product&#x27;s price
+      sortedQuotes &#x3D; sortedQuotes.sort(
+         (q1, q2) &#x3D;&gt; q2.products[0].selectedDeductible.totalPremium - q1.products[0].selectedDeductible.totalPremium
+      );
+
+      this.setQuotes(sortedQuotes);
+
+   }
+
+
+   sortByPriceAscending() {
+
+      // Create distinct quotes with a single product each, in order to sort the products by price
+      let sortedQuotes: Quote[] &#x3D; this.getDistinctQuotesProducts(this.getQuotes().value.concat());
+
+      // Sort the quotes by their single product&#x27;s price
+      sortedQuotes &#x3D; sortedQuotes.sort(
+         (q1, q2) &#x3D;&gt; q1.products[0].selectedDeductible.totalPremium - q2.products[0].selectedDeductible.totalPremium
+      );
+
+      this.setQuotes(sortedQuotes);
+
+   }
+
+
+   filterByLiability(liabilityVal: number) {
+      let filteredQuotes: Quote[] &#x3D; [];
+      const tempQuotes &#x3D; this.getQuotes().value.concat();
+
+      // Create distinct quotes with a single product each, in order to sort the products by price
+      tempQuotes.forEach(quote &#x3D;&gt; {
+         quote.products.forEach(product &#x3D;&gt; {
+            const tempQuote &#x3D; Object.assign({}, quote);
+            tempQuote.products &#x3D; [product];
+            filteredQuotes.push(tempQuote);
+         });
+      });
+
+      // Filter the quotes by their liability
+      /* filteredQuotes &#x3D; filteredQuotes.filter(
+         quote &#x3D;&gt; quote.products[0].maxLiability &#x3D;&#x3D;&#x3D; liabilityVal
+      ); */
+
+      this.setQuotes(filteredQuotes);
+   }
+
+
+
+   /************************************************************
+   *   STORAGE
+   ************************************************************/
+
+   getStoredQuotes(): Quote[] {
+      return JSON.parse(localStorage.getItem(LocallyStoredItemsKeys.Quotes));
+   }
+
+
+   getQuotes(): BehaviorSubject&lt;Quote[]&gt; {
+      if (this.quotes.value.length &#x3D;&#x3D;&#x3D; 0) {
+         this.setQuotes(
+            JSON.parse(localStorage.getItem(LocallyStoredItemsKeys.Quotes))
+         );
+      }
+      return this.quotes;
+   }
+
+
+   getQuotesArr(): Quote[] {
+      return JSON.parse(localStorage.getItem(LocallyStoredItemsKeys.Quotes));
+   }
+
+
+   resetQuotes() {
+      const unAlteredQuotes &#x3D; JSON.parse(
+         localStorage.getItem(LocallyStoredItemsKeys.Quotes)
+      );
+      if (unAlteredQuotes) {
+         this.quotes.next(unAlteredQuotes);
+      }
+   }
+
+
+   setQuotes(quotes: Quote[]) {
+      localStorage.setItem(
+         LocallyStoredItemsKeys.AlteredQuotes,
+         JSON.stringify(quotes)
+      );
+      this.quotes.next(quotes);
+   }
+
+
+   getSelectedQuote(): BehaviorSubject&lt;Quote&gt; {
+      // Get the selected quote from local storage
+      const storedSelectedQuote &#x3D; localStorage.getItem(
+         LocallyStoredItemsKeys.SelectedQuote
+      );
+      // Set it as the selected quote if it exists
+      if (storedSelectedQuote.length &gt; 0) {
+         //   this.setSelectedQuote(JSON.parse(storedSelectedQuote));
+      }
+      return this.selectedQuote;
+   }
+
+
+   setExpiredQuotesState(expiredQuotesState: ExpiredQuotesState) {
+      this.expiredQuotesState.next(expiredQuotesState);
+   }
+
+
+   addExpiredQuote(quote: Quote) {
+
+      /* Add the quote to the expired quotes list */
+      let expiredQuotesState &#x3D; this.getExpiredQuotesState().value;
+      expiredQuotesState.expiredQuotes.push(quote);
+
+      /* Calculate total quotes */
+      let totalQuotes &#x3D; this.getQuotes().value;
+      expiredQuotesState.totalQuotes &#x3D; totalQuotes.length;
+
+      /* Check if all quotes are expired */
+      if (expiredQuotesState.expiredQuotes.length &gt;&#x3D; totalQuotes.length) {
+         expiredQuotesState.hasAllQuotesExpired &#x3D; true;
+      }
+
+      /* Update the state */
+      this.setExpiredQuotesState(expiredQuotesState);
+
+   }
+
+
+   getExpiredQuotesState(): BehaviorSubject&lt;ExpiredQuotesState&gt; {
+      return this.expiredQuotesState;
+   }
+
+
+
+   /************************************************************
+   *   API
+   ************************************************************/
+
+   setSelectedQuote(quoteSelectRequest: PreviewQuoteRequest): Observable&lt;any&gt; {
+      return this.http.post(
+         environment.apiUrl + ApiRoutes.Quotation.PreviewQuote,
+         quoteSelectRequest
+      );
+   }
+
+
+   getPreviewQuote() {
+      return JSON.parse(localStorage.getItem(LocallyStoredItemsKeys.PreviewQuoteResponse));
+   }
+
+
+   saveOrder(reqBody: SavedQuoteRequest ) {
+      return this.http.post(
+         environment.apiUrl + ApiRoutes.Quotation.saveOrder, reqBody
+      );
+   }
+
+
+
+   /************************************************************
+   *   Util
+   ************************************************************/
+
+   /**
+    * Returns an array of distinct quotes each with a single product
+    * @param quotes The quotes with the products that would be separated
+    */
+   private getDistinctQuotesProducts(quotes: Quote[]): Quote[] {
+
+      let distinctQuotesProducts: Quote[] &#x3D; [];
+
+      quotes.forEach(quote &#x3D;&gt; {
+         quote.products.forEach(product &#x3D;&gt; {
+            // Create a new temp quote object clone (different reference)
+            let tempQuote: Quote &#x3D; JSON.parse(JSON.stringify(quote));
+
+            // Set its products as the single product
+            tempQuote.products &#x3D; [product];
+
+            // Add it to the array
+            distinctQuotesProducts.push(tempQuote);
+         });
+      });
+
+      return distinctQuotesProducts;
+
+   }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'QuoteService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,18 @@
+/* ------------------------------- page loader ------------------------------ */
+
+ #loader-container {
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #0167af;
+    border-radius: 50%;
+    -webkit-animation: borderScale 1s infinite ease-in-out;
+    animation: borderScale 1s infinite ease-in-out;
+  }
+  

@@ -1,0 +1,396 @@
+<!-- ?New Quote List -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Quotes List Wrapper                           -->
+<!-- ----------------------------------------------------------------------- -->
+
+<div class="boxed-item soft-shadow p-4 " *ngIf="!isViewingDetails" >
+    <!-- EXPIRY ALERT --------------------------------------------------------->
+    <!------------------------------------------------------------------------->
+    <div  *ngIf="timer.isOver" class="expired-box d-flex align-items-center justify-content-center">
+        <h6 class="text-white text-center">{{'Quote.TimerOverText'| translate}}</h6>
+    </div>
+       
+    <div class="row ">
+        <!-- <div class="col-lg-2 col-md-4 col-sm-12 ">
+            <div class="text-center logo-back">
+                <img [src]="(insuranceCompanyLogo+ quote?.insuranceCompany.logo)" class="img-fluid img-logo">
+            </div>
+        </div> -->
+        <div class="col-lg-8 col-md-4 col-sm-12 offset-lg-2 product-head">
+            <div class="my-2">
+                <h5 class="head-title">{{ lang=='ar' ? quoteProduct.nameAr : quoteProduct.name }}</h5>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-12 product-head ">
+            <div *ngIf="!quote.isSelectedForOrdering">
+                <div class="col-lg-9 col-md-4 col-sm-12 comp-btn-1 p-0 d-flex justify-content-center my-2"
+                    [ngClass]="quoteProduct.isUnderComparison ? 'under-comparison-btn' : ''">
+                    <a class=" input-block-level" type="submit" (click)="toggleProductComparison(popoverEl)" #popoverEl="ngbPopover" triggers="manual"
+                    [ngbPopover]="popContent">
+
+                        <h6 *ngIf="!quoteProduct.isUnderComparison" class="com-font">
+                            <fa-icon class="icon-style" icon="retweet"></fa-icon> {{ 'Quote.CompareButtonText' | translate }} 
+                        </h6>
+                        <h6 *ngIf="quoteProduct.isUnderComparison" class="uncom-font">
+                            <fa-icon class=icon-style icon="minus-circle"></fa-icon> {{ 'Quote.RemoveFromComparisonText' | translate }} 
+                        </h6>
+                        <ng-template #popContent>
+                            <span class="comparison-alert-popover">{{ 'Quote.QuoteComparison.MaxComparisonAlertText' |
+                                translate }}</span>
+                        </ng-template>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row quote-wrapper" >
+        <div class="col-lg-2 col-md-4 col-sm-12 ">
+            <div class="text-center logo-back">
+                <img [src]="(insuranceCompanyLogo+ quote?.insuranceCompany.logo)" class="img-fluid img-logo">
+            </div>
+
+            
+            <div class="d-flex justify-content-center mt-5">
+                <a class = "terms" target="_blank" [href]="ICtermsAndConditions+quote?.products[0].conditionUrl" > {{ "Footer.Terms&Conditions" | translate }}</a>
+            </div>
+        </div>
+        
+        <div class="col-lg-7 col-md-4 col-sm-12 benefit-wrapper">
+            <div class="row p-1">
+                <!-- Free Benefits -->
+                <div class="col-lg-4 " *ngIf="!isDeductibleLoaderVisible">
+                    <div class="row"> 
+                        <div class="mx-3">
+                            <th class="quote-sub-title">{{ 'Quote.BenefitsHeaderTitle' | translate }}</th>
+                        </div>
+                    
+                    <div class="mx-3" *ngIf="noOfViewedFreeBenefits >= 3">
+                        <button (click)="toggleFreeBenefits()" class="btn showMore-btn">
+                            <img src = "../../../../assets/img/Icon-png/add-square.png">
+                            <span class="mx-2">عرض الكل</span>
+                        </button>
+                    </div>
+                    </div>
+                    <div *ngFor="let benefit of freeBenefits; let i = index " >
+                        <div *ngIf="i < noOfViewedFreeBenefits"> 
+                            <div *ngIf="benefit.benefitTypeId === 2">
+                                <fa-icon icon="caret-left" class="caret-icon"></fa-icon> 
+                                <span class="mx-1">{{ lang=='ar' ? benefit.nameAr : benefit.name }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Extra Benefits -->
+                <div class="col bord">
+                    <div *ngIf="!quoteProduct?.isSelected && quoteProduct.hasExtraBenefits && !isDeductibleLoaderVisible"
+                        class="quote-details-block extra-benefits-block">
+
+                        <div class="row p-0 mb-3" style="height: 15px;">
+                            <div class="col">
+                                <th class="quote-sub-title">{{ 'Quote.ExtraBenefitsTitle' | translate }}
+                                <th>
+                            </div>
+                            <!-- <div class="col d-flex justify-content-end">
+                                <button (click)="toggleExtraBenefits()" class="btn showMore-btn">
+                                    <fa-icon icon="arrow-down" [ngClass]="isBtnShown ? 'arrow-up':'arrow-down'"
+                                        style="margin-right: 5px;margin-left: 5px;"></fa-icon>
+                                    <span>{{ 'Quote.View' | translate}} </span>
+                                </button>
+                            </div> -->
+
+
+                        </div>
+
+                        <table style="width:120%">
+                            <tr *ngFor="let benefit of extraBenefits; let i = index">
+                                <div >
+                                    <div class="row">
+                                        <th style="width: 65%;" *ngIf="(benefit.benefitTypeId === 1)">
+                                            <label style="font-weight: 20;" [for]="randomBenefitId + i"
+                                                class="check noselect">
+                                                <span>
+                                                    <input type="checkbox" class="option-input checkbox "
+                                                        [id]="randomBenefitId + i"
+                                                        [checked]="benefit.benefitTypeId == 3 || benefit.isChecked "
+                                                        [disabled]="benefit.benefitTypeId == 3  || quote.isSelectedForOrdering ||
+                                                        ((quote?.insuranceCompany.id == 5 && benefit.benefitId == 1 && uiState.gulfGeneralIC.selectedExtraBenefit === 'PassengerCover') ||
+                                                        (quote?.insuranceCompany.id == 5 && benefit.benefitId == 3 && uiState.gulfGeneralIC.selectedExtraBenefit === 'DriverCover'))"
+                                                        (change)="addExtraBenefit(benefit)" />
+                                                    {{ lang=='ar' ? benefit.nameAr : benefit.name }} </span>
+                                            </label>
+                                        </th>
+                                        <td *ngIf="(benefit.benefitTypeId === 1)">
+                                            <span class="price ">
+                                                {{ benefit.benefitAmount | number : '1.2-2' }}
+                                                <small class="currency">{{ 'App.Currency' | translate }}</small>
+                                            </span>
+                                        </td>
+                                    </div>
+                                </div>
+                            </tr>
+
+
+                        </table>
+
+                    </div>
+
+                    <!-- Deductible Change Loader/Spinner -->
+                    <div class="text-center" *ngIf="isDeductibleLoaderVisible">
+                        <div class="spinner-border d-spinner flex-centered" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+                    <!-- Empty Extra Benefits Text -->
+                    <div *ngIf="!quoteProduct.hasExtraBenefits" class="quote-details-block extra-benefits-block ">
+                        <th class="quote-sub-title">{{ 'Quote.ExtraBenefitsTitle' | translate }}</th>
+                        <div class="flex-container flex-centered" style="flex-direction: column;">
+                            <fa-icon icon="exclamation-circle" class="flex-centered alert-icon"></fa-icon>
+                            <h6 class="flex-centered">{{ 'App.UnavailableText' | translate }}</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                             Amount Details                              -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="col-lg-3 col-md-4 col-sm-12 pt-1 pl-3 " *ngIf="!isDeductibleLoaderVisible">
+            <th class="quote-sub-title">{{ 'Quote.DiscountsTitle' | translate }}</th>
+
+            <table style="width:110%" class="mt-3">
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                            Show Base Premium                            -->
+                <!-- ----------------------------------------------------------------------- -->
+
+
+                <!-- Extra Benefits -->
+                <tr>
+                    <span style="width: 70%;">
+                        <label>
+                            <span > {{ 'Quote.ExtraBenefitsTitle' | translate}}</span>
+                        </label>
+                    </span>
+                    <td style="width: 30%;">
+                        <span class="price">
+                            {{ quoteProduct.selectedDeductible?.totalAdditionalBenefits | number : '1.2-2' }}
+                            <small class="currency">{{ 'App.Currency' | translate }}</small>
+                        </span>
+                    </td>
+                </tr>
+
+                <!-- Amount Details from premiumBreakdowns array -->
+                <tr
+                    *ngFor="let pmbd of quoteProduct.selectedDeductible?.premiumBreakdowns | SortBy:'asc':'breakdownPercentage'; let i = index">
+                    <td style="width: 70%;">
+                        <!-- "تحميل إضافي بسبب الحوادث "طوكيو مارين -->
+                        <!-- <label *ngIf="pmbd.breakdownTypeId==4">
+                            <span> {{ lang=='ar' ? pmbd.nameAr : pmbd.name }}</span>
+                        </label> -->
+                        <label *ngIf="pmbd.breakdownTypeId==6">
+                            <!-- <span [ngClass]="pmbd.breakdownTypeId==6 ? 'total' : 'vat'"> {{ 'Quote.BasePremium' |
+                                translate }}</span> -->
+                                <span > {{ 'Quote.BasePremium' | translate }}</span>
+                        </label>
+                        <label *ngIf="pmbd.breakdownTypeId==5">
+                            <span> {{ lang=='ar' ? pmbd.nameAr : pmbd.name }}
+                                ({{ pmbd.breakdownPercentage*100 + "%" }})</span>
+                        </label>
+
+                    </td>
+
+                    <!-- For Amount Details sorting we hide addtional details that comes with altawnya and Tokyo Marine -->
+                    <td style="width: 30%;" style="color: #8697a5;">
+                        <span *ngIf="pmbd.breakdownTypeId!=4 && pmbd.breakdownTypeId!=3" class="price">
+                            {{ pmbd.breakdownAmount | number : '1.2-2' }}
+                            <small class="currency">{{ 'App.Currency' | translate }}</small>
+                        </span>
+                    </td>
+                    
+                </tr>
+                <!-- <br> -->
+                <br>
+                <tr>
+                    <span style="width: 70%;">
+                        {{'App.TotalPriceText'|translate}}
+                        {{'App.AddedVat'|translate}}
+                    </span>
+
+
+                    <td style="width: 30%;">
+
+                        <!-- Price Amount ----------------------------------------------------->
+                        <!--------------------------------------------------------------------->
+                        <div class="purchase-price-wrapper quote-price quote-action flex-column">
+
+                            <!-- Previous Price -->
+                            <span
+                                *ngIf="quoteProduct.previousTotalPremium && quoteProduct.previousTotalPremium !== quoteProduct.selectedDeductible.policyPremium"
+                                id="previous-price">
+                                <s>
+                                    {{ quoteProduct.previousTotalPremium | number : '1.2-2' }}
+                                    <small>{{ 'App.Currency' | translate }}</small>
+                                </s>
+                            </span>
+
+                            <!-- Current Price -->
+                    <th class="price" style="color: #0B70CB">
+                        {{ quoteProduct.selectedDeductible.policyPremium | number : '1.2-2' }}
+                        <small style="font-weight: bold;">{{ 'App.Currency' | translate }}</small>
+                    </th>
+
+        </div>
+        </td>
+        </tr>
+        </table>
+    </div>
+
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                /** Timer                                -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="col-lg-2 col-md-4 col-sm-12 p-0 mt-3 d-flex justify-content-center">
+    <!-- <hr> -->
+    
+    <table>
+        <tr *ngIf="!timer.isOver">
+            <th>
+                <!-- <h6 class=""> {{ 'Quote.TimeRemainingText' | translate }} :</h6> -->
+                <!-- <fa-icon class = "hour-icon-style" icon="hourglass-half"></fa-icon> -->
+            </th>
+            <td id="clock">
+                <span class="time ">{{ timer.hours }} {{ 'App.HoursText' | translate }} :</span>
+                <span class="time ">{{ timer.minutes }} {{ 'App.MinutesText' | translate }} :</span>
+                <span class="time ">{{ timer.seconds }} {{ 'App.SecondsText' | translate }} </span>
+            </td>
+
+        </tr>
+
+        <div *ngIf="timer.isOver" class="flex-centered timer-over">
+            {{ 'Quote.TimerOverText' | translate }}
+        </div>
+    </table>
+</div>
+
+
+<!-- ------------------------- Deductibles Selects ------------------------- -->
+<hr>
+<div class="row pt-2">
+    <div class="col-lg-3">
+        <!-- Available Discounts -->
+        <div *ngFor="let pmbd of quoteProduct.selectedDeductible?.discounts | SortBy:'asc':'discountTypeId'; let i = index" class="d-flex justify-content-start">
+
+            <div> <img src="../../../../assets/img/Icon-png/receipt-minus.png"></div>
+            <label class="mx-2">
+                <span > {{ lang=='ar' ? pmbd.nameAr : pmbd.name}} :</span>
+            </label>
+    
+            <span class="price">
+                {{ pmbd.discountAmount | number : '1.2-2' }}
+                <small class="currency">{{ 'App.Currency' | translate }}</small>
+            </span>
+            
+        </div>
+    </div>
+
+    <div class="col-lg-1 d-flex justify-content-center"
+        [ngClass]="{'col-lg-1':(quoteProduct.productTypeId === 2) , 'col-lg-7': !(quoteProduct.productTypeId === 2) }">
+        <span class="txt-justify" [ngbTooltip]="('Quote.Deductibles.DeductiblesInfo' | translate)" placement="top"
+            tooltipClass="tooltip">
+            <div class="my-2">
+                <span *ngIf="(quoteProduct.productTypeId === 2) ">
+                    {{ 'Quote.LiabilityCostText' | translate }}
+                </span>
+            </div>
+            
+        </span>
+    </div>
+
+    <div  *ngIf="(quoteProduct.productTypeId === 2 )"
+        class="col-lg-2 col-md-4 col-sm-12 d-flex justify-content-start">
+        <ng-select class="deductible-select" [searchable]="false"
+            [ngClass]="timer.isOver ? 'disabled-liability-select' : ''"
+            [(content)]="quoteProduct.selectedDeductible.deductibleValue" (change)="setSelectedDeductible($event)"
+            [items]="quoteProduct.deductibles" bindValue="deductibleValue" bindLabel="deductibleValue"
+            [clearable]="false">
+        </ng-select>
+        
+    </div>
+
+    <div *ngIf="(quoteProduct.productTypeId !== 2 )"
+    class="col-lg-2 col-md-4 col-sm-12 " (click)="orderQuoteProduct()">
+        <div class=" buy-btn  d-flex justify-content-center m-0 cursor-pointer">
+            <a class="" type="submit">
+                <h6 class="buy-font">
+                    {{ 'App.Choose' | translate }}
+                    <span *ngIf="isLoading" class="mx-2 spinner-border spinner-border-sm" role="status"
+                        aria-hidden="true"></span>
+                </h6>
+            </a>
+        </div>
+    </div>
+
+    <!-- Buy a Comp Product -->
+    <div *ngIf="(quoteProduct.productTypeId === 2 )"
+    class="col-lg-2 col-md-4 col-sm-12 offset-lg-4" (click)="orderQuoteProduct()">
+        <div class=" buy-btn  d-flex justify-content-center m-0 cursor-pointer">
+            <a class="" type="submit">
+                <h6 class="buy-font">
+                    {{ 'App.Choose' | translate }}
+                    <span *ngIf="isLoading" class="mx-2 spinner-border spinner-border-sm" role="status"
+                        aria-hidden="true"></span>
+                </h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Company Details                             -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="boxed-item soft-shadow" *ngIf="isViewingDetails" (mouseleave)="isViewingDetails=false"
+    style="background-color:#0B70CB; color:white ;">
+    <div class="row">
+
+        <!-- Name/Description -->
+        <div class="col-lg-6 col-md-6">
+            <h4>{{ lang=='ar' ? quote?.insuranceCompany.nameAr : quote?.insuranceCompany.name }}</h4>
+            <p>{{ lang=='ar' ? quote?.insuranceCompany.description : quote?.insuranceCompany.description }}
+            </p>
+        </div>
+
+
+        <!-- Contact -->
+        <div class="col-lg-6 col-md-6">
+            <h4>{{ 'Quote.CompanyDetails.ContactTitleText' | translate }}</h4>
+            <table class="company-contact">
+                <tr>
+                    <th>{{ 'Quote.CompanyDetails.PhoneTitleText' | translate }}</th>
+                    <td>{{ quote?.insuranceCompany.phoneNumber }}</td>
+                </tr>
+                <tr>
+                    <th>{{ 'Quote.CompanyDetails.EmailTitleText' | translate }}</th>
+                    <td>{{ quote?.insuranceCompany.email }}</td>
+                </tr>
+                <tr>
+                    <th>{{ 'Quote.CompanyDetails.WebsiteTitleText' | translate }}</th>
+                    <td>{{ quote?.insuranceCompany.website }}</td>
+                </tr>
+                <tr>
+                    <th>{{ 'Quote.CompanyDetails.AddressTitleText' | translate }}</th>
+                    <td>{{ quote?.insuranceCompany.address }}</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,124 @@
+<div class="wrapper" [ngClass]="{ active: toggleSideBar }">
+
+    <div class="main_container "  [ngStyle]="{'grid-template-columns': toggleSideBar ? ' 10% 80%' :  ' 20% 80%' }">
+      <div class="sidebar ">
+
+        <div class="sidebar__inner ">
+          <ul class="list-unstyled component ">
+
+            <li  class="profile-image">
+              <a routerLink="/" href="javascript:void(0)">
+                <img [ngClass]="toggleSideBar ? 'image-logo' : 'image-logo2'"
+                src="../../../../../assets/img/ammant.svg" alt="logo">
+              </a>
+            </li>
+            
+            <li>
+              <a [routerLink]="AppRoutes.profile.newPolicy.main" routerLinkActive="class-name">
+                  <fa-icon icon="money-check-alt" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.NewInsurancePolicyText" | translate
+                  }}</span>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="AppRoutes.profile.policies" routerLinkActive="class-name">
+                  <fa-icon icon="clipboard-list" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.PoliciesText" | translate
+                  }}</span>
+              </a>
+            </li>
+            <li>
+            <!--  
+             <a [routerLink]="AppRoutes.profile.vehicles" routerLinkActive="class-name" class="txt-justify" [ngbTooltip]="('Profile.Menu.RegisteredVehiclesText' | translate)"
+              placement="left" tooltipClass="tooltip">
+              <fa-icon icon="car" size="xs" class="icon"></fa-icon>
+                  <span class="title">
+                  {{  "Profile.Menu.SavedQuotationText" | translate  }}
+              </span>
+              </a> -->
+              <a [routerLink]="AppRoutes.profile.vehicles" routerLinkActive="class-name">
+                <fa-icon icon="car" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.RegisteredVehiclesText" | translate
+                  }}</span>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="AppRoutes.profile.savedQuote" routerLinkActive="class-name">
+                <fa-icon icon="money-check" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.SavedQuotationText" | translate
+                  }}</span>
+              </a>
+            </li>
+            <!-- <li>
+              <a [routerLink]="AppRoutes.profile.invoice" routerLinkActive="class-name">
+                <fa-icon icon="file-invoice" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.InvoicesText" | translate
+                  }}</span>
+              </a>
+            </li> -->
+            <li>
+              <a [routerLink]="AppRoutes.profile.claim.main" routerLinkActive="class-name">
+                <fa-icon icon="file-upload" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.ClaimsText" | translate
+                  }}</span>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="AppRoutes.profile.support.main" routerLinkActive="class-name">
+                <fa-icon icon="question" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.TechnicalSupportText" | translate
+                  }}</span>
+                <span *ngIf="unReadFollowup != 0" class="badge badge-pill badge-danger"
+                  style="font-size: 14px;border-radius: 50% ;padding: 5px;margin-right: 8px;">{{unReadFollowup}}</span>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="AppRoutes.profile.account.main" routerLinkActive="class-name">
+                <fa-icon icon="user-cog" size="xs" class="icon"></fa-icon>
+                <span class="title">{{
+                  "Profile.Menu.AccountSettingsText" | translate
+                  }}</span>
+              </a>
+            </li>
+          </ul>
+          <div class="top_navbar">
+            <div class="hamburger" (click)="toggleSideBar = !toggleSideBar" >
+              <div class="hamburger__inner">
+
+               <!--  <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div> -->
+                <nav class="navbar navbar-light amber lighten-4 mb-4">
+
+              
+                  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                          aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1" [class.open]="!toggleSideBar"><span></span><span></span><span></span></div>
+                  </button>
+              
+
+              
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="  soft-shadow profile-wrapper boxed-item  ">
+        
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div> 
+  
+  
+  

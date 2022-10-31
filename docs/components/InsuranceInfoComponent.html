@@ -1,0 +1,1969 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>InsuranceInfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/quotation-request/insurance-info/insurance-info.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-insurance-info</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../quotation-request-page/quotation-request-page.component.css,<br>./insurance-info.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./insurance-info.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#canUpdate">canUpdate</a>
+                            </li>
+                            <li>
+                                <a href="#cuurentStepData">cuurentStepData</a>
+                            </li>
+                            <li>
+                                <a href="#formUpdate">formUpdate</a>
+                            </li>
+                            <li>
+                                <a href="#insuranceInfoForm">insuranceInfoForm</a>
+                            </li>
+                            <li>
+                                <a href="#insuredIdentityNumber">insuredIdentityNumber</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#lang">lang</a>
+                            </li>
+                            <li>
+                                <a href="#maxDate">maxDate</a>
+                            </li>
+                            <li>
+                                <a href="#minDate">minDate</a>
+                            </li>
+                            <li>
+                                <a href="#model">model</a>
+                            </li>
+                            <li>
+                                <a href="#now">now</a>
+                            </li>
+                            <li>
+                                <a href="#ownership">ownership</a>
+                            </li>
+                            <li>
+                                <a href="#previousQuote">previousQuote</a>
+                            </li>
+                            <li>
+                                <a href="#previousQuoteEffectiveDate">previousQuoteEffectiveDate</a>
+                            </li>
+                            <li>
+                                <a href="#stepNumber">stepNumber</a>
+                            </li>
+                            <li>
+                                <a href="#stepsData">stepsData</a>
+                            </li>
+                            <li>
+                                <a href="#submitted">submitted</a>
+                            </li>
+                            <li>
+                                <a href="#termSearchFn">termSearchFn</a>
+                            </li>
+                            <li>
+                                <a href="#vehicleRepairMethods">vehicleRepairMethods</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getInsuredIdentityNumber">getInsuredIdentityNumber</a>
+                            </li>
+                            <li>
+                                <a href="#getPreviousQuoteRequest">getPreviousQuoteRequest</a>
+                            </li>
+                            <li>
+                                <a href="#getStepData">getStepData</a>
+                            </li>
+                            <li>
+                                <a href="#initForm">initForm</a>
+                            </li>
+                            <li>
+                                <a href="#isTransfer">isTransfer</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setMaxDate">setMaxDate</a>
+                            </li>
+                            <li>
+                                <a href="#setMinDate">setMinDate</a>
+                            </li>
+                            <li>
+                                <a href="#submitForm">submitForm</a>
+                            </li>
+                            <li>
+                                <a href="#watchFormAfterSubmit">watchFormAfterSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#watchStepNum">watchStepNum</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#scroll">scroll</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#f">f</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(insuranceSteps: <a href="../injectables/InsuranceStepsService.html">InsuranceStepsService</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, scrollOnErrer: <a href="../injectables/Scroll.html">Scroll</a>, appService: <a href="../injectables/AppService.html">AppService</a>, formvalidationService: <a href="../injectables/FormsValidationService.html">FormsValidationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>insuranceSteps</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsService.html" target="_self" >InsuranceStepsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>scrollOnErrer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Scroll.html" target="_self" >Scroll</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppService.html" target="_self" >AppService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formvalidationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormsValidationService.html" target="_self" >FormsValidationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scroll"></a>
+                        <b>scroll</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:31</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInsuredIdentityNumber"></a>
+                    <span class="name">
+                        <b>
+                            getInsuredIdentityNumber
+                        </b>
+                        <a href="#getInsuredIdentityNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInsuredIdentityNumber()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPreviousQuoteRequest"></a>
+                    <span class="name">
+                        <b>
+                            getPreviousQuoteRequest
+                        </b>
+                        <a href="#getPreviousQuoteRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPreviousQuoteRequest()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStepData"></a>
+                    <span class="name">
+                        <b>
+                            getStepData
+                        </b>
+                        <a href="#getStepData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStepData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initForm"></a>
+                    <span class="name">
+                        <b>
+                            initForm
+                        </b>
+                        <a href="#initForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isTransfer"></a>
+                    <span class="name">
+                        <b>
+                            isTransfer
+                        </b>
+                        <a href="#isTransfer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isTransfer()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="170"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:170</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:236</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMaxDate"></a>
+                    <span class="name">
+                        <b>
+                            setMaxDate
+                        </b>
+                        <a href="#setMaxDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setMaxDate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setMinDate"></a>
+                    <span class="name">
+                        <b>
+                            setMinDate
+                        </b>
+                        <a href="#setMinDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setMinDate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitForm"></a>
+                    <span class="name">
+                        <b>
+                            submitForm
+                        </b>
+                        <a href="#submitForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submitForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchFormAfterSubmit"></a>
+                    <span class="name">
+                        <b>
+                            watchFormAfterSubmit
+                        </b>
+                        <a href="#watchFormAfterSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchFormAfterSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="216"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:216</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchStepNum"></a>
+                    <span class="name">
+                        <b>
+                            watchStepNum
+                        </b>
+                        <a href="#watchStepNum"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchStepNum()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="canUpdate"></a>
+                        <span class="name">
+                            <b>
+                            canUpdate</b>
+                            <a href="#canUpdate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cuurentStepData"></a>
+                        <span class="name">
+                            <b>
+                            cuurentStepData</b>
+                            <a href="#cuurentStepData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formUpdate"></a>
+                        <span class="name">
+                            <b>
+                            formUpdate</b>
+                            <a href="#formUpdate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="insuranceInfoForm"></a>
+                        <span class="name">
+                            <b>
+                            insuranceInfoForm</b>
+                            <a href="#insuranceInfoForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="insuredIdentityNumber"></a>
+                        <span class="name">
+                            <b>
+                            insuredIdentityNumber</b>
+                            <a href="#insuredIdentityNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading</b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lang"></a>
+                        <span class="name">
+                            <b>
+                            lang</b>
+                            <a href="#lang"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="maxDate"></a>
+                        <span class="name">
+                            <b>
+                            maxDate</b>
+                            <a href="#maxDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="minDate"></a>
+                        <span class="name">
+                            <b>
+                            minDate</b>
+                            <a href="#minDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="model"></a>
+                        <span class="name">
+                            <b>
+                            model</b>
+                            <a href="#model"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="now"></a>
+                        <span class="name">
+                            <b>
+                            now</b>
+                            <a href="#now"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Date()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ownership"></a>
+                        <span class="name">
+                            <b>
+                            ownership</b>
+                            <a href="#ownership"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousQuote"></a>
+                        <span class="name">
+                            <b>
+                            previousQuote</b>
+                            <a href="#previousQuote"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/QuoteRequest.html" target="_self" >QuoteRequest</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousQuoteEffectiveDate"></a>
+                        <span class="name">
+                            <b>
+                            previousQuoteEffectiveDate</b>
+                            <a href="#previousQuoteEffectiveDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepNumber"></a>
+                        <span class="name">
+                            <b>
+                            stepNumber</b>
+                            <a href="#stepNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepsData"></a>
+                        <span class="name">
+                            <b>
+                            stepsData</b>
+                            <a href="#stepsData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>null</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitted"></a>
+                        <span class="name">
+                            <b>
+                            submitted</b>
+                            <a href="#submitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="termSearchFn"></a>
+                        <span class="name">
+                            <b>
+                            termSearchFn</b>
+                            <a href="#termSearchFn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>AppUtils.searchItemTerm</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="vehicleRepairMethods"></a>
+                        <span class="name">
+                            <b>
+                            vehicleRepairMethods</b>
+                            <a href="#vehicleRepairMethods"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="f"></a>
+                        <span class="name"><b>f</b><a href="#f"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>f()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/components/quotation-request/insurance-info/insurance-info.component.ts:82</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  OnDestroy,
+  OnInit,
+  Output,
+} from &quot;@angular/core&quot;;
+import { FormBuilder, FormGroup, Validators } from &quot;@angular/forms&quot;;
+import { QuoteRequest } from &quot;src/app/models/insurance-steps/QuoteRequest&quot;;
+import { AppService } from &quot;src/app/services/app.service&quot;;
+import { InsuranceStepsService } from &quot;src/app/services/insurance-steps/insurance-steps.service&quot;;
+import { Scroll } from &quot;../../../helpers/utils/scroll&quot;;
+import { FormsValidationService } from &#x27;src/app/services/insurance-steps/forms-validation.service&#x27;;
+import { FormsNames } from &#x27;src/app/models/insurance-steps/StepsFormsName&#x27;;
+import AppUtils from &#x27;src/app/helpers/utils/AppUtils&#x27;;
+
+
+@Component({
+  selector: &quot;app-insurance-info&quot;,
+  templateUrl: &quot;./insurance-info.component.html&quot;,
+  styleUrls: [
+    &quot;../quotation-request-page/quotation-request-page.component.css&quot;,
+    &quot;./insurance-info.component.css&quot;,
+  ],
+})
+export class InsuranceInfoComponent implements OnInit, OnDestroy {
+  /*  @Input() eventsSubmit: Observable&lt;void&gt;;
+  private eventsSubscription: Subscription; */
+
+  @Output() scroll &#x3D; new EventEmitter();
+
+  insuranceInfoForm: FormGroup;
+  submitted &#x3D; false;
+  stepNumber: number;
+  ownership &#x3D; false;
+  stepsData &#x3D; null;
+  cuurentStepData;
+
+  insuredIdentityNumber;
+
+  isLoading &#x3D; true;
+  canUpdate &#x3D; false;
+  formUpdate &#x3D; false;
+  now &#x3D; new Date();
+  minDate;
+  maxDate;
+  model;
+  lang;
+  vehicleRepairMethods: any;
+  previousQuote: QuoteRequest;
+  previousQuoteEffectiveDate: Date;
+
+  termSearchFn &#x3D; AppUtils.searchItemTerm;
+
+  constructor(
+    private insuranceSteps: InsuranceStepsService,
+    private fb: FormBuilder,
+    private scrollOnErrer: Scroll,
+    private appService: AppService,
+    private formvalidationService: FormsValidationService
+  ) {}
+
+  ngOnInit() {
+    this.insuranceSteps.setCurrentStepNum(1);
+    this.appService.getAppLang().subscribe((language) &#x3D;&gt; {
+      this.lang &#x3D; language;  
+    });
+
+    this.getStepData();
+    this.initForm();
+    this.setMinDate();
+    this.setMaxDate();
+    this.watchStepNum();
+    this.getInsuredIdentityNumber();
+    this.getPreviousQuoteRequest();
+    // this.validateIdentityNo();
+    this.watchFormAfterSubmit();
+  }
+
+  // convenience getter for easy access to form fields
+  get f() {
+    return this.insuranceInfoForm.controls;
+  }
+
+  initForm(): void {
+    this.insuranceInfoForm &#x3D; this.fb.group({
+      isVehicleOwnerTransfer: [false],
+      policyEffectiveDate: [null, [Validators.required]],
+      vehicleRepairMethodId: [null, [Validators.required]],
+      vehicleOwnerIdentityNumber: [null],
+      insuredIdentityNumber: [this.insuredIdentityNumber],
+      vehicleEngineSizeId: [null],
+      nationalityId: [null],
+      promoCode: [null],
+    });
+  }
+
+  getStepData() {
+    this.insuranceSteps.getInsuranceStepsData().subscribe((stepsData) &#x3D;&gt; {
+      /*  console.log(stepsData) */
+      this.isLoading &#x3D; false;
+      this.stepsData &#x3D; stepsData;
+    });
+  }
+
+  getInsuredIdentityNumber() {
+    this.insuranceSteps.getUserQuoteRequest().subscribe((stepsData) &#x3D;&gt; {
+      this.insuredIdentityNumber &#x3D; stepsData.insuredIdentityNumber;
+    });
+  }
+
+  getPreviousQuoteRequest() {
+    this.previousQuote &#x3D; this.insuranceSteps.getUserQuoteRequest().value;
+    this.previousQuote.isVehicleOwnerTransfer
+      ? this.isTransfer()
+      : (this.ownership &#x3D; false);
+  }
+
+  setMinDate() {
+    let minDate &#x3D; AppUtils.addDays(this.now, 1);
+    this.minDate &#x3D; {
+      year: minDate.getFullYear(),
+      month: minDate.getMonth() + 1,
+      day: minDate.getDate(),
+    };
+  }
+
+  setMaxDate() {
+    let maxDate &#x3D; AppUtils.addDays(this.now, 14);
+    this.maxDate &#x3D; {
+      year: maxDate.getFullYear(),
+      month: maxDate.getMonth() + 1,
+      day: maxDate.getDate(),
+    };
+  }
+
+  submitForm() {
+    console.log(this.insuranceInfoForm);
+
+    this.submitted &#x3D; true;
+    if (this.insuranceInfoForm.invalid) {
+      const firstElementWithError &#x3D; document.querySelector(&quot;.ng-invalid&quot;);
+      this.scrollOnErrer.scrollTo(firstElementWithError);
+      return;
+    }
+
+    if (this.insuranceInfoForm.value.vehicleOwnerIdentityNumber &#x3D;&#x3D; null) {
+      this.insuranceInfoForm.value.vehicleOwnerIdentityNumber &#x3D; this.insuredIdentityNumber;
+    } else {
+      this.insuranceInfoForm.value.vehicleOwnerIdentityNumber &#x3D; this.insuranceInfoForm.value.vehicleOwnerIdentityNumber;
+    }
+    let policyEffectiveDate &#x3D; this.insuranceInfoForm.value.policyEffectiveDate;
+    this.insuranceInfoForm.value.policyEffectiveDate &#x3D; new Date(
+      policyEffectiveDate.year,
+      policyEffectiveDate.month - 1,
+      policyEffectiveDate.day + 1  
+    ).toISOString();
+    this.insuranceSteps.setUserQuoteRequest(this.insuranceInfoForm.value);
+    if (this.stepNumber &#x3D;&#x3D; 1) {
+      this.insuranceSteps.setCurrentStepNum(2);
+      this.formvalidationService.addFormsStatus({
+        formName: FormsNames.insuranceInfoForm,
+        isValid: true
+      });
+    }  
+    this.submitted &#x3D; false;
+  }
+
+  isTransfer() {
+    this.insuranceInfoForm.get(&quot;vehicleOwnerIdentityNumber&quot;).reset();
+    this.ownership &#x3D; !this.ownership;
+    this.submitted &#x3D; false;
+
+    if (this.ownership) {
+      this.insuranceInfoForm
+        .get(&quot;vehicleOwnerIdentityNumber&quot;)
+        .setValidators(
+          Validators.compose([Validators.required, Validators.minLength(10)])
+        );
+
+      this.insuranceInfoForm
+        .get(&quot;vehicleOwnerIdentityNumber&quot;)
+        .updateValueAndValidity();
+    } else {
+      this.insuranceInfoForm.controls[
+        &quot;vehicleOwnerIdentityNumber&quot;
+      ].clearValidators();
+    }
+    this.insuranceInfoForm
+      .get(&quot;vehicleOwnerIdentityNumber&quot;)
+      .updateValueAndValidity();
+  }
+
+  watchStepNum() {
+    this.insuranceSteps.getCurrentStepNum().subscribe((stepNum) &#x3D;&gt; {
+      this.stepNumber &#x3D; stepNum;
+    });
+  }
+
+ 
+
+ /*  validateIdentityNo() {
+    if (this.previousQuote.drivers) {
+      const previousQuoteIdentityNo: number[] &#x3D; this.previousQuote.drivers.map(
+        (id) &#x3D;&gt; id.identityNumber
+      );
+      previousQuoteIdentityNo.forEach((id) &#x3D;&gt; {
+        this.driverService.addDriverIdentityNo({
+          identityNumber: id,
+        });
+      });
+    }
+  } */
+
+    watchFormAfterSubmit() {
+      this.insuranceInfoForm.valueChanges.subscribe(() &#x3D;&gt; {
+        if (this.insuranceInfoForm.valid &amp;&amp; this.stepNumber &gt;&#x3D; 2) {
+          this.formvalidationService.addFormsStatus({
+            formName: FormsNames.insuranceInfoForm,
+            isValid: true
+          });
+          this.submitForm();
+        } else {
+          this.formvalidationService.addFormsStatus({
+            formName: FormsNames.insuranceInfoForm,
+            isValid: false
+          });
+        }
+       
+         
+        
+      })
+  }
+
+  ngOnDestroy() {
+    /*  this.eventsSubscription.unsubscribe(); */
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;insuranceInfoForm&quot; ngxScrollToFirstInvalid&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-sm-12 col-md-2 col-lg-2 flex-container&quot;&gt;
+            &lt;div class&#x3D;&quot;flex-centered mt-0&quot;&gt;
+                &lt;div class&#x3D;&quot;round round-lg hollow color&quot; style&#x3D;&quot;margin: 10px auto;&quot;&gt;
+                    &lt;span&gt;1&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;logo-wrapper&quot;&gt;
+                    &lt;h6&gt;{{&#x27;QuotationRequestForms.StepsTitles.InsuranceInfo&#x27; | translate }}&lt;/h6&gt;
+                    &lt;img src&#x3D;&#x27;../../../../assets/images/icons8-car-insurance-80.png&#x27; class&#x3D;&quot;logo&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-sm-12 col-md-8 col-lg-9 border-right border-left border-bottom&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div
+                    [ngClass]&#x3D;&quot;{&#x27;col-sm-12 col-md-6 col-lg-4&#x27;: lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27;, &#x27;col-sm-12 col-md-6 col-lg-8&#x27;:  lang &#x3D;&#x3D;&#x3D; &#x27;en&#x27; }&quot;&gt;
+                    &lt;label&gt;{{ &#x27;QuotationRequestForms.InsuranceInfo.InsurancePurpose&#x27; | translate }}&lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; [checked]&#x3D;&quot;previousQuote.isVehicleOwnerTransfer? !previousQuote.isVehicleOwnerTransfer: true&quot; (change)&#x3D;&quot;isTransfer()&quot; 
+                                formControlName&#x3D;&quot;isVehicleOwnerTransfer&quot; [value]&#x3D;false /&gt;
+                            &lt;span
+                                class&#x3D;&quot;radio-text&quot;&gt;{{ &#x27;QuotationRequestForms.InsuranceInfo.NewInsurance&#x27; | translate }}&lt;/span&gt;
+                        &lt;/label&gt;
+
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; (change)&#x3D;&quot;isTransfer()&quot; [checked]&#x3D;&quot;previousQuote.isVehicleOwnerTransfer? previousQuote.isVehicleOwnerTransfer: false&quot;
+                                formControlName&#x3D;&quot;isVehicleOwnerTransfer&quot; [value]&#x3D;true /&gt;
+                            &lt;span
+                                class&#x3D;&quot;radio-text&quot;&gt;{{ &#x27;QuotationRequestForms.InsuranceInfo.NewVehicleOwner&#x27; | translate }}&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;label&gt;{{ &#x27;QuotationRequestForms.InsuranceInfo.PolicyEffectiveDate&#x27; | translate }}&lt;/label&gt;
+                    &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                        &lt;input  class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;policyEffectiveDate&quot; placeholder&#x3D;&quot;yyyy-mm-dd&quot; 
+                            [minDate]&#x3D;&quot;minDate&quot; [maxDate]&#x3D;&quot;maxDate&quot; name&#x3D;&quot;dp&quot; ngbDatepicker
+                            #d&#x3D;&quot;ngbDatepicker&quot; (click)&#x3D;&quot;d.open()&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;is-invalid&#x27;: submitted &amp;&amp; f.policyEffectiveDate.errors }&quot;&gt;
+
+                        &lt;div class&#x3D;&quot;input-group-append&quot;&gt;
+                            &lt;button class&#x3D;&quot;btn btn-outline-secondary calendar-icon&quot; (click)&#x3D;&quot;d.open()&quot; type&#x3D;&quot;button&quot;&gt;
+
+                                &lt;i class&#x3D;&quot;icon ion-md-calendar&quot;&gt;&lt;/i&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.policyEffectiveDate.errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;f.policyEffectiveDate.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot; *ngIf&#x3D;&quot;ownership&quot;&gt;
+                    &lt;label&gt;{{ &#x27;QuotationRequestForms.InsuranceInfo.VehicleIdentificationNumber&#x27; | translate }}
+                       
+                    &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                        &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;vehicleOwnerIdentityNumber&quot; [ngModel]&#x3D;&quot;previousQuote.vehicleOwnerIdentityNumber&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;is-invalid&#x27;: submitted &amp;&amp; f.vehicleOwnerIdentityNumber.errors }&quot;&gt;
+                        &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.vehicleOwnerIdentityNumber.errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;f.vehicleOwnerIdentityNumber.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;f.vehicleOwnerIdentityNumber.errors.pattern&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;f.vehicleOwnerIdentityNumber.errors.minlength&quot;&gt;الحد الأقصى لرقم الهوية هو 10
+                                أرقام&lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;f.vehicleOwnerIdentityNumber.errors.maxlength&quot;&gt;الحد الأقصى لرقم الهوية هو 10
+                                أرقام&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.InsuranceInfo.NationalIDLabel&#x27; | translate }}
+        
+                    &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;input-group&quot;&gt;
+                        &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control&quot; [value]&#x3D;&quot;insuredIdentityNumber&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+               
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;label&gt;{{ &#x27;QuotationRequestForms.InsuranceInfo.PlaceOfManufacture&#x27; | translate }}&lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.VehicleRepairMethods&quot;   [loading]&#x3D;&quot;!stepsData.VehicleRepairMethods&quot; [(ngModel)]&#x3D;&quot;previousQuote.vehicleRepairMethodId&quot;
+                            formControlName&#x3D;&quot;vehicleRepairMethodId&quot; bindValue&#x3D;&quot;id&quot; 
+                            [searchFn]&#x3D;&quot;termSearchFn&quot;
+                            [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: submitted &amp;&amp; f.vehicleRepairMethodId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+                        &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; f.vehicleRepairMethodId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.vehicleRepairMethodId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+            &lt;/div&gt;
+
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;col-sm-12 col-md-2 col-lg-1&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col&quot;&gt;
+                    &lt;div [ngClass]&#x3D;&quot;{&#x27;check-icon&#x27;:insuranceInfoForm.valid, &#x27;check-icon-invalid&#x27;: insuranceInfoForm.invalid }&quot;&gt;
+                        &lt;i class&#x3D;&quot;icon ion-md-checkmark-circle&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;/div&gt;
+               
+            &lt;/div&gt;
+
+            
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!-- continue button --&gt;
+    &lt;div class&#x3D;&quot;row continue-btn&quot; *ngIf&#x3D;&quot;stepNumber &lt; 2&quot;&gt;       
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-sm&quot; id&#x3D;&quot;continue-btn&quot; (click)&#x3D;&quot;submitForm()&quot;
+            (click)&#x3D;&quot;scroll.emit(&#x27;vehicleInfo&#x27;)&quot;&gt;
+            {{ &#x27;QuotationRequestForms.InsuranceInfo.Continue&#x27; | translate }}
+            &lt;i *ngIf&#x3D;&quot;lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27;&quot; class&#x3D;&quot;icon ion-md-arrow-round-back&quot;&gt;&lt;/i&gt;
+            &lt;i *ngIf&#x3D;&quot;lang &#x3D;&#x3D;&#x3D; &#x27;en&#x27;&quot; class&#x3D;&quot;icon ion-md-arrow-round-forward&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../quotation-request-page/quotation-request-page.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.mobile-container{
+  padding: 0em;
+}
+.boxed-item {
+  margin-bottom: 0.5em;
+  padding: 2em 1em 1em 0em;
+}
+.check-box {
+  display: flex;
+  align-self: center;
+}
+
+.icon {
+   margin: 0 5px;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+.logo-wrapper h6 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.continue-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+ .continue-btn button {
+  background-color: #00a2ae;
+  color: #ffff;
+  width: 87px;
+}
+.add-driver-checkbox {
+  padding-bottom: 15px;
+}
+.tooltip-icon {
+  color: #044280;
+}
+.check svg {
+  width: unset;
+}
+.check-icon {
+  font-size: 50px;
+  color: #00a2ae;
+  transition: all 0.8s ease;
+  opacity: 1;
+  display: block;
+  margin: 18px auto;
+ 
+}
+.check-icon-invalid {
+  font-size: 50px;
+  color: #fff;
+  opacity: 0;
+  display: block;
+  margin: 18px auto;
+}
+
+
+.send-btn {
+  background: #00a2ae;
+  color: #fff;
+}
+
+.alert {
+  display:inline-block;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .continue-btn {
+    width: 160px;
+   
+  }
+  
+  .check-icon {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+}
+</code></pre>
+                <p class="comment">
+                    <code>./insurance-info.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.calendar-icon {
+    background-color: #00a2ae;
+    color: white;
+    padding: 0em 6px;
+}
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><form [formGroup]="insuranceInfoForm" ngxScrollToFirstInvalid>    <div class="row">        <div class="col-sm-12 col-md-2 col-lg-2 flex-container">            <div class="flex-centered mt-0">                <div class="round round-lg hollow color" style="margin: 10px auto;">                    <span>1</span>                </div>                <div class="logo-wrapper">                    <h6>{{\'QuotationRequestForms.StepsTitles.InsuranceInfo\' | translate }}</h6>                    <img src=\'../../../../assets/images/icons8-car-insurance-80.png\' class="logo">                </div>            </div>        </div>        <div class="col-sm-12 col-md-8 col-lg-9 border-right border-left border-bottom">            <div class="row">                <div                    [ngClass]="{\'col-sm-12 col-md-6 col-lg-4\': lang === \'ar\', \'col-sm-12 col-md-6 col-lg-8\':  lang === \'en\' }">                    <label>{{ \'QuotationRequestForms.InsuranceInfo.InsurancePurpose\' | translate }}</label>                    <div class="form-group">                        <label>                            <input type="radio" class="option-input radio" [checked]="previousQuote.isVehicleOwnerTransfer? !previousQuote.isVehicleOwnerTransfer: true" (change)="isTransfer()"                                 formControlName="isVehicleOwnerTransfer" [value]=false />                            <span                                class="radio-text">{{ \'QuotationRequestForms.InsuranceInfo.NewInsurance\' | translate }}</span>                        </label>                        <label>                            <input type="radio" class="option-input radio" (change)="isTransfer()" [checked]="previousQuote.isVehicleOwnerTransfer? previousQuote.isVehicleOwnerTransfer: false"                                formControlName="isVehicleOwnerTransfer" [value]=true />                            <span                                class="radio-text">{{ \'QuotationRequestForms.InsuranceInfo.NewVehicleOwner\' | translate }}</span>                        </label>                    </div>                </div>                <div class="col-sm-12 col-md-6 col-lg-4">                    <label>{{ \'QuotationRequestForms.InsuranceInfo.PolicyEffectiveDate\' | translate }}</label>                    <div class="input-group">                        <input  class="form-control" formControlName="policyEffectiveDate" placeholder="yyyy-mm-dd"                             [minDate]="minDate" [maxDate]="maxDate" name="dp" ngbDatepicker                            #d="ngbDatepicker" (click)="d.open()"                            [ngClass]="{ \'is-invalid\': submitted && f.policyEffectiveDate.errors }">                        <div class="input-group-append">                            <button class="btn btn-outline-secondary calendar-icon" (click)="d.open()" type="button">                                <i class="icon ion-md-calendar"></i>                            </button>                        </div>                        <div *ngIf="submitted && f.policyEffectiveDate.errors" class="invalid-feedback">                            <div *ngIf="f.policyEffectiveDate.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                    </div>                </div>                <div class="col-sm-12 col-md-6 col-lg-4" *ngIf="ownership">                    <label>{{ \'QuotationRequestForms.InsuranceInfo.VehicleIdentificationNumber\' | translate }}                                           </label>                    <div class="input-group">                        <input type="number" class="form-control" formControlName="vehicleOwnerIdentityNumber" [ngModel]="previousQuote.vehicleOwnerIdentityNumber"                            [ngClass]="{ \'is-invalid\': submitted && f.vehicleOwnerIdentityNumber.errors }">                        <div *ngIf="submitted && f.vehicleOwnerIdentityNumber.errors" class="invalid-feedback">                            <div *ngIf="f.vehicleOwnerIdentityNumber.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                            <div *ngIf="f.vehicleOwnerIdentityNumber.errors.pattern">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                            <div *ngIf="f.vehicleOwnerIdentityNumber.errors.minlength">الحد الأقصى لرقم الهوية هو 10                                أرقام</div>                            <div *ngIf="f.vehicleOwnerIdentityNumber.errors.maxlength">الحد الأقصى لرقم الهوية هو 10                                أرقام</div>                        </div>                    </div>                </div>                <div class="col-sm-12 col-md-6 col-lg-4">                    <label> {{ \'QuotationRequestForms.InsuranceInfo.NationalIDLabel\' | translate }}                            </label>                    <div class="input-group">                        <input type="number" class="form-control" [value]="insuredIdentityNumber">                    </div>                </div>                               <div class="col-sm-12 col-md-6 col-lg-4">                    <label>{{ \'QuotationRequestForms.InsuranceInfo.PlaceOfManufacture\' | translate }}</label>                    <div class="form-group">                        <ng-select [items]="stepsData.VehicleRepairMethods"   [loading]="!stepsData.VehicleRepairMethods" [(ngModel)]="previousQuote.vehicleRepairMethodId"                            formControlName="vehicleRepairMethodId" bindValue="id"                             [searchFn]="termSearchFn"                            [ngClass]="{\'is-invalid\': submitted && f.vehicleRepairMethodId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                        <div *ngIf="submitted && f.vehicleRepairMethodId.errors">                            <div class="v-meassage" *ngIf="f.vehicleRepairMethodId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}                            </div>                        </div>                    </div>                </div>            </div>        </div>        <div class="col-sm-12 col-md-2 col-lg-1">            <div class="row">                <div class="col">                    <div [ngClass]="{\'check-icon\':insuranceInfoForm.valid, \'check-icon-invalid\': insuranceInfoForm.invalid }">                        <i class="icon ion-md-checkmark-circle"></i></div>                </div>                           </div>                    </div>    </div><!-- continue button -->    <div class="row continue-btn" *ngIf="stepNumber < 2">               <button type="button" class="btn btn-sm" id="continue-btn" (click)="submitForm()"            (click)="scroll.emit(\'vehicleInfo\')">            {{ \'QuotationRequestForms.InsuranceInfo.Continue\' | translate }}            <i *ngIf="lang === \'ar\'" class="icon ion-md-arrow-round-back"></i>            <i *ngIf="lang === \'en\'" class="icon ion-md-arrow-round-forward"></i>        </button>    </div></form></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'InsuranceInfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InsuranceInfoComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

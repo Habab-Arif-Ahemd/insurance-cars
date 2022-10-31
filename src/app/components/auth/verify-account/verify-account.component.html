@@ -1,0 +1,65 @@
+<div class="container d-flex justify-content-center ">
+    <div class="row ">
+       <!-- Check Icon -->
+       <div class=" mt-4 p-4">
+
+       <div class="flex-container flex-centered">
+          <div class="flex-column flex-centered">
+             <i style="margin: 10px auto; font-size: 70px;" class="ion-md-checkmark-circle secondary-lime"></i>
+             <h3 style="text-align: center; margin: 10px;">{{ 'Auth.AccontActivationText' | translate }}</h3>
+             <h6 style="text-align: center;">{{ 'Auth.VerifyAccountText' | translate }}</h6>
+          </div>
+       </div>
+       </div>
+       <div class="flex-container flex-centered" style="width: 100%;">
+
+          <div class="flex-centered">
+
+             <!-- Error(s) Alert -->
+             <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">
+                <small>{{ errorMessage }}</small>
+                <small *ngIf="validationErrors">
+                   <ul class="errors-list">
+                      <li *ngFor="let error of validationErrors">
+                         {{error}}
+                      </li>
+                   </ul>
+                </small>
+             </ngb-alert>
+
+             <!-- Success Alert -->
+             <ngb-alert *ngIf="isSuccessAlertVisible" type="success" (close)="isSuccessAlertVisible = !isSuccessAlertVisible">
+                <small>{{ 'Auth.ResendVerSuccessAlert' | translate }}</small>
+             </ngb-alert>
+
+             <!-- Validation Code Input -->
+             <div class="col-lg-8 mt-8">
+
+             <div class="verification-ipt-group flex-container">
+                <input [(ngModel)]="verificationCode" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" [placeholder]="('Auth.VerificationCodeText' | translate)" class="verification-code-ipt" type="text">
+                <!-- Submit Button -->
+                <button (click)="sendVerificationCode()" class="verification-code-btn primary-btn form-control ">
+                   <span>{{ 'App.ContinueText' | translate }}</span>
+                   <span *ngIf="(isLoading && !isResending)" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                </button>
+             </div>
+             <div *ngIf="isSubmitting && (!verificationCode || verificationCode.toString().length === 0)">
+                <div class="v-meassage">{{ 'Errors.EmptyInputField' | translate }}</div>
+             </div>
+             </div>
+
+
+             <!-- Resend email link -->
+             <div class="col-lg-8 mt-4 ">
+             <div class="text-center padded">
+                <a (click)="resendVerficationCode()" id="password-reset-link" href="javascript:void(0)">
+                   {{ 'Auth.ResendVerificationCodeText' | translate }}
+                   <span *ngIf="(isResending && isLoading)" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                </a>
+             </div>
+             </div>
+          </div>
+       </div>
+
+    </div>
+</div>

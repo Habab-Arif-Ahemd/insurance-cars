@@ -1,0 +1,147 @@
+<div class="container">
+  <div class="col-8 mt-4">
+
+  
+<h5><fa-icon icon="user-edit" class="icon"></fa-icon> 
+  تغيير رقم الهاتف
+  </h5>
+  <br/>
+  
+  <form [formGroup]="changePhoneForm">
+                <!-- ------------------------------ Alert(s) ------------------------------- -->
+                <!-- Error(s) Alert -->
+                <div *ngIf="(isErrorAlertVisible || isSuccessAlertVisible)" class="alert-wrapper mt-1">
+                  <ngb-alert *ngIf="isErrorAlertVisible" type="danger" [dismissible]="true"
+                      (onClosed)="isErrorAlertVisible = !isErrorAlertVisible">
+                      <small>{{ errorMessage }}</small>
+                      <small *ngIf="validationErrors">
+                          <ul class="errors-list">
+                              <li *ngFor="let error of validationErrors">
+                                  {{error}}
+                              </li>
+                          </ul>
+                      </small>
+                  </ngb-alert>
+                  <!-- Success Alert -->
+                  <alert *ngIf="isSuccessAlertVisible" type="success" [dismissible]="true"
+                      (onClosed)="isSuccessAlertVisible = !isSuccessAlertVisible">
+                      <small>{{successMessage}}</small>
+                  </alert>
+              </div>
+    <div class="form-group">
+      <div class="input-group">
+        <input class="form-control date" formControlName="newPhoneNumber"
+          [placeholder]="('Auth.PhoneNumberText' | translate)" maxlength="9"
+          [ngClass]="{'is-invalid': (changePhonenumberForm.newPhoneNumber.errors && changePhonenumberForm.newPhoneNumber.touched)}"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text">
+        <div class=" ">
+          <span class="input-group-text calendar-icon"> 966+ </span>
+        </div>
+      </div>
+      <!-- Phone Validation Messages -->
+      <div *ngIf="changePhonenumberForm.newPhoneNumber.errors && changePhonenumberForm.newPhoneNumber.touched">
+        <div class="v-meassage" *ngIf="changePhoneForm.newPhoneNumber.errors.required">
+          {{ 'Errors.EmptyInputField' | translate }}
+        </div>
+        <div class="v-meassage" *ngIf="changePhonenumberForm.newPhoneNumber.errors.minlength">
+          {{ 'Errors.IncompleteInputField' | translate }}
+        </div>
+        <div class="v-meassage" *ngIf="changePhonenumberForm.newPhoneNumber.errors.phoneNumberIsNotStartWithFive">
+          {{ 'Errors.FirstPhoneNumberDigit' | translate }}
+        </div>
+      </div>
+    </div>
+  <div class="form-group">
+    
+ <!--  <input
+      type="text"
+      class="form-control"
+      value="{{ 'Auth.PhoneNumberText' | translate }}"
+      placeholder="{{ 'Auth.PhoneNumberText' | translate }}"
+      formControlName="newPhoneNumber"
+    /> -->
+  </div>
+<!--   <div class="form-group" *ngIf="!isubmited">
+    <input
+      type="password"
+      class="form-control"
+      placeholder="{{ 'Auth.PasswordText' | translate }} "
+      formControlName="password"
+    />
+    
+  </div> -->
+  <div class="form-group" *ngIf="!isubmited"> 
+    <div class="input-group " >
+      <input class="form-control" formControlName="password" [placeholder]="('Auth.PasswordText' | translate)" [type]="fieldTextType ? 'text' : 'password'"  />
+      <!-- Eye Icon -->
+   
+      <div class=" ">
+          
+       <div class="input-group-text calendar-icon input-group-append" (click)="toggleFieldTextType()">
+
+         <fa-icon [icon]="(fieldTextType ? 'eye-slash':'eye')"></fa-icon>
+      </div>
+    </div>
+ 
+</div>
+</div>
+  <div class="form-group" *ngIf="isubmited">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="{{ 'Misc.VerificationCodeText' | translate }}"
+      formControlName="verificationCode"
+    />
+  </div>
+  <!-- سس -->
+  <button
+  type="submit"
+  class="btn btn-primary"
+  (click)="changphone()"
+  *ngIf="!isubmited"
+>
+  <fa-icon icon="save" size="xs" class="icon" *ngIf="!isLoading"></fa-icon>
+  <span
+    *ngIf="isLoading"
+    class="spinner-border spinner-border-sm"
+    role="status"
+    aria-hidden="true"
+  ></span>
+  {{ "App.SaveChangesText" | translate }}
+</button>
+
+  <button
+    type="submit"
+    class="btn btn-primary"
+    (click)="confirmchangephone()"
+    *ngIf="isubmited"
+  >
+    {{ "App.saveText" | translate }}
+    <fa-icon
+      icon="save"
+      size="xs"
+      class="icon"
+      *ngIf="!isLoading"
+    ></fa-icon>
+    <span
+      *ngIf="isLoading"
+      class="spinner-border spinner-border-sm"
+      role="status"
+      aria-hidden="true"
+    ></span>
+  </button>
+
+
+    <button
+    type="button"
+    class="btn btn-danger ml-3"
+    [routerLink]="['/user/account/']"    
+    
+ 
+  >
+    <fa-icon icon="times-circle" size="xs" class="icon"></fa-icon>
+    {{ "App.CancelText" | translate }}
+  </button>
+</form>
+</div>
+</div>

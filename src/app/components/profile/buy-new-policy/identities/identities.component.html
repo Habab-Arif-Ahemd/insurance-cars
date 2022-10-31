@@ -1,0 +1,174 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                              Page Loader                                -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+<div class="loader-card mt-3" *ngIf="isLoadingIdentitiesList"> 
+  <div class="content-container loader-wrapper flex-centered flex-container">
+  <div class="loading">
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+   </div>
+  </div>
+</div>
+
+<div class="containerfluid mt-5 px-0" *ngIf="  !isLoadingIdentitiesList">
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              Page Name                                   -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h5 style="font-weight: bold">
+        <!-- ----------- <fa-icon icon="adjust" class="icon"></fa-icon> ------------ -->
+
+        {{ "Profile.PanelItems.PurchsePolicy.RegisteredID" | translate }}
+      </h5>
+    </div>
+    <!--                Add Claim   button                             -->
+    <div class="col mb-3 ">
+      <button  *ngIf="identities.length == 0"
+        type="button"
+        class="btn btn-primary "
+        (click)="navigateToQuotation()">
+        <fa-icon icon="plus" class="icon"></fa-icon>
+        {{'Profile.PanelItems.PurchsePolicy.AddIdBtn' | translate }}  </button>
+    </div>
+ </div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              List of Policy                             -->
+  <!-- ----------------------------------------------------------------------- -->
+
+<!-- New Design -->
+
+<div class="row" *ngIf="identities.length > 0">
+  <div class="col-md-4 card p-4"  *ngFor="let identity of identities">
+    <h4> {{ lang === 'ar' ? identity.fullNameAr  :
+      identity.fullName  }}</h4> 
+    <p>{{"Profile.PanelItems.PurchsePolicy.NationalIDLabel" | translate }}:{{ identity.identityNumber }}</p>
+    <p> {{ "Profile.PanelItems.PurchsePolicy.BirthDate" | translate }}:
+      {{identity.identityNumber.toString().startsWith("1") ? identity.birthDateH : identity.birthDate |  date: "dd-MMM-yyyy"}}
+    </p>
+    <p style="color:#3182d2; font-weight: bold;">{{"Profile.PanelItems.PurchsePolicy.PolicyLeft" | translate }} :  {{ dashboard.totalRemainingPolicy  }} {{"Profile.PanelItems.PurchsePolicy.Policy" | translate }}</p>
+
+
+    <hr>
+    <button type="submit" class=" identites-header btn-sm btn" (click)="selectIdentity(identity)">
+      <i class="ion-md-checkmark i-icon"></i>
+      {{ "Profile.PanelItems.PurchsePolicy.SelectBtn" | translate }}
+      <span *ngIf="vehicle.btnLoader" class="spinner-border spinner-border-sm btn-loader" role="status"
+        aria-hidden="true"></span>
+  </button>
+  
+             
+  </div>
+</div>
+
+     <!-- Empty Alert -->
+     <div *ngIf="identities.length === 0 && !isLoadingIdentitiesList " class="d-flex justify-content-center">
+      <h6>
+          <i class="empty-header-icon ion-ios-alert"></i>
+          لا توجد هويات مسجلة
+      </h6>
+      <div class="col-lg-6 col-sm-12 p-0 d-flex justify-content-end">
+          <!-- <button *ngIf="identities.length == 0"   type="button"
+          class="btn btn-primary " (click)="navigateToQuotation()">
+              <i class="icon ion-ios-add-circle-outline"></i>
+              {{'Profile.PanelItems.PurchsePolicy.AddIdBtn' | translate }}
+          </button> -->
+      </div>
+  </div>
+
+</div>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              Identity form                              -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- 
+<form [formGroup]="identityFormGroup" *ngIf="">
+  <h5 class="pb-2" style="font-weight: bold;">{{'Profile.PanelItems.PurchsePolicy.AddIDFormTitle' | translate}}</h5>
+  <label class="pt-2">{{'Profile.PanelItems.PurchsePolicy.NationalIDLabel' | translate }}</label>
+  <div class="form-group">
+      <input formControlName="identityNumber" class="form-control" maxlength="10"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="identityNumber"
+          autocomplete="on" type="text" />
+      <div *ngIf="submitted && f.identityNumber.errors">
+          <div class="v-meassage" *ngIf="f.identityNumber.touched && f.identityNumber.errors.required">
+              {{ 'Errors.EmptyInputField' | translate }}
+          </div>
+          <div class="v-meassage"
+              *ngIf="f.identityNumber.dirty && !f.identityNumber.errors.isValidNationalId && !f.identityNumber.errors.required">
+              {{ 'Errors.InvalidNationalID' | translate  }}
+          </div>
+          <div class="v-meassage" *ngIf="f.identityNumber.dirty && f.identityNumber.errors.minlength">
+              {{ 'Errors.IncompleteInputField' | translate }}
+          </div>
+
+      </div>
+  </div>
+ -->
+  <!-- Email Input -->
+  <!-- <label class="pt-2">{{'QuotationRequestForms.ClientInfoModal.Email' | translate }}</label>
+  <input formControlName="email" type="email" class="form-control" />
+  <div *ngIf="submitted && f.email.errors">
+      <div class="v-meassage" *ngIf="f.email.errors.required">
+          {{ 'Errors.EmptyInputField' | translate }}
+      </div>
+      <div class="v-meassage" *ngIf="f.email.errors.pattern">
+          {{ 'Errors.InvalidEmail' | translate }}
+      </div>
+  </div> -->
+
+  <!-- Birth Date  -->
+ <!--  <label class="pt-2" *ngIf="showHijriDate || showgregoianDate">{{'QuotationRequestForms.DriverInfo.Birth' | translate }}</label>
+  <app-higri-datepicker *ngIf="showHijriDate" (onDatePicked)="setBirthDateValue($event)"></app-higri-datepicker>
+  <app-gregorian-datepicker *ngIf="showgregoianDate" (onDatePicked)="setBirthDateValue($event)">
+  </app-gregorian-datepicker>
+
+  <div *ngIf="submitted && f.birthDate.errors && (showHijriDate || showgregoianDate)">
+      <div class="v-meassage" *ngIf="f.birthDate.errors.required">
+          {{ 'Errors.EmptyInputField' | translate }}
+      </div>
+
+      
+  </div> -->
+
+  
+  <!-- Phone Input -->
+<!--   <label class="pt-2">{{'QuotationRequestForms.ClientInfoModal.Phone'| translate }}</label>
+ -->  
+<!--   <div class="input-group">
+    
+      <input formControlName="phoneNumber" [placeholder]="('Auth.PhoneNumberText' | translate)"
+         class="form-control date" maxlength="9"
+         oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text" />
+         <div class=" ">
+          <span class="input-group-text calendar-icon">
+            +966
+          </span>
+       </div>
+   </div> -->
+
+<!--   <div *ngIf="submitted && f.phoneNumber.errors">
+      <div class="v-meassage" *ngIf="f.phoneNumber.errors.required">
+          {{ 'Errors.EmptyInputField' | translate }}</div>
+      <div class="v-meassage" *ngIf="f.phoneNumber.errors.minlength">
+          {{ 'Errors.IncompleteInputField' | translate }}</div>
+  </div>
+  <div class="row d-flex justify-content-center brder">
+
+      <button class="submit-btn mt-3 buttoncontinue" (click)="selectVehicle()">
+          <i class="icon ion-md-create"></i>
+          {{'App.ContinueText' | translate}}
+      </button>
+      <button class="btn btn-sm btn-danger rmv-btn mr-1 ml-1submit-btn mt-3" (click)="cancelAddingIdentity()">
+          <i class="icon ion-md-close"></i>
+          <span>{{'Profile.PanelItems.PurchsePolicy.CancelBtn' | translate }}</span>
+      </button>
+  </div>
+
+</form> -->

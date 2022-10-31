@@ -1,0 +1,11 @@
+<div class="input-group">
+   <input class="form-control date" placeholder="{{ 'QuotationRequestForms.DriverInfo.Birth' | translate }}" [(ngModel)]="date" (ngModelChange)="pickedDate($event)" 
+      [minDate]="{year: startDateYear, month: 1, day: 1}" [maxDate]="{year: maxDateYear,  month: 12, day: 30}" name="dp"
+      ngbDatepicker #d="ngbDatepicker" (click)="d.open()">
+   <div class="input-group-append"  >
+      <button class="btn  calendar-icon" (click)="d.open()" type="button">
+         
+         <img src = "../../../../../assets/img/Icon-png/calendar.png">
+      </button>
+   </div>
+</div>

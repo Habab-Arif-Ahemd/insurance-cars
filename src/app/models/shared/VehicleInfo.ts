@@ -1,0 +1,43 @@
+export interface VehicleInfo {
+   id: string;
+   insuredIdentityNumber: number;
+   vehicleId: number;
+   vehicleIdTypeId: number;
+   vehicleFKId:string;
+   vehicleMajorColor: string;
+   vehicleMajorColorAr: string;
+   vehicleMaker: string;
+   vehicleMakerAr: string;
+   makerLogo: string;
+   vehicleModel: string;
+   vehicleModelAr: string;
+   vehicleModelYear: string;
+   vehicleOwnerIdentityNumber: string;
+   vehicleOwnerName: string;
+   vehiclePlateFirstLetter: string;
+   vehiclePlateFirstLetterAr: string;
+   vehiclePlateNumber: string;
+   vehiclePlateSecondLetter: string;
+   vehiclePlateSecondLetterAr: string;
+   vehiclePlateThirdLetter: string;
+   vehiclePlateThirdLetterAr: string;
+   colorAr: string;
+   drivingCityAr: string;
+   drivingCity: string;
+   repairMethodAr: string;
+   repairMethod: string;
+   model: string;
+   plateNumber: number;
+   modelYear: number
+   sumInsured: number;
+   plateFirstLetter?: any;
+   plateSecondLetter?: any;
+   plateThirdLetter?: any;
+   plateFirstLetterAr: string;
+   plateSecondLetterAr: string;
+   plateThirdLetterAr: string;
+   maker?: string;
+   vehicleLogo?: string;
+   data?: VehicleInfo[];
+   btnLoader?: boolean;
+}

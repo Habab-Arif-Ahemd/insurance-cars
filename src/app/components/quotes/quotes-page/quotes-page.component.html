@@ -1,0 +1,278 @@
+<!-- <div *ngIf="endBut">
+   <app-loading></app-loading>
+</div> -->
+<div  [class.no-padding]="isLoadingQuotes">
+
+
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                           QUOTES EXPIRY MODAL                           -->
+   <!-- ----------------------------------------------------------------------- -->
+   <ng-template #expiryModal let-modal>
+      <div class="modal-header">
+         <h4 class="modal-title" id="modal-basic-title">{{ 'Quote.ExpiryModal.OffersExpiry' | translate }}</h4>
+      </div>
+      <div class="modal-body">
+         {{ 'Quote.ExpiryModal.GetNewOffersQuestion' | translate }}
+      </div>
+      <div class="modal-footer">
+         <!-- Reload Button -->
+         <button (click)="reloadQuotations()" class="primary-btn">
+            <span>{{ 'Quote.ExpiryModal.GetNewOffers' | translate }}</span>
+         </button>
+         <!-- Cancel Button -->
+         <button (click)="navigateToLanding()" class="primary-btn danger">
+            <span>{{ 'App.CancelText' | translate }}</span>
+         </button>
+      </div>
+   </ng-template>
+
+
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                          QUOTES ORDER DETAILS                           -->
+   <!-- ----------------------------------------------------------------------- -->
+   <!-- <app-quote-order-data></app-quote-order-data> -->
+   <app-quote-order-data></app-quote-order-data>
+
+
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                             QUOTES FILTERS                              -->
+   <!-- ----------------------------------------------------------------------- -->
+   <app-quotes-filters></app-quotes-filters>
+
+
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                               QUOTES LIST                               -->
+   <!-- ----------------------------------------------------------------------- -->
+
+   <app-quotes-list></app-quotes-list>
+
+
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                        PRODUCTS COMPARISON LIST                         -->
+   <!-- ----------------------------------------------------------------------- -->
+   <div  (mouseleave)="isComparisonMenuOpen ? isComparisonMenuOpen = false : null" *ngIf="!isComparisonTableOpen"
+   class="comparison-list-container compare-btn mb-5" [ngClass]="isComparisonMenuOpen ? 'opened' : 'closed'" >
+      
+      <!-- ------------------------------- Header -------------------------------- -->
+      <div (mouseover)="isHoveringComparisonButton = true" (mouseleave)="isHoveringComparisonButton = false"
+         (click)="toggleComparisonMenu()" class="header btn btn-primary flex-container">
+
+         <!-- Icon -->
+         <!-- <fa-icon icon="list" size="md" class="icon" style="margin: 11px"></fa-icon> -->
+         <img src="../../../../assets/img/Icon-png/note.png" class="list">
+         <!-- Title -->
+         <span class="flex-centered">
+            {{ comparisonProducts.length > 0 ? 'قائمة المقارنة' : 'قائمة المقارنة فارغة' }}
+             <!-- Clear Button -->
+         <!-- <a (click)="clearComparisonList()" class="comparison-clear-btn" href="javascript:void(0)" style="cursor: pointer;">X</a> -->
+         </span>
+
+         <!-- Counter -->
+         <span *ngIf="comparisonProducts.length > 0" class="counter flex-centered">
+            {{comparisonProducts.length}}
+         </span>
+
+         <!-- Counter Top -->
+         <div *ngIf="comparisonProducts.length > 0" class="counter-top">
+            <p class="produCounter">{{comparisonProducts.length}}</p>
+         </div>
+         
+      </div>
+
+      <!-- ---------------------------- Products Menu ---------------------------- -->
+      <div class="content"  >
+         <!-- Comparison Products -->
+      
+            <ul *ngIf="isComparisonMenuOpen" class="table-wrappers" >
+               <li *ngFor="let product of comparisonProducts" class="comparison-quote-box ">
+                  
+                  <div class="carrier-img flex-centered flex-container">
+                     <img *ngIf="product?.insuranceCarrier.logo" [src]="('https://oasisaggrapi.com/logo/IC/' +
+                     product?.insuranceCarrier.logo)"
+                        [alt]="product?.insuranceCarrier.name + ' company logo'"
+                        class="carrier-img ">
+                  </div>
+                  <div class="product-price policy flex-centered flex-container">
+                     <span >
+                        {{ product?.selectedDeductible.policyPremium | number:'1.2-2' }}
+                        <small class="policy">{{ 'App.Currency' | translate }}</small>
+                     </span>
+                  </div>
+                  <a><span (click)="removeComparisonProduct(product)" id="quote-removal-btn" class="">
+                     <img src = "../../../../assets/img/Icon-png/archive.png" class="list">
+                  </span></a>
+               </li>
+            </ul>
+   
+      
+         <!-- Compare Button #popoverEl="popover" [popover]="popContent" -->
+         <div *ngIf="isComparisonMenuOpen" class="compare-btn">
+            <a (click)="showComparisonTable()" triggers="manual" class="btn btn-primary" href="javascript:void(0)">
+               <i class="icon ion-ios-repeat"></i>
+               <span>{{ 'Quote.QuoteComparison.CompareButtonText' | translate }}</span>
+            </a>
+            <!-- <ng-template #popContent>
+               <span class="comparison-alert-popover">{{ 'Quote.QuoteComparison.MinComparisonAlertText' | translate }}</span>
+            </ng-template> -->
+         </div>
+
+      </div>
+
+   </div>
+
+
+   <!-- ----------------------------------------------------------------------- -->
+   <!--                        PRODUCTS COMPARISON TABLE                        -->
+   <!-- ----------------------------------------------------------------------- -->
+   <div class="comparison-table-container" [ngClass]="isComparisonTableOpen ? 'opened' : 'closed'">
+
+      <table class="quote-table" >
+         <tbody >
+
+            <!-- <tr>
+                 <td class="quote-blank"></td>
+                 <td class="quote-blank"></td>
+                 <td class="quote-blank"></td>
+                 <td class="quote-blank"></td>
+             </tr> -->
+
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                        Insurance Companies Logos                        -->
+            <!-- ----------------------------------------------------------------------- -->
+            <!-- #region -->
+
+            <!-- <tr class="quote-table-head">
+               <td></td>
+               <td *ngFor="let product of comparisonProducts">
+                  <br><small style="font-size: 18px; font-weight: 400;">{{ product.insuranceCarrier.nameAr }}</small>
+               </td>
+            </tr> -->
+
+            <!-- #endregion -->
+
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                          Back Button + Prices                           -->
+            <!-- ----------------------------------------------------------------------- -->
+            <!-- #region -->
+
+            <tr  [class.is-sticky]="hasScrolledBanner">
+               <!-- Back Button -->
+               <td class="quote col d-flex justify-content-center mt-2">   
+                  <a (click)="closeComparisonTable()" href="javascript:void(0)" style="color:#0B70CB;">
+                     <fa-icon icon="undo" class="icon-buy"></fa-icon>
+                     {{ "App.BackText" | translate }}
+                  </a>
+                  <h4 >{{"App.CompanyInsurance" | translate}}</h4>
+               </td>
+
+               <!-- Products Prices -->
+               <td *ngFor="let product of comparisonProducts" class="quote" style="padding: 38px;">
+                  <img *ngIf="product?.insuranceCarrier.logo" [src]="('https://oasisaggrapi.com/logo/IC/' +
+                  product?.insuranceCarrier.logo)" class = "mt-4" alt="IC  logo" />
+                  <!-- TODO: Delete the <br> and use CSS -->
+               </td>
+            </tr>
+            <tr style="background-color: #0B70CB;" >
+               <td >
+               </td>
+               <td *ngFor="let product of comparisonProducts" class="quote ">
+                  {{ product.selectedDeductible.policyPremium| number:'1.2-2' }}
+                   <br>
+                  <a (click)="orderQuoteProduct(product)"   >
+                     <!-- <fa-icon icon="money-check-alt" class="icon-buy"></fa-icon> -->
+                     <span *ngIf="product.isSelected" class="spinner-border spinner-border-sm" role="status"
+                     aria-hidden="true"></span>
+                     {{"App.BuyText"|translate}}
+                  
+                  </a>
+                
+               </td>
+            </tr>
+            <tr>
+               <td >
+                  {{ 'Checkout.PolicyDetails.ProductType' | translate }}
+               </td>
+               <td *ngFor="let product of comparisonProducts;" >
+                  {{ appLang === 'ar' ? product.nameAr : product.name }}
+               </td>
+            </tr>
+            <tr>
+               <td >
+                  {{ 'Quote.LiabilityCostText' | translate }}
+               </td>
+               <td *ngFor="let product of comparisonProducts; let i = index">
+                  <div *ngIf="product.productTypeId == 2">
+                     <div *ngFor="let productDeductibles of product.deductibles; let j = index; let first = first">
+                         <div *ngIf="first">
+                            {{productDeductibles.deductibleValue}}
+                         </div>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+
+
+            <!-- #endregion -->
+
+
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                                Benefits                                 -->
+            <!-- ----------------------------------------------------------------------- -->
+            <!-- #region -->
+
+            <tr *ngFor="let benefit of comparisonProductsBenefits; let i = index">
+
+               <!-- Benefits Names -->
+               <td><a href="#" class="quote-table-help"><i class="far fa-fw fa-question-circle"></i></a>
+                  {{ appLang === 'ar' ? benefit.nameAr : benefit.name }}
+               </td>
+
+               <!-- Benefits Prices Checkboxes -->
+               <td *ngFor="let product of comparisonProducts;">
+                  <div *ngFor="let productBenefit of product.benefits; let j = index">
+                     <div *ngIf="productBenefit.name === benefit.name">
+
+                        <!-- Tick/check Icon for free benefits (without checkbox)  -->
+                        <div *ngIf="(productBenefit.benefitTypeId === 2)">
+                          <fa-icon icon="check" class="check_icon"></fa-icon>
+                        </div>
+
+                        <!-- Checkbox for paid benefits -->
+                        <div *ngIf="!(productBenefit.benefitTypeId === 2)" class="checkbox rtl bouncy  ">
+                           <input
+                           [checked]="productBenefit.benefitTypeId == 2 || productBenefit.benefitTypeId == 3 || productBenefit.isChecked "
+                           (change)="toggleProductBenefit(product, productBenefit)"
+                           [disabled]="productBenefit.benefitTypeId == 2 || productBenefit.benefitTypeId == 3    ||
+                           ((quote?.insuranceCompany.id == 5 && product.benefitId == 1 && uiState.gulfGeneralIC.selectedExtraBenefit === 'PassengerCover') ||
+                           (quote?.insuranceCompany.id == 5 && product.benefitId == 3 && uiState.gulfGeneralIC.selectedExtraBenefit === 'DriverCover'))"
+                           [id]="product.name + productBenefit.name + product.selectedDeductible.totalPremium + i + j"
+                           type="checkbox" class="option-input checkbox">
+
+                           <label [for]="product.name + productBenefit.name + product.selectedDeductible.totalPremium + i + j">
+
+                              <span *ngIf="!(productBenefit.benefitTypeId == 2)" class="primary-col pr-1 " >
+                                 {{ productBenefit.benefitAmount | number:'1.2-2' }}
+                              </span>
+
+                              <small *ngIf="!(productBenefit.benefitTypeId == 2)" class="currency-txt primary-col">
+                                 {{ 'App.Currency' | translate }}
+                              </small>
+
+                           </label>
+
+                        </div>
+
+                     </div>
+                  </div>
+               </td>
+
+            </tr>
+
+            <!-- #endregion -->
+
+         </tbody>
+      </table>
+
+   </div>
+
+</div>

@@ -1,0 +1,270 @@
+<div class="row">
+    <div class="col-lg-12 d-flex justify-content-start">
+        <label class="question-lable">
+         {{ 'QuotationRequestForms.VehicleInfo.AddDriver' | translate }}
+        </label>
+    </div>
+    <div class="col-lg-12 d-flex justify-content-center toggle-head">
+        <label class="switch add-driver mt-3">
+           <span > <img src = "../../../../assets/img/Icon-png/add-square.png"></span> 
+           <input type="checkbox" class="question-checkbox" (change)="showAdditionalDriversForm()" />
+        </label>
+        
+        <label class="form-title question-lable mt-3 ">
+           {{ 'QuotationRequestForms.VehicleInfo.AddVehicleDriver' | translate }}
+        </label>
+       
+     </div>
+    <!-- <div class="col d-flex justify-content-end">
+        <label class="switch">
+            <input type="checkbox" id="add-driver" class="question-checkbox" [checked]="showAdditionalDriverForm"
+                (change)="showAdditionalDriversForm()" />
+            <span class="slider round"> </span> </label><label><span class="ui"></span></label>
+        <label for="add-driver"><span class="ui"></span></label>
+    </div> -->
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Additional Driver Form                            -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="row  mt-3" *ngIf="showAdditionalDriverForm">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">
+            <small>{{ errorMessage }}</small>
+            <small *ngIf="validationErrors">
+               <ul class="errors-list">
+                  <li *ngFor="let error of validationErrors">{{error}}</li>
+               </ul>
+            </small>
+         </ngb-alert>
+        <form [formGroup]="additionalDriverInfoForm">
+            <div class="row">
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                             identityNumber                              -->
+                <!-- ----------------------------------------------------------------------- -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <input formControlName="identityNumber"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            maxlength="10" autocomplete="on" name="identityNumber" class="form-control" type="text"
+                            placeholder="{{ 'QuotationRequestForms.AdditionalDriver.NationalIDLabel' | translate}}"
+                            [ngClass]="{ 'is-invalid': f.identityNumber.touched && f.identityNumber.errors}"
+                        >
+                        <!-- Validation Errors -->
+                        <div *ngIf="f.identityNumber.errors">
+                            <div *ngIf="f.identityNumber.touched && f.identityNumber.errors.required"
+                                class="v-meassage">
+                                {{ 'Errors.EmptyInputField' | translate }}
+                            </div>
+                            <div *ngIf="f.identityNumber.touched && !f.identityNumber.errors.isValidNationalId && !f.identityNumber.errors.duplicate"
+                                class="v-meassage">
+                                {{ 'Errors.InvalidNationalID' | translate }}
+                            </div>
+                            <div *ngIf="f.identityNumber.touched && f.identityNumber.errors.minlength"
+                                class="v-meassage">
+                                {{ 'Errors.IncompleteInputField' | translate }}
+                            </div>
+                            <div *ngIf="f.identityNumber.dirty && f.identityNumber.errors.duplicateNationalId" class="v-meassage">
+                                {{ 'Errors.DriverExist' | translate }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+    
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                               date picker                               -->
+                <!-- ----------------------------------------------------------------------- -->
+
+        
+                <div class="col-sm-12 col-md-6 col-lg-4" *ngIf="showgregoianDate || showHijriDate">
+                    <!-- <label> {{ 'QuotationRequestForms.DriverInfo.Birth' | translate }} </label> -->
+                    <!--  [previousQuoteDriverBirthDate]="previousQuoteDriverBirthDate" -->
+                    <app-gregorian-datepicker (onDatePicked)="setBirthDateValue($event)" *ngIf="showgregoianDate">
+                    </app-gregorian-datepicker>
+                    <app-higri-datepicker (onDatePicked)="setBirthDateValue($event)" *ngIf="showHijriDate">
+                    </app-higri-datepicker>
+                    <div *ngIf="additionalDriverInfoFormSubmitted && f.birthDateG.errors">
+                       <div class="v-meassage" *ngIf="f.birthDateG.errors.required">
+                          {{ 'Errors.EmptyInputField' | translate }}</div>
+                    </div>
+                 </div>
+     
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                          childrenUnder16Years                           -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <ng-select [items]="fromZeroToTen" formControlName="childrenUnder16Years" bindLabel="name"bindValue="id"
+                        placeholder="{{ 'QuotationRequestForms.DriverInfo.Children' | translate}}">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                            educationLevelId                             -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <ng-select [items]="stepsData.EducationLevels" bindValue="id" [searchFn]="termSearchFn"
+                            [loading]="!stepsData.EducationLevels" formControlName="educationLevelId"
+                            [ngClass]="{ 'ng-invalid': additionalDriverInfoFormSubmitted && f.educationLevelId.errors }"
+                            placeholder="{{ 'QuotationRequestForms.DriverInfo.Education' | translate}}">
+                            <ng-template ng-label-tmp let-item="item">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                        </ng-select>
+                        <div *ngIf="f.educationLevelId.touched && f.educationLevelId.errors">
+                            <div class="v-meassage" *ngIf="f.educationLevelId.errors.required">
+                                {{ 'Errors.EmptyInputField' | translate }}</div>
+                        </div>
+                    </div>
+                </div>
+
+          
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                           drivingPercentageId                           -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <ng-select [items]="stepsData.DrivingPercentages" formControlName="drivingPercentageId"
+                            [loading]="!stepsData.DrivingPercentages" bindValue="id"
+                            [ngClass]="{ 'ng-invalid': additionalDriverInfoFormSubmitted && f.drivingPercentageId.errors }"
+                            placeholder="{{ 'QuotationRequestForms.AdditionalDriver.Percentage' | translate}}">
+                            <ng-template ng-label-tmp let-item="item">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                        </ng-select>
+
+                        <div *ngIf="f.drivingPercentageId.errors">
+                            <div class="v-meassage"
+                                *ngIf="f.drivingPercentageId.touched  &&f.drivingPercentageId.errors.required">
+                                {{ 'Errors.EmptyInputField' | translate }}</div>
+                            <div class="v-meassage"
+                                *ngIf="f.drivingPercentageId.dirty && f.drivingPercentageId.errors.drivingPercentageComplete">
+                                {{ 'Errors.InCompletePercentage' | translate }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                               relationId                                -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <ng-select [items]="stepsData.relations" formControlName="relationId" [searchFn]="termSearchFn"
+                            [loading]="!stepsData.relations" bindValue="id"
+                            placeholder="{{ 'QuotationRequestForms.DriverInfo.Relation' | translate}}">
+                            <ng-template ng-label-tmp let-item="item">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                        </ng-select>
+                        <div *ngIf="f.relationId.touched && f.relationId.errors">
+                            <div class="v-meassage" *ngIf="f.relationId.errors.required">
+                                {{ 'Errors.EmptyInputField' | translate }}</div>
+                        </div>
+                    </div>
+                </div>
+            
+        
+             <!-- ----------------------------------------------------------------------- -->
+                <!--                               Occupation                                -->
+                <!-- ----------------------------------------------------------------------- -->
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="form-group">
+                        <ng-select [items]="stepsData?.Occupations" bindValue="id" formControlName="occupationId"
+                            [loading]="!stepsData?.EducationLevels" [searchFn]="termSearchFn" [virtualScroll]="true"
+                            [ngClass]="{ 'ng-invalid': additionalDriverInfoFormSubmitted && f.occupationId.errors }"
+                            placeholder="{{ 'QuotationRequestForms.DriverInfo.Occupation' | translate}}">
+                            <ng-template ng-label-tmp let-item="item">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                                <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+                            </ng-template>
+                        </ng-select>
+                        <div *ngIf="additionalDriverInfoFormSubmitted && f.occupationId.errors">
+                            <div class="v-meassage" *ngIf="f.occupationId.errors.required">
+                                {{ 'Errors.EmptyInputField' | translate }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- ----------------------------------------------------------------------- -->
+            <!--                       Medical Conditons Question                        -->
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="row">
+                <div class="col-lg-7 d-flex justify-content-start">
+                    <label class="form-title question-lable">
+                        {{ 'QuotationRequestForms.AdditionalDriver.Conditions' | translate }}
+                    </label>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-end">
+                    <label class="switch">
+                        <input type="checkbox" class="question-checkbox" (change)="showMedicalCondition()" [checked]="showDriverMedical" />
+                        <span class="slider round"> </span> </label><label><span class="ui"></span></label>
+                </div>
+            </div>
+            <div class="row" *ngIf="showDriverMedical">
+                <!-- spinner -->
+                <div class="spinner-border" role="status" *ngIf="!stepsData.MedicalConditions">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4" style="display: inherit;"
+                    *ngFor="let medical of stepsData.MedicalConditions; let i = index;">
+                    <label>
+                        <input type="checkbox" class="option-input checkbox" [id]="medical?.name + i"
+                            [checked]="medical.isChecked" (change)="addMedicalCondition(medical.id)" />
+                        {{ lang === 'ar' ? medical.nameAr : medical.name }}
+                    </label>
+                </div>
+            </div>
+         
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end ">
+                   <button  type="button"class="btn  btn btn-labeled btn-primary mr-3" (click)="submitForm()" [disabled]="isSavingDriver">
+                      <span *ngIf="isSavingDriver" class="spinner-border spinner-border-sm text-white" role="status" aria-hidden="true"></span>
+                      <i class="icon ion-ios-save" *ngIf="!isSavingDriver"></i>
+                      {{ 'QuotationRequestForms.AdditionalDriver.SaveBtn' | translate }}
+                  </button> 
+                  
+                  <button type="button" class="btn  btn-danger cancel-driver-btn" (click)="cancelAddingDriver()">
+                   <i class="icon ion-ios-close"></i>
+                   {{ 'QuotationRequestForms.AdditionalDriver.CancelBtn' | translate }}
+                  </button>
+                </div>
+             </div>
+
+        </form>
+        <div class="col-sm-1 col-md-1 col-lg-1">
+            <div
+               [ngClass]="{'check-icon':additionalDriverInfoForm.valid, 'check-icon-invalid': additionalDriverInfoForm.invalid}">
+               <i class="icon ion-md-checkmark-circle"></i>
+            </div>
+         </div>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                             Actions Buttons                             -->
+        <!-- ----------------------------------------------------------------------- -->
+
+       
+    </div>
+</div>
+
+    

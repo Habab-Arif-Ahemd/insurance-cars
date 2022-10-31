@@ -1,0 +1,71 @@
+<section>
+
+<div class="Auth-container" id="container" [ngClass]="{'right-panel-active': (displayForm.signup || displayForm.forgetPassword || displayForm.verfication||displayForm.verficationRestpassword ), 'not-active':displayForm.login}">
+
+  <div class="">
+
+  <div   class="form-container sign-up-container" >
+<div *ngIf="displayForm.signup">
+  <app-signup (closeModal)="closeActiveModal()"> </app-signup> 
+</div>
+
+<div *ngIf="displayForm.forgetPassword">
+  <app-forget-password (closeModal)="closeActiveModal()"> </app-forget-password>  
+</div>
+
+<div *ngIf="displayForm.verfication">
+  <app-verify-account (closeModal)="closeActiveModal()"> </app-verify-account> 
+</div>
+
+<div *ngIf="displayForm.verficationRestpassword">
+<app-verify-reset-password (closeModal)="closeActiveModal()"> </app-verify-reset-password>
+</div>
+
+</div>
+
+<div   class="form-container sign-in-container" >
+    <app-login (closeModal)="closeActiveModal()"></app-login> 
+  
+<!--  <app-verify-reset-password (closeModal)="closeActiveModal()"> </app-verify-reset-password>
+ -->
+
+<!--    <app-verify-account (closeModal)="closeActiveModal()"> </app-verify-account> 
+ --> 
+
+<!--     <app-verify-reset-password (closeModal)="closeActiveModal()"> </app-verify-reset-password>
+ --> 
+ 
+<!--      <app-signup (closeModal)="closeActiveModal()"> </app-signup> 
+ -->
+</div>
+
+  <div class="overlay-container">
+      <div class="overlay">             
+          <div class="overlay-panel overlay-left"  style="background-color: #005DBD;">
+            <img src="../../../assets/img/ammant-login.png"  class="logo-style"/>
+            <h5 style="color: azure; "> {{"Auth.welcome"| translate}}  </h5>
+              <img src="../../../assets/img/login.png" height="180px" width="254px"/>
+            <!--   <label> {{"Auth.HaveAccountText"| translate}}  </label>
+              <a   href="javascript:void(0)" (click)="displayActiveForm('login')"type="button" > {{"Auth.SignToExistingText"| translate}}</a> -->
+
+          </div> 
+          <div class="overlay-panel overlay-right" style="background-color: #005DBD;">
+            <img src="../../../assets/img/ammant-login.png"  class="logo-style"/>
+
+            <h5 style="color: azure; "> {{"Auth.welcomeBack"| translate}}  </h5>
+            <img src="../../../assets/img/login.png" alt="movie-2"  height="180px" width="254px"/>
+          <!--   <label >   {{"Auth.DontHaveAccountText"| translate}}</label>
+              <a  href="javascript:void(0)" class="ghost" (click)="displayActiveForm('signup')" type="button" >  {{"Auth.SignUpText"| translate}}</a>
+ -->
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+    </div>
+
+</section>

@@ -1,0 +1,922 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TechnicalSupportComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/user/technical-support/technical-support.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-technical-support</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./technical-support.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./technical-support.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#hasBaseDropZoneOver">hasBaseDropZoneOver</a>
+                            </li>
+                            <li>
+                                <a href="#ticketCreationFormGroup">ticketCreationFormGroup</a>
+                            </li>
+                            <li>
+                                <a href="#TicketProiority">TicketProiority</a>
+                            </li>
+                            <li>
+                                <a href="#TicketType">TicketType</a>
+                            </li>
+                            <li>
+                                <a href="#uploader">uploader</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fileOverBase">fileOverBase</a>
+                            </li>
+                            <li>
+                                <a href="#initForm">initForm</a>
+                            </li>
+                            <li>
+                                <a href="#initUploader">initUploader</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#resetForm">resetForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fileOverBase"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            fileOverBase
+                        </b>
+                        <a href="#fileOverBase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fileOverBase(e: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initForm"></a>
+                    <span class="name">
+                        <b>
+                            initForm
+                        </b>
+                        <a href="#initForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initUploader"></a>
+                    <span class="name">
+                        <b>
+                            initUploader
+                        </b>
+                        <a href="#initUploader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initUploader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetForm"></a>
+                    <span class="name">
+                        <b>
+                            resetForm
+                        </b>
+                        <a href="#resetForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasBaseDropZoneOver"></a>
+                        <span class="name">
+                            <b>
+                            hasBaseDropZoneOver</b>
+                            <a href="#hasBaseDropZoneOver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ticketCreationFormGroup"></a>
+                        <span class="name">
+                            <b>
+                            ticketCreationFormGroup</b>
+                            <a href="#ticketCreationFormGroup"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="TicketProiority"></a>
+                        <span class="name">
+                            <b>
+                            TicketProiority</b>
+                            <a href="#TicketProiority"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>DropDownValues.TicketProiority</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="TicketType"></a>
+                        <span class="name">
+                            <b>
+                            TicketType</b>
+                            <a href="#TicketType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>DropDownValues.TicketType</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uploader"></a>
+                        <span class="name">
+                            <b>
+                            uploader</b>
+                            <a href="#uploader"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>FileUploader</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/user/technical-support/technical-support.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { FormGroup, FormControl, Validators } from &quot;@angular/forms&quot;;
+import { FileUploader } from &quot;ng2-file-upload&quot;;
+import DropDownValues from &#x27;src/app/helpers/utils/DropDownValues&#x27;;
+
+@Component({
+  selector: &quot;app-technical-support&quot;,
+  templateUrl: &quot;./technical-support.component.html&quot;,
+  styleUrls: [&quot;./technical-support.component.css&quot;],
+})
+export class TechnicalSupportComponent implements OnInit {
+  ticketCreationFormGroup: FormGroup;
+  uploader: FileUploader;
+  hasBaseDropZoneOver: boolean;
+  TicketProiority &#x3D; DropDownValues.TicketProiority;
+  TicketType &#x3D; DropDownValues.TicketType;
+  constructor() {}
+
+  ngOnInit() {
+    this.initForm();
+    this.initUploader();
+  }
+
+  initUploader() {
+    this.uploader &#x3D; new FileUploader({ url: &quot;&quot;, autoUpload: false });
+  }
+
+  initForm() {
+    this.ticketCreationFormGroup &#x3D; new FormGroup({
+      priority: new FormControl(null, Validators.required),
+      type: new FormControl(null, Validators.required),
+      module: new FormControl(null, Validators.required),
+      subject: new FormControl(null, Validators.required),
+      description: new FormControl(null, Validators.required),
+    });
+  }
+
+  public fileOverBase(e: any): void {
+    this.hasBaseDropZoneOver &#x3D; e;
+  }
+
+  resetForm(): void {
+    this.ticketCreationFormGroup.reset();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- &lt;div class&#x3D;&quot;ticket-creation-container&quot;&gt;
+    &lt;div class&#x3D;&quot;ticket-creation-box&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;header&quot;&gt;
+                Submit a new ticket
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;form enctype&#x3D;&quot;multipart/form-data&quot; [formGroup]&#x3D;&quot;ticketCreationFormGroup&quot; #ticketCreationForm
+            class&#x3D;&quot;ticket-creation-form&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-6&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;Ticket proiority&lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;TicketProiority&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot; formControlName&#x3D;&quot;priority&quot;&gt;
+                        &lt;/ng-select&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-6&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;Ticket type&lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;TicketType&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot; formControlName&#x3D;&quot;type&quot;&gt;
+                        &lt;/ng-select&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group text-inpus&quot;&gt;
+                    &lt;label&gt;Ticket subject&lt;/label&gt;
+                    &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;subject&quot; /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group text-inpus&quot;&gt;
+                    &lt;label&gt;Ticket description&lt;/label&gt;
+                    &lt;textarea class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;description&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+ --&gt;
+            &lt;!-- upload Button --&gt;
+           &lt;!--  &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;upload-btn-wrapper&quot;&gt;
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt; &lt;i class&#x3D;&quot;icon ion-md-add-circle-outline&quot;&gt;&lt;/i&gt;
+                        Upload Files
+                    &lt;/button&gt;
+                    &lt;input name&#x3D;&quot;ticketFile&quot; type&#x3D;&quot;file&quot; ng2FileSelect [uploader]&#x3D;&quot;uploader&quot; #file multiple /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt; --&gt;
+
+            &lt;!-- drag and drop file area --&gt;
+
+           &lt;!--  &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div ng2FileDrop [uploader]&#x3D;&quot;uploader&quot; (fileOver)&#x3D;&quot;fileOverBase($event)&quot;
+                    [ngClass]&#x3D;&quot;{&#x27;nv-file-over&#x27;: hasBaseDropZoneOver}&quot; class&#x3D;&quot;attachments-drop-zone&quot;&gt;
+                    &lt;i class&#x3D;&quot;icon ion-md-add-circle-outline ant-upload-drag-icon&quot;&gt;&lt;/i&gt;
+                    &lt;h4 class&#x3D;&quot;drag-text&quot;&gt;You can also drag and drop your files here&lt;/h4&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+ --&gt;
+            &lt;!-- view files table  --&gt;
+
+&lt;!-- 
+            &lt;div *ngIf&#x3D;&quot;uploader?.queue?.length &gt; 0&quot; class&#x3D;&quot;row&quot;&gt;
+                &lt;table class&#x3D;&quot;table&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th scope&#x3D;&quot;col&quot;&gt;Type&lt;/th&gt;
+                            &lt;th scope&#x3D;&quot;col&quot;&gt;Name&lt;/th&gt;
+                            &lt;th scope&#x3D;&quot;col&quot;&gt;Size&lt;/th&gt;
+                            &lt;th scope&#x3D;&quot;col&quot;&gt;Action&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr *ngFor&#x3D;&quot;let item of uploader.queue&quot;&gt;
+                            &lt;td&gt;{{ item?.file?.type }}&lt;/td&gt;
+                            &lt;td&gt;{{ item?.file?.name }}&lt;/td&gt;
+                            &lt;td&gt;{{ item?.file?.size/1024/1024 | number:&#x27;.2&#x27; }} MB&lt;/td&gt;
+                            &lt;td&gt;&lt;a href&#x3D;&quot;javascript:void(0)&quot; (click)&#x3D;&quot;item.remove()&quot;&gt;
+                                    &lt;i class&#x3D;&quot;icon ion-md-add-circle-outline&quot;&gt;&lt;/i&gt;
+                                    Delete
+                                &lt;/a&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+ --&gt;
+            &lt;!-- actions buttons --&gt;
+
+            &lt;!-- &lt;div class&#x3D;&quot;row form-btns-wrapper&quot;&gt;
+                &lt;div class&#x3D;&quot;col form-btns&quot;&gt;
+                    &lt;button  type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary submit-btn&quot;&gt;Submit&lt;/button&gt;
+                    &lt;button (click)&#x3D;&quot;resetForm()&quot; type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger submit-btn&quot;&gt;Clear&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt; --&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./technical-support.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.ticket-creation-container {
+  padding: 0em 8em;
+}
+
+.ticket-creation-box {
+  background: white;
+  padding: 1em;
+}
+.text-inpus {
+  width: 100%;
+  padding: 0 13px;
+}
+.upload-btn-wrapper {
+  position: relative;
+  left: 0;
+  float: left;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-top: 1em;
+}
+
+.upload-btn-wrapper input {
+  padding: 20px;
+}
+
+.upload-btn {
+  border: 1px solid gray;
+  color: rgb(85, 85, 85);
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.upload-btn-wrapper input[type&#x3D;&quot;file&quot;] {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.attachments-drop-zone {
+  border: dotted 2px lightgray;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  padding: 2em 0 8em 0;
+}
+
+.drag-text {
+  color: #545454;
+}
+
+.nv-file-over {
+  border: dotted 2px rgb(31, 136, 255);
+}
+
+.ant-upload-drag-icon {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(31, 136, 255);
+  margin: auto;
+}
+
+.form-btns-wrapper {
+  display: flex;
+}
+
+.form-btns {
+  margin: auto;
+}
+
+.form-btns * {
+  margin: 1em 5px;
+}
+
+.form-btns button {
+  margin-right: 30px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- <div class="ticket-creation-container">    <div class="ticket-creation-box">        <div class="row">            <div class="header">                Submit a new ticket            </div>        </div>        <form enctype="multipart/form-data" [formGroup]="ticketCreationFormGroup" #ticketCreationForm            class="ticket-creation-form">            <div class="row">                <div class="col-sm-12 col-md-6 col-lg-6">                    <div class="form-group">                        <label>Ticket proiority</label>                        <ng-select [items]="TicketProiority" bindLabel="name" bindValue="id" formControlName="priority">                        </ng-select>                    </div>                </div>                <div class="col-sm-12 col-md-6 col-lg-6">                    <div class="form-group">                        <label>Ticket type</label>                        <ng-select [items]="TicketType" bindLabel="name" bindValue="id" formControlName="type">                        </ng-select>                    </div>                </div>            </div>            <div class="row">                <div class="form-group text-inpus">                    <label>Ticket subject</label>                    <input type="text" class="form-control" formControlName="subject" />                </div>            </div>            <div class="row">                <div class="form-group text-inpus">                    <label>Ticket description</label>                    <textarea class="form-control" formControlName="description" rows="3"></textarea>                </div>            </div> -->            <!-- upload Button -->           <!--  <div class="row">                <div class="upload-btn-wrapper">                    <button type="button" class="btn btn-primary"> <i class="icon ion-md-add-circle-outline"></i>                        Upload Files                    </button>                    <input name="ticketFile" type="file" ng2FileSelect [uploader]="uploader" #file multiple />                </div>            </div> -->            <!-- drag and drop file area -->           <!--  <div class="row">                <div ng2FileDrop [uploader]="uploader" (fileOver)="fileOverBase($event)"                    [ngClass]="{\'nv-file-over\': hasBaseDropZoneOver}" class="attachments-drop-zone">                    <i class="icon ion-md-add-circle-outline ant-upload-drag-icon"></i>                    <h4 class="drag-text">You can also drag and drop your files here</h4>                </div>            </div> -->            <!-- view files table  --><!--             <div *ngIf="uploader?.queue?.length > 0" class="row">                <table class="table">                    <thead>                        <tr>                            <th scope="col">Type</th>                            <th scope="col">Name</th>                            <th scope="col">Size</th>                            <th scope="col">Action</th>                        </tr>                    </thead>                    <tbody>                        <tr *ngFor="let item of uploader.queue">                            <td>{{ item?.file?.type }}</td>                            <td>{{ item?.file?.name }}</td>                            <td>{{ item?.file?.size/1024/1024 | number:\'.2\' }} MB</td>                            <td><a href="javascript:void(0)" (click)="item.remove()">                                    <i class="icon ion-md-add-circle-outline"></i>                                    Delete                                </a></td>                        </tr>                    </tbody>                </table>            </div> -->            <!-- actions buttons -->            <!-- <div class="row form-btns-wrapper">                <div class="col form-btns">                    <button  type="button" class="btn btn-primary submit-btn">Submit</button>                    <button (click)="resetForm()" type="button" class="btn btn-danger submit-btn">Clear</button>                </div>            </div>        </form>    </div></div> --></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'TechnicalSupportComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TechnicalSupportComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

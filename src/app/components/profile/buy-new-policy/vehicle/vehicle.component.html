@@ -1,0 +1,95 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                              Page Loader                                -->
+<!-- ----------------------------------------------------------------------- -->
+
+<div class="loader-card mt-3" *ngIf="isLoading"> 
+  <div class="content-container loader-wrapper flex-centered flex-container">
+  <div class="loading">
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+   </div>
+  </div>
+</div>
+
+<div class="container-fluid mt-5" *ngIf="!isLoading">
+  <div class="row">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Page Name                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+<div class="col">
+    <h5 style="font-weight: bold" *ngIf="vehiclesList.length == 0" >
+      <!-- ----------- <fa-icon icon="adjust" class="icon"></fa-icon> ------------ -->
+
+      {{ "Profile.PanelItems.PurchsePolicy.RegistredVehicles" | translate }}
+    </h5>
+  </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                      Add New Vehicle Button                             -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="col">
+    <div  *ngFor="let identity of identities"class="float-right col-lg-12 col-sm-12 p-0 d-flex justify-content-end m-0 p-0">
+      <button 
+        type="submit"
+        class="btn justify-content-end identites-header"
+        
+        (click)="AddVehicle(identity)"
+      ><!-- [routerLink]="['/user/new-policy/add']" -->
+        <fa-icon icon="plus" class="icon" size="xs"></fa-icon>
+        {{ "Profile.PanelItems.PurchsePolicy.AddVehiclesBtn" | translate }}
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              Vehicle List                               -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <div class="card">
+    <div class="card-body">
+      <div class="basis-member staff">
+    <div class="container-fluid">
+      <div class="row" >
+        <div class="col-lg-3" *ngFor="let vehicle of vehiclesList">
+          <div class="card member-box ">
+           
+            <img class="card-img-top"  [src]="'https://oasisaggrapi.com/logo/'+ vehicle.vehicleLogo" alt="{{vehicle.vehicleMaker}}">
+            <div class="card-body">
+              <span class="member-degignation">  {{ "Profile.PanelItems.VehicleList.OwnerID" | translate }}:<strong>{{ vehicle.vehicleOwnerIdentityNumber }}</strong></span>
+              <p *ngIf=" vehicle.vehicleIdTypeId == '2'"> {{ 'Landing.CustomCardText' | translate }}: {{ vehicle.vehicleId }}</p>
+              <p *ngIf=" vehicle.vehicleIdTypeId == '1'"> {{ 'Landing.SequenceNumText' | translate }}: {{ vehicle.vehicleId }}</p>
+              <p> {{ "Checkout.PolicyDetails.VehicleDescription" | translate }}:
+                ({{
+                  lang === "en" ? vehicle.vehicleMakerAr : vehicle.vehicleMakerAr
+                }}.
+                {{
+                  lang === "en" ? vehicle.vehicleModelAr : vehicle.vehicleModelAr
+                }}. {{ vehicle.vehicleModelYear }})
+              </p>
+              <p *ngIf=" vehicle.vehicleIdTypeId == '1'"> {{ "Profile.PanelItems.Policies.PlateNumber" | translate }}: {{vehicle.vehiclePlateNumber}}</p>
+              <hr>
+              <button
+                type="submit"
+                class="btn identites-header btn-block"
+                (click)="selectVehicle(vehicle)">
+                {{ "Profile.PanelItems.PurchsePolicy.SelectBtn" | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+    <!-- Empty Alert -->
+    <div *ngIf="vehiclesList.length === 0 && !isLoading " class="empty-policies-container">
+      <h6>
+        <i class="empty-header-icon ion-ios-alert"></i>
+        لا توجد مركبات مسجلة
+      </h6>
+    </div>
+</div>
+

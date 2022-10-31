@@ -1,0 +1,163 @@
+/* -------------------------------------------------------------------------- */
+/*                              Preview Flip Card                             */
+/* -------------------------------------------------------------------------- */
+
+body[dir='ltr'] .data-preview-flip-card .content .front,
+body[dir='ltr'] .data-preview-flip-card .content .back {
+   text-align: left !important;
+}
+
+body[dir='ltr'] .data-preview-flip-card .content .front .data table tr th {
+   text-align: left !important;
+}
+
+body[dir='ltr'] .data-preview-flip-card .content .front .data table tr td {
+   text-align: left !important;
+}
+
+body[dir='ltr'] .prices-preview table tr th {
+   text-align: left !important;
+}
+
+body[dir='ltr'] .prices-preview table tr td {
+   text-align: left !important;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Policy Details                               */
+/* -------------------------------------------------------------------------- */
+
+body[dir='ltr'] .order-completion-container .policy-details .data {
+   padding: 2em 0 2em 2em !important;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Vehicle Drivers                              */
+/* -------------------------------------------------------------------------- */
+
+.vehicle-drivers table thead tr th:nth-child(3) {
+   padding-right: 0;
+   padding-left: 4em;
+}
+
+.vehicle-drivers table tbody tr td:nth-child(3) {
+   padding-right: 0;
+   padding-left: 4em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                            Vehicle Illustration                            */
+/* -------------------------------------------------------------------------- */
+
+body[dir='ltr'] .vehicle-illustration {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   border-top-left-radius: 150px;
+   border-bottom-left-radius: 150px;
+   box-shadow: -5px 0 8px 0 #00000023;
+}
+
+/* ------------------------------ Vehicle Plate ----------------------------- */
+
+body[dir='ltr'] .vehicle-plate.review-plate {
+   grid-template-areas:
+   'txtar txtar txtar txtar numar numar numar numar logo'
+   'txten txten txten txten numen numen numen numen logo';
+}
+
+body[dir='ltr'] #illustration-plate {
+   left: 21%;
+}
+
+body[dir='ltr'] #illustration-img {
+   margin-left: auto;
+}
+
+body[dir='ltr'] .order-completion-container .vehicle-info {
+   padding-right: 0em !important;
+   padding-left: 2em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Payment                                  */
+/* -------------------------------------------------------------------------- */
+
+body[dir='ltr'] .iban-ipt {
+   border-top-left-radius: unset;
+   border-bottom-left-radius: unset;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+body[dir='ltr'] .iban-wrapper span {
+   margin-left: 5px !important;
+}
+
+body[dir='ltr'] .iban-bank-loader {
+   margin-left: auto;
+   margin-right: 20px;
+}
+
+body[dir='ltr'] .iban-bank-logo {
+   margin-left: 20px;
+   margin-right: auto;
+}
+
+body[dir='ltr'] .iban-wrapper div#iban-ipts-group {
+   margin: auto 0 auto auto;
+}
+
+body[dir="ltr"] .checkout-card{
+   border-radius: 10px; 
+   text-align: left;	
+  }
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Checkout Buttons                              */
+/* -------------------------------------------------------------------------- */
+
+body[dir='ltr'] .checkout-buy-btn {
+   margin-left: auto;
+   margin-right: 0;
+}
+
+body[dir='ltr'] .checkout-back-btn {
+   margin-left: 0;
+   margin-right: auto;
+}
+
+body[dir='ltr'] .continuation-cbx {
+   margin-left: 10px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Media Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 590px) {
+   body[dir='ltr'] .vehicle-illustration {
+      border-top-left-radius: 0;
+   }
+
+   body[dir='ltr'] #illustration-img {
+      /* margin-left: auto; */
+   }
+
+   body[dir='ltr'] #illustration-plate {
+      left: 32%;
+      top: 65%;
+      height: 35px;
+      width: 105px;
+   }
+}

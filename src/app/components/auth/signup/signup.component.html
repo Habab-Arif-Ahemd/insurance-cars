@@ -1,0 +1,209 @@
+<div class="container justify-content-center">
+   <div class="d-flex flex-column justify-content-between">
+      <div class="card two bg-white px-5 mb-5 ">
+         <!-- ----------------------------------------------------------------------- -->
+         <!--                            REGISTRATION FORM                            -->
+         <!-- ----------------------------------------------------------------------- -->
+         <form [formGroup]="registrationFormGroup" class="mt-3 ">
+            <!-- Registration Title -->
+            <h5 class="d-flex justify-content-center">
+
+               {{ 'Auth.SignUpText' | translate }}
+            </h5>
+
+            <!-- Error(s) Alert -->
+            <ngb-alert *ngIf="isErrorAlertVisible" type="danger" (close)="isErrorAlertVisible = !isErrorAlertVisible">
+               <small>{{ errorMessage }}</small>
+               <small *ngIf="validationErrors">
+                  <ul class="errors-list">
+                     <li *ngFor="let error of validationErrors">{{error}}</li>
+                  </ul>
+               </small>
+            </ngb-alert>
+
+            <!-- Phone Input -->
+
+            <div class="form-group ">
+
+               <div class="input-group">
+                  <input class="form-control date" formControlName="phoneNumberCtrl"
+                     [placeholder]="('Auth.PhoneNumberText' | translate)" maxlength="9"
+                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="text">
+
+                  <div class="input-group-append">
+                     <span class="input-group-text calendar-icon">
+                        966+</span>
+                  </div>
+
+               </div>
+               <!-- Phone Validation Messages -->
+               <div *ngIf="isSubmitting && registrationForm.phoneNumberCtrl.errors">
+                  <div class="v-meassage" *ngIf="registrationForm.phoneNumberCtrl.errors.required">
+                     {{ 'Errors.EmptyInputField' | translate }}
+                  </div>
+                  <div class="v-meassage" *ngIf="registrationForm.phoneNumberCtrl.errors.minlength">
+                     {{ 'Errors.IncompleteInputField' | translate }}
+                  </div>
+               </div>
+            </div>
+
+
+            <!-- Email Input -->
+
+
+
+            <div class="form-group">
+               <div class="input-group">
+                  <input class="form-control date" formControlName="emailCtrl" type="email"
+                     [placeholder]="('Auth.EmailText' | translate)" />
+                  <div class="input-group-append ">
+                     <span class="input-group-text calendar-icon">
+                        <fa-icon icon="at"> </fa-icon>
+                     </span>
+                  </div>
+               </div>
+               <div *ngIf="registrationForm.emailCtrl.errors">
+                  <div class="v-meassage" *ngIf="isSubmitting && registrationForm.emailCtrl.errors.required">
+                     {{ 'Errors.EmptyInputField' | translate }}
+                  </div>
+                  <div class="v-meassage"
+                     *ngIf="registrationForm.emailCtrl.touched && registrationForm.emailCtrl.errors.pattern">
+                     {{ 'Errors.InvalidEmail' | translate }}
+                  </div>
+               </div>
+            </div>
+
+
+
+            <!-------------------------- Password Input---------------------- -->
+
+
+
+            <div class="form-group">
+               <div class="input-group ">
+                  <input class="form-control date" formControlName="passwordCtrl"
+                     [placeholder]="('Auth.PasswordText' | translate)" [type]="fieldTextType ? 'text' : 'password'" />
+                  <!-- Eye Icon -->
+
+                  <div class="input-group-append ">
+
+                     <div class="input-group-text calendar-icon " (click)="toggleFieldTextType()">
+
+                        <fa-icon [icon]="(fieldTextType ? 'eye-slash':'eye')"></fa-icon>
+                     </div>
+                  </div>
+
+               </div>
+
+
+               <!-- Password Validation Message -->
+               <div *ngIf="registrationForm.passwordCtrl.errors ">
+                  <div class="v-meassage" *ngIf="isSubmitting && registrationForm.passwordCtrl.errors.required">
+                     {{ 'Errors.EmptyInputField' | translate }}
+                  </div>
+
+                     <div *ngIf="registrationForm.passwordCtrl.dirty  "
+                       [ngClass]="registrationForm.passwordCtrl.errors.minlength   ? 'v-meassage' : 'v-meassageRight'">
+                        <fa-icon [icon]="(registrationForm.passwordCtrl.errors.minlength  ? 'window-close':'check')">
+                        </fa-icon>
+                        {{ 'Errors.ShortPassword' | translate }}
+                     </div>
+
+
+
+                  <div   *ngIf="registrationForm.passwordCtrl.dirty  "
+                  [ngClass]="registrationForm.passwordCtrl.errors.hasNumber   ? 'v-meassage' : 'v-meassageRight'">
+                     <fa-icon
+                        [icon]="(registrationForm.passwordCtrl.errors.hasNumber  ? 'window-close':'check')">
+                     </fa-icon>
+
+                     {{ 'Errors.least1number' | translate }}
+                  </div>
+
+                  <div *ngIf="registrationForm.passwordCtrl.dirty"   [ngClass]="registrationForm.passwordCtrl.errors.hasCapitalCase  ? 'v-meassage' : 'v-meassageRight'">
+                     <fa-icon
+                        [icon]="(registrationForm.passwordCtrl.errors.hasCapitalCase  ? 'window-close':'check')">
+                     </fa-icon>
+                     {{ 'Errors.CapitalCase' | translate }}
+
+                  </div>
+
+                  <div *ngIf="registrationForm.passwordCtrl.dirty" [ngClass]="registrationForm.passwordCtrl.errors.hasSmallCase ?'v-meassage' : 'v-meassageRight'">
+                     <fa-icon
+                        [icon]="(registrationForm.passwordCtrl.errors.hasSmallCase  ? 'window-close':'check')">
+                     </fa-icon>
+
+                     {{ 'Errors.SmallCase' | translate }}
+                  </div>
+                  
+                  <div *ngIf="registrationForm.passwordCtrl.dirty "  [ngClass]="registrationForm.passwordCtrl.errors.hasSpecialCharacters?'v-meassage' : 'v-meassageRight' ">
+                     <fa-icon
+                        [icon]="(registrationForm.passwordCtrl.errors.hasSpecialCharacters  ? 'window-close':'check')">
+                     </fa-icon>
+
+                     {{ 'Errors.SpecialCharacter' | translate }}
+                  </div>
+
+                  <!--  <div class="v-meassage"*ngIf="registrationForm.passwordCtrl.errors.passwordStrength" >
+               {{registrationForm.passwordCtrl.errors.passwordStrength}}
+            </div> -->
+               </div>
+            </div>
+
+            <!-- ------------------- ---------- Password Confirmation Input                     ----------------------->
+            <div class="form-group">
+               <div class="input-group">
+                  <input class="form-control date" formControlName="confirmPasswordCtrl"
+                     [placeholder]="('Auth.ConfirmPasswordText' | translate)"
+                     [type]="fieldTextType ? 'text' : 'password'" />
+                  <!-- Eye Icon -->
+                  <div class="input-group-append ">
+
+                     <div class="input-group-text calendar-icon " (click)="toggleFieldTextType()">
+
+                        <fa-icon [icon]="(fieldTextType ? 'eye-slash':'eye')"></fa-icon>
+                     </div>
+                  </div>
+
+               </div>
+               <!-- Password Confirmation Validation Messages -->
+               <div *ngIf="registrationForm.confirmPasswordCtrl.errors">
+                  <div class="v-meassage" *ngIf="isSubmitting && registrationForm.confirmPasswordCtrl.errors.required">
+                     {{ 'Errors.EmptyInputField' | translate }}
+                  </div>
+                  <div class="v-meassage"
+                     *ngIf="registrationForm.confirmPasswordCtrl.touched && registrationForm.confirmPasswordCtrl.errors.ConfirmPassword">
+                     {{ 'Errors.PasswordNotMatch' | translate }}
+                  </div>
+               </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="row d-flex justify-content-center brder ">
+               <span class="span">{{ 'Auth.check' | translate }}
+                  <a [routerLink]="termsAndConditions"> {{ "Footer.Terms" | translate }} </a>
+                  {{ 'Auth.check2' | translate }}
+                  <a [routerLink]="privacyPolicy">{{ "Footer.Privacy" | translate }}.</a>
+
+                  {{ 'Auth.check3' | translate }}.</span>
+
+               <button (click)="register()" class="submit-btn mt-3 form-control ">
+
+                  <span>{{ 'Auth.SignUpText' | translate }}</span>
+                  <i *ngIf="!isLoading" class="ion-md-person-add"></i>
+                  <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"
+                     aria-hidden="true"></span>
+               </button>
+
+            </div>
+
+         </form>
+         <label class="d-flex justify-content-center mt-4" style="color: #C5C7D0; font-size: medium;" > {{ 'Auth.HaveAccountText' | translate }}  
+
+            <a id="forgetPassword "  (click)="displayLogin()" s  style="color: #005DBD; font-weight: bold;">
+               {{ 'Auth.SignToExistingText' | translate }}  </a>
+        </label>
+      </div>
+ 
+      </div>
+</div>

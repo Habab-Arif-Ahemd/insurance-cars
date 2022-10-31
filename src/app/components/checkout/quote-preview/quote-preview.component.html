@@ -1,0 +1,461 @@
+<div class="">
+  <div class="row bg-light ">
+    <!-- Amount details -->
+    <div class="col-md-4 order-md-2 mt-2 " [class.is-sticky]="hasScrolledBanner">
+    <div class="card">
+      <ul class="list-group mb-3" class="checkout-card p-0">
+        <li class="d-flex justify-content-center">
+          <div>
+            <img *ngIf="orderedQuote?.quoteInfo.insuranceCompany.logo" [src]="getCompanyLogo()" class="ic-logo">
+          </div>
+        </li>
+        <li class=" d-flex justify-content-center amount">
+          <img src="../../../../assets/img/Icon-png/receipt-textmassge.png" >
+
+          <th class="quote-sub-title">{{ 'Quote.DiscountsTitle' | translate }}</th>
+        </li>
+        <li class=" ">
+
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                            Show Amount Details                           -->
+          <!-- ----------------------------------------------------------------------- -->
+          <!-- Extra Benefits -->
+          <div class="prices-preview " *ngFor="let amount of amountDetails ; let i = index">
+            <tr *ngIf="orderedQuote.quoteInfo.insuranceCompany.id ">
+              <td>
+                <div>
+                  <span [ngClass]="amount.bold ? 'total' : 'vat'"> {{ lang=='ar' ? amount.nameAr : amount.name }}
+                  </span>
+                </div>
+              </td>
+              <td [ngClass]="amount.bold ? 'total' : 'price'">
+                <span>
+                  {{ amount.price | number : '1.2-2' }}
+                  <small [ngClass]="amount.bold ? 'total' : '  currency'">{{ 'App.Currency' | translate }}</small>
+                </span>
+              </td>
+            </tr>
+
+            <!-- This for Al Rajhi Takaful IC -->
+          <!--   <tr *ngIf="orderedQuote.quoteInfo.insuranceCompany.id == 7">
+              <td>
+                <div >
+                  <span [ngClass]="amount.bold ? 'total' : 'vat'"> {{ lang=='ar' ? amount.nameAr : amount.name }}
+                  </span>
+                </div>   
+              </td>
+              <td [ngClass]="amount.bold ? 'total' : 'price'">
+                <span>
+                  {{ amount.price | number : '1.2-2' }}
+                  <small [ngClass]="amount.bold ? 'total' : '  currency'">{{ 'App.Currency' | translate }}</small>
+                </span>
+              </td>
+            </tr> -->
+            <hr *ngIf="amount.underLine">
+          </div>
+
+
+          <!-- </table> -->
+        </li>
+      </ul>
+      <!-- Available Discounts -->
+    </div>
+      <hr>
+      <div class="prices-preview mx-3">
+        <tr *ngFor="let discount of orderedQuote.quoteInfo.products[0].deductibles[0].discounts">
+          <td>
+            <div>
+              <span> {{ lang=='ar' ? discount.nameAr : discount.name }}
+              </span>
+            </div>
+          </td>
+          <td style="">
+            <span class="currency ">
+              {{ discount.discountAmount | number : '1.2-2' }}
+              <small class="currency">{{ 'App.Currency' | translate }}</small>
+            </span>
+          </td>
+        </tr>
+      </div>
+   
+    </div>
+    <!-- Insured and Drivers Info -->
+    <div class="col-md-8 order-md-1 ">
+      <div class="card pt-4 "  >
+        <!-- Insured Info -->
+      <div class="order-completion-container flex-column mt-2">
+        <span class=" mx-3" style="font-weight: bold;">{{ 'Checkout.Drivers.PolicyUser' | translate }}</span>
+        <div class="policy-details data-box">
+          <div class="data">
+            <!-- Insurance Info -->
+            <div class="flex-container"> 
+              <table class="flex-centered hr" style="font-size: 14px;">
+                <tr >
+                  <th>{{ 'Checkout.PolicyDetails.FullName' | translate }}:</th>
+                  <td *ngIf="lang === 'en'">{{ orderedQuote.insuredInfo.firstName }}
+                    {{ orderedQuote.insuredInfo.middleName }} {{ orderedQuote.insuredInfo.lastName }}
+                  </td>
+                  <td *ngIf="lang === 'ar'">{{ orderedQuote.insuredInfo.firstNameAr }}
+                    {{ orderedQuote.insuredInfo.middleNameAr }} {{ orderedQuote.insuredInfo.lastNameAr
+                    }}
+                  </td>
+                </tr>
+                <tr>
+                  <th>{{ 'Checkout.PolicyDetails.IdentityNumber' | translate }}:</th>
+                  <td>{{ orderedQuote.insuredInfo.identityNumber }}</td>
+                </tr>
+                <tr>
+                  <th>{{ 'Checkout.PolicyDetails.ProductType' | translate }}:</th>
+                  <td>{{ lang === 'ar' ? orderedQuote.quoteInfo.products[0].nameAr :
+                    orderedQuote.quoteInfo.products[0].name }}
+                  </td>
+                </tr>
+                <tr>
+                  <th>{{ 'Checkout.PolicyDetails.PolicyStart' | translate }}:</th>
+                  <td>{{ orderedQuote.quoteInfo.products[0].policyEffectiveDate | date: "dd-MM-yyyy" }}</td>
+                </tr>
+                <tr>
+                  <th>{{ 'Checkout.PolicyDetails.Birthdate' | translate }}:</th>
+                  <td>{{ orderedQuote.vehicleDrivers[0].birthDate }}</td>
+                </tr>
+              </table>
+            </div>
+            <!-- Vehicle Info -->
+            <div class="vehicle-info flex-container">
+              <table class="flex-centered" style="font-size: 14px;">
+                <!-- Check the vehicle Type (Sequence or custom card) -->
+                <tr *ngIf="orderedQuote.vehicleInfo.vehicleIdTypeId==1">
+                  <th>{{ lang === 'ar' ? orderedQuote.vehicleInfo.vehicleIdTypeAr :
+                    orderedQuote.vehicleInfo.vehicleIdType }}:</th>
+                  <td>{{ orderedQuote.vehicleInfo.vehicleId }}</td>
+                </tr>
+                <tr *ngIf="orderedQuote.vehicleInfo.vehicleIdTypeId==2">
+                  <th>{{ lang === 'ar' ? orderedQuote.vehicleInfo.vehicleIdTypeAr :
+                    orderedQuote.vehicleInfo.vehicleIdType }}:</th>
+                  <td>{{ orderedQuote.vehicleInfo.vehicleId }}</td>
+                </tr>
+                <!-- End Vehicle Type Checking -->
+                <tr>
+                  <th>{{ 'Checkout.PolicyDetails.VehicleDescription' | translate }}:</th>
+                  <td> {{ orderedQuote.vehicleInfo.maker }} {{ orderedQuote.vehicleInfo.model }} {{ orderedQuote.vehicleInfo.modelYear }}</td>
+                </tr>
+                <tr>
+                  <th>{{ 'Checkout.PolicyDetails.VehicleMajorColor' | translate }}:</th>
+                  <td>{{ orderedQuote.vehicleInfo.colorAr }}
+                </tr>
+                <tr>
+                  <th>{{ 'Checkout.PolicyDetails.RepairsLocation' | translate }}:</th>
+                  <td>{{ lang === 'ar' ? orderedQuote.vehicleInfo.repairMethodAr :
+                    orderedQuote.vehicleInfo.repairMethod }}
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Vehicle Illustration -->
+          <div class="vehicle-illustration flex-container">
+            <img *ngIf="orderedQuote?.vehicleInfo.makerLogo" [src]="vehicleLogoSrc" class="flex-centered"
+              id="vehicle-logo" alt="Vehicle Image">
+            <div *ngIf="!(orderedQuote?.vehicleInfo.makerLogo)" class="vehicle-plate review-plate noselect"
+              id="illustration-plate">
+              <div class="plate-num-ar">
+                {{orderedQuote.vehicleInfo.plateNumber}}
+              </div>
+              <div class="plate-txt-ar">
+                {{orderedQuote.vehicleInfo.plateFirstLetterAr}}
+                {{orderedQuote.vehicleInfo.plateSecondLetterAr}}
+                {{orderedQuote.vehicleInfo.plateThirdLetterAr}}
+              </div>
+              <div class="plate-num-en">
+                {{orderedQuote.vehicleInfo.plateNumber}}
+              </div>
+              <div class="plate-txt-en">
+                {{orderedQuote.vehicleInfo.plateFirstLetter}} {{orderedQuote.vehicleInfo.plateSecondLetter}}
+                {{orderedQuote.vehicleInfo.plateThirdLetter}}
+              </div>
+              <div class="plate-logo flex-container">
+                <span class="flex-centered">KSA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Drivers Info -->
+      <span class=" mx-2 mb-2" style="font-weight: bold;">{{ 'Checkout.Drivers.VehicleDrivers' | translate }}</span>
+
+      <div class="order-completion-container accordion-box">
+        <div>
+          <div class="content-container flex-centered  data-box" style="overflow: hidden;">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>{{ 'QuotationRequestForms.DriverList.NationalIDLabel' | translate }}</th>
+                  <th>{{ 'Misc.FullName' | translate }}</th>
+                  <th>{{ 'QuotationRequestForms.DriverInfo.Birth' | translate }}</th>
+                  <th>{{ 'Checkout.Drivers.DrivingPercentage' | translate }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let driver of orderedQuote.vehicleDrivers">
+                  <td>{{ driver.identityNumber }}</td>
+                  <td>{{ lang === 'ar' ? driver.fullNameAr : driver.fullName }}</td>
+                  <td>{{ driver.birthDate }}</td>
+                  <td>{{ driver.drivingPercentageId }}%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+      <hr>
+      <div class="content ">
+        <div class="content-container flex-centered alertStyle">
+          <input (change)="openContinuationModal(content)" type="checkbox" id="order-later-cbx"
+            class="option-input checkbox" [checked]="isContinuationModalDisplayed" />
+          <label>
+            <span>{{ 'Checkout.Attachments.ContinueLaterTxt' | translate }}</span>
+          </label>
+        </div>
+
+        <ngb-alert *ngIf="saveQuoteError" type="danger" [dismissible]="true"
+          (onClosed)="saveQuoteError = !saveQuoteError">
+          <large>{{ errorMessage }}</large>
+          <small *ngIf="validationErrors">
+            <ul class="errors-list">
+              <li *ngFor="let error of validationErrors">
+                {{error}}
+              </li>
+            </ul>
+          </small>
+        </ngb-alert>
+        <!-- Success Alert -->
+        <ngb-alert *ngIf="isSuccessAlertVisible" type="success" [dismissible]="true"
+          (onClosed)="isSuccessAlertVisible = !isSuccessAlertVisible">
+          <large>{{successMessage}}</large>
+        </ngb-alert>
+
+      </div>
+      <hr>
+      <!-- Payment Details -->
+      <div class="card pt-4 "  >
+      <div class="vehicle-drivers data-box accordion-box ">
+     
+                <span class=" mx-3" style="font-weight: bold;">{{ 'Checkout.Payment.Payment' | translate }}</span>
+      
+        <div class="content ">
+          <div class="content-container flex-centered mt-2" style="overflow: hidden;">
+            <span>{{ 'Checkout.Payment.IbanNote' | translate }}</span>
+            <form [formGroup]="checkoutDetailsFormGroup">
+              <!-- ------------------------------ Alert(s) ------------------------------- -->
+              <!-- Error(s) Alert -->
+              <div class=" alert-box p-0 mt-2" *ngIf="isErrorAlertVisible" id="errorAlert">
+                <ngb-alert *ngIf="isErrorAlertVisible" type="danger" [dismissible]="true"
+                  (onClosed)="isErrorAlertVisible = !isErrorAlertVisible">
+                  <large>{{ errorMessage }}</large>
+                  <small *ngIf="validationErrors">
+                    <ul class="errors-list">
+                      <li *ngFor="let error of validationErrors">
+                        {{error}}
+                      </li>
+                    </ul>
+                  </small>
+                </ngb-alert>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-lg-6 ">
+                  <!-- Email Input -->
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="form-control date" formControlName="emailCtrl" type="email"
+                        [placeholder]="('Auth.EmailText' | translate)"
+                        [ngClass]="{'is-invalid': (checkoutForm.emailCtrl.errors && checkoutForm.emailCtrl.touched)}" />
+                      <div class=" ">
+                        <span class="input-group-text calendar-icon">
+                          <fa-icon icon="at"> </fa-icon>
+                        </span>
+                      </div>
+                    </div>
+                    <div *ngIf="checkoutForm.emailCtrl.errors && checkoutForm.emailCtrl.touched">
+                      <div class="v-meassage" *ngIf="checkoutForm.emailCtrl.errors.required">
+                        {{ 'Errors.EmptyInputField' | translate }}
+                      </div>
+                      <div class="v-meassage" *ngIf="checkoutForm.emailCtrl.errors.pattern">
+                        {{ 'Errors.InvalidEmail' | translate }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 ">
+                  <!-- Phone Input -->
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="form-control date" formControlName="phoneNumberCtrl"
+                        [placeholder]="('Auth.PhoneNumberText' | translate)" maxlength="9"
+                        [ngClass]="{'is-invalid': (checkoutForm.phoneNumberCtrl.errors && checkoutForm.phoneNumberCtrl.touched)}"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        type="text">
+                      <div class=" ">
+                        <span class="input-group-text calendar-icon"> 966+ </span>
+                      </div>
+                    </div>
+                    <!-- Phone Validation Messages -->
+                    <div *ngIf="checkoutForm.phoneNumberCtrl.errors && checkoutForm.phoneNumberCtrl.touched">
+                      <div class="v-meassage" *ngIf="checkoutForm.phoneNumberCtrl.errors.required">
+                        {{ 'Errors.EmptyInputField' | translate }}
+                      </div>
+                      <div class="v-meassage" *ngIf="checkoutForm.phoneNumberCtrl.errors.minlength">
+                        {{ 'Errors.IncompleteInputField' | translate }}
+                      </div>
+                      <div class="v-meassage" *ngIf="checkoutForm.phoneNumberCtrl.errors.phoneNumberIsNotStartWithFive">
+                        {{ 'Errors.FirstPhoneNumberDigit' | translate }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <span *ngIf="isBankLogoLoading"
+                    class="iban-bank-loader spinner-border spinner-border-sm secondary-lime flex-centered" role="status"
+                    aria-hidden="true"></span>
+                  <img class="iban-bank-logo flex-centered"
+                    *ngIf="ibanBankLogoSrc && !isBankLogoLoading && checkoutForm.ibanCtrl.valid"
+                    (error)="ibanBankLogoSrc=null" [src]="ibanBankLogoSrc" alt="" style="width: 100px;">
+                    
+                </div>
+                <div class="col-lg-9 mb-2" [class.col-lg-12]="!ibanBankLogoSrc">
+                  <!-- IBAN Input -->
+                  
+                  <input (keydown)="onIbanKeydown($event)" (input)="setIbanBank($event)" formControlName="ibanCtrl"
+                    type="text" name="iban" dir="ltr" placeholder="IBAN" class="iban-ipt form-control" maxlength="29"
+                    [ngClass]="{'is-invalid': (checkoutForm.ibanCtrl.errors && checkoutForm.ibanCtrl.touched)}" />
+                    <!-- <div class="input-group-append">
+                      <span class="input-group-text">IBAN</span>
+                    </div> -->
+                  <!-- Bank Logo (Based on entered IBAN) -->
+                  
+                </div>
+                <!-- IBAN Validation Errors -->
+                <div *ngIf="checkoutForm.ibanCtrl.errors && checkoutForm.ibanCtrl.touched"
+                  class="col mt-4 d-flex justify-content-center">
+                  <div class="iban-errors flex-column">
+                    <div
+                      *ngIf="checkoutForm.ibanCtrl.touched && checkoutForm.ibanCtrl.dirty && checkoutForm.ibanCtrl.errors.invalidIban"
+                      class="v-meassage flex-centered vertically-padded">
+                      {{ 'Errors.InvalidIban' | translate }}
+                    </div>
+                    <div *ngIf="checkoutForm.ibanCtrl.errors.required"
+                      class="v-meassage flex-centered vertically-padded">
+                      {{ 'Errors.EmptyInputField' | translate }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- Modal for Save Quote  -->
+            <ng-template #content let-modal>
+              <div class="modal-header">
+                <h6 class="sub-heading-1">{{ 'Checkout.ContinuationModal.ContinueLaterQuestion' | translate}}</h6>
+                <button type="button" class=" " aria-label="" (click)="modal.dismiss('Cross click')">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label>{{ 'Checkout.ContinuationModal.ReferenceIdText' | translate}}
+                      <span>{{referenceId}}</span>
+                    </label>
+                    <div class="input-group">
+                      <label>{{ 'Checkout.ContinuationModal.BuyBeforeText' | translate}}
+                        <span>{{endDate | date: "EEEE, MMMM d, y" : '' : lang }}</span>
+                      </label>
+                      <!-- <div class="input-group-append">
+                        <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+                      </div> -->
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-labeled btn-primary" (click)="saveQuote()"><span
+                    style="color: #fff;">{{"App.saveText" | translate}}</span></button>
+                <button type="button" class="btn  btn-danger " (click)="modal.dismiss('Save click')"><span
+                    style="color: #fff;">{{"App.CancelText" | translate}}</span></button>
+              </div>
+            </ng-template>
+            <!-- Choose Payment Method -->
+            <hr>
+            <th>{{ 'Checkout.PaymentMethodTxt' | translate }}</th>
+            <div class="row">
+              <div class="col-lg-6">
+                <input type="radio" id="a" name="payment-method" [value]="true" [class.selected]="togglePaymentMethod"
+                  (click)="orderPayment(true)">
+                <label for="a" class="radio-btn">
+                  <fa-icon icon="credit-card" class="icon-style mx-2"></fa-icon>{{ 'Checkout.CreditCard' | translate }}
+                </label>
+              </div>
+          <!--     <div class="col-lg-6">
+                <input type="radio" id="b" name="payment-method" [value]="false" [(ngModel)]="togglePaymentMethod">
+                <label for="b" class="radio-btn">
+                  <fa-icon icon="check-circle" class="icon-style mx-2"></fa-icon>
+                  {{ 'Checkout.Other' | translate }}
+                </label>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mt-2 p-0">
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                 Loader                                  -->
+                <!-- ----------------------------------------------------------------------- -->
+                <div *ngIf="isLoadingPaymentCard" class="loader-card boxed-item">
+                  <div class="content-container loader-wrapper flex-centered flex-container">
+                    <div class="loading">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Payment iframe -->
+                <div class="panel-body" *ngIf="viewPaymentCard && isLoadingPaymentCard "  [@PaymentAnim] #paymentbox id="payment-box" >
+                     <!-- Payment Form -->
+                     <div *ngIf="isCardPaymentFormVisible"
+                     [class.not-displayed]="isCardPaymentFormLoading"
+                     class="content-container flex-centered flex-container"
+                     [ngClass]="{'visa-card': selectedPaymentBrand === 'VISA', 'master-card': selectedPaymentBrand === 'MASTER', 'mada-card': selectedPaymentBrand === 'MADA' }"
+                     style="padding-top: 3em; padding-bottom: 1em;">
+                     <form [action]="paymentResultPageUrl" class="paymentWidgets flex-centered" data-brands="VISA MASTER MADA" method="POST"></form>
+                </div>
+                <!-- Handeling Error -->
+                <div *ngIf="isWarningVisible" class="boxed-item">
+                  <div class="col-12 d-flex justify-content-center " id="errorAlert">
+                    <h1>
+                      <fa-icon icon="exclamation-triangle" style="color:orange"></fa-icon>
+                    </h1>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center" id="errorAlert">
+                    {{ errorMessage }}
+                  </div>
+                </div>
+
+        
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+</div>

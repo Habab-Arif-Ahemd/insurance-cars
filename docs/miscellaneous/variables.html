@@ -1,0 +1,514 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#ApiRoutes" title="src/app/models/app/ApiRoutes.ts"><b>ApiRoutes</b>&nbsp;&nbsp;&nbsp;(src/.../ApiRoutes.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#AppRoutes" title="src/app/models/app/AppRoutes.ts"><b>AppRoutes</b>&nbsp;&nbsp;&nbsp;(src/.../AppRoutes.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.prod.ts"><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.prod.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.ts"><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#hyperpayModule" title="src/app/components/order-review/order-review.component.ts"><b>hyperpayModule</b>&nbsp;&nbsp;&nbsp;(src/.../order-review.component.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#InjectorInstance" title="src/app/app.module.ts"><b>InjectorInstance</b>&nbsp;&nbsp;&nbsp;(src/.../app.module.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#slideIn" title="src/app/helpers/utils/animations.ts"><b>slideIn</b>&nbsp;&nbsp;&nbsp;(src/.../animations.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#TRANSLATIONS" title="src/app/app.module.ts"><b>TRANSLATIONS</b>&nbsp;&nbsp;&nbsp;(src/.../app.module.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/app/models/app/ApiRoutes.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ApiRoutes"></a>
+                        <span class="name">
+                            <b>
+                            ApiRoutes</b>
+                            <a href="#ApiRoutes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+
+    Account:  {
+        Register: &quot;account/register&quot;,
+        Login: &quot;account/login&quot;,
+        VerifyPhone: &quot;account/verify&quot;,
+        PasswordResetRequest: &quot;account/resetpassword&quot;,
+        PasswordReset: &quot;account/confirmpasswordreset&quot;,
+        ResendVerfication: &quot;account/sendcode&quot;
+    },
+
+    MasterTable:
+    {
+        VehicleDetails: &quot;master/VehicleDetails&quot;,
+        ProductType: &quot;master/products&quot;,
+        Benefit: &quot;master/benefits&quot;,
+        Violation: &quot;master/violations&quot;,
+        DiscountTypes: &quot;master/DiscountTypes&quot;,
+        PremiumBreakdown: &quot;master/PremiumBreakdowns&quot;,
+        PromoCode: &quot;master/PromoCodes&quot;,
+        NCDFreeYear: &quot;master/NCDFreeYears&quot;,
+        IdentityType: &quot;master/IdentityTypes&quot;,
+        Gender: &quot;master/Genders&quot;,
+        EducationLevel: &quot;master/EducationLevels&quot;,
+        SocialStatus : &quot;master/SocialStatus&quot;,
+        OccupationMale : &quot;master/OccupationMales&quot;,
+        OccupationFemale : &quot;master/OccupationFemales&quot;,
+        Countries : &quot;master/Countries&quot;,
+        Region : &quot;master/Regions&quot;,
+        Cities : &quot;master/Cities&quot;,
+        LicenseType : &quot;master/LicenseTypes&quot;,
+        DriverType : &quot;master/DriverTypes&quot;,
+        DrivingPercentage : &quot;master/DrivingPercentages&quot;,
+        MedicalCondition : &quot;master/MedicalConditions&quot;,
+        Mileage : &quot;master/Mileages&quot;,
+        VehicleIdType : &quot;master/VehicleIdTypes&quot;,
+        VehicleMaker : &quot;master/VehicleMakers&quot;,
+        VehicleModel : &quot;master/VehicleModels&quot;,
+        VehiclePlateType : &quot;master/VehiclePlateTypes&quot;,
+        VehiclePlateLetter : &quot;master/VehiclePlateLetters&quot;,
+        TransmissionType : &quot;master/TransmissionTypes&quot;,
+        VehicleBodyType : &quot;master/VehicleBodyTypes&quot;,
+        VehicleAxlesWeight : &quot;master/VehicleAxlesWeights&quot;,
+        VehicleColor : &quot;master/VehicleColors&quot;,
+        VehicleEngineSize : &quot;master/VehicleEngineSizes&quot;,
+        VehicleSpecifications : &quot;master/VehicleSpecifications&quot;,
+        VehicleUse : &quot;master/VehicleUses&quot;,
+        VehicleRepairMethod : &quot;master/VehicleRepairMethods&quot;,
+        ParkingLocation : &quot;master/ParkingLocations&quot;,
+        PaymentMethod : &quot;master/PaymentMethods&quot;,
+        Bank : &quot;master/Banks&quot;,
+        Attachment : &quot;master/Attachments&quot;,
+        Relation: &quot;master/relations&quot;
+    },
+
+    Quotation:{
+        PreviewQuote: &quot;quotation/preview&quot;,
+        PreviewAttachment: &quot;quotation/preview/attachment&quot;,
+        RequestQuote: &quot;quotation/request&quot;,
+        InquireQuote : &quot;quotation/inquire&quot;,
+        saveOrder: &quot;quotation/Save&quot;,
+        Checkout: &quot;quotation/checkout&quot;,
+        PaymentStatus: &quot;quotation/paymentstatus&quot;
+    },
+
+    Profile:{
+        PasswordChangeRequest : &quot;user/changepassword&quot;,
+        PasswordChange : &quot;user/confirmpasswordchange&quot;,
+        UsernameChangeRequest : &quot;user/changeusername&quot;,
+        UsernameChange : &quot;user/confirmusernamechange&quot;,
+        PhoneNumberChangeRequest : &quot;user/changephonenumber&quot;,
+        PhoneNumberChange : &quot;user/confirmphonenumberchange&quot;,
+        ChangeLanguage : &quot;user/changelanguage&quot;,
+        GetAccountinfo : &quot;user/accountinfo&quot;,
+        GetVehiclesList : &quot;user/vehicles&quot;,
+        UserQuote: &quot;user/Quotes&quot;,
+        Dashboard: &quot;user/dashboard&quot;
+    }
+
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/models/app/AppRoutes.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="AppRoutes"></a>
+                        <span class="name">
+                            <b>
+                            AppRoutes</b>
+                            <a href="#AppRoutes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+   landing: &#x27;&#x27;,
+   error: &#x27;error&#x27;,
+   quotes: &#x27;quotes&#x27;,
+   insuranceSteps: &#x27;quotation&#x27;,
+   checkout: &#x27;checkout&#x27;,
+   paymentSuccess: &#x27;checkout/success&#x27;,
+   authentication: &#x27;account/login&#x27;,
+   verification: &#x27;account/verify&#x27;,
+   passwordReset: &#x27;account/reset&#x27;,
+   controlPanel: {
+      main: &#x27;user&#x27;,
+      quotes: &#x27;previous-quotes&#x27;,
+      policies: {
+         uri: &#x27;user/policies&#x27;,
+         main: &#x27;policies&#x27;,
+         bought: &#x27;bought&#x27;,
+         expiring: &#x27;expiring&#x27;,
+         expired: &#x27;expired&#x27;,
+         support: &#x27;support&#x27;
+      },
+      vehicles: &#x27;new-quote/select-vehicle&#x27;,
+      vehiclesList: &#x27;vehicles&#x27;,
+      accountSettings: {
+         uri: &#x27;user/account&#x27;,
+         main: &#x27;account&#x27;,
+         email: {
+            main: &#x27;user/account/email&#x27;,
+            verify: &#x27;user/account/email/verify&#x27;
+         },
+         password: {
+            main: &#x27;user/account/password&#x27;,
+            verify: &#x27;user/account/password/verify&#x27;
+         },
+         phone: {
+            main: &#x27;user/account/phone&#x27;,
+            verify: &#x27;user/account/phone/verify&#x27;
+         },
+         misc: &#x27;user/account/miscellaneous&#x27;
+      }
+   }
+}</code>
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Contains the client side application routes</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/environments/environment.prod.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="environment"></a>
+                        <span class="name">
+                            <b>
+                            environment</b>
+                            <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  production: true,
+  apiUrl: &#x27;http://oasisaggrapi.com/api/&#x27;,
+  appUrl: &#x27;http://portal.oasisaggrapi.com/&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/environments/environment.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="environment"></a>
+                        <span class="name">
+                            <b>
+                            environment</b>
+                            <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  production: false,
+  apiUrl: &#x27;http://oasisaggrapi.com/api/&#x27;,
+  appUrl: &#x27;http://localhost:4200/&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/components/order-review/order-review.component.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hyperpayModule"></a>
+                        <span class="name">
+                            <b>
+                            hyperpayModule</b>
+                            <a href="#hyperpayModule"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/app.module.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="InjectorInstance"></a>
+                        <span class="name">
+                            <b>
+                            InjectorInstance</b>
+                            <a href="#InjectorInstance"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/Injector" target="_blank" >Injector</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="TRANSLATIONS"></a>
+                        <span class="name">
+                            <b>
+                            TRANSLATIONS</b>
+                            <a href="#TRANSLATIONS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{ ar: arContent, en: enContent }</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/helpers/utils/animations.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="slideIn"></a>
+                        <span class="name">
+                            <b>
+                            slideIn</b>
+                            <a href="#slideIn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>trigger(&quot;sliding&quot;, [
+   state(
+      &quot;in&quot;,
+      style({
+         opacity: 1,
+         transform: &quot;translateX(0)&quot;
+      })
+   ),
+   transition(&quot;void &#x3D;&gt; *&quot;, [
+      style({
+         opacity: 0,
+         transform: &quot;translateX(-100px)&quot;
+      }),
+      animate(500)
+   ])
+])</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

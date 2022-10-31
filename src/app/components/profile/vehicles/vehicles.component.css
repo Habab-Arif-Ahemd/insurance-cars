@@ -1,0 +1,14 @@
+/* ------------------------------- page Loader ------------------------------ */
+@import"../css_loader.css";
+
+@import"../../profile/profile.scss";
+
+/* ------------------------------- Card Image ------------------------------- */
+img{
+  width:60%;
+  height: 100px;
+  /* Black/50 */
+background: #FFFFFF;
+border-radius: 8px;
+}
+

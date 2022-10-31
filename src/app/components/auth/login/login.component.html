@@ -1,0 +1,122 @@
+<div class="container justify-content-center">
+  <div class="d-flex flex-column justify-content-between">
+    <div class="card two bg-white px-5  mb-5 ">
+      
+      <!-----------------------------------------------------------   
+                           login form
+  ---------------------------------------------------------->
+
+        <!-- Email Input -->
+        <form [formGroup]="loginFormGroup" class="mt-5 " >
+          <h5 class="d-flex justify-content-center ">  {{"Auth.SignInText"| translate}}</h5>
+
+
+              <!-- ------------------------------ Alert(s) ------------------------------- -->
+                <!-- Error(s) Alert -->
+                <div *ngIf="(isErrorAlertVisible || isSuccessAlertVisible)" class="alert-wrapper mt-1">
+                  <ngb-alert *ngIf="isErrorAlertVisible" type="danger" [dismissible]="true"
+                      (onClosed)="isErrorAlertVisible = !isErrorAlertVisible">
+                      <small>{{ errorMessage }}</small>
+                      <small *ngIf="validationErrors">
+                          <ul class="errors-list">
+                              <li *ngFor="let error of validationErrors">
+                                  {{error}}
+                              </li>
+                          </ul>
+                      </small>
+                  </ngb-alert>
+                  <!-- Success Alert -->
+                  <alert *ngIf="isSuccessAlertVisible" type="success" [dismissible]="true"
+                      (onClosed)="isSuccessAlertVisible = !isSuccessAlertVisible">
+                      <small>{{successMessage}}</small>
+                  </alert>
+              </div>
+            <!-- -------------------------------- Email -------------------------------- -->
+
+        
+          <div class="form-group mt-5 ">
+            <div class="input-group">
+              <input class="form-control date" formControlName="emailCtrl" type="email" [placeholder]="('Auth.EmailText' | translate)" />
+              <div class=" input-group-append">
+                  <span class="btn btn-outline-secondary calendar-icon">
+                      <fa-icon icon="at" class="icon ion-md-calendar"> </fa-icon>
+                  </span>
+               </div>
+          </div>
+           <!-- Email Validation Errors -->
+           <div *ngIf="isSubmitting && loginForm.emailCtrl.errors">
+            <div class="v-meassage" *ngIf="loginForm.emailCtrl.errors.required">
+              {{ 'Errors.EmptyInputField' | translate }}</div>
+            <div class="v-meassage" *ngIf="loginForm.emailCtrl.errors.pattern">
+              {{ 'Errors.InvalidEmail' | translate }}</div>
+          </div>
+          <!-- API Email Validation Errors -->
+          <div *ngIf="isSubmitting && loginFormGroup.errors?.Username">
+            <div class="v-meassage" *ngFor="let description of loginFormGroup.errors.descriptions">
+              <span *ngIf="description.Username">{{description.Username}}</span>
+            </div>
+          </div>
+        </div>
+
+          <!-- ------------------------------ Password ------------------------------- -->
+          <div class="form-group">
+            <div class="input-group">
+
+         
+            <input [type]="fieldTextType ? 'text' : 'password'" class="form-control date" formControlName="passwordCtrl"
+                [placeholder]="('Auth.PasswordText' | translate)">
+                <div class="  input-group-append">
+                  
+                  <div class="btn btn-outline-secondary calendar-icon" (click)="toggleFieldTextType()">
+
+                    <fa-icon [icon]="(fieldTextType ? 'eye-slash':'eye')"></fa-icon>
+                 </div>
+               </div>
+            <!-- Login Options -->
+            </div>
+
+        <!-- Password Validation Errors --> 
+        <div *ngIf="isSubmitting && loginForm.passwordCtrl.errors">
+            <div class="v-meassage" *ngIf="loginForm.passwordCtrl.errors.required">
+                {{ 'Errors.EmptyInputField' | translate }}
+            </div>
+        </div>
+
+        <!-- API Password Validation Errors -->
+        <div *ngIf="isSubmitting && loginFormGroup.errors?.Password">
+            <div class="v-meassage" *ngFor="let description of loginFormGroup.errors.descriptions">
+                <span *ngIf="description.Password">
+                    {{description.Password}}
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class="form-opts password-forget mt-2">
+          <!-- Forgot Password -->
+            <a id="forgetPassword "  class="d-flex justify-content-end" (click)="displayForgetPassward()">
+               {{ 'Auth.ForgotPasswordText' | translate }}</a>
+        </div>
+  
+                <!-- ------------------------------- Submit -------------------------------- -->
+                <div class=" d-flex justify-content-center brder ">
+                    <button (click)="login()" class="submit-btn mt-3 form-control" type="submit" >
+                        {{"Auth.SignInText"| translate}}
+                        <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"
+                            aria-hidden="true"></span>
+                    </button>
+                </div>
+               
+
+</form>
+
+
+  </div>
+  
+  </div> 
+  <label class="d-flex justify-content-center" style="color: #C5C7D0; font-size: medium;" > {{ 'Auth.DontHaveAccountText' | translate }}  
+
+      <a id="forgetPassword "   (click)="displaySignUp()" style="color: #005DBD; font-weight: bold;">
+         {{ 'Auth.CreateAccountText' | translate }}  </a>
+  </label>
+
+</div>

@@ -1,0 +1,108 @@
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Email Chane Form                            -->
+<!-- ----------------------------------------------------------------------- -->
+<div class="container">
+  <div class="col-8 mt-4">
+
+
+<h5><fa-icon icon="user-edit" class="icon"></fa-icon> 
+تغيير البريد الإلكتروني
+</h5>
+<br/>
+<form class="moiz"   [formGroup]="changeEmailForm">
+  <div class="form-group">
+  
+    <input
+      type="text"
+      class="form-control"
+      value="{{ userEmail }}"
+      placeholder="{{ 'Auth.EmailText' | translate  }}"
+      formControlName="userName"
+    />
+  </div>
+  <div class="form-group" *ngIf="!isubmited">
+     <input
+      type="password"
+      class="form-control"
+      placeholder="{{ 'Auth.PasswordText' | translate }}"
+      formControlName="password"
+    />
+  </div>
+  <div class="form-group" *ngIf="isubmited">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="{{ 'Misc.VerificationCodeText' | translate }}"
+      formControlName="verificationCode"
+    />
+  </div>
+  <div class="form-group">
+    <button
+      type="submit"
+      class="btn btn-primary"
+      (click)="changEmail()"
+      *ngIf="!isubmited"
+    >
+      <fa-icon icon="save" size="xs" class="icon" *ngIf="!isLoading"></fa-icon>
+      {{ "App.SaveChangesText" | translate }}
+      <span
+        *ngIf="isLoading"
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+    </button>
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="confirmEmail()"
+        *ngIf="isubmited"
+      >
+        {{ "App.saveText" | translate }}
+        <fa-icon
+          icon="save"
+          size="xs"
+          class="icon"
+          *ngIf="!isLoading"
+        ></fa-icon>
+        <span
+          *ngIf="isLoading"
+          class="spinner-border spinner-border-sm"
+          role="status"
+          aria-hidden="true"
+        ></span>
+      </button>
+
+    <button
+      type="button"
+      class="btn btn-danger ml-3"
+      [routerLink]="['/user/account/']" 
+    >
+      <fa-icon icon="times-circle" size="xs" class="icon"></fa-icon>
+      {{ "App.CancelText" | translate }}
+    </button>
+  </div>
+</form>
+              <!-- ------------------------------ Alert(s) ------------------------------- -->
+                <!-- Error(s) Alert -->
+                <div *ngIf="(isErrorAlertVisible || isSuccessAlertVisible)" class="alert-wrapper mt-1">
+                  <ngb-alert *ngIf="isErrorAlertVisible" type="danger" [dismissible]="true"
+                      (onClosed)="isErrorAlertVisible = !isErrorAlertVisible">
+                      <small>{{ errorMessage }}</small>
+                      <small *ngIf="validationErrors">
+                          <ul class="errors-list">
+                              <li *ngFor="let error of validationErrors">
+                                  {{error}}
+                              </li>
+                          </ul>
+                      </small>
+                  </ngb-alert>
+                  <!-- Success Alert -->
+                  <alert *ngIf="isSuccessAlertVisible" type="success" [dismissible]="true"
+                      (onClosed)="isSuccessAlertVisible = !isSuccessAlertVisible">
+                      <small>{{successMessage}}</small>
+                  </alert>
+              </div>
+</div>
+</div>

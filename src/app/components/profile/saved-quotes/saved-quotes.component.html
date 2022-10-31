@@ -1,0 +1,139 @@
+
+<div class="loader-card  mt-3" *ngIf="isLoadingUserPolicies">  <div class="content-container loader-wrapper flex-centered flex-container">
+      <div class="loading">
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+       </div>
+    </div></div>
+
+<div *ngIf="!isLoadingUserPolicies">
+    <div class="container-fluid mt-5 card">
+        <h5 class="" style="font-weight: bold">
+            <!-- ------ <fa-icon icon="adjust" size="xs" class="icon"></fa-icon> ------- -->
+    
+            {{ 'Profile.Menu.SavedQuotationText' | translate }}
+        </h5>
+  <div class="box-card  mt-3"
+      [ngClass]="{'card-active-quote': quote.status == 'Active', 'card-expired-quote': quote.status == 'Expired' }"
+      *ngFor="let quote of savedQuotes |  slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+      <div class="row">
+          <div class="col-8 ">
+              <div class="row">
+                <div class="col-2 ">
+                    <div class="image">
+                        <img *ngIf="quote.vehicleLogo" [src]="vehicleLogoSrc + quote.vehicleLogo" alt="Vehicle Image"
+                        class=" images">
+                    <img class="images" *ngIf="!quote.vehicleLogo" src="../../../assets/images/Vehicle-Front-lg.svg"
+                         >                    </div>
+                  </div>
+<!-- sssss -->
+<!--  -->
+<div class="flex-container"> 
+    <table class="table table-borderless">
+        <thead>
+          <tr>
+<!--             <th> {{ 'Profile.PanelItems.PriviousQuote.QuoteReference' | translate }} :</th>
+ -->            <th>{{ 'Profile.PanelItems.PriviousQuote.ProductType' | translate }} :</th>
+            <th> {{ 'Checkout.PolicyDetails.SequenceNum' | translate }}:</th>
+            <th>{{ 'Profile.PanelItems.PriviousQuote.Model' | translate }} :</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+          <tr >
+<!--             <td>{{ quote.quoteReferenceId }}</td>
+ -->            <td>{{ quote.productType }}</td>
+            <td>{{  quote.vehicleId }}</td>
+            <td>({{ quote.vehicleMakerAr }} {{ quote.vehicleModelAr  }}
+                {{quote.vehicleModelYear}})</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+<!-- xx -->
+
+<div class="flex-container"> 
+    <table class="table table-borderless">
+        <thead>
+          <tr>
+<!--             <th>{{ 'Profile.PanelItems.PriviousQuote.DeductibleValue' | translate }} :</th>
+ -->            <th>{{'Profile.PanelItems.PriviousQuote.TotalPremium' | translate }} :</th>
+<!--             <th>{{'Profile.PanelItems.PriviousQuote.CreatedOn' | translate }} :</th>
+ -->            <th>{{ 'Profile.PanelItems.PriviousQuote.Remaining' | translate }} :</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+          <tr >
+<!--             <td *ngIf="quote.deductibleValue > 0">{{ quote.deductibleValue }}</td>
+ -->            <td>{{  quote.totalPremium| number }}
+                {{'Profile.PanelItems.PriviousQuote.CurrencyTxt' | translate }}</td>
+<!--                 <td>{{ quote.createdDate |  date: "dd-MMM-yyyy"}}</td>
+ -->                <td>
+                    <!-- Timer Over ----------------------------------------------------->
+                    <!------------------------------------------------------------------->
+                    <div *ngIf="quote.timer?.isOver" class="timer-over-wrapper">
+                        {{ 'Quote.TimerOverText' | translate }}
+                    </div>
+
+
+                    <!-- Timer --------------------------------------------------------->
+                    <!------------------------------------------------------------------>
+                    <span *ngIf="!quote.timer?.isOver"
+                        class="badge badge-timer">&nbsp;{{ quote.timer?.hours }}&nbsp;
+                        {{ 'App.HoursText' | translate }}&nbsp;{{ quote.timer?.minutes }}&nbsp;
+                        {{ 'App.MinutesText' | translate }}</span>
+                    <!-- &nbsp;{{ quote.timer?.seconds }} &nbsp;{{ 'App.SecondsText' | translate }}&nbsp; -->
+
+                </td>
+
+
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+                 
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-2 col-sm-3 col-xs-3 ">
+          
+              
+            
+          <div class="row d-flex justify-content-left ml-3  ">
+            <button *ngIf="quote.status == 'Active'" (click)="buySavedQuote(quote.id)" class="submit-btn policy mt-5" type="submit" >
+                {{'Profile.PanelItems.PriviousQuote.Purchase'| translate}}
+                <span *ngIf="quote.btnLoader"class="spinner-border spinner-border-sm" role="status"
+                    aria-hidden="true"></span>
+            </button>
+        <!--     <button *ngIf="quote.status == 'Active'" (click)="buySavedQuote(quote.id)" class="ml-2 submit-btn " type="submit" >
+                {{'Profile.PanelItems.PriviousQuote.Delete'| translate}}
+                <span *ngIf="quote.btnLoader"class="  spinner-border spinner-border-sm" role="status"
+                    aria-hidden="true"></span>
+            </button> -->
+        </div>
+      
+          </div>
+      </div>
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-center" >
+    <ngb-pagination [pageSize] = "5" [collectionSize]="savedQuotes.length " [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
+
+  </div>
+
+</div>
+</div>
+
+<!-- Empty Alert -->
+<div *ngIf="savedQuotes.length === 0 && !isLoadingUserPolicies" class="empty-policies-container">
+  <h6>
+      <i class="empty-header-icon ion-ios-alert"></i>
+      لا توجد عروض أسعار محفوظة
+  </h6>
+</div>
+

@@ -1,0 +1,119 @@
+<!-- ----------------------------- page loader ----------------------------- -->
+
+<div class="container mt-5">
+<div class="loader-card mt-3" *ngIf="this.isLoadingTickets">
+  
+
+  
+  <div class="content-container loader-wrapper flex-centered flex-container">
+  <div class="loading">
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+   </div>
+  </div>
+</div>
+
+<div class="container"  *ngIf="!this.isLoadingTickets"  >
+  <div class="row">
+    <div class="col-lg-4">
+      <h5 style="font-weight: bold"> {{ "Profile.Support.TicketList" | translate }}</h5>
+    </div>
+    <div class="col-lg-8 d-flex justify-content-end">
+      <div class="btn-group " *ngIf="ticketsList?.data.length !== 0">
+        <ng-select [items]="ticketStatus" bindValue="id" [loading]="!ticketStatus" [multiple]="true"
+        placeholder="حالة التذكرة" [(ngModel)]="TicketsParms.ticketStatusId" (change)="getTicketsList($event)" >
+        <ng-template ng-label-tmp let-item="item"
+        >
+            <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+        </ng-template>
+        <ng-template ng-option-tmp let-item="item" let-index="index">
+            <span>{{ lang === 'ar' ? item.nameAr : item.name }}</span>
+        </ng-template>
+      </ng-select>
+
+      </div>
+
+      <div class="btn-group">
+        <!-- <span class="badge badge-pill">162 مغلقة</span>
+        <span class="badge mr-2">95,721 منتهية</span> -->
+      </div>
+      <div class="btn-group " style="margin-right: 5px;margin-left: 5px;">
+        <button
+        type="button"
+        class="btn btn-primary float-right"
+        [routerLink]="['/user/support/add']"
+      >
+        <fa-icon icon="plus" class="fa fa-file-o"></fa-icon>
+        {{ "Profile.Support.AddTicket" | translate }}
+      </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<br/>
+<div class="container" *ngIf="!this.isLoadingTickets" >
+
+  <div class="row" *ngFor="let ticket of ticketsList.data">
+    <div class="col">
+
+      <div class="card" (click)="showDetails(ticket.id, getStatusColor(ticket.ticketStatus))">
+        <div class="row">
+          <div class="col-6">
+            <strong *ngIf="lang == 'ar'">{{ticket.ticketTypeAr}}</strong>
+            <strong *ngIf="lang == 'en'">{{ticket.ticketType}}</strong>
+          </div>
+          <div class="col-6">
+            <span>
+              {{ ticket.ticketReferenceId }}
+            </span>
+          </div>
+        </div>
+        <br/>
+        <p>
+          {{ticket.body}}
+        </p>
+        <hr />
+        <div class="row">
+          <div class="col">
+
+            <div class="col">
+              <span *ngIf="lang == 'ar'" class="p-2 mt-1 badge-pill text-white"
+              style="width: 100%;"
+              [ngStyle]="{'background-color': getStatusColor(ticket.ticketStatus)}">
+              {{ticket.ticketStatusAr}}</span>
+          <span *ngIf="lang == 'en'" class="p-2 mt-1 badge-pill badge-success"
+              style="width: 100%;">{{ticket.ticketStatus}}</span>
+            </div>
+
+          </div>
+
+          <div class="col">
+            <span>
+              <a>
+                الردود {{ ticket.totalUnReadMessages }}
+                <fa-icon icon="comment" class="fa fa-file-o"></fa-icon>
+              </a>
+            </span>
+          </div>
+          <div class="col-6">
+            {{ "Profile.Support.IssueDate" | translate }}  :{{ ticket.createdDate |  date:"MMM-dd-yyyy" }}
+          </div>
+        </div>
+      </div>
+      <br/>
+    </div>
+  </div>
+
+   <!-- Empty Alert -->
+   <div *ngIf="ticketsList?.data.length == 0 " class="row shadow p-4 rounded-0 border-0 mt-4 d-flex justify-content-center">
+    <h5>
+        <fa-icon icon="exclamation-triangle" class="icon"></fa-icon>
+            لا توجد لديك تذاكر
+    </h5>
+  </div>
+</div>
+</div>

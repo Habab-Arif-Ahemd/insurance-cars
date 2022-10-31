@@ -1,0 +1,79 @@
+body[dir="ltr"] {
+   
+   .border-l {
+      border-right: 1px solid gainsboro;
+   }
+
+   .quote-card .insurance-carrier {
+   
+      .bg-circle {
+         border-top-left-radius: 0;
+         border-bottom-left-radius: 0;
+         border-top-right-radius: 50%;
+         border-bottom-right-radius: 50%;
+      }
+   
+   }
+
+   .quote-card .quote-price {
+
+      .bg-circle {
+         border-top-left-radius: 50%;
+         border-bottom-left-radius: 50%;
+         border-top-right-radius: 0;
+         border-bottom-right-radius: 0;
+      }
+      
+      .price-container div {
+         padding-left: 15px;
+      }
+
+   }
+
+   .quote-card .quote-info {
+
+      .title span {
+         margin-right: auto;
+         margin-left: 1em;
+      }
+
+      .info {
+         .quote-timer-entry {
+            padding-left: 0;
+            padding-right: 10px;
+            #timer-val {
+               padding-left: 0;
+               padding-right: 5px;
+            }
+         }
+
+      }
+
+   }
+
+   .quote-slide-card .benefits {
+
+      .quote-details-block {
+         &:nth-child(2) {
+            padding-right: 0px;
+            padding-left: 20px;
+         }
+   
+         &:nth-child(3) {
+            padding-right: 0px;
+            padding-left: 20px;
+         }
+      }
+
+   } 
+}
+
+
+
+
+body[dir="ltr"] .border-l  {
+   
+  
+      border-right: 1px solid gainsboro;
+   }
+   

@@ -1,0 +1,66 @@
+<div class="custom-container mt-5">
+  <div class="col-xl-12 col-lg-12 col-md-8 col-sm-4 col-xs-4">
+    <div class="row">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                       Fliter by ProductType                           -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!-- #region -->
+      <!-- // 1 = Third Party, 2 = Comprehensive -->
+      <div class="col-lg-4 col-md-6 col-sm-8 col-xs-4 filter-products d-flex justify-content-between">
+        <button type="button" class="btn btn-color filter-type" [class.active]="selectedProductId == null" (click)="filterProduct(0)">
+          <label><span class="filter-number">{{ QuotesCounter }} </span> </label>{{ "Quote.insuranceType.all" | translate }}
+        </button> 
+        <button type="button" class="btn btn-color filter-type" [class.active]="selectedProductId == 2" (click)="filterProduct(2)">
+          <label><span class="filter-number">{{ comprehensiveProductCounter }}
+            </span> </label
+          >{{ "Quote.insuranceType.comprehinsive" | translate }}
+        </button>
+        <button type="button" class="btn btn-color filter-type" [class.active]="selectedProductId == 1" (click)="filterProduct(1)">
+          <label>
+            <span class="filter-number">{{ thirdPartyProductCounter }}
+            </span> </label>{{ "Quote.insuranceType.third-party" | translate }}
+        </button>
+      </div>
+
+      <div class="col-lg-4 col-md-8 col-sm-4 col-xs-4"></div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                            Batch Comparison                             -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!-- #region -->
+
+      <div 
+        class="col-lg-2 col-md-2 col-sm-4 col-xs-4 d-flex justify-content-end filter-type"
+        (mouseover)="isHoveringComparisonButton = true"
+        (mouseleave)="isHoveringComparisonButton = false">
+        <button (click)="onCompareAllQuotes()" class="btn comparison-btn">
+          <img src="../../../../assets/img/Icon-png/compare.png">
+          <span class="filter-type mx-3">{{"Quote.CompareAll" | translate}}</span>
+        </button>
+      </div>
+      <!-- PRICE FILTER -->
+      <div class=" col-lg-2 d-flex justify-content-end">
+        <!-- Price Sort Switch -->
+        <div (click)="toggleSortType()" class="filter bouncy noselect" [ngClass]=" selectedSortType.ascending ? 'ascending-switched': 'descending-switched'">
+          <div
+            class="filter-icon-wrapper flex-container"
+            [ngClass]="selectedSortType.ascending? 'ascending-switched' : 'descending-switched'">
+            <!-- <i class="ion-md-list secondary-lime flex-centered"></i> -->
+            <fa-icon
+              *ngIf="selectedSortType.ascending"
+              icon="sort-amount-up"
+            ></fa-icon>
+            <fa-icon
+              *ngIf="selectedSortType.descending"
+              icon="sort-amount-down"
+            ></fa-icon>
+          </div>
+          <div class="filter-value flex-container">
+            <span class="flex-centered">
+              {{selectedSortType.ascending ? ("Quote.Filters.AscendingOrderText" | translate): ("Quote.Filters.DescndingOrderText" | translate)}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

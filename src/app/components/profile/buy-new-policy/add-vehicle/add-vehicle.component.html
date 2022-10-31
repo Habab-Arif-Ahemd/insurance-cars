@@ -1,0 +1,62 @@
+<div class="container d-flex justify-content-center">
+  <div class="card">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="row d-flex justify-content-center">
+        <div class="col-3">
+          <div class="form-group">
+            <input (click)="newInsurance()" checked type="radio" name="x" class="option-input radio"
+              id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">تأمين جديد
+            </label>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <input (click)="transiferOwner()" type="radio" name="x" class="option-input radio" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">
+              نقل ملكية
+            </label>
+          </div>
+        </div>
+
+        <div class="col-8" *ngIf="vehicleRegisteredType">
+          <div class="form-group">
+            <input ngModel name="type" class="form-control" placeholder="نوع تسجيل المركبة" />
+          </div>
+        </div>
+
+        <div class="col-8" *ngIf="ownerIdentity">
+          <div class="form-group">
+            <input ngModel name="identity" class="form-control" placeholder="رقم هوية مالك المركبة" />
+          </div>
+        </div>
+
+        <div class="col-8">
+          <div class="form-group">
+            <input ngModel name="serial" class="form-control" placeholder="رقم الهوية/الإقامة لطالب الوثيقة" />
+          </div>
+        </div>
+
+        <div class="col-8">
+          <div class="form-group">
+            <input ngModel name="serial" class="form-control" placeholder="الرقم المتسلسل" />
+          </div>
+        </div>
+
+        <div class="col-8">
+          <div class="form-group">
+            <input ngModel name="date" type="date" class="form-control" placeholder="تاريخ بداية الوثيقة" />
+          </div>
+        </div>
+
+        <div class="col-5 d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary">إستمرار</button>
+
+          <button (click)="back()" type="submit" class="btn btn-danger ml-3">
+            إلغاء
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

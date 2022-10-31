@@ -1,0 +1,97 @@
+<div class="loader-card mt-3" *ngIf=""> 
+  <div class="content-container loader-wrapper flex-centered flex-container">
+  <div class="loading">
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+     <div class="dot"></div>
+   </div>
+  </div>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Page Name                                   -->
+<!-- ----------------------------------------------------------------------- -->
+
+<div class="container-fluid mt-5">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h5 style="font-weight: bold">
+        <!-- ----------- <fa-icon icon="adjust" class="icon"></fa-icon> ------------ -->
+  
+        {{ "Profile.Menu.AccountSettingsText" | translate }}
+      </h5>
+    </div>
+  
+    <div class="card  shadow p-4 rounded-0 border-0 mt-3">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--             render Email, Password, Phone, Language Compnents           -->
+      <!-- ----------------------------------------------------------------------- -->
+  
+      <div class="row mb-3 moiz">
+       <!-- <div class="col-6 align-center">
+          <app-change-email *ngIf="showEditEmail" (closeEmails)="closeEmail()" ></app-change-email>
+          <app-change-password *ngIf="showEditPassword"  (closePasswords)="closePassword()" ></app-change-password>
+          <app-change-phone *ngIf="showEditPhone"  (closePhones)="closePhone()" ></app-change-phone>
+          <app-change-lang *ngIf="showEditLang"  (closeLanguages)="closeLanguage()" ></app-change-lang>
+        </div>-->
+      </div>
+      <!--           Email          -->
+      <div class="row">
+        <span class="col">{{
+          "Profile.PanelItems.AccountSettings.EmailText" | translate
+        }}</span>
+        <span class="col"> {{ userEmail }}</span>
+        <span class="col">
+      
+          <button    [routerLink]="['/user/account/email']" value="Edit" class="btn btn-link">
+            <fa-icon icon="edit" size="xxl" class="icon"></fa-icon>
+            {{ "Profile.PanelItems.AccountSettings.EditBtnText" | translate }}
+          </button>
+          <br />
+        </span>
+      </div>
+      <hr>
+      <!--          Password          -->
+      <div class="row">
+        <span class="col">{{
+          "Profile.PanelItems.AccountSettings.PasswordText" | translate
+        }}</span>
+        <span class="col">****</span>
+        <span class="col ml-auto">
+          <button   [routerLink]="['/user/account/password']"  class="btn btn-link">
+            <fa-icon icon="edit" size="xxl" class="icon"></fa-icon>
+            {{ "Profile.PanelItems.AccountSettings.EditBtnText" | translate }}
+          </button>
+        </span>
+      </div>
+      <!--          Phone          -->
+  <hr>
+      <div class="row">
+        <span class="col">{{
+          "Profile.PanelItems.AccountSettings.PhoneText" | translate
+        }}</span>
+        <span  class="col">  {{ userPhone  }}</span>
+        <span class="col ml-auto">
+            <button   [routerLink]="['/user/account/phone']"  class="btn btn-link">
+              <fa-icon icon="edit" size="xxl" class="icon"></fa-icon>
+              {{ "Profile.PanelItems.AccountSettings.EditBtnText" | translate }}
+            </button>
+        </span>
+      </div>
+      <!--          Language          -->
+      <hr>
+      <div class="row">
+        <span class="col">{{
+          "Profile.PanelItems.AccountSettings.LanguageText" | translate
+        }}</span>
+        <span class="col"> {{ userLang ? "English" : "العربية" }}</span>
+        <span class="col ml-auto">
+          <button   [routerLink]="['/user/account/language']"  class="btn btn-link">
+            <fa-icon icon="edit" size="xxl" class="icon"></fa-icon>
+            {{ "Profile.PanelItems.AccountSettings.EditBtnText" | translate }}
+          </button></span
+        >
+
+      </div>
+    </div>
+  </div>

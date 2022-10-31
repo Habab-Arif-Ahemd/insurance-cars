@@ -1,0 +1,42 @@
+<div class="loader-container">
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Loader                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="loader-wrapper">
+ 
+       <div class="">
+          <div class="">
+            <div>
+               <div>
+                  <div>                   
+                    <!--  <img class=" red" src="../../../../../assets/img/red.svg" alt="">
+                     <img class="imgsize" src="../../../../../assets/img/blue.svg" alt="">
+             -->
+             <img class="loaderSize" src="../../../../../assets/img/loadercar/LoaderAmmant.gif" alt="">
+
+            
+                  </div>
+               </div>
+            </div>
+            
+       </div>
+
+
+
+    </div>
+ 
+   </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                     Language Switch Loading Message                     -->
+    <!-- ----------------------------------------------------------------------- -->
+    <span class="" *ngIf="type === 'LanguageSwitch'" class="loading-msg">{{ 'Misc.LanguageSwitchLoadingMessage' | translate }}</span>
+ 
+ 
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                       Quotations Loading Message                        -->
+    <!-- ----------------------------------------------------------------------- -->
+    <span *ngIf="type === 'QuotationLoading'" class="loading-msg">{{ 'Misc.QuotationLoadingMessage' | translate }}</span>
+ 
+</div>

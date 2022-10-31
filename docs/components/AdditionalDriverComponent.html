@@ -1,0 +1,3777 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Concord-Aggrigator-Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Concord-Aggrigator-Client</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AdditionalDriverComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.Default</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-additional-driver</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../../quotation-request-page/quotation-request-page.component.css,<br>./additional-driver.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./additional-driver.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addedlicense">addedlicense</a>
+                            </li>
+                            <li>
+                                <a href="#addingDriver">addingDriver</a>
+                            </li>
+                            <li>
+                                <a href="#additionalDriverInfoForm">additionalDriverInfoForm</a>
+                            </li>
+                            <li>
+                                <a href="#additionalDriverInfoFormSubmitted">additionalDriverInfoFormSubmitted</a>
+                            </li>
+                            <li>
+                                <a href="#day">day</a>
+                            </li>
+                            <li>
+                                <a href="#driverHealth">driverHealth</a>
+                            </li>
+                            <li>
+                                <a href="#driverLicense">driverLicense</a>
+                            </li>
+                            <li>
+                                <a href="#driverLicenseForm">driverLicenseForm</a>
+                            </li>
+                            <li>
+                                <a href="#driverLicenseFormSubmitted">driverLicenseFormSubmitted</a>
+                            </li>
+                            <li>
+                                <a href="#driverViolation">driverViolation</a>
+                            </li>
+                            <li>
+                                <a href="#foreignlicenses">foreignlicenses</a>
+                            </li>
+                            <li>
+                                <a href="#fromZeroToTen">fromZeroToTen</a>
+                            </li>
+                            <li>
+                                <a href="#hasChildren">hasChildren</a>
+                            </li>
+                            <li>
+                                <a href="#hijriYears">hijriYears</a>
+                            </li>
+                            <li>
+                                <a href="#isDrivingPercentageComplete">isDrivingPercentageComplete</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading">isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#isMedicalCheckboxEmpty">isMedicalCheckboxEmpty</a>
+                            </li>
+                            <li>
+                                <a href="#isOnMidScreen">isOnMidScreen</a>
+                            </li>
+                            <li>
+                                <a href="#isViolationCheckboxEmpty">isViolationCheckboxEmpty</a>
+                            </li>
+                            <li>
+                                <a href="#lang">lang</a>
+                            </li>
+                            <li>
+                                <a href="#licenseslist">licenseslist</a>
+                            </li>
+                            <li>
+                                <a href="#medicalConditions">medicalConditions</a>
+                            </li>
+                            <li>
+                                <a href="#months">months</a>
+                            </li>
+                            <li>
+                                <a href="#monthvalue">monthvalue</a>
+                            </li>
+                            <li>
+                                <a href="#previousDrivers">previousDrivers</a>
+                            </li>
+                            <li>
+                                <a href="#showDate">showDate</a>
+                            </li>
+                            <li>
+                                <a href="#showGregorianDate">showGregorianDate</a>
+                            </li>
+                            <li>
+                                <a href="#showHijriDate">showHijriDate</a>
+                            </li>
+                            <li>
+                                <a href="#stepNumber">stepNumber</a>
+                            </li>
+                            <li>
+                                <a href="#stepsData">stepsData</a>
+                            </li>
+                            <li>
+                                <a href="#termSearchFn">termSearchFn</a>
+                            </li>
+                            <li>
+                                <a href="#violations">violations</a>
+                            </li>
+                            <li>
+                                <a href="#years">years</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addLicense">addLicense</a>
+                            </li>
+                            <li>
+                                <a href="#addMedicalCondition">addMedicalCondition</a>
+                            </li>
+                            <li>
+                                <a href="#addViolation">addViolation</a>
+                            </li>
+                            <li>
+                                <a href="#cancelAddingDriver">cancelAddingDriver</a>
+                            </li>
+                            <li>
+                                <a href="#formatDate">formatDate</a>
+                            </li>
+                            <li>
+                                <a href="#getStepData">getStepData</a>
+                            </li>
+                            <li>
+                                <a href="#hasChild">hasChild</a>
+                            </li>
+                            <li>
+                                <a href="#initdriverLicensesForm">initdriverLicensesForm</a>
+                            </li>
+                            <li>
+                                <a href="#initForm">initForm</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#removeFromLicenseList">removeFromLicenseList</a>
+                            </li>
+                            <li>
+                                <a href="#scrollToTarget">scrollToTarget</a>
+                            </li>
+                            <li>
+                                <a href="#showAditionalDriver">showAditionalDriver</a>
+                            </li>
+                            <li>
+                                <a href="#showLicenseForm">showLicenseForm</a>
+                            </li>
+                            <li>
+                                <a href="#showMedicalCondition">showMedicalCondition</a>
+                            </li>
+                            <li>
+                                <a href="#showViolations">showViolations</a>
+                            </li>
+                            <li>
+                                <a href="#submitForm">submitForm</a>
+                            </li>
+                            <li>
+                                <a href="#validateCheckBoxes">validateCheckBoxes</a>
+                            </li>
+                            <li>
+                                <a href="#validateIdentityNo">validateIdentityNo</a>
+                            </li>
+                            <li>
+                                <a href="#watchIdentityNoToShowDate">watchIdentityNoToShowDate</a>
+                            </li>
+                            <li>
+                                <a href="#whatchDriversPercentage">whatchDriversPercentage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#openAddingDriverForm">openAddingDriverForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#showList">showList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:resize">window:resize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#f">f</a>
+                                </li>
+                                <li>
+                                    <a href="#df">df</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, insuranceSteps: <a href="../injectables/InsuranceStepsService.html">InsuranceStepsService</a>, scrollOnErrer: <a href="../injectables/Scroll.html">Scroll</a>, appService: <a href="../injectables/AppService.html">AppService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>insuranceSteps</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InsuranceStepsService.html" target="_self" >InsuranceStepsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>scrollOnErrer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Scroll.html" target="_self" >Scroll</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppService.html" target="_self" >AppService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="openAddingDriverForm"></a>
+                        <b>openAddingDriverForm</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showList"></a>
+                        <b>showList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:resize"></a>
+                    <span class="name">
+                        <b>
+                            window:resize
+                        </b>
+                        <a href="#window:resize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:resize(event?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="466"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:466</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addLicense"></a>
+                    <span class="name">
+                        <b>
+                            addLicense
+                        </b>
+                        <a href="#addLicense"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addLicense(id: <a href="../interfaces/DriverLicense.html">DriverLicense</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="239"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:239</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="../interfaces/DriverLicense.html" target="_self" >DriverLicense</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addMedicalCondition"></a>
+                    <span class="name">
+                        <b>
+                            addMedicalCondition
+                        </b>
+                        <a href="#addMedicalCondition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addMedicalCondition(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="311"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:311</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addViolation"></a>
+                    <span class="name">
+                        <b>
+                            addViolation
+                        </b>
+                        <a href="#addViolation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addViolation(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="297"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:297</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelAddingDriver"></a>
+                    <span class="name">
+                        <b>
+                            cancelAddingDriver
+                        </b>
+                        <a href="#cancelAddingDriver"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cancelAddingDriver()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatDate"></a>
+                    <span class="name">
+                        <b>
+                            formatDate
+                        </b>
+                        <a href="#formatDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>formatDate(d)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>d</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStepData"></a>
+                    <span class="name">
+                        <b>
+                            getStepData
+                        </b>
+                        <a href="#getStepData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStepData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="233"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:233</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasChild"></a>
+                    <span class="name">
+                        <b>
+                            hasChild
+                        </b>
+                        <a href="#hasChild"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hasChild()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="325"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:325</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initdriverLicensesForm"></a>
+                    <span class="name">
+                        <b>
+                            initdriverLicensesForm
+                        </b>
+                        <a href="#initdriverLicensesForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initdriverLicensesForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initForm"></a>
+                    <span class="name">
+                        <b>
+                            initForm
+                        </b>
+                        <a href="#initForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeFromLicenseList"></a>
+                    <span class="name">
+                        <b>
+                            removeFromLicenseList
+                        </b>
+                        <a href="#removeFromLicenseList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeFromLicenseList(licenseData: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>licenseData</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scrollToTarget"></a>
+                    <span class="name">
+                        <b>
+                            scrollToTarget
+                        </b>
+                        <a href="#scrollToTarget"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>scrollToTarget(el: HTMLElement)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="382"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:382</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>el</td>
+                                    <td>
+                                            <code>HTMLElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showAditionalDriver"></a>
+                    <span class="name">
+                        <b>
+                            showAditionalDriver
+                        </b>
+                        <a href="#showAditionalDriver"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showAditionalDriver()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLicenseForm"></a>
+                    <span class="name">
+                        <b>
+                            showLicenseForm
+                        </b>
+                        <a href="#showLicenseForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showLicenseForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="345"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:345</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMedicalCondition"></a>
+                    <span class="name">
+                        <b>
+                            showMedicalCondition
+                        </b>
+                        <a href="#showMedicalCondition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showMedicalCondition()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="372"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:372</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showViolations"></a>
+                    <span class="name">
+                        <b>
+                            showViolations
+                        </b>
+                        <a href="#showViolations"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showViolations()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="377"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:377</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitForm"></a>
+                    <span class="name">
+                        <b>
+                            submitForm
+                        </b>
+                        <a href="#submitForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submitForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="186"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:186</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateCheckBoxes"></a>
+                    <span class="name">
+                        <b>
+                            validateCheckBoxes
+                        </b>
+                        <a href="#validateCheckBoxes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateCheckBoxes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="393"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:393</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateIdentityNo"></a>
+                    <span class="name">
+                        <b>
+                            validateIdentityNo
+                        </b>
+                        <a href="#validateIdentityNo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateIdentityNo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="449"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:449</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="watchIdentityNoToShowDate"></a>
+                    <span class="name">
+                        <b>
+                            watchIdentityNoToShowDate
+                        </b>
+                        <a href="#watchIdentityNoToShowDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>watchIdentityNoToShowDate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="419"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:419</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="whatchDriversPercentage"></a>
+                    <span class="name">
+                        <b>
+                            whatchDriversPercentage
+                        </b>
+                        <a href="#whatchDriversPercentage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>whatchDriversPercentage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addedlicense"></a>
+                        <span class="name">
+                            <b>
+                            addedlicense</b>
+                            <a href="#addedlicense"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addingDriver"></a>
+                        <span class="name">
+                            <b>
+                            addingDriver</b>
+                            <a href="#addingDriver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="additionalDriverInfoForm"></a>
+                        <span class="name">
+                            <b>
+                            additionalDriverInfoForm</b>
+                            <a href="#additionalDriverInfoForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="additionalDriverInfoFormSubmitted"></a>
+                        <span class="name">
+                            <b>
+                            additionalDriverInfoFormSubmitted</b>
+                            <a href="#additionalDriverInfoFormSubmitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="day"></a>
+                        <span class="name">
+                            <b>
+                            day</b>
+                            <a href="#day"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>number[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="driverHealth"></a>
+                        <span class="name">
+                            <b>
+                            driverHealth</b>
+                            <a href="#driverHealth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="driverLicense"></a>
+                        <span class="name">
+                            <b>
+                            driverLicense</b>
+                            <a href="#driverLicense"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="driverLicenseForm"></a>
+                        <span class="name">
+                            <b>
+                            driverLicenseForm</b>
+                            <a href="#driverLicenseForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="driverLicenseFormSubmitted"></a>
+                        <span class="name">
+                            <b>
+                            driverLicenseFormSubmitted</b>
+                            <a href="#driverLicenseFormSubmitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="driverViolation"></a>
+                        <span class="name">
+                            <b>
+                            driverViolation</b>
+                            <a href="#driverViolation"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="foreignlicenses"></a>
+                        <span class="name">
+                            <b>
+                            foreignlicenses</b>
+                            <a href="#foreignlicenses"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fromZeroToTen"></a>
+                        <span class="name">
+                            <b>
+                            fromZeroToTen</b>
+                            <a href="#fromZeroToTen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>DropDownValues.fromZeroToTen</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasChildren"></a>
+                        <span class="name">
+                            <b>
+                            hasChildren</b>
+                            <a href="#hasChildren"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hijriYears"></a>
+                        <span class="name">
+                            <b>
+                            hijriYears</b>
+                            <a href="#hijriYears"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>number[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isDrivingPercentageComplete"></a>
+                        <span class="name">
+                            <b>
+                            isDrivingPercentageComplete</b>
+                            <a href="#isDrivingPercentageComplete"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <span class="name">
+                            <b>
+                            isLoading</b>
+                            <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isMedicalCheckboxEmpty"></a>
+                        <span class="name">
+                            <b>
+                            isMedicalCheckboxEmpty</b>
+                            <a href="#isMedicalCheckboxEmpty"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isOnMidScreen"></a>
+                        <span class="name">
+                            <b>
+                            isOnMidScreen</b>
+                            <a href="#isOnMidScreen"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:59</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isViolationCheckboxEmpty"></a>
+                        <span class="name">
+                            <b>
+                            isViolationCheckboxEmpty</b>
+                            <a href="#isViolationCheckboxEmpty"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lang"></a>
+                        <span class="name">
+                            <b>
+                            lang</b>
+                            <a href="#lang"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="licenseslist"></a>
+                        <span class="name">
+                            <b>
+                            licenseslist</b>
+                            <a href="#licenseslist"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="medicalConditions"></a>
+                        <span class="name">
+                            <b>
+                            medicalConditions</b>
+                            <a href="#medicalConditions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="months"></a>
+                        <span class="name">
+                            <b>
+                            months</b>
+                            <a href="#months"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="monthvalue"></a>
+                        <span class="name">
+                            <b>
+                            monthvalue</b>
+                            <a href="#monthvalue"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousDrivers"></a>
+                        <span class="name">
+                            <b>
+                            previousDrivers</b>
+                            <a href="#previousDrivers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Driver.html" target="_self" >Driver[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:68</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showDate"></a>
+                        <span class="name">
+                            <b>
+                            showDate</b>
+                            <a href="#showDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showGregorianDate"></a>
+                        <span class="name">
+                            <b>
+                            showGregorianDate</b>
+                            <a href="#showGregorianDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:65</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showHijriDate"></a>
+                        <span class="name">
+                            <b>
+                            showHijriDate</b>
+                            <a href="#showHijriDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepNumber"></a>
+                        <span class="name">
+                            <b>
+                            stepNumber</b>
+                            <a href="#stepNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepsData"></a>
+                        <span class="name">
+                            <b>
+                            stepsData</b>
+                            <a href="#stepsData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="termSearchFn"></a>
+                        <span class="name">
+                            <b>
+                            termSearchFn</b>
+                            <a href="#termSearchFn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>AppUtils.searchItemTerm</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="violations"></a>
+                        <span class="name">
+                            <b>
+                            violations</b>
+                            <a href="#violations"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="years"></a>
+                        <span class="name">
+                            <b>
+                            years</b>
+                            <a href="#years"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>number[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="f"></a>
+                        <span class="name"><b>f</b><a href="#f"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>f()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:171</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="df"></a>
+                        <span class="name"><b>df</b><a href="#df"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>df()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="174" class="link-to-prism">src/app/components/quotation-request/drivers/additional-driver/additional-driver.component.ts:174</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, HostListener, Input, OnInit, Output, ChangeDetectionStrategy } from &quot;@angular/core&quot;;
+import { FormBuilder, FormGroup, Validators } from &quot;@angular/forms&quot;;
+import DropDownValues from &quot;src/app/helpers/utils/DropDownValues&quot;;
+import { Scroll } from &quot;src/app/helpers/utils/scroll&quot;;
+import { NationalIdValidator } from &quot;src/app/helpers/validators/NationalIdValidator&quot;;
+import { DriverLicense } from &quot;src/app/models/insurance-steps/DriverLicense&quot;;
+import { AppService } from &quot;src/app/services/app.service&quot;;
+import { InsuranceStepsService } from &quot;src/app/services/insurance-steps/insurance-steps.service&quot;;
+import { debounceTime, distinctUntilChanged } from &#x27;rxjs/operators&#x27;;
+import { Driver } from &#x27;src/app/models/insurance-steps/Driver&#x27;;
+import AppUtils from &#x27;src/app/helpers/utils/AppUtils&#x27;;
+
+@Component({
+  changeDetection: ChangeDetectionStrategy.Default,
+  selector: &quot;app-additional-driver&quot;,
+  templateUrl: &quot;./additional-driver.component.html&quot;,
+  styleUrls: [
+    &quot;../../quotation-request-page/quotation-request-page.component.css&quot;,
+    &quot;./additional-driver.component.css&quot;,
+  ],
+})
+export class AdditionalDriverComponent implements OnInit {
+  @Output() showList &#x3D; new EventEmitter();
+
+  // event comming from diver component
+  @Input() openAddingDriverForm: boolean;
+
+  additionalDriverInfoForm: FormGroup;
+  driverLicenseForm: FormGroup;
+
+  isDrivingPercentageComplete: boolean;
+
+  driverLicense &#x3D; false;
+  driverViolation &#x3D; false;
+  driverHealth &#x3D; false;
+  addedlicense &#x3D; false;
+  addingDriver &#x3D; false;
+
+  hasChildren &#x3D; false;
+  stepNumber: any;
+  stepsData;
+
+  fromZeroToTen &#x3D; DropDownValues.fromZeroToTen;
+  showDate &#x3D; false;
+  months: { id: number; nameAr: string; name: string }[];
+  years: number[] &#x3D; [];
+
+  licenseslist &#x3D; [];
+  foreignlicenses &#x3D; [];
+  medicalConditions: any &#x3D; [];
+  violations &#x3D; [];
+
+  additionalDriverInfoFormSubmitted: boolean;
+  driverLicenseFormSubmitted: boolean;
+  isLoading: boolean;
+  isMedicalCheckboxEmpty: boolean;
+  isViolationCheckboxEmpty: boolean;
+  lang: string;
+  isOnMidScreen: boolean;
+
+  day: number[] &#x3D; [];
+
+  hijriYears: number[] &#x3D; [];
+
+  showGregorianDate &#x3D; false;
+  showHijriDate &#x3D; false;
+  monthvalue: number;
+  previousDrivers: Driver[]&#x3D; [];
+  termSearchFn &#x3D; AppUtils.searchItemTerm;
+
+  constructor(
+    private fb: FormBuilder,
+    private insuranceSteps: InsuranceStepsService,
+    private scrollOnErrer: Scroll,
+    private appService: AppService
+  ) {}
+
+  ngOnInit() {
+    this.getStepData();
+    if (this.openAddingDriverForm) {
+      this.showAditionalDriver();
+    }
+    this.appService.getAppLang().subscribe((language) &#x3D;&gt; {
+      this.lang &#x3D; language;
+    });
+    
+
+  }
+
+  initForm() {
+    this.additionalDriverInfoForm &#x3D; this.fb.group({
+      typeId: [2],
+      genderId: [&quot;M&quot;],
+      identityNumber: [
+        &quot;&quot;,
+        Validators.compose([
+          Validators.required,
+          NationalIdValidator,
+          Validators.minLength(10),
+        ]),
+      ],
+      birthDate: [null],
+      educationLevelId: [null, [Validators.required]],
+      socialStatusId: [1],
+      drivingPercentageId: [null, [Validators.required]],
+      homeCityId: [null],
+      relationId: [null, [Validators.required]],
+      licenseTypeId: [null, [Validators.required]],
+      numberOfAccidentsLast5Years: [null],
+      numberOfClaimsLast5Years: [null],
+      childrenUnder16Years: [null],
+      medicalConditions: [this.medicalConditions],
+      driverViolations: [this.violations],
+      driverLicenses: [this.foreignlicenses],
+      month: [null, [Validators.required]],
+      year: [null, [Validators.required]],
+    });
+    this.whatchDriversPercentage();
+    this.initdriverLicensesForm();
+    this.validateIdentityNo();
+    this.watchIdentityNoToShowDate();
+  }
+
+  showAditionalDriver() {
+    this.addingDriver &#x3D; !this.addingDriver;
+    this.additionalDriverInfoFormSubmitted &#x3D; false;
+    this.initForm();
+    
+  }
+  cancelAddingDriver() {
+    this.addingDriver &#x3D; !this.addingDriver;
+    this.foreignlicenses.length &#x3D; 0;
+
+    const firstElementWithError &#x3D; document.querySelector(&quot;#add-driver&quot;);
+    this.scrollOnErrer.scrollTo(firstElementWithError);
+    return;
+  }
+
+  whatchDriversPercentage() {
+    this.additionalDriverInfoForm
+      .get(&quot;drivingPercentageId&quot;)
+      .valueChanges.subscribe((percentage) &#x3D;&gt; {
+        let previousDrivers &#x3D; this.insuranceSteps.userQuoteRequest.value.drivers;
+        let percentagesSum &#x3D; 0; // Indicates the sum of all additional drivers percentages in the array
+
+        previousDrivers.forEach((driver) &#x3D;&gt; {
+          // If the main driver exist
+            percentagesSum +&#x3D; driver.drivingPercentageId;
+        });
+        // Add the value to be added to the percentages sum
+        percentagesSum +&#x3D; percentage;
+
+          // Check if the selected percentage and previous percentages sum exceeds 100
+          if (percentagesSum &gt; 100) {
+  
+            // Show validation error
+             this.f.drivingPercentageId.setErrors({
+              drivingPercentageComplete: true,
+            }); 
+          } else {
+             this.f.drivingPercentageId.setErrors(null); 
+
+            // Update main driver with the new value
+          }
+        
+      });
+ 
+  }
+
+  // convenience getter for easy access to form fields f stand for additional driver form and df for drive license form
+  get f() {
+    return this.additionalDriverInfoForm.controls;
+  }
+  get df() {
+    return this.driverLicenseForm.controls;
+  }
+
+  formatDate(d): string {
+    if (d &#x3D;&#x3D;&#x3D; null) {
+      return null;
+    }
+
+    return [d.month &lt; 10 ? &quot;0&quot; + d.month : d.month, d.year].join(&quot;/&quot;);
+  }
+
+  submitForm() {
+    this.additionalDriverInfoFormSubmitted &#x3D; true;
+    this.validateCheckBoxes();
+    if (this.additionalDriverInfoForm.invalid) {
+      const firstElementWithError &#x3D; document.querySelector(
+        &quot;.ng-invalid[formControlName]&quot;
+      );
+      this.scrollOnErrer.scrollTo(firstElementWithError);
+      return;
+    }
+
+    const birthDate &#x3D; {
+      year: this.additionalDriverInfoForm.value.year,
+      month: this.additionalDriverInfoForm.value.month,
+    };
+
+    const formattedDate &#x3D; this.formatDate(birthDate);
+    this.additionalDriverInfoForm.value.birthDate &#x3D; formattedDate;
+
+    this.additionalDriverInfoForm.value.childrenUnder16Years &#x3D;
+      this.additionalDriverInfoForm.value.insuredSocialStatusId &#x3D;&#x3D;&#x3D; 2
+        ? this.additionalDriverInfoForm.value.childrenUnder16Years
+        : null;
+    const driverInfo &#x3D; this.additionalDriverInfoForm.value;
+    driverInfo.identityNumber &#x3D; parseInt(
+      this.additionalDriverInfoForm.value.identityNumber
+    );
+    const tempDrivers &#x3D; [];
+    tempDrivers.push(driverInfo);
+    // Remove the date from the form
+    delete this.additionalDriverInfoForm.value.day;
+    delete this.additionalDriverInfoForm.value.month;
+    delete this.additionalDriverInfoForm.value.year;
+    this.insuranceSteps.setUserQuoteReqDrivers(tempDrivers);
+    this.additionalDriverInfoFormSubmitted &#x3D; false;
+    
+    this.showList.emit();
+  }
+
+  initdriverLicensesForm() {
+    this.driverLicenseForm &#x3D; this.fb.group({
+      licenseTypeId: [null],
+      countryId: [null],
+      numberOfYears: [null],
+    });
+  }
+
+  getStepData() {
+    this.insuranceSteps.getInsuranceStepsData().subscribe((stepsData) &#x3D;&gt; {
+      this.stepsData &#x3D; stepsData;
+    });
+  }
+
+  addLicense(id: DriverLicense) {
+    this.driverLicenseFormSubmitted &#x3D; true;
+    if (this.driverLicenseForm.invalid) {
+      return;
+    }
+    const country &#x3D; this.stepsData.Countries.filter(
+      (country) &#x3D;&gt; country.id &#x3D;&#x3D;&#x3D; id.countryId
+    )[0];
+    const licenseType &#x3D; this.stepsData.LicenseTypes.filter(
+      (type) &#x3D;&gt; type.id &#x3D;&#x3D;&#x3D; id.licenseTypeId
+    )[0];
+    const noOfYear &#x3D; this.fromZeroToTen.filter(
+      (no) &#x3D;&gt; no.id &#x3D;&#x3D;&#x3D; id.numberOfYears
+    )[0];
+    const driverLicense &#x3D; {
+      country: country,
+      licenseType: licenseType,
+      noOfYear: noOfYear,
+    };
+    this.licenseslist.push(driverLicense);
+    this.foreignlicenses.push(id);
+    this.driverLicenseForm.reset();
+    this.driverLicenseFormSubmitted &#x3D; false;
+  }
+
+  removeFromLicenseList(licenseData: any): void {
+    // Remove from licenses list
+    const index: number &#x3D; this.licenseslist.indexOf(licenseData);
+    if (index !&#x3D;&#x3D; -1) {
+      this.licenseslist.splice(index, 1);
+    }
+
+    // Construct foreign license object to be removed from the array
+    const licenseToRemove &#x3D; {
+      driverLicenses: {
+        licenseTypeId: licenseData.licenseType.id,
+        countryId: licenseData.country.id,
+        numberOfYears: licenseData.noOfYear.id,
+      },
+    };
+
+    // Find the index of the foreign license to be removed in the foreign licenses array
+    let foreignLicenseIdx &#x3D; -1;
+    for (let i &#x3D; 0; i &lt; this.foreignlicenses.length; i++) {
+      if (
+        JSON.stringify(this.foreignlicenses[i]) &#x3D;&#x3D;&#x3D;
+        JSON.stringify(licenseToRemove)
+      ) {
+        foreignLicenseIdx &#x3D; i;
+      }
+    }
+
+    // Remove the license from the foreign licenses array
+    if (foreignLicenseIdx !&#x3D;&#x3D; -1) {
+      this.foreignlicenses.splice(foreignLicenseIdx, 1);
+    }
+  }
+
+  addViolation(id: number) {
+    this.isViolationCheckboxEmpty &#x3D; false;
+    var index &#x3D; this.violations
+      .map((e) &#x3D;&gt; {
+        return e.violationId;
+      })
+      .indexOf(id);
+    if (index &#x3D;&#x3D;&#x3D; -1) {
+      this.violations.push({ violationId: id });
+    } else {
+      this.violations.splice(index, 1);
+    }
+  }
+
+  addMedicalCondition(id: number) {
+    this.isMedicalCheckboxEmpty &#x3D; false;
+    var index &#x3D; this.medicalConditions
+      .map((e) &#x3D;&gt; {
+        return e.medicalConditionId;
+      })
+      .indexOf(id);
+    if (index &#x3D;&#x3D;&#x3D; -1) {
+      this.medicalConditions.push({ medicalConditionId: id });
+    } else {
+      this.medicalConditions.splice(index, 1);
+    }
+  }
+
+  hasChild() {
+    this.additionalDriverInfoForm.get(&quot;childrenUnder16Years&quot;).reset();
+    this.hasChildren &#x3D; !this.hasChildren;
+
+    if (this.hasChildren) {
+      this.additionalDriverInfoForm.controls[
+        &quot;childrenUnder16Years&quot;
+      ].setValidators([Validators.required]);
+      this.additionalDriverInfoForm.controls[
+        &quot;childrenUnder16Years&quot;
+      ].updateValueAndValidity();
+    } else {
+      this.additionalDriverInfoForm.controls[
+        &quot;childrenUnder16Years&quot;
+      ].setValidators(null);
+      this.additionalDriverInfoForm.controls[
+        &quot;childrenUnder16Years&quot;
+      ].updateValueAndValidity();
+    }
+  }
+  showLicenseForm() {
+    this.driverLicense &#x3D; !this.driverLicense;
+    this.driverLicenseFormSubmitted &#x3D; false;
+    this.driverLicenseForm.reset();
+    this.foreignlicenses.length &#x3D; 0;
+    this.licenseslist.length &#x3D; 0;
+
+    if (this.driverLicense) {
+      this.driverLicenseForm.controls[&quot;licenseTypeId&quot;].setValidators([
+        Validators.required,
+      ]);
+
+      this.driverLicenseForm.controls[&quot;countryId&quot;].setValidators([
+        Validators.required,
+      ]);
+      this.driverLicenseForm.controls[&quot;numberOfYears&quot;].setValidators([
+        Validators.required,
+      ]);
+      this.driverLicenseForm.updateValueAndValidity();
+    } else {
+      this.driverLicenseForm.controls[&quot;licenseTypeId&quot;].clearValidators();
+      this.driverLicenseForm.controls[&quot;countryId&quot;].clearValidators();
+      this.driverLicenseForm.controls[&quot;numberOfYears&quot;].clearValidators();
+      this.driverLicenseForm.updateValueAndValidity();
+    }
+  }
+
+  showMedicalCondition() {
+    this.driverHealth &#x3D; !this.driverHealth;
+    this.isViolationCheckboxEmpty &#x3D; false;
+  }
+
+  showViolations() {
+    this.driverViolation &#x3D; !this.driverViolation;
+    this.isViolationCheckboxEmpty &#x3D; false;
+  }
+
+  scrollToTarget(el: HTMLElement) {
+    var bodyRect &#x3D; document.body.getBoundingClientRect(),
+      elemRect &#x3D; el.getBoundingClientRect(),
+      offset &#x3D; elemRect.top - bodyRect.top - 300;
+
+    window.scrollTo({
+      top: offset,
+      behavior: &quot;smooth&quot;,
+    });
+  }
+
+  validateCheckBoxes() {
+    if (this.medicalConditions.length &lt;&#x3D; 0 &amp;&amp; this.driverHealth) {
+      this.additionalDriverInfoForm
+        .get(&quot;medicalConditions&quot;)
+        .setErrors({ incorrect: true });
+      this.isMedicalCheckboxEmpty &#x3D; true;
+    } else {
+      this.additionalDriverInfoForm
+        .get(&quot;medicalConditions&quot;)
+        .setValue(this.medicalConditions);
+
+      this.isMedicalCheckboxEmpty &#x3D; false;
+    }
+    if (this.violations.length &lt;&#x3D; 0 &amp;&amp; this.driverViolation) {
+      this.additionalDriverInfoForm
+        .get(&quot;driverViolations&quot;)
+        .setErrors({ incorrect: true });
+      this.isViolationCheckboxEmpty &#x3D; true;
+    } else {
+      this.additionalDriverInfoForm
+        .get(&quot;driverViolations&quot;)
+        .setValue(this.violations);
+      this.isViolationCheckboxEmpty &#x3D; false;
+    }
+  }
+
+  watchIdentityNoToShowDate() {
+    var currentMeladiDate &#x3D; new Date().getFullYear();
+    var currentHijriYear: any &#x3D; new Intl.DateTimeFormat(&quot;ar-TN-u-ca-islamic&quot;, {
+      year: &quot;numeric&quot;,
+    }).format(Date.now());
+
+    this.additionalDriverInfoForm
+      .get(&quot;identityNumber&quot;)
+      .valueChanges.subscribe((identityNumber) &#x3D;&gt; {
+        if (identityNumber.toString().startsWith(&quot;2&quot;) &amp;&amp; identityNumber.length &gt; 9) {
+          this.years &#x3D; [];
+          this.months &#x3D; DropDownValues.MeladiMonths;
+          var b &#x3D; currentMeladiDate - 90;
+         for (b; b &lt;&#x3D; currentMeladiDate - 17; b++) {
+          this.years.push(b);
+          }
+          this.showDate &#x3D; true;
+        } else  if (identityNumber.toString().startsWith(&quot;1&quot;) &amp;&amp; identityNumber.length &gt; 9) {
+          this.years &#x3D; [];
+          this.months &#x3D; DropDownValues.higriMonths;
+          var b &#x3D; parseInt(currentHijriYear.substring(0, 4)) - 90;
+        for (b; b &lt;&#x3D; parseInt(currentHijriYear.substring(0, 4)) - 17; b++) {
+          this.years.push(b);
+          }
+          this.showDate &#x3D; true;
+    
+        }
+      });
+  }
+
+  validateIdentityNo() {
+    this.f.identityNumber.valueChanges.subscribe((identityNumber) &#x3D;&gt; {
+      if (identityNumber.length &#x3D;&#x3D; 10) {
+        const currentDriversId &#x3D;  this.insuranceSteps.userQuoteRequest.value.drivers;
+        console.log(currentDriversId);
+        for (var i &#x3D; 0; i &lt; currentDriversId.length; i++) {
+          if (identityNumber &#x3D;&#x3D; currentDriversId[i].identityNumber) {
+            this.f.identityNumber.setErrors({ duplicate: true });
+            break;
+          } else {
+            this.f.identityNumber.setErrors(null);
+          }
+        }
+      }
+    });
+  }
+  @HostListener(&quot;window:resize&quot;, [&quot;$event&quot;])
+  getScreenSize(event?): void {
+    // If browser window is resized below mid screen size width
+    window.innerWidth &lt;&#x3D; 1000
+      ? (this.isOnMidScreen &#x3D; true)
+      : (this.isOnMidScreen &#x3D; false);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot; id&#x3D;&quot;add-driver&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-2&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-lg-7 col-md-7 col-sm-7&quot;&gt;
+        &lt;label class&#x3D;&quot;question-lable&quot;&gt;{{ &#x27;QuotationRequestForms.AdditionalDriver.AddDriver&#x27; | translate }}
+            &lt;i class&#x3D;&quot;icon ion-md-help-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot;
+                [ngbTooltip]&#x3D;&quot;(&#x27;QuotationRequestForms.Tooltips.AdditionalDriver&#x27; | translate)&quot; aria-hidden&#x3D;&quot;true&quot;
+                style&#x3D;&quot;width:20.0;&quot;&gt;
+            &lt;/i&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-lg-2 col-md-5 col-sm-5&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;question1&quot; class&#x3D;&quot;question-checkbox&quot; [checked]&#x3D;&quot;addingDriver&quot;
+            (change)&#x3D;&quot;showAditionalDriver()&quot; /&gt;&lt;label for&#x3D;&quot;question1&quot;&gt;&lt;span class&#x3D;&quot;ui&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-lg-1&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;addingDriver&quot;&gt;
+    &lt;div class&#x3D;&quot;col-sm-2 col-md-2 col-lg-2 flex-container&quot;&gt;
+        &lt;div class&#x3D;&quot;flex-centered mt-0&quot;&gt;
+            &lt;div class&#x3D;&quot;round round-lg hollow color&quot; style&#x3D;&quot;margin: 10px auto;&quot;&gt;
+                &lt;span&gt;5&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;title&quot;&gt;
+                &lt;h6&gt; {{&#x27;QuotationRequestForms.StepsTitles.AddDriverInfo&#x27; | translate }}&lt;/h6&gt;
+                &lt;img src&#x3D;&#x27;../../../../assets/images/icons8-driver-80.png&#x27; class&#x3D;&quot;logo&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class&#x3D;&quot;col-sm-9 col-md-9 col-lg-9 border-right border-left&quot;&gt;
+        &lt;form [formGroup]&#x3D;&quot;additionalDriverInfoForm&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.AdditionalDriver.NationalIDLabel&#x27; | translate }}
+
+                    &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;input formControlName&#x3D;&quot;identityNumber&quot; oninput&#x3D;&quot;this.value &#x3D; this.value.replace(/[^0-9.]/g, &#x27;&#x27;).replace(/(\..*)\./g, &#x27;$1&#x27;);&quot;  maxlength&#x3D;&quot;10&quot; autocomplete&#x3D;&quot;on&quot; name&#x3D;&quot;identityNumber&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot;&gt;
+						&lt;div *ngIf&#x3D;&quot;f.identityNumber.errors&quot;&gt;
+							&lt;div *ngIf&#x3D;&quot;f.identityNumber.touched &amp;&amp; f.identityNumber.errors.required&quot; class&#x3D;&quot;v-meassage&quot;&gt;
+								{{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+							&lt;/div&gt;
+							&lt;div *ngIf&#x3D;&quot;f.identityNumber.dirty &amp;&amp; !f.identityNumber.errors.isValidNationalId &amp;&amp; !f.identityNumber.errors.required&quot; class&#x3D;&quot;v-meassage&quot;&gt;
+								{{ &#x27;Errors.InvalidNationalID&#x27; | translate }}
+							&lt;/div&gt;
+							&lt;div *ngIf&#x3D;&quot;f.identityNumber.dirty &amp;&amp; f.identityNumber.errors.minlength&quot; class&#x3D;&quot;v-meassage&quot;&gt;
+								{{ &#x27;Errors.IncompleteInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                            &lt;div *ngIf&#x3D;&quot;f.identityNumber.dirty &amp;&amp; f.identityNumber.errors.duplicate&quot; class&#x3D;&quot;v-meassage&quot;&gt;
+                                {{ &#x27;Errors.DriverExist&#x27; | translate }}
+							&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Gender&#x27; | translate }}&lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; name&#x3D;&quot;genderId&quot; formControlName&#x3D;&quot;genderId&quot;
+                                value&#x3D;&quot;M&quot; [checked]&#x3D;&quot;true&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Male&#x27; | translate }} &lt;/span&gt;
+                        &lt;/label&gt;
+
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; name&#x3D;&quot;genderId&quot; formControlName&#x3D;&quot;genderId&quot;
+                                value&#x3D;&quot;F&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Female&#x27; | translate }}&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Status&#x27; | translate }} &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; formControlName&#x3D;&quot;socialStatusId&quot; [value]&#x3D;&quot;1&quot;
+                                [checked]&#x3D;&quot;true&quot; (change)&#x3D;&quot;hasChild()&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Single&#x27; | translate }}
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+
+                        &lt;label&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;option-input radio&quot; name&#x3D;&quot;socialStatusId&quot;
+                                formControlName&#x3D;&quot;socialStatusId&quot; [value]&#x3D;&quot;2&quot; [checked]&#x3D;&quot;hasChildren&quot;
+                                (change)&#x3D;&quot;hasChild()&quot; /&gt;
+                            &lt;span class&#x3D;&quot;radio-text&quot;&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Married&#x27; | translate }}
+                            &lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+             &lt;!--  date picker --&gt;
+
+             &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot; *ngIf&#x3D;&quot;showDate&quot;&gt;
+                &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Birth&#x27; | translate }} &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;col&quot;&gt;
+                            &lt;ng-select  [items]&#x3D;&quot;months&quot;  bindValue&#x3D;&quot;id&quot; formControlName&#x3D;&quot;month&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                                 placeholder&#x3D;&quot;MM&quot; 
+                                 [ngStyle]&#x3D;&quot;{&#x27;display&#x27;:&#x27;block&#x27;, &#x27;width&#x27;: &#x27;100%&#x27;}&quot;
+                                [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: additionalDriverInfoFormSubmitted &amp;&amp; f.month.errors }&quot;&gt;
+                            
+                                &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                    &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                                &lt;/ng-template&gt;
+                                &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                    &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                                &lt;/ng-template&gt;
+                            &lt;/ng-select&gt;
+                           
+                        &lt;div *ngIf&#x3D;&quot;additionalDriverInfoFormSubmitted &amp;&amp; f.month.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.month.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col&quot;&gt;
+                        &lt;ng-select [items]&#x3D;&quot;years&quot; [bindLabel]&#x3D;&quot;years&quot; [bindValue]&#x3D;&quot;years&quot;  [ngStyle]&#x3D;&quot;{&#x27;display&#x27;:&#x27;block&#x27;, &#x27;width&#x27;: &#x27;100%&#x27;}&quot;
+                           formControlName&#x3D;&quot;year&quot; placeholder&#x3D;&quot;YYYY&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: additionalDriverInfoFormSubmitted &amp;&amp; f.year.errors }&quot;&gt;&lt;/ng-select&gt;
+                        &lt;div *ngIf&#x3D;&quot;additionalDriverInfoFormSubmitted &amp;&amp; f.year.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.year.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;!-- //  date picker --&gt;
+            
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot; *ngIf&#x3D;&quot;hasChildren&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;{{ &#x27;QuotationRequestForms.DriverInfo.Children&#x27; | translate }}
+
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;fromZeroToTen&quot; formControlName&#x3D;&quot;childrenUnder16Years&quot; bindLabel&#x3D;&quot;name&quot;
+                            bindValue&#x3D;&quot;id&quot;&gt;
+                        &lt;/ng-select&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;{{ &#x27;QuotationRequestForms.DriverInfo.Education&#x27; | translate }}
+
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.EducationLevels&quot; bindValue&#x3D;&quot;id&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                            [loading]&#x3D;&quot;!stepsData.EducationLevels&quot; formControlName&#x3D;&quot;educationLevelId&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: additionalDriverInfoFormSubmitted &amp;&amp; f.educationLevelId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+                        &lt;div *ngIf&#x3D;&quot;additionalDriverInfoFormSubmitted &amp;&amp; f.educationLevelId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.educationLevelId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.LicenseType&#x27; | translate }}
+
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.LicenseTypes&quot; formControlName&#x3D;&quot;licenseTypeId&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                            [loading]&#x3D;&quot;!stepsData.LicenseTypes&quot; bindValue&#x3D;&quot;id&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: additionalDriverInfoFormSubmitted &amp;&amp; f.licenseTypeId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+                        &lt;div *ngIf&#x3D;&quot;additionalDriverInfoFormSubmitted &amp;&amp; f.licenseTypeId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.licenseTypeId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.AccidentCounts&#x27; | translate }}
+                            &lt;i class&#x3D;&quot;icon ion-md-help-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot;
+                            [ngbTooltip]&#x3D;&quot;(&#x27;QuotationRequestForms.Tooltips.DriverNoOfAccident&#x27; | translate)&quot; aria-hidden&#x3D;&quot;true&quot; style&#x3D;&quot;width:20.0;&quot;&gt;
+                            &lt;/i&gt;
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;fromZeroToTen&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot; 
+                            formControlName&#x3D;&quot;numberOfAccidentsLast5Years&quot;&gt;
+                        &lt;/ng-select&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-6 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.ClaimCount&#x27; | translate }}
+                            &lt;i class&#x3D;&quot;icon ion-md-help-circle tooltip-icon&quot; placement&#x3D;&quot;top&quot;
+                            [ngbTooltip]&#x3D;&quot;(&#x27;QuotationRequestForms.Tooltips.DriverNoOfAccident&#x27; | translate)&quot; aria-hidden&#x3D;&quot;true&quot; style&#x3D;&quot;width:20.0;&quot;&gt;
+                            &lt;/i&gt;
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;fromZeroToTen&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot; 
+                            formControlName&#x3D;&quot;numberOfClaimsLast5Years&quot;&gt;
+                        &lt;/ng-select&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt; {{ &#x27;QuotationRequestForms.AdditionalDriver.Percentage&#x27; | translate }}
+
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.DrivingPercentages&quot; formControlName&#x3D;&quot;drivingPercentageId&quot;
+                            [loading]&#x3D;&quot;!stepsData.DrivingPercentages&quot; bindValue&#x3D;&quot;id&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: additionalDriverInfoFormSubmitted &amp;&amp; f.drivingPercentageId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+                       
+                        &lt;div *ngIf&#x3D;&quot;f.drivingPercentageId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;additionalDriverInfoFormSubmitted &amp;&amp;f.drivingPercentageId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                                &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.drivingPercentageId.dirty &amp;&amp; f.drivingPercentageId.errors.drivingPercentageComplete&quot;&gt;  
+                                    {{ &#x27;Errors.InCompletePercentage&#x27; | translate }}
+                                &lt;/div&gt;
+                        &lt;/div&gt;
+                       
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-sm-12 col-md-4 col-lg-4&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt; {{ &#x27;QuotationRequestForms.DriverInfo.Relation&#x27; | translate }}
+
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.relations&quot; formControlName&#x3D;&quot;relationId&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                            [loading]&#x3D;&quot;!stepsData.relations&quot; bindValue&#x3D;&quot;id&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: additionalDriverInfoFormSubmitted &amp;&amp; f.relationId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+                        &lt;div *ngIf&#x3D;&quot;additionalDriverInfoFormSubmitted &amp;&amp; f.relationId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;f.relationId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;!-----&gt;
+
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-lg-10 col-md-8 col-sm-9&quot;&gt;
+                    &lt;label class&#x3D;&quot;question-lable&quot;&gt;
+                        {{ &#x27;QuotationRequestForms.AdditionalDriver.Conditions&#x27; | translate }}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-lg-2 col-md-2 col-sm-3&quot;&gt;
+                    &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;health&quot; class&#x3D;&quot;question-checkbox&quot; (checked)&#x3D;&quot;driverHealth&quot;
+                        (change)&#x3D;&quot; showMedicalCondition()&quot; /&gt;&lt;label for&#x3D;&quot;health&quot;&gt;&lt;span class&#x3D;&quot;ui&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div *ngIf&#x3D;&quot;isMedicalCheckboxEmpty&quot; class&#x3D;&quot;v-meassage  pt-2 pb-2&quot;&gt;
+                {{ &#x27;Errors.MedicalConditionInvalid&#x27; | translate }}&lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;driverHealth&quot;&gt;
+                &lt;!-- spinner --&gt;
+                &lt;div class&#x3D;&quot;spinner-border&quot; role&#x3D;&quot;status&quot; *ngIf&#x3D;&quot;!stepsData.MedicalConditions&quot;&gt;
+                    &lt;span class&#x3D;&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-sm-6 col-md-4 col-lg-4&quot;
+                    *ngFor&#x3D;&quot;let medical of stepsData.MedicalConditions; let i &#x3D; index;&quot;&gt;
+
+                    &lt;input class&#x3D;&quot;cbx&quot; type&#x3D;&quot;checkbox&quot; [id]&#x3D;&quot;medical?.name + i + &#x27;a&#x27;&quot; style&#x3D;&quot;display: none;&quot;
+                        (change)&#x3D;&quot;addMedicalCondition(medical.id)&quot;&gt;
+                    &lt;label for&#x3D;&quot;{{medical.name + i+ &#x27;a&#x27;}}&quot; class&#x3D;&quot;check pt-2 pb-2&quot;&gt;
+                        &lt;svg width&#x3D;&quot;18px&quot; height&#x3D;&quot;18px&quot; viewBox&#x3D;&quot;0 0 20 18&quot;&gt;
+                            &lt;path
+                                d&#x3D;&quot;M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z&quot;&gt;
+                            &lt;/path&gt;
+                            &lt;polyline points&#x3D;&quot;1 9 7 14 15 4&quot;&gt;&lt;/polyline&gt;
+                        &lt;/svg&gt;
+                        &lt;span&gt; {{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? medical.nameAr : medical.name }} &lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;hr&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-lg-10 col-md-8 col-sm-9&quot;&gt;
+                    &lt;label
+                        class&#x3D;&quot;question-lable&quot;&gt;{{ &#x27;QuotationRequestForms.AdditionalDriver.Violations&#x27; | translate }}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-lg-2 col-md-2 col-sm-3&quot;&gt;
+                    &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;driverViolation&quot; class&#x3D;&quot;question-checkbox&quot; (checked)&#x3D;&quot;driverViolation&quot;
+                        (change)&#x3D;&quot;showViolations()&quot; /&gt;&lt;label for&#x3D;&quot;driverViolation&quot;&gt;&lt;span class&#x3D;&quot;ui&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;isViolationCheckboxEmpty&quot; class&#x3D;&quot;v-meassage  pt-2 pb-2&quot;&gt;
+                {{ &#x27;Errors.ViolationInvalid&#x27; | translate }} &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;driverViolation&quot;&gt;
+
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;!-- spinner --&gt;
+                    &lt;div class&#x3D;&quot;spinner-border&quot; role&#x3D;&quot;status&quot; *ngIf&#x3D;&quot;!stepsData.violations&quot;&gt;
+                        &lt;span class&#x3D;&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-sm-6 col-md-4 col-lg-4&quot;
+                        *ngFor&#x3D;&quot;let violation of stepsData.violations; let i &#x3D; index;&quot;&gt;
+                        &lt;input class&#x3D;&quot;cbx&quot; type&#x3D;&quot;checkbox&quot; [id]&#x3D;&quot;violation.name + i + &#x27;a&#x27;&quot; style&#x3D;&quot;display: none;&quot;
+                            (change)&#x3D;&quot;addViolation(violation.id)&quot;&gt;
+                        &lt;label for&#x3D;&quot;{{violation.name + i + &#x27;a&#x27;}}&quot; class&#x3D;&quot;check pt-2 pb-2&quot;&gt;
+                            &lt;svg width&#x3D;&quot;18px&quot; height&#x3D;&quot;18px&quot; viewBox&#x3D;&quot;0 0 20 18&quot;&gt;
+                                &lt;path
+                                    d&#x3D;&quot;M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z&quot;&gt;
+                                &lt;/path&gt;
+                                &lt;polyline points&#x3D;&quot;1 9 7 14 15 4&quot;&gt;&lt;/polyline&gt;
+                            &lt;/svg&gt;
+                            &lt;span&gt; {{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? violation.nameAr : violation.name }}&lt;/span&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+        &lt;hr&gt;
+        &lt;!-- driverLicenseForm for driverLicense array--&gt;
+        &lt;form [formGroup]&#x3D;&quot;driverLicenseForm&quot;&gt;
+
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-lg-10 col-md-8 col-sm-9&quot;&gt;
+                    &lt;label
+                        class&#x3D;&quot;question-lable&quot;&gt;{{ &#x27;QuotationRequestForms.AdditionalDriver.License&#x27; | translate }}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-lg-2 col-md-2 col-sm-3&quot;&gt;
+                    &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;driverLicense&quot; class&#x3D;&quot;question-checkbox&quot; (checked)&#x3D;&quot;driverLicense&quot;
+                        (change)&#x3D;&quot;showLicenseForm()&quot; /&gt;&lt;label for&#x3D;&quot;driverLicense&quot;&gt;&lt;span class&#x3D;&quot;ui&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+
+
+            &lt;!-- license table --&gt;
+            &lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;driverLicense&quot;&gt;
+                &lt;div class&#x3D;&quot;col-lg-3 col-md-12 col-sm-12 col-xs-12&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;{{ &#x27;QuotationRequestForms.MoreDetails.LicenseType&#x27; | translate }}
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.LicenseTypes&quot; bindValue&#x3D;&quot;id&quot; formControlName&#x3D;&quot;licenseTypeId&quot; [searchFn]&#x3D;&quot;termSearchFn&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: driverLicenseFormSubmitted &amp;&amp; df.licenseTypeId.errors }&quot;&gt;
+                            &lt;ng-template ng-label-tmp let-item&#x3D;&quot;item&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                            &lt;ng-template ng-option-tmp let-item&#x3D;&quot;item&quot; let-search&#x3D;&quot;searchTerm&quot; let-index&#x3D;&quot;index&quot;&gt;
+                                &lt;span&gt;{{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? item.nameAr : item.name }}&lt;/span&gt;
+                            &lt;/ng-template&gt;
+                        &lt;/ng-select&gt;
+
+                        &lt;div *ngIf&#x3D;&quot;driverLicenseFormSubmitted &amp;&amp; df.licenseTypeId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;df.licenseTypeId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-lg-3 col-md-12 col-sm-12 col-xs-12&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt; {{ &#x27;QuotationRequestForms.MoreDetails.Country&#x27; | translate }}
+
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;stepsData.Countries&quot; bindValue&#x3D;&quot;id&quot; formControlName&#x3D;&quot;countryId&quot;
+                            bindLabel&#x3D;&quot;nameAr&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: driverLicenseFormSubmitted &amp;&amp; df.countryId.errors }&quot;&gt;
+                        &lt;/ng-select&gt;
+
+                        &lt;div *ngIf&#x3D;&quot;driverLicenseFormSubmitted &amp;&amp; df.countryId.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;df.countryId.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-lg-3 col-md-12 col-sm-12 col-xs-12&quot;&gt;
+                    &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                        &lt;label&gt;{{ &#x27;QuotationRequestForms.MoreDetails.years&#x27; | translate }}
+
+                        &lt;/label&gt;
+                        &lt;ng-select [items]&#x3D;&quot;fromZeroToTen&quot; bindLabel&#x3D;&quot;name&quot; bindValue&#x3D;&quot;id&quot;
+                            formControlName&#x3D;&quot;numberOfYears&quot;
+                            [ngClass]&#x3D;&quot;{ &#x27;ng-invalid&#x27;: driverLicenseFormSubmitted &amp;&amp; df.numberOfYears.errors }&quot;&gt;
+                        &lt;/ng-select&gt;
+
+                        &lt;div *ngIf&#x3D;&quot;driverLicenseFormSubmitted &amp;&amp; df.numberOfYears.errors&quot;&gt;
+                            &lt;div class&#x3D;&quot;v-meassage&quot; *ngIf&#x3D;&quot;df.numberOfYears.errors.required&quot;&gt;
+                                {{ &#x27;Errors.EmptyInputField&#x27; | translate }}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-lg-3 col-md-12 col-sm-12 col-xs-12&quot;&gt;
+                    &lt;button class&#x3D;&quot;btn btn-sm add-btn&quot; type&#x3D;&quot;submit&quot; (click)&#x3D;&quot;addLicense(driverLicenseForm.value)&quot;&gt;
+                        &lt;i class&#x3D;&quot;icon ion-ios-add-circle-outline&quot;&gt;&lt;/i&gt;
+                        {{ &#x27;QuotationRequestForms.MoreDetails.AddBtn&#x27; | translate }}
+                    &lt;/button&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div *ngIf&#x3D;&quot;driverLicense&quot;&gt;
+
+                &lt;div class&#x3D;&quot;row&quot; *ngFor&#x3D;&quot;let license of licenseslist&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-3&quot;&gt;
+                        {{ lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? license.licenseType.nameAr : license.licenseType.name }}
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-3&quot;&gt;
+                        {{lang &#x3D;&#x3D;&#x3D; &#x27;ar&#x27; ? license.country.nameAr: license.country.name }}
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-3&quot;&gt;
+                        {{ license.noOfYear.name }}
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-3&quot;&gt;
+                        &lt;button class&#x3D;&quot;btn btn-sm btn-danger rmv-btn&quot; (click)&#x3D;&quot;removeFromLicenseList(license)&quot;&gt;
+                            &lt;i class&#x3D;&quot;icon ion-ios-trash&quot;&gt;&lt;/i&gt;
+                            {{ &#x27;QuotationRequestForms.MoreDetails.RemoveBtn&#x27; | translate }}
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+
+
+            &lt;!-- // license table --&gt;
+
+            &lt;hr&gt;
+            &lt;div class&#x3D;&quot;row d-flex justify-content-end&quot;&gt;
+
+
+                &lt;div class&#x3D;&quot;btn-group driver-btn-group bouncy&quot;&gt;
+                    &lt;span class&#x3D;&quot;btn btn-sm save-driver-btn-icon&quot;&gt;
+                        &lt;i class&#x3D;&quot;icon ion-ios-add-circle-outline&quot;&gt;&lt;/i&gt;
+                    &lt;/span&gt;
+                    &lt;button (click)&#x3D;&quot;submitForm()&quot; type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-sm save-driver-btn&quot;&gt;
+                        {{ &#x27;QuotationRequestForms.AdditionalDriver.SaveBtn&#x27; | translate }}
+                    &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;btn-group driver-btn-group bouncy&quot;&gt;
+                    &lt;span class&#x3D;&quot;btn btn-sm cancel-driver-btn-icon&quot;&gt;
+                        &lt;i class&#x3D;&quot;icon ion-ios-close-circle-outline&quot;&gt;&lt;/i&gt;
+                    &lt;/span&gt;
+                    &lt;button (click)&#x3D;&quot;cancelAddingDriver()&quot; type&#x3D;&quot;button&quot;
+                        class&#x3D;&quot;btn btn-sm btn-danger cancel-driver-btn&quot;&gt;
+                        {{ &#x27;QuotationRequestForms.AdditionalDriver.CancelBtn&#x27; | translate }}
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/form&gt;
+
+        &lt;!-- Driver list--&gt;
+
+
+    &lt;/div&gt;
+
+
+
+    &lt;div class&#x3D;&quot;col-sm-1 col-md-1 col-lg-1&quot;&gt;
+        &lt;div
+            [ngClass]&#x3D;&quot;{&#x27;check-icon&#x27;:additionalDriverInfoForm.valid, &#x27;check-icon-invalid&#x27;: additionalDriverInfoForm.invalid}&quot;&gt;
+            &lt;i class&#x3D;&quot;icon ion-md-checkmark-circle&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../../quotation-request-page/quotation-request-page.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.mobile-container{
+  padding: 0em;
+}
+.boxed-item {
+  margin-bottom: 0.5em;
+  padding: 2em 1em 1em 0em;
+}
+.check-box {
+  display: flex;
+  align-self: center;
+}
+
+.icon {
+   margin: 0 5px;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+.logo-wrapper h6 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.continue-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+ .continue-btn button {
+  background-color: #00a2ae;
+  color: #ffff;
+  width: 87px;
+}
+.add-driver-checkbox {
+  padding-bottom: 15px;
+}
+.tooltip-icon {
+  color: #044280;
+}
+.check svg {
+  width: unset;
+}
+.check-icon {
+  font-size: 50px;
+  color: #00a2ae;
+  transition: all 0.8s ease;
+  opacity: 1;
+  display: block;
+  margin: 18px auto;
+ 
+}
+.check-icon-invalid {
+  font-size: 50px;
+  color: #fff;
+  opacity: 0;
+  display: block;
+  margin: 18px auto;
+}
+
+
+.send-btn {
+  background: #00a2ae;
+  color: #fff;
+}
+
+.alert {
+  display:inline-block;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .continue-btn {
+    width: 160px;
+   
+  }
+  
+  .check-icon {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+}
+</code></pre>
+                <p class="comment">
+                    <code>./additional-driver.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.row,
+.col {
+  margin-bottom: 20px;
+}
+
+.title {
+  padding: 20px 0;
+  text-align: center;
+}
+.title h6 {
+  text-align: center;
+}
+
+
+.calendar-icon {
+  background-color: #00a2ae;
+  color: white;
+  padding: 0em 6px;
+}
+
+
+.driver-btn-group {
+  width: 120px;
+  height: 40px;
+  margin: 0px 10px;
+}
+
+
+/* buttons style */
+.save-driver-btn {
+ background: #224281;
+ color: #fff;
+ float: left;
+ padding: 0 5px;
+}
+
+
+/* icon style */
+.save-driver-btn-icon {
+  background: #182d57;
+  color: white;
+  width: 15px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+.cancel-driver-btn {
+  float: left;
+  padding: 0 5px;
+ }
+.cancel-driver-btn-icon {
+  background: #ff0040;
+  color: white;
+  width: 15px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.add-btn {
+  background: #00a2ae;
+
+  box-shadow: 0 0 1px #ccc;
+  transition: all 0.5s ease-in-out;
+  border: 0px;
+  color: #fff;
+  margin-top: 30px;
+}
+.rmv-btn {
+  box-shadow: 0 0 1px #ccc;
+  transition: all 0.5s ease-in-out;
+  border: 0px;
+  color: #fff;
+ 
+}
+.spinner-border {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #00a2ae;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row" id="add-driver">    <div class="col-lg-2"></div>    <div class="col-lg-7 col-md-7 col-sm-7">        <label class="question-lable">{{ \'QuotationRequestForms.AdditionalDriver.AddDriver\' | translate }}            <i class="icon ion-md-help-circle tooltip-icon" placement="top"                [ngbTooltip]="(\'QuotationRequestForms.Tooltips.AdditionalDriver\' | translate)" aria-hidden="true"                style="width:20.0;">            </i></label>    </div>    <div class="col-lg-2 col-md-5 col-sm-5">        <input type="checkbox" id="question1" class="question-checkbox" [checked]="addingDriver"            (change)="showAditionalDriver()" /><label for="question1"><span class="ui"></span></label>    </div>    <div class="col-lg-1"></div></div><div class="row" *ngIf="addingDriver">    <div class="col-sm-2 col-md-2 col-lg-2 flex-container">        <div class="flex-centered mt-0">            <div class="round round-lg hollow color" style="margin: 10px auto;">                <span>5</span>            </div>            <div class="title">                <h6> {{\'QuotationRequestForms.StepsTitles.AddDriverInfo\' | translate }}</h6>                <img src=\'../../../../assets/images/icons8-driver-80.png\' class="logo">            </div>        </div>    </div>    <div class="col-sm-9 col-md-9 col-lg-9 border-right border-left">        <form [formGroup]="additionalDriverInfoForm">            <div class="row">                <div class="col-sm-12 col-md-4 col-lg-4">                    <label> {{ \'QuotationRequestForms.AdditionalDriver.NationalIDLabel\' | translate }}                    </label>                    <div class="form-group">                        <input formControlName="identityNumber" oninput="this.value = this.value.replace(/[^0-9.]/g, \'\').replace(/(\..*)\./g, \'$1\');"  maxlength="10" autocomplete="on" name="identityNumber" class="form-control" type="text">						<div *ngIf="f.identityNumber.errors">							<div *ngIf="f.identityNumber.touched && f.identityNumber.errors.required" class="v-meassage">								{{ \'Errors.EmptyInputField\' | translate }}							</div>							<div *ngIf="f.identityNumber.dirty && !f.identityNumber.errors.isValidNationalId && !f.identityNumber.errors.required" class="v-meassage">								{{ \'Errors.InvalidNationalID\' | translate }}							</div>							<div *ngIf="f.identityNumber.dirty && f.identityNumber.errors.minlength" class="v-meassage">								{{ \'Errors.IncompleteInputField\' | translate }}                            </div>                            <div *ngIf="f.identityNumber.dirty && f.identityNumber.errors.duplicate" class="v-meassage">                                {{ \'Errors.DriverExist\' | translate }}							</div>                        </div>                    </div>                </div>                <div class="col-sm-12 col-md-4 col-lg-4">                    <label> {{ \'QuotationRequestForms.DriverInfo.Gender\' | translate }}</label>                    <div class="form-group">                        <label>                            <input type="radio" class="option-input radio" name="genderId" formControlName="genderId"                                value="M" [checked]="true" />                            <span class="radio-text"> {{ \'QuotationRequestForms.DriverInfo.Male\' | translate }} </span>                        </label>                        <label>                            <input type="radio" class="option-input radio" name="genderId" formControlName="genderId"                                value="F" />                            <span class="radio-text"> {{ \'QuotationRequestForms.DriverInfo.Female\' | translate }}</span>                        </label>                    </div>                </div>                <div class="col-sm-12 col-md-4 col-lg-4">                    <label> {{ \'QuotationRequestForms.DriverInfo.Status\' | translate }} </label>                    <div class="form-group">                        <label>                            <input type="radio" class="option-input radio" formControlName="socialStatusId" [value]="1"                                [checked]="true" (change)="hasChild()" />                            <span class="radio-text"> {{ \'QuotationRequestForms.DriverInfo.Single\' | translate }}                            </span>                        </label>                        <label>                            <input type="radio" class="option-input radio" name="socialStatusId"                                formControlName="socialStatusId" [value]="2" [checked]="hasChildren"                                (change)="hasChild()" />                            <span class="radio-text"> {{ \'QuotationRequestForms.DriverInfo.Married\' | translate }}                            </span>                        </label>                    </div>                </div>             <!--  date picker -->             <div class="col-sm-12 col-md-4 col-lg-4" *ngIf="showDate">                <label> {{ \'QuotationRequestForms.DriverInfo.Birth\' | translate }} </label>                    <div class="row">                        <div class="col">                            <ng-select  [items]="months"  bindValue="id" formControlName="month" [searchFn]="termSearchFn"                                 placeholder="MM"                                  [ngStyle]="{\'display\':\'block\', \'width\': \'100%\'}"                                [ngClass]="{ \'ng-invalid\': additionalDriverInfoFormSubmitted && f.month.errors }">                                                            <ng-template ng-label-tmp let-item="item">                                    <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                                </ng-template>                                <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                    <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                                </ng-template>                            </ng-select>                                                   <div *ngIf="additionalDriverInfoFormSubmitted && f.month.errors">                            <div class="v-meassage" *ngIf="f.month.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                    </div>                    <div class="col">                        <ng-select [items]="years" [bindLabel]="years" [bindValue]="years"  [ngStyle]="{\'display\':\'block\', \'width\': \'100%\'}"                           formControlName="year" placeholder="YYYY"                            [ngClass]="{ \'ng-invalid\': additionalDriverInfoFormSubmitted && f.year.errors }"></ng-select>                        <div *ngIf="additionalDriverInfoFormSubmitted && f.year.errors">                            <div class="v-meassage" *ngIf="f.year.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                    </div>                </div>            </div>            <!-- //  date picker -->                            <div class="col-sm-12 col-md-4 col-lg-4" *ngIf="hasChildren">                    <div class="form-group">                        <label>{{ \'QuotationRequestForms.DriverInfo.Children\' | translate }}                        </label>                        <ng-select [items]="fromZeroToTen" formControlName="childrenUnder16Years" bindLabel="name"                            bindValue="id">                        </ng-select>                    </div>                </div>                <div class="col-sm-12 col-md-4 col-lg-4">                    <div class="form-group">                        <label>{{ \'QuotationRequestForms.DriverInfo.Education\' | translate }}                        </label>                        <ng-select [items]="stepsData.EducationLevels" bindValue="id" [searchFn]="termSearchFn"                            [loading]="!stepsData.EducationLevels" formControlName="educationLevelId"                            [ngClass]="{ \'ng-invalid\': additionalDriverInfoFormSubmitted && f.educationLevelId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                        <div *ngIf="additionalDriverInfoFormSubmitted && f.educationLevelId.errors">                            <div class="v-meassage" *ngIf="f.educationLevelId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                    </div>                </div>                <div class="col-sm-12 col-md-4 col-lg-4">                    <div class="form-group">                        <label> {{ \'QuotationRequestForms.DriverInfo.LicenseType\' | translate }}                        </label>                        <ng-select [items]="stepsData.LicenseTypes" formControlName="licenseTypeId" [searchFn]="termSearchFn"                            [loading]="!stepsData.LicenseTypes" bindValue="id"                            [ngClass]="{ \'ng-invalid\': additionalDriverInfoFormSubmitted && f.licenseTypeId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                        <div *ngIf="additionalDriverInfoFormSubmitted && f.licenseTypeId.errors">                            <div class="v-meassage" *ngIf="f.licenseTypeId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                    </div>                </div>                                <div class="col-sm-12 col-md-6 col-lg-4">                    <div class="form-group">                        <label> {{ \'QuotationRequestForms.DriverInfo.AccidentCounts\' | translate }}                            <i class="icon ion-md-help-circle tooltip-icon" placement="top"                            [ngbTooltip]="(\'QuotationRequestForms.Tooltips.DriverNoOfAccident\' | translate)" aria-hidden="true" style="width:20.0;">                            </i>                        </label>                        <ng-select [items]="fromZeroToTen" bindLabel="name" bindValue="id"                             formControlName="numberOfAccidentsLast5Years">                        </ng-select>                    </div>                </div>                <div class="col-sm-12 col-md-6 col-lg-4">                    <div class="form-group">                        <label> {{ \'QuotationRequestForms.DriverInfo.ClaimCount\' | translate }}                            <i class="icon ion-md-help-circle tooltip-icon" placement="top"                            [ngbTooltip]="(\'QuotationRequestForms.Tooltips.DriverNoOfAccident\' | translate)" aria-hidden="true" style="width:20.0;">                            </i>                        </label>                        <ng-select [items]="fromZeroToTen" bindLabel="name" bindValue="id"                             formControlName="numberOfClaimsLast5Years">                        </ng-select>                    </div>                </div>                                <div class="col-sm-12 col-md-4 col-lg-4">                    <div class="form-group">                        <label> {{ \'QuotationRequestForms.AdditionalDriver.Percentage\' | translate }}                        </label>                        <ng-select [items]="stepsData.DrivingPercentages" formControlName="drivingPercentageId"                            [loading]="!stepsData.DrivingPercentages" bindValue="id"                            [ngClass]="{ \'ng-invalid\': additionalDriverInfoFormSubmitted && f.drivingPercentageId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                                               <div *ngIf="f.drivingPercentageId.errors">                            <div class="v-meassage" *ngIf="additionalDriverInfoFormSubmitted &&f.drivingPercentageId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                                <div class="v-meassage" *ngIf="f.drivingPercentageId.dirty && f.drivingPercentageId.errors.drivingPercentageComplete">                                      {{ \'Errors.InCompletePercentage\' | translate }}                                </div>                        </div>                                           </div>                </div>                <div class="col-sm-12 col-md-4 col-lg-4">                    <div class="form-group">                        <label> {{ \'QuotationRequestForms.DriverInfo.Relation\' | translate }}                        </label>                        <ng-select [items]="stepsData.relations" formControlName="relationId" [searchFn]="termSearchFn"                            [loading]="!stepsData.relations" bindValue="id"                            [ngClass]="{ \'ng-invalid\': additionalDriverInfoFormSubmitted && f.relationId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                        <div *ngIf="additionalDriverInfoFormSubmitted && f.relationId.errors">                            <div class="v-meassage" *ngIf="f.relationId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}</div>                        </div>                    </div>                </div>            </div>            <br>            <!----->            <div class="row">                <div class="col-lg-10 col-md-8 col-sm-9">                    <label class="question-lable">                        {{ \'QuotationRequestForms.AdditionalDriver.Conditions\' | translate }}</label>                </div>                <div class="col-lg-2 col-md-2 col-sm-3">                    <input type="checkbox" id="health" class="question-checkbox" (checked)="driverHealth"                        (change)=" showMedicalCondition()" /><label for="health"><span class="ui"></span></label>                </div>            </div>            <div *ngIf="isMedicalCheckboxEmpty" class="v-meassage  pt-2 pb-2">                {{ \'Errors.MedicalConditionInvalid\' | translate }}</div>            <div class="row" *ngIf="driverHealth">                <!-- spinner -->                <div class="spinner-border" role="status" *ngIf="!stepsData.MedicalConditions">                    <span class="sr-only">Loading...</span>                </div>                <div class="col-sm-6 col-md-4 col-lg-4"                    *ngFor="let medical of stepsData.MedicalConditions; let i = index;">                    <input class="cbx" type="checkbox" [id]="medical?.name + i + \'a\'" style="display: none;"                        (change)="addMedicalCondition(medical.id)">                    <label for="{{medical.name + i+ \'a\'}}" class="check pt-2 pb-2">                        <svg width="18px" height="18px" viewBox="0 0 20 18">                            <path                                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">                            </path>                            <polyline points="1 9 7 14 15 4"></polyline>                        </svg>                        <span> {{ lang === \'ar\' ? medical.nameAr : medical.name }} </span>                    </label>                </div>            </div>            <hr>            <div class="row">                <div class="col-lg-10 col-md-8 col-sm-9">                    <label                        class="question-lable">{{ \'QuotationRequestForms.AdditionalDriver.Violations\' | translate }}</label>                </div>                <div class="col-lg-2 col-md-2 col-sm-3">                    <input type="checkbox" id="driverViolation" class="question-checkbox" (checked)="driverViolation"                        (change)="showViolations()" /><label for="driverViolation"><span class="ui"></span></label>                </div>            </div>            <div *ngIf="isViolationCheckboxEmpty" class="v-meassage  pt-2 pb-2">                {{ \'Errors.ViolationInvalid\' | translate }} </div>            <div *ngIf="driverViolation">                <div class="row">                    <!-- spinner -->                    <div class="spinner-border" role="status" *ngIf="!stepsData.violations">                        <span class="sr-only">Loading...</span>                    </div>                    <div class="col-sm-6 col-md-4 col-lg-4"                        *ngFor="let violation of stepsData.violations; let i = index;">                        <input class="cbx" type="checkbox" [id]="violation.name + i + \'a\'" style="display: none;"                            (change)="addViolation(violation.id)">                        <label for="{{violation.name + i + \'a\'}}" class="check pt-2 pb-2">                            <svg width="18px" height="18px" viewBox="0 0 20 18">                                <path                                    d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">                                </path>                                <polyline points="1 9 7 14 15 4"></polyline>                            </svg>                            <span> {{ lang === \'ar\' ? violation.nameAr : violation.name }}</span>                        </label>                    </div>                </div>            </div>        </form>        <hr>        <!-- driverLicenseForm for driverLicense array-->        <form [formGroup]="driverLicenseForm">            <div class="row">                <div class="col-lg-10 col-md-8 col-sm-9">                    <label                        class="question-lable">{{ \'QuotationRequestForms.AdditionalDriver.License\' | translate }}</label>                </div>                <div class="col-lg-2 col-md-2 col-sm-3">                    <input type="checkbox" id="driverLicense" class="question-checkbox" (checked)="driverLicense"                        (change)="showLicenseForm()" /><label for="driverLicense"><span class="ui"></span></label>                </div>            </div>            <!-- license table -->            <div class="row" *ngIf="driverLicense">                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">                    <div class="form-group">                        <label>{{ \'QuotationRequestForms.MoreDetails.LicenseType\' | translate }}                        </label>                        <ng-select [items]="stepsData.LicenseTypes" bindValue="id" formControlName="licenseTypeId" [searchFn]="termSearchFn"                            [ngClass]="{ \'ng-invalid\': driverLicenseFormSubmitted && df.licenseTypeId.errors }">                            <ng-template ng-label-tmp let-item="item">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                            <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">                                <span>{{ lang === \'ar\' ? item.nameAr : item.name }}</span>                            </ng-template>                        </ng-select>                        <div *ngIf="driverLicenseFormSubmitted && df.licenseTypeId.errors">                            <div class="v-meassage" *ngIf="df.licenseTypeId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}                            </div>                        </div>                    </div>                </div>                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">                    <div class="form-group">                        <label> {{ \'QuotationRequestForms.MoreDetails.Country\' | translate }}                        </label>                        <ng-select [items]="stepsData.Countries" bindValue="id" formControlName="countryId"                            bindLabel="nameAr"                            [ngClass]="{ \'ng-invalid\': driverLicenseFormSubmitted && df.countryId.errors }">                        </ng-select>                        <div *ngIf="driverLicenseFormSubmitted && df.countryId.errors">                            <div class="v-meassage" *ngIf="df.countryId.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}                            </div>                        </div>                    </div>                </div>                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">                    <div class="form-group">                        <label>{{ \'QuotationRequestForms.MoreDetails.years\' | translate }}                        </label>                        <ng-select [items]="fromZeroToTen" bindLabel="name" bindValue="id"                            formControlName="numberOfYears"                            [ngClass]="{ \'ng-invalid\': driverLicenseFormSubmitted && df.numberOfYears.errors }">                        </ng-select>                        <div *ngIf="driverLicenseFormSubmitted && df.numberOfYears.errors">                            <div class="v-meassage" *ngIf="df.numberOfYears.errors.required">                                {{ \'Errors.EmptyInputField\' | translate }}                            </div>                        </div>                    </div>                </div>                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">                    <button class="btn btn-sm add-btn" type="submit" (click)="addLicense(driverLicenseForm.value)">                        <i class="icon ion-ios-add-circle-outline"></i>                        {{ \'QuotationRequestForms.MoreDetails.AddBtn\' | translate }}                    </button>                </div>            </div>            <div *ngIf="driverLicense">                <div class="row" *ngFor="let license of licenseslist">                    <div class="col-3">                        {{ lang === \'ar\' ? license.licenseType.nameAr : license.licenseType.name }}                    </div>                    <div class="col-3">                        {{lang === \'ar\' ? license.country.nameAr: license.country.name }}                    </div>                    <div class="col-3">                        {{ license.noOfYear.name }}                    </div>                    <div class="col-3">                        <button class="btn btn-sm btn-danger rmv-btn" (click)="removeFromLicenseList(license)">                            <i class="icon ion-ios-trash"></i>                            {{ \'QuotationRequestForms.MoreDetails.RemoveBtn\' | translate }}                        </button>                    </div>                </div>            </div>            <!-- // license table -->            <hr>            <div class="row d-flex justify-content-end">                <div class="btn-group driver-btn-group bouncy">                    <span class="btn btn-sm save-driver-btn-icon">                        <i class="icon ion-ios-add-circle-outline"></i>                    </span>                    <button (click)="submitForm()" type="button" class="btn btn-sm save-driver-btn">                        {{ \'QuotationRequestForms.AdditionalDriver.SaveBtn\' | translate }}                    </button>                </div>                <div class="btn-group driver-btn-group bouncy">                    <span class="btn btn-sm cancel-driver-btn-icon">                        <i class="icon ion-ios-close-circle-outline"></i>                    </span>                    <button (click)="cancelAddingDriver()" type="button"                        class="btn btn-sm btn-danger cancel-driver-btn">                        {{ \'QuotationRequestForms.AdditionalDriver.CancelBtn\' | translate }}                    </button>                </div>            </div>        </form>        <!-- Driver list-->    </div>    <div class="col-sm-1 col-md-1 col-lg-1">        <div            [ngClass]="{\'check-icon\':additionalDriverInfoForm.valid, \'check-icon-invalid\': additionalDriverInfoForm.invalid}">            <i class="icon ion-md-checkmark-circle"></i>        </div>            </div></div></div>'
+    var COMPONENTS = [{'name': 'AccountPanelComponent', 'selector': 'app-account-panel'},{'name': 'AdditionalDriverComponent', 'selector': 'app-additional-driver'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationPageComponent', 'selector': 'app-auth'},{'name': 'BoughtPoliciesComponent', 'selector': 'app-bought-policies'},{'name': 'DriverInfoComponent', 'selector': 'app-driver-info'},{'name': 'DriverListComponent', 'selector': 'app-driver-list'},{'name': 'DriversComponent', 'selector': 'app-drivers'},{'name': 'EmailSettingsComponent', 'selector': 'app-email-settings'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'ExpiredPoliciesComponent', 'selector': 'app-expired-policies'},{'name': 'ExpiringPoliciesComponent', 'selector': 'app-expiring-policies'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IdentitiesComponent', 'selector': 'app-identities'},{'name': 'InsuranceInfoComponent', 'selector': 'app-insurance-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'MiscellaneousSettingsComponent', 'selector': 'app-miscellaneous-settings'},{'name': 'MoreDetailsComponent', 'selector': 'app-more-details'},{'name': 'OrderReviewComponent', 'selector': 'app-order-review'},{'name': 'PasswordSettingsComponent', 'selector': 'app-password-settings'},{'name': 'PaymentSuccessComponent', 'selector': 'app-payment-success'},{'name': 'PhoneSettingsComponent', 'selector': 'app-phone-settings'},{'name': 'PoliciesPanelComponent', 'selector': 'app-policies-panel'},{'name': 'PrevQuotesComponent', 'selector': 'app-prev-quotes'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'QuotationRequestPageComponent', 'selector': 'app-quotation-request-page'},{'name': 'QuoteComponent', 'selector': 'app-quote'},{'name': 'QuotesFiltersComponent', 'selector': 'app-quotes-filters'},{'name': 'QuotesListComponent', 'selector': 'app-quotes-list'},{'name': 'QuotesOrderDataComponent', 'selector': 'app-quotes-order-data'},{'name': 'QuotesPageComponent', 'selector': 'app-quotes-page'},{'name': 'TechnicalSupportComponent', 'selector': 'app-technical-support'},{'name': 'VehicleInfoComponent', 'selector': 'app-vehicle-info'},{'name': 'VehiclesComponent', 'selector': 'app-vehicles'},{'name': 'VehiclesListComponent', 'selector': 'app-vehicles-list'}];
+    var DIRECTIVES = [{'name': 'NumberCommaDirective', 'selector': '[inputWithComma]'}];
+    var ACTUAL_COMPONENT = {'name': 'AdditionalDriverComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdditionalDriverComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

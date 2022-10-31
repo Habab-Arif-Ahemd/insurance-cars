@@ -1,0 +1,23 @@
+<div class="app-container">
+  <!--   <div class="header" style="display: none;">
+        <app-header></app-header>
+    </div> -->
+    <div class="header">
+        <app-header></app-header>
+
+    </div>
+    <div >
+
+        <router-outlet></router-outlet>
+
+        
+    </div>
+    <div *ngIf="!isAtProfile" class="footer">
+        <app-footer></app-footer>
+    </div>
+</div>
+
+<!-- Authentication modal -->
+<ng-template #template class="auth-modal">
+    <app-auth (closeModal)="modalService.dismissAll()"></app-auth>
+</ng-template>

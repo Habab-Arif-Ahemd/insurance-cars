@@ -1,0 +1,1 @@
+var _resolve,_reject,promise=new Promise((e,r)=>{_resolve=e,_reject=r});promise.resolve=_resolve,promise.reject=_reject;var hyperpayModule={paymentFormReady:function(){return promise}};

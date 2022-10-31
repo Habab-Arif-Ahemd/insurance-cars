@@ -1,0 +1,50 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h5 style="font-weight: bold"> {{ "Profile.Support.TicketDetail" | translate }}</h5>
+    </div>
+
+    <div class="col-12">
+      <div class="card" >
+        <div class="row">
+          <div class="col-6">
+            <span *ngIf="lang == 'ar'">{{ticket.ticketTypeAr}}</span>
+            <span *ngIf="lang == 'en'">{{ticket.ticketType}}</span>
+          </div>
+          <div class="col-6">
+            <span>
+              {{ticket.ticketReferenceId}}
+            </span>
+          </div>
+        </div>
+        <br/>
+        <p>
+          {{ticket.body}}
+        </p>
+        <hr />
+        {{ "Profile.Support.IssueDate" | translate }} :{{ ticket.createdDate |  date:"MMM-dd-yyyy" }}
+        <hr />
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"> {{ "Profile.Support.WriteInquireHere" | translate }}</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="submit" class="btn btn-primary"> {{ "App.Send" | translate }}</button>
+            <button type="submit"  [routerLink]="['/user/support']"
+             class="btn btn-danger">
+             {{ "App.CancelText" | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+      <br/>
+    </div>
+  </div>
+</div>
+

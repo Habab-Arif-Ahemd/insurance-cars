@@ -1,0 +1,70 @@
+@import"../../css_loader.css";
+@import"../../profile.scss";
+.uploadfilecontainer {
+  min-height: 150px;
+  border: 3px dashed grey;
+  text-align: center;
+  background-color: lightgray;
+  padding: 50px 0px 10px 0px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+tr {
+  cursor: pointer;
+}
+
+img
+{
+  width: 60px;
+height: auto;
+}
+
+img .img-car
+{
+  width: 120;
+}
+
+.table td, .table th {
+  padding: 5px;
+}
+.identites-header {
+  background: #0167af;
+  color: white;
+  margin-top: 2px;
+  padding: 5px 30px;
+  border-radius: 20px;
+}
+/*----------------
+New Design
+------------------*/
+.card{
+	background-color: #fff;
+	background-clip: border-box;
+    border: 0;
+	box-shadow: 0 20px 40px #d3dce8e5;
+}
+.card-body {
+ background-color: #fff; 
+}
+.shadow-sm,
+.shadow-sm--on-hover:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(132, 138, 163, 0.1) !important
+}
+
+
+.badge-circle {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    padding: 0
+}
+
+td{
+
+}
+

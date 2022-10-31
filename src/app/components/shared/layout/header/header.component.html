@@ -1,0 +1,132 @@
+<!-- Nav Bar Starts here -->
+<nav class="navbar navbar-expand-md navbar-light bg-light navbar-area"
+   [class.is-sticky]="(hasScrolledBanner || !isAtLanding)">
+
+   <div [class.custom-container]="isAtquote" class="nav-container">
+
+      <a *ngIf="isAtLanding" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" data-toggle="collapse"
+         class="nav-link active p-0" href="javascript:void(0)" style="font-size: 20px;">
+      </a>
+      <!-- Logo -->
+      <div class="col-lg-2 col-md-4 col-sm-8 col-xs-8 mx-5 d-flex justify-content-center">
+         <!-- [ngStyle]="{'display': isAtProfile ? 'none' : 'flex' }" -->
+         <a class="navbar-brand " routerLink="/">
+            <img src="../../../../../assets/img/ammant.svg" alt="Ammant">
+         </a>
+      </div>
+      <!-- Logo -->
+
+      <!-- Menu for Mobile View -->
+      <button (click)="isNavbarCollapsed = !isNavbarCollapsed" class="navbar-toggler" type="button"
+         data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+         aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- End -->
+
+      <div [ngClass]="(isOnMidScreen && isNavbarCollapsed) ? 'nav-collapsed':'nav-uncollapsed'"
+         class=" collapse navbar-collapse " id="navbarText">
+
+         <ul class="navbar-nav .nav-fill">
+
+            <!-- Home -->
+
+            <li class="nav-item flex-centered" [routerLink]="AppRoutes.landing">
+               <a class="nav-link active">{{ 'Header.MainPageText' | translate }} </a>
+            </li>
+
+            <li (click)="toWhyUs()" class="nav-item flex-centered">
+               <a class="nav-link active">{{ 'Header.Benefits' | translate }} </a>
+            </li>
+
+            <li (click)="toInsuranceCoverage()" class="nav-item flex-centered">
+               <a class="nav-link active">{{ 'Header.InsuranceCoverage' | translate }} </a>
+            </li>
+
+            <li (click)="toParteners()" class="nav-item flex-centered">
+               <a class="nav-link active">{{ 'Header.Parteners' | translate }} </a>
+            </li>
+
+            <li (click)="toCallBack()" class="nav-item flex-centered">
+               <a class="nav-link active"> {{ 'Header.ContactTitle' | translate }} </a>
+            </li>
+
+            <li (click)="toFaq()" class="nav-item flex-centered">
+               <a class="nav-link active"> {{ 'Faq.Title' | translate }} </a>
+            </li>
+
+            <!-- Login -->
+            <li *ngIf="!isLoggedIn" class="nav-item flex-centered mx-4">
+               <a class="nav-link active auth" (click)="displayAuthModal()">
+
+                  {{ 'Header.LoginText' | translate }}
+
+               </a>
+            </li>
+
+            <!-- Signup -->
+            <li *ngIf="!isLoggedIn" class="nav-item flex-centered ">
+               <a class="nav-link active-log mx-2 auth" (click)="displayAuthModal()">
+
+                  <img src="../../../../../assets/img/Icon-png/Creat Account.png">
+                  {{ 'Auth.SignUpText' | translate }}
+               </a>
+            </li>
+
+
+            <!-- User Menu -->
+            <li *ngIf="isLoggedIn" class="nav-item dropdown user-menu-link flex-centered mx-4">
+               
+               <a class="nav-link active-log" href="javascript:void(0)" role="button" data-toggle="dropdown"
+                  >
+                  {{ isAr ? (!userFullNameAr ? userEmail : userFullNameAr) : (!userFullName ? userEmail :
+                  userFullName)}}
+                  <img src="../../../../../assets/img/Icon-png/user-octagon.png">
+               </a>
+
+               <div class="user-menu dropdown-menu " aria-labelledby="navbarDropdown">
+                  <a routerLink="user/newPolicy" class="dropdown-item">
+                     <fa-icon icon="user" class="mx-2"></fa-icon>
+                     {{ 'Header.MyAccountText' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="logout()">
+                     <fa-icon icon="sign-out-alt" class="mx-2"></fa-icon>
+                     {{ 'Header.LogoutText' | translate }}
+                  </a>
+               </div>
+            </li>
+
+            <!-- Language -->
+            <li class="nav-item flex-centered">
+               <a class="nav-link mx-4 font-weight-bold" href="javascript:void(0)"  (click)="switchLang()">
+                  {{ isAr ? 'En' : 'Ar'}}
+               </a>
+            </li>
+
+            <li class="nav-item flex-centered">
+               <a class=" nav-link" href="javascript:void(0)" >
+                  <img src="../../../../../assets/img/app-landing/Call Us.png">
+               </a>
+            </li>
+
+            <li class="nav-item flex-centered">
+               <span class=" mx-4 demo">
+                  {{ 'Header.Demo' | translate }}
+               </span>
+            </li>
+
+         </ul>
+      </div>
+   </div>
+</nav>
+
+
+<!-- Nav Bar Ends here -->
+
+<!-- LANGUAGE SWITCH LOADER -->
+<div class="lang-switch-loader-container" [ngClass]="isChangingLang ? 'visible' : 'invisible'">
+   <div *ngIf="isChangingLang">
+      <app-loading></app-loading>
+   </div>
+</div>
+
